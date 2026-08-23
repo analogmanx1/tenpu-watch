@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<!-- ▼ title と description が、トップページのカードとメニューに自動で載ります -->
+<title>ガンマ計算（γ計算） | 薬剤師ツールボックス</title>
+<meta name="description" content="流速(mL/h)から「何γか」、指示γから「ポンプ流速(mL/h)」を計算。1γ＝1μg/kg/分。薬の成分量・液量・体重を入れるだけ">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+/* ガンマ計算アシスタント(元: chrome拡張機能/ガンマ計算アシスタント/スマホ版 の1ファイル版)
+   サイト共通CSSと干渉しないよう、すべて .gapp の中に閉じ込めてある。
+   青 ＝ γ を求める ／ 緑 ＝ 流速 を求める */
+.gapp{max-width:520px;margin:.8rem 0 1rem;background:#fff;color:#1a2b3c;font-size:15px;line-height:1.45;border:1px solid #b5c4d2;border-radius:12px;overflow:hidden;-webkit-tap-highlight-color:transparent}
+.gapp p{margin:0}
+.gapp button{margin:0}
+
+/* ===== モード切り替えタブ ===== */
+.gapp .mode-tabs{display:flex}
+.gapp .mode-tab{flex:1;padding:13px 4px 11px;min-height:56px;border:none;border-bottom:4px solid transparent;background:#dde3e8;cursor:pointer;font-family:inherit;opacity:.75}
+.gapp .mode-tab .tab-main{display:block;font-size:17px;font-weight:bold;color:#5a6b7c}
+.gapp .mode-tab .tab-sub{display:block;font-size:11px;color:#7a8b9c;margin-top:2px}
+.gapp .mode-tab.active{opacity:1}
+.gapp .tab-blue.active{background:#1565c0;border-bottom-color:#0d3f80}
+.gapp .tab-blue.active .tab-main,.gapp .tab-blue.active .tab-sub{color:#fff}
+.gapp .tab-teal.active{background:#00796b;border-bottom-color:#004d40}
+.gapp .tab-teal.active .tab-main,.gapp .tab-teal.active .tab-sub{color:#fff}
+
+/* ===== いまのモードを示す帯 ===== */
+.gapp .mode-banner{font-size:13px;padding:8px 16px}
+.gapp .mode-banner strong{font-size:13.5px}
+.gapp .banner-blue{background:#e8f1fb;color:#0d3f80;border-bottom:1px solid #c3d8ef}
+.gapp .banner-teal{background:#e3f2ef;color:#004d40;border-bottom:1px solid #bcdcd5}
+
+.gapp .gmain{padding:16px 16px 6px;background:#fff}
+
+/* ===== 入力欄 ===== */
+.gapp .field{margin-bottom:14px}
+.gapp .field label{display:block;font-weight:bold;font-size:14px;margin:0 0 6px}
+.gapp .req{font-size:10.5px;color:#fff;background:#e65100;border-radius:3px;padding:1px 6px;margin-left:6px;vertical-align:1px}
+.gapp .input-row{display:flex;align-items:stretch;gap:6px}
+.gapp .input-row input{flex:1;min-width:0;max-width:none;width:auto;font-size:22px;padding:12px;border:2px solid #b5c4d2;border-radius:10px;font-family:inherit;background:#fff;color:#1a2b3c}
+.gapp .input-row input:focus{outline:none;border-color:#1565c0;box-shadow:0 0 0 3px rgba(21,101,192,.15)}
+.gapp .unit-fixed{display:flex;align-items:center;font-size:16px;font-weight:bold;color:#5a6b7c;min-width:52px;justify-content:center}
+
+/* mg / μg 切り替え */
+.gapp .unit-toggle{display:flex;border:2px solid #1565c0;border-radius:10px;overflow:hidden}
+.gapp .unit-btn{width:56px;border:none;background:#fff;color:#1565c0;font-size:16px;font-weight:bold;cursor:pointer;font-family:inherit}
+.gapp .unit-btn.active{background:#1565c0;color:#fff}
+
+/* エラー表示 */
+.gapp .error-msg{display:none;color:#c62828;font-size:13px;font-weight:bold;margin-top:5px}
+.gapp .field.invalid input{border-color:#c62828;background:#fdecea}
+.gapp .field.invalid .error-msg{display:block}
+
+/* 合計表示 */
+.gapp .total-box{background:#f0f4f8;border-left:4px solid #78909c;border-radius:4px;padding:9px 11px;font-size:14px;margin-bottom:14px}
+.gapp .total-box strong{font-size:17px}
+.gapp #concentration-note{display:block;font-size:13px;color:#40566c;margin-top:2px}
+
+/* ボタン */
+.gapp .btn-row{display:flex;gap:10px;margin:16px 0 12px}
+.gapp .primary-btn{flex:2.5;background:#37474f;color:#fff;font-size:20px;font-weight:bold;border:none;border-radius:12px;padding:16px 0;cursor:pointer;font-family:inherit}
+.gapp .primary-btn:active{transform:translateY(1px)}
+.gapp.mode-blue .primary-btn{background:#1565c0}
+.gapp.mode-teal .primary-btn{background:#00796b}
+.gapp .secondary-btn{flex:1;background:#fff;color:#5a6b7c;font-size:15px;border:2px solid #b5c4d2;border-radius:12px;cursor:pointer;font-family:inherit;min-height:52px}
+
+/* 注意ボックス */
+.gapp .warning-box{background:#fff8e1;border:2px solid #f9a825;border-radius:10px;padding:11px 13px;font-size:14px;font-weight:bold;color:#8d6e00;margin-bottom:12px;white-space:pre-line}
+
+/* ===== 結果(モードと同じ色) ===== */
+.gapp .result-box{border-radius:12px;padding:14px 15px 16px;text-align:center;margin-bottom:12px}
+.gapp .result-label{font-size:14px;font-weight:bold}
+.gapp .result-value{margin-top:2px}
+.gapp .result-number{font-size:46px;font-weight:bold;letter-spacing:1px}
+.gapp .result-unit{font-size:28px;font-weight:bold;margin-left:8px}
+.gapp .result-detail{font-size:13px;color:#40566c;margin-top:10px;text-align:left;white-space:pre-line;background:rgba(255,255,255,.75);border-radius:8px;padding:9px 11px}
+.gapp .result-blue{background:#e8f1fb;border:3px solid #1565c0}
+.gapp .result-blue .result-label,.gapp .result-blue .result-unit{color:#1565c0}
+.gapp .result-blue .result-number{color:#0d3f80}
+.gapp .result-teal{background:#e3f2ef;border:3px solid #00796b}
+.gapp .result-teal .result-label,.gapp .result-teal .result-unit{color:#00796b}
+.gapp .result-teal .result-number{color:#004d40}
+
+.gapp .gfoot{padding:10px 16px 14px;font-size:11px;color:#7a8b9c;background:#fff;border-top:1px solid #e6ecf1}
+.gapp .gfoot .caution{color:#c62828;font-weight:bold;margin-top:4px;font-size:12px}
+</style>
+</head>
+<body>
+<!-- 共通ヘッダー(自動差し込み。触らなくてOK) -->
+<div id="site-nav" data-rel="../"></div>
+<div class="wrap">
+<main class="main">
+  <h1>ガンマ計算（γ計算アシスタント）</h1>
+  <p class="small">1γ ＝ 1 μg／kg／分（体重1kgあたり・1分あたりの薬の量）。青のタブは「流速から何γか」、緑のタブは「指示γからポンプの流速」を計算します。</p>
+
+  <div class="gapp mode-blue" id="gapp">
+  <!-- モード切り替えタブ(青＝γ、緑＝流速) -->
+  <div class="mode-tabs" role="tablist">
+    <button id="tab-gamma" class="mode-tab tab-blue active" role="tab" aria-selected="true">
+      <span class="tab-main">γ を求める</span>
+      <span class="tab-sub">流速から「何γか」を計算</span>
+    </button>
+    <button id="tab-rate" class="mode-tab tab-teal" role="tab" aria-selected="false">
+      <span class="tab-main">流速 を求める</span>
+      <span class="tab-sub">指示γから「mL/h」を計算</span>
+    </button>
+  </div>
+
+  <!-- いまのモードの帯(見間違い防止) -->
+  <div class="mode-banner banner-blue" id="mode-banner">
+    いま計算するもの：<strong id="mode-banner-text">何γ入っているか（答えの単位：γ）</strong>
+  </div>
+
+  <div class="gmain">
+    <!-- ① 薬の成分量 -->
+    <div class="field" id="field-drug">
+      <label for="drug-amount">① 薬の成分量<span class="req">必須</span></label>
+      <div class="input-row">
+        <input id="drug-amount" inputmode="decimal" autocomplete="off" placeholder="例：3">
+        <div class="unit-toggle" id="drug-unit-toggle">
+          <button type="button" class="unit-btn active" data-unit="mg">mg</button>
+          <button type="button" class="unit-btn" data-unit="ug">μg</button>
+        </div>
+      </div>
+      <p class="error-msg" id="err-drug-amount">入力してください</p>
+    </div>
+
+    <!-- ② 薬液の液量 -->
+    <div class="field" id="field-drugvol">
+      <label for="drug-volume">② 薬液の液量（原液）<span class="req">必須</span></label>
+      <div class="input-row">
+        <input id="drug-volume" inputmode="decimal" autocomplete="off" placeholder="例：3">
+        <span class="unit-fixed">mL</span>
+      </div>
+      <p class="error-msg" id="err-drug-volume">入力してください</p>
+    </div>
+
+    <!-- ③ 希釈液の液量 -->
+    <div class="field" id="field-diluent">
+      <label for="diluent-volume">③ 希釈液の液量（生食など）<span class="req">必須</span></label>
+      <div class="input-row">
+        <input id="diluent-volume" inputmode="decimal" autocomplete="off" placeholder="例：47（希釈しない場合は 0）">
+        <span class="unit-fixed">mL</span>
+      </div>
+      <p class="error-msg" id="err-diluent-volume">入力してください</p>
+    </div>
+
+    <!-- 合計の自動表示 -->
+    <div class="total-box" id="total-box" hidden>
+      薬液の合計：<strong id="total-volume">–</strong> mL
+      <span id="concentration-note"></span>
+    </div>
+
+    <!-- ④ 体重 -->
+    <div class="field" id="field-weight">
+      <label for="weight">④ 体重<span class="req">必須</span></label>
+      <div class="input-row">
+        <input id="weight" inputmode="decimal" autocomplete="off" placeholder="例：60">
+        <span class="unit-fixed">kg</span>
+      </div>
+      <p class="error-msg" id="err-weight">入力してください</p>
+    </div>
+
+    <!-- ⑤a 投与速度(γを求めるモード) -->
+    <div class="field" id="field-rate">
+      <label for="rate">⑤ 投与速度（ポンプの流速）<span class="req">必須</span></label>
+      <div class="input-row">
+        <input id="rate" inputmode="decimal" autocomplete="off" placeholder="例：5">
+        <span class="unit-fixed">mL/h</span>
+      </div>
+      <p class="error-msg" id="err-rate">入力してください</p>
+    </div>
+
+    <!-- ⑤b 指示γ(流速を求めるモード) -->
+    <div class="field" id="field-target" hidden>
+      <label for="target-gamma">⑤ 指示された投与量<span class="req">必須</span></label>
+      <div class="input-row">
+        <input id="target-gamma" inputmode="decimal" autocomplete="off" placeholder="例：0.05">
+        <span class="unit-fixed">γ</span>
+      </div>
+      <p class="error-msg" id="err-target-gamma">入力してください</p>
+    </div>
+
+    <div class="btn-row">
+      <button id="calc-btn" class="primary-btn">計算する</button>
+      <button id="clear-btn" class="secondary-btn">クリア</button>
+    </div>
+
+    <!-- 注意(異常値)表示 -->
+    <div class="warning-box" id="warning-box" hidden></div>
+
+    <!-- 結果表示(モードと同じ色になる) -->
+    <div class="result-box result-blue" id="result-box" hidden>
+      <p class="result-label" id="result-label">投与量</p>
+      <p class="result-value"><span class="result-number" id="result-number">–</span><span class="result-unit" id="result-unit">γ</span></p>
+      <p class="result-detail" id="result-detail"></p>
+    </div>
+  </div>
+
+  <div class="gfoot">
+    <p>γ ＝ 成分量(μg) ÷ 合計液量(mL) × 流速(mL/h) ÷ 60 ÷ 体重(kg)</p>
+    <p>mL/h ＝ γ × 体重(kg) × 60 × 合計液量(mL) ÷ 成分量(μg)</p>
+    <p class="caution">※ 計算結果は必ずダブルチェックしてから使用してください。</p>
+  </div>
+  </div><!-- /.gapp -->
+
+  <script>
+  // ガンマ計算アシスタント(ロジックは元の1ファイル版と同じ)
+  // γ(ガンマ)= μg/kg/min
+  //   γ    = 成分量(μg) ÷ 合計液量(mL) × 流速(mL/h) ÷ 60 ÷ 体重(kg)
+  //   mL/h = γ × 体重(kg) × 60 × 合計液量(mL) ÷ 成分量(μg)
+  (function () {
+    "use strict";
+
+    const $ = (id) => document.getElementById(id);
+
+    const app = $("gapp");
+    const tabGamma = $("tab-gamma");
+    const tabRate = $("tab-rate");
+    const fieldRate = $("field-rate");
+    const fieldTarget = $("field-target");
+    const modeBanner = $("mode-banner");
+    const modeBannerText = $("mode-banner-text");
+
+    const inputs = {
+      drugAmount: $("drug-amount"),
+      drugVolume: $("drug-volume"),
+      diluentVolume: $("diluent-volume"),
+      weight: $("weight"),
+      rate: $("rate"),
+      targetGamma: $("target-gamma"),
+    };
+
+    const totalBox = $("total-box");
+    const totalVolumeEl = $("total-volume");
+    const concentrationNote = $("concentration-note");
+    const warningBox = $("warning-box");
+    const resultBox = $("result-box");
+    const resultLabel = $("result-label");
+    const resultNumber = $("result-number");
+    const resultUnit = $("result-unit");
+    const resultDetail = $("result-detail");
+
+    let mode = "gamma"; // "gamma"(青) / "rate"(緑)
+    let drugUnit = "mg"; // "mg" / "ug"
+
+    // 全角→半角の自動変換(入力ミス防止)
+    function normalizeNumberText(text) {
+      return text
+        .replace(/[０-９]/g, (ch) => String.fromCharCode(ch.charCodeAt(0) - 0xfee0))
+        .replace(/[．。]/g, ".")
+        .replace(/[，、,]/g, "")
+        .replace(/[ー－―‐]/g, "-")
+        .replace(/\s+/g, "");
+    }
+
+    function readNumber(inputEl) {
+      const raw = normalizeNumberText(inputEl.value);
+      if (raw === "") return { ok: false, value: NaN, reason: "empty" };
+      if (!/^-?\d*\.?\d+$/.test(raw)) return { ok: false, value: NaN, reason: "nan" };
+      const v = parseFloat(raw);
+      if (!isFinite(v)) return { ok: false, value: NaN, reason: "nan" };
+      if (v < 0) return { ok: false, value: v, reason: "negative" };
+      return { ok: true, value: v };
+    }
+
+    function setError(inputEl, message) {
+      const field = inputEl.closest(".field");
+      field.classList.add("invalid");
+      field.querySelector(".error-msg").textContent = message;
+    }
+
+    function clearError(inputEl) {
+      inputEl.closest(".field").classList.remove("invalid");
+    }
+
+    function clearAllErrors() {
+      app.querySelectorAll(".field.invalid").forEach((f) => f.classList.remove("invalid"));
+    }
+
+    function hideResults() {
+      resultBox.hidden = true;
+      warningBox.hidden = true;
+    }
+
+    function validateField(inputEl, opts) {
+      const allowZero = opts && opts.allowZero;
+      const r = readNumber(inputEl);
+      if (!r.ok) {
+        if (r.reason === "empty") setError(inputEl, "入力してください");
+        else if (r.reason === "negative") setError(inputEl, "0以上の数字を入力してください");
+        else setError(inputEl, "数字だけを入力してください");
+        return null;
+      }
+      if (!allowZero && r.value === 0) {
+        setError(inputEl, "0より大きい数字を入力してください");
+        return null;
+      }
+      clearError(inputEl);
+      return r.value;
+    }
+
+    function updateTotalDisplay() {
+      const dv = readNumber(inputs.drugVolume);
+      const il = readNumber(inputs.diluentVolume);
+      const da = readNumber(inputs.drugAmount);
+
+      if (dv.ok && il.ok && dv.value + il.value > 0) {
+        const total = dv.value + il.value;
+        totalVolumeEl.textContent = formatNumber(total, 4);
+        if (da.ok && da.value > 0) {
+          const ug = drugUnit === "mg" ? da.value * 1000 : da.value;
+          const conc = ug / total;
+          concentrationNote.textContent =
+            "濃度：1mLあたり " + formatNumber(conc, 4) + " μg（" + formatNumber(conc / 1000, 4) + " mg）";
+        } else {
+          concentrationNote.textContent = "";
+        }
+        totalBox.hidden = false;
+      } else {
+        totalBox.hidden = true;
+      }
+    }
+
+    // 有効数字ベースの表示(指数表記なし)
+    function formatNumber(value, sigDigits) {
+      if (value === 0) return "0";
+      const digits = Math.max(0, sigDigits - Math.floor(Math.log10(Math.abs(value))) - 1);
+      const capped = Math.min(digits, 10);
+      let s = value.toFixed(capped);
+      if (s.indexOf(".") >= 0) s = s.replace(/0+$/, "").replace(/\.$/, "");
+      return s;
+    }
+
+    function calculate() {
+      hideResults();
+
+      const drugAmount = validateField(inputs.drugAmount);
+      const drugVolume = validateField(inputs.drugVolume);
+      const diluentVolume = validateField(inputs.diluentVolume, { allowZero: true });
+      const weight = validateField(inputs.weight);
+
+      let rate = null;
+      let targetGamma = null;
+      if (mode === "gamma") {
+        rate = validateField(inputs.rate);
+      } else {
+        targetGamma = validateField(inputs.targetGamma);
+      }
+
+      const firstInvalid = app.querySelector(".field.invalid input");
+      if (firstInvalid) {
+        firstInvalid.focus();
+        firstInvalid.scrollIntoView({ block: "center", behavior: "smooth" });
+        return;
+      }
+
+      const drugUg = drugUnit === "mg" ? drugAmount * 1000 : drugAmount;
+      const totalVolume = drugVolume + diluentVolume;
+      const concUgPerMl = drugUg / totalVolume;
+
+      const warnings = [];
+      if (weight < 1 || weight > 250) {
+        warnings.push("⚠ 体重が " + formatNumber(weight, 4) + " kg になっています。入力ミスがないか確認してください。");
+      }
+
+      if (mode === "gamma") {
+        const gamma = (concUgPerMl * rate) / 60 / weight;
+
+        if (gamma > 50) {
+          warnings.push("⚠ 計算結果が " + formatNumber(gamma, 3) + " γ と非常に大きい値です。単位（mg/μg）や液量の入力を確認してください。");
+        }
+
+        resultBox.classList.remove("result-teal");
+        resultBox.classList.add("result-blue");
+        resultLabel.textContent = "投与量（この設定で入っている薬の量）";
+        resultNumber.textContent = formatNumber(gamma, 3);
+        resultUnit.textContent = "γ";
+        resultDetail.textContent =
+          "計算の内訳\n" +
+          "・薬液の合計：" + formatNumber(totalVolume, 4) + " mL\n" +
+          "・濃度：" + formatNumber(concUgPerMl, 4) + " μg/mL\n" +
+          "・1時間あたりの薬：" + formatNumber(concUgPerMl * rate, 4) + " μg/h\n" +
+          "・1分あたりの薬：" + formatNumber((concUgPerMl * rate) / 60, 4) + " μg/min\n" +
+          "・体重 " + formatNumber(weight, 4) + " kg で割る → " + formatNumber(gamma, 3) + " γ";
+      } else {
+        const mlPerH = (targetGamma * weight * 60) / concUgPerMl;
+
+        if (mlPerH > 999) {
+          warnings.push("⚠ 流速が " + formatNumber(mlPerH, 4) + " mL/h と非常に大きい値です。入力を確認してください。");
+        }
+        if (mlPerH > 0 && mlPerH < 0.1) {
+          warnings.push("⚠ 流速が 0.1 mL/h 未満です。多くのポンプでは設定できない場合があります。");
+        }
+
+        resultBox.classList.remove("result-blue");
+        resultBox.classList.add("result-teal");
+        resultLabel.textContent = "ポンプの設定流速";
+        resultNumber.textContent = formatNumber(mlPerH, 3);
+        resultUnit.textContent = "mL/h";
+        resultDetail.textContent =
+          "計算の内訳\n" +
+          "・薬液の合計：" + formatNumber(totalVolume, 4) + " mL\n" +
+          "・濃度：" + formatNumber(concUgPerMl, 4) + " μg/mL\n" +
+          "・必要な薬：" + formatNumber(targetGamma * weight, 4) + " μg/min（" +
+          formatNumber(targetGamma * weight * 60, 4) + " μg/h）\n" +
+          "・濃度で割る → " + formatNumber(mlPerH, 3) + " mL/h";
+      }
+
+      if (warnings.length > 0) {
+        warningBox.textContent = warnings.join("\n");
+        warningBox.hidden = false;
+      }
+      resultBox.hidden = false;
+      resultBox.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    }
+
+    function setMode(newMode) {
+      mode = newMode;
+      const isGamma = mode === "gamma";
+
+      tabGamma.classList.toggle("active", isGamma);
+      tabRate.classList.toggle("active", !isGamma);
+      tabGamma.setAttribute("aria-selected", String(isGamma));
+      tabRate.setAttribute("aria-selected", String(!isGamma));
+
+      fieldRate.hidden = !isGamma;
+      fieldTarget.hidden = isGamma;
+
+      modeBanner.classList.toggle("banner-blue", isGamma);
+      modeBanner.classList.toggle("banner-teal", !isGamma);
+      modeBannerText.textContent = isGamma
+        ? "何γ入っているか（答えの単位：γ）"
+        : "ポンプに設定する流速（答えの単位：mL/h）";
+      app.classList.toggle("mode-blue", isGamma);
+      app.classList.toggle("mode-teal", !isGamma);
+
+      hideResults();
+      clearAllErrors();
+    }
+
+    function clearAll() {
+      Object.values(inputs).forEach((el) => (el.value = ""));
+      clearAllErrors();
+      hideResults();
+      totalBox.hidden = true;
+    }
+
+    tabGamma.addEventListener("click", () => setMode("gamma"));
+    tabRate.addEventListener("click", () => setMode("rate"));
+    $("calc-btn").addEventListener("click", calculate);
+    $("clear-btn").addEventListener("click", clearAll);
+
+    app.querySelectorAll("#drug-unit-toggle .unit-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        drugUnit = btn.dataset.unit;
+        app.querySelectorAll("#drug-unit-toggle .unit-btn")
+          .forEach((b) => b.classList.toggle("active", b === btn));
+        hideResults();
+        updateTotalDisplay();
+      });
+    });
+
+    Object.values(inputs).forEach((el) => {
+      el.addEventListener("input", () => {
+        clearError(el);
+        hideResults();
+        updateTotalDisplay();
+      });
+      el.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          el.blur(); // スマホのキーボードを閉じる
+          calculate();
+        }
+      });
+    });
+  })();
+  </script>
+
+  <footer class="foot"><p>個人用ツール。計算結果は参考値です。必ずダブルチェックしてから使ってください。</p></footer>
+</main>
+</div>
+<script src="../assets/nav.js"></script>
+</body>
+</html>
