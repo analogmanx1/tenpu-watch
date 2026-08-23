@@ -464,6 +464,9 @@ def build(root: Path) -> None:
     built_at = (max(stamps) + " JST") if any(stamps) else "-"
     dates = [d["date"] for d in days]
     tools = scan_tools(docs)
+    home = load_home(root)
+    global HOME_TITLE
+    HOME_TITLE = home.get("title") or HOME_TITLE   # ヘッダー左上のロゴ名も home.json の title に合わせる
 
     (docs / "assets" / "style.css").write_text(CSS.strip() + "\n", encoding="utf-8", newline="\n")
     (docs / ".nojekyll").write_text("", encoding="utf-8", newline="\n")
@@ -524,7 +527,6 @@ def build(root: Path) -> None:
     (docs / "toolbox" / "index.html").write_text(
         layout(SITE_TITLE, render_toolbox(days, tools).replace('href="watch/', 'href="../watch/').replace('href="tools/', 'href="../tools/'),
                "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
-    home = load_home(root)
     (docs / "index.html").write_text(
         layout(home.get("title") or HOME_TITLE, render_home(home, days, tools), "", dates, None, built_at, tools, side=False),
         encoding="utf-8", newline="\n")
