@@ -465,22 +465,22 @@ def build(root: Path) -> None:
     dates = [d["date"] for d in days]
     tools = scan_tools(docs)
 
-    (docs / "assets" / "style.css").write_text(CSS.strip() + "\n", encoding="utf-8")
-    (docs / ".nojekyll").write_text("", encoding="utf-8")
+    (docs / "assets" / "style.css").write_text(CSS.strip() + "\n", encoding="utf-8", newline="\n")
+    (docs / ".nojekyll").write_text("", encoding="utf-8", newline="\n")
     # 手作りページ(tools/)用: <div id="site-nav" data-rel="../"></div> に共通ヘッダーを差し込むJS
     nav_js = ("// 自動生成: build_site.py\n"
               "(function(){var el=document.getElementById('site-nav');if(!el)return;"
               "var rel=el.getAttribute('data-rel')||'';"
               "var h=" + json.dumps(top_nav("__REL__", tools), ensure_ascii=False) + ";"
               "el.outerHTML=h.split('__REL__').join(rel);})();\n")
-    (docs / "assets" / "nav.js").write_text(nav_js, encoding="utf-8")
+    (docs / "assets" / "nav.js").write_text(nav_js, encoding="utf-8", newline="\n")
 
     search_rows = []
     arch_rows = []
     for d in days:
         body = render_day(d)
         page = layout(f"{fmt_date(d['date'])} の更新", body, "../../", dates, d["date"], built_at, tools)
-        (watch / "days" / f"{d['date']}.html").write_text(page, encoding="utf-8")
+        (watch / "days" / f"{d['date']}.html").write_text(page, encoding="utf-8", newline="\n")
         n_imp = 0
         for u in d.get("updates") or []:
             meta = u.get("meta") or {}
@@ -505,9 +505,9 @@ def build(root: Path) -> None:
     if days:
         latest = days[0]
         body = f'<p class="small">最新の記録日: {fmt_date(latest["date"])}(PMDAの掲載は通常、営業日ごと)</p>' + render_day(latest)
-        (watch / "index.html").write_text(layout(WATCH_TITLE, body, "../", dates, latest["date"], built_at, tools), encoding="utf-8")
+        (watch / "index.html").write_text(layout(WATCH_TITLE, body, "../", dates, latest["date"], built_at, tools), encoding="utf-8", newline="\n")
     else:
-        (watch / "index.html").write_text(layout(WATCH_TITLE, "<h1>まだデータがありません</h1>", "../", dates, None, built_at, tools), encoding="utf-8")
+        (watch / "index.html").write_text(layout(WATCH_TITLE, "<h1>まだデータがありません</h1>", "../", dates, None, built_at, tools), encoding="utf-8", newline="\n")
 
     rows = "".join(
         f'<tr><td><a href="days/{d}.html">{fmt_date(d)}</a></td><td>{a}</td><td>{b}</td><td>{c}</td><td>{("⚠ " + str(i)) if i else "-"}</td></tr>'
@@ -515,19 +515,19 @@ def build(root: Path) -> None:
     body = ("<h1>バックナンバー</h1>"
             '<table class="arch"><tr><th>日付</th><th>更新</th><th>新規</th><th>削除</th><th>重要項目</th></tr>'
             + rows + "</table>")
-    (watch / "archive.html").write_text(layout("バックナンバー", body, "../", dates, None, built_at, tools), encoding="utf-8")
+    (watch / "archive.html").write_text(layout("バックナンバー", body, "../", dates, None, built_at, tools), encoding="utf-8", newline="\n")
 
-    (watch / "search.json").write_text(json.dumps(search_rows, ensure_ascii=False), encoding="utf-8")
-    (watch / "search.html").write_text(layout("検索", SEARCH_JS, "../", dates, None, built_at, tools), encoding="utf-8")
+    (watch / "search.json").write_text(json.dumps(search_rows, ensure_ascii=False), encoding="utf-8", newline="\n")
+    (watch / "search.html").write_text(layout("検索", SEARCH_JS, "../", dates, None, built_at, tools), encoding="utf-8", newline="\n")
 
     (docs / "toolbox").mkdir(parents=True, exist_ok=True)
     (docs / "toolbox" / "index.html").write_text(
         layout(SITE_TITLE, render_toolbox(days, tools).replace('href="watch/', 'href="../watch/').replace('href="tools/', 'href="../tools/'),
-               "../", dates, None, built_at, tools, side=False), encoding="utf-8")
+               "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
     home = load_home(root)
     (docs / "index.html").write_text(
         layout(home.get("title") or HOME_TITLE, render_home(home, days, tools), "", dates, None, built_at, tools, side=False),
-        encoding="utf-8")
+        encoding="utf-8", newline="\n")
     print(f"site built: {len(days)} days, {len(search_rows)} entries, {len(tools)} tools -> {docs}")
 
 

@@ -364,7 +364,7 @@ class Watcher:
 
     def save_day(self, day: dict) -> None:
         self.day_path(day["date"]).write_text(
-            json.dumps(day, ensure_ascii=False, indent=1), encoding="utf-8")
+            json.dumps(day, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
 
     def load_archive(self, key: str) -> dict | None:
         p = self.arch_dir / f"{key}.json"
@@ -374,7 +374,7 @@ class Watcher:
 
     def save_archive(self, key: str, rec: dict) -> None:
         (self.arch_dir / f"{key}.json").write_text(
-            json.dumps(rec, ensure_ascii=False), encoding="utf-8")
+            json.dumps(rec, ensure_ascii=False), encoding="utf-8", newline="\n")
 
     def process_update(self, row: dict, date: str) -> dict:
         """1行(1添付文書)を処理して、サイト表示用の辞書にして返す"""
