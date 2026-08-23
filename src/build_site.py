@@ -129,18 +129,24 @@ def scan_tools(docs: Path) -> list[dict]:
 
 
 def top_nav(rel: str, tools: list[dict]) -> str:
-    """rel: docs/ ルートへの相対パス。全ページ共通のヘッダー"""
-    tool_links = "".join(f'<a href="{rel}tools/{t["file"]}">{esc(t["title"])}</a>' for t in tools)
-    tools_menu = f'<details class="menu"><summary>🧮 ツール</summary><div class="dd">{tool_links}</div></details>' if tools else ""
+    """rel: docs/ ルートへの相対パス。全ページ共通のヘッダー。
+    「💊 薬剤師ツールボックス ▾」をクリックすると中の機能がプルダウンで出る(機能が増えても横に伸びない)。
+    メニューの外をクリックすると閉じる(assets/nav.js)"""
+    tool_links = "".join(f'<a class="sub" href="{rel}tools/{t["file"]}">{esc(t["title"])}</a>' for t in tools) \
+        or '<span class="sub small">(準備中)</span>'
+    toolbox_menu = f"""<details class="menu"><summary>💊 {SITE_TITLE} ▾</summary><div class="dd">
+      <a class="head" href="{rel}toolbox/index.html">💊 {SITE_TITLE} トップ</a>
+      <a class="head" href="{rel}watch/index.html">📄 {WATCH_TITLE}</a>
+      <a class="sub" href="{rel}watch/archive.html">バックナンバー</a>
+      <a class="sub" href="{rel}watch/search.html">検索</a>
+      <a class="head" href="{rel}if/index.html">📘 {IF_TITLE}</a>
+      <span class="head">🧮 ツール</span>
+      {tool_links}
+    </div></details>"""
     return f"""<header class="top">
   <a class="brand" href="{rel}index.html">🏠 {HOME_TITLE}</a>
   <nav class="topnav">
-    <a href="{rel}toolbox/index.html">💊 {SITE_TITLE}</a>
-    <a href="{rel}watch/index.html">📄 {WATCH_TITLE}</a>
-    <a href="{rel}watch/archive.html">バックナンバー</a>
-    <a href="{rel}watch/search.html">検索</a>
-    <a href="{rel}if/index.html">📘 IF検索</a>
-    {tools_menu}
+    {toolbox_menu}
   </nav>
 </header>"""
 
@@ -177,6 +183,7 @@ def layout(title: str, body: str, rel: str, nav_days: list[str], current: str | 
 </footer>
 </main>
 </div>
+<script src="{rel}assets/nav.js"></script>
 </body>
 </html>
 """
@@ -363,7 +370,8 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .btn{font-size:.9rem;padding:.45rem .8rem;border:1px solid var(--acc);border-radius:.4rem;background:var(--bg);color:var(--acc);cursor:pointer;white-space:nowrap}.btn:hover{background:var(--card)}
 .ifa{font-weight:600;font-size:1.02rem;text-decoration:none}.ifa:hover{text-decoration:underline}.ifmulti{margin-top:.15rem}
 .menu{display:inline-block;position:relative;margin-right:.9rem}.menu summary{font-weight:400;color:var(--acc);list-style:none}.menu summary::-webkit-details-marker{display:none}
-.menu .dd{position:absolute;top:1.6rem;left:0;background:var(--bg);border:1px solid var(--line);border-radius:.4rem;padding:.4rem .8rem;min-width:12rem;box-shadow:0 4px 14px rgba(0,0,0,.12);z-index:9}.menu .dd a{display:block;margin:.2rem 0}
+.menu .dd{position:absolute;top:1.6rem;left:0;background:var(--bg);border:1px solid var(--line);border-radius:.4rem;padding:.5rem .9rem;min-width:15rem;box-shadow:0 4px 14px rgba(0,0,0,.12);z-index:9;white-space:nowrap}.menu .dd a{display:block;margin:.2rem 0}
+.menu .dd .head{display:block;margin:.45rem 0 .1rem;font-weight:600}.menu .dd span.head{color:var(--mut)}.menu .dd .sub{display:block;margin:.15rem 0 .15rem 1.2rem}.menu summary:hover{text-decoration:underline}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.8rem;margin:.6rem 0 1.2rem}
 .card{display:block;border:1px solid var(--line);border-radius:.6rem;padding:.8rem 1rem;background:var(--card);text-decoration:none;color:var(--fg)}.card:hover{border-color:var(--acc)}.card b{color:var(--acc)}.card .small{display:block;margin-top:.2rem}.card.big{padding:1.2rem 1.2rem;font-size:1.05rem}.card.big b{font-size:1.2rem}
 .calc{max-width:640px}.calc label{display:block;margin:.6rem 0 .2rem;font-weight:600}.calc input,.calc select{font-size:1rem;padding:.35rem .5rem;border:1px solid var(--line);border-radius:.4rem;background:var(--bg);color:var(--fg);width:100%;max-width:320px}
@@ -567,12 +575,16 @@ def build(root: Path) -> None:
 
     (docs / "assets" / "style.css").write_text(CSS.strip() + "\n", encoding="utf-8", newline="\n")
     (docs / ".nojekyll").write_text("", encoding="utf-8", newline="\n")
-    # 手作りページ(tools/)用: <div id="site-nav" data-rel="../"></div> に共通ヘッダーを差し込むJS
+    # 共通ヘッダー用JS: (1) 手作りページ(tools/)の <div id="site-nav" data-rel="../"></div> にヘッダーを差し込む
+    #                   (2) プルダウンメニューの外をクリックしたら閉じる(全ページ)
     nav_js = ("// 自動生成: build_site.py\n"
-              "(function(){var el=document.getElementById('site-nav');if(!el)return;"
+              "(function(){var el=document.getElementById('site-nav');if(el){"
               "var rel=el.getAttribute('data-rel')||'';"
               "var h=" + json.dumps(top_nav("__REL__", tools), ensure_ascii=False) + ";"
-              "el.outerHTML=h.split('__REL__').join(rel);})();\n")
+              "el.outerHTML=h.split('__REL__').join(rel);}"
+              "document.addEventListener('click',function(e){"
+              "document.querySelectorAll('details.menu[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open');});});"
+              "})();\n")
     (docs / "assets" / "nav.js").write_text(nav_js, encoding="utf-8", newline="\n")
 
     search_rows = []
