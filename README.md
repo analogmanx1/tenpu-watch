@@ -61,3 +61,15 @@ python src/run.py               # 本番と同じ(ページ上の全日付)
 - PMDAのページは1週間分しか無いので、自動実行が8日以上止まると取りこぼす(止まったらActionsタブを確認)
 - PMDAサーバーに負荷をかけないよう、1件ごとに少し待ち時間を入れている(1日分で数十秒〜数分)
 - 個人用。PMDA・各社の一次情報(PMDAページ/PDFリンク)を必ず確認すること
+
+## 手元で編集→公開の流れ(毎回)
+毎朝ボットが GitHub 側にコミットするので、**編集を始める前に必ず取り込む**:
+```bash
+git pull --no-rebase origin main
+```
+編集・確認(`python src/run.py --build-only`)したら:
+```bash
+git add -A && git commit -m "変更内容" && git push
+```
+docs/ の自動生成ファイルで衝突したら、`python src/run.py --build-only` で作り直して `git add -A` すればOK。
+※ Googleドライブ上のgitはまれに rebase が変になる。その時は `git rebase --abort` → `git reset --soft origin/main` → 再ビルド → commit → push で復旧
