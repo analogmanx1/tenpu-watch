@@ -1,9 +1,12 @@
-name: if-index (インタビューフォーム一覧の取り直し・手動)
+name: if-index (インタビューフォーム一覧の毎日更新)
 
-# 毎日は回さない。Actions タブ → 「if-index」 → Run workflow を押したときだけ動く。
-# PMDAの検索を薬効分類ごとに回して data/if_index.json を作り直し、サイトを再生成して公開する(数分)。
+# 毎日 00:15 JST に、PMDAの検索を薬効分類ごとに回して data/if_index.json を作り直し、サイトを再生成して公開する(数分)。
+# すぐ取り直したいときは Actions タブ → 「if-index」 → Run workflow。
+# 時刻を変えるときは下の cron を直す(UTC表記。JST−9時間。ちょうど0分はGitHubが混むので少しずらすのがコツ)。
 on:
-  workflow_dispatch: {}
+  schedule:
+    - cron: "15 15 * * *"   # 毎日 00:15 JST(= 15:15 UTC 前日)
+  workflow_dispatch: {}   # 手動実行ボタン
 
 permissions:
   contents: write

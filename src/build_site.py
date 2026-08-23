@@ -7,7 +7,7 @@ data/days/*.json から静的サイト(docs/)を生成する。
   docs/watch/days/YYYY-MM-DD.html  … 日付ごとのページ(バックナンバー)
   docs/watch/archive.html          … バックナンバー一覧
   docs/watch/search.html + search.json … 薬名・企業名・一般名で検索
-  docs/if/index.html + index.json   … インタビューフォーム検索(元データは data/if_index.json。src/if_index.py で手動更新)
+  docs/if/index.html + index.json   … インタビューフォーム検索(元データは data/if_index.json。src/if_index.py が毎日0:15に更新)
   docs/assets/style.css            … 共通デザイン
   docs/tools/*.html                … 手作りのツール(計算機など)。ここは生成対象外、読むだけ
   ※ watch/ if/ toolbox/ assets/ index.html 以外は書き換えない
@@ -438,7 +438,7 @@ def render_if_page(idx: dict | None) -> str:
 </div>
 <p class="small" id="cnt"></p>
 <div id="res"></div>
-<p class="small" id="ifmeta">{esc(note)}。一覧はPMDAの検索結果から作った写しなので、改版直後などでPDFが開かないときは「PMDA詳細」か上のボタンから最新を確認してください。</p>
+<p class="small" id="ifmeta">{esc(note)}。一覧は毎日0:15にPMDAの検索結果から作り直しています。改版直後などでPDFが開かないときは「PMDA詳細」か上のボタンから最新を確認してください。</p>
 <script>
 (async function(){{
   const IFB={json.dumps(IF_PDF_BASE)}, DB={json.dumps(IF_DETAIL_BASE)};

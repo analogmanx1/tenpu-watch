@@ -3,7 +3,7 @@
 使い方:  python src/run.py            (リポジトリ直下を対象)
          python src/run.py --days 1   (最新1日だけ。テスト用)
          python src/run.py --build-only
-         python src/run.py --build-only --if-index   (インタビューフォーム一覧をPMDAから取り直してサイト生成。数分かかる。毎日は回さない)
+         python src/run.py --build-only --if-index   (インタビューフォーム一覧をPMDAから取り直してサイト生成。数分かかる。毎日0:15の自動実行と同じ)
 """
 from __future__ import annotations
 

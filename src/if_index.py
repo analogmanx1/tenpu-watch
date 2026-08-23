@@ -11,7 +11,7 @@ data/if_index.json に保存する。(サイトの「インタビューフォー
 
 使い方:  python src/if_index.py            (リポジトリ直下の data/if_index.json を更新)
          python src/run.py --if-index       (同上 + サイト生成)
-※ 毎日は回さない(必要なときだけ手で実行する)。PMDAへのアクセスは 150〜200回程度・1秒待ちつき。
+※ 毎日 00:15 JST に GitHub Actions(if-index.yml)で自動実行。PMDAへのアクセスは 150〜200回程度・1秒待ちつき。
 """
 from __future__ import annotations
 
