@@ -1,0 +1,462 @@
+{
+ "date": "2026-08-18",
+ "updates": [
+  {
+   "brand": "1%ディプリバン注／1%ディプリバン注",
+   "company": "製造販売／サンドファーマ株式会社 / 販売／サンド株式会社",
+   "reason": "更新",
+   "packins_no": "1119402A1022_2_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1119402A1022_2_07/",
+   "fetched_at": "2026-08-23 16:58:42",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/112268_1119402A1022_2_07",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/112268_1119402A1022_2_07",
+   "meta": {
+    "packins_no": "1119402A1022_2_07",
+    "company_id": "112268",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-09",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "1%ディプリバン注",
+     "1%ディプリバン注"
+    ],
+    "generic_name": "プロポフォール注射剤",
+    "therapeutic_class": "全身麻酔・鎮静用剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "肝臓"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "1%ディプリバン注−キット／1%ディプリバ...",
+   "company": "製造販売／サンドファーマ株式会社 / 販売／サンド株式会社",
+   "reason": "更新",
+   "packins_no": "1119402G1025_2_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1119402G1025_2_07/",
+   "fetched_at": "2026-08-23 16:58:44",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/112268_1119402G1025_2_07",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/112268_1119402G1025_2_07",
+   "meta": {
+    "packins_no": "1119402G1025_2_07",
+    "company_id": "112268",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-01",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "1%ディプリバン注−キット",
+     "1%ディプリバン注−キット"
+    ],
+    "generic_name": "プロポフォール注射剤",
+    "therapeutic_class": "全身麻酔・鎮静用剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "肝臓"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リバーロキサバン錠10mg「サワイ」／リバ...",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "3339003F1032_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3339003F1032_1_04/",
+   "fetched_at": "2026-08-23 16:59:32",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_3339003F1032_1_04",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_3339003F1032_1_04",
+   "meta": {
+    "packins_no": "3339003F1032_1_04",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "リバーロキサバン錠10mg「サワイ」",
+     "リバーロキサバン錠15mg「サワイ」"
+    ],
+    "generic_name": "リバーロキサバン",
+    "therapeutic_class": "選択的直接作用型第Ⅹa因子阻害剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "リバーロキサバンOD錠10mg「サワイ」／リ...",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "3339003F3051_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3339003F3051_1_04/",
+   "fetched_at": "2026-08-23 16:59:34",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_3339003F3051_1_04",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_3339003F3051_1_04",
+   "meta": {
+    "packins_no": "3339003F3051_1_04",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "リバーロキサバンOD錠10mg「サワイ」",
+     "リバーロキサバンOD錠15mg「サワイ」"
+    ],
+    "generic_name": "リバーロキサバン",
+    "therapeutic_class": "選択的直接作用型第Ⅹa因子阻害剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "リナグリプチン錠5mg「ZE」",
+   "company": "製造販売元／全星薬品工業株式会社 / 発売元／全星薬品株式会社",
+   "reason": "新規",
+   "packins_no": "39690B3F1074_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/39690B3F1074_1_01/",
+   "fetched_at": "2026-08-23 17:00:23",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/380087_39690B3F1074_1_01",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/380087_39690B3F1074_1_01",
+   "meta": {
+    "packins_no": "39690B3F1074_1_01",
+    "company_id": "380087",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "リナグリプチン錠5mg「ZE」"
+    ],
+    "generic_name": "リナグリプチン",
+    "therapeutic_class": "胆汁排泄型選択的DPP-4阻害剤\n－2型糖尿病治療剤－"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "リナグリプチン錠5mg「ダイト」",
+   "company": "製造販売元／ダイト株式会社 / 販売元／Meファルマ株式会社 / 販売提携／Meiji Seikaファルマ株式会社",
+   "reason": "更新",
+   "packins_no": "39690B3F1066_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/39690B3F1066_1_02/",
+   "fetched_at": "2026-08-23 17:00:25",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400073_39690B3F1066_1_02",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400073_39690B3F1066_1_02",
+   "meta": {
+    "packins_no": "39690B3F1066_1_02",
+    "company_id": "400073",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "リナグリプチン錠5mg「ダイト」"
+    ],
+    "generic_name": "リナグリプチン水和物",
+    "therapeutic_class": "胆汁排泄型選択的DPP-4阻害剤 / －2型糖尿病治療剤－"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "リナグリプチン錠5mg「ダイト」",
+   "company": "製造販売元／ダイト株式会社 / 販売元／共創未来ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "39690B3F1066_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/39690B3F1066_2_02/",
+   "fetched_at": "2026-08-23 17:00:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400073_39690B3F1066_2_02",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400073_39690B3F1066_2_02",
+   "meta": {
+    "packins_no": "39690B3F1066_2_02",
+    "company_id": "400073",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "リナグリプチン錠5mg「ダイト」"
+    ],
+    "generic_name": "リナグリプチン水和物",
+    "therapeutic_class": "胆汁排泄型選択的DPP-4阻害剤 / －2型糖尿病治療剤－"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "リナグリプチン錠5mg「ダイト」",
+   "company": "製造販売元／ダイト株式会社 / 販売元／第一三共エスファ株式会社 / 販売提携／第一三共株式会社",
+   "reason": "更新",
+   "packins_no": "39690B3F1066_3_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/39690B3F1066_3_02/",
+   "fetched_at": "2026-08-23 17:01:15",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400073_39690B3F1066_3_02",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400073_39690B3F1066_3_02",
+   "meta": {
+    "packins_no": "39690B3F1066_3_02",
+    "company_id": "400073",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "リナグリプチン錠5mg「ダイト」"
+    ],
+    "generic_name": "リナグリプチン水和物",
+    "therapeutic_class": "胆汁排泄型選択的DPP-4阻害剤 / －2型糖尿病治療剤－"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "リナグリプチン錠5mg「ダイト」",
+   "company": "製造販売元／ダイト株式会社 / 販売元／株式会社フェルゼンファーマ",
+   "reason": "更新",
+   "packins_no": "39690B3F1066_4_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/39690B3F1066_4_02/",
+   "fetched_at": "2026-08-23 17:01:40",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400073_39690B3F1066_4_02",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400073_39690B3F1066_4_02",
+   "meta": {
+    "packins_no": "39690B3F1066_4_02",
+    "company_id": "400073",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "リナグリプチン錠5mg「ダイト」"
+    ],
+    "generic_name": "リナグリプチン水和物",
+    "therapeutic_class": "胆汁排泄型選択的DPP-4阻害剤 / －2型糖尿病治療剤－"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "リバーロキサバンOD錠10mg「トーワ」／リ...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "3339003F3060_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3339003F3060_1_04/",
+   "fetched_at": "2026-08-23 17:02:06",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_3339003F3060_1_04",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_3339003F3060_1_04",
+   "meta": {
+    "packins_no": "3339003F3060_1_04",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "リバーロキサバンOD錠10mg「トーワ」",
+     "リバーロキサバンOD錠15mg「トーワ」"
+    ],
+    "generic_name": "リバーロキサバン口腔内崩壊錠",
+    "therapeutic_class": "選択的直接作用型第Ⅹa因子阻害剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "セトロタイド注射用0.25mg",
+   "company": "製造販売元／日本化薬株式会社 / 販売元／メルクバイオファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2499421D1023_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499421D1023_1_04/",
+   "fetched_at": "2026-08-23 17:02:56",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530191_2499421D1023_1_04",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530191_2499421D1023_1_04",
+   "meta": {
+    "packins_no": "2499421D1023_1_04",
+    "company_id": "530191",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-01",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "セトロタイド注射用0.25mg"
+    ],
+    "generic_name": "セトロレリクス酢酸塩",
+    "therapeutic_class": "GnRHアンタゴニスト製剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "リナグリプチンOD錠5mg「JG」",
+   "company": "製造販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "39690B3F2038_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/39690B3F2038_1_02/",
+   "fetched_at": "2026-08-23 17:02:58",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580591_39690B3F2038_1_02",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580591_39690B3F2038_1_02",
+   "meta": {
+    "packins_no": "39690B3F2038_1_02",
+    "company_id": "580591",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "リナグリプチンOD錠5mg「JG」"
+    ],
+    "generic_name": "リナグリプチン口腔内崩壊錠",
+    "therapeutic_class": "胆汁排泄型選択的DPP-4阻害剤\n-2型糖尿病治療剤-"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ヴァイトラックビカプセル25mg／ヴァイト...",
+   "company": "製造販売元／バイエル薬品株式会社",
+   "reason": "更新",
+   "packins_no": "4291071M1029_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291071M1029_1_11/",
+   "fetched_at": "2026-08-23 17:03:00",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/630004_4291071M1029_1_11",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/630004_4291071M1029_1_11",
+   "meta": {
+    "packins_no": "4291071M1029_1_11",
+    "company_id": "630004",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第11版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第10版"
+     }
+    },
+    "brands": [
+     "ヴァイトラックビカプセル25mg",
+     "ヴァイトラックビカプセル100mg",
+     "ヴァイトラックビ内用液20mg/mL"
+    ],
+    "generic_name": "ラロトレクチニブ硫酸塩",
+    "therapeutic_class": "抗悪性腫瘍剤/トロポミオシン受容体キナーゼ阻害剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "48ヵ月"
+    },
+    {
+     "path": [],
+     "text": "48ヵ月"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "メソトレキセート注射液50mg/2mL",
+   "company": "製造販売元／ファイザー株式会社",
+   "reason": "新規",
+   "packins_no": "42224A0A2028_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/42224A0A2028_1_01/",
+   "fetched_at": "2026-08-23 17:03:02",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_42224A0A2028_1_01",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_42224A0A2028_1_01",
+   "meta": {
+    "packins_no": "42224A0A2028_1_01",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "メソトレキセート注射液50mg/2mL"
+    ],
+    "generic_name": "メトトレキサート",
+    "therapeutic_class": "葉酸代謝拮抗剤"
+   },
+   "revised": [],
+   "diff": null
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-08-23 16:58:42",
+ "updated_at": "2026-08-23 17:03:27",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

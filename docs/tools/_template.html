@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<!-- ▼ title と description が、トップページのカードとメニューに自動で載ります -->
+<title>（ツール名をここに） | 薬剤師ツールボックス</title>
+<meta name="description" content="（このツールの一言説明をここに）">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<!-- 共通ヘッダー(自動差し込み。触らなくてOK) -->
+<div id="site-nav" data-rel="../"></div>
+<div class="wrap">
+<main class="main calc">
+  <h1>（ツール名）</h1>
+  <p class="small">（使い方や注意書き）</p>
+
+  <!-- ▼ ここから自由に作る。例: -->
+  <label for="a">入力A</label>
+  <input id="a" type="number" inputmode="decimal" placeholder="例: 100">
+  <label for="b">入力B</label>
+  <input id="b" type="number" inputmode="decimal" placeholder="例: 2">
+  <div class="result" id="out">結果はここに表示</div>
+
+  <script>
+  (function(){
+    const $=id=>document.getElementById(id);
+    function calc(){
+      const a=parseFloat($('a').value), b=parseFloat($('b').value);
+      if(isNaN(a)||isNaN(b)){$('out').textContent='数値を入力してください';return;}
+      $('out').innerHTML='A ÷ B = <b>'+(a/b).toFixed(2)+'</b>';
+    }
+    ['a','b'].forEach(id=>$(id).addEventListener('input',calc));
+  })();
+  </script>
+  <!-- ▲ ここまで -->
+
+  <footer class="foot"><p>個人用ツール。計算結果は参考値です。</p></footer>
+</main>
+</div>
+<script src="../assets/nav.js"></script>
+</body>
+</html>

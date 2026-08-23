@@ -1,0 +1,460 @@
+{
+ "date": "2026-08-20",
+ "updates": [
+  {
+   "brand": "ブロナンセリン錠2mg「DSPB」／ブロナンセ...",
+   "company": "製造販売元／住友ファーマプロモ株式会社 / 販売元／住友ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "1179048B1033_1_15",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179048B1033_1_15/",
+   "fetched_at": "2026-08-23 17:09:07",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/370242_1179048B1033_1_15",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/370242_1179048B1033_1_15",
+   "meta": {
+    "packins_no": "1179048B1033_1_15",
+    "company_id": "370242",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第13版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第12版"
+     }
+    },
+    "brands": [
+     "ブロナンセリン錠2mg「DSPB」",
+     "ブロナンセリン錠4mg「DSPB」",
+     "ブロナンセリン錠8mg「DSPB」",
+     "ブロナンセリン散2％「DSPB」"
+    ],
+    "generic_name": "ブロナンセリン",
+    "therapeutic_class": "抗精神病剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "ブロナンセリン錠"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "ブロナンセリン錠"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "ブロナンセリン錠"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "ブロナンセリン散"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中日局ブロナンセリン"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中日局ブロナンセリン"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中日局ブロナンセリン"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1g中日局ブロナンセリン"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "2-(4-Ethylpiperazin-1-yl)-4-(4-fluorophenyl)-5,6,7,8,9,10-hexahydrocycloocta[b]pyridine"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "白色の結晶又は結晶性の粉末である。メタノール又はエタノール(99.5)にやや溶けにくく、水にほとんど溶けない。"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": ""
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "キネレット皮下注100mgシリンジ",
+   "company": "製造販売元／Swedish Orphan Biovitrum Japan株式会社",
+   "reason": "更新",
+   "packins_no": "3999479G1026_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999479G1026_1_01/",
+   "fetched_at": "2026-08-23 17:09:09",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/371336_3999479G1026_1_01",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/371336_3999479G1026_1_01",
+   "meta": {
+    "packins_no": "3999479G1026_1_01",
+    "company_id": "371336",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "キネレット皮下注100mgシリンジ"
+    ],
+    "generic_name": "アナキンラ（遺伝子組換え）",
+    "therapeutic_class": "インターロイキン1（IL-1）受容体拮抗薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "２５.保険給付上の注意"
+     ],
+     "text": "本剤は新医薬品であるため、厚生労働省告示第107号（平成18年3月6日付）に基づき、2027年8月末日までは、投薬は1回14日分を限度とされている。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ウステキヌマブBS点滴静注130mg「CT」",
+   "company": "製造販売元／セルトリオン・ヘルスケア・ジャパン株式会社",
+   "reason": "更新",
+   "packins_no": "3999475A1025_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999475A1025_1_01/",
+   "fetched_at": "2026-08-23 17:09:11",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/381103_3999475A1025_1_01",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/381103_3999475A1025_1_01",
+   "meta": {
+    "packins_no": "3999475A1025_1_01",
+    "company_id": "381103",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ウステキヌマブBS点滴静注130mg「CT」"
+    ],
+    "generic_name": "ウステキヌマブ（遺伝子組換え）［ウステキヌマブ後続3］製剤",
+    "therapeutic_class": "ヒト型抗ヒトIL-12/23p40モノクローナル抗体製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "48ヵ月"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ルーラン錠4mg／ルーラン錠8mg／ルーラン...",
+   "company": "製造販売元／住友ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "1179043F1032_2_27",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179043F1032_2_27/",
+   "fetched_at": "2026-08-23 17:09:13",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400093_1179043F1032_2_27",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400093_1179043F1032_2_27",
+   "meta": {
+    "packins_no": "1179043F1032_2_27",
+    "company_id": "400093",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "ルーラン錠4mg",
+     "ルーラン錠8mg",
+     "ルーラン錠16mg"
+    ],
+    "generic_name": "ペロスピロン塩酸塩",
+    "therapeutic_class": "抗精神病剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "ペロスピロン塩酸塩錠"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "ペロスピロン塩酸塩錠"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "ペロスピロン塩酸塩錠"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中日局ペロスピロン塩酸塩水和物"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中日局ペロスピロン塩酸塩水和物"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中日局ペロスピロン塩酸塩水和物"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "(3aR,7aS)-2-{4-[4-(1,2-Benzothiazol-3-yl)piperazin-1-yl]butyl}hexahydro-1H-isoindole-1,3(2H)-dione monohydrochloride dihydrate"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "白色の結晶又は結晶性の粉末である。メタノールにやや溶けやすく、水又はエタノール(99.5)に溶けにくい。"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": ""
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リバーロキサバンOD錠10mg「TCK」／リバー...",
+   "company": "製造販売元／辰巳化学株式会社",
+   "reason": "更新",
+   "packins_no": "3339003F3043_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3339003F3043_1_04/",
+   "fetched_at": "2026-08-23 17:09:15",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400278_3339003F3043_1_04",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400278_3339003F3043_1_04",
+   "meta": {
+    "packins_no": "3339003F3043_1_04",
+    "company_id": "400278",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "リバーロキサバンOD錠10mg「TCK」",
+     "リバーロキサバンOD錠15mg「TCK」"
+    ],
+    "generic_name": "リバーロキサバン口腔内崩壊錠",
+    "therapeutic_class": "選択的直接作用型第Xa因子阻害剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "リバーロキサバンOD錠10mg「TCK」／リバー...",
+   "company": "製造販売元／辰巳化学株式会社 / 販売元／日本ケミファ株式会社",
+   "reason": "更新",
+   "packins_no": "3339003F3043_2_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3339003F3043_2_04/",
+   "fetched_at": "2026-08-23 17:09:18",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400278_3339003F3043_2_04",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400278_3339003F3043_2_04",
+   "meta": {
+    "packins_no": "3339003F3043_2_04",
+    "company_id": "400278",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "リバーロキサバンOD錠10mg「TCK」",
+     "リバーロキサバンOD錠15mg「TCK」"
+    ],
+    "generic_name": "リバーロキサバン口腔内崩壊錠",
+    "therapeutic_class": "選択的直接作用型第Xa因子阻害剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "リバーロキサバンOD錠10mg「TCK」／リバー...",
+   "company": "製造販売元／辰巳化学株式会社 / 販売元／株式会社フェルゼンファーマ",
+   "reason": "更新",
+   "packins_no": "3339003F3043_3_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3339003F3043_3_04/",
+   "fetched_at": "2026-08-23 17:09:20",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400278_3339003F3043_3_04",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400278_3339003F3043_3_04",
+   "meta": {
+    "packins_no": "3339003F3043_3_04",
+    "company_id": "400278",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "リバーロキサバンOD錠10mg「TCK」",
+     "リバーロキサバンOD錠15mg「TCK」"
+    ],
+    "generic_name": "リバーロキサバン口腔内崩壊錠",
+    "therapeutic_class": "選択的直接作用型第Xa因子阻害剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "シタグリプチン錠12.5mg「JG」／シタグリプ...",
+   "company": "製造販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "39690B2F1061_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/39690B2F1061_1_02/",
+   "fetched_at": "2026-08-23 17:09:23",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580591_39690B2F1061_1_02",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580591_39690B2F1061_1_02",
+   "meta": {
+    "packins_no": "39690B2F1061_1_02",
+    "company_id": "580591",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "シタグリプチン錠12.5mg「JG」",
+     "シタグリプチン錠25mg「JG」",
+     "シタグリプチン錠50mg「JG」",
+     "シタグリプチン錠100mg「JG」"
+    ],
+    "generic_name": "シタグリプチンリン酸塩錠",
+    "therapeutic_class": "選択的DPP-4阻害剤 / 糖尿病用剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "デノスマブBS皮下注120mgRM「F」",
+   "company": "製造販売元／富士製薬工業株式会社",
+   "reason": "更新",
+   "packins_no": "3999478A1029_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999478A1029_1_02/",
+   "fetched_at": "2026-08-23 17:09:48",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670109_3999478A1029_1_02",
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670109_3999478A1029_1_02",
+   "meta": {
+    "packins_no": "3999478A1029_1_02",
+    "company_id": "670109",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-01",
+      "ver": null
+     }
+    },
+    "brands": [
+     "デノスマブBS皮下注120mgRM「F」"
+    ],
+    "generic_name": "デノスマブ（遺伝子組換え）［デノスマブ後続1］",
+    "therapeutic_class": "ヒト型抗RANKLモノクローナル抗体製剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": ""
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "ビカルタミド錠80mg「NP」／ビカルタミドOD錠80mg「ニプロ」",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "ビカルタミド錠80mg「NP」を販売中止し、経過措置満了、最終製造ロットの使用期限を経過した。",
+   "yj_hint": "4291009F1080_3_07"
+  }
+ ],
+ "created_at": "2026-08-23 17:09:07",
+ "updated_at": "2026-08-23 17:11:01",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

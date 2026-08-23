@@ -1,0 +1,59 @@
+name: daily-pmda-watch
+
+on:
+  schedule:
+    # 毎日 07:00 JST(= 22:00 UTC 前日)。GitHubの都合で数分〜数十分遅れることあり
+    - cron: "0 22 * * *"
+  workflow_dispatch: {}   # 手動実行ボタン
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pmda-watch
+  cancel-in-progress: false
+
+jobs:
+  fetch-and-build:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Tokyo
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 取得 → 保存 → サイト生成
+        run: python src/run.py
+
+      - name: 変更をコミット
+        run: |
+          git config user.name "pmda-watch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A data archive docs
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "auto: $(date +'%Y-%m-%d %H:%M') JST 更新取り込み"
+            git push
+          fi
+
+      - name: Pages用にアップロード
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: fetch-and-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>検索 | 薬剤師ツールボックス</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../index.html">💊 薬剤師ツールボックス</a>
+  <nav class="topnav">
+    <a href="../watch/index.html">📄 添付文書ウォッチ</a>
+    <a href="../watch/archive.html">バックナンバー</a>
+    <a href="../watch/search.html">検索</a>
+    
+  </nav>
+</header>
+<div class="wrap">
+<aside class="side">
+  <h4>最近の日付</h4>
+  <ul class="daylist"><li><a href="../watch/days/2026-08-21.html">2026年8月21日(金)</a></li><li><a href="../watch/days/2026-08-20.html">2026年8月20日(木)</a></li><li><a href="../watch/days/2026-08-19.html">2026年8月19日(水)</a></li><li><a href="../watch/days/2026-08-18.html">2026年8月18日(火)</a></li><li><a href="../watch/days/2026-08-17.html">2026年8月17日(月)</a></li></ul>
+  <p class="small"><a href="../watch/archive.html">すべて見る →</a> ｜ <a href="https://www.info.pmda.go.jp/downfiles/ph/1week.html" target="_blank" rel="noopener">PMDA元ページ ↗</a></p>
+</aside>
+<main class="main">
+
+<h1>検索</h1>
+<p class="small">販売名・一般名・企業名・改訂された項目名で絞り込めます(記録済みの全日付が対象)。</p>
+<input id="q" type="search" placeholder="例: アリピプラゾール / 禁忌 / MSD" autofocus>
+<p class="small" id="cnt"></p>
+<div id="res"></div>
+<script>
+(async function(){
+  const data = await (await fetch('search.json')).json();
+  const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt');
+  const norm=s=>(s||'').toString().normalize('NFKC').toLowerCase();
+  function run(){
+    const kw=norm(q.value).trim().split(/\s+/).filter(Boolean);
+    let hits=data;
+    if(kw.length){hits=data.filter(e=>{const h=norm(e.t+' '+e.g+' '+e.c+' '+e.p);return kw.every(k=>h.includes(k));});}
+    hits=hits.slice(0,300);
+    cnt.textContent=kw.length?`${hits.length}件(最大300件表示)`:`全${data.length}件`;
+    res.innerHTML=hits.map(e=>`<div class="hit"><a href="days/${e.d}.html#${e.k}">${e.d}</a> <span class="badge ${e.r==='更新'?'upd':e.r==='新規'?'new':'oth'}">${e.r}</span> <b>${esc(e.t)}</b>${e.i?' <span class="impmark">⚠</span>':''}<br><span class="small">${esc(e.g)} ｜ ${esc(e.c)}${e.p?' ｜ 改訂: '+esc(e.p):''}</span></div>`).join('');
+  }
+  function esc(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+  q.addEventListener('input',run);
+  if(location.hash){q.value=decodeURIComponent(location.hash.slice(1));}
+  run();
+})();
+</script>
+
+<footer class="foot">
+  <p>出典: PMDA「過去1週間以内に更新された添付文書情報」および各添付文書XML。本サイトは個人用の自動生成ページです。最終生成: 2026-08-23 17:14 JST</p>
+</footer>
+</main>
+</div>
+</body>
+</html>
