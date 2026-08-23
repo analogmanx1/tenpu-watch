@@ -164,7 +164,7 @@ def layout(title: str, body: str, rel: str, nav_days: list[str], current: str | 
 <main class="main">
 {body}
 <footer class="foot">
-  <p>個人用サイト。添付文書ウォッチの出典: PMDA「過去1週間以内に更新された添付文書情報」および各添付文書XML。最終生成: {esc(built_at)}</p>
+  <p>個人用サイト。添付文書ウォッチの出典: PMDA「過去1週間以内に更新された添付文書情報」および各添付文書XML。データ最終更新: {esc(built_at)}</p>
 </footer>
 </main>
 </div>
@@ -457,9 +457,11 @@ def build(root: Path) -> None:
     (watch / "days").mkdir(parents=True, exist_ok=True)
     (docs / "assets").mkdir(parents=True, exist_ok=True)
     (docs / "tools").mkdir(parents=True, exist_ok=True)
-    built_at = datetime.now(JST).strftime("%Y-%m-%d %H:%M JST")
     files = sorted(days_dir.glob("*.json"), reverse=True)
     days = [json.loads(f.read_text(encoding="utf-8")) for f in files]
+    # 「最終生成」は実行時刻ではなくデータの最終更新時刻にする(中身が同じなら出力も同じ→無駄なコミットが出ない)
+    stamps = [d.get("updated_at") or d.get("created_at") or "" for d in days]
+    built_at = (max(stamps) + " JST") if any(stamps) else "-"
     dates = [d["date"] for d in days]
     tools = scan_tools(docs)
 
