@@ -14,7 +14,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pmda-watch          # 毎朝の daily と同じグループ(同時にコミットしてぶつからないように)
+  group: pmda-watch          # daily と同じグループ(同時にコミットしてぶつからないように)
   cancel-in-progress: false
 
 jobs:
