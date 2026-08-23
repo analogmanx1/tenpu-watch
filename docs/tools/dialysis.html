@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<!-- ▼ title と description が、トップページのカードとメニューに自動で載ります -->
+<title>血液透析による薬物除去率 | 薬剤師ツールボックス</title>
+<meta name="description" content="分子量・蛋白結合率・尿中未変化体排泄率・分布容積から、血液透析での薬物除去率(%)を推定(Murakami M, et al. Blood Purif 2021 の回帰式)">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.formula{background:#fff9d6;border:1px solid #e8dc9a;border-radius:.5rem;padding:.7rem 1rem;margin:.6rem 0 1rem;font-size:.95rem;line-height:1.7;color:#333}
+@media (prefers-color-scheme:dark){.formula{background:#3a3512;border-color:#6b6225;color:#f0ebc8}}
+.formula b{font-size:1rem}
+.row{display:flex;align-items:center;gap:.5rem;max-width:420px}
+.row input{flex:1;min-width:0}
+.row .unit{flex:0 0 auto;min-width:3.2rem;color:var(--mut);font-size:.9rem}
+.calc .hint{font-size:.8rem;color:var(--mut);margin:.1rem 0 0}
+.calc .hint.err{color:var(--imp);font-weight:600}
+.calc input.bad{border-color:var(--imp);background:var(--del)}
+.bigres{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap}
+.bigres .val{font-size:2.2rem;font-weight:700;color:var(--acc)}
+.bigres .val.na{color:var(--mut);font-size:1.3rem}
+.bigres .pct{font-size:1.3rem;font-weight:700}
+.note{background:var(--card);border-left:4px solid #a06a00;border-radius:.3rem;padding:.5rem .8rem;margin:.6rem 0;font-size:.9rem}
+table.br{border-collapse:collapse;font-size:.9rem;margin:.4rem 0}
+table.br td{padding:.2rem .6rem;border-bottom:1px solid var(--line)}table.br td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.btnrow{margin:.8rem 0 .2rem}
+.disc{color:var(--imp);font-size:.88rem}
+</style>
+</head>
+<body>
+<!-- 共通ヘッダー(自動差し込み。触らなくてOK) -->
+<div id="site-nav" data-rel="../"></div>
+<div class="wrap">
+<main class="main calc">
+  <h1>血液透析による薬物除去率の計算</h1>
+  <p class="small">薬物の動態パラメータ4つから、血液透析でどれくらい除去されるか(%)を推定します。
+  式は Murakami M, et al. <i>Blood Purif</i> 2021 の回帰式(log は常用対数)。</p>
+
+  <div class="formula">
+    <b>血液透析による薬物除去率(%) ＝</b><br>
+    　−17.32 × [log<sub>10</sub> 分子量] − 0.39 × [蛋白結合率(%)] ＋ 0.06 × [尿中未変化体排泄率(%) ÷ 分布容積(L/kg)] ＋ 83.34
+  </div>
+
+  <label for="mw">分子量</label>
+  <div class="row"><input id="mw" inputmode="decimal" autocomplete="off" placeholder="例: 300"><span class="unit">Da</span></div>
+  <p class="hint" id="h-mw"></p>
+
+  <label for="pb">蛋白結合率</label>
+  <div class="row"><input id="pb" inputmode="decimal" autocomplete="off" placeholder="例: 50"><span class="unit">%</span></div>
+  <p class="hint" id="h-pb"></p>
+
+  <label for="ue">尿中未変化体排泄率</label>
+  <div class="row"><input id="ue" inputmode="decimal" autocomplete="off" placeholder="例: 30"><span class="unit">%</span></div>
+  <p class="hint" id="h-ue"></p>
+
+  <label for="vd">分布容積</label>
+  <div class="row"><input id="vd" inputmode="decimal" autocomplete="off" placeholder="例: 0.7"><span class="unit">L/kg</span></div>
+  <p class="hint" id="h-vd"></p>
+
+  <div class="btnrow"><button type="button" class="btn" id="reset">リセット</button></div>
+
+  <div class="result">
+    <div class="small">血液透析による薬物除去率(推定)</div>
+    <div class="bigres"><span class="val na" id="val">4つの値を入力すると自動で計算します</span><span class="pct" id="pct" hidden>%</span></div>
+    <div class="note" id="note" hidden></div>
+    <details id="brk" hidden><summary>計算の内訳</summary>
+      <table class="br">
+        <tr><td>分子量の項: −17.32 × log<sub>10</sub>(<span id="b-mw"></span>)</td><td id="t1"></td></tr>
+        <tr><td>蛋白結合の項: −0.39 × <span id="b-pb"></span></td><td id="t2"></td></tr>
+        <tr><td>排泄率÷分布容積の項: 0.06 × (<span id="b-ue"></span> ÷ <span id="b-vd"></span>)</td><td id="t3"></td></tr>
+        <tr><td>定数</td><td>+83.34</td></tr>
+        <tr><td><b>合計</b></td><td id="t4"><b></b></td></tr>
+      </table>
+    </details>
+  </div>
+
+  <h2>使うときの注意</h2>
+  <p class="disc">・この式は論文(Blood Purif 2021)の回帰式で、日本の通常の血液透析条件のデータから作られたものです。パラメータ(分子量・蛋白結合率・尿中未変化体排泄率・分布容積)が正確でないと当てになりません。特殊な透析膜・特殊な薬物・CHDFなどには向きません。<br>
+  ・回帰式なので、0%未満や100%超の値が出ることがあります。その場合は「ほぼ除去されない／かなり除去される」という方向の目安として読み、数値そのものを使わないでください。<br>
+  ・結果は参考値です。投与設計は添付文書・インタビューフォーム・成書(透析患者への投薬ガイドブック等)で必ず確認を。</p>
+  <p class="small">参考: 同じ式の計算機が <a href="https://hirata.softsync.jp/dialysis_calc/" target="_blank" rel="noopener">平田純生先生のサイト ↗</a> にあります(この式の出典サイト)。</p>
+
+  <script>
+  (function(){
+    const $=id=>document.getElementById(id);
+    const ids=['mw','pb','ue','vd'];
+    // 全角→半角の自動変換(入力ミス防止)
+    function norm(s){return s.replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xfee0)).replace(/[．。]/g,'.').replace(/[，、,]/g,'').replace(/\s+/g,'');}
+    function read(id){
+      const raw=norm($(id).value);
+      if(raw==='') return {st:'empty'};
+      if(!/^\d*\.?\d+$/.test(raw)) return {st:'nan'};
+      const v=parseFloat(raw);
+      if(!isFinite(v)) return {st:'nan'};
+      return {st:'ok',v:v};
+    }
+    function fmt(v,d){return (Math.round(v*Math.pow(10,d))/Math.pow(10,d)).toFixed(d);}
+    function hint(id,msg,err){const h=$('h-'+id);h.textContent=msg||'';h.classList.toggle('err',!!err);$(id).classList.toggle('bad',!!err);}
+    function calc(){
+      const r={};let ok=true;
+      ids.forEach(id=>{r[id]=read(id);});
+      // 入力チェック(空欄は黙っておく。変な値だけ赤で教える)
+      ids.forEach(id=>{
+        const x=r[id];
+        if(x.st==='empty'){hint(id,'');ok=false;return;}
+        if(x.st==='nan'){hint(id,'数字だけを入力してください',true);ok=false;return;}
+        if((id==='mw'||id==='vd')&&x.v<=0){hint(id,'0より大きい数字を入力してください',true);ok=false;return;}
+        if((id==='pb'||id==='ue')&&x.v>100){hint(id,'100%を超えています。入力を確認してください',true);ok=false;return;}
+        hint(id,'');
+      });
+      const val=$('val'),pct=$('pct'),note=$('note'),brk=$('brk');
+      if(!ok){val.textContent='4つの値を入力すると自動で計算します';val.classList.add('na');pct.hidden=true;note.hidden=true;brk.hidden=true;return;}
+      const mw=r.mw.v,pb=r.pb.v,ue=r.ue.v,vd=r.vd.v;
+      const t1=-17.32*Math.log10(mw), t2=-0.39*pb, t3=0.06*(ue/vd);
+      const res=t1+t2+t3+83.34;
+      val.textContent=fmt(res,2);val.classList.remove('na');pct.hidden=false;
+      $('b-mw').textContent=mw;$('b-pb').textContent=pb;$('b-ue').textContent=ue;$('b-vd').textContent=vd;
+      $('t1').textContent=(t1<0?'':'+')+fmt(t1,2);$('t2').textContent=(t2<0?'':'+')+fmt(t2,2);$('t3').textContent='+'+fmt(t3,2);
+      $('t4').innerHTML='<b>'+fmt(res,2)+'</b>';
+      brk.hidden=false;
+      const msgs=[];
+      if(res<0) msgs.push('⚠ 0%未満になりました。式の性質上こうなることがあります。「透析ではほとんど除去されない」という方向の目安として読んでください。');
+      if(res>100) msgs.push('⚠ 100%を超えました。式の性質上こうなることがあります。「透析でかなり除去される」という方向の目安として読んでください。');
+      if(msgs.length){note.textContent=msgs.join('\n');note.hidden=false;}else{note.hidden=true;}
+    }
+    ids.forEach(id=>{
+      $(id).addEventListener('input',calc);
+      $(id).addEventListener('keydown',e=>{if(e.key==='Enter'){e.target.blur();calc();}});
+    });
+    $('reset').addEventListener('click',()=>{ids.forEach(id=>{$(id).value='';hint(id,'');});calc();$('mw').focus();});
+  })();
+  </script>
+
+  <footer class="foot"><p>個人用ツール。計算結果は参考値です。必ず一次情報で確認してください。</p></footer>
+</main>
+</div>
+<script src="../assets/nav.js"></script>
+</body>
+</html>
