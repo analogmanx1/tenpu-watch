@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 """
 data/days/*.json から静的サイト(docs/)を生成する。
-  docs/index.html                  … ポータルトップ(最新の更新まとめ + ツール一覧)
+  docs/index.html                  … トップ(入口)。site/home.json の項目をカードで並べる
+  docs/toolbox/index.html          … 薬剤師ツールボックス(最新の更新まとめ + ツール一覧)
   docs/watch/index.html            … 添付文書ウォッチ: 最新日
   docs/watch/days/YYYY-MM-DD.html  … 日付ごとのページ(バックナンバー)
   docs/watch/archive.html          … バックナンバー一覧
   docs/watch/search.html + search.json … 薬名・企業名・一般名で検索
   docs/assets/style.css            … 共通デザイン
   docs/tools/*.html                … 手作りのツール(計算機など)。ここは生成対象外、読むだけ
-  ※ watch/ と assets/ と index.html 以外は書き換えない
+  ※ watch/ toolbox/ assets/ index.html 以外は書き換えない
 """
 from __future__ import annotations
 
@@ -22,8 +23,31 @@ from pathlib import Path
 
 JST = timezone(timedelta(hours=9))
 WEEK_URL = "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
-SITE_TITLE = "薬剤師ツールボックス"  # サイト名(ここを変えれば全ページに反映)
+HOME_TITLE = "ホーム"                 # トップ(入口)ページの名前。site/home.json の title で上書き可
+SITE_TITLE = "薬剤師ツールボックス"  # 薬剤師ツールボックス(添付文書ウォッチ+ツール)の名前
 WATCH_TITLE = "添付文書ウォッチ"
+
+# トップページに並べる項目の既定値(site/home.json があればそちらを使う)
+DEFAULT_HOME = {
+    "title": HOME_TITLE,
+    "lead": "ここから各機能へ。",
+    "sections": [
+        {"emoji": "💊", "title": SITE_TITLE, "desc": "添付文書ウォッチ・各種計算ツール",
+         "href": "toolbox/index.html", "live": "toolbox"},
+    ],
+}
+
+
+def load_home(root: Path) -> dict:
+    """site/home.json(トップページの項目一覧)を読む。無ければ既定値"""
+    f = root / "site" / "home.json"
+    cfg = dict(DEFAULT_HOME)
+    if f.exists():
+        try:
+            cfg.update(json.loads(f.read_text(encoding="utf-8")))
+        except Exception as e:  # noqa: BLE001
+            print(f"!! site/home.json を読めませんでした({e})。既定値で生成します")
+    return cfg
 
 # 重要とみなす項目(見出しにこれらを含む改訂はマークする)
 IMPORTANT_KEYS = ["警告", "禁忌", "効能", "用法", "重要な基本的注意", "特定の背景",
@@ -101,9 +125,10 @@ def top_nav(rel: str, tools: list[dict]) -> str:
     tool_links = "".join(f'<a href="{rel}tools/{t["file"]}">{esc(t["title"])}</a>' for t in tools)
     tools_menu = f'<details class="menu"><summary>🧮 ツール</summary><div class="dd">{tool_links}</div></details>' if tools else ""
     return f"""<header class="top">
-  <a class="brand" href="{rel}index.html">💊 {SITE_TITLE}</a>
+  <a class="brand" href="{rel}index.html">🏠 {HOME_TITLE}</a>
   <nav class="topnav">
-    <a href="{rel}watch/index.html">📄 添付文書ウォッチ</a>
+    <a href="{rel}toolbox/index.html">💊 {SITE_TITLE}</a>
+    <a href="{rel}watch/index.html">📄 {WATCH_TITLE}</a>
     <a href="{rel}watch/archive.html">バックナンバー</a>
     <a href="{rel}watch/search.html">検索</a>
     {tools_menu}
@@ -129,7 +154,7 @@ def layout(title: str, body: str, rel: str, nav_days: list[str], current: str | 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>{esc(title)} | {SITE_TITLE}</title>
+<title>{esc(title)}</title>
 <link rel="stylesheet" href="{rel}assets/style.css">
 </head>
 <body>
@@ -139,7 +164,7 @@ def layout(title: str, body: str, rel: str, nav_days: list[str], current: str | 
 <main class="main">
 {body}
 <footer class="foot">
-  <p>出典: PMDA「過去1週間以内に更新された添付文書情報」および各添付文書XML。本サイトは個人用の自動生成ページです。最終生成: {esc(built_at)}</p>
+  <p>個人用サイト。添付文書ウォッチの出典: PMDA「過去1週間以内に更新された添付文書情報」および各添付文書XML。最終生成: {esc(built_at)}</p>
 </footer>
 </main>
 </div>
@@ -328,7 +353,7 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .menu{display:inline-block;position:relative;margin-right:.9rem}.menu summary{font-weight:400;color:var(--acc);list-style:none}.menu summary::-webkit-details-marker{display:none}
 .menu .dd{position:absolute;top:1.6rem;left:0;background:var(--bg);border:1px solid var(--line);border-radius:.4rem;padding:.4rem .8rem;min-width:12rem;box-shadow:0 4px 14px rgba(0,0,0,.12);z-index:9}.menu .dd a{display:block;margin:.2rem 0}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.8rem;margin:.6rem 0 1.2rem}
-.card{display:block;border:1px solid var(--line);border-radius:.6rem;padding:.8rem 1rem;background:var(--card);text-decoration:none;color:var(--fg)}.card:hover{border-color:var(--acc)}.card b{color:var(--acc)}.card .small{display:block;margin-top:.2rem}
+.card{display:block;border:1px solid var(--line);border-radius:.6rem;padding:.8rem 1rem;background:var(--card);text-decoration:none;color:var(--fg)}.card:hover{border-color:var(--acc)}.card b{color:var(--acc)}.card .small{display:block;margin-top:.2rem}.card.big{padding:1.2rem 1.2rem;font-size:1.05rem}.card.big b{font-size:1.2rem}
 .calc{max-width:640px}.calc label{display:block;margin:.6rem 0 .2rem;font-weight:600}.calc input,.calc select{font-size:1rem;padding:.35rem .5rem;border:1px solid var(--line);border-radius:.4rem;background:var(--bg);color:var(--fg);width:100%;max-width:320px}
 .calc .result{margin-top:1rem;padding:.8rem 1rem;border-radius:.5rem;background:var(--card);border:1px solid var(--line);font-size:1.05rem}.calc .result b{font-size:1.3rem}
 """
@@ -361,8 +386,38 @@ SEARCH_JS = """
 """
 
 
-def render_portal(days: list[dict], tools: list[dict]) -> str:
-    out = [f"<h1>{SITE_TITLE}</h1>"]
+def toolbox_live(days: list[dict]) -> str:
+    """トップのカードに出す一行(最新の更新状況)"""
+    if not days:
+        return "まだデータがありません"
+    d = days[0]
+    ups = d.get("updates") or []
+    n_imp = sum(1 for u in ups if render_entry(u)[1])
+    return (f"{WATCH_TITLE}: {fmt_date(d['date'])} 更新{sum(1 for u in ups if u.get('reason') == '更新')}件・"
+            f"新規{sum(1 for u in ups if u.get('reason') == '新規')}件" + (f"・⚠重要{n_imp}件" if n_imp else ""))
+
+
+def render_home(cfg: dict, days: list[dict], tools: list[dict]) -> str:
+    out = [f"<h1>{esc(cfg.get('title') or HOME_TITLE)}</h1>"]
+    if cfg.get("lead"):
+        out.append(f'<p class="small">{esc(cfg["lead"])}</p>')
+    cards = []
+    for sec in cfg.get("sections") or []:
+        live = ""
+        if sec.get("live") == "toolbox":
+            live = f'<span class="small">{esc(toolbox_live(days))}</span>'
+        elif sec.get("live"):
+            live = f'<span class="small">{esc(sec["live"])}</span>'
+        cards.append(f'<a class="card big" href="{esc(sec.get("href") or "#")}">'
+                     f'<b>{esc(sec.get("emoji") or "")} {esc(sec.get("title") or "")}</b>'
+                     f'<span class="small">{esc(sec.get("desc") or "")}</span>{live}</a>')
+    out.append('<div class="cards">' + "".join(cards) + "</div>")
+    out.append('<p class="small">項目の追加・並べ替えは <code>site/home.json</code> を編集(README参照)。</p>')
+    return "\n".join(out)
+
+
+def render_toolbox(days: list[dict], tools: list[dict]) -> str:
+    out = [f"<h1>💊 {SITE_TITLE}</h1>"]
     out.append(f'<h2>📄 {WATCH_TITLE}</h2>')
     if days:
         d = days[0]
@@ -463,7 +518,14 @@ def build(root: Path) -> None:
     (watch / "search.json").write_text(json.dumps(search_rows, ensure_ascii=False), encoding="utf-8")
     (watch / "search.html").write_text(layout("検索", SEARCH_JS, "../", dates, None, built_at, tools), encoding="utf-8")
 
-    (docs / "index.html").write_text(layout("トップ", render_portal(days, tools), "", dates, None, built_at, tools, side=False), encoding="utf-8")
+    (docs / "toolbox").mkdir(parents=True, exist_ok=True)
+    (docs / "toolbox" / "index.html").write_text(
+        layout(SITE_TITLE, render_toolbox(days, tools).replace('href="watch/', 'href="../watch/').replace('href="tools/', 'href="../tools/'),
+               "../", dates, None, built_at, tools, side=False), encoding="utf-8")
+    home = load_home(root)
+    (docs / "index.html").write_text(
+        layout(home.get("title") or HOME_TITLE, render_home(home, days, tools), "", dates, None, built_at, tools, side=False),
+        encoding="utf-8")
     print(f"site built: {len(days)} days, {len(search_rows)} entries, {len(tools)} tools -> {docs}")
 
 

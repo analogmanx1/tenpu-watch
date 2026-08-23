@@ -5,6 +5,9 @@ on:
     # 毎日 07:00 JST(= 22:00 UTC 前日)。GitHubの都合で数分〜数十分遅れることあり
     - cron: "0 22 * * *"
   workflow_dispatch: {}   # 手動実行ボタン
+  push:                   # 手で編集してpushしたときも即公開(ボットの自動コミットでは動かない=無限ループしない)
+    branches: [main]
+    paths: ["src/**", "site/**", "docs/tools/**", ".github/workflows/**"]
 
 permissions:
   contents: write

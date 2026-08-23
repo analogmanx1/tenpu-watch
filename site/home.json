@@ -1,0 +1,13 @@
+{
+  "title": "ホーム",
+  "lead": "ここから各機能へ。",
+  "sections": [
+    {
+      "emoji": "💊",
+      "title": "薬剤師ツールボックス",
+      "desc": "添付文書ウォッチ(毎朝7時自動更新)・各種計算ツール",
+      "href": "toolbox/index.html",
+      "live": "toolbox"
+    }
+  ]
+}
