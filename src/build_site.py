@@ -7,9 +7,10 @@ data/days/*.json から静的サイト(docs/)を生成する。
   docs/watch/days/YYYY-MM-DD.html  … 日付ごとのページ(バックナンバー)
   docs/watch/archive.html          … バックナンバー一覧
   docs/watch/search.html + search.json … 薬名・企業名・一般名で検索
+  docs/if/index.html + index.json   … インタビューフォーム検索(元データは data/if_index.json。src/if_index.py で手動更新)
   docs/assets/style.css            … 共通デザイン
   docs/tools/*.html                … 手作りのツール(計算機など)。ここは生成対象外、読むだけ
-  ※ watch/ toolbox/ assets/ index.html 以外は書き換えない
+  ※ watch/ if/ toolbox/ assets/ index.html 以外は書き換えない
 """
 from __future__ import annotations
 
@@ -21,11 +22,18 @@ import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import if_index  # noqa: E402  (PMDA検索フォームの項目一覧を「PMDAで最新を検索」ボタンに流用)
+
 JST = timezone(timedelta(hours=9))
 WEEK_URL = "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
 HOME_TITLE = "ホーム"                 # トップ(入口)ページの名前。site/home.json の title で上書き可
 SITE_TITLE = "薬剤師ツールボックス"  # 薬剤師ツールボックス(添付文書ウォッチ+ツール)の名前
 WATCH_TITLE = "添付文書ウォッチ"
+IF_TITLE = "インタビューフォーム検索"
+IF_PDF_BASE = "https://www.info.pmda.go.jp/go/interview/"                 # if_index.py の IF_BASE と同じ
+IF_DETAIL_BASE = "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/GeneralList/"
+PMDA_SEARCH_URL = "https://www.pmda.go.jp/PmdaSearch/iyakuSearch"
 
 # トップページに並べる項目の既定値(site/home.json があればそちらを使う)
 DEFAULT_HOME = {
@@ -131,6 +139,7 @@ def top_nav(rel: str, tools: list[dict]) -> str:
     <a href="{rel}watch/index.html">📄 {WATCH_TITLE}</a>
     <a href="{rel}watch/archive.html">バックナンバー</a>
     <a href="{rel}watch/search.html">検索</a>
+    <a href="{rel}if/index.html">📘 IF検索</a>
     {tools_menu}
   </nav>
 </header>"""
@@ -350,6 +359,9 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .foot{margin-top:3rem;font-size:.8rem;color:var(--mut);border-top:1px solid var(--line);padding-top:.6rem}
 #q{width:100%;max-width:500px;font-size:1rem;padding:.4rem .6rem;border:1px solid var(--line);border-radius:.4rem;background:var(--bg);color:var(--fg)}
 .hit{padding:.4rem 0;border-bottom:1px solid var(--line)}
+.ifbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.4rem 0}.ifbar #q{flex:1 1 280px;max-width:560px}.ifbar form{margin:0}
+.btn{font-size:.9rem;padding:.45rem .8rem;border:1px solid var(--acc);border-radius:.4rem;background:var(--bg);color:var(--acc);cursor:pointer;white-space:nowrap}.btn:hover{background:var(--card)}
+.ifa{font-weight:600;font-size:1.02rem;text-decoration:none}.ifa:hover{text-decoration:underline}.ifmulti{margin-top:.15rem}
 .menu{display:inline-block;position:relative;margin-right:.9rem}.menu summary{font-weight:400;color:var(--acc);list-style:none}.menu summary::-webkit-details-marker{display:none}
 .menu .dd{position:absolute;top:1.6rem;left:0;background:var(--bg);border:1px solid var(--line);border-radius:.4rem;padding:.4rem .8rem;min-width:12rem;box-shadow:0 4px 14px rgba(0,0,0,.12);z-index:9}.menu .dd a{display:block;margin:.2rem 0}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.8rem;margin:.6rem 0 1.2rem}
@@ -386,6 +398,86 @@ SEARCH_JS = """
 """
 
 
+# ---------------------------------------------------------------- インタビューフォーム検索
+def load_if_index(root: Path) -> dict | None:
+    """data/if_index.json(src/if_index.py が作る)を読む。無ければ None"""
+    f = root / "data" / "if_index.json"
+    if not f.exists():
+        return None
+    try:
+        return json.loads(f.read_text(encoding="utf-8"))
+    except Exception as e:  # noqa: BLE001
+        print(f"!! data/if_index.json を読めませんでした({e})")
+        return None
+
+
+def if_summary(idx: dict | None) -> str:
+    if not idx:
+        return "一覧データ未作成(python src/run.py --if-index で作成)"
+    m = idx.get("meta") or {}
+    return f"一覧データ: {str(m.get('fetched_at') or '')[:10]} 時点・{m.get('count', len(idx.get('items') or [])):,}件"
+
+
+def render_if_page(idx: dict | None) -> str:
+    """薬剤名を打つ → 候補が即出る → クリックでIF(PDF)。保険で「PMDAで最新を検索」フォーム(別タブ)も付ける"""
+    hidden = "".join(
+        f'<input type="hidden" name="{esc(k)}" value="{esc(v)}">'
+        for k, v in if_index.search_fields() if k != "nameWord")
+    note = if_summary(idx)
+    return f"""
+<h1>📘 {IF_TITLE}</h1>
+<p class="small">薬剤名(一般名・販売名)や企業名を入れると候補が出ます。<b>候補をクリックするとインタビューフォーム(PDF)が新しいタブで開きます</b>。
+スペース区切りで絞り込み(例: <code>アリピプラゾール 明治</code>)。ひらがな/全角半角の違いは気にしなくてOK。</p>
+<div class="ifbar">
+  <input id="q" type="search" placeholder="例: エビリファイ / アリピプラゾール / 大塚" autofocus autocomplete="off">
+  <form id="pmdaForm" method="post" action="{PMDA_SEARCH_URL}" target="_blank">
+    {hidden}
+    <input type="hidden" name="nameWord" id="pmdaName">
+    <button type="submit" class="btn" title="入力した薬剤名で、PMDAの検索(IFだけにチェック済み)を別タブで開きます">PMDAで最新を検索 ↗</button>
+  </form>
+</div>
+<p class="small" id="cnt"></p>
+<div id="res"></div>
+<p class="small" id="ifmeta">{esc(note)}。一覧はPMDAの検索結果から作った写しなので、改版直後などでPDFが開かないときは「PMDA詳細」か上のボタンから最新を確認してください。</p>
+<script>
+(async function(){{
+  const IFB={json.dumps(IF_PDF_BASE)}, DB={json.dumps(IF_DETAIL_BASE)};
+  const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt');
+  const form=document.getElementById('pmdaForm'), pn=document.getElementById('pmdaName');
+  form.addEventListener('submit',e=>{{ if(!q.value.trim()){{e.preventDefault();q.focus();return;}} pn.value=q.value.trim(); }});
+  let data;
+  try{{ data=await (await fetch('index.json')).json(); }}catch(e){{ cnt.textContent='一覧データを読み込めませんでした'; return; }}
+  const items=data.items||[], cats=(data.meta||{{}}).categories||{{}};
+  // ひらがな→カタカナ、全角→半角(NFKC)、小文字化、空白除去 でゆるく一致させる
+  const norm=s=>(s||'').normalize('NFKC').toLowerCase().replace(/[\\u3041-\\u3096]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/\\s+/g,'');
+  items.forEach(e=>{{ e._g=norm(e.g); e._n=norm(e.n); e._c=norm(e.c); e._h=e._g+' '+e._n+' '+e._c; }});
+  const esc=s=>(s||'').replace(/[&<>"]/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]));
+  const pdf=u=>u.startsWith('http')?u:IFB+u+'.pdf';
+  function run(){{
+    const kw=q.value.normalize('NFKC').trim().split(/\\s+/).filter(Boolean).map(norm);
+    if(!kw.length){{ cnt.textContent=`全${{items.length.toLocaleString()}}件。薬剤名を入力してください`; res.innerHTML=''; return; }}
+    const k0=kw[0];
+    let hits=items.filter(e=>kw.every(k=>e._h.includes(k)));
+    hits.forEach(e=>{{ e._s=(e._n.startsWith(k0)||e._g.startsWith(k0))?0:(e._g.includes(k0)||e._n.includes(k0))?1:2; }});
+    hits.sort((a,b)=>a._s-b._s||a.g.localeCompare(b.g,'ja')||a.n.localeCompare(b.n,'ja'));
+    const total=hits.length; hits=hits.slice(0,200);
+    cnt.textContent=`${{total.toLocaleString()}}件`+(total>200?'(先頭200件を表示。もう少し絞ってください)':'');
+    res.innerHTML=hits.map(e=>{{
+      const f=e.f||[]; const first=f[0]||{{}};
+      const multi=f.length>1?'<div class="small ifmulti">IFが複数あります: '+f.map(x=>`<a href="${{esc(pdf(x.u))}}" target="_blank" rel="noopener">📘 ${{esc(x.t||'IF')}}</a>`).join(' ／ ')+'</div>':'';
+      const cat=cats[e.e]?` ｜ ${{esc(cats[e.e])}}`:'';
+      const detail=e.d?` <a class="small" href="${{esc(DB+e.d)}}" target="_blank" rel="noopener">PMDA詳細 ↗</a>`:'';
+      return `<div class="hit"><a class="ifa" href="${{esc(pdf(first.u||''))}}" target="_blank" rel="noopener">📘 ${{esc(e.n)}}</a><br><span class="small">${{esc(e.g)}} ｜ ${{esc(e.c)}}${{cat}}</span>${{detail}}${{multi}}</div>`;
+    }}).join('');
+  }}
+  q.addEventListener('input',run);
+  if(location.hash){{ q.value=decodeURIComponent(location.hash.slice(1)); }}
+  run();
+}})();
+</script>
+"""
+
+
 def toolbox_live(days: list[dict]) -> str:
     """トップのカードに出す一行(最新の更新状況)"""
     if not days:
@@ -416,7 +508,7 @@ def render_home(cfg: dict, days: list[dict], tools: list[dict]) -> str:
     return "\n".join(out)
 
 
-def render_toolbox(days: list[dict], tools: list[dict]) -> str:
+def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = None) -> str:
     out = [f"<h1>💊 {SITE_TITLE}</h1>"]
     out.append(f'<h2>📄 {WATCH_TITLE}</h2>')
     if days:
@@ -441,6 +533,10 @@ def render_toolbox(days: list[dict], tools: list[dict]) -> str:
             f'<li><a href="watch/days/{x["date"]}.html">{fmt_date(x["date"])}</a> <span class="small">({len(x.get("updates") or [])}件)</span></li>' for x in days[:7]) + "</ul>")
     else:
         out.append("<p>まだデータがありません(初回の自動実行をお待ちください)。</p>")
+    out.append(f"<h2>📘 {IF_TITLE}</h2>")
+    out.append('<p>薬剤名を入れると候補が出て、クリックでインタビューフォーム(PDF)が開きます。'
+               f'<span class="small">{esc(if_summary(if_idx))}</span></p>'
+               '<p><a href="if/index.html">検索ページへ →</a></p>')
     out.append("<h2>🧮 ツール</h2>")
     if tools:
         out.append('<div class="cards">' + "".join(
@@ -465,6 +561,7 @@ def build(root: Path) -> None:
     dates = [d["date"] for d in days]
     tools = scan_tools(docs)
     home = load_home(root)
+    if_idx = load_if_index(root)
     global HOME_TITLE
     HOME_TITLE = home.get("title") or HOME_TITLE   # ヘッダー左上のロゴ名も home.json の title に合わせる
 
@@ -523,14 +620,26 @@ def build(root: Path) -> None:
     (watch / "search.json").write_text(json.dumps(search_rows, ensure_ascii=False), encoding="utf-8", newline="\n")
     (watch / "search.html").write_text(layout("検索", SEARCH_JS, "../", dates, None, built_at, tools), encoding="utf-8", newline="\n")
 
+    # インタビューフォーム検索(データは data/if_index.json の写し。無ければページだけ作る)
+    # IFが1つだけの行は題名(t)を落として軽くする(画面では販売名を出すので使わない)
+    slim_items = [dict(it, f=[{"u": x["u"]} for x in it["f"]]) if len(it.get("f") or []) == 1 else it
+                  for it in ((if_idx or {}).get("items") or [])]
+    (docs / "if").mkdir(parents=True, exist_ok=True)
+    (docs / "if" / "index.json").write_text(
+        json.dumps({"meta": {k: v for k, v in ((if_idx or {}).get("meta") or {}).items() if k in ("fetched_at", "count", "categories")},
+                    "items": slim_items}, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8", newline="\n")
+    (docs / "if" / "index.html").write_text(
+        layout(IF_TITLE, render_if_page(if_idx), "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
+
     (docs / "toolbox").mkdir(parents=True, exist_ok=True)
     (docs / "toolbox" / "index.html").write_text(
-        layout(SITE_TITLE, render_toolbox(days, tools).replace('href="watch/', 'href="../watch/').replace('href="tools/', 'href="../tools/'),
+        layout(SITE_TITLE, render_toolbox(days, tools, if_idx).replace('href="watch/', 'href="../watch/').replace('href="tools/', 'href="../tools/').replace('href="if/', 'href="../if/'),
                "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
     (docs / "index.html").write_text(
         layout(home.get("title") or HOME_TITLE, render_home(home, days, tools), "", dates, None, built_at, tools, side=False),
         encoding="utf-8", newline="\n")
-    print(f"site built: {len(days)} days, {len(search_rows)} entries, {len(tools)} tools -> {docs}")
+    print(f"site built: {len(days)} days, {len(search_rows)} entries, {len(tools)} tools, IF {len((if_idx or {}).get('items') or [])} -> {docs}")
 
 
 if __name__ == "__main__":

@@ -3,3 +3,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# ローカルプレビュー用(Claude Codeの設定)
+.claude/
