@@ -23,6 +23,7 @@ concurrency:
 jobs:
   fetch-and-build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20   # 普段は1分未満。PMDA側が応答しない日に6時間つかまらないための保険
     env:
       TZ: Asia/Tokyo
       PYTHONIOENCODING: utf-8
@@ -56,6 +57,7 @@ jobs:
   deploy:
     needs: fetch-and-build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

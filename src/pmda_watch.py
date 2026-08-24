@@ -53,7 +53,7 @@ def http_get(url: str, retries: int = 3) -> bytes:
     for i in range(retries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=90) as r:
+            with urllib.request.urlopen(req, timeout=30) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
             if e.code == 404:
@@ -427,11 +427,14 @@ class Watcher:
         if limit_days:
             days = days[:limit_days]
         summary = {"processed": [], "skipped": []}
+        aborted = False
         # 古い日付から処理(差分の前後関係を正しくするため)
         for day in sorted(days, key=lambda d: d["date"]):
             date = day["date"]
-            stored = self.load_day(date) or {"date": date, "updates": [], "deletes": [],
-                                             "created_at": now_jst()}
+            loaded = self.load_day(date)
+            existed = loaded is not None
+            stored = loaded or {"date": date, "updates": [], "deletes": [],
+                                "created_at": now_jst()}
             # エラーだった行は次回やり直す(成功分だけ「取得済み」扱い)
             have = {u.get("packins_no") for u in stored["updates"] if u.get("packins_no") and not u.get("error")}
             have_del = {(d["brand"], d["company"]) for d in stored["deletes"]}
@@ -443,9 +446,23 @@ class Watcher:
             log(f"{date}: 新しい行 更新{len(todo)}件 / 削除{len(todo_del)}件 を処理")
             if dry:
                 continue
+            net_fails = 0    # 連続ネットワーク失敗数(サーバーに繋がらない状態で延々リトライしないため)
+            stored_rows = 0  # 今回ちゃんと記録できた行数
             for i, row in enumerate(todo, 1):
                 log(f"  ({i}/{len(todo)}) {row['brand']}")
                 new_entry = self.process_update(row, date)
+                err = new_entry.get("error") or ""
+                if "GET failed" in err:
+                    # 通信自体に失敗した行は記録に残さない(次回の実行で自動的にやり直される)
+                    log(f"     ! {err}")
+                    net_fails += 1
+                    if net_fails >= 3:
+                        log("!! ネットワーク不調が3件続いたため、この回はここで打ち切り(取得できた分だけ保存し、残りは次回の実行で取り込む)")
+                        aborted = True
+                        break
+                    time.sleep(SLEEP)
+                    continue
+                net_fails = 0
                 # 以前のエラー行があれば置き換え(同じ位置に)
                 idx = next((k for k, u in enumerate(stored["updates"])
                             if u.get("packins_no") == row["packins_no"] and u.get("error")), None)
@@ -453,15 +470,23 @@ class Watcher:
                     stored["updates"].append(new_entry)
                 else:
                     stored["updates"][idx] = new_entry
-                if new_entry.get("error"):
-                    log(f"     ! {new_entry['error']}")
+                if err:
+                    log(f"     ! {err}")
+                stored_rows += 1
                 time.sleep(SLEEP)
             for d in todo_del:
                 stored["deletes"].append(d)
-            stored["updated_at"] = now_jst()
-            stored["source"] = WEEK_URL
-            self.save_day(stored)
-            summary["processed"].append({"date": date, "updates": len(todo), "deletes": len(todo_del)})
+            if existed or stored_rows or todo_del:
+                stored["updated_at"] = now_jst()
+                stored["source"] = WEEK_URL
+                self.save_day(stored)
+                summary["processed"].append({"date": date, "updates": stored_rows, "deletes": len(todo_del)})
+            else:
+                # 1行も取れなかった新しい日は保存しない(空の日付ページを作らない)
+                log(f"{date}: 取得できた行が無いため保存なし(次回の実行でやり直し)")
+            if aborted:
+                summary["aborted"] = True
+                break
         return summary
 
 

@@ -20,6 +20,7 @@ concurrency:
 jobs:
   refresh-if-index:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     env:
       TZ: Asia/Tokyo
       PYTHONIOENCODING: utf-8
