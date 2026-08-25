@@ -1,0 +1,7945 @@
+{
+ "date": "2026-08-25",
+ "updates": [
+  {
+   "brand": "シーエルセントリ錠150mg",
+   "company": "製造販売元／ヴィーブヘルスケア株式会社 / 販売元／グラクソ・スミスクライン株式会社",
+   "reason": "更新",
+   "packins_no": "6250034F1025_2_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6250034F1025_2_14/",
+   "fetched_at": "2026-08-25 12:31:41",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/166272_6250034F1025_2_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/166272_6250034F1025_2_14",
+   "meta": {
+    "packins_no": "6250034F1025_2_14",
+    "company_id": "166272",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第7版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第6版"
+     }
+    },
+    "brands": [
+     "シーエルセントリ錠150mg"
+    ],
+    "generic_name": "マラビロク",
+    "therapeutic_class": "抗ウイルス化学療法剤（CCR5阻害剤）"
+   },
+   "revised": [
+    {
+     "path": [
+      "７.用法及び用量に関連する注意",
+      "(3)"
+     ],
+     "text": "腎機能障害（クレアチニンクリアランス（Ccr）＜80mL/min）があり、強力なCYP3A4阻害剤を投与している患者では、腎機能の低下に応じて、次の投与間隔及び投与量を目安に投与すること。ただし、これらの投与間隔の調節に対する有効性及び安全性は確立されていないため、患者の臨床症状等を十分に観察すること（外国人データ）。,,"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "テビケイ錠50mg",
+   "company": "製造販売元／ヴィーブヘルスケア株式会社 / 販売元／グラクソ・スミスクライン株式会社",
+   "reason": "更新",
+   "packins_no": "6250038F1023_1_22",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6250038F1023_1_22/",
+   "fetched_at": "2026-08-25 12:31:44",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/166272_6250038F1023_1_22",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/166272_6250038F1023_1_22",
+   "meta": {
+    "packins_no": "6250038F1023_1_22",
+    "company_id": "166272",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第9版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第8版"
+     }
+    },
+    "brands": [
+     "テビケイ錠50mg"
+    ],
+    "generic_name": "ドルテグラビルナトリウム",
+    "therapeutic_class": "HIVインテグラーゼ阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "７.用法及び用量に関連する注意",
+      "(2)",
+      "(2)"
+     ],
+     "text": "本剤とエファビレンツ、ネビラピン、カルバマゼピン又はリファンピシンを併用しないこと。,"
+    },
+    {
+     "path": [
+      "１６.薬物動態",
+      "１６.７ 薬物相互作用",
+      "併用薬が本剤の薬物動態に及ぼす影響"
+     ],
+     "text": "併用薬が本剤の薬物動態に及ぼす影響"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ジャルカ配合錠",
+   "company": "製造販売元／ヴィーブヘルスケア株式会社 / 販売元／グラクソ・スミスクライン株式会社",
+   "reason": "更新",
+   "packins_no": "6250115F1020_1_12",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6250115F1020_1_12/",
+   "fetched_at": "2026-08-25 12:31:47",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/166272_6250115F1020_1_12",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/166272_6250115F1020_1_12",
+   "meta": {
+    "packins_no": "6250115F1020_1_12",
+    "company_id": "166272",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第9版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第8版"
+     }
+    },
+    "brands": [
+     "ジャルカ配合錠"
+    ],
+    "generic_name": "ドルテグラビルナトリウム / リルピビリン塩酸塩",
+    "therapeutic_class": "抗ウイルス化学療法剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ベルソムラ錠10mg／ベルソムラ錠15mg／ベル...",
+   "company": "製造販売元／MSD株式会社 / 販売元／第一三共株式会社",
+   "reason": "更新",
+   "packins_no": "1190023F1024_1_20",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190023F1024_1_20/",
+   "fetched_at": "2026-08-25 12:31:51",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/170050_1190023F1024_1_20",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/170050_1190023F1024_1_20",
+   "meta": {
+    "packins_no": "1190023F1024_1_20",
+    "company_id": "170050",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "ベルソムラ錠10mg",
+     "ベルソムラ錠15mg",
+     "ベルソムラ錠20mg"
+    ],
+    "generic_name": "スボレキサント",
+    "therapeutic_class": "オレキシン受容体拮抗薬 / ─不眠症治療薬─"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "ツカチニブ"
+    },
+    {
+     "path": [
+      "(1)"
+     ],
+     "text": "（ツカイザ）"
+    },
+    {
+     "path": [],
+     "text": "ロナファルニブ"
+    },
+    {
+     "path": [
+      "(1)"
+     ],
+     "text": "（ゾキンヴィ）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "カロナール原末",
+   "company": "製造販売元／あゆみ製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141001X1100_4_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141001X1100_4_06/",
+   "fetched_at": "2026-08-25 12:31:54",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/172190_1141001X1100_4_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/172190_1141001X1100_4_06",
+   "meta": {
+    "packins_no": "1141001X1100_4_06",
+    "company_id": "172190",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "カロナール原末"
+    ],
+    "generic_name": "アセトアミノフェン",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（いずれも頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "カロナール細粒20%／カロナール細粒50%",
+   "company": "製造販売元／あゆみ製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141007C1075_5_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141007C1075_5_06/",
+   "fetched_at": "2026-08-25 12:31:58",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/172190_1141007C1075_5_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/172190_1141007C1075_5_06",
+   "meta": {
+    "packins_no": "1141007C1075_5_06",
+    "company_id": "172190",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "カロナール細粒20%",
+     "カロナール細粒50%"
+    ],
+    "generic_name": "アセトアミノフェン細粒",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（いずれも頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "カロナール錠200／カロナール錠300／カロ...",
+   "company": "製造販売元／あゆみ製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141007F1063_5_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141007F1063_5_07/",
+   "fetched_at": "2026-08-25 12:32:02",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/172190_1141007F1063_5_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/172190_1141007F1063_5_07",
+   "meta": {
+    "packins_no": "1141007F1063_5_07",
+    "company_id": "172190",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "カロナール錠200",
+     "カロナール錠300",
+     "カロナール錠500"
+    ],
+    "generic_name": "アセトアミノフェン錠",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（いずれも頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "カロナールシロップ2%",
+   "company": "製造販売元／あゆみ製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141007Q1048_5_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141007Q1048_5_06/",
+   "fetched_at": "2026-08-25 12:32:06",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/172190_1141007Q1048_5_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/172190_1141007Q1048_5_06",
+   "meta": {
+    "packins_no": "1141007Q1048_5_06",
+    "company_id": "172190",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "カロナールシロップ2%"
+    ],
+    "generic_name": "アセトアミノフェンシロップ",
+    "therapeutic_class": "小児用解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（いずれも頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "カロナール坐剤小児用50",
+   "company": "製造販売元／あゆみ製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141700J1088_4_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141700J1088_4_05/",
+   "fetched_at": "2026-08-25 12:32:09",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/172190_1141700J1088_4_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/172190_1141700J1088_4_05",
+   "meta": {
+    "packins_no": "1141700J1088_4_05",
+    "company_id": "172190",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "カロナール坐剤小児用50"
+    ],
+    "generic_name": "アセトアミノフェン坐剤",
+    "therapeutic_class": "小児用解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（いずれも頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "カロナール坐剤100／カロナール坐剤200／...",
+   "company": "製造販売元／あゆみ製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141700J2050_A_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141700J2050_A_06/",
+   "fetched_at": "2026-08-25 12:32:13",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/172190_1141700J2050_A_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/172190_1141700J2050_A_06",
+   "meta": {
+    "packins_no": "1141700J2050_A_06",
+    "company_id": "172190",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "カロナール坐剤100",
+     "カロナール坐剤200",
+     "カロナール坐剤400"
+    ],
+    "generic_name": "アセトアミノフェン坐剤",
+    "therapeutic_class": "小児用解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（いずれも頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "大塚生食注／大塚生食注／大塚生食注／...",
+   "company": "製造販売元／株式会社大塚製薬工場 / 販売提携／大塚製薬株式会社",
+   "reason": "更新",
+   "packins_no": "3311401A2026_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3311401A2026_1_14/",
+   "fetched_at": "2026-08-25 12:32:16",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180079_3311401A2026_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180079_3311401A2026_1_14",
+   "meta": {
+    "packins_no": "3311401A2026_1_14",
+    "company_id": "180079",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-05",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "大塚生食注",
+     "大塚生食注",
+     "大塚生食注",
+     "大塚生食注",
+     "大塚生食注",
+     "大塚生食注",
+     "大塚生食注",
+     "大塚生食注",
+     "大塚生食注"
+    ],
+    "generic_name": "日本薬局方　生理食塩液",
+    "therapeutic_class": "生理食塩液"
+   },
+   "revised": [
+    {
+     "path": [
+      "２２.包装"
+     ],
+     "text": "20mL　50管　プラスチックアンプル（シリンジコネクトタイプ）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ビラフトビカプセル50mg／ビラフトビカプ...",
+   "company": "製造販売／小野薬品工業株式会社 / 提携／ARRAY",
+   "reason": "更新",
+   "packins_no": "4291057M1029_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291057M1029_1_14/",
+   "fetched_at": "2026-08-25 12:32:19",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180188_4291057M1029_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180188_4291057M1029_1_14",
+   "meta": {
+    "packins_no": "4291057M1029_1_14",
+    "company_id": "180188",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第9版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ビラフトビカプセル50mg",
+     "ビラフトビカプセル75mg"
+    ],
+    "generic_name": "エンコラフェニブカプセル",
+    "therapeutic_class": "－抗悪性腫瘍剤－ / BRAF阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "(2)"
+     ],
+     "text": "次の薬剤を投与中の患者：エルビテグラビル・コビシスタット・エムトリシタビン・テノホビル　アラフェナミドフマル酸塩、ダルナビル　エタノール付加物・コビシスタット、ダルナビル　エタノール付加物・コビシスタット・エムトリシタビン・テノホビル　アラフェナミドフマル酸塩、ドラビリン、ドラビリン・イスラトラビル水和物、ドルテグラビルナトリウム・リルピビリン塩酸塩、ビクテグラビルナトリウム・エムトリシタビン・テノホビル　アラフェナミドフマル酸塩、リルピビリン、リルピビリン塩酸塩、リルピビリン塩酸塩・エムトリシタビン・テノホビル　アラフェナミドフマル酸塩、レナカパビルナトリウム"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "エルビテグラビル・コビシスタット・エムトリシタビン・テノホビル　アラフェナミドフマル酸塩"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オプジーボ点滴静注20mg／オプジーボ点滴...",
+   "company": "製造販売／小野薬品工業株式会社 / プロモーション提携／ブリストル・マイヤーズ スクイブ株式会社",
+   "reason": "更新",
+   "packins_no": "4291427A1024_1_75",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291427A1024_1_75/",
+   "fetched_at": "2026-08-25 12:32:23",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180188_4291427A1024_1_75",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180188_4291427A1024_1_75",
+   "meta": {
+    "packins_no": "4291427A1024_1_75",
+    "company_id": "180188",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第29版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": null
+     }
+    },
+    "brands": [
+     "オプジーボ点滴静注20mg",
+     "オプジーボ点滴静注100mg",
+     "オプジーボ点滴静注120mg",
+     "オプジーボ点滴静注240mg"
+    ],
+    "generic_name": "ニボルマブ（遺伝子組換え）",
+    "therapeutic_class": "－抗悪性腫瘍剤－\nヒト型抗ヒトPD-1モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重度の胃炎、食道炎"
+     ],
+     "text": "重度の胃炎、食道炎"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オースギ葛根湯エキスG",
+   "company": "製造販売元／大杉製薬株式会社",
+   "reason": "更新",
+   "packins_no": "5200013D1026_2_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/5200013D1026_2_08/",
+   "fetched_at": "2026-08-25 12:32:28",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180607_5200013D1026_2_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180607_5200013D1026_2_08",
+   "meta": {
+    "packins_no": "5200013D1026_2_08",
+    "company_id": "180607",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2022-01",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "オースギ葛根湯エキスG"
+    ],
+    "generic_name": "葛根湯",
+    "therapeutic_class": "漢方製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "多形紅斑（頻度不明）"
+     ],
+     "text": "多形紅斑（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "クラシエ葛根湯エキス細粒",
+   "company": "製造販売元／クラシエ株式会社 / 発売元／クラシエ薬品株式会社",
+   "reason": "更新",
+   "packins_no": "5200013C1080_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/5200013C1080_2_02/",
+   "fetched_at": "2026-08-25 12:32:31",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/252468_5200013C1080_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/252468_5200013C1080_2_02",
+   "meta": {
+    "packins_no": "5200013C1080_2_02",
+    "company_id": "252468",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "クラシエ葛根湯エキス細粒"
+    ],
+    "generic_name": "葛根湯",
+    "therapeutic_class": "漢方製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "多形紅斑（頻度不明）"
+     ],
+     "text": "多形紅斑（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "コタロー葛根湯エキス細粒",
+   "company": "製造販売元／小太郎漢方製薬株式会社",
+   "reason": "更新",
+   "packins_no": "5200013C1039_1_19",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/5200013C1039_1_19/",
+   "fetched_at": "2026-08-25 12:32:35",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/270127_5200013C1039_1_19",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/270127_5200013C1039_1_19",
+   "meta": {
+    "packins_no": "5200013C1039_1_19",
+    "company_id": "270127",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-01",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "コタロー葛根湯エキス細粒"
+    ],
+    "generic_name": "葛根湯",
+    "therapeutic_class": "漢方製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "多形紅斑（頻度不明）"
+     ],
+     "text": "多形紅斑（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "デクスメデトミジン静注液200μg「サンド...",
+   "company": "製造販売／サンド株式会社",
+   "reason": "更新",
+   "packins_no": "1129400A1062_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1129400A1062_1_07/",
+   "fetched_at": "2026-08-25 12:32:38",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/270428_1129400A1062_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/270428_1129400A1062_1_07",
+   "meta": {
+    "packins_no": "1129400A1062_1_07",
+    "company_id": "270428",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-01",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "デクスメデトミジン静注液200μg「サンド」"
+    ],
+    "generic_name": "デクスメデトミジン塩酸塩静注液",
+    "therapeutic_class": "α2作動性鎮静剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "泌尿器"
+    },
+    {
+     "path": [],
+     "text": "代謝栄養"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トアラセット配合錠「サンド」",
+   "company": "製造販売／サンド株式会社",
+   "reason": "更新",
+   "packins_no": "1149117F1179_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149117F1179_1_09/",
+   "fetched_at": "2026-08-25 12:32:41",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/270428_1149117F1179_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/270428_1149117F1179_1_09",
+   "meta": {
+    "packins_no": "1149117F1179_1_09",
+    "company_id": "270428",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "トアラセット配合錠「サンド」"
+    ],
+    "generic_name": "トラマドール塩酸塩・アセトアミノフェン配合錠",
+    "therapeutic_class": "慢性疼痛/抜歯後疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（頻度不明）"
+     ],
+     "text": "呼吸困難、喘鳴、血管性浮腫、蕁麻疹等があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トアラセット配合錠「サワイ」",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1149117F1160_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149117F1160_1_08/",
+   "fetched_at": "2026-08-25 12:32:44",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_1149117F1160_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_1149117F1160_1_08",
+   "meta": {
+    "packins_no": "1149117F1160_1_08",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "トアラセット配合錠「サワイ」"
+    ],
+    "generic_name": "トラマドール塩酸塩 / アセトアミノフェン",
+    "therapeutic_class": "慢性疼痛/抜歯後疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピン錠2.5mg「サワイ」／オランザ...",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1179044C1065_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044C1065_1_11/",
+   "fetched_at": "2026-08-25 12:32:47",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_1179044C1065_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_1179044C1065_1_11",
+   "meta": {
+    "packins_no": "1179044C1065_1_11",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "オランザピン錠2.5mg「サワイ」",
+     "オランザピン錠5mg「サワイ」",
+     "オランザピン錠10mg「サワイ」",
+     "オランザピン細粒1％「サワイ」"
+    ],
+    "generic_name": "オランザピン",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉",
+      "(1)"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ドンペリドン錠5mg「サワイ」／ドンペリ...",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2399005F1248_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399005F1248_1_05/",
+   "fetched_at": "2026-08-25 12:32:52",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_2399005F1248_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_2399005F1248_1_05",
+   "meta": {
+    "packins_no": "2399005F1248_1_05",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ドンペリドン錠5mg「サワイ」",
+     "ドンペリドン錠10mg「サワイ」"
+    ],
+    "generic_name": "ドンペリドン",
+    "therapeutic_class": "消化管運動改善剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)"
+     ],
+     "text": "国内外疫学調査において、致死性不整脈及び心突然死のリスク増加が示唆されている。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "心室頻拍、心室細動等の重篤な不整脈があらわれることがある。異常が認められた場合には、本剤の中止、救命処置、除細動等の適切な処置を行うこと。,,"
+    },
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報"
+     ],
+     "text": "外国において本剤による重篤な心室性不整脈及び突然死が報告されている。特に高用量を投与している患者又は高齢の患者で、これらのリスクが増加したとの報告がある,。,,"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：\nhttps://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Johannes, C. B. et al.：Pharmacoepidemiol. Drug Saf., 2010；19：881-888"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "van Noord, C. et al.：Drug Saf., 2010；33：1003-1014"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ドンペリドンDS小児用1％「サワイ」",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2399005R1210_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399005R1210_1_05/",
+   "fetched_at": "2026-08-25 12:32:56",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_2399005R1210_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_2399005R1210_1_05",
+   "meta": {
+    "packins_no": "2399005R1210_1_05",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ドンペリドンDS小児用1％「サワイ」"
+    ],
+    "generic_name": "ドンペリドン",
+    "therapeutic_class": "消化管運動改善剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)"
+     ],
+     "text": "国内外疫学調査において、致死性不整脈及び心突然死のリスク増加が示唆されている。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報"
+     ],
+     "text": "外国において本剤による重篤な心室性不整脈及び突然死が報告されている。特に高用量を投与している患者又は高齢の患者で、これらのリスクが増加したとの報告がある, 。,,"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：\nhttps://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Johannes, C. B. et al.：Pharmacoepidemiol. Drug Saf., 2010；19：881-888"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "van Noord, C. et al.：Drug Saf., 2010；33：1003-1014"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トアラセット配合錠「KMP」",
+   "company": "製造販売元／共創未来ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "1149117F1284_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149117F1284_1_03/",
+   "fetched_at": "2026-08-25 12:32:59",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300166_1149117F1284_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300166_1149117F1284_1_03",
+   "meta": {
+    "packins_no": "1149117F1284_1_03",
+    "company_id": "300166",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "トアラセット配合錠「KMP」"
+    ],
+    "generic_name": "トラマドール塩酸塩 / アセトアミノフェン",
+    "therapeutic_class": "慢性疼痛 / 抜歯後疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "７.用法及び用量に関連する注意",
+      "〈非がん性慢性疼痛〉",
+      "(3)"
+     ],
+     "text": "アスピリン喘息又はその既往歴のある患者に対して本剤を投与する場合は、1回1錠とすること。"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（頻度不明）"
+     ],
+     "text": "呼吸困難、喘鳴、血管性浮腫、蕁麻疹等があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェン錠200mg「三和」／アセ...",
+   "company": "製造販売元／株式会社三和化学研究所",
+   "reason": "更新",
+   "packins_no": "1141007F1209_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141007F1209_1_10/",
+   "fetched_at": "2026-08-25 12:33:05",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300297_1141007F1209_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300297_1141007F1209_1_10",
+   "meta": {
+    "packins_no": "1141007F1209_1_10",
+    "company_id": "300297",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェン錠200mg「三和」",
+     "アセトアミノフェンDS40%「三和」"
+    ],
+    "generic_name": "アセトアミノフェン錠・ドライシロップ",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（いずれも頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェンDS小児用20%「三和」",
+   "company": "製造販売元／株式会社三和化学研究所",
+   "reason": "更新",
+   "packins_no": "1141007R1086_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141007R1086_1_07/",
+   "fetched_at": "2026-08-25 12:33:10",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300297_1141007R1086_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300297_1141007R1086_1_07",
+   "meta": {
+    "packins_no": "1141007R1086_1_07",
+    "company_id": "300297",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-12",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェンDS小児用20%「三和」"
+    ],
+    "generic_name": "アセトアミノフェンドライシロップ",
+    "therapeutic_class": "小児用解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（いずれも頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "JPS葛根湯エキス顆粒〔調剤用〕",
+   "company": "製造販売元／ジェーピーエス製薬株式会社",
+   "reason": "更新",
+   "packins_no": "5200013D1093_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/5200013D1093_1_10/",
+   "fetched_at": "2026-08-25 12:33:14",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/340008_5200013D1093_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/340008_5200013D1093_1_10",
+   "meta": {
+    "packins_no": "5200013D1093_1_10",
+    "company_id": "340008",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-12",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "JPS葛根湯エキス顆粒〔調剤用〕"
+    ],
+    "generic_name": "葛根湯",
+    "therapeutic_class": "漢方製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "多形紅斑（頻度不明）"
+     ],
+     "text": "多形紅斑（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェン坐剤小児用50mg「シオ...",
+   "company": "製造販売元／シオエ製薬株式会社 / 販売 ／日本新薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141700J1134_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141700J1134_1_09/",
+   "fetched_at": "2026-08-25 12:33:17",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/340013_1141700J1134_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/340013_1141700J1134_1_09",
+   "meta": {
+    "packins_no": "1141700J1134_1_09",
+    "company_id": "340013",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-11",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェン坐剤小児用50mg「シオエ」",
+     "アセトアミノフェン坐剤小児用100mg「シオエ」",
+     "アセトアミノフェン坐剤小児用200mg「シオエ」"
+    ],
+    "generic_name": "アセトアミノフェン坐剤",
+    "therapeutic_class": "小児用解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（いずれも頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トアラセット配合錠「SN」",
+   "company": "製造販売元／シオノケミカル株式会社 / 販売元／江州製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1149117F1071_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149117F1071_1_08/",
+   "fetched_at": "2026-08-25 12:33:23",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/340409_1149117F1071_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/340409_1149117F1071_1_08",
+   "meta": {
+    "packins_no": "1149117F1071_1_08",
+    "company_id": "340409",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "トアラセット配合錠「SN」"
+    ],
+    "generic_name": "トラマドール塩酸塩/アセトアミノフェン",
+    "therapeutic_class": "慢性疼痛/抜歯後疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "セラピナ配合顆粒",
+   "company": "製造販売元／シオノケミカル株式会社",
+   "reason": "更新",
+   "packins_no": "1180107D1115_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1180107D1115_1_11/",
+   "fetched_at": "2026-08-25 12:33:26",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/340409_1180107D1115_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/340409_1180107D1115_1_11",
+   "meta": {
+    "packins_no": "1180107D1115_1_11",
+    "company_id": "340409",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "セラピナ配合顆粒"
+    ],
+    "generic_name": "サリチルアミド・アセトアミノフェン・無水カフェイン・プロメタジンメチレンジサリチル酸塩配合顆粒",
+    "therapeutic_class": "総合感冒剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（いずれも頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "セラピナ配合顆粒",
+   "company": "製造販売元／シオノケミカル株式会社 / 販売元／ヴィアトリス製薬合同会社",
+   "reason": "更新",
+   "packins_no": "1180107D1115_2_16",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1180107D1115_2_16/",
+   "fetched_at": "2026-08-25 12:33:29",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/340409_1180107D1115_2_16",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/340409_1180107D1115_2_16",
+   "meta": {
+    "packins_no": "1180107D1115_2_16",
+    "company_id": "340409",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "セラピナ配合顆粒"
+    ],
+    "generic_name": "サリチルアミド・アセトアミノフェン・無水カフェイン・プロメタジンメチレンジサリチル酸塩配合顆粒",
+    "therapeutic_class": "総合感冒剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（いずれも頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "SG配合顆粒",
+   "company": "製造販売元／シオノギファーマ株式会社 / 販売元／塩野義製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1149116D1033_2_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149116D1033_2_07/",
+   "fetched_at": "2026-08-25 12:33:32",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/343018_1149116D1033_2_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/343018_1149116D1033_2_07",
+   "meta": {
+    "packins_no": "1149116D1033_2_07",
+    "company_id": "343018",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "SG配合顆粒"
+    ],
+    "generic_name": "イソプロピルアンチピリン・アセトアミノフェン・アリルイソプロピルアセチル尿素・無水カフェイン",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "PL配合顆粒",
+   "company": "製造販売元／シオノギファーマ株式会社 / 販売元／塩野義製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1180107D1131_2_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1180107D1131_2_09/",
+   "fetched_at": "2026-08-25 12:33:35",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/343018_1180107D1131_2_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/343018_1180107D1131_2_09",
+   "meta": {
+    "packins_no": "1180107D1131_2_09",
+    "company_id": "343018",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "PL配合顆粒"
+    ],
+    "generic_name": "サリチルアミド・アセトアミノフェン・無水カフェイン・プロメタジンメチレンジサリチル酸塩",
+    "therapeutic_class": "総合感冒剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "幼児用PL配合顆粒",
+   "company": "製造販売元／シオノギファーマ株式会社 / 販売元／塩野義製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1180108D1039_2_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1180108D1039_2_09/",
+   "fetched_at": "2026-08-25 12:34:10",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/343018_1180108D1039_2_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/343018_1180108D1039_2_09",
+   "meta": {
+    "packins_no": "1180108D1039_2_09",
+    "company_id": "343018",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "幼児用PL配合顆粒"
+    ],
+    "generic_name": "サリチルアミド・アセトアミノフェン・無水カフェイン・プロメタジンメチレンジサリチル酸塩",
+    "therapeutic_class": "総合感冒剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "プレドニゾロン錠「タケダ」5mg／プレド...",
+   "company": "製造販売元／T's製薬株式会社 / 販売／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2456001F1353_2_12",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2456001F1353_2_12/",
+   "fetched_at": "2026-08-25 12:34:15",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400061_2456001F1353_2_12",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400061_2456001F1353_2_12",
+   "meta": {
+    "packins_no": "2456001F1353_2_12",
+    "company_id": "400061",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "プレドニゾロン錠「タケダ」5mg",
+     "プレドニゾロン散「タケダ」1％"
+    ],
+    "generic_name": "プレドニゾロン錠・散",
+    "therapeutic_class": "合成副腎皮質ホルモン剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "3年"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "小児用ペレックス配合顆粒",
+   "company": "製造販売元／大鵬薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "1180101D1037_1_15",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1180101D1037_1_15/",
+   "fetched_at": "2026-08-25 12:34:19",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400107_1180101D1037_1_15",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400107_1180101D1037_1_15",
+   "meta": {
+    "packins_no": "1180101D1037_1_15",
+    "company_id": "400107",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "小児用ペレックス配合顆粒"
+    ],
+    "generic_name": "サリチルアミド / アセトアミノフェン / 無水カフェイン / クロルフェニラミンマレイン酸塩",
+    "therapeutic_class": "感冒剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ペレックス配合顆粒",
+   "company": "製造販売元／大鵬薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "1180105D1035_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1180105D1035_1_14/",
+   "fetched_at": "2026-08-25 12:34:22",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400107_1180105D1035_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400107_1180105D1035_1_14",
+   "meta": {
+    "packins_no": "1180105D1035_1_14",
+    "company_id": "400107",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ペレックス配合顆粒"
+    ],
+    "generic_name": "サリチルアミド / アセトアミノフェン / 無水カフェイン / クロルフェニラミンマレイン酸塩",
+    "therapeutic_class": "感冒剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェンDS小児用20％「タカタ...",
+   "company": "製造販売元／高田製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141007R1060_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141007R1060_1_07/",
+   "fetched_at": "2026-08-25 12:34:24",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400186_1141007R1060_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400186_1141007R1060_1_07",
+   "meta": {
+    "packins_no": "1141007R1060_1_07",
+    "company_id": "400186",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-01",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェンDS小児用20％「タカタ」"
+    ],
+    "generic_name": "アセトアミノフェン",
+    "therapeutic_class": "小児用解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（いずれも頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピン細粒1％「タカタ」",
+   "company": "製造販売元／高田製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1179044C1146_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044C1146_1_10/",
+   "fetched_at": "2026-08-25 12:34:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400186_1179044C1146_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400186_1179044C1146_1_10",
+   "meta": {
+    "packins_no": "1179044C1146_1_10",
+    "company_id": "400186",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "オランザピン細粒1％「タカタ」"
+    ],
+    "generic_name": "オランザピン",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉",
+      "(1)"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+     ],
+     "text": "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "過敏症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピンOD錠2.5mg「タカタ」／オラン...",
+   "company": "製造販売元／高田製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1179044F4087_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044F4087_1_14/",
+   "fetched_at": "2026-08-25 12:34:34",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400186_1179044F4087_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400186_1179044F4087_1_14",
+   "meta": {
+    "packins_no": "1179044F4087_1_14",
+    "company_id": "400186",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "オランザピンOD錠2.5mg「タカタ」",
+     "オランザピンOD錠5mg「タカタ」",
+     "オランザピンOD錠10mg「タカタ」"
+    ],
+    "generic_name": "オランザピン",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉",
+      "(1)"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+     ],
+     "text": "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "過敏症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "メトクロプラミド錠5mg「タカタ」",
+   "company": "製造販売元／高田製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2399004F1260_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399004F1260_1_03/",
+   "fetched_at": "2026-08-25 12:34:37",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400186_2399004F1260_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400186_2399004F1260_1_03",
+   "meta": {
+    "packins_no": "2399004F1260_1_03",
+    "company_id": "400186",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-09",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "メトクロプラミド錠5mg「タカタ」"
+    ],
+    "generic_name": "メトクロプラミド",
+    "therapeutic_class": "消化器機能異常治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)"
+     ],
+     "text": "国内疫学調査において致死性不整脈が、国内外疫学調査において心突然死のリスク増加が示唆されている,。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：https://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Arana A, et al.：Drug Saf. 2015；38：1187-1199"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "塩酸メトクロプラミド注射液10mg「タカタ...",
+   "company": "製造販売元／高田製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2399401A1148_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399401A1148_1_04/",
+   "fetched_at": "2026-08-25 12:34:39",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400186_2399401A1148_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400186_2399401A1148_1_04",
+   "meta": {
+    "packins_no": "2399401A1148_1_04",
+    "company_id": "400186",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-11",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "塩酸メトクロプラミド注射液10mg「タカタ」"
+    ],
+    "generic_name": "塩酸メトクロプラミド",
+    "therapeutic_class": "消化器機能調整剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)"
+     ],
+     "text": "国内疫学調査において致死性不整脈が、国内外疫学調査において心突然死のリスク増加が示唆されている,。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：https://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Arana A, et al.：Drug Saf. 2015；38：1187-1199"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ドンペリドン坐剤10mg「タカタ」／ドンペ...",
+   "company": "製造販売元／高田製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2399714J1085_2_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399714J1085_2_05/",
+   "fetched_at": "2026-08-25 12:34:43",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400186_2399714J1085_2_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400186_2399714J1085_2_05",
+   "meta": {
+    "packins_no": "2399714J1085_2_05",
+    "company_id": "400186",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ドンペリドン坐剤10mg「タカタ」",
+     "ドンペリドン坐剤30mg「タカタ」"
+    ],
+    "generic_name": "ドンペリドン",
+    "therapeutic_class": "消化管運動改善剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)"
+     ],
+     "text": "国内外疫学調査において、致死性不整脈及び心突然死のリスク増加が示唆されている。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "心疾患のある患者"
+     ],
+     "text": "心疾患のある患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報"
+     ],
+     "text": "外国において本剤による重篤な心室性不整脈及び突然死が報告されている。特に高用量を投与している患者又は高齢の患者で、これらのリスクが増加したとの報告がある,。,,"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：https://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Johannes CB, et al.：Pharmacoepidemiol Drug Saf. 2010；19：881-888"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "van Noord C, et al.：Drug Saf. 2010；33：1003-1014"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェン錠200mg「TCK」",
+   "company": "製造販売元／辰巳化学株式会社",
+   "reason": "更新",
+   "packins_no": "1141007F1225_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141007F1225_1_07/",
+   "fetched_at": "2026-08-25 12:34:48",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400278_1141007F1225_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400278_1141007F1225_1_07",
+   "meta": {
+    "packins_no": "1141007F1225_1_07",
+    "company_id": "400278",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェン錠200mg「TCK」"
+    ],
+    "generic_name": "アセトアミノフェン錠",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トアラセット配合錠「TCK」",
+   "company": "製造販売元／辰巳化学株式会社",
+   "reason": "更新",
+   "packins_no": "1149117F1098_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149117F1098_1_09/",
+   "fetched_at": "2026-08-25 12:34:51",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400278_1149117F1098_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400278_1149117F1098_1_09",
+   "meta": {
+    "packins_no": "1149117F1098_1_09",
+    "company_id": "400278",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "トアラセット配合錠「TCK」"
+    ],
+    "generic_name": "トラマドール塩酸塩／アセトアミノフェン配合錠",
+    "therapeutic_class": "慢性疼痛／抜歯後疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（頻度不明）"
+     ],
+     "text": "呼吸困難、喘鳴、血管性浮腫、蕁麻疹等があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アゼルニジピン錠8mg「TCK」／アゼルニジ...",
+   "company": "製造販売元／辰巳化学株式会社",
+   "reason": "更新",
+   "packins_no": "2149043F1070_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149043F1070_1_11/",
+   "fetched_at": "2026-08-25 12:35:11",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400278_2149043F1070_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400278_2149043F1070_1_11",
+   "meta": {
+    "packins_no": "2149043F1070_1_11",
+    "company_id": "400278",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "アゼルニジピン錠8mg「TCK」",
+     "アゼルニジピン錠16mg「TCK」"
+    ],
+    "generic_name": "アゼルニジピン錠",
+    "therapeutic_class": "持続性Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ツカチニブ　エタノール付加物"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）",
+      "(1)"
+     ],
+     "text": "ツカイザ"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ロナファルニブ"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）",
+      "(1)"
+     ],
+     "text": "ゾキンヴィ"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "カルブロック錠8mg／カルブロック錠16mg",
+   "company": "製造販売元／第一三共株式会社 / 技術提携／UBE株式会社",
+   "reason": "更新",
+   "packins_no": "2149043F1020_2_18",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149043F1020_2_18/",
+   "fetched_at": "2026-08-25 12:35:14",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/430574_2149043F1020_2_18",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/430574_2149043F1020_2_18",
+   "meta": {
+    "packins_no": "2149043F1020_2_18",
+    "company_id": "430574",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "カルブロック錠8mg",
+     "カルブロック錠16mg"
+    ],
+    "generic_name": "アゼルニジピン",
+    "therapeutic_class": "持続性Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "ツカチニブ　エタノール付加物"
+    },
+    {
+     "path": [],
+     "text": "ロナファルニブ"
+    },
+    {
+     "path": [],
+     "text": "3-[1-(Diphenylmethyl)azetidin-3-yl]5-(propan-2-yl)(4RS)-2-amino-6-methyl-4-(3-nitrophenyl)-1,4-dihydropyridine-3,5-dicarboxylate"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "レザルタス配合錠LD／レザルタス配合錠HD",
+   "company": "製造販売元／第一三共株式会社",
+   "reason": "更新",
+   "packins_no": "2149115F1026_1_24",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149115F1026_1_24/",
+   "fetched_at": "2026-08-25 12:35:17",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/430574_2149115F1026_1_24",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/430574_2149115F1026_1_24",
+   "meta": {
+    "packins_no": "2149115F1026_1_24",
+    "company_id": "430574",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第8版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第7版"
+     }
+    },
+    "brands": [
+     "レザルタス配合錠LD",
+     "レザルタス配合錠HD"
+    ],
+    "generic_name": "オルメサルタン メドキソミル/アゼルニジピン配合錠",
+    "therapeutic_class": "高親和性ARB/持続性Ca拮抗薬配合剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "ツカチニブ　エタノール付加物"
+    },
+    {
+     "path": [],
+     "text": "ロナファルニブ"
+    },
+    {
+     "path": [],
+     "text": "3-[1-(Diphenylmethyl)azetidin-3-yl]5-(propan-2-yl)(4RS)-2-amino-6-methyl-4-(3-nitrophenyl)-1,4-dihydropyridine-3,5-dicarboxylate"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トアラセット配合錠「DSEP」",
+   "company": "製造販売元／第一三共エスファ株式会社 / 販売提携／第一三共株式会社",
+   "reason": "更新",
+   "packins_no": "1149117F1039_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149117F1039_1_10/",
+   "fetched_at": "2026-08-25 12:35:21",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/430773_1149117F1039_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/430773_1149117F1039_1_10",
+   "meta": {
+    "packins_no": "1149117F1039_1_10",
+    "company_id": "430773",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "トアラセット配合錠「DSEP」"
+    ],
+    "generic_name": "トラマドール塩酸塩/アセトアミノフェン配合錠",
+    "therapeutic_class": "慢性疼痛/抜歯後疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "ショック、アナフィラキシー（頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピン細粒1%「DSEP」",
+   "company": "製造販売元／第一三共エスファ株式会社 / 販売提携／第一三共株式会社",
+   "reason": "更新",
+   "packins_no": "1179044C1030_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044C1030_1_14/",
+   "fetched_at": "2026-08-25 12:35:24",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/430773_1179044C1030_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/430773_1179044C1030_1_14",
+   "meta": {
+    "packins_no": "1179044C1030_1_14",
+    "company_id": "430773",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-11",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "オランザピン細粒1%「DSEP」"
+    ],
+    "generic_name": "オランザピン細粒",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉",
+      "(1)"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者,"
+    },
+    {
+     "path": [
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [],
+     "text": "過敏症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピン錠2.5mg「DSEP」／オランザピ...",
+   "company": "製造販売元／第一三共エスファ株式会社 / 販売提携／第一三共株式会社",
+   "reason": "更新",
+   "packins_no": "1179044F1037_1_17",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044F1037_1_17/",
+   "fetched_at": "2026-08-25 12:35:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/430773_1179044F1037_1_17",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/430773_1179044F1037_1_17",
+   "meta": {
+    "packins_no": "1179044F1037_1_17",
+    "company_id": "430773",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-11",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "オランザピン錠2.5mg「DSEP」",
+     "オランザピン錠5mg「DSEP」",
+     "オランザピン錠10mg「DSEP」",
+     "オランザピンOD錠2.5mg「DSEP」",
+     "オランザピンOD錠5mg「DSEP」",
+     "オランザピンOD錠10mg「DSEP」"
+    ],
+    "generic_name": "オランザピン製剤",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉",
+      "(1)"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者,"
+    },
+    {
+     "path": [
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [],
+     "text": "過敏症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ジプレキサ細粒1%",
+   "company": "製造販売元／チェプラファーム株式会社",
+   "reason": "更新",
+   "packins_no": "1179044C1022_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044C1022_2_02/",
+   "fetched_at": "2026-08-25 12:35:31",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/450900_1179044C1022_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/450900_1179044C1022_2_02",
+   "meta": {
+    "packins_no": "1179044C1022_2_02",
+    "company_id": "450900",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2024-11",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "ジプレキサ細粒1%"
+    ],
+    "generic_name": "オランザピン細粒",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "光線過敏症、血管性浮腫、そう痒症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ジプレキサ錠2.5mg／ジプレキサ錠5mg／ジプ...",
+   "company": "製造販売元／チェプラファーム株式会社",
+   "reason": "更新",
+   "packins_no": "1179044F1029_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044F1029_2_02/",
+   "fetched_at": "2026-08-25 12:35:34",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/450900_1179044F1029_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/450900_1179044F1029_2_02",
+   "meta": {
+    "packins_no": "1179044F1029_2_02",
+    "company_id": "450900",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-11",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ジプレキサ錠2.5mg",
+     "ジプレキサ錠5mg",
+     "ジプレキサ錠10mg"
+    ],
+    "generic_name": "オランザピン錠",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "光線過敏症、血管性浮腫、そう痒症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ジプレキサザイディス錠2.5mg／ジプレキサ...",
+   "company": "製造販売元／チェプラファーム株式会社",
+   "reason": "更新",
+   "packins_no": "1179044F4028_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044F4028_2_02/",
+   "fetched_at": "2026-08-25 12:35:38",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/450900_1179044F4028_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/450900_1179044F4028_2_02",
+   "meta": {
+    "packins_no": "1179044F4028_2_02",
+    "company_id": "450900",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-11",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ジプレキサザイディス錠2.5mg",
+     "ジプレキサザイディス錠5mg",
+     "ジプレキサザイディス錠10mg"
+    ],
+    "generic_name": "オランザピン口腔内崩壊錠",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "光線過敏症、血管性浮腫、そう痒症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ツムラ葛根湯エキス顆粒（医療用）",
+   "company": "製造販売元／株式会社ツムラ",
+   "reason": "更新",
+   "packins_no": "5200013D1123_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/5200013D1123_1_14/",
+   "fetched_at": "2026-08-25 12:35:43",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/460026_5200013D1123_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/460026_5200013D1123_1_14",
+   "meta": {
+    "packins_no": "5200013D1123_1_14",
+    "company_id": "460026",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-12",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ツムラ葛根湯エキス顆粒（医療用）"
+    ],
+    "generic_name": "葛根湯",
+    "therapeutic_class": "漢方製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "多形紅斑（頻度不明）"
+     ],
+     "text": "多形紅斑（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "マリキナ配合顆粒",
+   "company": "製造販売元／鶴原製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1180107D1158_1_21",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1180107D1158_1_21/",
+   "fetched_at": "2026-08-25 12:35:46",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/460028_1180107D1158_1_21",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/460028_1180107D1158_1_21",
+   "meta": {
+    "packins_no": "1180107D1158_1_21",
+    "company_id": "460028",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "マリキナ配合顆粒"
+    ],
+    "generic_name": "サリチルアミド・アセトアミノフェン・無水カフェイン・プロメタジンメチレンジサリチル酸塩配合顆粒",
+    "therapeutic_class": "総合感冒剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "マリキナ配合顆粒",
+   "company": "製造販売元／鶴原製薬株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1180107D1158_3_16",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1180107D1158_3_16/",
+   "fetched_at": "2026-08-25 12:35:50",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/460028_1180107D1158_3_16",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/460028_1180107D1158_3_16",
+   "meta": {
+    "packins_no": "1180107D1158_3_16",
+    "company_id": "460028",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "マリキナ配合顆粒"
+    ],
+    "generic_name": "サリチルアミド・アセトアミノフェン・無水カフェイン・プロメタジンメチレンジサリチル酸塩配合顆粒",
+    "therapeutic_class": "総合感冒剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "メトクロプラミド細粒2%「ツルハラ」",
+   "company": "製造販売元／鶴原製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2399004C1107_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399004C1107_1_05/",
+   "fetched_at": "2026-08-25 12:35:53",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/460028_2399004C1107_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/460028_2399004C1107_1_05",
+   "meta": {
+    "packins_no": "2399004C1107_1_05",
+    "company_id": "460028",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "メトクロプラミド細粒2%「ツルハラ」"
+    ],
+    "generic_name": "メトクロプラミド",
+    "therapeutic_class": "消化器機能異常治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "(4)"
+     ],
+     "text": "国内疫学調査において致死性不整脈が、国内外疫学調査において心突然死のリスク増加が示唆されている,。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。"
+    },
+    {
+     "path": [
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [],
+     "text": "NDB を用いた調査結果の概要（ドンペリドン又はメトクロプラ\nミドによる致死性不整脈イベント発現のリスク評価）：\nhttps://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [],
+     "text": "Arana A, et al. Drug Saf. 2015; 38: 1187-99"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "メトクロプラミド錠5mg「ツルハラ」",
+   "company": "製造販売元／鶴原製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2399004F1235_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399004F1235_1_06/",
+   "fetched_at": "2026-08-25 12:35:55",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/460028_2399004F1235_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/460028_2399004F1235_1_06",
+   "meta": {
+    "packins_no": "2399004F1235_1_06",
+    "company_id": "460028",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "メトクロプラミド錠5mg「ツルハラ」"
+    ],
+    "generic_name": "メトクロプラミド",
+    "therapeutic_class": "消化器機能異常治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "(4)"
+     ],
+     "text": "国内疫学調査において致死性不整脈が、国内外疫学調査において心突然死のリスク増加が示唆されている,。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。"
+    },
+    {
+     "path": [
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [],
+     "text": "NDB を用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：\nhttps://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [],
+     "text": "Arana A, et al. Drug Saf. 2015; 38: 1187-99"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "メトクロプラミド錠5mg「ツルハラ」",
+   "company": "製造販売元／鶴原製薬株式会社 / 販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "2399004F1235_2_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399004F1235_2_05/",
+   "fetched_at": "2026-08-25 12:35:58",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/460028_2399004F1235_2_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/460028_2399004F1235_2_05",
+   "meta": {
+    "packins_no": "2399004F1235_2_05",
+    "company_id": "460028",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-09",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "メトクロプラミド錠5mg「ツルハラ」"
+    ],
+    "generic_name": "メトクロプラミド",
+    "therapeutic_class": "消化器機能異常治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "(4)"
+     ],
+     "text": "国内疫学調査において致死性不整脈が、国内外疫学調査において心突然死のリスク増加が示唆されている,。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。"
+    },
+    {
+     "path": [
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：https://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [],
+     "text": "Arana A, et al. Drug Saf. 2015; 38: 1187-99"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ドンペリドン錠5mg「ツルハラ」／ドンペ...",
+   "company": "製造販売元／鶴原製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2399005F1256_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399005F1256_1_06/",
+   "fetched_at": "2026-08-25 12:36:01",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/460028_2399005F1256_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/460028_2399005F1256_1_06",
+   "meta": {
+    "packins_no": "2399005F1256_1_06",
+    "company_id": "460028",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ドンペリドン錠5mg「ツルハラ」",
+     "ドンペリドン錠10mg「ツルハラ」"
+    ],
+    "generic_name": "ドンペリドン",
+    "therapeutic_class": "消化管運動改善剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "(3)"
+     ],
+     "text": "国内外疫学調査において、致死性不整脈及び心突然死のリスク増加が示唆されている。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。,"
+    },
+    {
+     "path": [
+      "心疾患のある患者"
+     ],
+     "text": "心疾患のある患者"
+    },
+    {
+     "path": [
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [],
+     "text": "外国において本剤による重篤な心室性不整脈及び突然死が報告されている。特に高用量を投与している患者又は高齢の患者で、これらのリスクが増加したとの報告がある,。,,"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセリオ静注液1000mgバッグ",
+   "company": "製造販売元／テルモ株式会社",
+   "reason": "更新",
+   "packins_no": "1141400A2020_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141400A2020_1_07/",
+   "fetched_at": "2026-08-25 12:36:04",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/470034_1141400A2020_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/470034_1141400A2020_1_07",
+   "meta": {
+    "packins_no": "1141400A2020_1_07",
+    "company_id": "470034",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "アセリオ静注液1000mgバッグ"
+    ],
+    "generic_name": "アセトアミノフェン",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェン〈ハチ〉",
+   "company": "製造販売元／東洋製薬化成株式会社 / 発売元／健栄製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141001X1029_2_22",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141001X1029_2_22/",
+   "fetched_at": "2026-08-25 12:36:09",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480199_1141001X1029_2_22",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480199_1141001X1029_2_22",
+   "meta": {
+    "packins_no": "1141001X1029_2_22",
+    "company_id": "480199",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェン〈ハチ〉"
+    ],
+    "generic_name": "アセトアミノフェン",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェン〈ハチ〉",
+   "company": "製造販売元／東洋製薬化成株式会社 / 発売元／丸石製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141001X1029_3_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141001X1029_3_06/",
+   "fetched_at": "2026-08-25 12:36:12",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480199_1141001X1029_3_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480199_1141001X1029_3_06",
+   "meta": {
+    "packins_no": "1141001X1029_3_06",
+    "company_id": "480199",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェン〈ハチ〉"
+    ],
+    "generic_name": "アセトアミノフェン",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "〔東洋〕葛根湯エキス細粒",
+   "company": "製造販売元／株式会社東洋薬行",
+   "reason": "更新",
+   "packins_no": "5200013C1063_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/5200013C1063_1_10/",
+   "fetched_at": "2026-08-25 12:36:14",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480213_5200013C1063_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480213_5200013C1063_1_10",
+   "meta": {
+    "packins_no": "5200013C1063_1_10",
+    "company_id": "480213",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "〔東洋〕葛根湯エキス細粒"
+    ],
+    "generic_name": "葛根湯",
+    "therapeutic_class": "漢方製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "多形紅斑（頻度不明）"
+     ],
+     "text": "多形紅斑（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェン細粒20%「トーワ」",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "1141007C1156_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141007C1156_1_06/",
+   "fetched_at": "2026-08-25 12:36:18",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_1141007C1156_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_1141007C1156_1_06",
+   "meta": {
+    "packins_no": "1141007C1156_1_06",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェン細粒20%「トーワ」"
+    ],
+    "generic_name": "アセトアミノフェン細粒",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェン錠200mg「トーワ」",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "1141007F1187_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141007F1187_1_06/",
+   "fetched_at": "2026-08-25 12:36:22",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_1141007F1187_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_1141007F1187_1_06",
+   "meta": {
+    "packins_no": "1141007F1187_1_06",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェン錠200mg「トーワ」"
+    ],
+    "generic_name": "アセトアミノフェン錠",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェンシロップ小児用2%「ト...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "1141007Q1064_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141007Q1064_1_06/",
+   "fetched_at": "2026-08-25 12:36:25",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_1141007Q1064_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_1141007Q1064_1_06",
+   "meta": {
+    "packins_no": "1141007Q1064_1_06",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-11",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェンシロップ小児用2%「トーワ」"
+    ],
+    "generic_name": "アセトアミノフェンシロップ",
+    "therapeutic_class": "小児用解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェンDS小児用20%「トーワ」",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "1141007R1078_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141007R1078_1_06/",
+   "fetched_at": "2026-08-25 12:36:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_1141007R1078_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_1141007R1078_1_06",
+   "meta": {
+    "packins_no": "1141007R1078_1_06",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェンDS小児用20%「トーワ」"
+    ],
+    "generic_name": "アセトアミノフェンドライシロップ",
+    "therapeutic_class": "小児用解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トアラセット配合錠「トーワ」",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "1149117F1195_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149117F1195_1_08/",
+   "fetched_at": "2026-08-25 12:36:30",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_1149117F1195_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_1149117F1195_1_08",
+   "meta": {
+    "packins_no": "1149117F1195_1_08",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "トアラセット配合錠「トーワ」"
+    ],
+    "generic_name": "トラマドール塩酸塩/アセトアミノフェン配合錠",
+    "therapeutic_class": "慢性疼痛/抜歯後疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（頻度不明）"
+     ],
+     "text": "呼吸困難、喘鳴、血管性浮腫、蕁麻疹等があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピン細粒1%「トーワ」",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "1179044C1073_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044C1073_1_14/",
+   "fetched_at": "2026-08-25 12:36:33",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_1179044C1073_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_1179044C1073_1_14",
+   "meta": {
+    "packins_no": "1179044C1073_1_14",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "オランザピン細粒1%「トーワ」"
+    ],
+    "generic_name": "オランザピン細粒",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "以下の点に留意すること。本剤投与により、血糖値が上昇し、代謝状態を急激に悪化させるおそれがあるため、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "光線過敏症、血管性浮腫、そう痒症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピン錠2.5mg「トーワ」／オランザ...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "1179044F1142_1_13",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044F1142_1_13/",
+   "fetched_at": "2026-08-25 12:36:37",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_1179044F1142_1_13",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_1179044F1142_1_13",
+   "meta": {
+    "packins_no": "1179044F1142_1_13",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "オランザピン錠2.5mg「トーワ」",
+     "オランザピン錠5mg「トーワ」",
+     "オランザピン錠10mg「トーワ」"
+    ],
+    "generic_name": "オランザピン錠",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "以下の点に留意すること。本剤投与により、血糖値が上昇し、代謝状態を急激に悪化させるおそれがあるため、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "光線過敏症、血管性浮腫、そう痒症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピンOD錠2.5mg「トーワ」／オラン...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "1179044F4109_1_13",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044F4109_1_13/",
+   "fetched_at": "2026-08-25 12:36:41",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_1179044F4109_1_13",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_1179044F4109_1_13",
+   "meta": {
+    "packins_no": "1179044F4109_1_13",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "オランザピンOD錠2.5mg「トーワ」",
+     "オランザピンOD錠5mg「トーワ」",
+     "オランザピンOD錠10mg「トーワ」"
+    ],
+    "generic_name": "オランザピン口腔内崩壊錠",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "以下の点に留意すること。本剤投与により、血糖値が上昇し、代謝状態を急激に悪化させるおそれがあるため、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "光線過敏症、血管性浮腫、そう痒症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トーワチーム配合顆粒",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "1180107D1123_1_20",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1180107D1123_1_20/",
+   "fetched_at": "2026-08-25 12:36:44",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_1180107D1123_1_20",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_1180107D1123_1_20",
+   "meta": {
+    "packins_no": "1180107D1123_1_20",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-02",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "トーワチーム配合顆粒"
+    ],
+    "generic_name": "サリチルアミド・アセトアミノフェン・無水カフェイン・プロメタジンメチレンジサリチル酸塩",
+    "therapeutic_class": "総合感冒剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アゼルニジピン錠8mg「トーワ」／アゼル...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "2149043F1127_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149043F1127_1_10/",
+   "fetched_at": "2026-08-25 12:36:47",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_2149043F1127_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_2149043F1127_1_10",
+   "meta": {
+    "packins_no": "2149043F1127_1_10",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "アゼルニジピン錠8mg「トーワ」",
+     "アゼルニジピン錠16mg「トーワ」"
+    ],
+    "generic_name": "アゼルニジピン錠",
+    "therapeutic_class": "持続性Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ツカチニブ　エタノール付加物"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ロナファルニブ"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "メトクロプラミド錠5mg「トーワ」",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "2399004F1251_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399004F1251_1_04/",
+   "fetched_at": "2026-08-25 12:36:51",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_2399004F1251_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_2399004F1251_1_04",
+   "meta": {
+    "packins_no": "2399004F1251_1_04",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "メトクロプラミド錠5mg「トーワ」"
+    ],
+    "generic_name": "メトクロプラミド錠",
+    "therapeutic_class": "消化器機能異常治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)"
+     ],
+     "text": "国内疫学調査において致死性不整脈が、国内外疫学調査において心突然死のリスク増加が示唆されている,。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "心室頻拍、心室細動等の重篤な不整脈があらわれることがある。異常が認められた場合には、本剤の中止、救命処置、除細動等の適切な処置を行うこと。"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：https://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Arana A.,et al.：Drug Saf．2015；38：1187-1199"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ドンペリドン錠5mg「トーワ」／ドンペリ...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "2399005F1264_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399005F1264_1_05/",
+   "fetched_at": "2026-08-25 12:37:17",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_2399005F1264_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_2399005F1264_1_05",
+   "meta": {
+    "packins_no": "2399005F1264_1_05",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ドンペリドン錠5mg「トーワ」",
+     "ドンペリドン錠10mg「トーワ」"
+    ],
+    "generic_name": "ドンペリドン錠",
+    "therapeutic_class": "消化管運動改善剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)"
+     ],
+     "text": "国内外疫学調査において、致死性不整脈及び心突然死のリスク増加が示唆されている。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：https://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Johannes CB,et al.：Pharmacoepidemiol Drug Saf．2010；19：881-888"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "van Noord C,et al.：Drug Saf．2010；33：1003-1014"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "デクスメデトミジン静注液200μg「ニプロ...",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "更新",
+   "packins_no": "1129400A1070_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1129400A1070_1_07/",
+   "fetched_at": "2026-08-25 12:37:21",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530100_1129400A1070_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530100_1129400A1070_1_07",
+   "meta": {
+    "packins_no": "1129400A1070_1_07",
+    "company_id": "530100",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-01",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "デクスメデトミジン静注液200μg「ニプロ」",
+     "デクスメデトミジン静注液200μg/50mLシリンジ「ニプロ」"
+    ],
+    "generic_name": "デクスメデトミジン塩酸塩静注液",
+    "therapeutic_class": "α2作動性鎮静剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "多尿a)"
+    },
+    {
+     "path": [],
+     "text": "高ナトリウム血症a)"
+    },
+    {
+     "path": [],
+     "text": "a）本剤投与後、尿崩症に類似する多尿と高ナトリウム血症が併発し、投与中止後、これらの症状が回復した報告がある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピン錠2.5mg「ニプロ」／オランザ...",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "更新",
+   "packins_no": "1179044C1090_1_15",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044C1090_1_15/",
+   "fetched_at": "2026-08-25 12:37:25",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530100_1179044C1090_1_15",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530100_1179044C1090_1_15",
+   "meta": {
+    "packins_no": "1179044C1090_1_15",
+    "company_id": "530100",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "オランザピン錠2.5mg「ニプロ」",
+     "オランザピン錠5mg「ニプロ」",
+     "オランザピン錠10mg「ニプロ」",
+     "オランザピンOD錠2.5mg「ニプロ」",
+     "オランザピンOD錠5mg「ニプロ」",
+     "オランザピンOD錠10mg「ニプロ」",
+     "オランザピン細粒1％「ニプロ」"
+    ],
+    "generic_name": "オランザピン製剤",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉",
+      "(1)"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者,"
+    },
+    {
+     "path": [
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+     ],
+     "text": "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピン錠2.5mg「NP」／オランザピン...",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "更新",
+   "packins_no": "1179044C1170_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044C1170_2_02/",
+   "fetched_at": "2026-08-25 12:37:28",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530100_1179044C1170_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530100_1179044C1170_2_02",
+   "meta": {
+    "packins_no": "1179044C1170_2_02",
+    "company_id": "530100",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2025-04",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "オランザピン錠2.5mg「NP」",
+     "オランザピン錠5mg「NP」",
+     "オランザピン錠10mg「NP」",
+     "オランザピンOD錠5mg「NP」",
+     "オランザピンOD錠10mg「NP」",
+     "オランザピン細粒1%「NP」"
+    ],
+    "generic_name": "オランザピン製剤",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉",
+      "(1)"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者,"
+    },
+    {
+     "path": [
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+     ],
+     "text": "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アプリンジン塩酸塩カプセル10mg「NP」／...",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "更新",
+   "packins_no": "2129004M1050_2_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2129004M1050_2_05/",
+   "fetched_at": "2026-08-25 12:37:38",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530100_2129004M1050_2_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530100_2129004M1050_2_05",
+   "meta": {
+    "packins_no": "2129004M1050_2_05",
+    "company_id": "530100",
+    "revision": {
+     "current": {
+      "ym": "2023-11",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "アプリンジン塩酸塩カプセル10mg「NP」",
+     "アプリンジン塩酸塩カプセル20mg「NP」"
+    ],
+    "generic_name": "アプリンジン塩酸塩カプセル",
+    "therapeutic_class": "不整脈治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "アゼルニジピン錠8mg「NP」／アゼルニジピ...",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "更新",
+   "packins_no": "2149043F1062_3_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149043F1062_3_10/",
+   "fetched_at": "2026-08-25 12:37:43",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530100_2149043F1062_3_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530100_2149043F1062_3_10",
+   "meta": {
+    "packins_no": "2149043F1062_3_10",
+    "company_id": "530100",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "アゼルニジピン錠8mg「NP」",
+     "アゼルニジピン錠16mg「NP」"
+    ],
+    "generic_name": "アゼルニジピン錠",
+    "therapeutic_class": "持続性Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "ツカチニブ　エタノール付加物"
+    },
+    {
+     "path": [],
+     "text": "ロナファルニブ"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェン坐剤小児用50mg「日新...",
+   "company": "製造販売元／日新製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141700J1126_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141700J1126_1_08/",
+   "fetched_at": "2026-08-25 12:37:46",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530113_1141700J1126_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530113_1141700J1126_1_08",
+   "meta": {
+    "packins_no": "1141700J1126_1_08",
+    "company_id": "530113",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-01",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェン坐剤小児用50mg「日新」",
+     "アセトアミノフェン坐剤小児用100mg「日新」",
+     "アセトアミノフェン坐剤小児用200mg「日新」"
+    ],
+    "generic_name": "アセトアミノフェン",
+    "therapeutic_class": "小児用解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トアラセット配合錠「日新」",
+   "company": "製造販売元／日新製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1149117F1217_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149117F1217_1_08/",
+   "fetched_at": "2026-08-25 12:37:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530113_1149117F1217_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530113_1149117F1217_1_08",
+   "meta": {
+    "packins_no": "1149117F1217_1_08",
+    "company_id": "530113",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "トアラセット配合錠「日新」"
+    ],
+    "generic_name": "トラマドール塩酸塩 / アセトアミノフェン",
+    "therapeutic_class": "慢性疼痛/抜歯後疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（頻度不明）"
+     ],
+     "text": "呼吸困難、喘鳴、血管性浮腫、蕁麻疹等があらわれることがある。"
+    },
+    {
+     "path": [
+      "２２.包装"
+     ],
+     "text": "100錠［10錠（PTP）×10］\n500錠［10錠（PTP）×50］"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピン細粒1％「日新」",
+   "company": "製造販売元／日新製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1179044C1154_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044C1154_1_09/",
+   "fetched_at": "2026-08-25 12:37:55",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530113_1179044C1154_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530113_1179044C1154_1_09",
+   "meta": {
+    "packins_no": "1179044C1154_1_09",
+    "company_id": "530113",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-11",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "オランザピン細粒1％「日新」"
+    ],
+    "generic_name": "オランザピン",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉",
+      "(1)"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "以下の点に留意すること。本剤投与により、血糖値が上昇し、代謝状態を急激に悪化させるおそれがあるため、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+     ],
+     "text": "高血糖があらわれ、糖尿病性ケトアシドーシス、糖尿病性昏睡から死亡に至るなどの致命的な経過をたどることがあるので、血糖値の測定や、口渇、多飲、多尿、頻尿等の観察を十分に行い、異常が認められた場合には、投与を中止し、インスリン製剤の投与を行うなど、適切な処置を行うこと。,,,,,,,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "光線過敏症、血管性浮腫、そう痒症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピン錠2.5mg「日新」／オランザピ...",
+   "company": "製造販売元／日新製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1179044F1169_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044F1169_1_11/",
+   "fetched_at": "2026-08-25 12:38:04",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530113_1179044F1169_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530113_1179044F1169_1_11",
+   "meta": {
+    "packins_no": "1179044F1169_1_11",
+    "company_id": "530113",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-11",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "オランザピン錠2.5mg「日新」",
+     "オランザピン錠5mg「日新」",
+     "オランザピン錠10mg「日新」"
+    ],
+    "generic_name": "オランザピン",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉",
+      "(1)"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "以下の点に留意すること。本剤投与により、血糖値が上昇し、代謝状態を急激に悪化させるおそれがあるため、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+     ],
+     "text": "高血糖があらわれ、糖尿病性ケトアシドーシス、糖尿病性昏睡から死亡に至るなどの致命的な経過をたどることがあるので、血糖値の測定や、口渇、多飲、多尿、頻尿等の観察を十分に行い、異常が認められた場合には、投与を中止し、インスリン製剤の投与を行うなど、適切な処置を行うこと。,,,,,,,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "光線過敏症、血管性浮腫、そう痒症"
+    },
+    {
+     "path": [
+      "２２.包装",
+      "〈オランザピン錠2.5mg「日新」〉"
+     ],
+     "text": "〈オランザピン錠2.5mg「日新」〉"
+    },
+    {
+     "path": [
+      "２２.包装",
+      "〈オランザピン錠5mg「日新」〉"
+     ],
+     "text": "〈オランザピン錠5mg「日新」〉"
+    },
+    {
+     "path": [
+      "２２.包装",
+      "〈オランザピン錠10mg「日新」〉"
+     ],
+     "text": "〈オランザピン錠10mg「日新」〉"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ドンペリドン錠5mg「日新」／ドンペリド...",
+   "company": "製造販売元／日新製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2399005F1205_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399005F1205_1_07/",
+   "fetched_at": "2026-08-25 12:38:08",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530113_2399005F1205_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530113_2399005F1205_1_07",
+   "meta": {
+    "packins_no": "2399005F1205_1_07",
+    "company_id": "530113",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ドンペリドン錠5mg「日新」",
+     "ドンペリドン錠10mg「日新」"
+    ],
+    "generic_name": "ドンペリドン",
+    "therapeutic_class": "消化管運動改善剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)"
+     ],
+     "text": "国内外疫学調査において、致死性不整脈及び心突然死のリスク増加が示唆されている 。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。,"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)",
+      "(1)"
+     ],
+     "text": "必要最小限の使用にとどめ、長期にわたり漫然と投与しないこと。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)",
+      "(2)"
+     ],
+     "text": "関連する症状が認められた場合は、速やかに受診するよう患者に指導すること。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)",
+      "(3)"
+     ],
+     "text": "観察を十分に行い、関連する症状が認められた場合は速やかに心機能検査（心電図検査等）を行うこと。"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "心疾患のある患者"
+     ],
+     "text": "QT延長があらわれるおそれがある。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "心室頻拍、心室細動等の重篤な不整脈があらわれることがある。異常が認められた場合には、本剤の中止、救命処置、除細動等の適切な処置を行うこと。,,"
+    },
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報"
+     ],
+     "text": "外国において本剤による重篤な心室性不整脈及び突然死が報告されている。特に高用量を投与している患者又は高齢の患者で、これらのリスクが増加したとの報告がある, 。,,"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：https://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Johannes CB et al.：Pharmacoepidemiol Drug Saf.2010；19：881-8"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "van Noord C,et al.：Drug Saf.2010；33：1003-14"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ドンペリドン坐剤10mg「日新」／ドンペリ...",
+   "company": "製造販売元／日新製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2399714J1077_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399714J1077_1_05/",
+   "fetched_at": "2026-08-25 12:38:11",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530113_2399714J1077_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530113_2399714J1077_1_05",
+   "meta": {
+    "packins_no": "2399714J1077_1_05",
+    "company_id": "530113",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ドンペリドン坐剤10mg「日新」",
+     "ドンペリドン坐剤30mg「日新」"
+    ],
+    "generic_name": "ドンペリドン",
+    "therapeutic_class": "消化管運動改善剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)"
+     ],
+     "text": "国内外疫学調査において、致死性不整脈及び心突然死のリスク増加が示唆されている 。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。,"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(1)"
+     ],
+     "text": "必要最小限の使用にとどめ、長期にわたり漫然と投与しないこと。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(2)"
+     ],
+     "text": "関連する症状が認められた場合は、速やかに受診するよう患者に指導すること。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(3)"
+     ],
+     "text": "観察を十分に行い、関連する症状が認められた場合は速やかに心機能検査（心電図検査等）を行うこと。"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "心疾患のある患者"
+     ],
+     "text": "QT延長があらわれるおそれがある。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "心室頻拍、心室細動等の重篤な不整脈があらわれることがある。異常が認められた場合には、本剤の中止、救命処置、除細動等の適切な処置を行うこと。,,"
+    },
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報"
+     ],
+     "text": "外国において本剤による重篤な心室性不整脈及び突然死が報告されている。特に高用量を投与している患者又は高齢の患者で、これらのリスクが増加したとの報告がある, 。,,"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：https://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Johannes CB et al.：Pharmacoepidemiol Drug Saf.2010；19:881-8"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "van Noord C,et al.：Drug Saf.2010；33：1003-14"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "プロポフォール1%静注20mL「日医工」／プ...",
+   "company": "製造販売元（輸入）／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1119402A1073_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1119402A1073_1_08/",
+   "fetched_at": "2026-08-25 12:38:15",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_1119402A1073_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_1119402A1073_1_08",
+   "meta": {
+    "packins_no": "1119402A1073_1_08",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "プロポフォール1%静注20mL「日医工」",
+     "プロポフォール1%静注50mL「日医工」",
+     "プロポフォール1%静注100mL「日医工」"
+    ],
+    "generic_name": "プロポフォール",
+    "therapeutic_class": "全身麻酔・鎮静用剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "アナフィラキシー（頻度不明）"
+     ],
+     "text": "血管性浮腫、気管支痙攣、紅斑、低血圧を伴うアナフィラキシーがあらわれることがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "肝炎"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピン細粒1%「日医工」",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1179044C1081_1_13",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044C1081_1_13/",
+   "fetched_at": "2026-08-25 12:38:18",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_1179044C1081_1_13",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_1179044C1081_1_13",
+   "meta": {
+    "packins_no": "1179044C1081_1_13",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "オランザピン細粒1%「日医工」"
+    ],
+    "generic_name": "オランザピン",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈効能共通〉"
+     ],
+     "text": "〈効能共通〉"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉"
+     ],
+     "text": "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "以下の点に留意すること。本剤投与により、血糖値が上昇し、代謝状態を急激に悪化させるおそれがあるため、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者",
+      "(1)"
+     ],
+     "text": "血糖コントロールが良好な患者にのみ投与すること。なお、関連学会の最新のガイドライン等を参考にした上で、患者の状態に応じて、本剤の必要性を判断すること。"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者",
+      "(2)"
+     ],
+     "text": "本剤の投与量及び投与期間は必要最小限とすること。"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者",
+      "(3)"
+     ],
+     "text": "本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察すること。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+     ],
+     "text": "高血糖があらわれ、糖尿病性ケトアシドーシス、糖尿病性昏睡から死亡に至るなどの致命的な経過をたどることがあるので、血糖値の測定や、口渇、多飲、多尿、頻尿等の観察を十分に行い、異常が認められた場合には、投与を中止し、インスリン製剤の投与を行うなど、適切な処置を行うこと。,,,,,,,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "光線過敏症、血管性浮腫、そう痒症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピンOD錠2.5mg「日医工」／オラン...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1179044F4117_1_21",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044F4117_1_21/",
+   "fetched_at": "2026-08-25 12:38:24",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_1179044F4117_1_21",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_1179044F4117_1_21",
+   "meta": {
+    "packins_no": "1179044F4117_1_21",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "オランザピンOD錠2.5mg「日医工」",
+     "オランザピンOD錠5mg「日医工」",
+     "オランザピンOD錠10mg「日医工」"
+    ],
+    "generic_name": "オランザピン",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈効能共通〉"
+     ],
+     "text": "〈効能共通〉"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉"
+     ],
+     "text": "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "以下の点に留意すること。本剤投与により、血糖値が上昇し、代謝状態を急激に悪化させるおそれがあるため、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者",
+      "(1)"
+     ],
+     "text": "血糖コントロールが良好な患者にのみ投与すること。なお、関連学会の最新のガイドライン等を参考にした上で、患者の状態に応じて、本剤の必要性を判断すること。"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者",
+      "(2)"
+     ],
+     "text": "本剤の投与量及び投与期間は必要最小限とすること。"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者",
+      "(3)"
+     ],
+     "text": "本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察すること。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+     ],
+     "text": "高血糖があらわれ、糖尿病性ケトアシドーシス、糖尿病性昏睡から死亡に至るなどの致命的な経過をたどることがあるので、血糖値の測定や、口渇、多飲、多尿、頻尿等の観察を十分に行い、異常が認められた場合には、投与を中止し、インスリン製剤の投与を行うなど、適切な処置を行うこと。,,,,,,,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "光線過敏症、血管性浮腫、そう痒症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アゼルニジピン錠8mg「日医工」／アゼル...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2149043F1135_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149043F1135_1_10/",
+   "fetched_at": "2026-08-25 12:38:28",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_2149043F1135_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_2149043F1135_1_10",
+   "meta": {
+    "packins_no": "2149043F1135_1_10",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "アゼルニジピン錠8mg「日医工」",
+     "アゼルニジピン錠16mg「日医工」"
+    ],
+    "generic_name": "アゼルニジピン",
+    "therapeutic_class": "持続性Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ツカチニブ　エタノール付加物"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ロナファルニブ"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "プリンペラン細粒2%",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2399004C1077_2_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399004C1077_2_06/",
+   "fetched_at": "2026-08-25 12:38:31",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_2399004C1077_2_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_2399004C1077_2_06",
+   "meta": {
+    "packins_no": "2399004C1077_2_06",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "プリンペラン細粒2%"
+    ],
+    "generic_name": "メトクロプラミド",
+    "therapeutic_class": "消化器機能異常治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)"
+     ],
+     "text": "国内疫学調査において致死性不整脈が、国内外疫学調査において心突然死のリスク増加が示唆されている,。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(1)"
+     ],
+     "text": "必要最小限の使用にとどめ、長期にわたり漫然と投与しないこと。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(2)"
+     ],
+     "text": "関連する症状が認められた場合は、速やかに受診するよう患者に指導すること。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(3)"
+     ],
+     "text": "観察を十分に行い、関連する症状が認められた場合は速やかに心機能検査（心電図検査等）を行うこと。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "心室頻拍、心室細動等の重篤な不整脈があらわれることがある。異常が認められた場合には、本剤の中止、救命処置、除細動等の適切な処置を行うこと。"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：\nhttps://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Arana A., et al.：Drug Saf. 2015；38（12）：1187-1199"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "プリンペラン錠5",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2399004F1200_2_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399004F1200_2_08/",
+   "fetched_at": "2026-08-25 12:38:34",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_2399004F1200_2_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_2399004F1200_2_08",
+   "meta": {
+    "packins_no": "2399004F1200_2_08",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-04",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "プリンペラン錠5"
+    ],
+    "generic_name": "メトクロプラミド",
+    "therapeutic_class": "消化器機能異常治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)"
+     ],
+     "text": "国内疫学調査において致死性不整脈が、国内外疫学調査において心突然死のリスク増加が示唆されている,。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(1)"
+     ],
+     "text": "必要最小限の使用にとどめ、長期にわたり漫然と投与しないこと。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(2)"
+     ],
+     "text": "関連する症状が認められた場合は、速やかに受診するよう患者に指導すること。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(3)"
+     ],
+     "text": "観察を十分に行い、関連する症状が認められた場合は速やかに心機能検査（心電図検査等）を行うこと。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "心室頻拍、心室細動等の重篤な不整脈があらわれることがある。異常が認められた場合には、本剤の中止、救命処置、除細動等の適切な処置を行うこと。"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：\nhttps://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Arana A., et al.：Drug Saf. 2015；38（12）：1187-1199"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "プリンペランシロップ0.1%",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2399004Q1090_2_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399004Q1090_2_05/",
+   "fetched_at": "2026-08-25 12:38:37",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_2399004Q1090_2_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_2399004Q1090_2_05",
+   "meta": {
+    "packins_no": "2399004Q1090_2_05",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "プリンペランシロップ0.1%"
+    ],
+    "generic_name": "メトクロプラミド",
+    "therapeutic_class": "消化器機能異常治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)"
+     ],
+     "text": "国内疫学調査において致死性不整脈が、国内外疫学調査において心突然死のリスク増加が示唆されている,。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(1)"
+     ],
+     "text": "必要最小限の使用にとどめ、長期にわたり漫然と投与しないこと。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(2)"
+     ],
+     "text": "関連する症状が認められた場合は、速やかに受診するよう患者に指導すること。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(3)"
+     ],
+     "text": "観察を十分に行い、関連する症状が認められた場合は速やかに心機能検査（心電図検査等）を行うこと。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "心室頻拍、心室細動等の重篤な不整脈があらわれることがある。異常が認められた場合には、本剤の中止、救命処置、除細動等の適切な処置を行うこと。"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：\nhttps://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Arana A., et al.：Drug Saf. 2015；38（12）：1187-1199"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ドンペリドン錠5mg「日医工」／ドンペリ...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2399005F1191_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399005F1191_1_07/",
+   "fetched_at": "2026-08-25 12:38:39",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_2399005F1191_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_2399005F1191_1_07",
+   "meta": {
+    "packins_no": "2399005F1191_1_07",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ドンペリドン錠5mg「日医工」",
+     "ドンペリドン錠10mg「日医工」"
+    ],
+    "generic_name": "ドンペリドン",
+    "therapeutic_class": "消化管運動改善剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)"
+     ],
+     "text": "国内外疫学調査において、致死性不整脈及び心突然死のリスク増加が示唆されている。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。,"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)",
+      "(1)"
+     ],
+     "text": "必要最小限の使用にとどめ、長期にわたり漫然と投与しないこと。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)",
+      "(2)"
+     ],
+     "text": "関連する症状が認められた場合は、速やかに受診するよう患者に指導すること。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)",
+      "(3)"
+     ],
+     "text": "観察を十分に行い、関連する症状が認められた場合は速やかに心機能検査（心電図検査等）を行うこと。"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "心疾患のある患者"
+     ],
+     "text": "QT延長があらわれるおそれがある。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "心室頻拍、心室細動等の重篤な不整脈があらわれることがある。異常が認められた場合には、本剤の中止、救命処置、除細動等の適切な処置を行うこと。,,"
+    },
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報"
+     ],
+     "text": "外国において本剤による重篤な心室性不整脈及び突然死が報告されている。特に高用量を投与している患者又は高齢の患者で、これらのリスクが増加したとの報告がある,。,,"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDB を用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：\nhttps://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Johannes C. B., et al.：Pharmacoepidemiol. Drug Saf. 2010；19：881-888"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "van Noord C., et al.：Drug Saf. 2010；33：1003-1014"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "プリンペラン注射液10mg",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2399401A1083_4_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399401A1083_4_07/",
+   "fetched_at": "2026-08-25 12:38:42",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_2399401A1083_4_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_2399401A1083_4_07",
+   "meta": {
+    "packins_no": "2399401A1083_4_07",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "プリンペラン注射液10mg"
+    ],
+    "generic_name": "メトクロプラミド",
+    "therapeutic_class": "消化器機能異常治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)"
+     ],
+     "text": "国内疫学調査において致死性不整脈が、国内外疫学調査において心突然死のリスク増加が示唆されている,。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(1)"
+     ],
+     "text": "必要最小限の使用にとどめ、長期にわたり漫然と投与しないこと。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(2)"
+     ],
+     "text": "関連する症状が認められた場合は、速やかに受診するよう患者に指導すること。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(4)",
+      "(3)"
+     ],
+     "text": "観察を十分に行い、関連する症状が認められた場合は速やかに心機能検査（心電図検査等）を行うこと。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "心室頻拍、心室細動等の重篤な不整脈があらわれることがある。異常が認められた場合には、本剤の中止、救命処置、除細動等の適切な処置を行うこと。"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：\nhttps://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Arana A., et al.：Drug Saf. 2015；38（12）：1187-1199"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アゼルニジピン錠8mg「ケミファ」／アゼ...",
+   "company": "製造販売元／日本ケミファ株式会社",
+   "reason": "更新",
+   "packins_no": "2149043F1097_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149043F1097_1_10/",
+   "fetched_at": "2026-08-25 12:38:45",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530213_2149043F1097_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530213_2149043F1097_1_10",
+   "meta": {
+    "packins_no": "2149043F1097_1_10",
+    "company_id": "530213",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "アゼルニジピン錠8mg「ケミファ」",
+     "アゼルニジピン錠16mg「ケミファ」"
+    ],
+    "generic_name": "アゼルニジピン",
+    "therapeutic_class": "持続性Ca拮抗剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "アゼルニジピン錠8mg「ケミファ」／アゼ...",
+   "company": "製造販売元／日本ケミファ株式会社 / 販売元／日本薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2149043F1097_2_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149043F1097_2_07/",
+   "fetched_at": "2026-08-25 12:38:48",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530213_2149043F1097_2_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530213_2149043F1097_2_07",
+   "meta": {
+    "packins_no": "2149043F1097_2_07",
+    "company_id": "530213",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "アゼルニジピン錠8mg「ケミファ」",
+     "アゼルニジピン錠16mg「ケミファ」"
+    ],
+    "generic_name": "アゼルニジピン",
+    "therapeutic_class": "持続性Ca拮抗剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ドンペリドン錠5mg「EMEC」／ドンペリドン...",
+   "company": "製造販売元／アルフレッサ ファーマ株式会社 / 発売元／エルメッド株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2399005F1183_3_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399005F1183_3_05/",
+   "fetched_at": "2026-08-25 12:38:52",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530258_2399005F1183_3_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530258_2399005F1183_3_05",
+   "meta": {
+    "packins_no": "2399005F1183_3_05",
+    "company_id": "530258",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ドンペリドン錠5mg「EMEC」",
+     "ドンペリドン錠10mg「EMEC」"
+    ],
+    "generic_name": "ドンペリドン",
+    "therapeutic_class": "消化管運動改善剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)"
+     ],
+     "text": "国内外疫学調査において、致死性不整脈及び心突然死のリスク増加が示唆されている。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。,"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)",
+      "(1)"
+     ],
+     "text": "必要最小限の使用にとどめ、長期にわたり漫然と投与しないこと。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)",
+      "(2)"
+     ],
+     "text": "関連する症状が認められた場合は、速やかに受診するよう患者に指導すること。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)",
+      "(3)"
+     ],
+     "text": "観察を十分に行い、関連する症状が認められた場合は速やかに心機能検査（心電図検査等）を行うこと。"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "心疾患のある患者"
+     ],
+     "text": "QT延長があらわれるおそれがある。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "心室頻拍、心室細動等の重篤な不整脈があらわれることがある。異常が認められた場合には、本剤の中止、救命処置、除細動等の適切な処置を行うこと。,,"
+    },
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報"
+     ],
+     "text": "外国において本剤による重篤な心室性不整脈及び突然死が報告されている。特に高用量を投与している患者又は高齢の患者で、これらのリスクが増加したとの報告がある。,,,"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トアラセット配合錠「ケミファ」",
+   "company": "製造販売元／日本薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "1149117F1152_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149117F1152_1_07/",
+   "fetched_at": "2026-08-25 12:38:55",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530372_1149117F1152_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530372_1149117F1152_1_07",
+   "meta": {
+    "packins_no": "1149117F1152_1_07",
+    "company_id": "530372",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "トアラセット配合錠「ケミファ」"
+    ],
+    "generic_name": "トラマドール塩酸塩/アセトアミノフェン",
+    "therapeutic_class": "慢性疼痛/抜歯後疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（頻度不明）"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "日本薬品工業株式会社　学術安全管理部\n/日本ケミファグループ　くすり相談室"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トアラセット配合錠「ケミファ」",
+   "company": "製造販売元／日本薬品工業株式会社 / 販売元／日本ケミファ株式会社",
+   "reason": "更新",
+   "packins_no": "1149117F1152_2_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149117F1152_2_07/",
+   "fetched_at": "2026-08-25 12:38:58",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530372_1149117F1152_2_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530372_1149117F1152_2_07",
+   "meta": {
+    "packins_no": "1149117F1152_2_07",
+    "company_id": "530372",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "トアラセット配合錠「ケミファ」"
+    ],
+    "generic_name": "トラマドール塩酸塩/アセトアミノフェン",
+    "therapeutic_class": "慢性疼痛/抜歯後疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（頻度不明）"
+     ],
+     "text": "呼吸困難、喘鳴、血管性浮腫、蕁麻疹等があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トアラセット配合錠「JG」",
+   "company": "製造販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "1149117F1055_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149117F1055_1_09/",
+   "fetched_at": "2026-08-25 12:39:01",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580591_1149117F1055_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580591_1149117F1055_1_09",
+   "meta": {
+    "packins_no": "1149117F1055_1_09",
+    "company_id": "580591",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2024-09",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "トアラセット配合錠「JG」"
+    ],
+    "generic_name": "トラマドール塩酸塩/アセトアミノフェン配合錠",
+    "therapeutic_class": "慢性疼痛/抜歯後疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（頻度不明）"
+     ],
+     "text": "呼吸困難、喘鳴、血管性浮腫、蕁麻疹等があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピンOD錠2.5mg「JG」／オランザピ...",
+   "company": "製造販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "1179044F4044_1_16",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044F4044_1_16/",
+   "fetched_at": "2026-08-25 12:39:04",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580591_1179044F4044_1_16",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580591_1179044F4044_1_16",
+   "meta": {
+    "packins_no": "1179044F4044_1_16",
+    "company_id": "580591",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-11",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "オランザピンOD錠2.5mg「JG」",
+     "オランザピンOD錠5mg「JG」",
+     "オランザピンOD錠10mg「JG」"
+    ],
+    "generic_name": "オランザピン口腔内崩壊錠",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "以下の点に留意すること。本剤投与により、血糖値が上昇し、代謝状態を急激に悪化させるおそれがあるため、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+     ],
+     "text": "高血糖があらわれ、糖尿病性ケトアシドーシス、糖尿病性昏睡から死亡に至るなどの致命的な経過をたどることがあるので、血糖値の測定や、口渇、多飲、多尿、頻尿等の観察を十分に行い、異常が認められた場合には、投与を中止し、インスリン製剤の投与を行うなど、適切な処置を行うこと。,,,,,,,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "過敏症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アゼルニジピン錠8mg「JG」／アゼルニジピ...",
+   "company": "製造販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "2149043F1046_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149043F1046_1_14/",
+   "fetched_at": "2026-08-25 12:39:07",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580591_2149043F1046_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580591_2149043F1046_1_14",
+   "meta": {
+    "packins_no": "2149043F1046_1_14",
+    "company_id": "580591",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第8版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第7版"
+     }
+    },
+    "brands": [
+     "アゼルニジピン錠8mg「JG」",
+     "アゼルニジピン錠16mg「JG」"
+    ],
+    "generic_name": "アゼルニジピン錠",
+    "therapeutic_class": "持続性Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ツカチニブ　エタノール付加物"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ロナファルニブ"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "3-[1-(Diphenylmethyl)azetidin-3-yl]5-(propan-2-yl)(4RS)-2-amino-6-methyl-4-(3-nitrophenyl)-1,4-dihydropyridine-3,5-dicarboxylate"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アゼルニジピン錠8mg「JG」／アゼルニジピ...",
+   "company": "製造販売元／日本ジェネリック株式会社 / 販売元／共創未来ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2149043F1046_2_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149043F1046_2_09/",
+   "fetched_at": "2026-08-25 12:39:11",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580591_2149043F1046_2_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580591_2149043F1046_2_09",
+   "meta": {
+    "packins_no": "2149043F1046_2_09",
+    "company_id": "580591",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第7版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第6版"
+     }
+    },
+    "brands": [
+     "アゼルニジピン錠8mg「JG」",
+     "アゼルニジピン錠16mg「JG」"
+    ],
+    "generic_name": "アゼルニジピン錠",
+    "therapeutic_class": "持続性Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ツカチニブ　エタノール付加物"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ロナファルニブ"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "3-[1-(Diphenylmethyl)azetidin-3-yl]5-(propan-2-yl)(4RS)-2-amino-6-methyl-4-(3-nitrophenyl)-1,4-dihydropyridine-3,5-dicarboxylate"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェン錠200mg「NIG」",
+   "company": "製造販売元／日医工岐阜工場株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1141007F1233_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141007F1233_1_04/",
+   "fetched_at": "2026-08-25 12:39:26",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/581120_1141007F1233_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/581120_1141007F1233_1_04",
+   "meta": {
+    "packins_no": "1141007F1233_1_04",
+    "company_id": "581120",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェン錠200mg「NIG」"
+    ],
+    "generic_name": "アセトアミノフェン錠",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェン坐剤小児用50mg「NIG」...",
+   "company": "製造販売元／日医工岐阜工場株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1141700J1142_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141700J1142_1_05/",
+   "fetched_at": "2026-08-25 12:39:30",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/581120_1141700J1142_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/581120_1141700J1142_1_05",
+   "meta": {
+    "packins_no": "1141700J1142_1_05",
+    "company_id": "581120",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェン坐剤小児用50mg「NIG」",
+     "アセトアミノフェン坐剤小児用100mg「NIG」",
+     "アセトアミノフェン坐剤小児用200mg「NIG」"
+    ],
+    "generic_name": "アセトアミノフェン坐剤",
+    "therapeutic_class": "小児用解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トアラセット配合錠「NIG」",
+   "company": "製造販売元／日医工岐阜工場株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1149117F1276_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149117F1276_1_05/",
+   "fetched_at": "2026-08-25 12:39:33",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/581120_1149117F1276_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/581120_1149117F1276_1_05",
+   "meta": {
+    "packins_no": "1149117F1276_1_05",
+    "company_id": "581120",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "トアラセット配合錠「NIG」"
+    ],
+    "generic_name": "トラマドール塩酸塩・アセトアミノフェン配合錠",
+    "therapeutic_class": "慢性疼痛/抜歯後疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（頻度不明）"
+     ],
+     "text": "呼吸困難、喘鳴、血管性浮腫、蕁麻疹等があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピン錠2.5mg「NIG」／オランザピン...",
+   "company": "製造販売元／日医工岐阜工場株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1179044F1231_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044F1231_1_06/",
+   "fetched_at": "2026-08-25 12:39:36",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/581120_1179044F1231_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/581120_1179044F1231_1_06",
+   "meta": {
+    "packins_no": "1179044F1231_1_06",
+    "company_id": "581120",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "オランザピン錠2.5mg「NIG」",
+     "オランザピン錠5mg「NIG」",
+     "オランザピン錠10mg「NIG」"
+    ],
+    "generic_name": "オランザピン錠",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈効能共通〉"
+     ],
+     "text": "〈効能共通〉"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉"
+     ],
+     "text": "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+     ],
+     "text": "高血糖があらわれ、糖尿病性ケトアシドーシス、糖尿病性昏睡から死亡に至るなどの致命的な経過をたどることがあるので、血糖値の測定や、口渇、多飲、多尿、頻尿等の観察を十分に行い、異常が認められた場合には、投与を中止し、インスリン製剤の投与を行うなど、適切な処置を行うこと。,,,,,,,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "光線過敏症、血管性浮腫、そう痒症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピンOD錠2.5mg「NIG」／オランザピ...",
+   "company": "製造販売元／日医工岐阜工場株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1179044F4184_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044F4184_1_06/",
+   "fetched_at": "2026-08-25 12:39:38",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/581120_1179044F4184_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/581120_1179044F4184_1_06",
+   "meta": {
+    "packins_no": "1179044F4184_1_06",
+    "company_id": "581120",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "オランザピンOD錠2.5mg「NIG」",
+     "オランザピンOD錠5mg「NIG」",
+     "オランザピンOD錠10mg「NIG」"
+    ],
+    "generic_name": "オランザピン口腔内崩壊錠",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈効能共通〉"
+     ],
+     "text": "〈効能共通〉"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉"
+     ],
+     "text": "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "高血糖（0.9%）、糖尿病性ケトアシドーシス（頻度不明）、糖尿病性昏睡（頻度不明）"
+     ],
+     "text": "高血糖があらわれ、糖尿病性ケトアシドーシス、糖尿病性昏睡から死亡に至るなどの致命的な経過をたどることがあるので、血糖値の測定や、口渇、多飲、多尿、頻尿等の観察を十分に行い、異常が認められた場合には、投与を中止し、インスリン製剤の投与を行うなど、適切な処置を行うこと。,,,,,,,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "光線過敏症、血管性浮腫、そう痒症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "サラザック配合顆粒",
+   "company": "製造販売元／日医工岐阜工場株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1180107D1107_2_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1180107D1107_2_06/",
+   "fetched_at": "2026-08-25 12:39:42",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/581120_1180107D1107_2_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/581120_1180107D1107_2_06",
+   "meta": {
+    "packins_no": "1180107D1107_2_06",
+    "company_id": "581120",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "サラザック配合顆粒"
+    ],
+    "generic_name": "サリチルアミド・アセトアミノフェン・無水カフェイン・プロメタジンメチレンジサリチル酸塩配合顆粒",
+    "therapeutic_class": "総合感冒剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ドンペリドン錠5mg「NIG」／ドンペリドン...",
+   "company": "製造販売元／日医工岐阜工場株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2399005F1280_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399005F1280_1_05/",
+   "fetched_at": "2026-08-25 12:39:46",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/581120_2399005F1280_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/581120_2399005F1280_1_05",
+   "meta": {
+    "packins_no": "2399005F1280_1_05",
+    "company_id": "581120",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ドンペリドン錠5mg「NIG」",
+     "ドンペリドン錠10mg「NIG」"
+    ],
+    "generic_name": "ドンペリドン錠",
+    "therapeutic_class": "消化管運動改善剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)"
+     ],
+     "text": "国内外疫学調査において、致死性不整脈及び心突然死のリスク増加が示唆されている。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "心疾患のある患者"
+     ],
+     "text": "QT延長があらわれるおそれがある。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "心室頻拍、心室細動等の重篤な不整脈があらわれることがある。異常が認められた場合には、本剤の中止、救命処置、除細動等の適切な処置を行うこと。,,"
+    },
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報"
+     ],
+     "text": "外国において本剤による重篤な心室性不整脈及び突然死が報告されている。特に高用量を投与している患者又は高齢の患者で、これらのリスクが増加したとの報告がある,。,,"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：\nhttps://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Johannes CB, et al.：Pharmacoepidemiol Drug Saf. 2010；19：881-888"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "van Noord C, et al.：Drug Saf. 2010；33：1003-1014"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アスペノンカプセル10／アスペノンカプセ...",
+   "company": "製造販売元／バイエル薬品株式会社",
+   "reason": "更新",
+   "packins_no": "2129004M1026_3_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2129004M1026_3_10/",
+   "fetched_at": "2026-08-25 12:39:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/630004_2129004M1026_3_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/630004_2129004M1026_3_10",
+   "meta": {
+    "packins_no": "2129004M1026_3_10",
+    "company_id": "630004",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2021-08",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "アスペノンカプセル10",
+     "アスペノンカプセル20"
+    ],
+    "generic_name": "アプリンジン塩酸塩",
+    "therapeutic_class": "不整脈治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "血清カリウム低下のある患者"
+     ],
+     "text": "血清カリウム低下のある患者"
+    },
+    {
+     "path": [
+      "催不整脈（頻度不明）"
+     ],
+     "text": "催不整脈（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アルピニー坐剤50／アルピニー坐剤100／ア...",
+   "company": "製造販売元／久光製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141700J1029_2_20",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141700J1029_2_20/",
+   "fetched_at": "2026-08-25 12:39:52",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/650034_1141700J1029_2_20",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/650034_1141700J1029_2_20",
+   "meta": {
+    "packins_no": "1141700J1029_2_20",
+    "company_id": "650034",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "アルピニー坐剤50",
+     "アルピニー坐剤100",
+     "アルピニー坐剤200"
+    ],
+    "generic_name": "アセトアミノフェン坐剤",
+    "therapeutic_class": "小児用解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アルピニー坐剤100",
+   "company": "製造販売元／久光製薬株式会社 / 販売元／株式会社三和化学研究所",
+   "reason": "更新",
+   "packins_no": "1141700J2092_2_17",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141700J2092_2_17/",
+   "fetched_at": "2026-08-25 12:40:11",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/650034_1141700J2092_2_17",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/650034_1141700J2092_2_17",
+   "meta": {
+    "packins_no": "1141700J2092_2_17",
+    "company_id": "650034",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "アルピニー坐剤100"
+    ],
+    "generic_name": "アセトアミノフェン坐剤",
+    "therapeutic_class": "小児用解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "チノカプセル125",
+   "company": "製造販売元／藤本製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2362003M2031_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2362003M2031_1_07/",
+   "fetched_at": "2026-08-25 12:40:14",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670142_2362003M2031_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670142_2362003M2031_1_07",
+   "meta": {
+    "packins_no": "2362003M2031_1_07",
+    "company_id": "670142",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-01",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "チノカプセル125"
+    ],
+    "generic_name": "ケノデオキシコール酸カプセル",
+    "therapeutic_class": "経口胆石溶解剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "本剤の成分に対し過敏症の既往歴のある患者"
+     ],
+     "text": "本剤の成分に対し過敏症の既往歴のある患者"
+    },
+    {
+     "path": [],
+     "text": "本剤は添加剤として亜硫酸塩を含有している。喘息患者では非喘息患者よりも亜硫酸塩に対する過敏症が多く認められるとの報告がある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "モルヒネ硫酸塩水和物徐放細粒分包10mg「...",
+   "company": "製造販売元／藤本製薬株式会社",
+   "reason": "更新",
+   "packins_no": "8114004C3028_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/8114004C3028_1_05/",
+   "fetched_at": "2026-08-25 12:40:22",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670142_8114004C3028_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670142_8114004C3028_1_05",
+   "meta": {
+    "packins_no": "8114004C3028_1_05",
+    "company_id": "670142",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-11",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "モルヒネ硫酸塩水和物徐放細粒分包10mg「フジモト」",
+     "モルヒネ硫酸塩水和物徐放細粒分包30mg「フジモト」"
+    ],
+    "generic_name": "モルヒネ硫酸塩水和物徐放細粒",
+    "therapeutic_class": "持続性がん疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "本剤は添加剤として亜硫酸塩を含有している。喘息患者では非喘息患者よりも亜硫酸塩に対する過敏症が多く認められるとの報告がある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ヤーボイ点滴静注液20mg／ヤーボイ点滴静...",
+   "company": "製造販売元／ブリストル・マイヤーズ スクイブ株式会社 / プロモーション提携／小野薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "4291430A1026_1_31",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291430A1026_1_31/",
+   "fetched_at": "2026-08-25 12:40:25",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670605_4291430A1026_1_31",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670605_4291430A1026_1_31",
+   "meta": {
+    "packins_no": "4291430A1026_1_31",
+    "company_id": "670605",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第20版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第19版"
+     }
+    },
+    "brands": [
+     "ヤーボイ点滴静注液20mg",
+     "ヤーボイ点滴静注液50mg"
+    ],
+    "generic_name": "イピリムマブ（遺伝子組換え）",
+    "therapeutic_class": "抗悪性腫瘍剤 / ヒト型抗ヒトCTLA-4モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "血球貪食性リンパ組織球症（頻度不明，頻度不明）"
+     ],
+     "text": "血球貪食性リンパ組織球症（頻度不明，頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重度の食道炎（頻度不明，頻度不明）"
+     ],
+     "text": "重度の食道炎（頻度不明，頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "グアンファシン徐放錠1mg「アメル」／グ...",
+   "company": "製造販売元／共和薬品工業株式会社",
+   "reason": "新規",
+   "packins_no": "11790B2G1052_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/11790B2G1052_1_01/",
+   "fetched_at": "2026-08-25 12:40:29",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672173_11790B2G1052_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672173_11790B2G1052_1_01",
+   "meta": {
+    "packins_no": "11790B2G1052_1_01",
+    "company_id": "672173",
+    "revision": {
+     "current": null,
+     "previous": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "グアンファシン徐放錠1mg「アメル」",
+     "グアンファシン徐放錠3mg「アメル」"
+    ],
+    "generic_name": "グアンファシン塩酸塩",
+    "therapeutic_class": "注意欠陥／多動性障害治療剤\n（選択的α2Aアドレナリン受容体作動薬）"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "プレセデックス静注液200μg「ファイザー...",
+   "company": "製造販売元／ファイザー株式会社",
+   "reason": "更新",
+   "packins_no": "1129400A1054_2_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1129400A1054_2_03/",
+   "fetched_at": "2026-08-25 12:40:42",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_1129400A1054_2_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_1129400A1054_2_03",
+   "meta": {
+    "packins_no": "1129400A1054_2_03",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-02",
+      "ver": null
+     }
+    },
+    "brands": [
+     "プレセデックス静注液200μg「ファイザー」",
+     "プレセデックス静注液200μg/50mLシリンジ「ファイザー」"
+    ],
+    "generic_name": "デクスメデトミジン塩酸塩",
+    "therapeutic_class": "α2作動性鎮静剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "泌尿器"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "a）本剤投与後、尿崩症に類似する多尿と高ナトリウム血症が併発し、投与中止後、これらの症状が回復した報告がある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ゼルヤンツ錠5mg",
+   "company": "製造販売元／ファイザー株式会社",
+   "reason": "更新",
+   "packins_no": "3999034F1020_2_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999034F1020_2_08/",
+   "fetched_at": "2026-08-25 12:40:46",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_3999034F1020_2_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_3999034F1020_2_08",
+   "meta": {
+    "packins_no": "3999034F1020_2_08",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第10版"
+     },
+     "previous": {
+      "ym": "2025-06",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ゼルヤンツ錠5mg"
+    ],
+    "generic_name": "トファシチニブクエン酸塩",
+    "therapeutic_class": "ヤヌスキナーゼ（JAK）阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報",
+      "〈効能共通〉",
+      "(1)"
+     ],
+     "text": "本剤投与中に進行性多巣性白質脳症（PML）を発現した症例が市販後に報告されている。PMLの発現と本剤との関連性は明らかではない。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ドセタキセル点滴静注液20mg/2mL「ホスピー...",
+   "company": "製造販売元（輸入元）／ファイザー株式会社",
+   "reason": "更新",
+   "packins_no": "4240405A5032_3_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4240405A5032_3_08/",
+   "fetched_at": "2026-08-25 12:40:50",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_4240405A5032_3_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_4240405A5032_3_08",
+   "meta": {
+    "packins_no": "4240405A5032_3_08",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-07",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ドセタキセル点滴静注液20mg/2mL「ホスピーラ」",
+     "ドセタキセル点滴静注液80mg/8mL「ホスピーラ」",
+     "ドセタキセル点滴静注液120mg/12mL「ホスピーラ」"
+    ],
+    "generic_name": "ドセタキセル水和物",
+    "therapeutic_class": "タキソイド系抗悪性腫瘍剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "７.用法及び用量に関連する注意",
+      "〈胃癌〉",
+      "(1)"
+     ],
+     "text": "胃癌における術前・術後補助療法としてデュルバルマブ（遺伝子組換え）、フルオロウラシル、レボホリナート及びオキサリプラチンと併用する際の用法・用量は、デュルバルマブ（遺伝子組換え）の電子添文を参照すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ローブレナ錠25mg／ローブレナ錠100mg",
+   "company": "製造販売元／ファイザー株式会社",
+   "reason": "更新",
+   "packins_no": "4291055F1020_2_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291055F1020_2_07/",
+   "fetched_at": "2026-08-25 12:40:55",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_4291055F1020_2_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_4291055F1020_2_07",
+   "meta": {
+    "packins_no": "4291055F1020_2_07",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2022-06",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ローブレナ錠25mg",
+     "ローブレナ錠100mg"
+    ],
+    "generic_name": "ロルラチニブ",
+    "therapeutic_class": "抗悪性腫瘍剤/チロシンキナーゼ阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.３ 肝機能障害患者",
+      "重度の肝機能障害患者（Child-Pugh分類C）"
+     ],
+     "text": "重度の肝機能障害患者（Child-Pugh分類C）"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.３ 肝機能障害患者",
+      "中等度の肝機能障害患者（Child-Pugh分類B）"
+     ],
+     "text": "中等度の肝機能障害患者（Child-Pugh分類B）"
+    },
+    {
+     "path": [
+      "１６.薬物動態",
+      "１６.６ 特定の背景を有する患者",
+      "肝機能障害患者"
+     ],
+     "text": "肝機能障害患者"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料：肝機能障害を有する患者における薬物動態"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ミコブティンカプセル150mg",
+   "company": "製造販売元／ファイザー株式会社",
+   "reason": "更新",
+   "packins_no": "6169001M1026_3_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6169001M1026_3_09/",
+   "fetched_at": "2026-08-25 12:40:58",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_6169001M1026_3_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_6169001M1026_3_09",
+   "meta": {
+    "packins_no": "6169001M1026_3_09",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第8版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ミコブティンカプセル150mg"
+    ],
+    "generic_name": "リファブチン",
+    "therapeutic_class": "抗酸菌症治療薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）",
+      "(4)"
+     ],
+     "text": "ロナファルニブ"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）",
+      "(2)"
+     ],
+     "text": "ドラビリン・イスラトラビル水和物"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "プレベナー20水性懸濁注",
+   "company": "製造販売元／ファイザー株式会社",
+   "reason": "更新",
+   "packins_no": "631140LC1023_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/631140LC1023_1_05/",
+   "fetched_at": "2026-08-25 12:41:01",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_631140LC1023_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_631140LC1023_1_05",
+   "meta": {
+    "packins_no": "631140LC1023_1_05",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "プレベナー20水性懸濁注"
+    ],
+    "generic_name": "沈降20価肺炎球菌結合型ワクチン（無毒性変異ジフテリア毒素結合体）",
+    "therapeutic_class": "細菌ワクチン類"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "免疫性血小板減少症（頻度不明）"
+     ],
+     "text": "免疫性血小板減少症（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "テビムブラ点滴静注100mg",
+   "company": "製造販売元／ビーワン・メディシンズ合同会社",
+   "reason": "更新",
+   "packins_no": "4291478A1027_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291478A1027_1_04/",
+   "fetched_at": "2026-08-25 12:41:05",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/701738_4291478A1027_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/701738_4291478A1027_1_04",
+   "meta": {
+    "packins_no": "4291478A1027_1_04",
+    "company_id": "701738",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "テビムブラ点滴静注100mg"
+    ],
+    "generic_name": "チスレリズマブ（遺伝子組換え）製剤",
+    "therapeutic_class": "抗悪性腫瘍剤 / ヒト化抗ヒトPD-1モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "血球貪食性リンパ組織球症（頻度不明）"
+     ],
+     "text": "血球貪食性リンパ組織球症（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "本草葛根湯エキス顆粒−M",
+   "company": "製造販売元／本草製薬株式会社",
+   "reason": "更新",
+   "packins_no": "5200013D1174_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/5200013D1174_1_09/",
+   "fetched_at": "2026-08-25 12:41:09",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/710082_5200013D1174_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/710082_5200013D1174_1_09",
+   "meta": {
+    "packins_no": "5200013D1174_1_09",
+    "company_id": "710082",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2022-10",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "本草葛根湯エキス顆粒−M"
+    ],
+    "generic_name": "葛根湯",
+    "therapeutic_class": "漢方製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "多形紅斑（頻度不明）"
+     ],
+     "text": "多形紅斑（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェン細粒20%「マルイシ」",
+   "company": "製造販売元／丸石製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141007C1164_2_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141007C1164_2_06/",
+   "fetched_at": "2026-08-25 12:42:00",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/730119_1141007C1164_2_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/730119_1141007C1164_2_06",
+   "meta": {
+    "packins_no": "1141007C1164_2_06",
+    "company_id": "730119",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェン細粒20%「マルイシ」"
+    ],
+    "generic_name": "アセトアミノフェン細粒",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（いずれも頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェン錠200mg「マルイシ」／...",
+   "company": "製造販売元／丸石製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141007F1195_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141007F1195_1_14/",
+   "fetched_at": "2026-08-25 12:42:15",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/730119_1141007F1195_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/730119_1141007F1195_1_14",
+   "meta": {
+    "packins_no": "1141007F1195_1_14",
+    "company_id": "730119",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェン錠200mg「マルイシ」",
+     "アセトアミノフェン錠300mg「マルイシ」",
+     "アセトアミノフェン錠500mg「マルイシ」"
+    ],
+    "generic_name": "アセトアミノフェン錠",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（いずれも頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トアラセット配合錠「三笠」",
+   "company": "製造販売元／三笠製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1149117F1250_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149117F1250_1_08/",
+   "fetched_at": "2026-08-25 12:42:20",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/750007_1149117F1250_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/750007_1149117F1250_1_08",
+   "meta": {
+    "packins_no": "1149117F1250_1_08",
+    "company_id": "750007",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "トアラセット配合錠「三笠」"
+    ],
+    "generic_name": "トラマドール塩酸塩・アセトアミノフェン配合錠",
+    "therapeutic_class": "慢性疼痛/抜歯後疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "〈非がん性慢性疼痛〉",
+      "(3)"
+     ],
+     "text": "アスピリン喘息又はその既往歴のある患者に対して本剤を投与する場合は、1回1錠とすること。"
+    },
+    {
+     "path": [
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "〈効能共通〉",
+      "18歳未満の肥満、閉塞性睡眠時無呼吸症候群又は重篤な肺疾患を有する患者"
+     ],
+     "text": "18歳未満の肥満、閉塞性睡眠時無呼吸症候群又は重篤な肺疾患を有する患者"
+    },
+    {
+     "path": [
+      "〈非がん性慢性疼痛〉",
+      "アスピリン喘息（非ステロイド性消炎鎮痛剤による喘息発作の誘発）又はその既往歴のある患者"
+     ],
+     "text": "アスピリン喘息（非ステロイド性消炎鎮痛剤による喘息発作の誘発）又はその既往歴のある患者"
+    },
+    {
+     "path": [
+      "ショック、アナフィラキシー（頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オペプリム",
+   "company": "製造販売元／株式会社ヤクルト本社",
+   "reason": "更新",
+   "packins_no": "2499006M1026_2_17",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499006M1026_2_17/",
+   "fetched_at": "2026-08-25 12:42:24",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/800015_2499006M1026_2_17",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/800015_2499006M1026_2_17",
+   "meta": {
+    "packins_no": "2499006M1026_2_17",
+    "company_id": "800015",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": null
+     }
+    },
+    "brands": [
+     "オペプリム"
+    ],
+    "generic_name": "ミトタン",
+    "therapeutic_class": "副腎癌化学療法剤 / 副腎皮質ホルモン合成阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "(2)"
+     ],
+     "text": "スピロノラクトン、ペントバルビタール、エンシトレルビルフマル酸、エルビテグラビル・コビシスタット・エムトリシタビン・テノホビル　アラフェナミドフマル酸塩、ダルナビル　エタノール付加物・コビシスタット、ダルナビル　エタノール付加物・コビシスタット・エムトリシタビン・テノホビル　アラフェナミドフマル酸塩、ドラビリン、ドラビリン・イスラトラビル水和物、ドルテグラビルナトリウム・リルピビリン塩酸塩、ビクテグラビルナトリウム・エムトリシタビン・テノホビル　アラフェナミドフマル酸塩、リルピビリン、リルピビリン塩酸塩、リルピビリン塩酸塩・エムトリシタビン・テノホビル　アラフェナミドフマル酸塩、レナカパビルナトリウムを投与中の患者"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "エンシトレルビルフマル酸\n（ゾコーバ）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トアラセット配合錠「YD」",
+   "company": "製造販売元／陽進堂ホールディングス株式会社",
+   "reason": "更新",
+   "packins_no": "1149117F1101_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149117F1101_1_09/",
+   "fetched_at": "2026-08-25 12:42:28",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/830001_1149117F1101_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/830001_1149117F1101_1_09",
+   "meta": {
+    "packins_no": "1149117F1101_1_09",
+    "company_id": "830001",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "トアラセット配合錠「YD」"
+    ],
+    "generic_name": "トラマドール塩酸塩・アセトアミノフェン配合錠",
+    "therapeutic_class": "慢性疼痛／抜歯後疼痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈効能共通〉",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オランザピン錠2.5mg「YD」／オランザピン...",
+   "company": "製造販売元／陽進堂ホールディングス株式会社",
+   "reason": "更新",
+   "packins_no": "1179044F1070_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179044F1070_1_11/",
+   "fetched_at": "2026-08-25 12:42:32",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/830001_1179044F1070_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/830001_1179044F1070_1_11",
+   "meta": {
+    "packins_no": "1179044F1070_1_11",
+    "company_id": "830001",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "オランザピン錠2.5mg「YD」",
+     "オランザピン錠5mg「YD」",
+     "オランザピン錠10mg「YD」"
+    ],
+    "generic_name": "オランザピン錠",
+    "therapeutic_class": "抗精神病薬・双極性障害治療薬・制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "(1)"
+     ],
+     "text": "糖尿病又はその既往のある患者へ本剤を投与する場合には、治療上の有益性が危険性を上回ると判断される場合以外は投与しないこと。また、本剤投与前及び投与期間中は、毎日頻回に血糖値のモニタリングの管理を行い、本剤投与後も血糖値が安定するまではモニタリングを継続するなど患者の状態を継続的に観察するとともに、投与期間を通じて、緊急時に十分に対応できる体制を整えた上で投与すること。,"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈効能共通〉"
+     ],
+     "text": "〈効能共通〉"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈効能共通〉",
+      "(1)"
+     ],
+     "text": "昏睡状態の患者［昏睡状態を悪化させるおそれがある。］"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈効能共通〉",
+      "(2)"
+     ],
+     "text": "バルビツール酸誘導体等の中枢神経抑制剤の強い影響下にある患者［中枢神経抑制作用が増強される。］"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈効能共通〉",
+      "(3)"
+     ],
+     "text": "本剤の成分に対し過敏症の既往歴のある患者"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈効能共通〉",
+      "(4)"
+     ],
+     "text": "アドレナリンを投与中の患者（アドレナリンをアナフィラキシーの救急治療、又は歯科領域における浸潤麻酔もしくは伝達麻酔に使用する場合を除く）,"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉"
+     ],
+     "text": "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉"
+    },
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "〈統合失調症、双極性障害における躁症状及びうつ症状の改善〉",
+      "(1)"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者,"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "〈抗悪性腫瘍剤（シスプラチン等）投与に伴う消化器症状（悪心、嘔吐）〉",
+      "糖尿病の患者、糖尿病の既往歴のある患者"
+     ],
+     "text": "糖尿病の患者、糖尿病の既往歴のある患者"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アゼルニジピン錠8mg「YD」／アゼルニジピ...",
+   "company": "製造販売元／陽進堂ホールディングス株式会社",
+   "reason": "更新",
+   "packins_no": "2149043F1089_1_12",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149043F1089_1_12/",
+   "fetched_at": "2026-08-25 12:42:36",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/830001_2149043F1089_1_12",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/830001_2149043F1089_1_12",
+   "meta": {
+    "packins_no": "2149043F1089_1_12",
+    "company_id": "830001",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "アゼルニジピン錠8mg「YD」",
+     "アゼルニジピン錠16mg「YD」"
+    ],
+    "generic_name": "アゼルニジピン錠",
+    "therapeutic_class": "持続性Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "(3)"
+     ],
+     "text": "イトラコナゾール、ミコナゾール（経口剤、注射剤、口腔用剤）、フルコナゾール、ホスフルコナゾール、ボリコナゾール、ポサコナゾール、HIVプロテアーゼ阻害剤（リトナビル含有製剤、ダルナビル含有製剤）、コビシスタット含有製剤、ニルマトレルビル・リトナビル、エンシトレルビル　フマル酸、クラリスロマイシン、セリチニブ、ツカチニブ　エタノール付加物、ロナファルニブを投与中の患者,"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ツカチニブ　エタノール付加物"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）",
+      "(1)"
+     ],
+     "text": "ツカイザ"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ロナファルニブ"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）",
+      "(1)"
+     ],
+     "text": "ゾキンヴィ"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ドンペリドン錠5mg「YD」／ドンペリドン錠...",
+   "company": "製造販売元／陽進堂ホールディングス株式会社",
+   "reason": "更新",
+   "packins_no": "2399005F1221_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399005F1221_1_08/",
+   "fetched_at": "2026-08-25 12:42:41",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/830001_2399005F1221_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/830001_2399005F1221_1_08",
+   "meta": {
+    "packins_no": "2399005F1221_1_08",
+    "company_id": "830001",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "ドンペリドン錠5mg「YD」",
+     "ドンペリドン錠10mg「YD」"
+    ],
+    "generic_name": "ドンペリドン錠",
+    "therapeutic_class": "消化管運動改善剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)"
+     ],
+     "text": "国内外疫学調査において、致死性不整脈及び心突然死のリスク増加が示唆されている。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。,"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)",
+      "(1)"
+     ],
+     "text": "必要最小限の使用にとどめ、長期にわたり漫然と投与しないこと。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)",
+      "(2)"
+     ],
+     "text": "関連する症状が認められた場合は、速やかに受診するよう患者に指導すること。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)",
+      "(3)"
+     ],
+     "text": "観察を十分に行い、関連する症状が認められた場合は速やかに心機能検査（心電図検査等）を行うこと。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "心室頻拍、心室細動等の重篤な不整脈があらわれることがある。異常が認められた場合には、本剤の中止、救命処置、除細動等の適切な処置を行うこと。,,"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：https://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Johannes, C. B. et al.：Pharmacoepidemiol Drug Saf. 2010；19：881-888"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "van Noord, C. et al.：Drug Saf. 2010；33：1003-1014"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アセトアミノフェン「ヨシダ」",
+   "company": "製造販売元／吉田製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141001X1045_1_13",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141001X1045_1_13/",
+   "fetched_at": "2026-08-25 12:42:44",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/830039_1141001X1045_1_13",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/830039_1141001X1045_1_13",
+   "meta": {
+    "packins_no": "1141001X1045_1_13",
+    "company_id": "830039",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "アセトアミノフェン「ヨシダ」"
+    ],
+    "generic_name": "アセトアミノフェン",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "フルオロメトロン点眼液0.02％「ニットー」／フルオロメトロン点眼液0.1％「ニットー」",
+   "company": "製造販売元／日東メディック株式会社 / 発売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "取扱い中止のため",
+   "yj_hint": "1315704Q1158_2_03"
+  },
+  {
+   "brand": "トアラセット配合錠「共創未来」",
+   "company": "製造販売元／共創未来ファーマ株式会社",
+   "reason": "販売名変更による代替新規申請作業完了のため。",
+   "yj_hint": "1149117F1136_1_07"
+  }
+ ],
+ "created_at": "2026-08-25 12:31:41",
+ "updated_at": "2026-08-25 12:42:47",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
