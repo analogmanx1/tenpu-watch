@@ -7923,6 +7923,88 @@
     }
    ],
    "diff": null
+  },
+  {
+   "brand": "ジニイズ点滴静注500mg",
+   "company": "製造販売元／インサイト・バイオサイエンシズ・ジャパン合同会社",
+   "reason": "更新",
+   "packins_no": "4291483A1028_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291483A1028_1_03/",
+   "fetched_at": "2026-08-25 17:36:32",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/150892_4291483A1028_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/150892_4291483A1028_1_03",
+   "meta": {
+    "packins_no": "4291483A1028_1_03",
+    "company_id": "150892",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ジニイズ点滴静注500mg"
+    ],
+    "generic_name": "レチファンリマブ（遺伝子組換え）製剤",
+    "therapeutic_class": "抗悪性腫瘍剤、ヒト化抗ヒトPD-1モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "血球貪食性リンパ組織球症（頻度不明）"
+     ],
+     "text": "血球貪食性リンパ組織球症（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ピフェルトロ錠100mg",
+   "company": "製造販売元／MSD株式会社",
+   "reason": "更新",
+   "packins_no": "6250049F1021_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6250049F1021_1_06/",
+   "fetched_at": "2026-08-25 17:36:36",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/170050_6250049F1021_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/170050_6250049F1021_1_06",
+   "meta": {
+    "packins_no": "6250049F1021_1_06",
+    "company_id": "170050",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "ピフェルトロ錠100mg"
+    ],
+    "generic_name": "ドラビリン錠",
+    "therapeutic_class": "抗ウイルス化学療法剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "イボシデニブ（ティブソボ）"
+    },
+    {
+     "path": [],
+     "text": "エンコラフェニブ（ビラフトビ）"
+    }
+   ],
+   "diff": null
   }
  ],
  "deletes": [
@@ -7940,6 +8022,6 @@
   }
  ],
  "created_at": "2026-08-25 12:31:41",
- "updated_at": "2026-08-25 12:42:47",
+ "updated_at": "2026-08-25 17:42:09",
  "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
 }
