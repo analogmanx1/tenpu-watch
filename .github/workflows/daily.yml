@@ -1,18 +1,24 @@
 name: daily-pmda-watch
 
+# 役割: サイトの「ビルドと公開」だけ(2026-08-26変更)。
+# 取り込み(PMDAからの取得・コミット)はPC側タスク(scripts/local_update.ps1)が担当。
+#   - PMDAが個別ページを海外・クラウドIPからブロックしているためActionsでは中身が取れない
+#   - 以前はActionsも取り込み・コミットしていたが、PC側とほぼ同時刻にコミットして
+#     マージ衝突→自動更新の全停止を起こしたため、書き手はPC側の1系統に絞った
+# 定時実行は「公開の保険」(pushの取りこぼしがあっても1日2回は必ず再公開される)。
+
 on:
   schedule:
-    # 毎日 07:00 JST(= 22:00 UTC 前日)と 17:00 JST(= 08:00 UTC)。
-    # PMDAの掲載が平日15時台らしい(実測)ので、17時の回で当日分を拾う。GitHubの都合で数分〜数十分遅れることあり
+    # 毎日 07:00 JST(= 22:00 UTC 前日)と 17:00 JST(= 08:00 UTC)。GitHubの都合で数分〜数十分遅れることあり
     - cron: "0 22 * * *"
     - cron: "0 8 * * *"
   workflow_dispatch: {}   # 手動実行ボタン
-  push:                   # 手で編集してpushしたときと、PC側タスクが更新をpushしたときも即公開(Actionsのボットコミットでは動かない=無限ループしない)
+  push:                   # 手で編集してpushしたときと、PC側タスクが更新をpushしたときに即公開
     branches: [main]
     paths: ["src/**", "site/**", "docs/tools/**", ".github/workflows/**", "data/**"]
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -21,9 +27,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  fetch-and-build:
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20   # 普段は1分未満。PMDA側が応答しない日に6時間つかまらないための保険
+    timeout-minutes: 10
     env:
       TZ: Asia/Tokyo
       PYTHONIOENCODING: utf-8
@@ -34,20 +40,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: 取得 → 保存 → サイト生成
-        run: python src/run.py
-
-      - name: 変更をコミット
-        run: |
-          git config user.name "pmda-watch-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add -A data archive docs
-          if git diff --cached --quiet; then
-            echo "no changes"
-          else
-            git commit -m "auto: $(date +'%Y-%m-%d %H:%M') JST 更新取り込み"
-            git push
-          fi
+      - name: サイト生成(リポジトリ内のデータから。取得・コミットはしない)
+        run: python src/run.py --build-only
 
       - name: Pages用にアップロード
         uses: actions/upload-pages-artifact@v3
@@ -55,7 +49,7 @@ jobs:
           path: docs
 
   deploy:
-    needs: fetch-and-build
+    needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 10
     environment:

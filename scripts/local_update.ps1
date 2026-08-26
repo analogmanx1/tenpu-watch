@@ -39,8 +39,29 @@ Set-Location $repo
 $env:PYTHONIOENCODING = "utf-8"
 [Console]::OutputEncoding = [Text.Encoding]::UTF8   # pythonのUTF-8出力を正しくログに残す
 
+# --- マージ衝突の自動復旧 ---
+# pullが衝突すると未解消のまま残り、以後の実行が全部失敗し続ける(2026-08-26の障害)。
+# 生成物(docs)と他系統の担当ファイル(if_index.json)は向こう側を採用、
+# このPCが取り込む日付データ(data/days)とarchiveはこちら側を維持して、自動で解消する。
+# ※日付データは向こう側(Actions)がもうコミットしない設計なので、ours採用で取りこぼしは出ない
+function Resolve-StuckMerge {
+  git rev-parse -q --verify MERGE_HEAD *> $null
+  if ($LASTEXITCODE -ne 0) { return }
+  Say "!! マージ衝突を検出 → 自動復旧します(docs/if_index=向こう側、data/days・archive=こちら側)"
+  foreach ($p in @("docs", "data/if_index.json")) { git checkout --theirs -- $p 2>&1 | Out-Null }
+  foreach ($p in @("data/days", "archive"))       { git checkout --ours  -- $p 2>&1 | Out-Null }
+  git add -A data archive docs 2>&1 | Out-Null
+  [void](Step "python src/run.py --build-only (衝突復旧のため再生成)" { python src/run.py --build-only })
+  git add -A docs 2>&1 | Out-Null
+  [void](Step "git commit (衝突の自動解消)" { git commit -m "auto: マージ衝突の自動解消(PC: $env:COMPUTERNAME)" })
+  git rev-parse -q --verify MERGE_HEAD *> $null
+  if ($LASTEXITCODE -eq 0) { Say "!! 自動解消しきれない衝突が残っています(data/docs以外?)。手で解消してください" }
+}
+
 # --- 取り込み本体 ---
+Resolve-StuckMerge   # 前回の実行が衝突で止まっていたら、まず片付ける
 [void](Step "git pull" { git pull --no-rebase origin main })
+Resolve-StuckMerge   # いまのpullが衝突したら、その場で片付ける
 $rc = Step "python src/run.py (取得+サイト生成)" { python src/run.py }
 if ($rc -ne 0) { Say "!! run.py が異常終了 (exit $rc)。今回はコミットせず終了(次回やり直し)"; exit $rc }
 
@@ -53,6 +74,7 @@ if ($LASTEXITCODE -ne 0) {
   $rc = Step "git push" { git push origin main }
   if ($rc -ne 0) {
     [void](Step "git pull (push失敗のためやり直し)" { git pull --no-rebase origin main })
+    Resolve-StuckMerge   # やり直しのpullが衝突したら、その場で片付けてからpush
     $rc = Step "git push (2回目)" { git push origin main }
     if ($rc -ne 0) { Say "!! push に失敗。次回の実行で回収されます"; exit 1 }
   }
