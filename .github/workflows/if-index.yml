@@ -1,6 +1,7 @@
-name: if-index (インタビューフォーム一覧の毎日更新)
+name: if-index (インタビューフォーム/添付文書一覧の毎日更新)
 
-# 毎日 00:15 JST に、PMDAの検索を薬効分類ごとに回して data/if_index.json を作り直し、サイトを再生成して公開する(数分)。
+# 毎日 00:15 JST に、PMDAの検索を薬効分類ごとに回して data/if_index.json(インタビューフォーム)と
+# data/tenpu_index.json(添付文書)を作り直し、サイトを再生成して公開する(合計20〜30分)。
 # すぐ取り直したいときは Actions タブ → 「if-index」 → Run workflow。
 # 時刻を変えるときは下の cron を直す(UTC表記。JST−9時間。ちょうど0分はGitHubが混むので少しずらすのがコツ)。
 on:
@@ -20,7 +21,7 @@ concurrency:
 jobs:
   refresh-if-index:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60   # IF 数分 + 添付文書 10〜20分(どちらも1秒待ちの礼儀正しいアクセス)
     env:
       TZ: Asia/Tokyo
       PYTHONIOENCODING: utf-8
@@ -31,8 +32,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: IF一覧を取り直し → サイト生成
-        run: python src/run.py --build-only --if-index
+      - name: IF一覧・添付文書一覧を取り直し → サイト生成
+        run: python src/run.py --build-only --if-index --tenpu-index
 
       - name: 変更をコミット
         run: |
@@ -42,7 +43,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "no changes"
           else
-            git commit -m "auto: $(date +'%Y-%m-%d %H:%M') JST インタビューフォーム一覧を更新"
+            git commit -m "auto: $(date +'%Y-%m-%d %H:%M') JST インタビューフォーム/添付文書一覧を更新"
             git push
           fi
 

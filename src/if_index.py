@@ -1,17 +1,20 @@
 # -*- coding: utf-8 -*-
 """
-PMDA「医療用医薬品 添付文書等情報検索」から インタビューフォーム(IF) の一覧を集めて
-data/if_index.json に保存する。(サイトの「インタビューフォーム検索」ページの元データ)
+PMDA「医療用医薬品 添付文書等情報検索」から 一覧を集めて data/*.json に保存する。
+  doc="if"    … インタビューフォーム(IF)の一覧 → data/if_index.json(「インタビューフォーム検索」ページの元データ)
+  doc="tenpu" … 添付文書の一覧               → data/tenpu_index.json(「添付文書検索」ページの元データ)
 
-やり方:
+やり方(両方共通):
   - PMDAの検索は1回1000件までしか返さないので、薬効分類(2桁)ごとに検索し、
     1000件を超えた分類だけ3桁の小分類に分けて検索し直す
   - 結果は100件/ページなので、ページ送り(PageChangeRequest)で全ページを取る
-  - 表示する文書は「インタビューフォーム」だけにチェック → 一般名/販売名/企業/IFのPDFリンクが取れる
+  - 表示する文書のチェックを IF / 添付文書 に切り替える → 一般名/販売名/企業/PDFリンクが取れる
 
-使い方:  python src/if_index.py            (リポジトリ直下の data/if_index.json を更新)
-         python src/run.py --if-index       (同上 + サイト生成)
-※ 毎日 00:15 JST に GitHub Actions(if-index.yml)で自動実行。PMDAへのアクセスは 150〜200回程度・1秒待ちつき。
+使い方:  python src/if_index.py             (リポジトリ直下の data/if_index.json を更新)
+         python src/if_index.py --tenpu     (同 data/tenpu_index.json を更新)
+         python src/run.py --if-index / --tenpu-index   (同上 + サイト生成)
+※ 毎日 00:15 JST に GitHub Actions(if-index.yml)で両方とも自動実行。
+  PMDAへのアクセスは IF 150〜200回・添付文書 400〜700回程度・1秒待ちつき。
 """
 from __future__ import annotations
 
@@ -39,6 +42,12 @@ PAGE_URL = "https://www.pmda.go.jp/PmdaSearch/iyakuSearch/PageChangeRequest/{pag
 DETAIL_BASE = "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/GeneralList/"
 IF_BASE = "https://www.info.pmda.go.jp/go/interview/"   # IFのPDFは大体ここ(…/1/xxx.pdf, …/2/xxx.pdf)。違うものは丸ごとURLで持つ
 
+# 「表示する文書」チェックボックス(doc の種類ごとに1つだけチェックする)
+DOC_FIELDS = {"if": ("dispColumnsList[2]", "3"),      # インタビューフォーム
+              "tenpu": ("dispColumnsList[0]", "1")}   # 添付文書
+OUT_NAMES = {"if": "if_index.json", "tenpu": "tenpu_index.json"}
+DOC_LABELS = {"if": "インタビューフォーム", "tenpu": "添付文書"}
+
 
 def log(msg: str) -> None:
     print(f"[{datetime.now(JST).strftime('%H:%M:%S')}] {msg}", flush=True)
@@ -46,10 +55,10 @@ def log(msg: str) -> None:
 
 # ---------------------------------------------------------------- 検索フォームの項目
 def search_fields(effect: str = "", name: str = "", page: int | None = None,
-                  date_from: str = "", date_to: str = "") -> list[tuple[str, str]]:
+                  date_from: str = "", date_to: str = "", doc: str = "if") -> list[tuple[str, str]]:
     """PMDAの検索フォームと同じ項目一式。全部そろっていないとサーバーが検索してくれない。
-    page を指定するとページ送り用(PageChangeRequest)の形になる。
-    ※ docs/if/index.html の「PMDAで最新を検索」ボタンも同じ項目を送っている(build_site.py 参照)"""
+    page を指定するとページ送り用(PageChangeRequest)の形になる。doc は表示する文書("if"/"tenpu")。
+    ※ docs/if/ docs/tenpu/ の「PMDAで最新を検索」ボタンも同じ項目を送っている(build_site.py 参照)"""
     f = [
         ("ListRows", str(ROWS_PER_PAGE)),
         ("nameWord", name),
@@ -60,7 +69,7 @@ def search_fields(effect: str = "", name: str = "", page: int | None = None,
         ("warnings", ""), ("warningsHowtoSearch", "and"),
         ("contraindicationsAvoidedadministration", ""), ("contraindicationsAvoidedadministrationHowtoSearch", "and"),
         ("contraindicatedcombinationPrecautionsforcombination", ""), ("contraindicatedcombinationPrecautionsforcombinationHowtoSearch", "and"),
-        ("dispColumnsList[2]", "3"),               # 表示する文書: インタビューフォームだけ
+        DOC_FIELDS[doc],                           # 表示する文書: IF か 添付文書 のどちらか1つ
         ("tglOpFlg", ""), ("updateDocFrDt", date_from), ("updateDocToDt", date_to), ("compNameWord", ""),   # 更新年月日(YYYYMMDD)で絞る(上限超え対策)
         ("iyakuKoumokuSelectSwitchRadio", "2"),
         ("koumoku1Value", ""), ("koumoku1Word", ""), ("koumoku1HowtoSearch", "and"),
@@ -121,6 +130,8 @@ ROW_RE = re.compile(r"<tr class='TrColor0\d'>(.*?)</tr>", re.S)
 TD_RE = re.compile(r"<td>(.*?)</td>", re.S)
 A_RE = re.compile(r"<a[^>]*href='([^']*)'[^>]*>(.*?)</a>", re.S)
 COUNT_RE = re.compile(r"検索結果(\d+)件／全(\d+)ページ")
+PDF_CODE_RE = re.compile(r"ResultDataSetPDF/([0-9A-Za-z_]+)")     # 添付文書PDFのコード(企業コード_packins番号)
+PDF_DATE_RE = re.compile(r"\((\d{4})年(\d{2})月(\d{2})日\)")      # リンク文字「PDF(2022年04月01日)」の日付
 # 上限超えのとき: <strong>検索結果<span …>1160</span>件見つかりました。<BR><BR>検索結果の上限は1000件です。…</strong>
 OVER_RE = re.compile(r"検索結果(?:\s|<[^>]+>)*(\d+)(?:\s|<[^>]+>)*件見つかりました")
 
@@ -148,7 +159,7 @@ def parse_effect_options(form_html: str) -> list[tuple[str, str]]:
     return out
 
 
-def parse_rows(fragment: str) -> list[dict]:
+def parse_rows(fragment: str, doc: str = "if") -> list[dict]:
     items = []
     for row in ROW_RE.findall(fragment):
         tds = TD_RE.findall(row)
@@ -161,6 +172,14 @@ def parse_rows(fragment: str) -> list[dict]:
         for href, title in A_RE.findall(if_td):
             href = html.unescape(href.strip())
             if not href:
+                continue
+            if doc == "tenpu":
+                # 添付文書列は PDF / HTML(javascript) / XML の3リンク。PDFのコードだけ取れば他は組み立てられる
+                mc = PDF_CODE_RE.search(href)
+                if not mc:
+                    continue
+                md = PDF_DATE_RE.search(title)
+                ifs.append({"u": mc.group(1), "t": "-".join(md.groups()) if md else ""})
                 continue
             u = href[len(IF_BASE):] if href.startswith(IF_BASE) else href
             if u.endswith(".pdf") and not u.startswith("http"):
@@ -175,10 +194,11 @@ def parse_rows(fragment: str) -> list[dict]:
 
 
 # ---------------------------------------------------------------- 収集
-def fetch_category(s: Session, code: str, name: str, date_from: str = "", date_to: str = "") -> tuple[list[dict] | None, int]:
+def fetch_category(s: Session, code: str, name: str, date_from: str = "", date_to: str = "",
+                   doc: str = "if") -> tuple[list[dict] | None, int]:
     """1つの薬効分類(必要なら更新年月日の範囲つき)を全ページ取る。上限超え(1000件超)のときは (None, 件数) を返す"""
     label = f"{code} {name}" + (f" [{date_from}〜{date_to}]" if date_from or date_to else "")
-    page1 = s.post(SEARCH_URL, search_fields(effect=code, date_from=date_from, date_to=date_to))
+    page1 = s.post(SEARCH_URL, search_fields(effect=code, date_from=date_from, date_to=date_to, doc=doc))
     over = OVER_RE.search(page1)
     if over or "検索結果の上限は" in page1:
         return None, int(over.group(1)) if over else LIMIT + 1
@@ -190,24 +210,25 @@ def fetch_category(s: Session, code: str, name: str, date_from: str = "", date_t
         # 0件でも上限超えでもないのに件数が読めない = 想定外(取りこぼし防止のため止める)
         raise RuntimeError(f"件数が読み取れません({label})。PMDAのページ構成が変わった?")
     total, pages = int(m.group(1)), int(m.group(2))
-    items = parse_rows(page1)
+    items = parse_rows(page1, doc)
     for p in range(2, pages + 1):
-        raw = s.post(PAGE_URL.format(page=p), search_fields(effect=code, page=p, date_from=date_from, date_to=date_to), ajax=True)
+        raw = s.post(PAGE_URL.format(page=p), search_fields(effect=code, page=p, date_from=date_from, date_to=date_to, doc=doc), ajax=True)
         try:
             j = json.loads(raw)
         except json.JSONDecodeError as e:
             raise RuntimeError(f"ページ送りの応答がJSONではありません({code} p{p}): {raw[:200]}") from e
-        items += parse_rows(j.get("ResultList", ""))
-    log(f"  {label}: {total}件/{pages}ページ → {len(items)}行(IFあり)")
+        items += parse_rows(j.get("ResultList", ""), doc)
+    log(f"  {label}: {total}件/{pages}ページ → {len(items)}行({DOC_LABELS[doc]}あり)")
     return items, total
 
 
 def fetch_category_split_by_date(s: Session, code: str, name: str, warnings: list[str],
-                                 date_from: str = "19000101", date_to: str | None = None) -> tuple[list[dict], int]:
+                                 date_from: str = "19000101", date_to: str | None = None,
+                                 doc: str = "if") -> tuple[list[dict], int]:
     """小分類でも1000件を超えるとき: 添付文書の更新年月日の範囲を半分ずつに割って取る(再帰)"""
     if date_to is None:
         date_to = f"{datetime.now(JST).year + 1}1231"
-    items, total = fetch_category(s, code, name, date_from, date_to)
+    items, total = fetch_category(s, code, name, date_from, date_to, doc)
     if items is not None:
         return items, total
     if date_from >= date_to:
@@ -218,12 +239,12 @@ def fetch_category_split_by_date(s: Session, code: str, name: str, warnings: lis
     mid = d0 + (d1 - d0) / 2
     mid_s = mid.strftime("%Y%m%d")
     next_s = (mid + timedelta(days=1)).strftime("%Y%m%d")
-    a, ta = fetch_category_split_by_date(s, code, name, warnings, date_from, mid_s)
-    b, tb = fetch_category_split_by_date(s, code, name, warnings, next_s, date_to)
+    a, ta = fetch_category_split_by_date(s, code, name, warnings, date_from, mid_s, doc)
+    b, tb = fetch_category_split_by_date(s, code, name, warnings, next_s, date_to, doc)
     return a + b, ta + tb
 
 
-def collect(s: Session) -> tuple[list[dict], dict]:
+def collect(s: Session, doc: str = "if") -> tuple[list[dict], dict]:
     form_html = s.get(FORM_URL)
     opts = parse_effect_options(form_html)
     names = dict(opts)
@@ -235,7 +256,7 @@ def collect(s: Session) -> tuple[list[dict], dict]:
     warnings: list[str] = []
     expected = 0
     for p in parents:
-        items, total = fetch_category(s, p, names[p])
+        items, total = fetch_category(s, p, names[p], doc=doc)
         if items is not None:
             for it in items:
                 it["e"] = p
@@ -244,10 +265,10 @@ def collect(s: Session) -> tuple[list[dict], dict]:
             continue
         log(f"  {p} {names[p]}: {total}件で上限超え → 小分類に分けて取得")
         for c in (children[p] or [p]):
-            items2, total2 = fetch_category(s, c, names[c])
+            items2, total2 = fetch_category(s, c, names[c], doc=doc)
             if items2 is None:
                 log(f"  {c} {names[c]}: {total2}件で上限超え → 更新年月日で分けて取得")
-                items2, total2 = fetch_category_split_by_date(s, c, names[c], warnings)
+                items2, total2 = fetch_category_split_by_date(s, c, names[c], warnings, doc=doc)
             for it in items2:
                 it["e"] = c
             all_items += items2
@@ -274,12 +295,12 @@ def collect(s: Session) -> tuple[list[dict], dict]:
     return uniq, meta
 
 
-def refresh(root: Path) -> dict:
-    out = root / "data" / "if_index.json"
+def refresh(root: Path, doc: str = "if") -> dict:
+    out = root / "data" / OUT_NAMES[doc]
     out.parent.mkdir(parents=True, exist_ok=True)
     s = Session()
-    log("IF一覧の取得を開始")
-    items, meta = collect(s)
+    log(f"{DOC_LABELS[doc]}一覧の取得を開始")
+    items, meta = collect(s, doc)
     data = {"meta": meta, "items": items}
     out.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8", newline="\n")
     log(f"保存: {out} ({meta['count']}件, 要求{meta['requests']}回)")
@@ -289,5 +310,8 @@ def refresh(root: Path) -> dict:
 
 
 if __name__ == "__main__":
-    root = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parent.parent
-    refresh(root)
+    argv = sys.argv[1:]
+    doc_arg = "tenpu" if "--tenpu" in argv else "if"
+    paths = [a for a in argv if not a.startswith("--")]
+    root = Path(paths[0]) if paths else Path(__file__).resolve().parent.parent
+    refresh(root, doc_arg)

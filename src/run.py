@@ -3,7 +3,9 @@
 使い方:  python src/run.py            (リポジトリ直下を対象)
          python src/run.py --days 1   (最新1日だけ。テスト用)
          python src/run.py --build-only
-         python src/run.py --build-only --if-index   (インタビューフォーム一覧をPMDAから取り直してサイト生成。数分かかる。毎日0:15の自動実行と同じ)
+         python src/run.py --build-only --if-index --tenpu-index
+             (インタビューフォーム/添付文書の一覧をPMDAから取り直してサイト生成。
+              IFは数分・添付文書は10〜20分かかる。毎日0:15の自動実行と同じ)
 """
 from __future__ import annotations
 
@@ -24,10 +26,14 @@ def main() -> int:
     ap.add_argument("--days", type=int, default=None, help="ページ上の新しい方からN日だけ処理(テスト用)")
     ap.add_argument("--build-only", action="store_true", help="添付文書の取得はせずサイト生成だけ")
     ap.add_argument("--if-index", action="store_true", help="インタビューフォーム一覧(data/if_index.json)をPMDAから取り直す")
+    ap.add_argument("--tenpu-index", action="store_true", help="添付文書一覧(data/tenpu_index.json)をPMDAから取り直す")
     a = ap.parse_args()
     root = Path(a.root)
     if a.if_index:
         meta = if_index.refresh(root)
+        print(json.dumps({k: meta[k] for k in ("fetched_at", "count", "requests", "warnings")}, ensure_ascii=False))
+    if a.tenpu_index:
+        meta = if_index.refresh(root, doc="tenpu")
         print(json.dumps({k: meta[k] for k in ("fetched_at", "count", "requests", "warnings")}, ensure_ascii=False))
     if not a.build_only:
         w = pmda_watch.Watcher(root)
