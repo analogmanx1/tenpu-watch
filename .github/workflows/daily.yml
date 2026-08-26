@@ -7,9 +7,9 @@ on:
     - cron: "0 22 * * *"
     - cron: "0 8 * * *"
   workflow_dispatch: {}   # 手動実行ボタン
-  push:                   # 手で編集してpushしたときも即公開(ボットの自動コミットでは動かない=無限ループしない)
+  push:                   # 手で編集してpushしたときと、PC側タスクが更新をpushしたときも即公開(Actionsのボットコミットでは動かない=無限ループしない)
     branches: [main]
-    paths: ["src/**", "site/**", "docs/tools/**", ".github/workflows/**"]
+    paths: ["src/**", "site/**", "docs/tools/**", ".github/workflows/**", "data/**"]
 
 permissions:
   contents: write
