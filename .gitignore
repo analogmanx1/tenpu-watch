@@ -6,3 +6,7 @@ desktop.ini
 
 # ローカルプレビュー用(Claude Codeの設定)
 .claude/
+
+# ネームレスの現場ノート(公開リポジトリに載せない。Googleドライブ経由で全PC共有)
+/CLAUDE.md
+/つまずき帳.md
