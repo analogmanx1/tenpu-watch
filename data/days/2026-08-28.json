@@ -1,0 +1,1011 @@
+{
+ "date": "2026-08-28",
+ "updates": [
+  {
+   "brand": "ピレチノール",
+   "company": "製造販売元／岩城製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1141001X1070_1_19",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1141001X1070_1_19/",
+   "fetched_at": "2026-08-28 18:30:28",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/130202_1141001X1070_1_19",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/130202_1141001X1070_1_19",
+   "meta": {
+    "packins_no": "1141001X1070_1_19",
+    "company_id": "130202",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ピレチノール"
+    ],
+    "generic_name": "アセトアミノフェン",
+    "therapeutic_class": "解熱鎮痛剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重篤な腎障害・肝障害（重篤な肝障害を除く）・敗血症・栄養障害等によるピログルタミン酸蓄積の素因のある患者"
+     ],
+     "text": "ピログルタミン酸の排泄阻害又はグルタチオン欠乏が生じているため、本剤投与によりピログルタミン酸の蓄積が促進された結果、アニオンギャップ開大性代謝性アシドーシスが発現するおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ソホノスカプセル1mg／ソホノスカプセル1....",
+   "company": "製造販売元／IPSEN株式会社",
+   "reason": "更新",
+   "packins_no": "3999069M1023_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999069M1023_1_02/",
+   "fetched_at": "2026-08-28 18:30:30",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/151077_3999069M1023_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/151077_3999069M1023_1_02",
+   "meta": {
+    "packins_no": "3999069M1023_1_02",
+    "company_id": "151077",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ソホノスカプセル1mg",
+     "ソホノスカプセル1.5mg",
+     "ソホノスカプセル2.5mg",
+     "ソホノスカプセル5mg",
+     "ソホノスカプセル10mg"
+    ],
+    "generic_name": "パロバロテンカプセル",
+    "therapeutic_class": "レチノイン酸受容体γ作動薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "(4)"
+     ],
+     "text": "強いCYP3A阻害剤（イトラコナゾール、リトナビル含有製剤、クラリスロマイシン含有製剤、ポサコナゾール、ボリコナゾール、エンシトレルビル フマル酸、コビシスタット含有製剤、セリチニブ、ダルナビル エタノール付加物含有製剤、ロナファルニブ、ツカチニブ エタノール付加物）を投与中の患者,"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）",
+      "(1)"
+     ],
+     "text": "強いCYP3A阻害剤"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オラデオカプセル150mg",
+   "company": "製造販売／株式会社オーファンパシフィック / 販売提携／鳥居薬品株式会社 / 提携／バイオクリスト・ジャパン株式会社",
+   "reason": "更新",
+   "packins_no": "4490036M1020_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490036M1020_1_07/",
+   "fetched_at": "2026-08-28 18:30:32",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/181251_4490036M1020_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/181251_4490036M1020_1_07",
+   "meta": {
+    "packins_no": "4490036M1020_1_07",
+    "company_id": "181251",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第7版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第6版"
+     }
+    },
+    "brands": [
+     "オラデオカプセル150mg"
+    ],
+    "generic_name": "ベロトラルスタット塩酸塩",
+    "therapeutic_class": "遺伝性血管性浮腫発作抑制用　血漿カリクレイン阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "７.用法及び用量に関連する注意"
+     ],
+     "text": "本剤とオラデオ顆粒分包の⽣物学的同等性は⽰されていないため、互換使⽤を⾏わないこと。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オラデオ顆粒分包72mg／オラデオ顆粒分包9...",
+   "company": "製造販売元／株式会社オーファンパシフィック / 販売提携／鳥居薬品株式会社 / 提携／バイオクリスト・ジャパン株式会社",
+   "reason": "更新",
+   "packins_no": "44900C3D2023_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/44900C3D2023_1_02/",
+   "fetched_at": "2026-08-28 18:30:34",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/181251_44900C3D2023_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/181251_44900C3D2023_1_02",
+   "meta": {
+    "packins_no": "44900C3D2023_1_02",
+    "company_id": "181251",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "オラデオ顆粒分包72mg",
+     "オラデオ顆粒分包96mg",
+     "オラデオ顆粒分包108mg",
+     "オラデオ顆粒分包132mg"
+    ],
+    "generic_name": "ベロトラルスタット塩酸塩",
+    "therapeutic_class": "遺伝性血管性浮腫発作抑制用　血漿カリクレイン阻害剤"
+   },
+   "revised": [],
+   "diff": {
+    "prev_packins_no": "44900C3D2023_1_01",
+    "prev_fetched_at": "2026-08-26 18:36:59",
+    "prev_seen_date": "2026-08-26",
+    "changes": []
+   }
+  },
+  {
+   "brand": "イトラコナゾール錠50mg「科研」",
+   "company": "製造販売元／科研製薬株式会社",
+   "reason": "更新",
+   "packins_no": "6290004F1062_1_29",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6290004F1062_1_29/",
+   "fetched_at": "2026-08-28 18:30:36",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/200022_6290004F1062_1_29",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/200022_6290004F1062_1_29",
+   "meta": {
+    "packins_no": "6290004F1062_1_29",
+    "company_id": "200022",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第8版"
+     },
+     "previous": {
+      "ym": "2025-08",
+      "ver": "第7版"
+     }
+    },
+    "brands": [
+     "イトラコナゾール錠50mg「科研」"
+    ],
+    "generic_name": "イトラコナゾール",
+    "therapeutic_class": "経口抗真菌剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "(1)"
+     ],
+     "text": "ピモジド、キニジン、ベプリジル、トリアゾラム、シンバスタチン、アゼルニジピン、アゼルニジピン・オルメサルタン メドキソミル、ニソルジピン、エルゴタミン・カフェイン・イソプロピルアンチピリン、ジヒドロエルゴタミン、エルゴメトリン、メチルエルゴメトリン、バルデナフィル、エプレレノン、ブロナンセリン、シルデナフィル（レバチオ）、タダラフィル（アドシルカ）、スボレキサント、ボルノレキサント水和物、イブルチニブ、チカグレロル、ロミタピド、イバブラジン、ベネトクラクス（再発又は難治性の慢性リンパ性白血病（小リンパ球性リンパ腫を含む）の用量漸増期）、ルラシドン塩酸塩、アナモレリン塩酸塩、マバカムテン、フィネレノン、ボクロスポリン、イサブコナゾニウム硫酸塩、ロナファルニブ、パロバロテン、アリスキレン、ダビガトラン、リバーロキサバンを投与中の患者"
+    },
+    {
+     "path": [],
+     "text": "妊娠する可能性のある女性には、本剤投与中及び最終投与後1ヵ月間において避妊する必要性及び適切な避妊法について説明すること。"
+    },
+    {
+     "path": [],
+     "text": "妊婦又は妊娠している可能性のある女性には投与しないこと。動物実験（ラット、マウス）で催奇形性が報告されている。,"
+    },
+    {
+     "path": [],
+     "text": "ボルノレキサント水和物"
+    },
+    {
+     "path": [],
+     "text": "マバカムテン"
+    },
+    {
+     "path": [],
+     "text": "ロナファルニブ"
+    },
+    {
+     "path": [],
+     "text": "パロバロテン"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "セパセルインテグラCA／セパセルインテグ...",
+   "company": "製造販売元／SBカワスミ株式会社",
+   "reason": "更新",
+   "packins_no": "333940AX1031_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/333940AX1031_1_10/",
+   "fetched_at": "2026-08-28 18:30:38",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/200162_333940AX1031_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/200162_333940AX1031_1_10",
+   "meta": {
+    "packins_no": "333940AX1031_1_10",
+    "company_id": "200162",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-11",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "セパセルインテグラCA",
+     "セパセルインテグラCA"
+    ],
+    "generic_name": "-",
+    "therapeutic_class": null
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "電解質異常"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "クエン酸による血中カルシウムイオン濃度の低下,,"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "SBカワスミ株式会社"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒210-8602\n神奈川県川崎市川崎区殿町3丁目25番4号"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "電話番号:044-589-8070"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "カーミパックACD−A液",
+   "company": "製造販売元／SBカワスミ株式会社",
+   "reason": "更新",
+   "packins_no": "333950AX1021_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/333950AX1021_1_06/",
+   "fetched_at": "2026-08-28 18:30:40",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/200162_333950AX1021_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/200162_333950AX1021_1_06",
+   "meta": {
+    "packins_no": "333950AX1021_1_06",
+    "company_id": "200162",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-01",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "カーミパックACD−A液"
+    ],
+    "generic_name": "-",
+    "therapeutic_class": "血液保存液A液（生物学的製剤基準）"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "電解質異常"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "カーミCA液",
+   "company": "製造販売元／SBカワスミ株式会社",
+   "reason": "更新",
+   "packins_no": "333950EX1020_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/333950EX1020_1_10/",
+   "fetched_at": "2026-08-28 18:31:33",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/200162_333950EX1020_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/200162_333950EX1020_1_10",
+   "meta": {
+    "packins_no": "333950EX1020_1_10",
+    "company_id": "200162",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-11",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "カーミCA液"
+    ],
+    "generic_name": "-",
+    "therapeutic_class": null
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "電解質異常"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "クエン酸による血中カルシウムイオン濃度の低下,,"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "カーミC リューコトラップ MAP",
+   "company": "製造販売元／SBカワスミ株式会社",
+   "reason": "更新",
+   "packins_no": "333950FX1024_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/333950FX1024_1_08/",
+   "fetched_at": "2026-08-28 18:32:26",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/200162_333950FX1024_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/200162_333950FX1024_1_08",
+   "meta": {
+    "packins_no": "333950FX1024_1_08",
+    "company_id": "200162",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-01",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "カーミC リューコトラップ MAP"
+    ],
+    "generic_name": "-",
+    "therapeutic_class": "血液保存液C液（生物学的製剤基準）及び赤血球保存液MAP液"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "電解質異常"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "クエン酸による血中カルシウムイオン濃度の低下,,"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "セパセルインテグラC−MAP",
+   "company": "製造販売元／SBカワスミ株式会社",
+   "reason": "更新",
+   "packins_no": "333950GX1029_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/333950GX1029_1_09/",
+   "fetched_at": "2026-08-28 18:32:28",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/200162_333950GX1029_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/200162_333950GX1029_1_09",
+   "meta": {
+    "packins_no": "333950GX1029_1_09",
+    "company_id": "200162",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-01",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "セパセルインテグラC−MAP"
+    ],
+    "generic_name": "-",
+    "therapeutic_class": "血液保存液C液（生物学的製剤基準）及び赤血球保存液MAP液"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "電解質異常"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "クエン酸による血中カルシウムイオン濃度の低下,,"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "イトラコナゾールカプセル50mg「SW」",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "6290004M1070_1_17",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6290004M1070_1_17/",
+   "fetched_at": "2026-08-28 18:32:30",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_6290004M1070_1_17",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_6290004M1070_1_17",
+   "meta": {
+    "packins_no": "6290004M1070_1_17",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-08",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "イトラコナゾールカプセル50mg「SW」"
+    ],
+    "generic_name": "イトラコナゾール",
+    "therapeutic_class": "経口抗真菌剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "(1)"
+     ],
+     "text": "ピモジド、キニジン、ベプリジル、トリアゾラム、シンバスタチン、アゼルニジピン、アゼルニジピン・オルメサルタン メドキソミル、ニソルジピン、エルゴタミン・カフェイン・イソプロピルアンチピリン、ジヒドロエルゴタミン、エルゴメトリン、メチルエルゴメトリン、バルデナフィル、エプレレノン、ブロナンセリン、シルデナフィル（レバチオ）、タダラフィル（アドシルカ）、スボレキサント、ボルノレキサント水和物、イブルチニブ、チカグレロル、ロミタピド、イバブラジン、ベネトクラクス（再発又は難治性の慢性リンパ性白血病（小リンパ球性リンパ腫を含む）の用量漸増期）、ルラシドン塩酸塩、アナモレリン塩酸塩、マバカムテン、フィネレノン、ボクロスポリン、イサブコナゾニウム硫酸塩、ロナファルニブ、パロバロテン、アリスキレン、ダビガトラン、リバーロキサバンを投与中の患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.４ 生殖能を有する者"
+     ],
+     "text": "妊娠する可能性のある女性には、本剤投与中及び最終投与後1ヵ月間において避妊する必要性及び適切な避妊法について説明すること。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ボルノレキサント水和物"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "マバカムテン"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ロナファルニブ"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "パロバロテン"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ビラスチンOD錠20mg「TCK」",
+   "company": "製造販売元／辰巳化学株式会社",
+   "reason": "更新",
+   "packins_no": "4490033F2040_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490033F2040_1_02/",
+   "fetched_at": "2026-08-28 18:32:32",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400278_4490033F2040_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400278_4490033F2040_1_02",
+   "meta": {
+    "packins_no": "4490033F2040_1_02",
+    "company_id": "400278",
+    "revision": {
+     "current": {
+      "ym": "2026-02",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ビラスチンOD錠20mg「TCK」"
+    ],
+    "generic_name": "ビラスチン口腔内崩壊錠",
+    "therapeutic_class": "アレルギー性疾患治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ビラスチンOD錠20mg「TCK」",
+   "company": "製造販売元／辰巳化学株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "4490033F2040_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490033F2040_2_02/",
+   "fetched_at": "2026-08-28 18:32:35",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400278_4490033F2040_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400278_4490033F2040_2_02",
+   "meta": {
+    "packins_no": "4490033F2040_2_02",
+    "company_id": "400278",
+    "revision": {
+     "current": {
+      "ym": "2026-03",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ビラスチンOD錠20mg「TCK」"
+    ],
+    "generic_name": "ビラスチン口腔内崩壊錠",
+    "therapeutic_class": "アレルギー性疾患治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ダイチロナ筋注",
+   "company": "製造販売元／第一三共株式会社",
+   "reason": "新規",
+   "packins_no": "631341MA3028_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/631341MA3028_1_01/",
+   "fetched_at": "2026-08-28 18:33:01",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/430574_631341MA3028_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/430574_631341MA3028_1_01",
+   "meta": {
+    "packins_no": "631341MA3028_1_01",
+    "company_id": "430574",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ダイチロナ筋注"
+    ],
+    "generic_name": "コロナウイルス（SARS-CoV-2）RNAワクチン",
+    "therapeutic_class": "ウイルスワクチン類"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "テルモ血液バッグCPDA／テルモ血液バッグC...",
+   "company": "製造販売元／テルモ株式会社",
+   "reason": "更新",
+   "packins_no": "333940AX1023_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/333940AX1023_1_07/",
+   "fetched_at": "2026-08-28 18:34:18",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/470034_333940AX1023_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/470034_333940AX1023_1_07",
+   "meta": {
+    "packins_no": "333940AX1023_1_07",
+    "company_id": "470034",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "テルモ血液バッグCPDA／テルモ血液バッグCPDA　メスコネクター付き（200mL採血用）",
+     "テルモ血液バッグCPDA／テルモ血液バッグCPDA　メスコネクター付き（400mL採血用）"
+    ],
+    "generic_name": "-",
+    "therapeutic_class": null
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "電解質異常"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "クエン酸による血中カルシウムイオン濃度の低下"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ACD-A液 250mL／ACD-A液 500mL",
+   "company": "製造販売元／テルモ株式会社",
+   "reason": "更新",
+   "packins_no": "333950AX1030_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/333950AX1030_1_07/",
+   "fetched_at": "2026-08-28 18:34:20",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/470034_333950AX1030_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/470034_333950AX1030_1_07",
+   "meta": {
+    "packins_no": "333950AX1030_1_07",
+    "company_id": "470034",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-07",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ACD-A液 250mL",
+     "ACD-A液 500mL"
+    ],
+    "generic_name": "-",
+    "therapeutic_class": null
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用"
+     ],
+     "text": "次の副作用があらわれることがあるので観察を十分行い、異常が認められた場合には投与を中止するなど適切な処置を行うこと。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ドンペリドン錠5mg「杏林」／ドンペリド...",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2399005F1272_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399005F1272_1_06/",
+   "fetched_at": "2026-08-28 18:34:22",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_2399005F1272_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_2399005F1272_1_06",
+   "meta": {
+    "packins_no": "2399005F1272_1_06",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ドンペリドン錠5mg「杏林」",
+     "ドンペリドン錠10mg「杏林」"
+    ],
+    "generic_name": "ドンペリドン",
+    "therapeutic_class": "消化管運動改善剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)"
+     ],
+     "text": "国内外疫学調査において、致死性不整脈及び心突然死のリスク増加が示唆されている。\n心室頻拍、心室細動等の重篤な不整脈があらわれることがあるので、以下の点に注意すること。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重篤な不整脈（頻度不明）"
+     ],
+     "text": "重篤な不整脈（頻度不明）"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "NDBを用いた調査結果の概要（ドンペリドン又はメトクロプラミドによる致死性不整脈イベント発現のリスク評価）：https://www.pmda.go.jp/files/000281623.pdf"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Johannes,C.B.,et al.:Pharmacoepidemiol Drug Saf. 2010;19:881-888"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "van Noord,C.,et al.:Drug Saf. 2010;33:1003-1014"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "JMS ACD-A液",
+   "company": "製造販売元／株式会社ジェイ・エム・エス",
+   "reason": "更新",
+   "packins_no": "333950AX1048_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/333950AX1048_1_06/",
+   "fetched_at": "2026-08-28 18:34:24",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530360_333950AX1048_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530360_333950AX1048_1_06",
+   "meta": {
+    "packins_no": "333950AX1048_1_06",
+    "company_id": "530360",
+    "revision": {
+     "current": {
+      "ym": "2026-04",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "JMS ACD-A液"
+    ],
+    "generic_name": "-",
+    "therapeutic_class": null
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "電解質異常"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ツカイザ錠50mg／ツカイザ錠150mg",
+   "company": "製造販売元／ファイザー株式会社",
+   "reason": "更新",
+   "packins_no": "4291098F1029_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291098F1029_1_02/",
+   "fetched_at": "2026-08-28 18:35:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_4291098F1029_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_4291098F1029_1_02",
+   "meta": {
+    "packins_no": "4291098F1029_1_02",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ツカイザ錠50mg",
+     "ツカイザ錠150mg"
+    ],
+    "generic_name": "ツカチニブ　エタノール付加物",
+    "therapeutic_class": "抗悪性腫瘍剤/HER2チロシンキナーゼ阻害剤HER2：Human Epidermal Growth Factor Receptor Type 2（ヒト上皮増殖因子受容体2型、別称：c-erbB-2） / HER2：Human Epidermal Growth Factor Receptor Type 2（ヒト上皮増殖因子受容体2型、別称：c-erbB-2）"
+   },
+   "revised": [
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "(2)"
+     ],
+     "text": "次の薬剤を投与中の患者：ベネトクラクス（慢性リンパ性白血病（小リンパ球性リンパ腫を含む）、再発又は難治性のマントル細胞リンパ腫の用量漸増期）、アナモレリン塩酸塩、ボクロスポリン、イバブラジン塩酸塩、キニジン硫酸塩水和物、チカグレロル、マバカムテン、リバーロキサバン、アゼルニジピン、オルメサルタン　メドキソミル・アゼルニジピン、エプレレノン、エルゴタミン酒石酸塩・無水カフェイン・イソプロピルアンチピリン、シンバスタチン、タダラフィル（アドシルカ）、マシテンタン・タダラフィル、フィネレノン、ロミタピドメシル酸塩、スボレキサント、ダリドレキサント塩酸塩、トリアゾラム、ブロナンセリン、ボルノレキサント水和物、ルラシドン塩酸塩、バルデナフィル塩酸塩水和物、メチルエルゴメトリンマレイン酸塩、ロナファルニブ、イブルチニブ、パロバロテン"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "パロバロテン\n（ソホノス）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "イトリゾールカプセル50",
+   "company": "製造販売元（輸入）／ヤンセンファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "6290004M1029_1_47",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6290004M1029_1_47/",
+   "fetched_at": "2026-08-28 18:35:51",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/800155_6290004M1029_1_47",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/800155_6290004M1029_1_47",
+   "meta": {
+    "packins_no": "6290004M1029_1_47",
+    "company_id": "800155",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第8版"
+     },
+     "previous": {
+      "ym": "2025-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "イトリゾールカプセル50"
+    ],
+    "generic_name": "イトラコナゾール",
+    "therapeutic_class": "経口抗真菌剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２.禁忌（次の患者には投与しないこと）",
+      "(1)"
+     ],
+     "text": "ピモジド、キニジン、ベプリジル、トリアゾラム、シンバスタチン、アゼルニジピン、アゼルニジピン・オルメサルタン メドキソミル、ニソルジピン、エルゴタミン・カフェイン・イソプロピルアンチピリン、ジヒドロエルゴタミン、エルゴメトリン、メチルエルゴメトリン、バルデナフィル、エプレレノン、ブロナンセリン、シルデナフィル（レバチオ）、タダラフィル（アドシルカ）、スボレキサント、ボルノレキサント水和物、イブルチニブ、チカグレロル、ロミタピド、イバブラジン、ベネトクラクス（再発又は難治性の慢性リンパ性白血病（小リンパ球性リンパ腫を含む）の用量漸増期）、ルラシドン塩酸塩、アナモレリン塩酸塩、マバカムテン、フィネレノン、ボクロスポリン、イサブコナゾニウム硫酸塩、ロナファルニブ、パロバロテン、アリスキレン、ダビガトラン、リバーロキサバンを投与中の患者"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.４ 生殖能を有する者"
+     ],
+     "text": "妊娠する可能性のある女性には、本剤投与中及び最終投与後1ヵ月間において避妊する必要性及び適切な避妊法について説明すること。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ボルノレキサント水和物"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "マバカムテン"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ロナファルニブ"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "パロバロテン"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "過敏症"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-08-28 18:30:28",
+ "updated_at": "2026-08-28 18:35:53",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
