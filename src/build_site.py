@@ -184,7 +184,7 @@ def layout(title: str, body: str, rel: str, nav_days: list[str], current: str | 
 <main class="main">
 {body}
 <footer class="foot">
-  <p>個人用サイト。添付文書ウォッチの出典: PMDA「過去1週間以内に更新された添付文書情報」および各添付文書XML。データ最終更新: {esc(built_at)}</p>
+  <p>個人運営の非公式サイトです。添付文書ウォッチの出典: PMDA「過去1週間以内に更新された添付文書情報」および各添付文書XML。データ最終更新: {esc(built_at)}</p>
 </footer>
 </main>
 </div>
