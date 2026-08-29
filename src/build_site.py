@@ -374,6 +374,11 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .ifbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.4rem 0}.ifbar #q{flex:1 1 280px;max-width:560px}.ifbar form{margin:0}
 .btn{font-size:.9rem;padding:.45rem .8rem;border:1px solid var(--acc);border-radius:.4rem;background:var(--bg);color:var(--acc);cursor:pointer;white-space:nowrap}.btn:hover{background:var(--card)}
 .ifa{font-weight:600;font-size:1.02rem;text-decoration:none}.ifa:hover{text-decoration:underline}.ifmulti{margin-top:.15rem}
+.histhead{margin:.9rem 0 .1rem;font-weight:600;font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.3rem 0}
+.chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--line);border-radius:1rem;padding:.15rem .7rem;background:var(--card);cursor:pointer;font-size:.9rem}
+.chip:hover{border-color:var(--acc)}.chip a{text-decoration:none}
+.chip .x{color:var(--mut);cursor:pointer}.chip .x:hover{color:var(--imp)}
 .menu{display:inline-block;position:relative;margin-right:.9rem}.menu summary{font-weight:400;color:var(--acc);list-style:none}.menu summary::-webkit-details-marker{display:none}
 .menu .dd{position:absolute;top:1.6rem;left:0;background:var(--bg);border:1px solid var(--line);border-radius:.4rem;padding:.5rem .9rem;min-width:15rem;box-shadow:0 4px 14px rgba(0,0,0,.12);z-index:9;white-space:nowrap}.menu .dd a{display:block;margin:.2rem 0}
 .menu .dd .head{display:block;margin:.45rem 0 .1rem;font-weight:600}.menu .dd span.head{color:var(--mut)}.menu .dd .sub{display:block;margin:.15rem 0 .15rem 1.2rem}.menu summary:hover{text-decoration:underline}
@@ -381,6 +386,47 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .card{display:block;border:1px solid var(--line);border-radius:.6rem;padding:.8rem 1rem;background:var(--card);text-decoration:none;color:var(--fg)}.card:hover{border-color:var(--acc)}.card b{color:var(--acc)}.card .small{display:block;margin-top:.2rem}.card.big{padding:1.2rem 1.2rem;font-size:1.05rem}.card.big b{font-size:1.2rem}
 .calc{max-width:640px}.calc label{display:block;margin:.6rem 0 .2rem;font-weight:600}.calc input,.calc select{font-size:1rem;padding:.35rem .5rem;border:1px solid var(--line);border-radius:.4rem;background:var(--bg);color:var(--fg);width:100%;max-width:320px}
 .calc .result{margin-top:1rem;padding:.8rem 1rem;border-radius:.5rem;background:var(--card);border:1px solid var(--line);font-size:1.05rem}.calc .result b{font-size:1.3rem}
+"""
+
+# 検索履歴の共通部品(IF検索・添付文書検索の両ページで使う)。docs/assets/hist.js として書き出す。
+# 履歴はブラウザ内(localStorage)にだけ保存し、どこにも送信しない。ページごとに別のキーで持つ。
+HIST_JS = r"""// 自動生成: build_site.py — 検索履歴(このブラウザ内のlocalStorageにだけ保存。どこにも送信しない)
+(function(){
+window.searchHistory=function(opts){
+  var QK=opts.key+':qh', OK=opts.key+':oh', QMAX=10, OMAX=15;
+  var box=opts.box;
+  function load(k){try{var v=JSON.parse(localStorage.getItem(k));return Array.isArray(v)?v:[];}catch(e){return[];}}
+  function save(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+  function esc(s){return (s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function cut(s,n){return s.length>n?s.slice(0,n)+'…':s;}
+  function addQuery(w){ if(!w)return; var a=load(QK).filter(function(x){return x!==w;}); a.unshift(w); save(QK,a.slice(0,QMAX)); }
+  function addOpen(label,url){ if(!url)return; var a=load(OK).filter(function(x){return x.u!==url;}); a.unshift({t:label||url,u:url}); save(OK,a.slice(0,OMAX)); }
+  function render(){
+    var qs=load(QK), os=load(OK);
+    if(!qs.length&&!os.length){ box.innerHTML=''; return; }
+    var h='';
+    if(qs.length){ h+='<div class="histhead">🕘 最近の検索</div><div class="chips">'+qs.map(function(w){
+      return '<span class="chip" data-q="'+esc(w)+'" title="クリックで再検索">'+esc(w)+'<span class="x" title="この履歴を消す" data-xq="'+esc(w)+'">✕</span></span>';
+    }).join('')+'</div>'; }
+    if(os.length){ h+='<div class="histhead">📂 最近開いたPDF</div><div class="chips">'+os.map(function(o){
+      return '<span class="chip"><a href="'+esc(o.u)+'" target="_blank" rel="noopener" title="'+esc(o.t)+'">'+esc(cut(o.t,28))+'</a><span class="x" title="この履歴を消す" data-xo="'+esc(o.u)+'">✕</span></span>';
+    }).join('')+'</div>'; }
+    h+='<p class="small"><a href="javascript:void(0)" id="histclear">履歴を全部消す</a> ｜ 履歴はこのブラウザ内にだけ保存されます(PC・ブラウザごとに別)</p>';
+    box.innerHTML=h;
+  }
+  box.addEventListener('click',function(ev){
+    var t=ev.target;
+    if(t.id==='histclear'){ save(QK,[]); save(OK,[]); render(); return; }
+    if(t.dataset&&t.dataset.xq){ save(QK,load(QK).filter(function(x){return x!==t.dataset.xq;})); render(); return; }
+    if(t.dataset&&t.dataset.xo){ save(OK,load(OK).filter(function(x){return x.u!==t.dataset.xo;})); render(); return; }
+    var chip=t.closest('.chip');
+    if(chip&&chip.dataset.q&&!t.closest('a')){ opts.rerun(chip.dataset.q); }
+  });
+  return {addQuery:addQuery, addOpen:addOpen,
+          show:function(){ box.style.display=''; render(); },
+          hide:function(){ box.style.display='none'; }};
+};
+})();
 """
 
 SEARCH_JS = """
@@ -450,14 +496,18 @@ def render_if_page(idx: dict | None) -> str:
   </form>
 </div>
 <p class="small" id="cnt"></p>
+<div id="hist"></div>
 <div id="res"></div>
 <p class="small" id="ifmeta">{esc(note)}。一覧は毎日0:15にPMDAの検索結果から作り直しています。改版直後などでPDFが開かないときは「PMDA詳細」か上のボタンから最新を確認してください。</p>
+<script src="../assets/hist.js"></script>
 <script>
 (async function(){{
   const IFB={json.dumps(IF_PDF_BASE)}, DB={json.dumps(IF_DETAIL_BASE)};
   const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt');
   const form=document.getElementById('pmdaForm'), pn=document.getElementById('pmdaName');
   form.addEventListener('submit',e=>{{ if(!q.value.trim()){{e.preventDefault();q.focus();return;}} pn.value=q.value.trim(); }});
+  const hist=window.searchHistory?window.searchHistory({{key:'tenpu-watch:if',box:document.getElementById('hist'),rerun:w=>{{q.value=w;run();}}}}):null;
+  res.addEventListener('click',ev=>{{ const a=ev.target.closest('a'); if(a&&hist&&a.dataset.hl){{ hist.addOpen(a.dataset.hl,a.href); const w=q.value.normalize('NFKC').trim(); if(w)hist.addQuery(w); }} }});
   let data;
   try{{ data=await (await fetch('index.json')).json(); }}catch(e){{ cnt.textContent='一覧データを読み込めませんでした'; return; }}
   const items=data.items||[], cats=(data.meta||{{}}).categories||{{}};
@@ -468,7 +518,8 @@ def render_if_page(idx: dict | None) -> str:
   const pdf=u=>u.startsWith('http')?u:IFB+u+'.pdf';
   function run(){{
     const kw=q.value.normalize('NFKC').trim().split(/\\s+/).filter(Boolean).map(norm);
-    if(!kw.length){{ cnt.textContent=`全${{items.length.toLocaleString()}}件。薬剤名を入力してください`; res.innerHTML=''; return; }}
+    if(!kw.length){{ cnt.textContent=`全${{items.length.toLocaleString()}}件。薬剤名を入力してください`; res.innerHTML=''; if(hist)hist.show(); return; }}
+    if(hist)hist.hide();
     const k0=kw[0];
     let hits=items.filter(e=>kw.every(k=>e._h.includes(k)));
     hits.forEach(e=>{{ e._s=(e._n.startsWith(k0)||e._g.startsWith(k0))?0:(e._g.includes(k0)||e._n.includes(k0))?1:2; }});
@@ -477,10 +528,10 @@ def render_if_page(idx: dict | None) -> str:
     cnt.textContent=`${{total.toLocaleString()}}件`+(total>200?'(先頭200件を表示。もう少し絞ってください)':'');
     res.innerHTML=hits.map(e=>{{
       const f=e.f||[]; const first=f[0]||{{}};
-      const multi=f.length>1?'<div class="small ifmulti">IFが複数あります: '+f.map(x=>`<a href="${{esc(pdf(x.u))}}" target="_blank" rel="noopener">📘 ${{esc(x.t||'IF')}}</a>`).join(' ／ ')+'</div>':'';
+      const multi=f.length>1?'<div class="small ifmulti">IFが複数あります: '+f.map(x=>`<a href="${{esc(pdf(x.u))}}" data-hl="${{esc(e.n+' '+(x.t||'IF'))}}" target="_blank" rel="noopener">📘 ${{esc(x.t||'IF')}}</a>`).join(' ／ ')+'</div>':'';
       const cat=cats[e.e]?` ｜ ${{esc(cats[e.e])}}`:'';
       const detail=e.d?` <a class="small" href="${{esc(DB+e.d)}}" target="_blank" rel="noopener">PMDA詳細 ↗</a>`:'';
-      return `<div class="hit"><a class="ifa" href="${{esc(pdf(first.u||''))}}" target="_blank" rel="noopener">📘 ${{esc(e.n)}}</a><br><span class="small">${{esc(e.g)}} ｜ ${{esc(e.c)}}${{cat}}</span>${{detail}}${{multi}}</div>`;
+      return `<div class="hit"><a class="ifa" href="${{esc(pdf(first.u||''))}}" data-hl="${{esc(e.n)}}" target="_blank" rel="noopener">📘 ${{esc(e.n)}}</a><br><span class="small">${{esc(e.g)}} ｜ ${{esc(e.c)}}${{cat}}</span>${{detail}}${{multi}}</div>`;
     }}).join('');
   }}
   q.addEventListener('input',run);
@@ -511,14 +562,18 @@ def render_tenpu_page(idx: dict | None) -> str:
   </form>
 </div>
 <p class="small" id="cnt"></p>
+<div id="hist"></div>
 <div id="res"></div>
 <p class="small" id="ifmeta">{esc(note)}。一覧は毎日0:15にPMDAの検索結果から作り直しています。改版直後などでPDFが開かないときは「HTML版」「PMDA詳細」か上のボタンから最新を確認してください。</p>
+<script src="../assets/hist.js"></script>
 <script>
 (async function(){{
   const PDFB={json.dumps(TENPU_PDF_BASE)}, PACKB={json.dumps(PACK_HTML_BASE)}, DB={json.dumps(IF_DETAIL_BASE)};
   const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt');
   const form=document.getElementById('pmdaForm'), pn=document.getElementById('pmdaName');
   form.addEventListener('submit',e=>{{ if(!q.value.trim()){{e.preventDefault();q.focus();return;}} pn.value=q.value.trim(); }});
+  const hist=window.searchHistory?window.searchHistory({{key:'tenpu-watch:tenpu',box:document.getElementById('hist'),rerun:w=>{{q.value=w;run();}}}}):null;
+  res.addEventListener('click',ev=>{{ const a=ev.target.closest('a'); if(a&&hist&&a.dataset.hl){{ hist.addOpen(a.dataset.hl,a.href); const w=q.value.normalize('NFKC').trim(); if(w)hist.addQuery(w); }} }});
   let data;
   try{{ data=await (await fetch('index.json')).json(); }}catch(e){{ cnt.textContent='一覧データを読み込めませんでした'; return; }}
   const items=data.items||[], cats=(data.meta||{{}}).categories||{{}};
@@ -530,7 +585,8 @@ def render_tenpu_page(idx: dict | None) -> str:
   const packHtml=u=>PACKB+u.substring(u.indexOf('_')+1)+'/';   // 先頭の企業コードを外すと添付文書HTML版のURLになる
   function run(){{
     const kw=q.value.normalize('NFKC').trim().split(/\\s+/).filter(Boolean).map(norm);
-    if(!kw.length){{ cnt.textContent=`全${{items.length.toLocaleString()}}件。薬剤名を入力してください`; res.innerHTML=''; return; }}
+    if(!kw.length){{ cnt.textContent=`全${{items.length.toLocaleString()}}件。薬剤名を入力してください`; res.innerHTML=''; if(hist)hist.show(); return; }}
+    if(hist)hist.hide();
     const k0=kw[0];
     let hits=items.filter(e=>kw.every(k=>e._h.includes(k)));
     hits.forEach(e=>{{ e._s=(e._n.startsWith(k0)||e._g.startsWith(k0))?0:(e._g.includes(k0)||e._n.includes(k0))?1:2; }});
@@ -541,10 +597,10 @@ def render_tenpu_page(idx: dict | None) -> str:
       const f=e.f||[]; const first=f[0]||{{}};
       const date=first.t?` <span class="small">(${{esc(first.t)}} 更新)</span>`:'';
       const htmlLink=first.u?` <a class="small" href="${{esc(packHtml(first.u))}}" target="_blank" rel="noopener">HTML版 ↗</a>`:'';
-      const multi=f.length>1?'<div class="small ifmulti">PDFが複数あります: '+f.map(x=>`<a href="${{esc(pdf(x.u))}}" target="_blank" rel="noopener">📕 ${{esc(x.t?`PDF(${{x.t}})`:(x.u.endsWith('E')?'英語版PDF':'PDF'))}}</a>`).join(' ／ ')+'</div>':'';
+      const multi=f.length>1?'<div class="small ifmulti">PDFが複数あります: '+f.map(x=>{{const lb=x.t?`PDF(${{x.t}})`:(x.u.endsWith('E')?'英語版PDF':'PDF');return `<a href="${{esc(pdf(x.u))}}" data-hl="${{esc(e.n+' '+lb)}}" target="_blank" rel="noopener">📕 ${{esc(lb)}}</a>`;}}).join(' ／ ')+'</div>':'';
       const cat=cats[e.e]?` ｜ ${{esc(cats[e.e])}}`:'';
       const detail=e.d?` <a class="small" href="${{esc(DB+e.d)}}" target="_blank" rel="noopener">PMDA詳細 ↗</a>`:'';
-      return `<div class="hit"><a class="ifa" href="${{esc(pdf(first.u||''))}}" target="_blank" rel="noopener">📕 ${{esc(e.n)}}</a>${{date}}<br><span class="small">${{esc(e.g)}} ｜ ${{esc(e.c)}}${{cat}}</span>${{htmlLink}}${{detail}}${{multi}}</div>`;
+      return `<div class="hit"><a class="ifa" href="${{esc(pdf(first.u||''))}}" data-hl="${{esc(e.n)}}" target="_blank" rel="noopener">📕 ${{esc(e.n)}}</a>${{date}}<br><span class="small">${{esc(e.g)}} ｜ ${{esc(e.c)}}${{cat}}</span>${{htmlLink}}${{detail}}${{multi}}</div>`;
     }}).join('');
   }}
   q.addEventListener('input',run);
@@ -661,6 +717,7 @@ def build(root: Path) -> None:
               "document.querySelectorAll('details.menu[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open');});});"
               "})();\n")
     (docs / "assets" / "nav.js").write_text(nav_js, encoding="utf-8", newline="\n")
+    (docs / "assets" / "hist.js").write_text(HIST_JS.strip() + "\n", encoding="utf-8", newline="\n")
 
     search_rows = []
     arch_rows = []

@@ -34,6 +34,11 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .ifbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.4rem 0}.ifbar #q{flex:1 1 280px;max-width:560px}.ifbar form{margin:0}
 .btn{font-size:.9rem;padding:.45rem .8rem;border:1px solid var(--acc);border-radius:.4rem;background:var(--bg);color:var(--acc);cursor:pointer;white-space:nowrap}.btn:hover{background:var(--card)}
 .ifa{font-weight:600;font-size:1.02rem;text-decoration:none}.ifa:hover{text-decoration:underline}.ifmulti{margin-top:.15rem}
+.histhead{margin:.9rem 0 .1rem;font-weight:600;font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.3rem 0}
+.chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--line);border-radius:1rem;padding:.15rem .7rem;background:var(--card);cursor:pointer;font-size:.9rem}
+.chip:hover{border-color:var(--acc)}.chip a{text-decoration:none}
+.chip .x{color:var(--mut);cursor:pointer}.chip .x:hover{color:var(--imp)}
 .menu{display:inline-block;position:relative;margin-right:.9rem}.menu summary{font-weight:400;color:var(--acc);list-style:none}.menu summary::-webkit-details-marker{display:none}
 .menu .dd{position:absolute;top:1.6rem;left:0;background:var(--bg);border:1px solid var(--line);border-radius:.4rem;padding:.5rem .9rem;min-width:15rem;box-shadow:0 4px 14px rgba(0,0,0,.12);z-index:9;white-space:nowrap}.menu .dd a{display:block;margin:.2rem 0}
 .menu .dd .head{display:block;margin:.45rem 0 .1rem;font-weight:600}.menu .dd span.head{color:var(--mut)}.menu .dd .sub{display:block;margin:.15rem 0 .15rem 1.2rem}.menu summary:hover{text-decoration:underline}

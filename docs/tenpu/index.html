@@ -39,14 +39,18 @@
   </form>
 </div>
 <p class="small" id="cnt"></p>
+<div id="hist"></div>
 <div id="res"></div>
 <p class="small" id="ifmeta">一覧データ: 2026-08-29 時点・11,243件。一覧は毎日0:15にPMDAの検索結果から作り直しています。改版直後などでPDFが開かないときは「HTML版」「PMDA詳細」か上のボタンから最新を確認してください。</p>
+<script src="../assets/hist.js"></script>
 <script>
 (async function(){
   const PDFB="https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/", PACKB="https://www.info.pmda.go.jp/go/pack/", DB="https://www.pmda.go.jp/PmdaSearch/iyakuDetail/GeneralList/";
   const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt');
   const form=document.getElementById('pmdaForm'), pn=document.getElementById('pmdaName');
   form.addEventListener('submit',e=>{ if(!q.value.trim()){e.preventDefault();q.focus();return;} pn.value=q.value.trim(); });
+  const hist=window.searchHistory?window.searchHistory({key:'tenpu-watch:tenpu',box:document.getElementById('hist'),rerun:w=>{q.value=w;run();}}):null;
+  res.addEventListener('click',ev=>{ const a=ev.target.closest('a'); if(a&&hist&&a.dataset.hl){ hist.addOpen(a.dataset.hl,a.href); const w=q.value.normalize('NFKC').trim(); if(w)hist.addQuery(w); } });
   let data;
   try{ data=await (await fetch('index.json')).json(); }catch(e){ cnt.textContent='一覧データを読み込めませんでした'; return; }
   const items=data.items||[], cats=(data.meta||{}).categories||{};
@@ -58,7 +62,8 @@
   const packHtml=u=>PACKB+u.substring(u.indexOf('_')+1)+'/';   // 先頭の企業コードを外すと添付文書HTML版のURLになる
   function run(){
     const kw=q.value.normalize('NFKC').trim().split(/\s+/).filter(Boolean).map(norm);
-    if(!kw.length){ cnt.textContent=`全${items.length.toLocaleString()}件。薬剤名を入力してください`; res.innerHTML=''; return; }
+    if(!kw.length){ cnt.textContent=`全${items.length.toLocaleString()}件。薬剤名を入力してください`; res.innerHTML=''; if(hist)hist.show(); return; }
+    if(hist)hist.hide();
     const k0=kw[0];
     let hits=items.filter(e=>kw.every(k=>e._h.includes(k)));
     hits.forEach(e=>{ e._s=(e._n.startsWith(k0)||e._g.startsWith(k0))?0:(e._g.includes(k0)||e._n.includes(k0))?1:2; });
@@ -69,10 +74,10 @@
       const f=e.f||[]; const first=f[0]||{};
       const date=first.t?` <span class="small">(${esc(first.t)} 更新)</span>`:'';
       const htmlLink=first.u?` <a class="small" href="${esc(packHtml(first.u))}" target="_blank" rel="noopener">HTML版 ↗</a>`:'';
-      const multi=f.length>1?'<div class="small ifmulti">PDFが複数あります: '+f.map(x=>`<a href="${esc(pdf(x.u))}" target="_blank" rel="noopener">📕 ${esc(x.t?`PDF(${x.t})`:(x.u.endsWith('E')?'英語版PDF':'PDF'))}</a>`).join(' ／ ')+'</div>':'';
+      const multi=f.length>1?'<div class="small ifmulti">PDFが複数あります: '+f.map(x=>{const lb=x.t?`PDF(${x.t})`:(x.u.endsWith('E')?'英語版PDF':'PDF');return `<a href="${esc(pdf(x.u))}" data-hl="${esc(e.n+' '+lb)}" target="_blank" rel="noopener">📕 ${esc(lb)}</a>`;}).join(' ／ ')+'</div>':'';
       const cat=cats[e.e]?` ｜ ${esc(cats[e.e])}`:'';
       const detail=e.d?` <a class="small" href="${esc(DB+e.d)}" target="_blank" rel="noopener">PMDA詳細 ↗</a>`:'';
-      return `<div class="hit"><a class="ifa" href="${esc(pdf(first.u||''))}" target="_blank" rel="noopener">📕 ${esc(e.n)}</a>${date}<br><span class="small">${esc(e.g)} ｜ ${esc(e.c)}${cat}</span>${htmlLink}${detail}${multi}</div>`;
+      return `<div class="hit"><a class="ifa" href="${esc(pdf(first.u||''))}" data-hl="${esc(e.n)}" target="_blank" rel="noopener">📕 ${esc(e.n)}</a>${date}<br><span class="small">${esc(e.g)} ｜ ${esc(e.c)}${cat}</span>${htmlLink}${detail}${multi}</div>`;
     }).join('');
   }
   q.addEventListener('input',run);
