@@ -1002,10 +1002,58 @@
     }
    ],
    "diff": null
+  },
+  {
+   "brand": "JMS LRフィルタバッグ CPD-MAP 400",
+   "company": "製造販売元／株式会社ジェイ・エム・エス",
+   "reason": "更新",
+   "packins_no": "333950GX1037_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/333950GX1037_1_06/",
+   "fetched_at": "2026-08-29 17:59:13",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530360_333950GX1037_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530360_333950GX1037_1_06",
+   "meta": {
+    "packins_no": "333950GX1037_1_06",
+    "company_id": "530360",
+    "revision": {
+     "current": {
+      "ym": "2026-04",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-07",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "JMS LRフィルタバッグ CPD-MAP 400"
+    ],
+    "generic_name": "-",
+    "therapeutic_class": "血液保存液C液（生物学的製剤基準）及び赤血球保存液MAP液"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "電解質異常"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "クエン酸による血中カルシウムイオン濃度の低下"
+    }
+   ],
+   "diff": null
   }
  ],
  "deletes": [],
  "created_at": "2026-08-28 18:30:28",
- "updated_at": "2026-08-28 18:35:53",
+ "updated_at": "2026-08-29 17:59:15",
  "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
 }
