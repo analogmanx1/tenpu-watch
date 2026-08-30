@@ -68,13 +68,16 @@
 .rapp .rfoot .caution{color:#c62828;font-weight:bold;margin-top:4px;font-size:12px}
 @media (prefers-color-scheme:dark){.rapp .rfoot .caution{color:#ff8a70}}
 
-/* 結果がずれるケースの注意書き */
-.rapp .limits{margin-top:10px;padding:9px 11px;background:var(--card);border:1px solid var(--line);border-radius:8px}
-.rapp .limits .limits-title{font-size:12px;font-weight:bold;color:#8d6e00;margin-bottom:4px}
-@media (prefers-color-scheme:dark){.rapp .limits .limits-title{color:#ffd54f}}
+/* 結果がずれるケースの注意書き(普段は畳んでおいて、タップで開く) */
+.rapp .limits{margin-top:10px;background:var(--card);border:1px solid var(--line);border-radius:8px}
+.rapp .limits summary{padding:9px 11px;font-size:12px;font-weight:bold;color:#8d6e00;cursor:pointer}
+.rapp .limits summary:hover{text-decoration:underline}
+@media (prefers-color-scheme:dark){.rapp .limits summary{color:#ffd54f}}
+.rapp .limits .limits-body{padding:0 11px 9px}
 .rapp .limits ul{margin:0;padding-left:1.2em}
-.rapp .limits li{margin:3px 0;font-size:11px;line-height:1.55}
-.rapp .limits b{color:var(--fg)}
+.rapp .limits li{margin:0;padding:5px 0;font-size:11px;line-height:1.6;border-top:1px solid var(--line)}
+.rapp .limits li:first-child{border-top:none}
+.rapp .limits b{color:var(--fg);display:block}
 </style>
 </head>
 <body>
@@ -147,19 +150,21 @@
   <div class="rfoot">
     <p>R ＝ 1 ÷ (1 − e<sup>−0.693 × τ ÷ t½</sup>)　（線形動態・等間隔投与を仮定。ピーク・トラフとも同じ倍率で蓄積するモデルです）</p>
 
-    <div class="limits">
-      <p class="limits-title">⚠ こんな薬・状況では計算結果がずれます（この式の前提から外れるケース）</p>
+    <details class="limits">
+      <summary>⚠ 計算結果がずれるケース（タップで開く）</summary>
+      <div class="limits-body">
       <ul>
-        <li><b>非線形動態（飽和代謝）の薬</b>: フェニトイン、高用量サリチル酸など。血中濃度が上がるとクリアランスが低下するため、<b>実際の蓄積は計算より大きく</b>なりやすい</li>
-        <li><b>自己誘導のある薬</b>: カルバマゼピン、リファンピシンなど。反復投与で自分の代謝酵素を誘導して半減期が短くなる（カルバマゼピンは単回約36時間→反復で16〜24時間）ため、単回投与の半減期で計算すると<b>蓄積を過大評価</b>する</li>
-        <li><b>入れた半減期が患者さんと合っていない場合</b>: 添付文書の半減期は健康成人・単回投与の値が多い。腎機能・肝機能の低下、高齢、相互作用、遺伝多型では半減期そのものが変わるので、<b>患者に合った半減期</b>で計算し直す</li>
-        <li><b>分布相が大きい薬（多コンパートメント型）</b>: 終末相の半減期をそのまま入れると<b>蓄積を過大評価</b>することがある（アミノグリコシドの深部相など）。アミオダロンのような薬は「実効半減期」で考える必要がある</li>
-        <li><b>徐放製剤・吸収がゆっくりな薬</b>: 見かけの半減期に吸収の遅さが混ざっている（フリップフロップ）と、ピークやトラフの蓄積は式どおりにならない</li>
-        <li><b>活性代謝物のある薬</b>: フルオキセチンなど代謝物にも活性があり半減期が長い薬では、親化合物のRだけでは<b>効果の蓄積を過小評価</b>する</li>
-        <li><b>不規則な服用</b>: この式は「毎回等間隔で服用」が前提。飲み忘れや不等間隔（朝・昼・夕で間隔が違う等）では実際とずれる</li>
-        <li><b>組織への蓄積は別</b>: Rは血中濃度の蓄積の指標。脂肪組織などへの蓄積（アミオダロン等）はこの式では評価できない</li>
+        <li><b>非線形動態（飽和代謝）の薬 → 実際は計算より大きく蓄積</b>フェニトイン、高用量サリチル酸など。血中濃度が上がるとクリアランスが低下するため、蓄積を過小評価しやすい</li>
+        <li><b>自己誘導のある薬 → 蓄積を過大評価</b>カルバマゼピン、リファンピシンなど。反復投与で自分の代謝酵素を誘導して半減期が短くなる（カルバマゼピンは単回約36時間→反復で16〜24時間）ため、単回投与の半減期で計算すると過大評価になる</li>
+        <li><b>入れた半減期が患者さんと合っていない</b>添付文書の半減期は健康成人・単回投与の値が多い。腎機能・肝機能の低下、高齢、相互作用、遺伝多型では半減期そのものが変わるので、患者に合った半減期で計算し直す</li>
+        <li><b>分布相が大きい薬（多コンパートメント型）→ 過大評価のことあり</b>終末相の半減期をそのまま入れると過大評価になることがある（アミノグリコシドの深部相など）。アミオダロンのような薬は「実効半減期」で考える必要がある</li>
+        <li><b>徐放製剤・吸収がゆっくりな薬</b>見かけの半減期に吸収の遅さが混ざっている（フリップフロップ）と、ピークやトラフの蓄積は式どおりにならない</li>
+        <li><b>活性代謝物のある薬 → 効果の蓄積を過小評価</b>フルオキセチンなど、代謝物にも活性があり半減期が長い薬では、親化合物のRだけでは足りない</li>
+        <li><b>不規則な服用</b>この式は「毎回等間隔で服用」が前提。飲み忘れや不等間隔（朝・昼・夕で間隔が違う等）では実際とずれる</li>
+        <li><b>組織への蓄積は評価できない</b>Rは血中濃度の蓄積の指標。脂肪組織などへの蓄積（アミオダロン等）はこの式の対象外</li>
       </ul>
-    </div>
+      </div>
+    </details>
 
     <p class="caution">※ 計算結果は参考値です。必ずダブルチェックしてから使用してください。</p>
   </div>
