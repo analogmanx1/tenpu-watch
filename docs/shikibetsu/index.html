@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>識別コード検索</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../index.html">🏠 ファーマビット</a>
+  <nav class="topnav">
+    <details class="menu"><summary>💊 薬剤師ツールボックス ▾</summary><div class="dd">
+      <a class="head" href="../toolbox/index.html">💊 薬剤師ツールボックス トップ</a>
+      <a class="head" href="../watch/index.html">📄 添付文書ウォッチ</a>
+      <a class="sub" href="../watch/archive.html">バックナンバー</a>
+      <a class="sub" href="../watch/search.html">検索</a>
+      <a class="head" href="../tenpu/index.html">📕 添付文書検索</a>
+      <a class="head" href="../if/index.html">📘 インタビューフォーム検索</a>
+      <a class="head" href="../shikibetsu/index.html">🔎 識別コード検索</a>
+      <span class="head">🧮 ツール</span>
+      <a class="sub" href="../tools/accumulation.html">蓄積率（蓄積係数）計算</a><a class="sub" href="../tools/dialysis.html">血液透析による薬物除去率</a><a class="sub" href="../tools/gamma.html">ガンマ計算（γ計算）</a>
+    </div></details>
+  </nav>
+</header>
+<div class="wrap">
+
+<main class="main">
+
+<h1>🔎 識別コード検索</h1>
+<p class="small">錠剤・カプセルに印字されている記号(識別コード。例: <code>DK 505</code>)から薬を探せます。
+スペース・ハイフン・全角半角・大文字小文字の違いは気にしなくてOK(<code>dk505</code> でもヒット)。
+薬剤名や会社名を足して絞り込みもできます(例: <code>105 サワイ</code>)。<b>候補をクリックすると添付文書(PDF)が新しいタブで開きます</b>。</p>
+<div class="ifbar">
+  <input id="q" type="search" placeholder="例: DK505 / アジルOD / タケキャブ OD10" autofocus autocomplete="off">
+</div>
+<p class="small" id="cnt"></p>
+<div id="hist"></div>
+<div id="res"></div>
+<p class="small" id="ifmeta">収録: 錠剤・カプセルなど 2,410件(2026-08-30 時点)。残り890文書を順次取得中。識別コードは各添付文書(電子添文)の「製剤の性状」欄から自動で抜き出したものです。
+刻印の書かれていない製品・欄の書き方が特殊な製品は出てこないことがあります。<b>最終確認は必ず添付文書本文と現物で行ってください。</b></p>
+<script src="../assets/hist.js"></script>
+<script>
+(async function(){
+  const PDFB="https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/", PACKB="https://www.info.pmda.go.jp/go/pack/", DB="https://www.pmda.go.jp/PmdaSearch/iyakuDetail/GeneralList/";
+  const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt');
+  const hist=window.searchHistory?window.searchHistory({key:'tenpu-watch:shiki',box:document.getElementById('hist'),rerun:w=>{q.value=w;run();}}):null;
+  res.addEventListener('click',ev=>{ const a=ev.target.closest('a'); if(a&&hist&&a.dataset.hl){ hist.addOpen(a.dataset.hl,a.href); const w=q.value.normalize('NFKC').trim(); if(w)hist.addQuery(w); } });
+  let data;
+  try{ data=await (await fetch('index.json')).json(); }catch(e){ cnt.textContent='一覧データを読み込めませんでした'; return; }
+  const items=data.items||[], cats=(data.meta||{}).categories||{};
+  // 名前用: ひらがな→カタカナ、全角→半角(NFKC)、小文字化、空白除去
+  const norm=s=>(s||'').normalize('NFKC').toLowerCase().replace(/[\u3041-\u3096]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/\s+/g,'');
+  // コード用: 大文字化 + スペース・ハイフン・記号を除く(「DK 505」「dk-505」「ＤＫ５０５」を同じに)
+  const normCode=s=>(s||'').normalize('NFKC').toUpperCase().replace(/[\u3041-\u3096]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/[\s\-‐‑‒–—―−・.．,，、。()（）\[\]［］「」:：;；'"~〜_]/g,'');
+  items.forEach(e=>{ e._k=(e.k||[]).map(x=>normCode(x.c)); e._h=norm(e.g+' '+e.n+' '+e.c); });
+  const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const packHtml=u=>PACKB+u.substring(u.indexOf('_')+1)+'/';
+  function run(){
+    const raw=q.value.normalize('NFKC').trim().split(/\s+/).filter(Boolean);
+    if(!raw.length){ cnt.textContent=`識別コードつきの薬 ${items.length.toLocaleString()}件から探せます。刻印の記号を入力してください`; res.innerHTML=''; if(hist)hist.show(); return; }
+    if(hist)hist.hide();
+    const kws=raw.map(w=>({c:normCode(w),n:norm(w)}));
+    let hits=items.filter(e=>kws.every(w=>(w.c&&e._k.some(k=>k.includes(w.c)))||(w.n&&e._h.includes(w.n))));
+    const c0=kws[0].c;
+    hits.forEach(e=>{ e._s=c0?(e._k.some(k=>k===c0)?0:e._k.some(k=>k.startsWith(c0))?1:e._k.some(k=>k.includes(c0))?2:3):3; });
+    hits.sort((a,b)=>a._s-b._s||a.g.localeCompare(b.g,'ja')||a.n.localeCompare(b.n,'ja'));
+    const total=hits.length; hits=hits.slice(0,200);
+    cnt.textContent=`${total.toLocaleString()}件`+(total>200?'(先頭200件を表示。もう少し絞ってください)':'');
+    res.innerHTML=hits.map(e=>{
+      const codes=(e.k||[]).map(x=>{
+        const t=(x.l?x.l+' ':'')+(x.b?'〔'+x.b+'〕 ':'')+x.c;
+        return (c0&&normCode(x.c).includes(c0))?'<b>'+esc(t)+'</b>':esc(t);
+      }).join(' ／ ');
+      const date=e.t?` <span class="small">(${esc(e.t)} 更新)</span>`:'';
+      const cat=cats[e.e]?` ｜ ${esc(cats[e.e])}`:'';
+      const detail=e.d?` <a class="small" href="${esc(DB+e.d)}" target="_blank" rel="noopener">PMDA詳細 ↗</a>`:'';
+      const htmlLink=` <a class="small" href="${esc(packHtml(e.u))}" target="_blank" rel="noopener">HTML版 ↗</a>`;
+      return `<div class="hit"><a class="ifa" href="${esc(PDFB+e.u)}" data-hl="${esc(e.n)}" target="_blank" rel="noopener">💊 ${esc(e.n)}</a>${date}<br><span class="codes">刻印: ${codes}</span><br><span class="small">${esc(e.g)} ｜ ${esc(e.c)}${cat}</span>${htmlLink}${detail}</div>`;
+    }).join('');
+  }
+  q.addEventListener('input',run);
+  if(location.hash){ q.value=decodeURIComponent(location.hash.slice(1)); }
+  run();
+})();
+</script>
+
+<footer class="foot">
+  <p>個人運営の非公式サイトです。添付文書ウォッチの出典: PMDA「過去1週間以内に更新された添付文書情報」および各添付文書XML。データ最終更新: 2026-08-29 17:59:15 JST</p>
+</footer>
+</main>
+</div>
+<script src="../assets/nav.js"></script>
+</body>
+</html>
