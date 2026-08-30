@@ -49,7 +49,7 @@ function Resolve-StuckMerge {
   if ($LASTEXITCODE -ne 0) { return }
   Say "!! マージ衝突を検出 → 自動復旧します(docs/if_index=向こう側、data/days・archive=こちら側)"
   foreach ($p in @("docs", "data/if_index.json")) { git checkout --theirs -- $p 2>&1 | Out-Null }
-  foreach ($p in @("data/days", "archive"))       { git checkout --ours  -- $p 2>&1 | Out-Null }
+  foreach ($p in @("data/days", "archive", "data/shikibetsu_index.json")) { git checkout --ours -- $p 2>&1 | Out-Null }
   git add -A data archive docs 2>&1 | Out-Null
   [void](Step "python src/run.py --build-only (衝突復旧のため再生成)" { python src/run.py --build-only })
   git add -A docs 2>&1 | Out-Null
@@ -62,7 +62,7 @@ function Resolve-StuckMerge {
 Resolve-StuckMerge   # 前回の実行が衝突で止まっていたら、まず片付ける
 [void](Step "git pull" { git pull --no-rebase origin main })
 Resolve-StuckMerge   # いまのpullが衝突したら、その場で片付ける
-$rc = Step "python src/run.py (取得+サイト生成)" { python src/run.py }
+$rc = Step "python src/run.py (取得+識別コード差分+サイト生成)" { python src/run.py --shikibetsu }
 if ($rc -ne 0) { Say "!! run.py が異常終了 (exit $rc)。今回はコミットせず終了(次回やり直し)"; exit $rc }
 
 # --- 変更があればコミットしてpush(pushが先を越されたらpullして1回だけやり直し) ---

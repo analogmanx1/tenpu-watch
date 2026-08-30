@@ -9,6 +9,7 @@ data/days/*.json から静的サイト(docs/)を生成する。
   docs/watch/search.html + search.json … 薬名・企業名・一般名で検索
   docs/if/index.html + index.json   … インタビューフォーム検索(元データは data/if_index.json。src/if_index.py が毎日0:15に更新)
   docs/tenpu/index.html + index.json … 添付文書検索(元データは data/tenpu_index.json。同上・毎日0:15に更新)
+  docs/shikibetsu/index.html + index.json … 識別コード検索(元データは data/shikibetsu_index.json。src/shikibetsu_index.py が自宅PCで差分更新)
   docs/assets/style.css            … 共通デザイン
   docs/tools/*.html                … 手作りのツール(計算機など)。ここは生成対象外、読むだけ
   ※ watch/ if/ toolbox/ assets/ index.html 以外は書き換えない
@@ -33,6 +34,7 @@ SITE_TITLE = "薬剤師ツールボックス"  # 薬剤師ツールボックス(
 WATCH_TITLE = "添付文書ウォッチ"
 IF_TITLE = "インタビューフォーム検索"
 TENPU_TITLE = "添付文書検索"
+SHIKI_TITLE = "識別コード検索"
 IF_PDF_BASE = "https://www.info.pmda.go.jp/go/interview/"                 # if_index.py の IF_BASE と同じ
 IF_DETAIL_BASE = "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/GeneralList/"
 TENPU_PDF_BASE = "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/"   # 添付文書PDF(コード=企業コード_packins番号)
@@ -145,6 +147,7 @@ def top_nav(rel: str, tools: list[dict]) -> str:
       <a class="sub" href="{rel}watch/search.html">検索</a>
       <a class="head" href="{rel}tenpu/index.html">📕 {TENPU_TITLE}</a>
       <a class="head" href="{rel}if/index.html">📘 {IF_TITLE}</a>
+      <a class="head" href="{rel}shikibetsu/index.html">🔎 {SHIKI_TITLE}</a>
       <span class="head">🧮 ツール</span>
       {tool_links}
     </div></details>"""
@@ -374,6 +377,7 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .ifbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.4rem 0}.ifbar #q{flex:1 1 280px;max-width:560px}.ifbar form{margin:0}
 .btn{font-size:.9rem;padding:.45rem .8rem;border:1px solid var(--acc);border-radius:.4rem;background:var(--bg);color:var(--acc);cursor:pointer;white-space:nowrap}.btn:hover{background:var(--card)}
 .ifa{font-weight:600;font-size:1.02rem;text-decoration:none}.ifa:hover{text-decoration:underline}.ifmulti{margin-top:.15rem}
+.codes{font-size:.95rem}.codes b{background:var(--ins);color:var(--insfg);padding:0 .15rem;border-radius:.2rem}
 .histhead{margin:.9rem 0 .1rem;font-weight:600;font-size:.95rem}
 .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.3rem 0}
 .chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--line);border-radius:1rem;padding:.15rem .7rem;background:var(--card);cursor:pointer;font-size:.9rem}
@@ -611,6 +615,134 @@ def render_tenpu_page(idx: dict | None) -> str:
 """
 
 
+# ---------------------------------------------------------------- 識別コード検索
+_CODE_NOISE = {"表", "裏", "側面", "上面", "下面", "本体", "PTP", "キャップ", "ボディ"}
+
+
+def _dedupe_codes(codes: list[dict]) -> list[dict]:
+    """コード一覧の掃除。
+    - 「表」「裏」など表の位置ラベルだけのセルはコードではないので落とす
+    - 同じ(コード, 製品)が専用タグと自由記述の両方から取れて重複することがあるので1つにまとめる(欄名なしを優先)
+    - 欄名(l)の中の改行由来の空白を詰める(「本体 表示」→「本体表示」)"""
+    best: dict = {}
+    order: list = []
+    for k in codes:
+        if (k.get("c") or "") in _CODE_NOISE:
+            continue
+        if k.get("l"):
+            k = dict(k, l=re.sub(r"\s", "", k["l"]))
+        key = (k.get("c"), k.get("b"))
+        if key not in best:
+            best[key] = k
+            order.append(key)
+        elif best[key].get("l") and not k.get("l"):
+            best[key] = k
+    return [best[k] for k in order]
+
+
+def shikibetsu_items(tenpu_idx: dict | None, shiki: dict | None) -> list[dict]:
+    """添付文書一覧(名前・企業・リンク)と識別コード一覧(コード)を突き合わせて、検索ページ用の行を作る"""
+    docs_map = (shiki or {}).get("docs") or {}
+    rows: list[dict] = []
+    seen: dict = {}
+    for it in (tenpu_idx or {}).get("items") or []:
+        for fx in it.get("f") or []:
+            rec = docs_map.get(fx.get("u"))
+            if not rec or not rec.get("codes"):
+                continue
+            codes = _dedupe_codes(rec["codes"])
+            if not codes:
+                continue
+            # 同じ販売名が複数行あるとき(旧版の文書が残っている等)は、更新日が新しいほうだけ残す
+            prev = seen.get(it.get("n"))
+            row = {"n": it.get("n"), "g": it.get("g"), "c": it.get("c"),
+                   "d": it.get("d"), "e": it.get("e"), "u": fx["u"],
+                   "t": fx.get("t") or "", "k": codes}
+            if prev is None:
+                seen[it.get("n")] = row
+                rows.append(row)
+            elif row["t"] > prev["t"]:
+                rows[rows.index(prev)] = row
+                seen[it.get("n")] = row
+            break   # 1行(1販売名)につき代表の添付文書1つでよい
+    rows.sort(key=lambda x: (x["g"] or "", x["n"] or ""))
+    return rows
+
+
+def shiki_summary(shiki: dict | None, n_rows: int = 0) -> str:
+    if not shiki or not shiki.get("docs"):
+        return "一覧データ未作成(自宅PCで python src/shikibetsu_index.py を実行すると作られます)"
+    m = shiki.get("meta") or {}
+    s = f"収録: 錠剤・カプセルなど {n_rows:,}件({str(m.get('updated_at') or '')[:10]} 時点)"
+    if m.get("pending"):
+        s += f"。残り{m['pending']:,}文書を順次取得中"
+    return s
+
+
+def render_shikibetsu_page(shiki: dict | None, n_rows: int) -> str:
+    """錠剤・カプセルの刻印(識別コード)を打つ → 候補が即出る → クリックで添付文書PDF"""
+    note = shiki_summary(shiki, n_rows)
+    return f"""
+<h1>🔎 {SHIKI_TITLE}</h1>
+<p class="small">錠剤・カプセルに印字されている記号(識別コード。例: <code>DK 505</code>)から薬を探せます。
+スペース・ハイフン・全角半角・大文字小文字の違いは気にしなくてOK(<code>dk505</code> でもヒット)。
+薬剤名や会社名を足して絞り込みもできます(例: <code>307 サワイ</code>)。<b>候補をクリックすると添付文書(PDF)が新しいタブで開きます</b>。</p>
+<div class="ifbar">
+  <input id="q" type="search" placeholder="例: DK505 / アジルOD / タケキャブ OD10" autofocus autocomplete="off">
+</div>
+<p class="small" id="cnt"></p>
+<div id="hist"></div>
+<div id="res"></div>
+<p class="small" id="ifmeta">{esc(note)}。識別コードは各添付文書(電子添文)の「製剤の性状」欄から自動で抜き出したものです。
+刻印の書かれていない製品・欄の書き方が特殊な製品は出てこないことがあります。<b>最終確認は必ず添付文書本文と現物で行ってください。</b></p>
+<script src="../assets/hist.js"></script>
+<script>
+(async function(){{
+  const PDFB={json.dumps(TENPU_PDF_BASE)}, PACKB={json.dumps(PACK_HTML_BASE)}, DB={json.dumps(IF_DETAIL_BASE)};
+  const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt');
+  const hist=window.searchHistory?window.searchHistory({{key:'tenpu-watch:shiki',box:document.getElementById('hist'),rerun:w=>{{q.value=w;run();}}}}):null;
+  res.addEventListener('click',ev=>{{ const a=ev.target.closest('a'); if(a&&hist&&a.dataset.hl){{ hist.addOpen(a.dataset.hl,a.href); const w=q.value.normalize('NFKC').trim(); if(w)hist.addQuery(w); }} }});
+  let data;
+  try{{ data=await (await fetch('index.json')).json(); }}catch(e){{ cnt.textContent='一覧データを読み込めませんでした'; return; }}
+  const items=data.items||[], cats=(data.meta||{{}}).categories||{{}};
+  // 名前用: ひらがな→カタカナ、全角→半角(NFKC)、小文字化、空白除去
+  const norm=s=>(s||'').normalize('NFKC').toLowerCase().replace(/[\\u3041-\\u3096]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/\\s+/g,'');
+  // コード用: 大文字化 + スペース・ハイフン・長音・記号を除く(「DK 505」「dk-505」「ＤＫ５０５」「ACAｰ100」を同じに。両側同じ規則なので長音入りコードもヒットする)
+  const normCode=s=>(s||'').normalize('NFKC').toUpperCase().replace(/[\\u3041-\\u3096]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/[\\s\\-‐‑‒–—―−ー・.．,，、。()（）\\[\\]［］「」:：;；'"~〜_]/g,'');
+  items.forEach(e=>{{ e._k=(e.k||[]).map(x=>normCode(x.c)); e._h=norm(e.g+' '+e.n+' '+e.c); }});
+  const esc=s=>(s||'').replace(/[&<>"]/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]));
+  const packHtml=u=>PACKB+u.substring(u.indexOf('_')+1)+'/';
+  function run(){{
+    const raw=q.value.normalize('NFKC').trim().split(/\\s+/).filter(Boolean);
+    if(!raw.length){{ cnt.textContent=`識別コードつきの薬 ${{items.length.toLocaleString()}}件から探せます。刻印の記号を入力してください`; res.innerHTML=''; if(hist)hist.show(); return; }}
+    if(hist)hist.hide();
+    const kws=raw.map(w=>({{c:normCode(w),n:norm(w)}}));
+    let hits=items.filter(e=>kws.every(w=>(w.c&&e._k.some(k=>k.includes(w.c)))||(w.n&&e._h.includes(w.n))));
+    const c0=kws[0].c;
+    hits.forEach(e=>{{ e._s=c0?(e._k.some(k=>k===c0)?0:e._k.some(k=>k.startsWith(c0))?1:e._k.some(k=>k.includes(c0))?2:3):3; }});
+    hits.sort((a,b)=>a._s-b._s||a.g.localeCompare(b.g,'ja')||a.n.localeCompare(b.n,'ja'));
+    const total=hits.length; hits=hits.slice(0,200);
+    cnt.textContent=`${{total.toLocaleString()}}件`+(total>200?'(先頭200件を表示。もう少し絞ってください)':'');
+    res.innerHTML=hits.map(e=>{{
+      const codes=(e.k||[]).map(x=>{{
+        const t=(x.l?x.l+' ':'')+(x.b?'〔'+x.b+'〕 ':'')+x.c;
+        return (c0&&normCode(x.c).includes(c0))?'<b>'+esc(t)+'</b>':esc(t);
+      }}).join(' ／ ');
+      const date=e.t?` <span class="small">(${{esc(e.t)}} 更新)</span>`:'';
+      const cat=cats[e.e]?` ｜ ${{esc(cats[e.e])}}`:'';
+      const detail=e.d?` <a class="small" href="${{esc(DB+e.d)}}" target="_blank" rel="noopener">PMDA詳細 ↗</a>`:'';
+      const htmlLink=` <a class="small" href="${{esc(packHtml(e.u))}}" target="_blank" rel="noopener">HTML版 ↗</a>`;
+      return `<div class="hit"><a class="ifa" href="${{esc(PDFB+e.u)}}" data-hl="${{esc(e.n)}}" target="_blank" rel="noopener">💊 ${{esc(e.n)}}</a>${{date}}<br><span class="codes">刻印: ${{codes}}</span><br><span class="small">${{esc(e.g)}} ｜ ${{esc(e.c)}}${{cat}}</span>${{htmlLink}}${{detail}}</div>`;
+    }}).join('');
+  }}
+  q.addEventListener('input',run);
+  if(location.hash){{ q.value=decodeURIComponent(location.hash.slice(1)); }}
+  run();
+}})();
+</script>
+"""
+
+
 def toolbox_live(days: list[dict]) -> str:
     """トップのカードに出す一行(最新の更新状況)"""
     if not days:
@@ -642,7 +774,8 @@ def render_home(cfg: dict, days: list[dict], tools: list[dict]) -> str:
 
 
 def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = None,
-                   tenpu_idx: dict | None = None) -> str:
+                   tenpu_idx: dict | None = None, shiki: dict | None = None,
+                   shiki_rows: int = 0) -> str:
     out = [f"<h1>💊 {SITE_TITLE}</h1>"]
     out.append(f'<h2>📄 {WATCH_TITLE}</h2>')
     if days:
@@ -675,6 +808,10 @@ def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = No
     out.append('<p>薬剤名を入れると候補が出て、クリックでインタビューフォーム(PDF)が開きます。'
                f'<span class="small">{esc(if_summary(if_idx))}</span></p>'
                '<p><a href="if/index.html">検索ページへ →</a></p>')
+    out.append(f"<h2>🔎 {SHIKI_TITLE}</h2>")
+    out.append('<p>錠剤・カプセルに印字されている記号(識別コード)から薬を探せます。'
+               f'<span class="small">{esc(shiki_summary(shiki, shiki_rows))}</span></p>'
+               '<p><a href="shikibetsu/index.html">検索ページへ →</a></p>')
     out.append("<h2>🧮 ツール</h2>")
     if tools:
         out.append('<div class="cards">' + "".join(
@@ -701,6 +838,8 @@ def build(root: Path) -> None:
     home = load_home(root)
     if_idx = load_if_index(root)
     tenpu_idx = load_if_index(root, "tenpu_index.json")
+    shiki = load_if_index(root, "shikibetsu_index.json")
+    shiki_rows = shikibetsu_items(tenpu_idx, shiki)
     global HOME_TITLE
     HOME_TITLE = home.get("title") or HOME_TITLE   # ヘッダー左上のロゴ名も home.json の title に合わせる
 
@@ -785,15 +924,26 @@ def build(root: Path) -> None:
     (docs / "tenpu" / "index.html").write_text(
         layout(TENPU_TITLE, render_tenpu_page(tenpu_idx), "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
 
+    # 識別コード検索(添付文書一覧×識別コード一覧の突き合わせ。データが無ければページだけ作る)
+    (docs / "shikibetsu").mkdir(parents=True, exist_ok=True)
+    (docs / "shikibetsu" / "index.json").write_text(
+        json.dumps({"meta": {"updated_at": ((shiki or {}).get("meta") or {}).get("updated_at"),
+                             "categories": ((tenpu_idx or {}).get("meta") or {}).get("categories") or {}},
+                    "items": shiki_rows}, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8", newline="\n")
+    (docs / "shikibetsu" / "index.html").write_text(
+        layout(SHIKI_TITLE, render_shikibetsu_page(shiki, len(shiki_rows)), "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
+
     (docs / "toolbox").mkdir(parents=True, exist_ok=True)
     (docs / "toolbox" / "index.html").write_text(
-        layout(SITE_TITLE, render_toolbox(days, tools, if_idx, tenpu_idx).replace('href="watch/', 'href="../watch/').replace('href="tools/', 'href="../tools/').replace('href="if/', 'href="../if/').replace('href="tenpu/', 'href="../tenpu/'),
+        layout(SITE_TITLE, render_toolbox(days, tools, if_idx, tenpu_idx, shiki, len(shiki_rows)).replace('href="watch/', 'href="../watch/').replace('href="tools/', 'href="../tools/').replace('href="if/', 'href="../if/').replace('href="tenpu/', 'href="../tenpu/').replace('href="shikibetsu/', 'href="../shikibetsu/'),
                "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
     (docs / "index.html").write_text(
         layout(home.get("title") or HOME_TITLE, render_home(home, days, tools), "", dates, None, built_at, tools, side=False),
         encoding="utf-8", newline="\n")
     print(f"site built: {len(days)} days, {len(search_rows)} entries, {len(tools)} tools, "
-          f"IF {len((if_idx or {}).get('items') or [])}, 添付文書 {len((tenpu_idx or {}).get('items') or [])} -> {docs}")
+          f"IF {len((if_idx or {}).get('items') or [])}, 添付文書 {len((tenpu_idx or {}).get('items') or [])}, "
+          f"識別コード {len(shiki_rows)} -> {docs}")
 
 
 if __name__ == "__main__":

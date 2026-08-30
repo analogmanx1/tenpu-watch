@@ -10,3 +10,8 @@ desktop.ini
 # ネームレスの現場ノート(公開リポジトリに載せない。Googleドライブ経由で全PC共有)
 /CLAUDE.md
 /つまずき帳.md
+
+# 識別コード取得の作業ファイル(ロック・一時保存・破損時の退避)
+data/.shikibetsu.lock
+data/*.tmp.json
+data/*.bad.json

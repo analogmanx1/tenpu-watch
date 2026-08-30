@@ -18,6 +18,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import pmda_watch  # noqa: E402
 import build_site  # noqa: E402
 import if_index  # noqa: E402
+import shikibetsu_index  # noqa: E402
 
 
 def main() -> int:
@@ -27,8 +28,17 @@ def main() -> int:
     ap.add_argument("--build-only", action="store_true", help="添付文書の取得はせずサイト生成だけ")
     ap.add_argument("--if-index", action="store_true", help="インタビューフォーム一覧(data/if_index.json)をPMDAから取り直す")
     ap.add_argument("--tenpu-index", action="store_true", help="添付文書一覧(data/tenpu_index.json)をPMDAから取り直す")
+    ap.add_argument("--shikibetsu", action="store_true",
+                    help="識別コード一覧(data/shikibetsu_index.json)を差分更新(最大300件/回。自宅PC専用)")
     a = ap.parse_args()
     root = Path(a.root)
+    if a.shikibetsu:
+        # 失敗しても添付文書ウォッチ本体(取得・コミット)は止めない
+        try:
+            meta = shikibetsu_index.refresh(root, max_docs=300)
+            print(json.dumps({k: meta.get(k) for k in ("updated_at", "with_codes", "codes", "pending")}, ensure_ascii=False))
+        except Exception as e:  # noqa: BLE001
+            print(f"!! 識別コード一覧の更新に失敗(今回はスキップ。次回やり直し): {e}")
     if a.if_index:
         meta = if_index.refresh(root)
         print(json.dumps({k: meta[k] for k in ("fetched_at", "count", "requests", "warnings")}, ensure_ascii=False))

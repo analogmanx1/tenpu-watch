@@ -31,14 +31,14 @@
 <h1>🔎 識別コード検索</h1>
 <p class="small">錠剤・カプセルに印字されている記号(識別コード。例: <code>DK 505</code>)から薬を探せます。
 スペース・ハイフン・全角半角・大文字小文字の違いは気にしなくてOK(<code>dk505</code> でもヒット)。
-薬剤名や会社名を足して絞り込みもできます(例: <code>105 サワイ</code>)。<b>候補をクリックすると添付文書(PDF)が新しいタブで開きます</b>。</p>
+薬剤名や会社名を足して絞り込みもできます(例: <code>307 サワイ</code>)。<b>候補をクリックすると添付文書(PDF)が新しいタブで開きます</b>。</p>
 <div class="ifbar">
   <input id="q" type="search" placeholder="例: DK505 / アジルOD / タケキャブ OD10" autofocus autocomplete="off">
 </div>
 <p class="small" id="cnt"></p>
 <div id="hist"></div>
 <div id="res"></div>
-<p class="small" id="ifmeta">収録: 錠剤・カプセルなど 2,410件(2026-08-30 時点)。残り890文書を順次取得中。識別コードは各添付文書(電子添文)の「製剤の性状」欄から自動で抜き出したものです。
+<p class="small" id="ifmeta">収録: 錠剤・カプセルなど 2,868件(2026-08-30 時点)。識別コードは各添付文書(電子添文)の「製剤の性状」欄から自動で抜き出したものです。
 刻印の書かれていない製品・欄の書き方が特殊な製品は出てこないことがあります。<b>最終確認は必ず添付文書本文と現物で行ってください。</b></p>
 <script src="../assets/hist.js"></script>
 <script>
@@ -52,8 +52,8 @@
   const items=data.items||[], cats=(data.meta||{}).categories||{};
   // 名前用: ひらがな→カタカナ、全角→半角(NFKC)、小文字化、空白除去
   const norm=s=>(s||'').normalize('NFKC').toLowerCase().replace(/[\u3041-\u3096]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/\s+/g,'');
-  // コード用: 大文字化 + スペース・ハイフン・記号を除く(「DK 505」「dk-505」「ＤＫ５０５」を同じに)
-  const normCode=s=>(s||'').normalize('NFKC').toUpperCase().replace(/[\u3041-\u3096]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/[\s\-‐‑‒–—―−・.．,，、。()（）\[\]［］「」:：;；'"~〜_]/g,'');
+  // コード用: 大文字化 + スペース・ハイフン・長音・記号を除く(「DK 505」「dk-505」「ＤＫ５０５」「ACAｰ100」を同じに。両側同じ規則なので長音入りコードもヒットする)
+  const normCode=s=>(s||'').normalize('NFKC').toUpperCase().replace(/[\u3041-\u3096]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/[\s\-‐‑‒–—―−ー・.．,，、。()（）\[\]［］「」:：;；'"~〜_]/g,'');
   items.forEach(e=>{ e._k=(e.k||[]).map(x=>normCode(x.c)); e._h=norm(e.g+' '+e.n+' '+e.c); });
   const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const packHtml=u=>PACKB+u.substring(u.indexOf('_')+1)+'/';
