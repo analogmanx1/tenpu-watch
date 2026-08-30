@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<!-- ▼ title と description が、トップページのカードとメニューに自動で載ります -->
+<title>蓄積率（蓄積係数）計算 | 薬剤師ツールボックス</title>
+<meta name="description" content="半減期と投与間隔から、繰り返し投与でどれだけ薬がたまるか（蓄積率R）と定常状態到達の目安を計算。R＝1÷(1−e^(−0.693×τ/t½))">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+/* 蓄積率計算機。サイト共通CSSと干渉しないよう .rapp の中に閉じ込める。
+   色はサイト共通の変数(--acc等)を使うのでダークモードにも自動で追従する */
+.rapp{max-width:520px;margin:.8rem 0 1rem;background:var(--bg);color:var(--fg);font-size:15px;line-height:1.45;border:1px solid var(--line);border-radius:12px;overflow:hidden;-webkit-tap-highlight-color:transparent}
+.rapp p{margin:0}
+.rapp button{margin:0}
+.rapp .rmain{padding:16px 16px 6px}
+
+/* ===== 入力欄 ===== */
+.rapp .field{margin-bottom:14px}
+.rapp .field label{display:block;font-weight:bold;font-size:14px;margin:0 0 6px}
+.rapp .req{font-size:10.5px;color:#fff;background:#e65100;border-radius:3px;padding:1px 6px;margin-left:6px;vertical-align:1px}
+.rapp .input-row{display:flex;align-items:stretch;gap:6px}
+.rapp .input-row input{flex:1;min-width:0;max-width:none;width:auto;font-size:22px;padding:12px;border:2px solid var(--line);border-radius:10px;font-family:inherit;background:var(--bg);color:var(--fg)}
+.rapp .input-row input:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 3px rgba(42,98,184,.18)}
+
+/* 時間/日 切り替え */
+.rapp .unit-toggle{display:flex;border:2px solid var(--acc);border-radius:10px;overflow:hidden}
+.rapp .unit-btn{width:56px;border:none;background:var(--bg);color:var(--acc);font-size:16px;font-weight:bold;cursor:pointer;font-family:inherit}
+.rapp .unit-btn.active{background:var(--acc);color:var(--bg)}
+
+/* 投与間隔のかんたん入力チップ */
+.rapp .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+.rapp .chip{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;font-size:13px;padding:5px 11px;cursor:pointer;font-family:inherit}
+.rapp .chip:active{transform:translateY(1px)}
+
+/* エラー表示 */
+.rapp .error-msg{display:none;color:#c62828;font-size:13px;font-weight:bold;margin-top:5px}
+.rapp .field.invalid input{border-color:#c62828}
+.rapp .field.invalid .error-msg{display:block}
+
+/* ボタン */
+.rapp .btn-row{display:flex;gap:10px;margin:16px 0 12px}
+.rapp .primary-btn{flex:2.5;background:var(--acc);color:var(--bg);font-size:20px;font-weight:bold;border:none;border-radius:12px;padding:16px 0;cursor:pointer;font-family:inherit}
+.rapp .primary-btn:active{transform:translateY(1px)}
+.rapp .secondary-btn{flex:1;background:var(--bg);color:var(--mut);font-size:15px;border:2px solid var(--line);border-radius:12px;cursor:pointer;font-family:inherit;min-height:52px}
+
+/* 注意ボックス */
+.rapp .warning-box{background:#fff8e1;border:2px solid #f9a825;border-radius:10px;padding:11px 13px;font-size:14px;font-weight:bold;color:#8d6e00;margin-bottom:12px;white-space:pre-line}
+@media (prefers-color-scheme:dark){.rapp .warning-box{background:#332a10;color:#ffd54f}}
+
+/* ===== 結果 ===== */
+.rapp .result-box{border-radius:12px;padding:14px 15px 16px;text-align:center;margin-bottom:12px;background:var(--card);border:3px solid var(--acc)}
+.rapp .result-label{font-size:14px;font-weight:bold;color:var(--acc)}
+.rapp .result-value{margin-top:2px}
+.rapp .result-number{font-size:46px;font-weight:bold;letter-spacing:1px;color:var(--fg)}
+.rapp .result-unit{font-size:28px;font-weight:bold;margin-left:8px;color:var(--acc)}
+.rapp .result-read{font-size:14px;font-weight:bold;margin-top:6px}
+.rapp .result-detail{font-size:13px;color:var(--mut);margin-top:10px;text-align:left;white-space:pre-line;background:var(--bg);border-radius:8px;padding:9px 11px}
+
+/* 定常状態の目安 */
+.rapp .ss-box{border-radius:12px;padding:12px 15px 14px;margin-bottom:12px;background:var(--card);border:1px solid var(--line)}
+.rapp .ss-box .ss-title{font-size:13.5px;font-weight:bold;color:var(--mut)}
+.rapp .ss-box .ss-value{font-size:19px;font-weight:bold;margin-top:3px}
+.rapp .ss-box .ss-note{font-size:12.5px;color:var(--mut);margin-top:5px}
+
+.rapp .rfoot{padding:10px 16px 14px;font-size:11px;color:var(--mut);border-top:1px solid var(--line)}
+.rapp .rfoot .caution{color:#c62828;font-weight:bold;margin-top:4px;font-size:12px}
+@media (prefers-color-scheme:dark){.rapp .rfoot .caution{color:#ff8a70}}
+</style>
+</head>
+<body>
+<!-- 共通ヘッダー(自動差し込み。触らなくてOK) -->
+<div id="site-nav" data-rel="../"></div>
+<div class="wrap">
+<main class="main">
+  <h1>蓄積率（蓄積係数）の計算</h1>
+  <p class="small">同じ間隔で繰り返し投与したとき、定常状態で薬が「単回投与の何倍たまるか」を表すのが蓄積率Rです。消失半減期(t½)と投与間隔(τ)の2つだけで計算できます。</p>
+
+  <div class="rapp" id="rapp">
+  <div class="rmain">
+    <!-- ① 消失半減期 -->
+    <div class="field" id="field-thalf">
+      <label for="thalf">① 消失半減期（t½）<span class="req">必須</span></label>
+      <div class="input-row">
+        <input id="thalf" inputmode="decimal" autocomplete="off" placeholder="例：12">
+        <div class="unit-toggle" id="thalf-unit-toggle">
+          <button type="button" class="unit-btn active" data-unit="h">時間</button>
+          <button type="button" class="unit-btn" data-unit="d">日</button>
+        </div>
+      </div>
+      <p class="error-msg" id="err-thalf">入力してください</p>
+    </div>
+
+    <!-- ② 投与間隔 -->
+    <div class="field" id="field-tau">
+      <label for="tau">② 投与間隔（τ）<span class="req">必須</span></label>
+      <div class="input-row">
+        <input id="tau" inputmode="decimal" autocomplete="off" placeholder="例：8（1日3回なら8時間）">
+        <div class="unit-toggle" id="tau-unit-toggle">
+          <button type="button" class="unit-btn active" data-unit="h">時間</button>
+          <button type="button" class="unit-btn" data-unit="d">日</button>
+        </div>
+      </div>
+      <div class="chips" id="tau-chips">
+        <button type="button" class="chip" data-h="24">1日1回（24h）</button>
+        <button type="button" class="chip" data-h="12">1日2回（12h）</button>
+        <button type="button" class="chip" data-h="8">1日3回（8h）</button>
+        <button type="button" class="chip" data-h="6">1日4回（6h）</button>
+        <button type="button" class="chip" data-h="48">隔日（48h）</button>
+      </div>
+      <p class="error-msg" id="err-tau">入力してください</p>
+    </div>
+
+    <div class="btn-row">
+      <button id="calc-btn" class="primary-btn">計算する</button>
+      <button id="clear-btn" class="secondary-btn">クリア</button>
+    </div>
+
+    <!-- 注意(異常値)表示 -->
+    <div class="warning-box" id="warning-box" hidden></div>
+
+    <!-- 結果表示 -->
+    <div class="result-box" id="result-box" hidden>
+      <p class="result-label">蓄積率 R（定常状態で単回投与の何倍たまるか）</p>
+      <p class="result-value"><span class="result-number" id="result-number">–</span><span class="result-unit">倍</span></p>
+      <p class="result-read" id="result-read"></p>
+      <p class="result-detail" id="result-detail"></p>
+    </div>
+
+    <!-- 定常状態の目安 -->
+    <div class="ss-box" id="ss-box" hidden>
+      <p class="ss-title">⏱ 定常状態到達の目安（半減期×4〜5）</p>
+      <p class="ss-value" id="ss-value">–</p>
+      <p class="ss-note">投与開始(または用量変更)から数えて、このくらいで約94〜97%まで定常状態に近づきます。</p>
+    </div>
+  </div>
+
+  <div class="rfoot">
+    <p>R ＝ 1 ÷ (1 − e<sup>−0.693 × τ ÷ t½</sup>)　（線形動態・等間隔投与を仮定。ピーク・トラフとも同じ倍率で蓄積するモデルです）</p>
+    <p class="caution">※ 計算結果は参考値です。必ずダブルチェックしてから使用してください。</p>
+  </div>
+  </div><!-- /.rapp -->
+
+  <script>
+  // 蓄積率(蓄積係数) R = 1 / (1 - e^(-ke・τ))、ke = 0.693 / t½
+  //   f = e^(-ke・τ) … 1回の投与間隔の終わりに体に残っている割合
+  //   R = 1 / (1 - f)
+  (function () {
+    "use strict";
+
+    const $ = (id) => document.getElementById(id);
+
+    const app = $("rapp");
+    const inputs = { thalf: $("thalf"), tau: $("tau") };
+    const units = { thalf: "h", tau: "h" }; // "h"=時間 / "d"=日
+
+    const warningBox = $("warning-box");
+    const resultBox = $("result-box");
+    const resultNumber = $("result-number");
+    const resultRead = $("result-read");
+    const resultDetail = $("result-detail");
+    const ssBox = $("ss-box");
+    const ssValue = $("ss-value");
+
+    // 全角→半角の自動変換(入力ミス防止)
+    function normalizeNumberText(text) {
+      return text
+        .replace(/[０-９]/g, (ch) => String.fromCharCode(ch.charCodeAt(0) - 0xfee0))
+        .replace(/[．。]/g, ".")
+        .replace(/[，、,]/g, "")
+        .replace(/[ー－―‐]/g, "-")
+        .replace(/\s+/g, "");
+    }
+
+    function readNumber(inputEl) {
+      const raw = normalizeNumberText(inputEl.value);
+      if (raw === "") return { ok: false, value: NaN, reason: "empty" };
+      if (!/^-?\d*\.?\d+$/.test(raw)) return { ok: false, value: NaN, reason: "nan" };
+      const v = parseFloat(raw);
+      if (!isFinite(v)) return { ok: false, value: NaN, reason: "nan" };
+      if (v < 0) return { ok: false, value: v, reason: "negative" };
+      return { ok: true, value: v };
+    }
+
+    function setError(inputEl, message) {
+      const field = inputEl.closest(".field");
+      field.classList.add("invalid");
+      field.querySelector(".error-msg").textContent = message;
+    }
+
+    function clearError(inputEl) {
+      inputEl.closest(".field").classList.remove("invalid");
+    }
+
+    function hideResults() {
+      resultBox.hidden = true;
+      ssBox.hidden = true;
+      warningBox.hidden = true;
+    }
+
+    function validateField(inputEl) {
+      const r = readNumber(inputEl);
+      if (!r.ok) {
+        if (r.reason === "empty") setError(inputEl, "入力してください");
+        else if (r.reason === "negative") setError(inputEl, "0以上の数字を入力してください");
+        else setError(inputEl, "数字だけを入力してください");
+        return null;
+      }
+      if (r.value === 0) {
+        setError(inputEl, "0より大きい数字を入力してください");
+        return null;
+      }
+      clearError(inputEl);
+      return r.value;
+    }
+
+    // 有効数字ベースの表示(指数表記なし)
+    function formatNumber(value, sigDigits) {
+      if (value === 0) return "0";
+      const digits = Math.max(0, sigDigits - Math.floor(Math.log10(Math.abs(value))) - 1);
+      const capped = Math.min(digits, 10);
+      let s = value.toFixed(capped);
+      if (s.indexOf(".") >= 0) s = s.replace(/0+$/, "").replace(/\.$/, "");
+      return s;
+    }
+
+    // 時間を「○時間（約○日）」の読みやすい形にする
+    function formatHours(h) {
+      if (h >= 24) return formatNumber(h, 3) + "時間（約" + formatNumber(h / 24, 3) + "日）";
+      return formatNumber(h, 3) + "時間";
+    }
+
+    function calculate() {
+      hideResults();
+
+      const thalfRaw = validateField(inputs.thalf);
+      const tauRaw = validateField(inputs.tau);
+
+      const firstInvalid = app.querySelector(".field.invalid input");
+      if (firstInvalid) {
+        firstInvalid.focus();
+        firstInvalid.scrollIntoView({ block: "center", behavior: "smooth" });
+        return;
+      }
+
+      // 時間(h)にそろえる
+      const thalfH = units.thalf === "d" ? thalfRaw * 24 : thalfRaw;
+      const tauH = units.tau === "d" ? tauRaw * 24 : tauRaw;
+
+      const ke = Math.LN2 / thalfH;          // 消失速度定数 (/h)
+      const f = Math.exp(-ke * tauH);        // 1間隔の終わりに残る割合
+      const R = 1 / (1 - f);                 // 蓄積率
+      const ratio = tauH / thalfH;           // τ / t½
+
+      const warnings = [];
+      if (R > 20) {
+        warnings.push("⚠ 蓄積率が " + formatNumber(R, 3) + " 倍と非常に大きい値です。半減期に比べて投与間隔がかなり短い設定になっています。単位（時間/日）の選び間違いがないか確認してください。");
+      }
+      if (thalfH > 24 * 365) {
+        warnings.push("⚠ 半減期が " + formatHours(thalfH) + " になっています。入力ミスがないか確認してください。");
+      }
+      if (tauH > 24 * 60) {
+        warnings.push("⚠ 投与間隔が " + formatHours(tauH) + " になっています。入力ミスがないか確認してください。");
+      }
+
+      resultNumber.textContent = formatNumber(R, 3);
+      if (R < 1.2) {
+        resultRead.textContent = "→ ほとんど蓄積しません（次の投与までにほぼ消失します）";
+      } else if (R < 2) {
+        resultRead.textContent = "→ 蓄積は軽度です";
+      } else if (R < 5) {
+        resultRead.textContent = "→ はっきり蓄積するタイプです（定常状態で約" + formatNumber(R, 2) + "倍）";
+      } else {
+        resultRead.textContent = "→ 強く蓄積するタイプです（定常状態で約" + formatNumber(R, 2) + "倍）";
+      }
+      resultDetail.textContent =
+        "計算の内訳\n" +
+        "・半減期 t½：" + formatHours(thalfH) + "\n" +
+        "・投与間隔 τ：" + formatHours(tauH) + "（τ/t½ ＝ " + formatNumber(ratio, 3) + "）\n" +
+        "・消失速度定数 ke ＝ 0.693 ÷ t½ ＝ " + formatNumber(ke, 3) + " /時間\n" +
+        "・1回の間隔で体に残る割合 ＝ e^(−ke×τ) ＝ " + formatNumber(f * 100, 3) + "%\n" +
+        "・蓄積率 R ＝ 1 ÷ (1 − " + formatNumber(f, 3) + ") ＝ " + formatNumber(R, 3) + " 倍";
+
+      ssValue.textContent = formatHours(thalfH * 4) + " 〜 " + formatHours(thalfH * 5);
+      ssBox.hidden = false;
+
+      if (warnings.length > 0) {
+        warningBox.textContent = warnings.join("\n");
+        warningBox.hidden = false;
+      }
+      resultBox.hidden = false;
+      resultBox.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    }
+
+    function clearAll() {
+      Object.values(inputs).forEach((el) => {
+        el.value = "";
+        clearError(el);
+      });
+      hideResults();
+    }
+
+    // 時間/日 の切り替えトグル(半減期・投与間隔で共通の処理)
+    function setupUnitToggle(toggleId, key) {
+      app.querySelectorAll("#" + toggleId + " .unit-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          units[key] = btn.dataset.unit;
+          app.querySelectorAll("#" + toggleId + " .unit-btn")
+            .forEach((b) => b.classList.toggle("active", b === btn));
+          hideResults();
+        });
+      });
+    }
+    setupUnitToggle("thalf-unit-toggle", "thalf");
+    setupUnitToggle("tau-unit-toggle", "tau");
+
+    // 投与間隔のかんたん入力チップ(押すと「時間」単位でセット)
+    app.querySelectorAll("#tau-chips .chip").forEach((chip) => {
+      chip.addEventListener("click", () => {
+        inputs.tau.value = chip.dataset.h;
+        units.tau = "h";
+        app.querySelectorAll("#tau-unit-toggle .unit-btn")
+          .forEach((b) => b.classList.toggle("active", b.dataset.unit === "h"));
+        clearError(inputs.tau);
+        hideResults();
+      });
+    });
+
+    $("calc-btn").addEventListener("click", calculate);
+    $("clear-btn").addEventListener("click", clearAll);
+
+    Object.values(inputs).forEach((el) => {
+      el.addEventListener("input", () => {
+        clearError(el);
+        hideResults();
+      });
+      el.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          el.blur(); // スマホのキーボードを閉じる
+          calculate();
+        }
+      });
+    });
+  })();
+  </script>
+
+  <footer class="foot"><p>個人用ツール。計算結果は参考値です。必ずダブルチェックしてから使ってください。</p></footer>
+</main>
+</div>
+<script src="../assets/nav.js"></script>
+</body>
+</html>
