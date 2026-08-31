@@ -807,6 +807,36 @@
     }
    ],
    "diff": null
+  },
+  {
+   "brand": "カリジノゲナーゼ錠50単位「NIG」",
+   "company": "製造販売元／日医工岐阜工場株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2491001F6273_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2491001F6273_2_02/",
+   "fetched_at": "2026-09-01 06:34:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/581120_2491001F6273_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/581120_2491001F6273_2_02",
+   "meta": {
+    "packins_no": "2491001F6273_2_02",
+    "company_id": "581120",
+    "revision": {
+     "current": {
+      "ym": "2026-04",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "カリジノゲナーゼ錠50単位「NIG」"
+    ],
+    "generic_name": "カリジノゲナーゼ錠",
+    "therapeutic_class": "循環障害改善剤"
+   },
+   "revised": [],
+   "diff": null
   }
  ],
  "deletes": [
@@ -848,6 +878,6 @@
   }
  ],
  "created_at": "2026-08-31 19:11:22",
- "updated_at": "2026-08-31 19:15:26",
+ "updated_at": "2026-09-01 06:34:29",
  "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
 }
