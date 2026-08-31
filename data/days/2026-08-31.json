@@ -1,0 +1,853 @@
+{
+ "date": "2026-08-31",
+ "updates": [
+  {
+   "brand": "ドキサゾシン錠0.5mg「テバ」／ドキサゾシ...",
+   "company": "製造販売元／T'sファーマ株式会社 / 販売／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2149026F1239_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149026F1239_1_07/",
+   "fetched_at": "2026-08-31 19:11:22",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400813_2149026F1239_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400813_2149026F1239_1_07",
+   "meta": {
+    "packins_no": "2149026F1239_1_07",
+    "company_id": "400813",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ドキサゾシン錠0.5mg「テバ」",
+     "ドキサゾシン錠1mg「テバ」",
+     "ドキサゾシン錠2mg「テバ」",
+     "ドキサゾシン錠4mg「テバ」"
+    ],
+    "generic_name": "ドキサゾシンメシル酸塩錠",
+    "therapeutic_class": "血圧降下剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "カンデサルタン錠2mg「武田テバ」／カン...",
+   "company": "製造販売元／T'sファーマ株式会社 / 販売／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2149040F1379_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149040F1379_1_09/",
+   "fetched_at": "2026-08-31 19:11:24",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400813_2149040F1379_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400813_2149040F1379_1_09",
+   "meta": {
+    "packins_no": "2149040F1379_1_09",
+    "company_id": "400813",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "カンデサルタン錠2mg「武田テバ」",
+     "カンデサルタン錠4mg「武田テバ」",
+     "カンデサルタン錠8mg「武田テバ」",
+     "カンデサルタン錠12mg「武田テバ」"
+    ],
+    "generic_name": "カンデサルタン シレキセチル錠",
+    "therapeutic_class": "持続性アンジオテンシンⅡ受容体拮抗剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "オメプラゾール腸溶錠10mg「武田テバ」／...",
+   "company": "製造販売元／T'sファーマ株式会社 / 販売／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2329022H1221_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2329022H1221_1_09/",
+   "fetched_at": "2026-08-31 19:11:26",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400813_2329022H1221_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400813_2329022H1221_1_09",
+   "meta": {
+    "packins_no": "2329022H1221_1_09",
+    "company_id": "400813",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第7版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第6版"
+     }
+    },
+    "brands": [
+     "オメプラゾール腸溶錠10mg「武田テバ」",
+     "オメプラゾール腸溶錠20mg「武田テバ」"
+    ],
+    "generic_name": "オメプラゾール腸溶錠",
+    "therapeutic_class": "プロトンポンプ・インヒビター"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "エンタカポン錠100mg「トーワ」",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "1169014F1064_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1169014F1064_1_06/",
+   "fetched_at": "2026-08-31 19:11:28",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_1169014F1064_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_1169014F1064_1_06",
+   "meta": {
+    "packins_no": "1169014F1064_1_06",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "エンタカポン錠100mg「トーワ」"
+    ],
+    "generic_name": "エンタカポン錠",
+    "therapeutic_class": "末梢COMT阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "７.用法及び用量に関連する注意",
+      "(2)"
+     ],
+     "text": "本剤はレボドパの生物学的利用率を高めるため、レボドパによるドパミン作動性の副作用（ジスキネジア等）があらわれる場合がある。このため、本剤の投与開始時又は増量時には患者の状態を十分観察し、ドパミン作動性の副作用がみられた場合は、本剤あるいはレボドパ・カルビドパ又はレボドパ・ベンセラジド塩酸塩を調節すること。"
+    },
+    {
+     "path": [
+      "７.用法及び用量に関連する注意",
+      "(3)"
+     ],
+     "text": "本剤を1回200mgへ増量した場合、ジスキネジア等が発現することがあるので、増量は慎重に検討すること。また、増量した際は観察を十分に行い、これらの症状が発現した場合には症状の程度に応じて本剤の1回投与量を減量する等適切な処置を行うこと。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(1)"
+     ],
+     "text": "本剤はレボドパの生物学的利用率を高めるため、レボドパによるドパミン作動性の副作用（ジスキネジア等）があらわれる場合がある。このため、抗パーキンソン剤を併用する場合には、これらの投与量を調節するなど、患者の状態を注意深く観察しながら投与すること。"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "体重40kg未満の低体重の患者"
+     ],
+     "text": "1回200mgを投与した場合、ジスキネジアの発現が増加することがある。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "(1)"
+     ],
+     "text": "本剤はカテコール-O-メチルトランスフェラーゼ（COMT）阻害剤であり、COMTによって代謝される薬剤の血中薬物濃度を増加させる可能性があるので、このような薬剤と併用する場合には注意して投与すること。また、本剤は薬物代謝酵素CYP2C9を阻害することが示唆されていることから、本酵素により代謝される薬剤と併用する場合には注意して投与すること。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "ジスキネジアの発現頻度の上昇が認められた。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "ジスキネジア（37.5%）、ジストニア"
+    },
+    {
+     "path": [
+      "１７.臨床成績",
+      "１７.１ 有効性及び安全性に関する試験",
+      "国内第Ⅱ相試験（Wearing-off現象を有するパーキンソン病患者における臨床薬理試験）"
+     ],
+     "text": "副作用発現頻度は、エンタカポン錠100mg投与群で78.3%（18/23例）及びエンタカポン錠200mg投与群で79.2%（19/24例）であった。主な副作用は、100mg群で血圧低下及びジスキネジアが各30.4%（7/23例）、心拍数減少21.7%（5/23例）、傾眠13.0%（3/23例）、200mg群で血圧低下33.3%（8/24例）、ジスキネジア及び尿変色が各20.8%（5/24例）、心拍数減少16.7%（4/24例）、傾眠12.5%（3/24例）であった。"
+    },
+    {
+     "path": [
+      "１７.臨床成績",
+      "１７.１ 有効性及び安全性に関する試験",
+      "国内第Ⅱ相試験（二重盲検比較試験）"
+     ],
+     "text": "国内第Ⅱ相試験（二重盲検比較試験）"
+    },
+    {
+     "path": [
+      "１７.臨床成績",
+      "１７.１ 有効性及び安全性に関する試験",
+      "国内第Ⅱ相試験（二重盲検比較試験）"
+     ],
+     "text": "Wearing-off現象を有するパーキンソン病患者341例を対象とした二重盲検比較試験において、エンタカポン錠1回100mg及び1回200mgはいずれもプラセボと比較し、症状日誌に基づく起きている間のON時間（動きやすい・動けると感じる時間：レボドパ薬効発現時間）を有意に延長させた。"
+    },
+    {
+     "path": [
+      "１７.臨床成績",
+      "１７.１ 有効性及び安全性に関する試験",
+      "国内第Ⅱ相試験（二重盲検比較試験）"
+     ],
+     "text": "副作用発現頻度は、エンタカポン錠100mg投与群で52.2%（59/113例）及びエンタカポン錠200mg投与群で72.8%（83/114例）であった。主な副作用は、100mg群で着色尿15.9%（18/113例）、ジスキネジア増悪14.2%（16/113例）、便秘増悪10.6%（12/113例）、200mg群でジスキネジア増悪21.1%（24/114例）、着色尿14.9%（17/114例）、便秘増悪12.3%（14/114例）であった。,"
+    },
+    {
+     "path": [
+      "１７.臨床成績",
+      "１７.１ 有効性及び安全性に関する試験",
+      "海外第Ⅲ相試験"
+     ],
+     "text": "海外第Ⅲ相試験"
+    },
+    {
+     "path": [
+      "１７.臨床成績",
+      "１７.１ 有効性及び安全性に関する試験",
+      "海外第Ⅲ相試験"
+     ],
+     "text": "Wearing-off現象を有するパーキンソン病患者を対象として実施された二重盲検比較試験において、エンタカポン錠200mgはプラセボと比較し、症状日誌に基づく起きている時間に占めるON時間の割合を有意に延長、増加させた。"
+    },
+    {
+     "path": [
+      "１７.臨床成績",
+      "１７.１ 有効性及び安全性に関する試験",
+      "海外第Ⅲ相試験"
+     ],
+     "text": "副作用発現頻度は、エンタカポン錠200mg投与群で82.5%（85/103例）であった。主な副作用は、ジスキネジア47.6%（49/103例）、尿検査異常29.1%（30/103例）、パーキンソニズムの増悪19.4%（20/103例）、浮動性めまい16.5%（17/103例）、悪心10.7%（11/103例）であった。,"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リナグリプチン錠5mg「日新」",
+   "company": "製造販売元／日新製薬株式会社",
+   "reason": "新規",
+   "packins_no": "39690B3F1040_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/39690B3F1040_1_01/",
+   "fetched_at": "2026-08-31 19:11:30",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530113_39690B3F1040_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530113_39690B3F1040_1_01",
+   "meta": {
+    "packins_no": "39690B3F1040_1_01",
+    "company_id": "530113",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "リナグリプチン錠5mg「日新」"
+    ],
+    "generic_name": "リナグリプチン水和物",
+    "therapeutic_class": "胆汁排泄型選択的DPP-4阻害剤 / －2型糖尿病治療剤－"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ガランタミンOD錠4mg「日医工」／ガランタ...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1190019F4108_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190019F4108_2_02/",
+   "fetched_at": "2026-08-31 19:11:32",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_1190019F4108_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_1190019F4108_2_02",
+   "meta": {
+    "packins_no": "1190019F4108_2_02",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2025-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-05",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ガランタミンOD錠4mg「日医工」",
+     "ガランタミンOD錠8mg「日医工」",
+     "ガランタミンOD錠12mg「日医工」"
+    ],
+    "generic_name": "ガランタミン臭化水素酸塩",
+    "therapeutic_class": "アルツハイマー型認知症治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "製造販売元"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ファモチジン静注液10mg「日医工」／ファ...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2325401A3066_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2325401A3066_1_05/",
+   "fetched_at": "2026-08-31 19:11:34",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_2325401A3066_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_2325401A3066_1_05",
+   "meta": {
+    "packins_no": "2325401A3066_1_05",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2025-04",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ファモチジン静注液10mg「日医工」",
+     "ファモチジン静注液20mg「日医工」"
+    ],
+    "generic_name": "ファモチジン",
+    "therapeutic_class": "H2受容体拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１４.適用上の注意",
+      "薬剤調製時の注意"
+     ],
+     "text": "インジケーター（酸素検知剤：ピンク色の錠剤）及び脱酸素剤は品質保持を目的に封入しているため、薬液に溶解しないこと。"
+    },
+    {
+     "path": [
+      "２０.取扱い上の注意",
+      "(1)"
+     ],
+     "text": "使用時までフィルム包装を開封しないこと。"
+    },
+    {
+     "path": [
+      "２０.取扱い上の注意",
+      "(2)"
+     ],
+     "text": "フィルム包装開封後は速やかに使用すること。"
+    },
+    {
+     "path": [
+      "２０.取扱い上の注意",
+      "(3)"
+     ],
+     "text": "フィルム包装が破損又は剥がれている時、インジケーター（酸素検知剤：ピンク色の錠剤）が青紫～青色に変色している時、フィルムの内面に水滴が認められる時は使用しないこと。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "コミナティRTU筋注5～11歳用1人用",
+   "company": "製造販売元／ファイザー株式会社 / 技術提携／BIONTECH",
+   "reason": "更新",
+   "packins_no": "631341DA9026_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/631341DA9026_1_05/",
+   "fetched_at": "2026-08-31 19:12:58",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_631341DA9026_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_631341DA9026_1_05",
+   "meta": {
+    "packins_no": "631341DA9026_1_05",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "コミナティRTU筋注5～11歳用1人用"
+    ],
+    "generic_name": "コロナウイルス（SARS-CoV-2）RNAワクチン",
+    "therapeutic_class": "ウイルスワクチン類"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "コミナティRTU筋注5～11歳用1人用（旧製品...",
+   "company": "製造販売元／ファイザー株式会社 / 技術提携／BIONTECH",
+   "reason": "新規",
+   "packins_no": "631341DA9026_3_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/631341DA9026_3_01/",
+   "fetched_at": "2026-08-31 19:13:01",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_631341DA9026_3_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_631341DA9026_3_01",
+   "meta": {
+    "packins_no": "631341DA9026_3_01",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2025-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "コミナティRTU筋注5～11歳用1人用\n（旧製品：2025/2026シーズン用）"
+    ],
+    "generic_name": "コロナウイルス（SARS-CoV-2）RNAワクチン",
+    "therapeutic_class": "ウイルスワクチン類"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "コミナティ筋注シリンジ12歳以上用",
+   "company": "製造販売元／ファイザー株式会社 / 技術提携／BIONTECH",
+   "reason": "更新",
+   "packins_no": "631341DG1028_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/631341DG1028_1_06/",
+   "fetched_at": "2026-08-31 19:13:03",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_631341DG1028_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_631341DG1028_1_06",
+   "meta": {
+    "packins_no": "631341DG1028_1_06",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "コミナティ筋注シリンジ12歳以上用"
+    ],
+    "generic_name": "コロナウイルス（SARS-CoV-2）RNAワクチン",
+    "therapeutic_class": "ウイルスワクチン類"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "コミナティ筋注シリンジ12歳以上用（旧製...",
+   "company": "製造販売元／ファイザー株式会社 / 技術提携／BIONTECH",
+   "reason": "新規",
+   "packins_no": "631341DG1028_3_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/631341DG1028_3_01/",
+   "fetched_at": "2026-08-31 19:13:29",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_631341DG1028_3_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_631341DG1028_3_01",
+   "meta": {
+    "packins_no": "631341DG1028_3_01",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2025-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "コミナティ筋注シリンジ12歳以上用\n（旧製品：2025/2026シーズン用）"
+    ],
+    "generic_name": "コロナウイルス（SARS-CoV-2）RNAワクチン",
+    "therapeutic_class": "ウイルスワクチン類"
+   },
+   "revised": [
+    {
+     "path": [
+      "２２.包装"
+     ],
+     "text": "シリンジ0.3mL：1本、5本"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "コミナティ筋注6ヵ月～4歳用3人用",
+   "company": "製造販売元／ファイザー株式会社 / 技術提携／BIONTECH",
+   "reason": "更新",
+   "packins_no": "631341DH1023_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/631341DH1023_1_05/",
+   "fetched_at": "2026-08-31 19:13:55",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_631341DH1023_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_631341DH1023_1_05",
+   "meta": {
+    "packins_no": "631341DH1023_1_05",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "コミナティ筋注6ヵ月～4歳用3人用"
+    ],
+    "generic_name": "コロナウイルス（SARS-CoV-2）RNAワクチン",
+    "therapeutic_class": "ウイルスワクチン類"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "コミナティ筋注6ヵ月～4歳用3人用（旧製...",
+   "company": "製造販売元／ファイザー株式会社 / 技術提携／BIONTECH",
+   "reason": "新規",
+   "packins_no": "631341DH1023_3_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/631341DH1023_3_01/",
+   "fetched_at": "2026-08-31 19:13:57",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_631341DH1023_3_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_631341DH1023_3_01",
+   "meta": {
+    "packins_no": "631341DH1023_3_01",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2025-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "コミナティ筋注6ヵ月～4歳用3人用\n（旧製品：2025/2026シーズン用）"
+    ],
+    "generic_name": "コロナウイルス（SARS-CoV-2）RNAワクチン",
+    "therapeutic_class": "ウイルスワクチン類"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "アトガム点滴静注液250mg",
+   "company": "製造販売元／ファイザー株式会社",
+   "reason": "更新",
+   "packins_no": "6399413A2021_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6399413A2021_1_04/",
+   "fetched_at": "2026-08-31 19:14:23",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_6399413A2021_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_6399413A2021_1_04",
+   "meta": {
+    "packins_no": "6399413A2021_1_04",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2024-02",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-03",
+      "ver": null
+     }
+    },
+    "brands": [
+     "アトガム点滴静注液250mg"
+    ],
+    "generic_name": "抗ヒト胸腺細胞ウマ免疫グロブリン",
+    "therapeutic_class": "免疫抑制剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１４.適用上の注意",
+      "薬剤調製時の注意",
+      "(2)"
+     ],
+     "text": "本剤は、0.9%塩化ナトリウム注射液で1～4mg/mLとなるように希釈して使用すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ビムパット錠50㎎／ビムパット錠100㎎",
+   "company": "製造販売元／ユーシービージャパン株式会社",
+   "reason": "更新",
+   "packins_no": "1139015F1027_1_15",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1139015F1027_1_15/",
+   "fetched_at": "2026-08-31 19:15:17",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/820110_1139015F1027_1_15",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/820110_1139015F1027_1_15",
+   "meta": {
+    "packins_no": "1139015F1027_1_15",
+    "company_id": "820110",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "ビムパット錠50㎎",
+     "ビムパット錠100㎎"
+    ],
+    "generic_name": "ラコサミド",
+    "therapeutic_class": "抗てんかん剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "皮膚"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "ユーシービージャパン株式会社\nユーシービーケアーズ　コンタクトセンター"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒160-0023　東京都新宿区西新宿8丁目17番1号"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "TEL：0120-093-189\n受付時間 9:00～17:30（土日・祝日・会社休日を除く）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ビムパットドライシロップ10%",
+   "company": "製造販売元／ユーシービージャパン株式会社",
+   "reason": "更新",
+   "packins_no": "1139015R1023_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1139015R1023_1_09/",
+   "fetched_at": "2026-08-31 19:15:22",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/820110_1139015R1023_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/820110_1139015R1023_1_09",
+   "meta": {
+    "packins_no": "1139015R1023_1_09",
+    "company_id": "820110",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第7版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第6版"
+     }
+    },
+    "brands": [
+     "ビムパットドライシロップ10%"
+    ],
+    "generic_name": "ラコサミド",
+    "therapeutic_class": "抗てんかん剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "皮膚"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "ユーシービージャパン株式会社\nユーシービーケアーズ　コンタクトセンター"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒160-0023　東京都新宿区西新宿8丁目17番1号"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "TEL：0120-093-189\n受付時間 9:00～17:30（土日・祝日・会社休日を除く）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ビムパット点滴静注100㎎／ビムパット点...",
+   "company": "製造販売元／ユーシービージャパン株式会社",
+   "reason": "更新",
+   "packins_no": "1139404A1024_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1139404A1024_1_10/",
+   "fetched_at": "2026-08-31 19:15:24",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/820110_1139404A1024_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/820110_1139404A1024_1_10",
+   "meta": {
+    "packins_no": "1139404A1024_1_10",
+    "company_id": "820110",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第8版"
+     },
+     "previous": {
+      "ym": "2026-01",
+      "ver": "第7版"
+     }
+    },
+    "brands": [
+     "ビムパット点滴静注100㎎",
+     "ビムパット点滴静注200㎎"
+    ],
+    "generic_name": "ラコサミド",
+    "therapeutic_class": "抗てんかん剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "皮膚"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "ユーシービージャパン株式会社\nユーシービーケアーズ　コンタクトセンター"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒160-0023　東京都新宿区西新宿8丁目17番1号"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "TEL：0120-093-189\n受付時間 9:00～17:30（土日・祝日・会社休日を除く）"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "ロキソプロフェン錠60mg「EMEC」（旧製品）",
+   "company": "製造販売元／エルメッド株式会社 / 販売元／日医工株式会社",
+   "reason": "承継のため",
+   "yj_hint": "1149019F1480_2_12"
+  },
+  {
+   "brand": "ロキソプロフェン錠60mg「EMEC」",
+   "company": "製造販売元／エルメッド株式会社 / 販売元／日医工株式会社",
+   "reason": "承継のため",
+   "yj_hint": "1149019F1480_3_02"
+  },
+  {
+   "brand": "キシレステシンA注射液（カートリッジ）",
+   "company": "製造販売元／スリーエム ジャパン イノベーション株式会社",
+   "reason": "承継のため",
+   "yj_hint": "2710806U1030_2_07"
+  },
+  {
+   "brand": "ダイチロナ筋注",
+   "company": "製造販売元／第一三共株式会社",
+   "reason": "－",
+   "yj_hint": "631341MA1025_1_06"
+  },
+  {
+   "brand": "ベタヒスチンメシル酸塩錠6mg「日医工P」／ベタヒスチンメシル酸塩錠12mg「日医工P」",
+   "company": "製造販売元／日医工ファーマ株式会社 / 販売元／日医工株式会社",
+   "reason": "承継のため",
+   "yj_hint": "1339005F1482_2_04"
+  },
+  {
+   "brand": "イフェンプロジル酒石酸塩錠10mg「日医工」／イフェンプロジル酒石酸塩錠20mg「日医工」",
+   "company": "製造販売元／日医工ファーマ株式会社 / 販売元／日医工株式会社",
+   "reason": "承継のため",
+   "yj_hint": "2190005F1284_2_02"
+  }
+ ],
+ "created_at": "2026-08-31 19:11:22",
+ "updated_at": "2026-08-31 19:15:26",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
