@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-錠剤・カプセルの「識別コード」(本体・PTPの印字)一覧を作る。
-data/tenpu_index.json(添付文書一覧)のうち錠剤(YJ剤形コード F)・カプセル(M)について、
+錠剤・カプセルなどの「識別コード」(本体・PTPの印字)一覧を作る。
+data/tenpu_index.json(添付文書一覧)の全文書について、
 添付文書XMLを1件ずつ取得して「識別コード」欄を抜き出し、data/shikibetsu_index.json に保存する。
 「識別コード検索」ページ(docs/shikibetsu/)の元データ。
+※当初は剤形コードで錠(F)・カプセル(M)だけに絞っていたが、腸溶錠(H)・口腔用錠(E)・
+  細粒と同じ文書の錠(リボトリール等)・英数字混じりの新形式コードが漏れたため全文書方式に変更(2026-08-30)
 
 - PMDAは添付文書の個別ページを海外・クラウドIPからブロックしているため、自宅PC(日本)で実行する
 - 20件ごとに途中保存。途中で止めても次回は続きから
@@ -36,7 +38,6 @@ NS = pmda_watch.NS
 XML_LANG = "{http://www.w3.org/XML/1998/namespace}lang"
 OUT_NAME = "shikibetsu_index.json"
 LOCK_NAME = ".shikibetsu.lock"
-TARGET_FORMS = ("F", "M")   # YJコード8文字目(剤形): F=錠剤, M=カプセル(外用薬のMは軟膏等。チューブの印字コードが取れるのでそのまま収録)
 SAVE_EVERY = 20             # この件数ごとに途中保存
 SLEEP = 0.7                 # 1文書ごとの待ち(秒)。fetch_xml内の待ちと合わせて1文書2秒強
 
@@ -153,13 +154,13 @@ def fetch_xml_direct(u: str) -> str | None:
 
 # ---------------------------------------------------------------- 対象の洗い出し
 def list_targets(tenpu: dict) -> dict[str, str]:
-    """添付文書一覧から錠剤(F)・カプセル(M)の {PDFコード u: 更新日 t} を返す。英語版PDF(末尾E)は除く"""
+    """添付文書一覧から {PDFコード u: 更新日 t} を返す。英語版PDF(末尾E)だけ除いて全文書が対象。
+    剤形で絞らない: 識別コード欄が無い文書はコード0件になって検索に載らないだけなので、絞る必要がない"""
     targets: dict[str, str] = {}
     for it in tenpu.get("items") or []:
         for fx in it.get("f") or []:
             u = fx.get("u") or ""
-            m = re.match(r"^\d+_\d{7}([A-Z])", u)
-            if not m or m.group(1) not in TARGET_FORMS or u.endswith("E"):
+            if not u or "_" not in u or u.endswith("E"):
                 continue
             t = fx.get("t") or ""
             if u not in targets or t > targets[u]:
@@ -210,12 +211,12 @@ def refresh(root: Path, max_docs: int = 0, retry_errors: bool = False) -> dict:
                 if u not in docs or (docs[u].get("t") or "") != t
                 or (retry_errors and docs[u].get("err"))]
         capped = bool(max_docs) and len(todo) > max_docs
-        log(f"対象 {len(targets)}件(錠剤・カプセル) / 今回取得 {len(todo)}件"
+        log(f"対象 {len(targets)}件(全添付文書) / 今回取得 {len(todo)}件"
             + (f" → 最大{max_docs}件で切り上げ(残りは次回)" if capped else ""))
         if max_docs:
             todo = todo[:max_docs]
         if todo:
-            log(f"みこみ時間: 約{len(todo) * 2.4 / 60:.0f}分(PMDAに負荷をかけないよう1件ごとに待ち時間あり)")
+            log(f"みこみ時間: 約{len(todo) * 1.4 / 60:.0f}分(PMDAに負荷をかけないよう1件ごとに待ち時間あり。混雑時は延びる)")
 
         def save() -> None:
             store["meta"] = {
