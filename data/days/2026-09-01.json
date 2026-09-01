@@ -1,0 +1,1739 @@
+{
+ "date": "2026-09-01",
+ "updates": [
+  {
+   "brand": "アリケイス吸入液590mg",
+   "company": "製造販売元／インスメッド合同会社",
+   "reason": "更新",
+   "packins_no": "6169700G1025_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6169700G1025_1_08/",
+   "fetched_at": "2026-09-01 16:59:18",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/150949_6169700G1025_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/150949_6169700G1025_1_08",
+   "meta": {
+    "packins_no": "6169700G1025_1_08",
+    "company_id": "150949",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2022-06",
+      "ver": null
+     }
+    },
+    "brands": [
+     "アリケイス吸入液590mg"
+    ],
+    "generic_name": "アミカシン硫酸塩",
+    "therapeutic_class": "アミノグリコシド系抗生物質製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "胃腸障害"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "腎及び尿路障害"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "呼吸器、胸郭及び縦隔障害"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ウェリレグ錠40mg",
+   "company": "製造販売元／MSD株式会社",
+   "reason": "更新",
+   "packins_no": "4291094F1020_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291094F1020_1_02/",
+   "fetched_at": "2026-09-01 16:59:21",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/170050_4291094F1020_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/170050_4291094F1020_1_02",
+   "meta": {
+    "packins_no": "4291094F1020_1_02",
+    "company_id": "170050",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-08",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ウェリレグ錠40mg"
+    ],
+    "generic_name": "ベルズチファン錠",
+    "therapeutic_class": "─抗悪性腫瘍剤─\nHIF-2α阻害剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ビソプロロールフマル酸塩錠0.625mg「明治...",
+   "company": "製造販売元／Meファルマ株式会社 / 販売提携／Meiji Seika ファルマ株式会社",
+   "reason": "更新",
+   "packins_no": "2123016F1190_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2123016F1190_1_05/",
+   "fetched_at": "2026-09-01 16:59:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171950_2123016F1190_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171950_2123016F1190_1_05",
+   "meta": {
+    "packins_no": "2123016F1190_1_05",
+    "company_id": "171950",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-04",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ビソプロロールフマル酸塩錠0.625mg「明治」",
+     "ビソプロロールフマル酸塩錠2.5mg「明治」",
+     "ビソプロロールフマル酸塩錠5mg「明治」"
+    ],
+    "generic_name": "ビソプロロールフマル酸塩",
+    "therapeutic_class": "選択的β1アンタゴニスト"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）",
+      "(2)"
+     ],
+     "text": "オザニモド塩酸塩等"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤の投与開始時に併用すると重度の徐脈や心ブロックが認められることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "フオイパン錠100mg",
+   "company": "製造販売／小野薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "3999003F1297_1_13",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999003F1297_1_13/",
+   "fetched_at": "2026-09-01 16:59:32",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180188_3999003F1297_1_13",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180188_3999003F1297_1_13",
+   "meta": {
+    "packins_no": "3999003F1297_1_13",
+    "company_id": "180188",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-03",
+      "ver": null
+     }
+    },
+    "brands": [
+     "フオイパン錠100mg"
+    ],
+    "generic_name": "カモスタットメシル酸塩",
+    "therapeutic_class": "経口蛋白分解酵素阻害剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "カモスタットメシル酸塩錠"
+    },
+    {
+     "path": [],
+     "text": "Dimethylcarbamoylmethyl 4-(4-carbamimidoylaminobenzoyloxy)phenylacetate monomethanesulfonate"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "マルシロン配合錠",
+   "company": "製造販売元（輸入）／オルガノン株式会社",
+   "reason": "更新",
+   "packins_no": "2482014F1024_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2482014F1024_1_01/",
+   "fetched_at": "2026-09-01 16:59:37",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/181615_2482014F1024_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/181615_2482014F1024_1_01",
+   "meta": {
+    "packins_no": "2482014F1024_1_01",
+    "company_id": "181615",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "マルシロン配合錠"
+    ],
+    "generic_name": "デソゲストレル / エチニルエストラジオール",
+    "therapeutic_class": "月経困難症治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報",
+      "(3)"
+     ],
+     "text": "子宮頸癌の最も重要なリスク因子は、持続的なヒトパピローマウイルス（HPV）感染であることが知られている。疫学調査の結果から、経口避妊剤の長期服用により子宮頸癌のリスクが増加する可能性が報告されている。しかしながら、この知見が子宮頸癌検診の増加、性行動の違い（バリア避妊法の使用を含む）等の交絡因子によるものか、あるいは経口避妊剤との因果関係によるものかについては、現時点では明確ではない。"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "白色の結晶性の粉末である。"
+    },
+    {
+     "path": [
+      "２５.保険給付上の注意",
+      "(1)"
+     ],
+     "text": "本剤が避妊の目的で処方された場合には、保険給付の対象とはしないこと。"
+    },
+    {
+     "path": [
+      "２５.保険給付上の注意",
+      "(2)"
+     ],
+     "text": "本剤は、厚生労働省告示第311号（令和8年8月12日付）に基づき、2027年8月末日までは、投薬は1回20日分を限度とされている。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アレロックOD錠2.5／アレロックOD錠5",
+   "company": "製造販売元／協和キリン株式会社",
+   "reason": "更新",
+   "packins_no": "4490025F3026_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490025F3026_1_10/",
+   "fetched_at": "2026-09-01 16:59:42",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/230124_4490025F3026_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/230124_4490025F3026_1_10",
+   "meta": {
+    "packins_no": "4490025F3026_1_10",
+    "company_id": "230124",
+    "revision": {
+     "current": {
+      "ym": "2020-10",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "アレロックOD錠2.5",
+     "アレロックOD錠5"
+    ],
+    "generic_name": "オロパタジン塩酸塩",
+    "therapeutic_class": "アレルギー性疾患治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ビソプロロールフマル酸塩錠0.625mg「サン...",
+   "company": "製造販売／サンド株式会社",
+   "reason": "更新",
+   "packins_no": "2123016F1182_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2123016F1182_1_05/",
+   "fetched_at": "2026-09-01 16:59:45",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/270428_2123016F1182_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/270428_2123016F1182_1_05",
+   "meta": {
+    "packins_no": "2123016F1182_1_05",
+    "company_id": "270428",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-04",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ビソプロロールフマル酸塩錠0.625mg「サンド」",
+     "ビソプロロールフマル酸塩錠2.5mg「サンド」",
+     "ビソプロロールフマル酸塩錠5mg「サンド」"
+    ],
+    "generic_name": "ビソプロロールフマル酸塩錠",
+    "therapeutic_class": "選択的β1アンタゴニスト"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ジルチアゼム塩酸塩徐放カプセル100mg「ト...",
+   "company": "製造販売元／佐藤薬品工業株式会社 / 発売／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "2171006N1164_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171006N1164_1_04/",
+   "fetched_at": "2026-09-01 16:59:51",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300094_2171006N1164_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300094_2171006N1164_1_04",
+   "meta": {
+    "packins_no": "2171006N1164_1_04",
+    "company_id": "300094",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-03",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ジルチアゼム塩酸塩徐放カプセル100mg「トーワ」",
+     "ジルチアゼム塩酸塩徐放カプセル200mg「トーワ」"
+    ],
+    "generic_name": "ジルチアゼム塩酸塩徐放カプセル",
+    "therapeutic_class": "持続性Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤の投与開始時に併用すると重度の徐脈や心ブロックが認められることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ビソプロロールフマル酸塩錠0.625mg「サワ...",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2123016F1115_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2123016F1115_1_05/",
+   "fetched_at": "2026-09-01 16:59:58",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_2123016F1115_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_2123016F1115_1_05",
+   "meta": {
+    "packins_no": "2123016F1115_1_05",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-04",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ビソプロロールフマル酸塩錠0.625mg「サワイ」",
+     "ビソプロロールフマル酸塩錠2.5mg「サワイ」",
+     "ビソプロロールフマル酸塩錠5mg「サワイ」"
+    ],
+    "generic_name": "ビソプロロールフマル酸塩",
+    "therapeutic_class": "選択的β1遮断剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤の投与開始時に併用すると重度の徐脈や心ブロックが認められることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ジルチアゼム塩酸塩錠30mg「サワイ」／ジ...",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2171006F1321_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171006F1321_1_07/",
+   "fetched_at": "2026-09-01 17:00:08",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_2171006F1321_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_2171006F1321_1_07",
+   "meta": {
+    "packins_no": "2171006F1321_1_07",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-03",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ジルチアゼム塩酸塩錠30mg「サワイ」",
+     "ジルチアゼム塩酸塩錠60mg「サワイ」"
+    ],
+    "generic_name": "ジルチアゼム塩酸塩",
+    "therapeutic_class": "Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤の投与開始時に併用すると重度の徐脈や心ブロックが認められることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ジルチアゼム塩酸塩Rカプセル100mg「サワ...",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2171006N1148_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171006N1148_1_09/",
+   "fetched_at": "2026-09-01 17:00:14",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_2171006N1148_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_2171006N1148_1_09",
+   "meta": {
+    "packins_no": "2171006N1148_1_09",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-03",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ジルチアゼム塩酸塩Rカプセル100mg「サワイ」",
+     "ジルチアゼム塩酸塩Rカプセル200mg「サワイ」"
+    ],
+    "generic_name": "ジルチアゼム塩酸塩",
+    "therapeutic_class": "持続性Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤の投与開始時に併用すると重度の徐脈や心ブロックが認められることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ジルチアゼム塩酸塩注射用250mg「サワイ」",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2171405D3089_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171405D3089_1_08/",
+   "fetched_at": "2026-09-01 17:00:18",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_2171405D3089_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_2171405D3089_1_08",
+   "meta": {
+    "packins_no": "2171405D3089_1_08",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-12",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ジルチアゼム塩酸塩注射用250mg「サワイ」"
+    ],
+    "generic_name": "ジルチアゼム塩酸塩",
+    "therapeutic_class": "注射用Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤の投与開始時に併用すると重度の徐脈や心ブロックが認められることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ジルチアゼム塩酸塩注射用10mg「サワイ」...",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2171405D4069_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171405D4069_1_08/",
+   "fetched_at": "2026-09-01 17:00:21",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_2171405D4069_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_2171405D4069_1_08",
+   "meta": {
+    "packins_no": "2171405D4069_1_08",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-12",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ジルチアゼム塩酸塩注射用10mg「サワイ」",
+     "ジルチアゼム塩酸塩注射用50mg「サワイ」"
+    ],
+    "generic_name": "ジルチアゼム塩酸塩",
+    "therapeutic_class": "注射用Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤の投与開始時に併用すると重度の徐脈や心ブロックが認められることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "三和十全大補湯エキス細粒",
+   "company": "製造販売元／三和生薬株式会社",
+   "reason": "更新",
+   "packins_no": "5200069C1042_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/5200069C1042_1_11/",
+   "fetched_at": "2026-09-01 17:00:24",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300303_5200069C1042_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300303_5200069C1042_1_11",
+   "meta": {
+    "packins_no": "5200069C1042_1_11",
+    "company_id": "300303",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-11",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "三和十全大補湯エキス細粒"
+    ],
+    "generic_name": "十全大補湯",
+    "therapeutic_class": "漢方製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２２.包装"
+     ],
+     "text": "500g [ボトル]\n3.0g×84包 [分包]"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "三和麻杏よく甘湯エキス細粒",
+   "company": "製造販売元／三和生薬株式会社",
+   "reason": "更新",
+   "packins_no": "5200135C1041_1_12",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/5200135C1041_1_12/",
+   "fetched_at": "2026-09-01 17:00:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300303_5200135C1041_1_12",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300303_5200135C1041_1_12",
+   "meta": {
+    "packins_no": "5200135C1041_1_12",
+    "company_id": "300303",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-11",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "三和麻杏よく甘湯エキス細粒"
+    ],
+    "generic_name": "麻杏薏甘湯",
+    "therapeutic_class": "漢方製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２２.包装"
+     ],
+     "text": "500g［ボトル］\n1.5g×84包［分包］"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "三和竜胆瀉肝湯エキス細粒",
+   "company": "製造販売元／三和生薬株式会社",
+   "reason": "更新",
+   "packins_no": "5200142C1033_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/5200142C1033_1_11/",
+   "fetched_at": "2026-09-01 17:00:29",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300303_5200142C1033_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300303_5200142C1033_1_11",
+   "meta": {
+    "packins_no": "5200142C1033_1_11",
+    "company_id": "300303",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "三和竜胆瀉肝湯エキス細粒"
+    ],
+    "generic_name": "竜胆瀉肝湯",
+    "therapeutic_class": "漢方製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２２.包装"
+     ],
+     "text": "500g [ボトル]\n3.0g×84包 [分包]"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ビソプロロールフマル酸塩錠0.625mg「ZE」...",
+   "company": "製造販売元／全星薬品工業株式会社 / 発売元／全星薬品株式会社",
+   "reason": "更新",
+   "packins_no": "2123016F1140_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2123016F1140_1_07/",
+   "fetched_at": "2026-09-01 17:02:41",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/380087_2123016F1140_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/380087_2123016F1140_1_07",
+   "meta": {
+    "packins_no": "2123016F1140_1_07",
+    "company_id": "380087",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-04",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ビソプロロールフマル酸塩錠0.625mg「ZE」",
+     "ビソプロロールフマル酸塩錠2.5mg「ZE」",
+     "ビソプロロールフマル酸塩錠5mg「ZE」"
+    ],
+    "generic_name": "ビソプロロールフマル酸塩",
+    "therapeutic_class": "選択的β1アンタゴニスト"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "(2RS)-1-(Propan-2-ylamino)-3-(4-{[2-(propan-2-yloxy)ethoxy]methyl}phenoxy)propan-2-ol hemifumarate"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "第十九改正日本薬局方　医薬品情報 JPDI 2026. じほう; 2026: 560-561"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "メトピロンカプセル250mg",
+   "company": "製造販売元／セオリア ファーマ株式会社 / 販売／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "7223001M1035_2_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/7223001M1035_2_06/",
+   "fetched_at": "2026-09-01 17:02:51",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/380999_7223001M1035_2_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/380999_7223001M1035_2_06",
+   "meta": {
+    "packins_no": "7223001M1035_2_06",
+    "company_id": "380999",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-11",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "メトピロンカプセル250mg"
+    ],
+    "generic_name": "メチラポン",
+    "therapeutic_class": "下垂体ACTH分泌機能検査用薬\n副腎皮質ホルモン合成阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２２.包装"
+     ],
+     "text": "18カプセル［瓶、バラ］\n50カプセル［瓶、バラ］"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ロゼレム錠8mg",
+   "company": "製造販売元／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "1190016F1024_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190016F1024_1_14/",
+   "fetched_at": "2026-09-01 17:02:54",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400256_1190016F1024_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400256_1190016F1024_1_14",
+   "meta": {
+    "packins_no": "1190016F1024_1_14",
+    "company_id": "400256",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ロゼレム錠8mg"
+    ],
+    "generic_name": "ラメルテオン",
+    "therapeutic_class": "メラトニン受容体アゴニスト"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "メインテート錠0.625mg／メインテート錠2.5m...",
+   "company": "製造販売元／田辺ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2123016F1107_1_21",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2123016F1107_1_21/",
+   "fetched_at": "2026-09-01 17:02:57",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400315_2123016F1107_1_21",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400315_2123016F1107_1_21",
+   "meta": {
+    "packins_no": "2123016F1107_1_21",
+    "company_id": "400315",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "メインテート錠0.625mg",
+     "メインテート錠2.5mg",
+     "メインテート錠5mg"
+    ],
+    "generic_name": "ビソプロロールフマル酸塩錠",
+    "therapeutic_class": "選択的β1アンタゴニスト"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ヘルベッサー錠30／ヘルベッサー錠60",
+   "company": "製造販売元／田辺ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2171006F1224_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171006F1224_1_14/",
+   "fetched_at": "2026-09-01 17:03:02",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400315_2171006F1224_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400315_2171006F1224_1_14",
+   "meta": {
+    "packins_no": "2171006F1224_1_14",
+    "company_id": "400315",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ヘルベッサー錠30",
+     "ヘルベッサー錠60"
+    ],
+    "generic_name": "ジルチアゼム塩酸塩錠",
+    "therapeutic_class": "Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ヘルベッサーRカプセル100mg／ヘルベッサ...",
+   "company": "製造販売元／田辺ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2171006N1105_1_15",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171006N1105_1_15/",
+   "fetched_at": "2026-09-01 17:03:05",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400315_2171006N1105_1_15",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400315_2171006N1105_1_15",
+   "meta": {
+    "packins_no": "2171006N1105_1_15",
+    "company_id": "400315",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ヘルベッサーRカプセル100mg",
+     "ヘルベッサーRカプセル200mg"
+    ],
+    "generic_name": "ジルチアゼム塩酸塩徐放カプセル",
+    "therapeutic_class": "持続性Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ヘルベッサー注射用250",
+   "company": "製造販売元／田辺ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2171405D3020_1_17",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171405D3020_1_17/",
+   "fetched_at": "2026-09-01 17:03:07",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400315_2171405D3020_1_17",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400315_2171405D3020_1_17",
+   "meta": {
+    "packins_no": "2171405D3020_1_17",
+    "company_id": "400315",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ヘルベッサー注射用250"
+    ],
+    "generic_name": "ジルチアゼム塩酸塩製剤",
+    "therapeutic_class": "Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ヘルベッサー注射用10／ヘルベッサー注射...",
+   "company": "製造販売元／田辺ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2171405D4050_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171405D4050_1_09/",
+   "fetched_at": "2026-09-01 17:03:10",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400315_2171405D4050_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400315_2171405D4050_1_09",
+   "meta": {
+    "packins_no": "2171405D4050_1_09",
+    "company_id": "400315",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ヘルベッサー注射用10",
+     "ヘルベッサー注射用50"
+    ],
+    "generic_name": "ジルチアゼム塩酸塩製剤",
+    "therapeutic_class": "Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ビソプロロールフマル酸塩錠0.625mg「テバ...",
+   "company": "製造販売元／T'sファーマ株式会社 / 販売／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2123016F1166_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2123016F1166_1_08/",
+   "fetched_at": "2026-09-01 17:03:13",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400813_2123016F1166_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400813_2123016F1166_1_08",
+   "meta": {
+    "packins_no": "2123016F1166_1_08",
+    "company_id": "400813",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ビソプロロールフマル酸塩錠0.625mg「テバ」",
+     "ビソプロロールフマル酸塩錠2.5mg「テバ」",
+     "ビソプロロールフマル酸塩錠5mg「テバ」"
+    ],
+    "generic_name": "ビソプロロールフマル酸塩錠",
+    "therapeutic_class": "選択的β1アンタゴニスト"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）",
+      "(2)"
+     ],
+     "text": "オザニモド塩酸塩等"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤の投与開始時に併用すると重度の徐脈や心ブロックが認められることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ビソプロロールフマル酸塩錠0.625mg「DSEP」...",
+   "company": "製造販売元／第一三共エスファ株式会社 / 販売提携／第一三共株式会社",
+   "reason": "更新",
+   "packins_no": "2123016F1204_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2123016F1204_1_05/",
+   "fetched_at": "2026-09-01 17:03:18",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/430773_2123016F1204_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/430773_2123016F1204_1_05",
+   "meta": {
+    "packins_no": "2123016F1204_1_05",
+    "company_id": "430773",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-04",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ビソプロロールフマル酸塩錠0.625mg「DSEP」",
+     "ビソプロロールフマル酸塩錠2.5mg「DSEP」",
+     "ビソプロロールフマル酸塩錠5mg「DSEP」"
+    ],
+    "generic_name": "ビソプロロールフマル酸塩錠",
+    "therapeutic_class": "選択的β1アンタゴニスト"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    },
+    {
+     "path": [],
+     "text": "(2RS)-1-(Propan-2-ylamino)-3-(4-{[2-(propan-2-yloxy)ethoxy]methyl}phenoxy)propan-2-ol hemifumarate"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "スピロノラクトン錠25mg「CH」",
+   "company": "製造販売元／長生堂製薬株式会社 / 販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "2133001F1620_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2133001F1620_1_09/",
+   "fetched_at": "2026-09-01 17:03:21",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/450064_2133001F1620_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/450064_2133001F1620_1_09",
+   "meta": {
+    "packins_no": "2133001F1620_1_09",
+    "company_id": "450064",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-03",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "スピロノラクトン錠25mg「CH」"
+    ],
+    "generic_name": "スピロノラクトン",
+    "therapeutic_class": "抗アルドステロン性利尿・降圧剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ビソプロロールフマル酸塩錠0.625mg「トー...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "2123016F1123_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2123016F1123_1_11/",
+   "fetched_at": "2026-09-01 17:03:24",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_2123016F1123_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_2123016F1123_1_11",
+   "meta": {
+    "packins_no": "2123016F1123_1_11",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-02",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ビソプロロールフマル酸塩錠0.625mg「トーワ」",
+     "ビソプロロールフマル酸塩錠2.5mg「トーワ」",
+     "ビソプロロールフマル酸塩錠5mg「トーワ」"
+    ],
+    "generic_name": "ビソプロロールフマル酸塩錠",
+    "therapeutic_class": "選択的β1アンタゴニスト"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）",
+      "(2)"
+     ],
+     "text": "オザニモド塩酸塩等"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤の投与開始時に併用すると重度の徐脈や心ブロックが認められることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ジルチアゼム塩酸塩錠30mg「トーワ」／ジ...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "2171006F1364_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171006F1364_1_09/",
+   "fetched_at": "2026-09-01 17:03:26",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_2171006F1364_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_2171006F1364_1_09",
+   "meta": {
+    "packins_no": "2171006F1364_1_09",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-05",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ジルチアゼム塩酸塩錠30mg「トーワ」",
+     "ジルチアゼム塩酸塩錠60mg「トーワ」"
+    ],
+    "generic_name": "ジルチアゼム塩酸塩錠",
+    "therapeutic_class": "Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤の投与開始時に併用すると重度の徐脈や心ブロックが認められることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "エルデカルシトール錠0.5μg「トーワ」／...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "新規",
+   "packins_no": "31120A2F1037_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/31120A2F1037_1_01/",
+   "fetched_at": "2026-09-01 17:03:29",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_31120A2F1037_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_31120A2F1037_1_01",
+   "meta": {
+    "packins_no": "31120A2F1037_1_01",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "エルデカルシトール錠0.5μg「トーワ」",
+     "エルデカルシトール錠0.75μg「トーワ」"
+    ],
+    "generic_name": "エルデカルシトール錠",
+    "therapeutic_class": "骨粗鬆症治療剤（活性型ビタミンD3製剤）"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ビソプロロールフマル酸塩錠0.625mg「日新...",
+   "company": "製造販売元／日新製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2123016F1158_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2123016F1158_1_07/",
+   "fetched_at": "2026-09-01 17:03:32",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530113_2123016F1158_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530113_2123016F1158_1_07",
+   "meta": {
+    "packins_no": "2123016F1158_1_07",
+    "company_id": "530113",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-04",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ビソプロロールフマル酸塩錠0.625mg「日新」",
+     "ビソプロロールフマル酸塩錠2.5mg「日新」",
+     "ビソプロロールフマル酸塩錠5mg「日新」"
+    ],
+    "generic_name": "ビソプロロールフマル酸塩",
+    "therapeutic_class": "選択的β1アンタゴニスト"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）",
+      "(2)"
+     ],
+     "text": "オザニモド塩酸塩等"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤の投与開始時に併用すると重度の徐脈や心ブロックが認められることがある。"
+    },
+    {
+     "path": [
+      "２２.包装",
+      "〈ビソプロロールフマル酸塩錠5mg「日新」〉"
+     ],
+     "text": "〈ビソプロロールフマル酸塩錠5mg「日新」〉"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "PA・ヨード点眼・洗眼液",
+   "company": "製造販売元／ロートニッテン株式会社",
+   "reason": "更新",
+   "packins_no": "1319715Q1031_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319715Q1031_1_08/",
+   "fetched_at": "2026-09-01 17:03:35",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530304_1319715Q1031_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530304_1319715Q1031_1_08",
+   "meta": {
+    "packins_no": "1319715Q1031_1_08",
+    "company_id": "530304",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-03",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "PA・ヨード点眼・洗眼液"
+    ],
+    "generic_name": "ヨウ素・ポリビニルアルコール点眼・洗眼液",
+    "therapeutic_class": "洗眼殺菌剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２２.包装"
+     ],
+     "text": "ガラス容器　20mL×5本"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ビソプロロールフマル酸塩錠0.625mg「JG」...",
+   "company": "製造販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "2123016F1174_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2123016F1174_1_07/",
+   "fetched_at": "2026-09-01 17:03:37",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580591_2123016F1174_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580591_2123016F1174_1_07",
+   "meta": {
+    "packins_no": "2123016F1174_1_07",
+    "company_id": "580591",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-09",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ビソプロロールフマル酸塩錠0.625mg「JG」",
+     "ビソプロロールフマル酸塩錠2.5mg「JG」",
+     "ビソプロロールフマル酸塩錠5mg「JG」"
+    ],
+    "generic_name": "ビソプロロールフマル酸塩錠",
+    "therapeutic_class": "選択的β1アンタゴニスト"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "(2RS)-1-(Propan-2-ylamino)-3-(4-{[2-(propan-2-yloxy)ethoxy]methyl}phenoxy)propan-2-ol hemifumarate"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ハルロピテープ8mg／ハルロピテープ16mg／...",
+   "company": "製造販売元／久光製薬株式会社 / 発売元／協和キリン株式会社",
+   "reason": "更新",
+   "packins_no": "1169701S1020_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1169701S1020_1_05/",
+   "fetched_at": "2026-09-01 17:03:40",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/650034_1169701S1020_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/650034_1169701S1020_1_05",
+   "meta": {
+    "packins_no": "1169701S1020_1_05",
+    "company_id": "650034",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2022-04",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ハルロピテープ8mg",
+     "ハルロピテープ16mg",
+     "ハルロピテープ24mg",
+     "ハルロピテープ32mg",
+     "ハルロピテープ40mg"
+    ],
+    "generic_name": "ロピニロール塩酸塩経皮吸収型製剤",
+    "therapeutic_class": "経皮吸収型ドパミン作動性パーキンソン病治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.４ 生殖能を有する者"
+     ],
+     "text": "本剤の投与に際し、妊娠する可能性のある女性には以下について説明すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ナルティークOD錠75mg",
+   "company": "製造販売元／ファイザー株式会社 / 提携／エーザイ株式会社",
+   "reason": "更新",
+   "packins_no": "1190035F1027_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190035F1027_1_02/",
+   "fetched_at": "2026-09-01 17:03:42",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_1190035F1027_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_1190035F1027_1_02",
+   "meta": {
+    "packins_no": "1190035F1027_1_02",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2025-12",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ナルティークOD錠75mg"
+    ],
+    "generic_name": "リメゲパント硫酸塩水和物",
+    "therapeutic_class": "経口CGRP受容体拮抗薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "過敏症（頻度不明）"
+     ],
+     "text": "過敏症（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ベルスピティ錠2mg",
+   "company": "製造販売元／ファイザー株式会社",
+   "reason": "更新",
+   "packins_no": "2399020F1021_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399020F1021_1_02/",
+   "fetched_at": "2026-09-01 17:03:45",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_2399020F1021_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_2399020F1021_1_02",
+   "meta": {
+    "packins_no": "2399020F1021_1_02",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2025-06",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ベルスピティ錠2mg"
+    ],
+    "generic_name": "エトラシモドL-アルギニン",
+    "therapeutic_class": "スフィンゴシン 1-リン酸受容体（S1P1,4,5）調節薬"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ベナンバックス注用300mg",
+   "company": "製造販売元／株式会社Medical Parkland",
+   "reason": "更新",
+   "packins_no": "6419400D1037_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6419400D1037_2_02/",
+   "fetched_at": "2026-09-01 17:03:51",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/785117_6419400D1037_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/785117_6419400D1037_2_02",
+   "meta": {
+    "packins_no": "6419400D1037_2_02",
+    "company_id": "785117",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ベナンバックス注用300mg"
+    ],
+    "generic_name": "ペンタミジンイセチオン酸塩",
+    "therapeutic_class": "カリニ肺炎治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "リアルダ錠1200mg／リアルダ錠600mg",
+   "company": "製造販売元／持田製薬株式会社 / 提携／Nogra Pharma Ltd.",
+   "reason": "更新",
+   "packins_no": "2399009F4024_1_15",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399009F4024_1_15/",
+   "fetched_at": "2026-09-01 17:03:57",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/790005_2399009F4024_1_15",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/790005_2399009F4024_1_15",
+   "meta": {
+    "packins_no": "2399009F4024_1_15",
+    "company_id": "790005",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第9版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第8版"
+     }
+    },
+    "brands": [
+     "リアルダ錠1200mg",
+     "リアルダ錠600mg"
+    ],
+    "generic_name": "メサラジン",
+    "therapeutic_class": "潰瘍性大腸炎治療剤"
+   },
+   "revised": [],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "ベハイド錠4mg",
+   "company": "製造販売元／杏林製薬株式会社",
+   "reason": "経過措置期間を満了し、最終出荷ロットの使用期限が経過するため",
+   "yj_hint": "2132006F1048_2_03"
+  },
+  {
+   "brand": "コデインリン酸塩散1%「第一三共」",
+   "company": "製造販売元／第一三共株式会社",
+   "reason": "経過措置期間を満了し、最終ロットの使用期限経過後、掲載を終了する。",
+   "yj_hint": "2242001B2289_1_08"
+  },
+  {
+   "brand": "プレドニゾロンクリーム0.5%「テイコク」",
+   "company": "製造販売元／帝國製薬株式会社 / 販売元／日医工株式会社",
+   "reason": "最終ロット使用期限満了のため",
+   "yj_hint": "2646712N1080_1_03"
+  },
+  {
+   "brand": "ジアスターゼ「ニッコー」",
+   "company": "製造販売元／日興製薬株式会社",
+   "reason": "販売中止のため",
+   "yj_hint": "2331003X1230_1_04"
+  },
+  {
+   "brand": "ブドウ糖「ニッコー」",
+   "company": "製造販売元／日興製薬株式会社",
+   "reason": "販売中止のため",
+   "yj_hint": "3231001X1167_1_04"
+  },
+  {
+   "brand": "ブチルスコポラミン臭化物注20mgシリンジ「NP」",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "経過措置期間を満了し、最終ロットの使用期限を経過したため",
+   "yj_hint": "1242401G1032_3_05"
+  },
+  {
+   "brand": "プロピベリン塩酸塩錠10mg「ニプロ」／プロピベリン塩酸塩錠20mg「ニプロ」",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "経過措置期間を満了し、最終ロットの使用期限を経過したため",
+   "yj_hint": "2590007F1366_2_01"
+  },
+  {
+   "brand": "チアミン塩化物塩酸塩注10mg「日新」",
+   "company": "製造販売元／日新製薬株式会社",
+   "reason": "販売中止（最終出荷ロットの使用期限満了）のため",
+   "yj_hint": "3121400A2256_1_02"
+  },
+  {
+   "brand": "タクロリムスカプセル5mg「サンド」",
+   "company": "製造販売／ニプロファーマ株式会社 / 販売／サンド株式会社",
+   "reason": "販売中止、最終製造ロットの使用期限満了のため",
+   "yj_hint": "3999014M3050_2_12"
+  },
+  {
+   "brand": "エパルレスタット錠50mg「YD」",
+   "company": "製造販売元／陽進堂ホールディングス株式会社 / 販売元／共創未来ファーマ株式会社",
+   "reason": "共創未来ファーマ株式会社において販売中止となり、最終出荷ロットの使用期限が満了したため。",
+   "yj_hint": "3999013F1096_5_04"
+  }
+ ],
+ "created_at": "2026-09-01 16:59:18",
+ "updated_at": "2026-09-01 17:04:02",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

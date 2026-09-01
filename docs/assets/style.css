@@ -13,6 +13,9 @@ h1{font-size:1.5rem;margin:.2rem 0 .6rem}h2{font-size:1.2rem;margin-top:2rem}h3{
 .badge{display:inline-block;padding:.05rem .5rem;border-radius:.6rem;font-size:.8rem;color:#fff;background:#888;vertical-align:middle}
 .badge.upd{background:#2a62b8}.badge.new{background:#1f8f4e}.badge.del{background:#777}.badge.oth{background:#a06a00}.badge.imp{background:var(--imp)}
 .stats{margin:.3rem 0 1rem}
+ul.uplist{list-style:none;padding:0;margin:.4rem 0}ul.uplist li{margin:.35rem 0;padding-left:.2rem;line-height:1.5}
+ul.uplist .badge{margin-right:.35rem}
+details.more>summary{font-size:.9rem;color:var(--mut);font-weight:600;margin:.4rem 0}
 .entry{border:1px solid var(--line);border-radius:.6rem;padding:.8rem 1rem;margin:1rem 0;background:var(--card)}
 .entry.imp{border-left:5px solid var(--imp)}
 .impmark{color:var(--imp);font-size:.85rem;font-weight:600}
