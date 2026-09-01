@@ -29,6 +29,7 @@ import if_index  # noqa: E402  (PMDA検索フォームの項目一覧を「PMDA�
 
 JST = timezone(timedelta(hours=9))
 WEEK_URL = "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+TENPULIST_URL = "https://www.info.pmda.go.jp/psearch/tenpulist.jsp"  # 添付文書更新の元データサイト(PMDA)
 HOME_TITLE = "ホーム"                 # トップ(入口)ページの名前。site/home.json の title で上書き可
 SITE_TITLE = "薬剤師ツールボックス"  # 薬剤師ツールボックス(添付文書ウォッチ+ツール)の名前
 WATCH_TITLE = "添付文書ウォッチ"
@@ -356,6 +357,9 @@ h1{font-size:1.5rem;margin:.2rem 0 .6rem}h2{font-size:1.2rem;margin-top:2rem}h3{
 .badge{display:inline-block;padding:.05rem .5rem;border-radius:.6rem;font-size:.8rem;color:#fff;background:#888;vertical-align:middle}
 .badge.upd{background:#2a62b8}.badge.new{background:#1f8f4e}.badge.del{background:#777}.badge.oth{background:#a06a00}.badge.imp{background:var(--imp)}
 .stats{margin:.3rem 0 1rem}
+ul.uplist{list-style:none;padding:0;margin:.4rem 0}ul.uplist li{margin:.35rem 0;padding-left:.2rem;line-height:1.5}
+ul.uplist .badge{margin-right:.35rem}
+details.more>summary{font-size:.9rem;color:var(--mut);font-weight:600;margin:.4rem 0}
 .entry{border:1px solid var(--line);border-radius:.6rem;padding:.8rem 1rem;margin:1rem 0;background:var(--card)}
 .entry.imp{border-left:5px solid var(--imp)}
 .impmark{color:var(--imp);font-size:.85rem;font-weight:600}
@@ -783,21 +787,45 @@ def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = No
         ups = d.get("updates") or []
         n_upd = sum(1 for u in ups if u.get("reason") == "更新")
         n_new = sum(1 for u in ups if u.get("reason") == "新規")
-        imp_items = []
+        dels = d.get("deletes") or []
+        # この日の全件(更新・新規・その他)。重要項目を先頭に並べる
+        items = []
         for u in ups:
             meta = u.get("meta") or {}
             _, imp = render_entry(u)
-            if imp:
-                imp_items.append((u.get("packins_no") or "", " / ".join(meta.get("brands") or []) or u.get("brand", "")))
+            items.append({"key": u.get("packins_no") or "",
+                          "title": " / ".join(meta.get("brands") or []) or u.get("brand", ""),
+                          "reason": u.get("reason") or "",
+                          "imp": imp})
+        items.sort(key=lambda x: not x["imp"])  # 重要項目が先(それ以外は元の順)
+        n_imp = sum(1 for x in items if x["imp"])
         out.append(f'<p>最新の記録日: <a href="watch/days/{d["date"]}.html"><b>{fmt_date(d["date"])}</b></a> ｜ '
                    f'<span class="badge upd">更新 {n_upd}</span> <span class="badge new">新規 {n_new}</span> '
-                   f'<span class="badge del">削除 {len(d.get("deletes") or [])}</span>'
-                   + (f' <span class="badge imp">⚠ 重要項目 {len(imp_items)}</span>' if imp_items else "") + "</p>")
-        if imp_items:
-            out.append("<ul>" + "".join(f'<li><a href="watch/days/{d["date"]}.html#{esc(k)}">{esc(t)}</a></li>' for k, t in imp_items[:15]) + "</ul>")
-        out.append('<p><a href="watch/index.html">最新の詳細を見る →</a> ｜ <a href="watch/archive.html">バックナンバー</a> ｜ <a href="watch/search.html">検索</a></p>')
+                   f'<span class="badge del">削除 {len(dels)}</span>'
+                   + (f' <span class="badge imp">⚠ 重要項目 {n_imp}</span>' if n_imp else "") + "</p>")
+
+        def _li(x: dict) -> str:
+            cls = {"更新": "upd", "新規": "new"}.get(x["reason"], "oth")
+            return (f'<li><span class="badge {cls}">{esc(x["reason"])}</span> '
+                    f'<a href="watch/days/{d["date"]}.html#{esc(x["key"])}">{esc(x["title"])}</a>'
+                    + (' <span class="impmark">⚠ 重要項目</span>' if x["imp"] else "") + "</li>")
+
+        if items:
+            out.append(f'<details class="more"><summary>変更リスト {len(items)} 件を表示 ▾</summary>'
+                       '<ul class="uplist">' + "".join(_li(x) for x in items) + "</ul></details>")
+        if dels:
+            out.append(f'<details class="more"><summary>削除 {len(dels)} 件を表示 ▾</summary>'
+                       '<ul class="uplist">' + "".join(
+                           f'<li><span class="badge del">削除</span> {esc(x.get("brand") or "")}'
+                           f' <span class="small">{esc(x.get("reason") or "")}</span></li>' for x in dels)
+                       + "</ul></details>")
+        out.append('<p><a href="watch/index.html">最新の詳細を見る →</a> ｜ <a href="watch/archive.html">バックナンバー</a> ｜ <a href="watch/search.html">検索</a> ｜ '
+                   f'<a href="{TENPULIST_URL}" target="_blank" rel="noopener">元データ(PMDA 添付文書一覧) ↗</a></p>')
         out.append('<h3 class="small">最近の日付</h3><ul class="daylist">' + "".join(
-            f'<li><a href="watch/days/{x["date"]}.html">{fmt_date(x["date"])}</a> <span class="small">({len(x.get("updates") or [])}件)</span></li>' for x in days[:7]) + "</ul>")
+            f'<li><a href="watch/days/{x["date"]}.html">{fmt_date(x["date"])}</a> <span class="small">'
+            f'({len(x.get("updates") or [])}件'
+            + (f"+削除{len(x.get('deletes') or [])}" if (x.get("deletes") or []) else "")
+            + ')</span></li>' for x in days[:7]) + "</ul>")
     else:
         out.append("<p>まだデータがありません(初回の自動実行をお待ちください)。</p>")
     out.append(f"<h2>📕 {TENPU_TITLE}</h2>")
