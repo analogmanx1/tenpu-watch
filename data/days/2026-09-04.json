@@ -1,0 +1,116 @@
+{
+ "date": "2026-09-04",
+ "updates": [
+  {
+   "brand": "ラプシド錠25mg",
+   "company": "製造販売（輸入）／ノバルティスファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "44900C8F1020_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/44900C8F1020_1_02/",
+   "fetched_at": "2026-09-04 19:07:53",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300242_44900C8F1020_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300242_44900C8F1020_1_02",
+   "meta": {
+    "packins_no": "44900C8F1020_1_02",
+    "company_id": "300242",
+    "revision": {
+     "current": {
+      "ym": "2026-06",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ラプシド錠25mg"
+    ],
+    "generic_name": "レミブルチニブ錠",
+    "therapeutic_class": "慢性蕁麻疹治療剤\n（ブルトン型チロシンキナーゼ阻害剤）"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ジルチアゼム塩酸塩錠30mg「ツルハラ」／...",
+   "company": "製造販売元／鶴原製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2171006F1380_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171006F1380_1_03/",
+   "fetched_at": "2026-09-04 19:07:55",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/460028_2171006F1380_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/460028_2171006F1380_1_03",
+   "meta": {
+    "packins_no": "2171006F1380_1_03",
+    "company_id": "460028",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-03",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ジルチアゼム塩酸塩錠30mg「ツルハラ」",
+     "ジルチアゼム塩酸塩錠60mg「ツルハラ」"
+    ],
+    "generic_name": "ジルチアゼム塩酸塩",
+    "therapeutic_class": "Ca拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "スフィンゴシン1-リン酸受容体調節剤"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ダパグリフロジン錠5mg「ニプロ」／ダパ...",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "更新",
+   "packins_no": "3969019F1086_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3969019F1086_1_02/",
+   "fetched_at": "2026-09-04 19:07:57",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530100_3969019F1086_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530100_3969019F1086_1_02",
+   "meta": {
+    "packins_no": "3969019F1086_1_02",
+    "company_id": "530100",
+    "revision": {
+     "current": {
+      "ym": "2025-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ダパグリフロジン錠5mg「ニプロ」",
+     "ダパグリフロジン錠10mg「ニプロ」"
+    ],
+    "generic_name": "ダパグリフロジンプロピレングリコール錠",
+    "therapeutic_class": "選択的SGLT2阻害剤\n2型糖尿病治療剤"
+   },
+   "revised": [],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "コミナティ筋注シリンジ12歳以上用（旧製品：2025/2026シーズン用）",
+   "company": "製造販売元／ファイザー株式会社 / 技術提携／BIONTECH",
+   "reason": "ー",
+   "yj_hint": "631341DG1028_3_01"
+  }
+ ],
+ "created_at": "2026-09-04 19:07:53",
+ "updated_at": "2026-09-04 19:08:00",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
