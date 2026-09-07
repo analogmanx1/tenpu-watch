@@ -15,3 +15,6 @@ desktop.ini
 data/.shikibetsu.lock
 data/*.tmp.json
 data/*.bad.json
+
+# .git の退避フォルダ(2026-09-08 Googleドライブ同期詰まりからの復旧で作成。落ち着いたら手で削除)
+.git.broken*/
