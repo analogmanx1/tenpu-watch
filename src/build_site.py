@@ -382,6 +382,11 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .btn{font-size:.9rem;padding:.45rem .8rem;border:1px solid var(--acc);border-radius:.4rem;background:var(--bg);color:var(--acc);cursor:pointer;white-space:nowrap}.btn:hover{background:var(--card)}
 .ifa{font-weight:600;font-size:1.02rem;text-decoration:none}.ifa:hover{text-decoration:underline}.ifmulti{margin-top:.15rem}
 .codes{font-size:.95rem}.codes b{background:var(--ins);color:var(--insfg);padding:0 .15rem;border-radius:.2rem}
+.thumbs{display:flex;flex-wrap:wrap;gap:.3rem;margin:.25rem 0 .2rem;align-items:flex-start}
+.thumb{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:.3rem;padding:2px;line-height:0;cursor:zoom-in}.thumb:hover{border-color:var(--acc)}
+.thumb.ic{border:2px solid var(--imp)}
+.thumb img{height:48px;width:auto;max-width:140px;object-fit:contain;display:block;image-rendering:auto}
+.thumb.big{cursor:zoom-out;max-width:100%}.thumb.big img{height:160px;max-width:min(480px,100%)}
 .histhead{margin:.9rem 0 .1rem;font-weight:600;font-size:.95rem}
 .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.3rem 0}
 .chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--line);border-radius:1rem;padding:.15rem .7rem;background:var(--card);cursor:pointer;font-size:.9rem}
@@ -652,16 +657,21 @@ def shikibetsu_items(tenpu_idx: dict | None, shiki: dict | None) -> list[dict]:
     for it in (tenpu_idx or {}).get("items") or []:
         for fx in it.get("f") or []:
             rec = docs_map.get(fx.get("u"))
-            if not rec or not rec.get("codes"):
+            if not rec or not (rec.get("codes") or rec.get("ic")):
                 continue
-            codes = _dedupe_codes(rec["codes"])
-            if not codes:
+            codes = _dedupe_codes(rec.get("codes") or [])
+            # 画像: 外形(表・裏)と、画像でしか載っていない識別コード(ic=1 の印つき)
+            imgs = [dict(s) for s in rec.get("sh") or []]
+            imgs += [{"g": [d["g"]], "ic": 1, **({"b": d["b"]} if d.get("b") else {})} for d in rec.get("ic") or []]
+            if not codes and not any(m.get("ic") for m in imgs):
                 continue
             # 同じ販売名が複数行あるとき(旧版の文書が残っている等)は、更新日が新しいほうだけ残す
             prev = seen.get(it.get("n"))
             row = {"n": it.get("n"), "g": it.get("g"), "c": it.get("c"),
                    "d": it.get("d"), "e": it.get("e"), "u": fx["u"],
                    "t": fx.get("t") or "", "k": codes}
+            if imgs:
+                row["m"] = imgs
             if prev is None:
                 seen[it.get("n")] = row
                 rows.append(row)
@@ -673,31 +683,39 @@ def shikibetsu_items(tenpu_idx: dict | None, shiki: dict | None) -> list[dict]:
     return rows
 
 
-def shiki_summary(shiki: dict | None, n_rows: int = 0) -> str:
+def shiki_summary(shiki: dict | None, n_rows: int = 0, n_img_rows: int = 0) -> str:
     if not shiki or not shiki.get("docs"):
         return "一覧データ未作成(自宅PCで python src/shikibetsu_index.py を実行すると作られます)"
     m = shiki.get("meta") or {}
-    s = f"収録: 錠剤・カプセルなど {n_rows:,}件({str(m.get('updated_at') or '')[:10]} 時点)"
+    s = f"収録: 錠剤・カプセルなど {n_rows:,}件({str(m.get('updated_at') or '')[:10]} 時点"
+    if n_img_rows:
+        s += f"・うち外形図つき {n_img_rows:,}件"
+    s += ")"
     if m.get("pending"):
-        s += f"。残り{m['pending']:,}文書を順次取得中"
+        s += f"。新しい添付文書 {m['pending']:,}件を順次取得中"
+    if m.get("migrating"):
+        s += f"。外形図を順次追加中(残り{m['migrating']:,}文書)"
     return s
 
 
-def render_shikibetsu_page(shiki: dict | None, n_rows: int) -> str:
+def render_shikibetsu_page(shiki: dict | None, n_rows: int, n_img_rows: int = 0) -> str:
     """錠剤・カプセルの刻印(識別コード)を打つ → 候補が即出る → クリックで添付文書PDF"""
-    note = shiki_summary(shiki, n_rows)
+    note = shiki_summary(shiki, n_rows, n_img_rows)
     return f"""
 <h1>🔎 {SHIKI_TITLE}</h1>
 <p class="small">錠剤・カプセルに印字されている記号(識別コード。例: <code>DK 505</code>)から薬を探せます。
 スペース・ハイフン・全角半角・大文字小文字の違いは気にしなくてOK(<code>dk505</code> でもヒット)。
-薬剤名や会社名を足して絞り込みもできます(例: <code>307 サワイ</code>)。<b>候補をクリックすると添付文書(PDF)が新しいタブで開きます</b>。</p>
+薬剤名や会社名を足して絞り込みもできます(例: <code>307 サワイ</code>)。候補には添付文書の<b>外形図(表・裏)</b>も出ます(図をクリックすると大きく表示)。
+<b>薬剤名をクリックすると添付文書(PDF)が新しいタブで開きます</b>。</p>
 <div class="ifbar">
   <input id="q" type="search" placeholder="例: DK505 / アジルOD / タケキャブ OD10" autofocus autocomplete="off">
 </div>
 <p class="small" id="cnt"></p>
 <div id="hist"></div>
 <div id="res"></div>
-<p class="small" id="ifmeta">{esc(note)}。識別コードは各添付文書(電子添文)の「製剤の性状」欄から自動で抜き出したものです。
+<p class="small" id="ifmeta">{esc(note)}。識別コードと外形図は各添付文書(電子添文)の「製剤の性状」欄から自動で抜き出したものです。
+外形図は添付文書の図をそのまま表示しているので、実物の色・大きさとは違って見えることがあります。
+識別コードが図でしか載っていない製品は「コードは画像のみ」と表示し(コードの図は赤枠)、薬剤名で検索できます。
 刻印の書かれていない製品・欄の書き方が特殊な製品は出てこないことがあります。<b>最終確認は必ず添付文書本文と現物で行ってください。</b></p>
 <script src="../assets/hist.js"></script>
 <script>
@@ -705,7 +723,9 @@ def render_shikibetsu_page(shiki: dict | None, n_rows: int) -> str:
   const PDFB={json.dumps(TENPU_PDF_BASE)}, PACKB={json.dumps(PACK_HTML_BASE)}, DB={json.dumps(IF_DETAIL_BASE)};
   const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt');
   const hist=window.searchHistory?window.searchHistory({{key:'tenpu-watch:shiki',box:document.getElementById('hist'),rerun:w=>{{q.value=w;run();}}}}):null;
-  res.addEventListener('click',ev=>{{ const a=ev.target.closest('a'); if(a&&hist&&a.dataset.hl){{ hist.addOpen(a.dataset.hl,a.href); const w=q.value.normalize('NFKC').trim(); if(w)hist.addQuery(w); }} }});
+  res.addEventListener('click',ev=>{{
+    const im=ev.target.closest('.thumb'); if(im){{ im.classList.toggle('big'); return; }}   // 図はクリックで大きく/元に戻す
+    const a=ev.target.closest('a'); if(a&&hist&&a.dataset.hl){{ hist.addOpen(a.dataset.hl,a.href); const w=q.value.normalize('NFKC').trim(); if(w)hist.addQuery(w); }} }});
   let data;
   try{{ data=await (await fetch('index.json')).json(); }}catch(e){{ cnt.textContent='一覧データを読み込めませんでした'; return; }}
   const items=data.items||[], cats=(data.meta||{{}}).categories||{{}};
@@ -728,15 +748,20 @@ def render_shikibetsu_page(shiki: dict | None, n_rows: int) -> str:
     const total=hits.length; hits=hits.slice(0,200);
     cnt.textContent=`${{total.toLocaleString()}}件`+(total>200?'(先頭200件を表示。もう少し絞ってください)':'');
     res.innerHTML=hits.map(e=>{{
-      const codes=(e.k||[]).map(x=>{{
+      const codes=(e.k||[]).length?(e.k||[]).map(x=>{{
         const t=(x.l?x.l+' ':'')+(x.b?'〔'+x.b+'〕 ':'')+x.c;
         return (c0&&normCode(x.c).includes(c0))?'<b>'+esc(t)+'</b>':esc(t);
-      }}).join(' ／ ');
+      }}).join(' ／ '):'<span class="small">コードは画像のみ(下の赤枠の図を確認)</span>';
+      // 外形図(表・裏)と識別コード画像(赤枠)。同じ添付文書の図をそのまま出す(クリックで大きく表示)
+      const thumbs=(e.m||[]).map(m=>{{
+        const lb=(m.ic?'識別コード(図)':'外形')+(m.b?' '+m.b:'');
+        return (m.g||[]).map(g=>`<span class="thumb${{m.ic?' ic':''}}" title="${{esc(lb)}}(クリックで大きく)"><img src="img/${{esc(g)}}" alt="${{esc(lb)}}" loading="lazy"></span>`).join('');
+      }}).join('');
       const date=e.t?` <span class="small">(${{esc(e.t)}} 更新)</span>`:'';
       const cat=cats[e.e]?` ｜ ${{esc(cats[e.e])}}`:'';
       const detail=e.d?` <a class="small" href="${{esc(DB+e.d)}}" target="_blank" rel="noopener">PMDA詳細 ↗</a>`:'';
       const htmlLink=` <a class="small" href="${{esc(packHtml(e.u))}}" target="_blank" rel="noopener">HTML版 ↗</a>`;
-      return `<div class="hit"><a class="ifa" href="${{esc(PDFB+e.u)}}" data-hl="${{esc(e.n)}}" target="_blank" rel="noopener">💊 ${{esc(e.n)}}</a>${{date}}<br><span class="codes">刻印: ${{codes}}</span><br><span class="small">${{esc(e.g)}} ｜ ${{esc(e.c)}}${{cat}}</span>${{htmlLink}}${{detail}}</div>`;
+      return `<div class="hit"><a class="ifa" href="${{esc(PDFB+e.u)}}" data-hl="${{esc(e.n)}}" target="_blank" rel="noopener">💊 ${{esc(e.n)}}</a>${{date}}<br><span class="codes">刻印: ${{codes}}</span>${{thumbs?'<div class="thumbs">'+thumbs+'</div>':'<br>'}}<span class="small">${{esc(e.g)}} ｜ ${{esc(e.c)}}${{cat}}</span>${{htmlLink}}${{detail}}</div>`;
     }}).join('');
   }}
   q.addEventListener('input',run);
@@ -959,8 +984,9 @@ def build(root: Path) -> None:
                              "categories": ((tenpu_idx or {}).get("meta") or {}).get("categories") or {}},
                     "items": shiki_rows}, ensure_ascii=False, separators=(",", ":")),
         encoding="utf-8", newline="\n")
+    n_img_rows = sum(1 for r in shiki_rows if r.get("m"))
     (docs / "shikibetsu" / "index.html").write_text(
-        layout(SHIKI_TITLE, render_shikibetsu_page(shiki, len(shiki_rows)), "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
+        layout(SHIKI_TITLE, render_shikibetsu_page(shiki, len(shiki_rows), n_img_rows), "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
 
     (docs / "toolbox").mkdir(parents=True, exist_ok=True)
     (docs / "toolbox" / "index.html").write_text(

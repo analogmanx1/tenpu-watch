@@ -31,14 +31,17 @@
 <h1>🔎 識別コード検索</h1>
 <p class="small">錠剤・カプセルに印字されている記号(識別コード。例: <code>DK 505</code>)から薬を探せます。
 スペース・ハイフン・全角半角・大文字小文字の違いは気にしなくてOK(<code>dk505</code> でもヒット)。
-薬剤名や会社名を足して絞り込みもできます(例: <code>307 サワイ</code>)。<b>候補をクリックすると添付文書(PDF)が新しいタブで開きます</b>。</p>
+薬剤名や会社名を足して絞り込みもできます(例: <code>307 サワイ</code>)。候補には添付文書の<b>外形図(表・裏)</b>も出ます(図をクリックすると大きく表示)。
+<b>薬剤名をクリックすると添付文書(PDF)が新しいタブで開きます</b>。</p>
 <div class="ifbar">
   <input id="q" type="search" placeholder="例: DK505 / アジルOD / タケキャブ OD10" autofocus autocomplete="off">
 </div>
 <p class="small" id="cnt"></p>
 <div id="hist"></div>
 <div id="res"></div>
-<p class="small" id="ifmeta">収録: 錠剤・カプセルなど 4,001件(2026-09-07 時点)。識別コードは各添付文書(電子添文)の「製剤の性状」欄から自動で抜き出したものです。
+<p class="small" id="ifmeta">収録: 錠剤・カプセルなど 4,111件(2026-09-08 時点・うち外形図つき 3,394件)。識別コードと外形図は各添付文書(電子添文)の「製剤の性状」欄から自動で抜き出したものです。
+外形図は添付文書の図をそのまま表示しているので、実物の色・大きさとは違って見えることがあります。
+識別コードが図でしか載っていない製品は「コードは画像のみ」と表示し(コードの図は赤枠)、薬剤名で検索できます。
 刻印の書かれていない製品・欄の書き方が特殊な製品は出てこないことがあります。<b>最終確認は必ず添付文書本文と現物で行ってください。</b></p>
 <script src="../assets/hist.js"></script>
 <script>
@@ -46,7 +49,9 @@
   const PDFB="https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/", PACKB="https://www.info.pmda.go.jp/go/pack/", DB="https://www.pmda.go.jp/PmdaSearch/iyakuDetail/GeneralList/";
   const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt');
   const hist=window.searchHistory?window.searchHistory({key:'tenpu-watch:shiki',box:document.getElementById('hist'),rerun:w=>{q.value=w;run();}}):null;
-  res.addEventListener('click',ev=>{ const a=ev.target.closest('a'); if(a&&hist&&a.dataset.hl){ hist.addOpen(a.dataset.hl,a.href); const w=q.value.normalize('NFKC').trim(); if(w)hist.addQuery(w); } });
+  res.addEventListener('click',ev=>{
+    const im=ev.target.closest('.thumb'); if(im){ im.classList.toggle('big'); return; }   // 図はクリックで大きく/元に戻す
+    const a=ev.target.closest('a'); if(a&&hist&&a.dataset.hl){ hist.addOpen(a.dataset.hl,a.href); const w=q.value.normalize('NFKC').trim(); if(w)hist.addQuery(w); } });
   let data;
   try{ data=await (await fetch('index.json')).json(); }catch(e){ cnt.textContent='一覧データを読み込めませんでした'; return; }
   const items=data.items||[], cats=(data.meta||{}).categories||{};
@@ -69,15 +74,20 @@
     const total=hits.length; hits=hits.slice(0,200);
     cnt.textContent=`${total.toLocaleString()}件`+(total>200?'(先頭200件を表示。もう少し絞ってください)':'');
     res.innerHTML=hits.map(e=>{
-      const codes=(e.k||[]).map(x=>{
+      const codes=(e.k||[]).length?(e.k||[]).map(x=>{
         const t=(x.l?x.l+' ':'')+(x.b?'〔'+x.b+'〕 ':'')+x.c;
         return (c0&&normCode(x.c).includes(c0))?'<b>'+esc(t)+'</b>':esc(t);
-      }).join(' ／ ');
+      }).join(' ／ '):'<span class="small">コードは画像のみ(下の赤枠の図を確認)</span>';
+      // 外形図(表・裏)と識別コード画像(赤枠)。同じ添付文書の図をそのまま出す(クリックで大きく表示)
+      const thumbs=(e.m||[]).map(m=>{
+        const lb=(m.ic?'識別コード(図)':'外形')+(m.b?' '+m.b:'');
+        return (m.g||[]).map(g=>`<span class="thumb${m.ic?' ic':''}" title="${esc(lb)}(クリックで大きく)"><img src="img/${esc(g)}" alt="${esc(lb)}" loading="lazy"></span>`).join('');
+      }).join('');
       const date=e.t?` <span class="small">(${esc(e.t)} 更新)</span>`:'';
       const cat=cats[e.e]?` ｜ ${esc(cats[e.e])}`:'';
       const detail=e.d?` <a class="small" href="${esc(DB+e.d)}" target="_blank" rel="noopener">PMDA詳細 ↗</a>`:'';
       const htmlLink=` <a class="small" href="${esc(packHtml(e.u))}" target="_blank" rel="noopener">HTML版 ↗</a>`;
-      return `<div class="hit"><a class="ifa" href="${esc(PDFB+e.u)}" data-hl="${esc(e.n)}" target="_blank" rel="noopener">💊 ${esc(e.n)}</a>${date}<br><span class="codes">刻印: ${codes}</span><br><span class="small">${esc(e.g)} ｜ ${esc(e.c)}${cat}</span>${htmlLink}${detail}</div>`;
+      return `<div class="hit"><a class="ifa" href="${esc(PDFB+e.u)}" data-hl="${esc(e.n)}" target="_blank" rel="noopener">💊 ${esc(e.n)}</a>${date}<br><span class="codes">刻印: ${codes}</span>${thumbs?'<div class="thumbs">'+thumbs+'</div>':'<br>'}<span class="small">${esc(e.g)} ｜ ${esc(e.c)}${cat}</span>${htmlLink}${detail}</div>`;
     }).join('');
   }
   q.addEventListener('input',run);

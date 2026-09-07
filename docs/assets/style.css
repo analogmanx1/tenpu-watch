@@ -38,6 +38,11 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .btn{font-size:.9rem;padding:.45rem .8rem;border:1px solid var(--acc);border-radius:.4rem;background:var(--bg);color:var(--acc);cursor:pointer;white-space:nowrap}.btn:hover{background:var(--card)}
 .ifa{font-weight:600;font-size:1.02rem;text-decoration:none}.ifa:hover{text-decoration:underline}.ifmulti{margin-top:.15rem}
 .codes{font-size:.95rem}.codes b{background:var(--ins);color:var(--insfg);padding:0 .15rem;border-radius:.2rem}
+.thumbs{display:flex;flex-wrap:wrap;gap:.3rem;margin:.25rem 0 .2rem;align-items:flex-start}
+.thumb{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:.3rem;padding:2px;line-height:0;cursor:zoom-in}.thumb:hover{border-color:var(--acc)}
+.thumb.ic{border:2px solid var(--imp)}
+.thumb img{height:48px;width:auto;max-width:140px;object-fit:contain;display:block;image-rendering:auto}
+.thumb.big{cursor:zoom-out;max-width:100%}.thumb.big img{height:160px;max-width:min(480px,100%)}
 .histhead{margin:.9rem 0 .1rem;font-weight:600;font-size:.95rem}
 .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.3rem 0}
 .chip{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--line);border-radius:1rem;padding:.15rem .7rem;background:var(--card);cursor:pointer;font-size:.9rem}
