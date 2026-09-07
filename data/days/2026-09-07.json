@@ -1,0 +1,520 @@
+{
+ "date": "2026-09-07",
+ "updates": [
+  {
+   "brand": "プレガバリンOD錠25mg「オーハラ」／プレ...",
+   "company": "製造販売元／大原薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "1190017F1118_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190017F1118_1_04/",
+   "fetched_at": "2026-09-07 18:55:39",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180095_1190017F1118_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180095_1190017F1118_1_04",
+   "meta": {
+    "packins_no": "1190017F1118_1_04",
+    "company_id": "180095",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-08",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "プレガバリンOD錠25mg「オーハラ」",
+     "プレガバリンOD錠75mg「オーハラ」",
+     "プレガバリンOD錠150mg「オーハラ」"
+    ],
+    "generic_name": "プレガバリン",
+    "therapeutic_class": "疼痛治療剤（神経障害性疼痛・線維筋痛症）"
+   },
+   "revised": [
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリン口腔内崩壊錠"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリン口腔内崩壊錠"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリン口腔内崩壊錠"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中　日局プレガバリン"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中　日局プレガバリン"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中　日局プレガバリン"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "本品は、白色の結晶性の粉末である。\n本品は、水にやや溶けにくく、エタノール（99.5）に溶けにくい。"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見",
+      "旋光度"
+     ],
+     "text": "〔α〕25D：+10～+12°（脱水物に換算したもの0.2g、水、20mL、100mm）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "プレガバリンOD錠25mg「オーハラ」／プレ...",
+   "company": "製造販売元／大原薬品工業株式会社 / 販売／株式会社エッセンシャルファーマ",
+   "reason": "更新",
+   "packins_no": "1190017F1118_2_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190017F1118_2_05/",
+   "fetched_at": "2026-09-07 18:55:41",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180095_1190017F1118_2_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180095_1190017F1118_2_05",
+   "meta": {
+    "packins_no": "1190017F1118_2_05",
+    "company_id": "180095",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-07",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "プレガバリンOD錠25mg「オーハラ」",
+     "プレガバリンOD錠75mg「オーハラ」",
+     "プレガバリンOD錠150mg「オーハラ」"
+    ],
+    "generic_name": "プレガバリン",
+    "therapeutic_class": "疼痛治療剤（神経障害性疼痛・線維筋痛症）"
+   },
+   "revised": [
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリン口腔内崩壊錠"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリン口腔内崩壊錠"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリン口腔内崩壊錠"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中　日局プレガバリン"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中　日局プレガバリン"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中　日局プレガバリン"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "本品は、白色の結晶性の粉末である。\n本品は、水にやや溶けにくく、エタノール（99.5）に溶けにくい。"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見",
+      "旋光度"
+     ],
+     "text": "〔α〕25D：+10～+12°（脱水物に換算したもの0.2g、水、20mL、100mm）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "エナラプリルマレイン酸塩錠2.5mg「オーハ...",
+   "company": "製造販売元／大原薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2144002F1261_1_12",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2144002F1261_1_12/",
+   "fetched_at": "2026-09-07 18:55:43",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180095_2144002F1261_1_12",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180095_2144002F1261_1_12",
+   "meta": {
+    "packins_no": "2144002F1261_1_12",
+    "company_id": "180095",
+    "revision": {
+     "current": {
+      "ym": "2023-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "エナラプリルマレイン酸塩錠2.5mg「オーハラ」",
+     "エナラプリルマレイン酸塩錠5mg「オーハラ」",
+     "エナラプリルマレイン酸塩錠10mg「オーハラ」"
+    ],
+    "generic_name": "エナラプリルマレイン酸塩",
+    "therapeutic_class": "持続性アンジオテンシン変換酵素阻害剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ブロナンセリン錠2mg「サワイ」／ブロナ...",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1179048B1050_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179048B1050_1_09/",
+   "fetched_at": "2026-09-07 18:55:46",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_1179048B1050_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_1179048B1050_1_09",
+   "meta": {
+    "packins_no": "1179048B1050_1_09",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "ブロナンセリン錠2mg「サワイ」",
+     "ブロナンセリン錠4mg「サワイ」",
+     "ブロナンセリン錠8mg「サワイ」",
+     "ブロナンセリン散2％「サワイ」"
+    ],
+    "generic_name": "ブロナンセリン",
+    "therapeutic_class": "抗精神病剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ゾフルーザ錠10mg／ゾフルーザ錠20mg／ゾフ...",
+   "company": "製造販売元／塩野義製薬株式会社",
+   "reason": "更新",
+   "packins_no": "6250047F1022_1_21",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6250047F1022_1_21/",
+   "fetched_at": "2026-09-07 18:55:48",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/340018_6250047F1022_1_21",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/340018_6250047F1022_1_21",
+   "meta": {
+    "packins_no": "6250047F1022_1_21",
+    "company_id": "340018",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第7版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": "第6版"
+     }
+    },
+    "brands": [
+     "ゾフルーザ錠10mg",
+     "ゾフルーザ錠20mg",
+     "ゾフルーザ顆粒2%分包"
+    ],
+    "generic_name": "バロキサビル　マルボキシル",
+    "therapeutic_class": "抗インフルエンザウイルス剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "9年"
+    },
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "9年"
+    },
+    {
+     "path": [
+      "２２.包装",
+      "〈ゾフルーザ錠20mg〉"
+     ],
+     "text": "2錠［2錠（PTP）×1］"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "プランルカストDS10%「杏林」",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "4490017R1220_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490017R1220_1_04/",
+   "fetched_at": "2026-09-07 18:55:50",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_4490017R1220_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_4490017R1220_1_04",
+   "meta": {
+    "packins_no": "4490017R1220_1_04",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-05",
+      "ver": null
+     }
+    },
+    "brands": [
+     "プランルカストDS10%「杏林」"
+    ],
+    "generic_name": "プランルカスト水和物",
+    "therapeutic_class": "ロイコトリエン受容体拮抗剤 / 気管支喘息・アレルギー性鼻炎治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "シロップ用プランルカスト"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リバルエンLAパッチ25.92mg／リバルエンLAパ...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "1190700S5024_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190700S5024_1_03/",
+   "fetched_at": "2026-09-07 18:55:52",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_1190700S5024_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_1190700S5024_1_03",
+   "meta": {
+    "packins_no": "1190700S5024_1_03",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "リバルエンLAパッチ25.92mg",
+     "リバルエンLAパッチ51.84mg"
+    ],
+    "generic_name": "持続放出性リバスチグミン経皮吸収型製剤",
+    "therapeutic_class": "アルツハイマー型認知症治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "3年"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "フリウェル配合錠LD「トーワ」／フリウェ...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "2482009F1082_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2482009F1082_1_10/",
+   "fetched_at": "2026-09-07 18:56:19",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_2482009F1082_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_2482009F1082_1_10",
+   "meta": {
+    "packins_no": "2482009F1082_1_10",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "フリウェル配合錠LD「トーワ」",
+     "フリウェル配合錠ULD「トーワ」"
+    ],
+    "generic_name": "ノルエチステロン・エチニルエストラジオール配合製剤",
+    "therapeutic_class": "月経困難症治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "5年"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "マグミット錠100mg／マグミット錠200mg／マ...",
+   "company": "製造販売元／マグミット製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2344009F1035_7_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2344009F1035_7_06/",
+   "fetched_at": "2026-09-07 18:57:12",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/731040_2344009F1035_7_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/731040_2344009F1035_7_06",
+   "meta": {
+    "packins_no": "2344009F1035_7_06",
+    "company_id": "731040",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "マグミット錠100mg",
+     "マグミット錠200mg",
+     "マグミット錠250mg",
+     "マグミット錠330mg",
+     "マグミット錠500mg"
+    ],
+    "generic_name": "酸化マグネシウム製剤",
+    "therapeutic_class": "制酸・緩下剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "3年"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "マグミット錠100mg／マグミット錠250mg／マ...",
+   "company": "製造販売元／マグミット製薬株式会社 / 販売元／株式会社フェルゼンファーマ",
+   "reason": "更新",
+   "packins_no": "2344009F1035_B_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2344009F1035_B_05/",
+   "fetched_at": "2026-09-07 18:57:38",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/731040_2344009F1035_B_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/731040_2344009F1035_B_05",
+   "meta": {
+    "packins_no": "2344009F1035_B_05",
+    "company_id": "731040",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "マグミット錠100mg",
+     "マグミット錠250mg",
+     "マグミット錠330mg",
+     "マグミット錠500mg"
+    ],
+    "generic_name": "酸化マグネシウム製剤",
+    "therapeutic_class": "制酸・緩下剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "3年"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "リツキサン点滴静注100mg／リツキサン点滴静注500mg",
+   "company": "製造販売元／全薬工業株式会社 / 発売元／中外製薬株式会社",
+   "reason": "共同販売終了のため",
+   "yj_hint": "4291407A1035_2_22"
+  }
+ ],
+ "created_at": "2026-09-07 18:55:39",
+ "updated_at": "2026-09-07 18:57:42",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
