@@ -1,0 +1,539 @@
+{
+ "date": "2026-09-08",
+ "updates": [
+  {
+   "brand": "ソランタール錠50mg／ソランタール錠100mg",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "1148001F1059_3_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1148001F1059_3_09/",
+   "fetched_at": "2026-09-09 18:44:37",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_1148001F1059_3_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_1148001F1059_3_09",
+   "meta": {
+    "packins_no": "1148001F1059_3_09",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ソランタール錠50mg",
+     "ソランタール錠100mg"
+    ],
+    "generic_name": "日局 チアラミド塩酸塩",
+    "therapeutic_class": "鎮痛・抗炎症剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "アナフィラキシー（0.1%未満）"
+     ],
+     "text": "アナフィラキシー（呼吸困難、蕁麻疹、血管性浮腫等）を起こすことがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "セロクエル25mg錠／セロクエル100mg錠／セ...",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "1179042C1023_3_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179042C1023_3_02/",
+   "fetched_at": "2026-09-09 18:44:39",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_1179042C1023_3_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_1179042C1023_3_02",
+   "meta": {
+    "packins_no": "1179042C1023_3_02",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2025-04",
+      "ver": null
+     }
+    },
+    "brands": [
+     "セロクエル25mg錠",
+     "セロクエル100mg錠",
+     "セロクエル200mg錠",
+     "セロクエル細粒50％"
+    ],
+    "generic_name": "クエチアピンフマル酸塩 / Quetiapine　Fumarate",
+    "therapeutic_class": "抗精神病剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "過敏症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ガスター散10%／ガスター散2%",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2325003B1022_2_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2325003B1022_2_05/",
+   "fetched_at": "2026-09-09 18:44:41",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_2325003B1022_2_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_2325003B1022_2_05",
+   "meta": {
+    "packins_no": "2325003B1022_2_05",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ガスター散10%",
+     "ガスター散2%"
+    ],
+    "generic_name": "ファモチジン",
+    "therapeutic_class": "H2受容体拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（各0.1%未満）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫〈顔面浮腫、咽頭浮腫等〉、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ガスター錠10mg／ガスター錠20mg",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2325003F1024_2_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2325003F1024_2_05/",
+   "fetched_at": "2026-09-09 18:44:43",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_2325003F1024_2_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_2325003F1024_2_05",
+   "meta": {
+    "packins_no": "2325003F1024_2_05",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ガスター錠10mg",
+     "ガスター錠20mg"
+    ],
+    "generic_name": "ファモチジン",
+    "therapeutic_class": "H2受容体拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（各0.1%未満）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫〈顔面浮腫、咽頭浮腫等〉、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ガスターD錠10mg／ガスターD錠20mg",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2325003F3035_2_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2325003F3035_2_05/",
+   "fetched_at": "2026-09-09 18:44:54",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_2325003F3035_2_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_2325003F3035_2_05",
+   "meta": {
+    "packins_no": "2325003F3035_2_05",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-04",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ガスターD錠10mg",
+     "ガスターD錠20mg"
+    ],
+    "generic_name": "ファモチジン",
+    "therapeutic_class": "H2受容体拮抗剤（ファモチジン口腔内崩壊錠）"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（各0.1%未満）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫〈顔面浮腫、咽頭浮腫等〉、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ガスター注射液10mg／ガスター注射液20mg",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2325401A1020_2_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2325401A1020_2_04/",
+   "fetched_at": "2026-09-09 18:44:56",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_2325401A1020_2_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_2325401A1020_2_04",
+   "meta": {
+    "packins_no": "2325401A1020_2_04",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2019-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ガスター注射液10mg",
+     "ガスター注射液20mg"
+    ],
+    "generic_name": "ファモチジン",
+    "therapeutic_class": "H2受容体拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（各0.1%未満）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫〈顔面浮腫、咽頭浮腫等〉、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ディレグラ配合錠",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "4490100F1021_2_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490100F1021_2_04/",
+   "fetched_at": "2026-09-09 18:45:22",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_4490100F1021_2_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_4490100F1021_2_04",
+   "meta": {
+    "packins_no": "4490100F1021_2_04",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-04",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ディレグラ配合錠"
+    ],
+    "generic_name": "フェキソフェナジン塩酸塩・塩酸プソイドエフェドリン",
+    "therapeutic_class": "アレルギー性疾患治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "呼吸困難、血圧低下、意識消失、血管性浮腫、胸痛、潮紅等の過敏症状があらわれた場合には投与を中止し、適切な処置を行うこと。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "過敏症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "セファメジンα注射用0.25g／セファメジン...",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "6132401D1045_4_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132401D1045_4_07/",
+   "fetched_at": "2026-09-09 18:45:48",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_6132401D1045_4_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_6132401D1045_4_07",
+   "meta": {
+    "packins_no": "6132401D1045_4_07",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "セファメジンα注射用0.25g",
+     "セファメジンα注射用0.5g",
+     "セファメジンα注射用1g",
+     "セファメジンα注射用2g"
+    ],
+    "generic_name": "注射用セファゾリンナトリウム水和物 Cefazolin Sodium Hydrate",
+    "therapeutic_class": "合成セファロスポリン製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "アナフィラキシー（0.1%未満）"
+     ],
+     "text": "呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "セファメジンα筋注用0.25g／セファメジン...",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "6132401E1040_4_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132401E1040_4_07/",
+   "fetched_at": "2026-09-09 18:45:51",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_6132401E1040_4_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_6132401E1040_4_07",
+   "meta": {
+    "packins_no": "6132401E1040_4_07",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "セファメジンα筋注用0.25g",
+     "セファメジンα筋注用0.5g"
+    ],
+    "generic_name": "注射用セファゾリンナトリウム水和物 Cefazolin Sodium Hydrate",
+    "therapeutic_class": "合成セファロスポリン製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "アナフィラキシー（0.1%未満）"
+     ],
+     "text": "呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "セファメジンα点滴用キット1g／セファメ...",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "6132401G1041_4_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132401G1041_4_07/",
+   "fetched_at": "2026-09-09 18:45:53",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_6132401G1041_4_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_6132401G1041_4_07",
+   "meta": {
+    "packins_no": "6132401G1041_4_07",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "セファメジンα点滴用キット1g",
+     "セファメジンα点滴用キット2g"
+    ],
+    "generic_name": "注射用セファゾリンナトリウム水和物 Cefazolin Sodium Hydrate",
+    "therapeutic_class": "合成セファロスポリン製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "アナフィラキシー（0.1%未満）"
+     ],
+     "text": "呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ブロナンセリン錠2mg「ニプロ」／ブロナ...",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "更新",
+   "packins_no": "1179048F1124_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179048F1124_1_14/",
+   "fetched_at": "2026-09-09 18:45:55",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530100_1179048F1124_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530100_1179048F1124_1_14",
+   "meta": {
+    "packins_no": "1179048F1124_1_14",
+    "company_id": "530100",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "ブロナンセリン錠2mg「ニプロ」",
+     "ブロナンセリン錠4mg「ニプロ」",
+     "ブロナンセリン錠8mg「ニプロ」"
+    ],
+    "generic_name": "ブロナンセリン錠",
+    "therapeutic_class": "抗精神病剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ヒアニュオ錠10mg",
+   "company": "製造販売元／バイエル薬品株式会社",
+   "reason": "更新",
+   "packins_no": "42910J8F1020_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/42910J8F1020_1_02/",
+   "fetched_at": "2026-09-09 18:45:57",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/630004_42910J8F1020_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/630004_42910J8F1020_1_02",
+   "meta": {
+    "packins_no": "42910J8F1020_1_02",
+    "company_id": "630004",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ヒアニュオ錠10mg"
+    ],
+    "generic_name": "セバベルチニブ",
+    "therapeutic_class": "抗悪性腫瘍剤/HER2チロシンキナーゼ阻害剤 / HER2：Human Epidermal Growth Factor Receptor Type 2（ヒト上皮増殖因子受容体2型、別称：c-erbB-2） / HER2：Human Epidermal Growth Factor Receptor Type 2（ヒト上皮増殖因子受容体2型、別称：c-erbB-2）"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "24ヵ月"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "42910J8F1020_1_01",
+    "prev_fetched_at": "2026-08-24 19:15:44",
+    "prev_seen_date": "2026-08-24",
+    "changes": [
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "第2版"
+     },
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "18ヵ月",
+      "after": "24ヵ月"
+     }
+    ]
+   }
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-09-09 18:44:37",
+ "updated_at": "2026-09-09 18:45:59",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
