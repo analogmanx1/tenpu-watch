@@ -1,0 +1,136 @@
+{
+ "date": "2026-09-10",
+ "updates": [
+  {
+   "brand": "ブロナンセリン錠2mg「トーワ」／ブロナ...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "1179048F1108_1_13",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179048F1108_1_13/",
+   "fetched_at": "2026-09-11 18:14:13",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_1179048F1108_1_13",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_1179048F1108_1_13",
+   "meta": {
+    "packins_no": "1179048F1108_1_13",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "ブロナンセリン錠2mg「トーワ」",
+     "ブロナンセリン錠4mg「トーワ」",
+     "ブロナンセリン錠8mg「トーワ」"
+    ],
+    "generic_name": "ブロナンセリン錠",
+    "therapeutic_class": "抗精神病剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "デュロキセチンカプセル20mg「日新」／デ...",
+   "company": "製造販売元／日新製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1179052M1120_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179052M1120_1_03/",
+   "fetched_at": "2026-09-11 18:14:17",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530113_1179052M1120_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530113_1179052M1120_1_03",
+   "meta": {
+    "packins_no": "1179052M1120_1_03",
+    "company_id": "530113",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2022-09",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "デュロキセチンカプセル20mg「日新」",
+     "デュロキセチンカプセル30mg「日新」"
+    ],
+    "generic_name": "デュロキセチン塩酸塩カプセル",
+    "therapeutic_class": "セロトニン・ノルアドレナリン再取り込み阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "QT延長、心室性不整脈（Torsade de pointesを含む）等の心血管系副作用が発現することがあるので注意すること。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "アナフィラキシー反応（頻度不明）"
+     ],
+     "text": "呼吸困難、痙攣、血管性浮腫、蕁麻疹等を伴うアナフィラキシー反応があらわれることがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "接触性皮膚炎、光線過敏反応、血管性浮腫、皮膚血管炎"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ブロナンセリン錠2mg「YD」／ブロナンセリ...",
+   "company": "製造販売元／陽進堂ホールディングス株式会社",
+   "reason": "更新",
+   "packins_no": "1179048F1060_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179048F1060_1_14/",
+   "fetched_at": "2026-09-11 18:14:24",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/830001_1179048F1060_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/830001_1179048F1060_1_14",
+   "meta": {
+    "packins_no": "1179048F1060_1_14",
+    "company_id": "830001",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第7版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第6版"
+     }
+    },
+    "brands": [
+     "ブロナンセリン錠2mg「YD」",
+     "ブロナンセリン錠4mg「YD」",
+     "ブロナンセリン錠8mg「YD」"
+    ],
+    "generic_name": "ブロナンセリン錠",
+    "therapeutic_class": "抗精神病剤"
+   },
+   "revised": [],
+   "diff": null
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-09-11 18:14:13",
+ "updated_at": "2026-09-11 18:14:32",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
