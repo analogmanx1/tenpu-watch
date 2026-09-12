@@ -30,13 +30,13 @@
 <main class="main">
 
 <h1>🔎 識別コード検索</h1>
-<p class="small">錠剤・カプセルに印字されている記号(識別コード。例: <code>DK 505</code>)から薬を探せます。
-スペース・ハイフン・全角半角・大文字小文字の違いは気にしなくてOK(<code>dk505</code> でもヒット)。
-薬剤名や会社名を足して絞り込みもできます(例: <code>307 サワイ</code>)。候補には添付文書の<b>外形図(表・裏)</b>も出ます(図をクリックすると大きく表示)。
-<b>薬剤名をクリックすると添付文書(PDF)が新しいタブで開きます</b>。</p>
 <div class="ifbar">
   <input id="q" type="search" placeholder="例: DK505 / アジルOD / タケキャブ OD10" autofocus autocomplete="off">
 </div>
+<details class="help" open><summary>使い方</summary><p class="small">錠剤・カプセルに印字されている記号(識別コード。例: <code>DK 505</code>)から薬を探せます。
+スペース・ハイフン・全角半角・大文字小文字の違いは気にしなくてOK(<code>dk505</code> でもヒット)。
+薬剤名や会社名を足して絞り込みもできます(例: <code>307 サワイ</code>)。候補には添付文書の<b>外形図(表・裏)</b>も出ます(図をクリックすると大きく表示)。
+<b>薬剤名をクリックすると添付文書(PDF)が新しいタブで開きます</b>。</p></details>
 <p class="small" id="cnt"></p>
 <div id="hist"></div>
 <div id="res"></div>

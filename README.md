@@ -108,6 +108,12 @@ python src/run.py               # 本番と同じ(ページ上の全日付)
   - GitHub: Actions タブ → `if-index` → Run workflow → 「target」で **touseki** を選ぶ(透析GLだけ・約2分で再公開)
   - 手元: `python src/run.py --build-only --touseki-index` → commit → push
 
+## スマホ表示(レスポンシブ。2026-09-12)
+- 画面幅 **800px以下**をスマホ表示にする(境目は `src/build_site.py` の `MOBILE_MAX`。CSSの `@media` と `nav.js` の両方に入る)
+- スマホで変わること: ①メニュー(💊薬剤師ツールボックス▾)が画面幅いっぱいに開き、1項目が指サイズ(`:root` の `--tap`=44px) ②添付文書ウォッチの「最近の日付」が本文の下に移る ③検索ページ4つは検索窓が見出しの直下、説明文は「使い方 ▾」に畳む(PCでは最初から開いて見出しは出ない。`nav.js` が開く) ④候補の行間・タップ領域を広げ、外形図を少し大きく(`--thumbm`=56px)
+- スマホ用のCSSは `style.css` の**最後**の `@media (max-width:800px){…}` ブロック(`build_site.py` の `CSS` 末尾)。基本ルールより後ろに無いと効かないので、足すときも末尾に
+- 確認のしかた: Claude Codeのブラウザペインで Viewport を Mobile にする(または PC のブラウザ幅を 800px 以下に縮める)
+
 ## GitHub 側の初期設定(1回だけ)
 1. リポジトリを作って push
 2. Settings → Pages → Build and deployment → Source を **GitHub Actions** にする

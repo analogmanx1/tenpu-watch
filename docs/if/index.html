@@ -30,8 +30,6 @@
 <main class="main">
 
 <h1>📘 インタビューフォーム検索</h1>
-<p class="small">薬剤名(一般名・販売名)や企業名を入れると候補が出ます。<b>候補をクリックするとインタビューフォーム(PDF)が新しいタブで開きます</b>。
-スペース区切りで絞り込み(例: <code>アリピプラゾール 明治</code>)。ひらがな/全角半角の違いは気にしなくてOK。</p>
 <div class="ifbar">
   <input id="q" type="search" placeholder="例: エビリファイ / アリピプラゾール / 大塚" autofocus autocomplete="off">
   <form id="pmdaForm" method="post" action="https://www.pmda.go.jp/PmdaSearch/iyakuSearch" target="_blank">
@@ -40,6 +38,8 @@
     <button type="submit" class="btn" title="入力した薬剤名で、PMDAの検索(IFだけにチェック済み)を別タブで開きます">PMDAで最新を検索 ↗</button>
   </form>
 </div>
+<details class="help" open><summary>使い方</summary><p class="small">薬剤名(一般名・販売名)や企業名を入れると候補が出ます。<b>候補をクリックするとインタビューフォーム(PDF)が新しいタブで開きます</b>。
+スペース区切りで絞り込み(例: <code>アリピプラゾール 明治</code>)。ひらがな/全角半角の違いは気にしなくてOK。</p></details>
 <p class="small" id="cnt"></p>
 <div id="hist"></div>
 <div id="res"></div>

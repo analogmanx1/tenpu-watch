@@ -39,6 +39,7 @@ IF_TITLE = "インタビューフォーム検索"
 TENPU_TITLE = "添付文書検索"
 SHIKI_TITLE = "識別コード検索"
 TOUSEKI_TITLE = "透析投薬ガイドライン検索"   # 白鷺病院「透析患者に対する投薬ガイドライン」のPDFを薬剤名で探す(元データは白鷺病院サイト)
+MOBILE_MAX = 800   # この幅(px)以下を「スマホ表示」にする(CSSの @media と nav.js の両方に入る。1か所で変えられる)
 IF_PDF_BASE ="https://www.info.pmda.go.jp/go/interview/"                 # if_index.py の IF_BASE と同じ
 IF_DETAIL_BASE = "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/GeneralList/"
 TENPU_PDF_BASE = "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/"   # 添付文書PDF(コード=企業コード_packins番号)
@@ -346,17 +347,21 @@ def render_day(day: dict) -> str:
 
 # ---------------------------------------------------------------- 生成
 CSS = """
-:root{--bg:#fff;--fg:#222;--mut:#666;--line:#e3e3e3;--card:#fafafa;--acc:#2a62b8;--imp:#b8321a;--ins:#e6ffed;--del:#ffeef0;--insfg:#116329;--delfg:#82071e}
+:root{--bg:#fff;--fg:#222;--mut:#666;--line:#e3e3e3;--card:#fafafa;--acc:#2a62b8;--imp:#b8321a;--ins:#e6ffed;--del:#ffeef0;--insfg:#116329;--delfg:#82071e;
+  --tap:44px;--thumbm:56px}   /* スマホ用の調整値: --tap=メニュー1項目の高さ(指サイズ) --thumbm=外形図の高さ */
 @media (prefers-color-scheme:dark){:root{--bg:#15171a;--fg:#e6e6e6;--mut:#a0a0a0;--line:#333;--card:#1e2125;--acc:#7fb0ff;--imp:#ff8a70;--ins:#12301b;--del:#3a1418;--insfg:#9be3ad;--delfg:#ffb3bb}}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI","Hiragino Sans","Yu Gothic UI",Meiryo,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
-a{color:var(--acc)}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI","Hiragino Sans","Yu Gothic UI",Meiryo,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;overflow-wrap:anywhere;-webkit-text-size-adjust:100%}
+a{color:var(--acc)}img{max-width:100%}
+input[type=search]{-webkit-appearance:none;appearance:none}
+details.help{margin:.3rem 0 .6rem}details.help>summary{font-size:.9rem;color:var(--mut);font-weight:600;cursor:pointer;list-style:none}details.help>summary::-webkit-details-marker{display:none}
+details.help>summary::after{content:" ▾"}details.help[open]>summary::after{content:" ▴"}details.help>p{margin:.2rem 0}
+@media (min-width:__MOBILE1__px){details.help[open]>summary{display:none}}   /* PCでは説明文を最初から開いて見出しは出さない(nav.jsが open にする) */
 .top{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;padding:.6rem 1rem;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
 .brand{font-weight:700;text-decoration:none;color:var(--fg);font-size:1.1rem}
 .topnav a{margin-right:.9rem;text-decoration:none}
 .wrap{display:flex;gap:1.5rem;max-width:1200px;margin:0 auto;padding:1rem}
 .side{flex:0 0 200px}.side h4{margin:.2rem 0 .4rem}.daylist{list-style:none;padding:0;margin:0}.daylist li{margin:.15rem 0}.daylist a.cur{font-weight:700}
 .main{flex:1;min-width:0}
-@media (max-width:800px){.wrap{flex-direction:column}.side{flex:none}.daylist{display:flex;flex-wrap:wrap;gap:.3rem .8rem}}
 h1{font-size:1.5rem;margin:.2rem 0 .6rem}h2{font-size:1.2rem;margin-top:2rem}h3{font-size:1.05rem;margin:0 0 .3rem}
 .badge{display:inline-block;padding:.05rem .5rem;border-radius:.6rem;font-size:.8rem;color:#fff;background:#888;vertical-align:middle}
 .badge.upd{background:#2a62b8}.badge.new{background:#1f8f4e}.badge.del{background:#777}.badge.oth{background:#a06a00}.badge.imp{background:var(--imp)}
@@ -403,6 +408,24 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .card{display:block;border:1px solid var(--line);border-radius:.6rem;padding:.8rem 1rem;background:var(--card);text-decoration:none;color:var(--fg)}.card:hover{border-color:var(--acc)}.card b{color:var(--acc)}.card .small{display:block;margin-top:.2rem}.card.big{padding:1.2rem 1.2rem;font-size:1.05rem}.card.big b{font-size:1.2rem}
 .calc{max-width:640px}.calc label{display:block;margin:.6rem 0 .2rem;font-weight:600}.calc input,.calc select{font-size:1rem;padding:.35rem .5rem;border:1px solid var(--line);border-radius:.4rem;background:var(--bg);color:var(--fg);width:100%;max-width:320px}
 .calc .result{margin-top:1rem;padding:.8rem 1rem;border-radius:.5rem;background:var(--card);border:1px solid var(--line);font-size:1.05rem}.calc .result b{font-size:1.3rem}
+/* ---- スマホ表示(幅 __MOBILE__px 以下。build_site.py の MOBILE_MAX)。上の基本ルールを上書きするので必ず最後に置く ---- */
+@media (max-width:__MOBILE__px){
+.wrap{flex-direction:column;padding:.7rem .8rem;gap:.8rem}
+.main{order:1}.side{flex:none;order:2;border-top:1px solid var(--line);padding-top:.6rem}   /* 「最近の日付」は本文の下へ */
+.daylist{display:flex;flex-wrap:wrap;gap:.3rem .9rem}.daylist li a{display:inline-block;padding:.25rem 0}
+h1{font-size:1.35rem}h2{font-size:1.15rem;margin-top:1.5rem}
+.top{padding:.5rem .8rem;gap:.4rem .8rem}
+.menu{position:static}   /* メニューは画面幅いっぱいに開く(ヘッダー基準)・1項目=指サイズ(--tap) */
+.menu .dd{position:absolute;top:100%;left:.5rem;right:.5rem;min-width:0;white-space:normal;max-height:calc(100vh - 5rem);overflow:auto;padding:.3rem .5rem .5rem}
+.menu .dd a,.menu .dd span.head{display:flex;align-items:center;min-height:var(--tap);margin:0;padding:.1rem .4rem;border-bottom:1px solid var(--line)}
+.menu .dd .sub{margin-left:1.2rem;min-height:calc(var(--tap) - 6px)}.menu .dd a:last-child{border-bottom:0}
+.ifbar #q{flex:1 1 100%;max-width:none;padding:.55rem .7rem}.btn{padding:.6rem .9rem}
+.hit{padding:.6rem 0}.hit .small{line-height:1.55}.ifa{font-size:1.05rem;line-height:1.45}
+.chip{padding:.35rem .8rem}.thumb img{height:var(--thumbm)}
+ul.uplist li{padding:.2rem 0}.entry{padding:.65rem .75rem}
+table.arch td,table.arch th,table.del td,table.del th{padding:.35rem .4rem}
+.cards{grid-template-columns:1fr}
+}
 """
 
 # 検索履歴の共通部品(IF検索・添付文書検索の両ページで使う)。docs/assets/hist.js として書き出す。
@@ -502,8 +525,6 @@ def render_if_page(idx: dict | None) -> str:
     note = if_summary(idx)
     return f"""
 <h1>📘 {IF_TITLE}</h1>
-<p class="small">薬剤名(一般名・販売名)や企業名を入れると候補が出ます。<b>候補をクリックするとインタビューフォーム(PDF)が新しいタブで開きます</b>。
-スペース区切りで絞り込み(例: <code>アリピプラゾール 明治</code>)。ひらがな/全角半角の違いは気にしなくてOK。</p>
 <div class="ifbar">
   <input id="q" type="search" placeholder="例: エビリファイ / アリピプラゾール / 大塚" autofocus autocomplete="off">
   <form id="pmdaForm" method="post" action="{PMDA_SEARCH_URL}" target="_blank">
@@ -512,6 +533,8 @@ def render_if_page(idx: dict | None) -> str:
     <button type="submit" class="btn" title="入力した薬剤名で、PMDAの検索(IFだけにチェック済み)を別タブで開きます">PMDAで最新を検索 ↗</button>
   </form>
 </div>
+<details class="help" open><summary>使い方</summary><p class="small">薬剤名(一般名・販売名)や企業名を入れると候補が出ます。<b>候補をクリックするとインタビューフォーム(PDF)が新しいタブで開きます</b>。
+スペース区切りで絞り込み(例: <code>アリピプラゾール 明治</code>)。ひらがな/全角半角の違いは気にしなくてOK。</p></details>
 <p class="small" id="cnt"></p>
 <div id="hist"></div>
 <div id="res"></div>
@@ -568,8 +591,6 @@ def render_tenpu_page(idx: dict | None) -> str:
     note = if_summary(idx, "--tenpu-index")
     return f"""
 <h1>📕 {TENPU_TITLE}</h1>
-<p class="small">薬剤名(一般名・販売名)や企業名を入れると候補が出ます。<b>候補をクリックすると添付文書(PDF)が新しいタブで開きます</b>。
-スペース区切りで絞り込み(例: <code>アリピプラゾール 大塚</code>)。ひらがな/全角半角の違いは気にしなくてOK。</p>
 <div class="ifbar">
   <input id="q" type="search" placeholder="例: エビリファイ / アリピプラゾール / 大塚" autofocus autocomplete="off">
   <form id="pmdaForm" method="post" action="{PMDA_SEARCH_URL}" target="_blank">
@@ -578,6 +599,8 @@ def render_tenpu_page(idx: dict | None) -> str:
     <button type="submit" class="btn" title="入力した薬剤名で、PMDAの検索(添付文書だけにチェック済み)を別タブで開きます">PMDAで最新を検索 ↗</button>
   </form>
 </div>
+<details class="help" open><summary>使い方</summary><p class="small">薬剤名(一般名・販売名)や企業名を入れると候補が出ます。<b>候補をクリックすると添付文書(PDF)が新しいタブで開きます</b>。
+スペース区切りで絞り込み(例: <code>アリピプラゾール 大塚</code>)。ひらがな/全角半角の違いは気にしなくてOK。</p></details>
 <p class="small" id="cnt"></p>
 <div id="hist"></div>
 <div id="res"></div>
@@ -707,13 +730,13 @@ def render_shikibetsu_page(shiki: dict | None, n_rows: int, n_img_rows: int = 0)
     note = shiki_summary(shiki, n_rows, n_img_rows)
     return f"""
 <h1>🔎 {SHIKI_TITLE}</h1>
-<p class="small">錠剤・カプセルに印字されている記号(識別コード。例: <code>DK 505</code>)から薬を探せます。
-スペース・ハイフン・全角半角・大文字小文字の違いは気にしなくてOK(<code>dk505</code> でもヒット)。
-薬剤名や会社名を足して絞り込みもできます(例: <code>307 サワイ</code>)。候補には添付文書の<b>外形図(表・裏)</b>も出ます(図をクリックすると大きく表示)。
-<b>薬剤名をクリックすると添付文書(PDF)が新しいタブで開きます</b>。</p>
 <div class="ifbar">
   <input id="q" type="search" placeholder="例: DK505 / アジルOD / タケキャブ OD10" autofocus autocomplete="off">
 </div>
+<details class="help" open><summary>使い方</summary><p class="small">錠剤・カプセルに印字されている記号(識別コード。例: <code>DK 505</code>)から薬を探せます。
+スペース・ハイフン・全角半角・大文字小文字の違いは気にしなくてOK(<code>dk505</code> でもヒット)。
+薬剤名や会社名を足して絞り込みもできます(例: <code>307 サワイ</code>)。候補には添付文書の<b>外形図(表・裏)</b>も出ます(図をクリックすると大きく表示)。
+<b>薬剤名をクリックすると添付文書(PDF)が新しいタブで開きます</b>。</p></details>
 <p class="small" id="cnt"></p>
 <div id="hist"></div>
 <div id="res"></div>
@@ -795,14 +818,14 @@ def render_touseki_page(idx: dict | None) -> str:
     idx_base = touseki_index.INDEX_URL.replace("{key}.html", "")   # …/pdf/index/index-  (+ key + .html)
     return f"""
 <h1>🩸 {TOUSEKI_TITLE}</h1>
-<p class="small">白鷺病院 薬剤科が公開している「<a href="{touseki_index.GATE_URL}" target="_blank" rel="noopener">透析患者に対する投薬ガイドライン ↗</a>」
-(透析患者・保存期CKD患者への投与方法の目安、薬物動態、透析性などを薬剤ごとにまとめたPDF)を薬剤名で探せます。
-商品名(先発品名が中心)で検索。一般名(例: カルベジロール)でも多くの薬がヒットします。<b>候補をクリックするとPDFが新しいタブで開きます</b>(白鷺病院サイト上のPDF)。
-スペース区切りで絞り込み(例: <code>アーチスト 錠</code>)。ひらがな/全角半角の違いは気にしなくてOK。</p>
 <div class="ifbar">
   <input id="q" type="search" placeholder="例: アーチスト / カルベジロール / バクタ" autofocus autocomplete="off">
   <a id="rowlink" class="btn" href="{touseki_index.INDEX_TOP_URL}" target="_blank" rel="noopener" title="白鷺病院の五十音順索引(元ページ)を別タブで開きます。入力した薬剤名の頭文字の行に飛びます">白鷺病院の索引を開く ↗</a>
 </div>
+<details class="help" open><summary>使い方</summary><p class="small">白鷺病院 薬剤科が公開している「<a href="{touseki_index.GATE_URL}" target="_blank" rel="noopener">透析患者に対する投薬ガイドライン ↗</a>」
+(透析患者・保存期CKD患者への投与方法の目安、薬物動態、透析性などを薬剤ごとにまとめたPDF)を薬剤名で探せます。
+商品名(先発品名が中心)で検索。一般名(例: カルベジロール)でも多くの薬がヒットします。<b>候補をクリックするとPDFが新しいタブで開きます</b>(白鷺病院サイト上のPDF)。
+スペース区切りで絞り込み(例: <code>アーチスト 錠</code>)。ひらがな/全角半角の違いは気にしなくてOK。</p></details>
 <p class="small" id="cnt"></p>
 <div id="hist"></div>
 <div id="res"></div>
@@ -989,7 +1012,9 @@ def build(root: Path) -> None:
     global HOME_TITLE
     HOME_TITLE = home.get("title") or HOME_TITLE   # ヘッダー左上のロゴ名も home.json の title に合わせる
 
-    (docs / "assets" / "style.css").write_text(CSS.strip() + "\n", encoding="utf-8", newline="\n")
+    (docs / "assets" / "style.css").write_text(
+        CSS.strip().replace("__MOBILE1__", str(MOBILE_MAX + 1)).replace("__MOBILE__", str(MOBILE_MAX)) + "\n",
+        encoding="utf-8", newline="\n")
     (docs / ".nojekyll").write_text("", encoding="utf-8", newline="\n")
     # 共通ヘッダー用JS: (1) 手作りページ(tools/)の <div id="site-nav" data-rel="../"></div> にヘッダーを差し込む
     #                   (2) プルダウンメニューの外をクリックしたら閉じる(全ページ)
@@ -1000,6 +1025,9 @@ def build(root: Path) -> None:
               "el.outerHTML=h.split('__REL__').join(rel);}"
               "document.addEventListener('click',function(e){"
               "document.querySelectorAll('details.menu[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open');});});"
+              # (3) 検索ページの「使い方」は HTML では開いた状態にしておき、スマホ幅のときだけ畳む(幅の境目は MOBILE_MAX)。
+              #     JSが効かなくても「説明が見えている」側に倒れる。幅0(描画前)のときは判定しない
+              "var w=window.innerWidth;if(w>0&&w<=" + str(MOBILE_MAX) + "){document.querySelectorAll('details.help').forEach(function(d){d.open=false;});}"
               "})();\n")
     (docs / "assets" / "nav.js").write_text(nav_js, encoding="utf-8", newline="\n")
     (docs / "assets" / "hist.js").write_text(HIST_JS.strip() + "\n", encoding="utf-8", newline="\n")
