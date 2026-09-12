@@ -24,7 +24,7 @@ PMDA「過去1週間以内に更新された添付文書情報」を毎日自動
      ├ 📕 添付文書検索      docs/tenpu/     ← 薬剤名→候補→クリックで添付文書(PDF)。データは data/tenpu_index.json(毎日0:15自動更新)
      ├ 📘 インタビューフォーム検索 docs/if/ ← 薬剤名→候補→クリックでIF(PDF)。データは data/if_index.json(毎日0:15自動更新)
      ├ 🔎 識別コード検索    docs/shikibetsu/ ← 錠剤・カプセルの刻印→候補→クリックで添付文書(PDF)。データは data/shikibetsu_index.json(PC側タスクが毎日差分更新)
-     ├ 🩸 透析投薬ガイドライン検索 docs/touseki/ ← 薬剤名→候補→クリックで白鷺病院「透析患者に対する投薬ガイドライン」のPDF。データは data/touseki_index.json(`--touseki-index` で取り直し)
+     ├ 🩸 透析投薬ガイドライン検索 docs/touseki/ ← 薬剤名→候補→クリックで白鷺病院「透析患者に対する投薬ガイドライン」のPDF。データは data/touseki_index.json(毎日0:15自動更新)
      └ 🧮 ツール            docs/tools/     ← 計算機など(HTMLを置くだけで自動掲載)
 ```
 トップに別の機能を足すときは `site/home.json` の `sections` に1つ追加:
@@ -54,7 +54,7 @@ PMDA「過去1週間以内に更新された添付文書情報」を毎日自動
 | `scripts/local_update.ps1` | 自宅PCからの取り込み本体(タスクスケジューラが呼ぶ) | ロジック変更時のみ |
 | `scripts/register_task.ps1` | PCへのタスク登録(PCごとに1回実行) | - |
 | `.github/workflows/daily.yml` | クラウド側の「ビルド+公開」(取り込み・コミットはしない。公開の保険) | 時刻変更など |
-| `.github/workflows/if-index.yml` | インタビューフォーム/添付文書一覧の毎日更新(0:15 JST)+手動ボタン | 時刻変更など |
+| `.github/workflows/if-index.yml` | インタビューフォーム/添付文書/透析GL一覧の毎日更新(0:15 JST)+手動ボタン(透析GLだけの取り直しも可) | 時刻変更など |
 
 ## 手元で動かす(テスト)
 ```bash
@@ -103,8 +103,10 @@ python src/run.py               # 本番と同じ(ページ上の全日付)
   持つのは「商品名→PDF番号」の一覧(リンク集)だけ。索引の「▼◎○△」は白鷺病院内の採用区分なので表示から外す
 - 一般名は `data/tenpu_index.json`(PMDA添付文書一覧)と商品名の前方一致で突き合わせて自動で補う(候補の一般名が2種類以下のときだけ採用。約85%の薬に付く)。
   漢方(ツムラ番号つき)・医療用具・販売中止品などは付かないことが多い
-- 更新: `python src/run.py --build-only --touseki-index`(白鷺病院サイトへ46回アクセス・1秒待ち・約1分) → commit → push。
-  索引ページが1枚でも取れなければ古い一覧を残す(部分的な一覧で上書きしない)。自動更新の頻度は未設定(必要なら `.github/workflows/if-index.yml` の実行コマンドに `--touseki-index` を足すだけ)
+- 更新: **毎日 0:15 JST に IF一覧・添付文書一覧と同じ GitHub Actions(`if-index.yml`)で自動で取り直す**(白鷺病院サイトへ46回アクセス・1秒待ち・約1分。2026-09-12に設定)。
+  索引ページが1枚でも取れなければ古い一覧を残す(部分的な一覧で上書きしない)。すぐ取り直したいとき:
+  - GitHub: Actions タブ → `if-index` → Run workflow → 「target」で **touseki** を選ぶ(透析GLだけ・約2分で再公開)
+  - 手元: `python src/run.py --build-only --touseki-index` → commit → push
 
 ## GitHub 側の初期設定(1回だけ)
 1. リポジトリを作って push
@@ -121,7 +123,7 @@ python src/run.py               # 本番と同じ(ページ上の全日付)
 - **PMDAは添付文書の個別ページ(/go/pack)を海外・クラウドIPからブロックしている**(2026-08-24確認。1週間一覧の静的ページは取れる)。
   そのため取り込みは自宅PCのタスクスケジューラ(`tenpu-watch-auto`: 毎日6:30・17:30・PC起動3分後、`scripts/local_update.ps1`)で行う。
   PCが数日オフでも、PMDAのページに1週間分あるので7日以内にどこかで起動すれば取りこぼさない。別PCでも使うときは `scripts/register_task.ps1` を1回実行
-- GitHub Actionsは2本: 毎日 7:00と17:00 `daily-pmda-watch`(**ビルド+公開のみ**。取り込み・コミットはしない=2026-08-26変更。以前はActionsも取り込みコミットしていて、PC側タスクとほぼ同時刻のコミットでマージ衝突→自動更新の全停止を起こしたため、書き手はPC側の1系統に絞った)と 毎日0:15 `if-index`(インタビューフォーム/添付文書一覧の取得+コミット。PMDAの検索サイト側なのでクラウドから取れる)。同時には走らない設定(concurrency)
+- GitHub Actionsは2本: 毎日 7:00と17:00 `daily-pmda-watch`(**ビルド+公開のみ**。取り込み・コミットはしない=2026-08-26変更。以前はActionsも取り込みコミットしていて、PC側タスクとほぼ同時刻のコミットでマージ衝突→自動更新の全停止を起こしたため、書き手はPC側の1系統に絞った)と 毎日0:15 `if-index`(インタビューフォーム/添付文書一覧+透析GL一覧の取得+コミット。PMDAの検索サイト・白鷺病院サイトはクラウドから取れる)。同時には走らない設定(concurrency)
 - PC側タスクの入口はローカルディスクのランチャー(`%LOCALAPPDATA%	enpu-watch\launch.ps1`、register_task.ps1 が自動生成)。Googleドライブのマウント前にタスクが起動しても、ランチャーがマウントを待ってから本体を呼ぶ
 - インタビューフォームは改版でPDFのURLが変わることがある。開けないときは候補の「PMDA詳細 ↗」か「PMDAで最新を検索 ↗」で最新を確認し、気になれば一覧を取り直す
 - PMDAサーバーに負荷をかけないよう、1件ごとに少し待ち時間を入れている(1日分で数十秒〜数分)

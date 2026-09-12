@@ -806,7 +806,7 @@ def render_touseki_page(idx: dict | None) -> str:
 <p class="small" id="cnt"></p>
 <div id="hist"></div>
 <div id="res"></div>
-<p class="small" id="ifmeta">{esc(note)}。一覧は白鷺病院の五十音順索引(ア行〜ワ行の44ページ)から作った写しで、PDF本体はこのサイトには保存していません(白鷺病院サイトからそのまま開きます)。
+<p class="small" id="ifmeta">{esc(note)}。一覧は白鷺病院の五十音順索引(ア行〜ワ行の44ページ)から作った写しで、毎日0:15に取り直しています。PDF本体はこのサイトには保存していません(白鷺病院サイトからそのまま開きます)。
 索引の「▼◎○△」は白鷺病院内の採用区分なので省いています。一般名はPMDA添付文書一覧との突き合わせで自動的に補ったもので、付いていない薬・合わない薬もあります。
 <b>ガイドラインの内容は改訂時点の情報です。最新情報は必ず添付文書等で確認してください</b>
 (<a href="{touseki_index.TEBIKI_URL}" target="_blank" rel="noopener">利用の手引き ↗</a> ｜ <a href="{touseki_index.REFS_URL}" target="_blank" rel="noopener">引用文献 ↗</a> ｜ <a href="{touseki_index.INDEX_TOP_URL}" target="_blank" rel="noopener">元の五十音順索引 ↗</a>)。</p>
