@@ -113,6 +113,9 @@ python src/run.py               # 本番と同じ(ページ上の全日付)
 - スマホで変わること: ①メニュー(💊薬剤師ツールボックス▾)が画面幅いっぱいに開き、1項目が指サイズ(`:root` の `--tap`=44px) ②添付文書ウォッチの「最近の日付」が本文の下に移る ③検索ページ4つは検索窓が見出しの直下、説明文は「使い方 ▾」に畳む(PCでは最初から開いて見出しは出ない。`nav.js` が開く) ④候補の行間・タップ領域を広げ、外形図を少し大きく(`--thumbm`=56px)
 - スマホ用のCSSは `style.css` の**最後**の `@media (max-width:800px){…}` ブロック(`build_site.py` の `CSS` 末尾)。基本ルールより後ろに無いと効かないので、足すときも末尾に
 - 確認のしかた: Claude Codeのブラウザペインで Viewport を Mobile にする(または PC のブラウザ幅を 800px 以下に縮める)
+- **ホーム画面に追加(アイコンと名前)**: スマホで「ホーム画面に追加」すると、青いカプセルのアイコンと「ファーマビット」の名前で置ける。
+  名前は `site/home.json` の `title`(manifest と iPhone用の meta に入る)。アイコンは `scripts/make_icons.py` が描いて `docs/assets/icon-*.png` `apple-touch-icon.png` に書き出す(色・カプセルの大きさは同スクリプト冒頭の定数。変えたら再実行 → commit → push。Pillow が必要)。
+  `docs/manifest.webmanifest` は build_site.py が毎回生成。全画面のアプリ風にしたいときは `display` を `standalone` に変える。手作りページ(tools/)には nav.js が同じタグを差し込む
 
 ## GitHub 側の初期設定(1回だけ)
 1. リポジトリを作って push

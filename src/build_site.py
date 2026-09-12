@@ -165,6 +165,19 @@ def top_nav(rel: str, tools: list[dict]) -> str:
 </header>"""
 
 
+THEME_COLOR = "#2a62b8"   # スマホのアドレスバー等の色(style.css の --acc と同じ)。アイコンの青も scripts/make_icons.py で同じ色
+
+
+def head_extra(rel: str) -> str:
+    """ホーム画面に追加したときのアイコン・名前(manifest)とタブ用アイコン。全生成ページの <head> に入れる。
+    手作りページ(tools/)には nav.js が同じものを差し込む(アイコン画像は scripts/make_icons.py で作って docs/assets/ に置く)"""
+    return (f'<link rel="icon" href="{rel}assets/icon-32.png" type="image/png">\n'
+            f'<link rel="apple-touch-icon" href="{rel}assets/apple-touch-icon.png">\n'
+            f'<link rel="manifest" href="{rel}manifest.webmanifest">\n'
+            f'<meta name="theme-color" content="{THEME_COLOR}">\n'
+            f'<meta name="apple-mobile-web-app-title" content="{esc(HOME_TITLE)}">')
+
+
 def layout(title: str, body: str, rel: str, nav_days: list[str], current: str | None,
            built_at: str, tools: list[dict], side: bool = True) -> str:
     """rel: このページから docs/ ルートへの相対パス('' / '../' / '../../')"""
@@ -185,6 +198,7 @@ def layout(title: str, body: str, rel: str, nav_days: list[str], current: str | 
 <meta name="robots" content="noindex">
 <title>{esc(title)}</title>
 <link rel="stylesheet" href="{rel}assets/style.css">
+{head_extra(rel)}
 </head>
 <body>
 {top_nav(rel, tools)}
@@ -1028,9 +1042,25 @@ def build(root: Path) -> None:
               # (3) 検索ページの「使い方」は HTML では開いた状態にしておき、スマホ幅のときだけ畳む(幅の境目は MOBILE_MAX)。
               #     JSが効かなくても「説明が見えている」側に倒れる。幅0(描画前)のときは判定しない
               "var w=window.innerWidth;if(w>0&&w<=" + str(MOBILE_MAX) + "){document.querySelectorAll('details.help').forEach(function(d){d.open=false;});}"
+              # (4) 手作りページ(tools/)にも、ホーム画面用のアイコン・名前(manifest)とタブ用アイコンを差し込む
+              #     (生成ページは layout() の head_extra() が直接書いているので、manifest が無いページだけ)
+              "if(el&&!document.querySelector('link[rel=manifest]')){"
+              "var tags=" + json.dumps(head_extra("__REL__"), ensure_ascii=False) + ".split('__REL__').join(rel);"
+              "document.head.insertAdjacentHTML('beforeend',tags);}"
               "})();\n")
     (docs / "assets" / "nav.js").write_text(nav_js, encoding="utf-8", newline="\n")
     (docs / "assets" / "hist.js").write_text(HIST_JS.strip() + "\n", encoding="utf-8", newline="\n")
+    # ホーム画面に追加したときの名前・アイコン(Android/Chrome は manifest、iPhone は head の apple-touch-icon を見る)。
+    # display は "minimal-ui"(戻るボタンなどの最小限の枠を残す)。全画面のアプリ風にしたければ "standalone" に変える
+    manifest = {
+        "name": HOME_TITLE, "short_name": HOME_TITLE, "description": home.get("lead") or "",
+        "lang": "ja", "start_url": "./index.html", "scope": "./", "display": "minimal-ui",
+        "background_color": "#ffffff", "theme_color": THEME_COLOR,
+        "icons": [{"src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png"},
+                  {"src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png"},
+                  {"src": "assets/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}],
+    }
+    (docs / "manifest.webmanifest").write_text(json.dumps(manifest, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
 
     search_rows = []
     arch_rows = []
