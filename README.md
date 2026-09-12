@@ -23,8 +23,8 @@ PMDA「過去1週間以内に更新された添付文書情報」を毎日自動
      ├ 📄 添付文書ウォッチ  docs/watch/     ← 日別ページ・バックナンバー・検索(自動生成)
      ├ 📕 添付文書検索      docs/tenpu/     ← 薬剤名→候補→クリックで添付文書(PDF)。データは data/tenpu_index.json(毎日0:15自動更新)
      ├ 📘 インタビューフォーム検索 docs/if/ ← 薬剤名→候補→クリックでIF(PDF)。データは data/if_index.json(毎日0:15自動更新)
-     ├ 🩸 透析投薬ガイドライン検索 docs/touseki/ ← 薬剤名→候補→クリックで白鷺病院「透析患者に対する投薬ガイドライン」のPDF。データは data/touseki_index.json(`--touseki-index` で取り直し)
      ├ 🔎 識別コード検索    docs/shikibetsu/ ← 錠剤・カプセルの刻印→候補→クリックで添付文書(PDF)。データは data/shikibetsu_index.json(PC側タスクが毎日差分更新)
+     ├ 🩸 透析投薬ガイドライン検索 docs/touseki/ ← 薬剤名→候補→クリックで白鷺病院「透析患者に対する投薬ガイドライン」のPDF。データは data/touseki_index.json(`--touseki-index` で取り直し)
      └ 🧮 ツール            docs/tools/     ← 計算機など(HTMLを置くだけで自動掲載)
 ```
 トップに別の機能を足すときは `site/home.json` の `sections` に1つ追加:

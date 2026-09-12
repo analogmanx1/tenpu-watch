@@ -151,8 +151,8 @@ def top_nav(rel: str, tools: list[dict]) -> str:
       <a class="sub" href="{rel}watch/search.html">検索</a>
       <a class="head" href="{rel}tenpu/index.html">📕 {TENPU_TITLE}</a>
       <a class="head" href="{rel}if/index.html">📘 {IF_TITLE}</a>
-      <a class="head" href="{rel}touseki/index.html">🩸 {TOUSEKI_TITLE}</a>
       <a class="head" href="{rel}shikibetsu/index.html">🔎 {SHIKI_TITLE}</a>
+      <a class="head" href="{rel}touseki/index.html">🩸 {TOUSEKI_TITLE}</a>
       <span class="head">🧮 ツール</span>
       {tool_links}
     </div></details>"""
@@ -948,14 +948,15 @@ def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = No
     out.append('<p>薬剤名を入れると候補が出て、クリックでインタビューフォーム(PDF)が開きます。'
                f'<span class="small">{esc(if_summary(if_idx))}</span></p>'
                '<p><a href="if/index.html">検索ページへ →</a></p>')
-    out.append(f"<h2>🩸 {TOUSEKI_TITLE}</h2>")
-    out.append('<p>白鷺病院「透析患者に対する投薬ガイドライン」の薬剤別PDF(透析患者・保存期CKD患者への投与方法の目安)を、薬剤名(商品名・一般名)で探せます。'
-               f'<span class="small">{esc(touseki_summary(touseki_idx))}</span></p>'
-               f'<p><a href="touseki/index.html">検索ページへ →</a> ｜ <a href="{touseki_index.GATE_URL}" target="_blank" rel="noopener">元データ(白鷺病院 透析患者に対する投薬ガイドライン) ↗</a></p>')
     out.append(f"<h2>🔎 {SHIKI_TITLE}</h2>")
     out.append('<p>錠剤・カプセルに印字されている記号(識別コード)から薬を探せます。'
                f'<span class="small">{esc(shiki_summary(shiki, shiki_rows))}</span></p>'
                '<p><a href="shikibetsu/index.html">検索ページへ →</a></p>')
+    # 並び順は使用頻度の高い順(識別コード検索の下に透析投薬ガイドライン検索。2026-09-12 指示)
+    out.append(f"<h2>🩸 {TOUSEKI_TITLE}</h2>")
+    out.append('<p>白鷺病院「透析患者に対する投薬ガイドライン」の薬剤別PDF(透析患者・保存期CKD患者への投与方法の目安)を、薬剤名(商品名・一般名)で探せます。'
+               f'<span class="small">{esc(touseki_summary(touseki_idx))}</span></p>'
+               f'<p><a href="touseki/index.html">検索ページへ →</a> ｜ <a href="{touseki_index.GATE_URL}" target="_blank" rel="noopener">元データ(白鷺病院 透析患者に対する投薬ガイドライン) ↗</a></p>')
     out.append("<h2>🧮 ツール</h2>")
     if tools:
         out.append('<div class="cards">' + "".join(
