@@ -6,6 +6,8 @@
          python src/run.py --build-only --if-index --tenpu-index
              (インタビューフォーム/添付文書の一覧をPMDAから取り直してサイト生成。
               IFは数分・添付文書は10〜20分かかる。毎日0:15の自動実行と同じ)
+         python src/run.py --build-only --touseki-index
+             (透析投薬ガイドライン一覧を白鷺病院サイトから取り直してサイト生成。約1分)
 """
 from __future__ import annotations
 
@@ -19,6 +21,7 @@ import pmda_watch  # noqa: E402
 import build_site  # noqa: E402
 import if_index  # noqa: E402
 import shikibetsu_index  # noqa: E402
+import touseki_index  # noqa: E402
 
 
 def main() -> int:
@@ -30,8 +33,17 @@ def main() -> int:
     ap.add_argument("--tenpu-index", action="store_true", help="添付文書一覧(data/tenpu_index.json)をPMDAから取り直す")
     ap.add_argument("--shikibetsu", action="store_true",
                     help="識別コード一覧(data/shikibetsu_index.json)を差分更新(最大300件/回。自宅PC専用)")
+    ap.add_argument("--touseki-index", action="store_true",
+                    help="透析投薬ガイドライン一覧(data/touseki_index.json)を白鷺病院サイトから取り直す(約1分)")
     a = ap.parse_args()
     root = Path(a.root)
+    if a.touseki_index:
+        # 白鷺病院サイトが落ちていても、他の処理(サイト生成など)は止めない。古い一覧のまま続行
+        try:
+            meta = touseki_index.refresh(root)
+            print(json.dumps({k: meta.get(k) for k in ("fetched_at", "count", "with_generic", "requests", "warnings")}, ensure_ascii=False))
+        except Exception as e:  # noqa: BLE001
+            print(f"!! 透析投薬ガイドライン一覧の更新に失敗(古い一覧のまま続行): {e}")
     if a.shikibetsu:
         # 失敗しても添付文書ウォッチ本体(取得・コミット)は止めない
         try:

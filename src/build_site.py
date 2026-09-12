@@ -10,6 +10,7 @@ data/days/*.json から静的サイト(docs/)を生成する。
   docs/if/index.html + index.json   … インタビューフォーム検索(元データは data/if_index.json。src/if_index.py が毎日0:15に更新)
   docs/tenpu/index.html + index.json … 添付文書検索(元データは data/tenpu_index.json。同上・毎日0:15に更新)
   docs/shikibetsu/index.html + index.json … 識別コード検索(元データは data/shikibetsu_index.json。src/shikibetsu_index.py が自宅PCで差分更新)
+  docs/touseki/index.html + index.json … 透析投薬ガイドライン検索(元データは data/touseki_index.json。src/touseki_index.py が白鷺病院の索引から作る)
   docs/assets/style.css            … 共通デザイン
   docs/tools/*.html                … 手作りのツール(計算機など)。ここは生成対象外、読むだけ
   ※ watch/ if/ toolbox/ assets/ index.html 以外は書き換えない
@@ -26,6 +27,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import if_index  # noqa: E402  (PMDA検索フォームの項目一覧を「PMDAで最新を検索」ボタンに流用)
+import touseki_index  # noqa: E402  (白鷺病院サイトのURL・索引ページの一覧を検索ページで使う)
 
 JST = timezone(timedelta(hours=9))
 WEEK_URL = "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
@@ -36,7 +38,8 @@ WATCH_TITLE = "添付文書ウォッチ"
 IF_TITLE = "インタビューフォーム検索"
 TENPU_TITLE = "添付文書検索"
 SHIKI_TITLE = "識別コード検索"
-IF_PDF_BASE = "https://www.info.pmda.go.jp/go/interview/"                 # if_index.py の IF_BASE と同じ
+TOUSEKI_TITLE = "透析投薬ガイドライン検索"   # 白鷺病院「透析患者に対する投薬ガイドライン」のPDFを薬剤名で探す(元データは白鷺病院サイト)
+IF_PDF_BASE ="https://www.info.pmda.go.jp/go/interview/"                 # if_index.py の IF_BASE と同じ
 IF_DETAIL_BASE = "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/GeneralList/"
 TENPU_PDF_BASE = "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/"   # 添付文書PDF(コード=企業コード_packins番号)
 PACK_HTML_BASE = "https://www.info.pmda.go.jp/go/pack/"                   # 添付文書HTML版(packins番号のみ。先頭の企業コードを除く)
@@ -148,6 +151,7 @@ def top_nav(rel: str, tools: list[dict]) -> str:
       <a class="sub" href="{rel}watch/search.html">検索</a>
       <a class="head" href="{rel}tenpu/index.html">📕 {TENPU_TITLE}</a>
       <a class="head" href="{rel}if/index.html">📘 {IF_TITLE}</a>
+      <a class="head" href="{rel}touseki/index.html">🩸 {TOUSEKI_TITLE}</a>
       <a class="head" href="{rel}shikibetsu/index.html">🔎 {SHIKI_TITLE}</a>
       <span class="head">🧮 ツール</span>
       {tool_links}
@@ -772,6 +776,89 @@ def render_shikibetsu_page(shiki: dict | None, n_rows: int, n_img_rows: int = 0)
 """
 
 
+# ---------------------------------------------------------------- 透析投薬ガイドライン検索(白鷺病院)
+def touseki_summary(idx: dict | None) -> str:
+    if not idx:
+        return "一覧データ未作成(python src/run.py --build-only --touseki-index で作成)"
+    m = idx.get("meta") or {}
+    s = f"一覧データ: {str(m.get('fetched_at') or '')[:10]} 時点・{m.get('count', len(idx.get('items') or [])):,}件"
+    src = " / ".join(x for x in (m.get("edition") or "", (m.get("db_updated") + " 更新") if m.get("db_updated") else "") if x)
+    if src:
+        s += f"(白鷺病院のデータベース: {src})"
+    return s
+
+
+def render_touseki_page(idx: dict | None) -> str:
+    """薬剤名を打つ → 候補が即出る → クリックで白鷺病院のガイドラインPDF(別タブ)。
+    保険で「白鷺病院の索引(◯行)を開く」ボタンも付ける(入力の先頭文字から行を決める)"""
+    note = touseki_summary(idx)
+    idx_base = touseki_index.INDEX_URL.replace("{key}.html", "")   # …/pdf/index/index-  (+ key + .html)
+    return f"""
+<h1>🩸 {TOUSEKI_TITLE}</h1>
+<p class="small">白鷺病院 薬剤科が公開している「<a href="{touseki_index.GATE_URL}" target="_blank" rel="noopener">透析患者に対する投薬ガイドライン ↗</a>」
+(透析患者・保存期CKD患者への投与方法の目安、薬物動態、透析性などを薬剤ごとにまとめたPDF)を薬剤名で探せます。
+商品名(先発品名が中心)で検索。一般名(例: カルベジロール)でも多くの薬がヒットします。<b>候補をクリックするとPDFが新しいタブで開きます</b>(白鷺病院サイト上のPDF)。
+スペース区切りで絞り込み(例: <code>アーチスト 錠</code>)。ひらがな/全角半角の違いは気にしなくてOK。</p>
+<div class="ifbar">
+  <input id="q" type="search" placeholder="例: アーチスト / カルベジロール / バクタ" autofocus autocomplete="off">
+  <a id="rowlink" class="btn" href="{touseki_index.INDEX_TOP_URL}" target="_blank" rel="noopener" title="白鷺病院の五十音順索引(元ページ)を別タブで開きます。入力した薬剤名の頭文字の行に飛びます">白鷺病院の索引を開く ↗</a>
+</div>
+<p class="small" id="cnt"></p>
+<div id="hist"></div>
+<div id="res"></div>
+<p class="small" id="ifmeta">{esc(note)}。一覧は白鷺病院の五十音順索引(ア行〜ワ行の44ページ)から作った写しで、PDF本体はこのサイトには保存していません(白鷺病院サイトからそのまま開きます)。
+索引の「▼◎○△」は白鷺病院内の採用区分なので省いています。一般名はPMDA添付文書一覧との突き合わせで自動的に補ったもので、付いていない薬・合わない薬もあります。
+<b>ガイドラインの内容は改訂時点の情報です。最新情報は必ず添付文書等で確認してください</b>
+(<a href="{touseki_index.TEBIKI_URL}" target="_blank" rel="noopener">利用の手引き ↗</a> ｜ <a href="{touseki_index.REFS_URL}" target="_blank" rel="noopener">引用文献 ↗</a> ｜ <a href="{touseki_index.INDEX_TOP_URL}" target="_blank" rel="noopener">元の五十音順索引 ↗</a>)。</p>
+<script src="../assets/hist.js"></script>
+<script>
+(async function(){{
+  const PDFB={json.dumps(touseki_index.PDF_BASE)}, IDXB={json.dumps(idx_base)}, IDXT={json.dumps(touseki_index.INDEX_TOP_URL)};
+  const KANA={json.dumps(touseki_index.KANA_ROW, ensure_ascii=False)};
+  const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt'), rowlink=document.getElementById('rowlink');
+  const hist=window.searchHistory?window.searchHistory({{key:'tenpu-watch:touseki',box:document.getElementById('hist'),rerun:w=>{{q.value=w;run();}}}}):null;
+  res.addEventListener('click',ev=>{{ const a=ev.target.closest('a'); if(a&&hist&&a.dataset.hl){{ hist.addOpen(a.dataset.hl,a.href); const w=q.value.normalize('NFKC').trim(); if(w)hist.addQuery(w); }} }});
+  let data;
+  try{{ data=await (await fetch('index.json')).json(); }}catch(e){{ cnt.textContent='一覧データを読み込めませんでした'; return; }}
+  const items=data.items||[], rows=(data.meta||{{}}).rows||{{}};
+  // ひらがな→カタカナ、全角→半角(NFKC)、小文字化、空白除去 でゆるく一致させる
+  const norm=s=>(s||'').normalize('NFKC').toLowerCase().replace(/[\\u3041-\\u3096]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/\\s+/g,'');
+  items.forEach(e=>{{ e._s=(e.s||[]).map(norm); e._g=(e.g||[]).map(norm); e._h=norm(e.n)+' '+e._g.join(' '); }});
+  const esc=s=>(s||'').replace(/[&<>"]/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]));
+  // 入力の先頭文字 → 白鷺病院の索引ページ(ひらがな→カタカナ、濁点・半濁点と小書きは基本の字に直す)
+  function rowKey(w){{
+    let c=(w||'').normalize('NFKC').trim(); if(!c) return '';
+    c=c.replace(/[\\u3041-\\u3096]/g,ch=>String.fromCharCode(ch.charCodeAt(0)+0x60));
+    c=c[0].normalize('NFD')[0];
+    const small='ァィゥェォャュョッヮ', big='アイウエオヤユヨツワ'; const i=small.indexOf(c); if(i>=0) c=big[i];
+    return KANA[c]||'';
+  }}
+  function run(){{
+    const kw=q.value.normalize('NFKC').trim().split(/\\s+/).filter(Boolean).map(norm);
+    const rk=rowKey(q.value);
+    rowlink.href=rk?IDXB+rk+'.html':IDXT; rowlink.textContent=rk?`白鷺病院の索引(${{rows[rk]||rk}})を開く ↗`:'白鷺病院の索引を開く ↗';
+    if(!kw.length){{ cnt.textContent=`全${{items.length.toLocaleString()}}件。薬剤名を入力してください`; res.innerHTML=''; if(hist)hist.show(); return; }}
+    if(hist)hist.hide();
+    const k0=kw[0];
+    let hits=items.filter(e=>kw.every(k=>e._h.includes(k)));
+    hits.forEach(e=>{{ e._sc=(e._s.some(s=>s.startsWith(k0))||e._g.some(g=>g.startsWith(k0)))?0:e._s.some(s=>s.includes(k0))?1:2; }});
+    hits.sort((a,b)=>a._sc-b._sc||a.n.localeCompare(b.n,'ja'));
+    const total=hits.length; hits=hits.slice(0,200);
+    cnt.textContent=`${{total.toLocaleString()}}件`+(total>200?'(先頭200件を表示。もう少し絞ってください)':'');
+    res.innerHTML=hits.map(e=>{{
+      const gen=(e.g||[]).length?`一般名: ${{esc(e.g.join('，'))}} ｜ `:'';
+      const rl=(e.r||[]).map(k=>`<a href="${{esc(IDXB+k+'.html')}}" target="_blank" rel="noopener">${{esc(rows[k]||k)}} ↗</a>`).join(' ');
+      return `<div class="hit"><a class="ifa" href="${{esc(PDFB+e.i+'.pdf')}}" data-hl="${{esc(e.n)}}" target="_blank" rel="noopener">🩸 ${{esc(e.n)}}</a><br><span class="small">${{gen}}白鷺病院の索引: ${{rl}}</span></div>`;
+    }}).join('');
+  }}
+  q.addEventListener('input',run);
+  if(location.hash){{ q.value=decodeURIComponent(location.hash.slice(1)); }}
+  run();
+}})();
+</script>
+"""
+
+
 def toolbox_live(days: list[dict]) -> str:
     """トップのカードに出す一行(最新の更新状況)"""
     if not days:
@@ -804,7 +891,7 @@ def render_home(cfg: dict, days: list[dict], tools: list[dict]) -> str:
 
 def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = None,
                    tenpu_idx: dict | None = None, shiki: dict | None = None,
-                   shiki_rows: int = 0) -> str:
+                   shiki_rows: int = 0, touseki_idx: dict | None = None) -> str:
     out = [f"<h1>💊 {SITE_TITLE}</h1>"]
     out.append(f'<h2>📄 {WATCH_TITLE}</h2>')
     if days:
@@ -861,6 +948,10 @@ def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = No
     out.append('<p>薬剤名を入れると候補が出て、クリックでインタビューフォーム(PDF)が開きます。'
                f'<span class="small">{esc(if_summary(if_idx))}</span></p>'
                '<p><a href="if/index.html">検索ページへ →</a></p>')
+    out.append(f"<h2>🩸 {TOUSEKI_TITLE}</h2>")
+    out.append('<p>白鷺病院「透析患者に対する投薬ガイドライン」の薬剤別PDF(透析患者・保存期CKD患者への投与方法の目安)を、薬剤名(商品名・一般名)で探せます。'
+               f'<span class="small">{esc(touseki_summary(touseki_idx))}</span></p>'
+               f'<p><a href="touseki/index.html">検索ページへ →</a> ｜ <a href="{touseki_index.GATE_URL}" target="_blank" rel="noopener">元データ(白鷺病院 透析患者に対する投薬ガイドライン) ↗</a></p>')
     out.append(f"<h2>🔎 {SHIKI_TITLE}</h2>")
     out.append('<p>錠剤・カプセルに印字されている記号(識別コード)から薬を探せます。'
                f'<span class="small">{esc(shiki_summary(shiki, shiki_rows))}</span></p>'
@@ -893,6 +984,7 @@ def build(root: Path) -> None:
     tenpu_idx = load_if_index(root, "tenpu_index.json")
     shiki = load_if_index(root, "shikibetsu_index.json")
     shiki_rows = shikibetsu_items(tenpu_idx, shiki)
+    touseki_idx = load_if_index(root, "touseki_index.json")
     global HOME_TITLE
     HOME_TITLE = home.get("title") or HOME_TITLE   # ヘッダー左上のロゴ名も home.json の title に合わせる
 
@@ -988,16 +1080,26 @@ def build(root: Path) -> None:
     (docs / "shikibetsu" / "index.html").write_text(
         layout(SHIKI_TITLE, render_shikibetsu_page(shiki, len(shiki_rows), n_img_rows), "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
 
+    # 透析投薬ガイドライン検索(データは data/touseki_index.json の写し。無ければページだけ作る)
+    (docs / "touseki").mkdir(parents=True, exist_ok=True)
+    (docs / "touseki" / "index.json").write_text(
+        json.dumps({"meta": {k: v for k, v in ((touseki_idx or {}).get("meta") or {}).items()
+                             if k in ("fetched_at", "count", "edition", "db_updated", "rows")},
+                    "items": (touseki_idx or {}).get("items") or []}, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8", newline="\n")
+    (docs / "touseki" / "index.html").write_text(
+        layout(TOUSEKI_TITLE, render_touseki_page(touseki_idx), "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
+
     (docs / "toolbox").mkdir(parents=True, exist_ok=True)
     (docs / "toolbox" / "index.html").write_text(
-        layout(SITE_TITLE, render_toolbox(days, tools, if_idx, tenpu_idx, shiki, len(shiki_rows)).replace('href="watch/', 'href="../watch/').replace('href="tools/', 'href="../tools/').replace('href="if/', 'href="../if/').replace('href="tenpu/', 'href="../tenpu/').replace('href="shikibetsu/', 'href="../shikibetsu/'),
+        layout(SITE_TITLE, render_toolbox(days, tools, if_idx, tenpu_idx, shiki, len(shiki_rows), touseki_idx).replace('href="watch/', 'href="../watch/').replace('href="tools/', 'href="../tools/').replace('href="if/', 'href="../if/').replace('href="tenpu/', 'href="../tenpu/').replace('href="shikibetsu/', 'href="../shikibetsu/').replace('href="touseki/', 'href="../touseki/'),
                "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
     (docs / "index.html").write_text(
         layout(home.get("title") or HOME_TITLE, render_home(home, days, tools), "", dates, None, built_at, tools, side=False),
         encoding="utf-8", newline="\n")
     print(f"site built: {len(days)} days, {len(search_rows)} entries, {len(tools)} tools, "
           f"IF {len((if_idx or {}).get('items') or [])}, 添付文書 {len((tenpu_idx or {}).get('items') or [])}, "
-          f"識別コード {len(shiki_rows)} -> {docs}")
+          f"識別コード {len(shiki_rows)}, 透析GL {len((touseki_idx or {}).get('items') or [])} -> {docs}")
 
 
 if __name__ == "__main__":

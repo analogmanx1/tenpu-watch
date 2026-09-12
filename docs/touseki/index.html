@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>透析投薬ガイドライン検索</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../index.html">🏠 ファーマビット</a>
+  <nav class="topnav">
+    <details class="menu"><summary>💊 薬剤師ツールボックス ▾</summary><div class="dd">
+      <a class="head" href="../toolbox/index.html">💊 薬剤師ツールボックス トップ</a>
+      <a class="head" href="../watch/index.html">📄 添付文書ウォッチ</a>
+      <a class="sub" href="../watch/archive.html">バックナンバー</a>
+      <a class="sub" href="../watch/search.html">検索</a>
+      <a class="head" href="../tenpu/index.html">📕 添付文書検索</a>
+      <a class="head" href="../if/index.html">📘 インタビューフォーム検索</a>
+      <a class="head" href="../touseki/index.html">🩸 透析投薬ガイドライン検索</a>
+      <a class="head" href="../shikibetsu/index.html">🔎 識別コード検索</a>
+      <span class="head">🧮 ツール</span>
+      <a class="sub" href="../tools/accumulation.html">蓄積率（蓄積係数）計算</a><a class="sub" href="../tools/dialysis.html">血液透析による薬物除去率</a><a class="sub" href="../tools/gamma.html">ガンマ計算（γ計算）</a>
+    </div></details>
+  </nav>
+</header>
+<div class="wrap">
+
+<main class="main">
+
+<h1>🩸 透析投薬ガイドライン検索</h1>
+<p class="small">白鷺病院 薬剤科が公開している「<a href="https://www.shirasagi-hp.or.jp/goda/fmly/gate.html" target="_blank" rel="noopener">透析患者に対する投薬ガイドライン ↗</a>」
+(透析患者・保存期CKD患者への投与方法の目安、薬物動態、透析性などを薬剤ごとにまとめたPDF)を薬剤名で探せます。
+商品名(先発品名が中心)で検索。一般名(例: カルベジロール)でも多くの薬がヒットします。<b>候補をクリックするとPDFが新しいタブで開きます</b>(白鷺病院サイト上のPDF)。
+スペース区切りで絞り込み(例: <code>アーチスト 錠</code>)。ひらがな/全角半角の違いは気にしなくてOK。</p>
+<div class="ifbar">
+  <input id="q" type="search" placeholder="例: アーチスト / カルベジロール / バクタ" autofocus autocomplete="off">
+  <a id="rowlink" class="btn" href="https://www.shirasagi-hp.or.jp/goda/fmly/pdf/index.html" target="_blank" rel="noopener" title="白鷺病院の五十音順索引(元ページ)を別タブで開きます。入力した薬剤名の頭文字の行に飛びます">白鷺病院の索引を開く ↗</a>
+</div>
+<p class="small" id="cnt"></p>
+<div id="hist"></div>
+<div id="res"></div>
+<p class="small" id="ifmeta">一覧データ: 2026-09-12 時点・2,074件(白鷺病院のデータベース: 13th Edition / 2026年9月4日 更新)。一覧は白鷺病院の五十音順索引(ア行〜ワ行の44ページ)から作った写しで、PDF本体はこのサイトには保存していません(白鷺病院サイトからそのまま開きます)。
+索引の「▼◎○△」は白鷺病院内の採用区分なので省いています。一般名はPMDA添付文書一覧との突き合わせで自動的に補ったもので、付いていない薬・合わない薬もあります。
+<b>ガイドラインの内容は改訂時点の情報です。最新情報は必ず添付文書等で確認してください</b>
+(<a href="https://www.shirasagi-hp.or.jp/goda/fmly/tebiki.html" target="_blank" rel="noopener">利用の手引き ↗</a> ｜ <a href="https://www.shirasagi-hp.or.jp/goda/fmly/references.html" target="_blank" rel="noopener">引用文献 ↗</a> ｜ <a href="https://www.shirasagi-hp.or.jp/goda/fmly/pdf/index.html" target="_blank" rel="noopener">元の五十音順索引 ↗</a>)。</p>
+<script src="../assets/hist.js"></script>
+<script>
+(async function(){
+  const PDFB="https://www.shirasagi-hp.or.jp/goda/fmly/pdf/files/", IDXB="https://www.shirasagi-hp.or.jp/goda/fmly/pdf/index/index-", IDXT="https://www.shirasagi-hp.or.jp/goda/fmly/pdf/index.html";
+  const KANA={"ア": "a", "イ": "i", "ウ": "u", "エ": "e", "オ": "o", "カ": "ka", "キ": "ki", "ク": "ku", "ケ": "ke", "コ": "ko", "サ": "sa", "シ": "si", "ス": "su", "セ": "se", "ソ": "so", "タ": "ta", "チ": "ti", "ツ": "tu", "テ": "te", "ト": "to", "ナ": "na", "ニ": "ni", "ヌ": "nu", "ネ": "ne", "ノ": "no", "ハ": "ha", "ヒ": "hi", "フ": "hu", "ヘ": "he", "ホ": "ho", "マ": "ma", "ミ": "mi", "ム": "mu", "メ": "me", "モ": "mo", "ヤ": "ya", "ユ": "yu", "ヨ": "yo", "ラ": "ra", "リ": "ri", "ル": "ru", "レ": "re", "ロ": "ro", "ワ": "wa", "ヲ": "wa", "ン": "wa"};
+  const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt'), rowlink=document.getElementById('rowlink');
+  const hist=window.searchHistory?window.searchHistory({key:'tenpu-watch:touseki',box:document.getElementById('hist'),rerun:w=>{q.value=w;run();}}):null;
+  res.addEventListener('click',ev=>{ const a=ev.target.closest('a'); if(a&&hist&&a.dataset.hl){ hist.addOpen(a.dataset.hl,a.href); const w=q.value.normalize('NFKC').trim(); if(w)hist.addQuery(w); } });
+  let data;
+  try{ data=await (await fetch('index.json')).json(); }catch(e){ cnt.textContent='一覧データを読み込めませんでした'; return; }
+  const items=data.items||[], rows=(data.meta||{}).rows||{};
+  // ひらがな→カタカナ、全角→半角(NFKC)、小文字化、空白除去 でゆるく一致させる
+  const norm=s=>(s||'').normalize('NFKC').toLowerCase().replace(/[\u3041-\u3096]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/\s+/g,'');
+  items.forEach(e=>{ e._s=(e.s||[]).map(norm); e._g=(e.g||[]).map(norm); e._h=norm(e.n)+' '+e._g.join(' '); });
+  const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  // 入力の先頭文字 → 白鷺病院の索引ページ(ひらがな→カタカナ、濁点・半濁点と小書きは基本の字に直す)
+  function rowKey(w){
+    let c=(w||'').normalize('NFKC').trim(); if(!c) return '';
+    c=c.replace(/[\u3041-\u3096]/g,ch=>String.fromCharCode(ch.charCodeAt(0)+0x60));
+    c=c[0].normalize('NFD')[0];
+    const small='ァィゥェォャュョッヮ', big='アイウエオヤユヨツワ'; const i=small.indexOf(c); if(i>=0) c=big[i];
+    return KANA[c]||'';
+  }
+  function run(){
+    const kw=q.value.normalize('NFKC').trim().split(/\s+/).filter(Boolean).map(norm);
+    const rk=rowKey(q.value);
+    rowlink.href=rk?IDXB+rk+'.html':IDXT; rowlink.textContent=rk?`白鷺病院の索引(${rows[rk]||rk})を開く ↗`:'白鷺病院の索引を開く ↗';
+    if(!kw.length){ cnt.textContent=`全${items.length.toLocaleString()}件。薬剤名を入力してください`; res.innerHTML=''; if(hist)hist.show(); return; }
+    if(hist)hist.hide();
+    const k0=kw[0];
+    let hits=items.filter(e=>kw.every(k=>e._h.includes(k)));
+    hits.forEach(e=>{ e._sc=(e._s.some(s=>s.startsWith(k0))||e._g.some(g=>g.startsWith(k0)))?0:e._s.some(s=>s.includes(k0))?1:2; });
+    hits.sort((a,b)=>a._sc-b._sc||a.n.localeCompare(b.n,'ja'));
+    const total=hits.length; hits=hits.slice(0,200);
+    cnt.textContent=`${total.toLocaleString()}件`+(total>200?'(先頭200件を表示。もう少し絞ってください)':'');
+    res.innerHTML=hits.map(e=>{
+      const gen=(e.g||[]).length?`一般名: ${esc(e.g.join('，'))} ｜ `:'';
+      const rl=(e.r||[]).map(k=>`<a href="${esc(IDXB+k+'.html')}" target="_blank" rel="noopener">${esc(rows[k]||k)} ↗</a>`).join(' ');
+      return `<div class="hit"><a class="ifa" href="${esc(PDFB+e.i+'.pdf')}" data-hl="${esc(e.n)}" target="_blank" rel="noopener">🩸 ${esc(e.n)}</a><br><span class="small">${gen}白鷺病院の索引: ${rl}</span></div>`;
+    }).join('');
+  }
+  q.addEventListener('input',run);
+  if(location.hash){ q.value=decodeURIComponent(location.hash.slice(1)); }
+  run();
+})();
+</script>
+
+<footer class="foot">
+  <p>個人運営の非公式サイトです。添付文書ウォッチの出典: PMDA「過去1週間以内に更新された添付文書情報」および各添付文書XML。データ最終更新: 2026-09-11 18:14:42 JST</p>
+</footer>
+</main>
+</div>
+<script src="../assets/nav.js"></script>
+</body>
+</html>
