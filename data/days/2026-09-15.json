@@ -1,0 +1,916 @@
+{
+ "date": "2026-09-15",
+ "updates": [
+  {
+   "brand": "レボホリナート点滴静注用25mg「タカタ」...",
+   "company": "製造販売元／高田製薬株式会社",
+   "reason": "新規",
+   "packins_no": "39294A0D1049_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/39294A0D1049_1_01/",
+   "fetched_at": "2026-09-16 19:34:37",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400186_39294A0D1049_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400186_39294A0D1049_1_01",
+   "meta": {
+    "packins_no": "39294A0D1049_1_01",
+    "company_id": "400186",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "レボホリナート点滴静注用25mg「タカタ」",
+     "レボホリナート点滴静注用100mg「タカタ」"
+    ],
+    "generic_name": "レボホリナートカルシウム水和物",
+    "therapeutic_class": "活性型葉酸製剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "レボホリナート点滴静注用25mg「タカタ」"
+    },
+    {
+     "path": [],
+     "text": "レボホリナート点滴静注用100mg「タカタ」"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リュープリン注射用1.88mg／リュープリン...",
+   "company": "製造販売元／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2499407D1031_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499407D1031_1_08/",
+   "fetched_at": "2026-09-16 19:34:39",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400256_2499407D1031_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400256_2499407D1031_1_08",
+   "meta": {
+    "packins_no": "2499407D1031_1_08",
+    "company_id": "400256",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-05",
+      "ver": null
+     }
+    },
+    "brands": [
+     "リュープリン注射用1.88mg",
+     "リュープリン注射用3.75mg",
+     "リュープリン注射用キット1.88mg",
+     "リュープリン注射用キット3.75mg"
+    ],
+    "generic_name": "リュープロレリン酢酸塩",
+    "therapeutic_class": "LH-RH注1）誘導体\n注1）LH-RH：黄体形成ホルモン放出ホルモン / マイクロカプセル型徐放性製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "〈前立腺癌〉",
+      "うつ状態（0.1%未満）"
+     ],
+     "text": "うつ状態に伴い、自殺念慮（頻度不明）があらわれた症例が報告されている。"
+    },
+    {
+     "path": [
+      "１４.適用上の注意",
+      "薬剤調製時の注意",
+      "(1)"
+     ],
+     "text": "用時調製し、粒子が沈降するので懸濁後は直ちに使用すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リュープリンSR注射用キット11.25mg",
+   "company": "製造販売元／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2499407G3030_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499407G3030_1_09/",
+   "fetched_at": "2026-09-16 19:34:41",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400256_2499407G3030_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400256_2499407G3030_1_09",
+   "meta": {
+    "packins_no": "2499407G3030_1_09",
+    "company_id": "400256",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-05",
+      "ver": null
+     }
+    },
+    "brands": [
+     "リュープリンSR注射用キット11.25mg"
+    ],
+    "generic_name": "リュープロレリン酢酸塩",
+    "therapeutic_class": "LH-RH注1）誘導体\n注1）LH-RH：黄体形成ホルモン放出ホルモン / マイクロカプセル型徐放性製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "〈前立腺癌〉",
+      "うつ状態（0.1%未満）"
+     ],
+     "text": "うつ状態に伴い、自殺念慮（頻度不明）があらわれた症例が報告されている。"
+    },
+    {
+     "path": [
+      "１４.適用上の注意",
+      "薬剤調製時の注意",
+      "(1)"
+     ],
+     "text": "用時調製し、粒子が沈降するので懸濁後は直ちに使用すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リュープリンPRO注射用キット22.5mg",
+   "company": "製造販売元／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2499407G4029_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499407G4029_1_09/",
+   "fetched_at": "2026-09-16 19:34:43",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400256_2499407G4029_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400256_2499407G4029_1_09",
+   "meta": {
+    "packins_no": "2499407G4029_1_09",
+    "company_id": "400256",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-05",
+      "ver": null
+     }
+    },
+    "brands": [
+     "リュープリンPRO注射用キット22.5mg"
+    ],
+    "generic_name": "リュープロレリン酢酸塩",
+    "therapeutic_class": "LH-RH注1）誘導体\n注1）LH-RH：黄体形成ホルモン放出ホルモン / マイクロカプセル型徐放性製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "〈前立腺癌〉",
+      "うつ状態（0.1%未満）"
+     ],
+     "text": "うつ状態に伴い、自殺念慮（頻度不明）があらわれた症例が報告されている。"
+    },
+    {
+     "path": [
+      "１４.適用上の注意",
+      "薬剤調製時の注意",
+      "(1)"
+     ],
+     "text": "用時調製し、粒子が沈降するので懸濁後は直ちに使用すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ブロナンセリン錠2mg「DSEP」／ブロナンセ...",
+   "company": "製造販売元／第一三共エスファ株式会社 / 販売提携／第一三共株式会社",
+   "reason": "更新",
+   "packins_no": "1179048F1035_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179048F1035_1_14/",
+   "fetched_at": "2026-09-16 19:34:46",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/430773_1179048F1035_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/430773_1179048F1035_1_14",
+   "meta": {
+    "packins_no": "1179048F1035_1_14",
+    "company_id": "430773",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "ブロナンセリン錠2mg「DSEP」",
+     "ブロナンセリン錠4mg「DSEP」",
+     "ブロナンセリン錠8mg「DSEP」"
+    ],
+    "generic_name": "ブロナンセリン錠",
+    "therapeutic_class": "抗精神病剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "リュープロレリン酢酸塩注射用キット1.88m...",
+   "company": "製造販売元／あすか製薬株式会社 / 販売元／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2499407G1046_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499407G1046_1_08/",
+   "fetched_at": "2026-09-16 19:34:48",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/470007_2499407G1046_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/470007_2499407G1046_1_08",
+   "meta": {
+    "packins_no": "2499407G1046_1_08",
+    "company_id": "470007",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-11",
+      "ver": null
+     }
+    },
+    "brands": [
+     "リュープロレリン酢酸塩注射用キット1.88mg「あすか」",
+     "リュープロレリン酢酸塩注射用キット3.75mg「あすか」"
+    ],
+    "generic_name": "リュープロレリン酢酸塩",
+    "therapeutic_class": "LH-RH注1）誘導体\n注1）LH-RH：黄体形成ホルモン放出ホルモン / マイクロカプセル型徐放性製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "〈前立腺癌〉",
+      "うつ状態（0.1%未満）"
+     ],
+     "text": "うつ状態（0.1%未満）"
+    },
+    {
+     "path": [
+      "１４.適用上の注意",
+      "薬剤調製時の注意",
+      "(1)"
+     ],
+     "text": "用時調製し、粒子が沈降するので懸濁後は直ちに使用すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リュープロレリン酢酸塩SR注射用キット11....",
+   "company": "製造販売元／あすか製薬株式会社 / 販売元／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2499407G3057_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499407G3057_1_02/",
+   "fetched_at": "2026-09-16 19:34:50",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/470007_2499407G3057_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/470007_2499407G3057_1_02",
+   "meta": {
+    "packins_no": "2499407G3057_1_02",
+    "company_id": "470007",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": null
+     }
+    },
+    "brands": [
+     "リュープロレリン酢酸塩SR注射用キット11.25mg「あすか」"
+    ],
+    "generic_name": "リュープロレリン酢酸塩",
+    "therapeutic_class": "LH-RH注1）誘導体\n注1）LH-RH：黄体形成ホルモン放出ホルモン / マイクロカプセル型徐放性製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "〈前立腺癌〉",
+      "うつ状態（0.1%未満）"
+     ],
+     "text": "うつ状態（0.1%未満）"
+    },
+    {
+     "path": [
+      "１４.適用上の注意",
+      "薬剤調製時の注意",
+      "(1)"
+     ],
+     "text": "用時調製し、粒子が沈降するので懸濁後は直ちに使用すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リュープロレリン酢酸塩注射用キット1.88m...",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "更新",
+   "packins_no": "2499407G1038_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499407G1038_1_09/",
+   "fetched_at": "2026-09-16 19:36:07",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530100_2499407G1038_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530100_2499407G1038_1_09",
+   "meta": {
+    "packins_no": "2499407G1038_1_09",
+    "company_id": "530100",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-12",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "リュープロレリン酢酸塩注射用キット1.88mg「NP」",
+     "リュープロレリン酢酸塩注射用キット3.75mg「NP」"
+    ],
+    "generic_name": "注射用リュープロレリン酢酸塩",
+    "therapeutic_class": "LH-RH誘導体 / マイクロカプセル型徐放性製剤 / LH-RH：黄体形成ホルモン放出ホルモン / LH-RH：黄体形成ホルモン放出ホルモン"
+   },
+   "revised": [
+    {
+     "path": [
+      "〈前立腺癌〉",
+      "うつ状態（0.1%未満）"
+     ],
+     "text": "うつ状態（0.1%未満）"
+    },
+    {
+     "path": [
+      "薬剤調製時の注意",
+      "(1)"
+     ],
+     "text": "用時調製し、粒子が沈降するので懸濁後は直ちに使用すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リュープロレリン酢酸塩SR注射用キット11....",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "更新",
+   "packins_no": "2499407G3049_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499407G3049_1_02/",
+   "fetched_at": "2026-09-16 19:36:34",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530100_2499407G3049_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530100_2499407G3049_1_02",
+   "meta": {
+    "packins_no": "2499407G3049_1_02",
+    "company_id": "530100",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2025-08",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "リュープロレリン酢酸塩SR注射用キット11.25mg「NP」"
+    ],
+    "generic_name": "注射用リュープロレリン酢酸塩",
+    "therapeutic_class": "LH-RH誘導体 / LH-RH：黄体形成ホルモン放出ホルモン\n マイクロカプセル型徐放性製剤 / LH-RH：黄体形成ホルモン放出ホルモン"
+   },
+   "revised": [
+    {
+     "path": [
+      "〈前立腺癌〉",
+      "うつ状態（0.1%未満）"
+     ],
+     "text": "うつ状態（0.1%未満）"
+    },
+    {
+     "path": [
+      "薬剤調製時の注意",
+      "(1)"
+     ],
+     "text": "用時調製し、粒子が沈降するので懸濁後は直ちに使用すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ラコサミド錠50mg「ケミファ」／ラコサミ...",
+   "company": "製造販売元／日本ケミファ株式会社",
+   "reason": "更新",
+   "packins_no": "1139015F1078_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1139015F1078_1_04/",
+   "fetched_at": "2026-09-16 19:36:36",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530213_1139015F1078_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530213_1139015F1078_1_04",
+   "meta": {
+    "packins_no": "1139015F1078_1_04",
+    "company_id": "530213",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "ラコサミド錠50mg「ケミファ」",
+     "ラコサミド錠100mg「ケミファ」"
+    ],
+    "generic_name": "ラコサミド錠",
+    "therapeutic_class": "抗てんかん剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "皮膚"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ラコサミド錠50mg「ケミファ」／ラコサミ...",
+   "company": "製造販売元／日本ケミファ株式会社 / 販売元／共創未来ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "1139015F1078_2_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1139015F1078_2_04/",
+   "fetched_at": "2026-09-16 19:36:38",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530213_1139015F1078_2_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530213_1139015F1078_2_04",
+   "meta": {
+    "packins_no": "1139015F1078_2_04",
+    "company_id": "530213",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "ラコサミド錠50mg「ケミファ」",
+     "ラコサミド錠100mg「ケミファ」"
+    ],
+    "generic_name": "ラコサミド錠",
+    "therapeutic_class": "抗てんかん剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "皮膚"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ラコサミドドライシロップ10％「ケミファ...",
+   "company": "製造販売元／日本ケミファ株式会社",
+   "reason": "更新",
+   "packins_no": "1139015R1066_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1139015R1066_1_04/",
+   "fetched_at": "2026-09-16 19:37:04",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530213_1139015R1066_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530213_1139015R1066_1_04",
+   "meta": {
+    "packins_no": "1139015R1066_1_04",
+    "company_id": "530213",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "ラコサミドドライシロップ10％「ケミファ」"
+    ],
+    "generic_name": "ラコサミドドライシロップ",
+    "therapeutic_class": "抗てんかん剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "皮膚"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ラコサミドドライシロップ10％「ケミファ...",
+   "company": "製造販売元／日本ケミファ株式会社 / 販売元／共創未来ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "1139015R1066_2_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1139015R1066_2_04/",
+   "fetched_at": "2026-09-16 19:37:06",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530213_1139015R1066_2_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530213_1139015R1066_2_04",
+   "meta": {
+    "packins_no": "1139015R1066_2_04",
+    "company_id": "530213",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "ラコサミドドライシロップ10％「ケミファ」"
+    ],
+    "generic_name": "ラコサミドドライシロップ",
+    "therapeutic_class": "抗てんかん剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "皮膚"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トルリシティ皮下注0.75mgアテオス／トル...",
+   "company": "製造販売元／日本イーライリリー株式会社",
+   "reason": "更新",
+   "packins_no": "2499416G1029_1_24",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499416G1029_1_24/",
+   "fetched_at": "2026-09-16 19:38:00",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530471_2499416G1029_1_24",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530471_2499416G1029_1_24",
+   "meta": {
+    "packins_no": "2499416G1029_1_24",
+    "company_id": "530471",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第12版"
+     },
+     "previous": {
+      "ym": "2026-05",
+      "ver": "第11版"
+     }
+    },
+    "brands": [
+     "トルリシティ皮下注0.75mgアテオス",
+     "トルリシティ皮下注1.5mgアテオス"
+    ],
+    "generic_name": "デュラグルチド（遺伝子組換え）注射液",
+    "therapeutic_class": "持続性GLP-1受容体作動薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報",
+      "(2)"
+     ],
+     "text": "薬剤との因果関係は明らかではないが、GLP-1受容体作動薬投与後に非動脈炎性前部虚血性視神経症（NAION）の発現リスク増加の可能性を示唆する観察研究等が報告されている。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "マンジャロ皮下注2.5mgアテオス／マンジャ...",
+   "company": "製造販売元／日本イーライリリー株式会社 / 販売元／田辺ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2499422G1024_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499422G1024_1_11/",
+   "fetched_at": "2026-09-16 19:38:26",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530471_2499422G1024_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530471_2499422G1024_1_11",
+   "meta": {
+    "packins_no": "2499422G1024_1_11",
+    "company_id": "530471",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第11版"
+     },
+     "previous": {
+      "ym": "2026-05",
+      "ver": "第10版"
+     }
+    },
+    "brands": [
+     "マンジャロ皮下注2.5mgアテオス",
+     "マンジャロ皮下注5mgアテオス",
+     "マンジャロ皮下注7.5mgアテオス",
+     "マンジャロ皮下注10mgアテオス",
+     "マンジャロ皮下注12.5mgアテオス",
+     "マンジャロ皮下注15mgアテオス"
+    ],
+    "generic_name": "チルゼパチド注射液",
+    "therapeutic_class": "持続性GIP/GLP-1受容体作動薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報",
+      "(2)"
+     ],
+     "text": "薬剤との因果関係は明らかではないが、GLP-1受容体作動薬投与後に非動脈炎性前部虚血性視神経症（NAION）の発現リスク増加の可能性を示唆する観察研究等が報告されている。"
+    },
+    {
+     "path": [
+      "１７.臨床成績",
+      "１７.１ 有効性及び安全性に関する試験",
+      "実薬対照二重盲検比較試験（第III相国際共同試験）"
+     ],
+     "text": "実薬対照二重盲検比較試験（第III相国際共同試験）"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料: 2型糖尿病患者における主要心血管イベントに対する影響を評価した試験(GPGN試験)"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ゼップバウンド皮下注2.5mgアテオス／ゼッ...",
+   "company": "製造販売元／日本イーライリリー株式会社 / 販売元／田辺ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2499422G7022_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499422G7022_1_06/",
+   "fetched_at": "2026-09-16 19:38:28",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530471_2499422G7022_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530471_2499422G7022_1_06",
+   "meta": {
+    "packins_no": "2499422G7022_1_06",
+    "company_id": "530471",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-05",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "ゼップバウンド皮下注2.5mgアテオス",
+     "ゼップバウンド皮下注5mgアテオス",
+     "ゼップバウンド皮下注7.5mgアテオス",
+     "ゼップバウンド皮下注10mgアテオス",
+     "ゼップバウンド皮下注12.5mgアテオス",
+     "ゼップバウンド皮下注15mgアテオス"
+    ],
+    "generic_name": "チルゼパチド注射液",
+    "therapeutic_class": "持続性GIP/GLP-1受容体作動薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報",
+      "(1)"
+     ],
+     "text": "薬剤との因果関係は明らかではないが、GLP-1受容体作動薬投与後に非動脈炎性前部虚血性視神経症（NAION）の発現リスク増加の可能性を示唆する観察研究等が報告されている。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "クエチアピン錠25mg「JG」／クエチアピン...",
+   "company": "製造販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "1179042F1070_1_19",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179042F1070_1_19/",
+   "fetched_at": "2026-09-16 19:38:31",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580591_1179042F1070_1_19",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580591_1179042F1070_1_19",
+   "meta": {
+    "packins_no": "1179042F1070_1_19",
+    "company_id": "580591",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-02",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "クエチアピン錠25mg「JG」",
+     "クエチアピン錠100mg「JG」",
+     "クエチアピン錠200mg「JG」"
+    ],
+    "generic_name": "クエチアピンフマル酸塩錠",
+    "therapeutic_class": "抗精神病剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "過敏症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リナグリプチンOD錠5mg「JG」",
+   "company": "製造販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "39690B3F2038_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/39690B3F2038_1_03/",
+   "fetched_at": "2026-09-16 19:38:33",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580591_39690B3F2038_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580591_39690B3F2038_1_03",
+   "meta": {
+    "packins_no": "39690B3F2038_1_03",
+    "company_id": "580591",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "リナグリプチンOD錠5mg「JG」"
+    ],
+    "generic_name": "リナグリプチン口腔内崩壊錠",
+    "therapeutic_class": "胆汁排泄型選択的DPP-4阻害剤\n-2型糖尿病治療剤-"
+   },
+   "revised": [],
+   "diff": {
+    "prev_packins_no": "39690B3F2038_1_02",
+    "prev_fetched_at": "2026-08-23 17:02:58",
+    "prev_seen_date": "2026-08-18",
+    "changes": []
+   }
+  },
+  {
+   "brand": "ダイメジン・マルチ注",
+   "company": "製造販売元／日医工ファーマ株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "3179515F1030_2_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3179515F1030_2_03/",
+   "fetched_at": "2026-09-16 19:38:59",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580825_3179515F1030_2_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580825_3179515F1030_2_03",
+   "meta": {
+    "packins_no": "3179515F1030_2_03",
+    "company_id": "580825",
+    "revision": {
+     "current": {
+      "ym": "2023-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ダイメジン・マルチ注"
+    ],
+    "generic_name": "高カロリー輸液用総合ビタミン剤",
+    "therapeutic_class": "高カロリー輸液用総合ビタミン剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "0.5%グルコジンR水",
+   "company": "製造販売元／ヤクハン製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2619702Q2120_3_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2619702Q2120_3_02/",
+   "fetched_at": "2026-09-16 19:39:25",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/800012_2619702Q2120_3_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/800012_2619702Q2120_3_02",
+   "meta": {
+    "packins_no": "2619702Q2120_3_02",
+    "company_id": "800012",
+    "revision": {
+     "current": {
+      "ym": "2025-11",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "0.5%グルコジンR水"
+    ],
+    "generic_name": "クロルヘキシジングルコン酸塩製剤",
+    "therapeutic_class": "外用殺菌消毒剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "0.05%グルコジンW水",
+   "company": "製造販売元／ヤクハン製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2619702X2036_4_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2619702X2036_4_02/",
+   "fetched_at": "2026-09-16 19:39:52",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/800012_2619702X2036_4_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/800012_2619702X2036_4_02",
+   "meta": {
+    "packins_no": "2619702X2036_4_02",
+    "company_id": "800012",
+    "revision": {
+     "current": {
+      "ym": "2025-11",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "0.05%グルコジンW水"
+    ],
+    "generic_name": "クロルヘキシジングルコン酸塩製剤",
+    "therapeutic_class": "外用殺菌消毒剤"
+   },
+   "revised": [],
+   "diff": null
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-09-16 19:34:37",
+ "updated_at": "2026-09-16 19:40:18",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
