@@ -751,10 +751,75 @@
     "prev_seen_date": "2026-08-19",
     "changes": []
    }
+  },
+  {
+   "brand": "ゾキンヴィカプセル50mg／ゾキンヴィカプ...",
+   "company": "製造販売元（輸入）／アンジェス株式会社",
+   "reason": "更新",
+   "packins_no": "3999061M1027_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999061M1027_1_04/",
+   "fetched_at": "2026-09-17 18:04:59",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/111298_3999061M1027_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/111298_3999061M1027_1_04",
+   "meta": {
+    "packins_no": "3999061M1027_1_04",
+    "company_id": "111298",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ゾキンヴィカプセル50mg",
+     "ゾキンヴィカプセル75mg"
+    ],
+    "generic_name": "ロナファルニブ製剤",
+    "therapeutic_class": "早老症治療用剤 / ファルネシルトランスフェラーゼ阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "(2)"
+     ],
+     "text": "強いCYP3A阻害剤（イトラコナゾール、ボリコナゾール、ポサコナゾール、リトナビル含有製剤、ダルナビル エタノール付加物、コビシスタット含有製剤、クラリスロマイシン含有製剤、セリチニブ、エンシトレルビル フマル酸、ツカチニブ エタノール付加物）を投与中の患者,"
+    },
+    {
+     "path": [
+      "(10)"
+     ],
+     "text": "ツカチニブ エタノール付加物"
+    },
+    {
+     "path": [],
+     "text": "マバカムテン"
+    },
+    {
+     "path": [],
+     "text": "パロバロテン"
+    },
+    {
+     "path": [],
+     "text": "P-gp阻害剤"
+    },
+    {
+     "path": [
+      "併用薬がロナファルニブの薬物動態に及ぼす影響"
+     ],
+     "text": "併用薬がロナファルニブの薬物動態に及ぼす影響"
+    }
+   ],
+   "diff": null
   }
  ],
  "deletes": [],
  "created_at": "2026-09-17 12:38:26",
- "updated_at": "2026-09-17 12:38:47",
+ "updated_at": "2026-09-17 18:05:02",
  "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
 }
