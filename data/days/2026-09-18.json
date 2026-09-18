@@ -1,0 +1,181 @@
+{
+ "date": "2026-09-18",
+ "updates": [
+  {
+   "brand": "ゾビラックス眼軟膏3%",
+   "company": "製造販売元／日東メディック株式会社",
+   "reason": "更新",
+   "packins_no": "1319719M1046_3_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319719M1046_3_04/",
+   "fetched_at": "2026-09-18 17:32:20",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/100461_1319719M1046_3_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/100461_1319719M1046_3_04",
+   "meta": {
+    "packins_no": "1319719M1046_3_04",
+    "company_id": "100461",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ゾビラックス眼軟膏3%"
+    ],
+    "generic_name": "アシクロビル眼軟膏",
+    "therapeutic_class": "ヘルペス性角膜炎化学療法剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "血管性浮腫、蕁麻疹"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ゾビラックス眼軟膏3%",
+   "company": "製造販売元／日東メディック株式会社 / 販売元／参天製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1319719M1046_4_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319719M1046_4_04/",
+   "fetched_at": "2026-09-18 17:32:30",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/100461_1319719M1046_4_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/100461_1319719M1046_4_04",
+   "meta": {
+    "packins_no": "1319719M1046_4_04",
+    "company_id": "100461",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ゾビラックス眼軟膏3%"
+    ],
+    "generic_name": "アシクロビル眼軟膏",
+    "therapeutic_class": "ヘルペス性角膜炎化学療法剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "血管性浮腫、蕁麻疹"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "クエチアピン錠12.5mg「アメル」／クエチ...",
+   "company": "製造販売元／共和薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "1179042C1040_2_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179042C1040_2_06/",
+   "fetched_at": "2026-09-18 17:32:34",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672173_1179042C1040_2_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672173_1179042C1040_2_06",
+   "meta": {
+    "packins_no": "1179042C1040_2_06",
+    "company_id": "672173",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-01",
+      "ver": null
+     }
+    },
+    "brands": [
+     "クエチアピン錠12.5mg「アメル」",
+     "クエチアピン錠25mg「アメル」",
+     "クエチアピン錠50mg「アメル」",
+     "クエチアピン錠100mg「アメル」",
+     "クエチアピン錠200mg「アメル」",
+     "クエチアピン細粒10％「アメル」",
+     "クエチアピン細粒50％「アメル」"
+    ],
+    "generic_name": "クエチアピンフマル酸塩",
+    "therapeutic_class": "抗精神病剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "血管性浮腫、そう痒、湿疹"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アムロジピンOD錠2.5mg「アメル」／アムロ...",
+   "company": "製造販売元／共和薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2171022F3145_2_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171022F3145_2_03/",
+   "fetched_at": "2026-09-18 17:32:37",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672173_2171022F3145_2_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672173_2171022F3145_2_03",
+   "meta": {
+    "packins_no": "2171022F3145_2_03",
+    "company_id": "672173",
+    "revision": {
+     "current": {
+      "ym": "2026-05",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": null
+     }
+    },
+    "brands": [
+     "アムロジピンOD錠2.5mg「アメル」",
+     "アムロジピンOD錠5mg「アメル」",
+     "アムロジピンOD錠10mg「アメル」"
+    ],
+    "generic_name": "アムロジピンベシル酸塩",
+    "therapeutic_class": "高血圧症・狭心症治療薬\n持続性Ca拮抗薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "多形紅斑、血管炎、血管性浮腫"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-09-18 17:32:20",
+ "updated_at": "2026-09-18 17:32:41",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
