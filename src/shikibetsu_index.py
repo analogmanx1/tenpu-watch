@@ -367,7 +367,9 @@ def list_targets(tenpu: dict) -> dict[str, str]:
 
 
 # ---------------------------------------------------------------- 更新本体
-def refresh(root: Path, max_docs: int = 0, retry_errors: bool = False) -> dict:
+def refresh(root: Path, max_docs: int = 0, retry_errors: bool = False, on_xml=None) -> dict:
+    """on_xml(u, 更新日, XML本文): 取得できたXMLを他の機能にも渡す口(術前休薬・禁忌チェックが同じXMLを使う。
+    1文書を2回取りに行かない=PMDAへのアクセスを増やさないため)。渡した先で失敗しても識別コードの処理は止めない"""
     data_dir = root / "data"
     tenpu_f = data_dir / "tenpu_index.json"
     if not tenpu_f.exists():
@@ -476,6 +478,11 @@ def refresh(root: Path, max_docs: int = 0, retry_errors: bool = False) -> dict:
                     rec["err"] = "XMLが見つからない"
                 else:
                     rec = build_record(targets[u], xml_text, zf, img_dir, u)
+                    if on_xml:
+                        try:
+                            on_xml(u, targets[u], xml_text)
+                        except Exception as e:  # noqa: BLE001
+                            log(f"    ! on_xml で問題(識別コードの処理は続行): {type(e).__name__}: {e}")
                 net_fails = 0
             except Exception as e:  # noqa: BLE001
                 if "GET failed" in str(e):

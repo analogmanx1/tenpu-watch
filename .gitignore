@@ -13,6 +13,7 @@ desktop.ini
 
 # 識別コード取得の作業ファイル(ロック・一時保存・破損時の退避)
 data/.shikibetsu.lock
+data/.shujutsu.lock
 data/*.tmp.json
 data/*.bad.json
 

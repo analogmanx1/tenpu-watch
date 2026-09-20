@@ -59,6 +59,20 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .card{display:block;border:1px solid var(--line);border-radius:.6rem;padding:.8rem 1rem;background:var(--card);text-decoration:none;color:var(--fg)}.card:hover{border-color:var(--acc)}.card b{color:var(--acc)}.card .small{display:block;margin-top:.2rem}.card.big{padding:1.2rem 1.2rem;font-size:1.05rem}.card.big b{font-size:1.2rem}
 .calc{max-width:640px}.calc label{display:block;margin:.6rem 0 .2rem;font-weight:600}.calc input,.calc select{font-size:1rem;padding:.35rem .5rem;border:1px solid var(--line);border-radius:.4rem;background:var(--bg);color:var(--fg);width:100%;max-width:320px}
 .calc .result{margin-top:1rem;padding:.8rem 1rem;border-radius:.5rem;background:var(--card);border:1px solid var(--line);font-size:1.05rem}.calc .result b{font-size:1.3rem}
+/* ---- 術前休薬・禁忌チェック: 区分の色は --k0(禁忌) --k1(手術時の対応あり) --k2(その他)、該当文のマーカーは --hl ---- */
+:root{--k0:#b8321a;--k1:#a06a00;--k2:#777;--hl:#fff3b0}
+@media (prefers-color-scheme:dark){:root{--k0:#ff8a70;--k1:#e0a83a;--k2:#999;--hl:#4d4413}}
+.tiers{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin:.5rem 0}
+.tierbtn{font-size:.9rem;padding:.3rem .8rem;border:1px solid var(--line);border-radius:1rem;background:var(--bg);color:var(--mut);cursor:pointer}
+.tierbtn.on{color:#fff;border-color:transparent}.tierbtn.on.k0{background:#b8321a}.tierbtn.on.k1{background:#a06a00}.tierbtn.on.k2{background:#777}
+.tiers select{font-size:.9rem;padding:.3rem .4rem;border:1px solid var(--line);border-radius:.4rem;background:var(--bg);color:var(--fg);margin-left:auto}
+.badge.k0{background:#b8321a}.badge.k1{background:#a06a00}.badge.k2{background:#777}
+.sjname{font-size:1.05rem}
+.sjh{margin:.35rem 0 .35rem .1rem;padding:.1rem 0 .1rem .6rem;border-left:4px solid var(--k2);font-size:.95rem}
+.sjh.k0{border-left-color:var(--k0)}.sjh.k1{border-left-color:var(--k1)}
+.sjh mark{background:var(--hl);color:inherit;padding:0 .1rem;border-radius:.2rem}
+.sjb{color:var(--mut)}
+.sjbr a{display:inline-block;margin:.1rem .8rem .1rem 0;font-size:.9rem}
 /* ---- スマホ表示(幅 800px 以下。build_site.py の MOBILE_MAX)。上の基本ルールを上書きするので必ず最後に置く ---- */
 @media (max-width:800px){
 .wrap{flex-direction:column;padding:.7rem .8rem;gap:.8rem}
@@ -76,4 +90,6 @@ h1{font-size:1.35rem}h2{font-size:1.15rem;margin-top:1.5rem}
 ul.uplist li{padding:.2rem 0}.entry{padding:.65rem .75rem}
 table.arch td,table.arch th,table.del td,table.del th{padding:.35rem .4rem}
 .cards{grid-template-columns:1fr}
+.tierbtn{min-height:calc(var(--tap) - 8px);padding:.35rem .9rem}.tiers select{margin-left:0;min-height:calc(var(--tap) - 8px)}
+.sjbr a{display:block;padding:.35rem 0;margin:0}
 }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>術前休薬・禁忌チェック</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="../assets/icon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#2a62b8">
+<meta name="apple-mobile-web-app-title" content="ファーマビット">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../index.html">🏠 ファーマビット</a>
+  <nav class="topnav">
+    <details class="menu"><summary>💊 薬剤師ツールボックス ▾</summary><div class="dd">
+      <a class="head" href="../toolbox/index.html">💊 薬剤師ツールボックス トップ</a>
+      <a class="head" href="../watch/index.html">📄 添付文書ウォッチ</a>
+      <a class="sub" href="../watch/archive.html">バックナンバー</a>
+      <a class="sub" href="../watch/search.html">検索</a>
+      <a class="head" href="../tenpu/index.html">📕 添付文書検索</a>
+      <a class="head" href="../if/index.html">📘 インタビューフォーム検索</a>
+      <a class="head" href="../shikibetsu/index.html">🔎 識別コード検索</a>
+      <a class="head" href="../touseki/index.html">🩸 透析投薬ガイドライン検索</a>
+      <a class="head" href="../shujutsu/index.html">🏥 術前休薬・禁忌チェック</a>
+      <span class="head">🧮 ツール</span>
+      <a class="sub" href="../tools/accumulation.html">蓄積率（蓄積係数）計算</a><a class="sub" href="../tools/dialysis.html">血液透析による薬物除去率</a><a class="sub" href="../tools/gamma.html">ガンマ計算（γ計算）</a>
+    </div></details>
+  </nav>
+</header>
+<div class="wrap">
+
+<main class="main">
+
+<h1>🏥 術前休薬・禁忌チェック</h1>
+<div class="ifbar">
+  <input id="q" type="search" placeholder="例: クロピドグレル / プラビックス / 抗血小板 / 14日" autocomplete="off">
+  <a class="btn" href="https://www.pmda.go.jp/PmdaSearch/iyakuSearch" target="_blank" rel="noopener" title="PMDAの医療用医薬品 情報検索を別タブで開きます">PMDAで添付文書を検索 ↗</a>
+</div>
+<details class="help" open><summary>使い方</summary><p class="small">添付文書の「禁忌」「重要な基本的注意」「特定の背景を有する患者」「相互作用」などの章から、<b>手術に触れている文</b>を集めて一般名ごとにまとめた一覧です。
+薬剤名(一般名・販売名)や薬効(例: <code>抗血小板</code>)、文中の言葉(例: <code>14日</code>)で絞り込めます。スペース区切りでAND。ひらがな/全角半角の違いは気にしなくてOK。
+区分ボタンで出し分け(<b>🚫 禁忌</b>=禁忌の章に手術の記載 / <b>⏸ 手術時の対応あり</b>=休薬・中止・◯日前・用量調節などの記載 / <b>📎 その他</b>=それ以外の手術関連の注意。最初は畳んであります)。
+黄色のマーカーが手術に触れている文。「出典 ↗」でその添付文書(PDF)が開きます。</p></details>
+<div class="tiers" id="tiers"><button type="button" class="tierbtn k0" data-k="0">🚫 禁忌 <b></b></button><button type="button" class="tierbtn k1" data-k="1">⏸ 手術時の対応あり <b></b></button><button type="button" class="tierbtn k2" data-k="2">📎 その他 <b></b></button>
+  <select id="sort" title="並び順"><option value="yj">薬効分類順</option><option value="name">五十音順</option></select></div>
+<p class="small" id="cnt"></p>
+<div id="res"></div>
+<p class="small" id="ifmeta">一覧データ: 2026-09-20 時点・一般名 330種類(禁忌 63/手術時の対応あり 146/その他 121)。元データは<a href="https://www.info.pmda.go.jp/psearch/tenpulist.jsp" target="_blank" rel="noopener">PMDAの添付文書 ↗</a>(自宅PCの自動更新が、改版された添付文書を毎日確認して差し替えます)。
+<b>載っているのは「添付文書に手術の記載がある薬」だけです。</b>現場で術前に休薬する薬でも、添付文書に記載が無ければ載りません(院内の術前休薬一覧・各学会ガイドラインの代わりにはなりません)。
+決まった言葉(手術・術前・術後・周術期 など)で機械的に拾っているため、言い回しによっては漏れ・余計なものが混じることがあります。メーカーごとの細かい言い回しの違いは、いちばん多い表現にまとめています。
+<b>必ず最新の添付文書で確認してください。</b></p>
+<script>
+(async function(){
+  const PDFB="https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/", TIERS=["🚫 禁忌", "⏸ 手術時の対応あり", "📎 その他"];
+  const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt'), tiers=document.getElementById('tiers'), sortSel=document.getElementById('sort');
+  let data;
+  try{ data=await (await fetch('index.json')).json(); }catch(e){ cnt.textContent='一覧データを読み込めませんでした'; return; }
+  const items=data.items||[];
+  // ひらがな→カタカナ、全角→半角(NFKC)、小文字化、空白除去 でゆるく一致させる
+  const norm=s=>(s||'').normalize('NFKC').toLowerCase().replace(/[ぁ-ゖ]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/\s+/g,'');
+  items.forEach(e=>{ e._g=norm(e.g); e._h=e._g+' '+norm(e.c)+' '+(e.b||[]).map(b=>norm(b.n)).join(' ')+' '+(e.h||[]).map(h=>norm(h.ch+h.t+(h.b||'')+(h.p||''))).join(' '); });
+  const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const on=new Set([0,1]);   // 最初は 禁忌+手術時の対応あり だけ(その他は畳んでおく)
+  function drawTiers(){
+    tiers.querySelectorAll('.tierbtn').forEach(b=>{ const k=+b.dataset.k; b.classList.toggle('on',on.has(k)); b.querySelector('b').textContent=items.filter(e=>e.k===k).length.toLocaleString(); });
+  }
+  tiers.addEventListener('click',ev=>{ const b=ev.target.closest('.tierbtn'); if(!b)return; const k=+b.dataset.k; if(on.has(k))on.delete(k); else on.add(k); drawTiers(); run(); });
+  function hitHtml(h){
+    let t=esc(h.t);
+    (h.s||[]).forEach(s=>{ const es=esc(s); if(es) t=t.split(es).join('<mark>'+es+'</mark>'); });
+    t=t.replace(/\n/g,'<br>');
+    const path=h.p?' › '+esc(h.p).replace(/\n/g,' ').replace(/ &gt; /g,' › '):'';
+    const body=h.b?` <span class="sjb">— ${esc(h.b)}</span>`:'';
+    const src=h.u?` <a class="small" href="${esc(PDFB+h.u)}" target="_blank" rel="noopener">出典: ${esc((h.n||'添付文書').split('／')[0])} ↗</a>`:'';   // 規格違いが「／」で並ぶ長い販売名は先頭だけ
+    return `<div class="sjh k${h.k}"><span class="small">${esc(h.ch)}${path}</span><br>${t}${body}${src}</div>`;
+  }
+  function run(){
+    const kw=q.value.normalize('NFKC').trim().split(/\s+/).filter(Boolean).map(norm);
+    let all=kw.length?items.filter(e=>kw.every(k=>e._h.includes(k))):items.slice();
+    let hits=all.filter(e=>on.has(e.k));
+    if(kw.length){ const k0=kw[0]; hits.forEach(e=>{ e._sc=e._g.startsWith(k0)?0:e._g.includes(k0)?1:2; }); }
+    const byName=(a,b)=>a.g.localeCompare(b.g,'ja');
+    hits.sort((a,b)=>(kw.length?a._sc-b._sc:0)||(sortSel.value==='name'?byName(a,b):(a.y.localeCompare(b.y)||byName(a,b))));
+    const hidden=[0,1,2].filter(k=>!on.has(k)).map(k=>[k,all.filter(e=>e.k===k).length]).filter(x=>x[1]);
+    cnt.innerHTML=`${hits.length.toLocaleString()}件(一般名ごと)`+(hidden.length?' ｜ 表示していない区分: '+hidden.map(x=>`<a href="#" data-k="${x[0]}">${esc(TIERS[x[0]])} ${x[1]}件を表示</a>`).join(' '):'');
+    cnt.querySelectorAll('a[data-k]').forEach(a=>a.addEventListener('click',ev=>{ ev.preventDefault(); on.add(+a.dataset.k); drawTiers(); run(); }));
+    res.innerHTML=hits.map(e=>{
+      const br=(e.b||[]).map(b=>`<a href="${esc(PDFB+b.u)}" target="_blank" rel="noopener">${esc(b.n)} ↗</a>`).join('');
+      return `<div class="hit"><b class="sjname">${esc(e.g)}</b> <span class="badge k${e.k}">${esc(TIERS[e.k])}</span> <span class="small">${esc(e.c)}</span>`
+        +(e.h||[]).map(hitHtml).join('')
+        +`<details class="more"><summary>販売名 ${(e.b||[]).length}件(クリックで添付文書PDF)</summary><div class="sjbr">${br}</div></details></div>`;
+    }).join('');
+  }
+  q.addEventListener('input',run); sortSel.addEventListener('change',run);
+  if(location.hash){ q.value=decodeURIComponent(location.hash.slice(1)); }
+  drawTiers(); run();
+})();
+</script>
+
+<footer class="foot">
+  <p>個人運営の非公式サイトです。添付文書ウォッチの出典: PMDA「過去1週間以内に更新された添付文書情報」および各添付文書XML。データ最終更新: 2026-09-18 17:32:41 JST</p>
+</footer>
+</main>
+</div>
+<script src="../assets/nav.js"></script>
+</body>
+</html>

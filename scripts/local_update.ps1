@@ -49,7 +49,7 @@ function Resolve-StuckMerge {
   if ($LASTEXITCODE -ne 0) { return }
   Say "!! マージ衝突を検出 → 自動復旧します(docs/if_index=向こう側、data/days・archive=こちら側)"
   foreach ($p in @("docs", "data/if_index.json")) { git checkout --theirs -- $p 2>&1 | Out-Null }
-  foreach ($p in @("data/days", "archive", "data/shikibetsu_index.json")) { git checkout --ours -- $p 2>&1 | Out-Null }
+  foreach ($p in @("data/days", "archive", "data/shikibetsu_index.json", "data/shujutsu_index.json")) { git checkout --ours -- $p 2>&1 | Out-Null }
   git add -A data archive docs 2>&1 | Out-Null
   [void](Step "python src/run.py --build-only (衝突復旧のため再生成)" { python src/run.py --build-only })
   git add -A docs 2>&1 | Out-Null
