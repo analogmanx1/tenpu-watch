@@ -11,7 +11,8 @@ data/days/*.json から静的サイト(docs/)を生成する。
   docs/tenpu/index.html + index.json … 添付文書検索(元データは data/tenpu_index.json。同上・毎日0:15に更新)
   docs/shikibetsu/index.html + index.json … 識別コード検索(元データは data/shikibetsu_index.json。src/shikibetsu_index.py が自宅PCで差分更新)
   docs/touseki/index.html + index.json … 透析投薬ガイドライン検索(元データは data/touseki_index.json。src/touseki_index.py が白鷺病院の索引から作る)
-  docs/shujutsu/index.html + index.json … 術前休薬・禁忌チェック(元データは data/shujutsu_index.json。src/shujutsu_index.py が自宅PCで差分更新)
+  docs/shujutsu/index.html + index.json … 術前休薬・禁忌チェック(元データは data/chuui_index.json。src/chuui_index.py が自宅PCで差分更新)
+  docs/zouei/index.html + index.json … 造影剤チェック(同上。chuui_index.py の THEMES にテーマを足すと同じ型のページを増やせる)
   docs/assets/style.css            … 共通デザイン
   docs/tools/*.html                … 手作りのツール(計算機など)。ここは生成対象外、読むだけ
   ※ watch/ if/ toolbox/ assets/ index.html 以外は書き換えない
@@ -29,7 +30,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import if_index  # noqa: E402  (PMDA検索フォームの項目一覧を「PMDAで最新を検索」ボタンに流用)
 import touseki_index  # noqa: E402  (白鷺病院サイトのURL・索引ページの一覧を検索ページで使う)
-import shujutsu_index  # noqa: E402  (手術に触れている文の仕分け・一般名ごとのまとめ)
+import chuui_index  # noqa: E402  (「◯◯のとき注意する薬」の文の仕分け・一般名ごとのまとめ)
 
 JST = timezone(timedelta(hours=9))
 WEEK_URL = "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
@@ -42,6 +43,7 @@ TENPU_TITLE = "添付文書検索"
 SHIKI_TITLE = "識別コード検索"
 TOUSEKI_TITLE = "透析投薬ガイドライン検索"   # 白鷺病院「透析患者に対する投薬ガイドライン」のPDFを薬剤名で探す(元データは白鷺病院サイト)
 SHUJUTSU_TITLE = "術前休薬・禁忌チェック"   # 添付文書の禁忌・重要な基本的注意などから「手術時の禁忌・休薬」の記載を集めた一覧
+ZOUEI_TITLE = "造影剤チェック(休薬・併用注意)"   # 同じく「造影剤を使うときの休薬・併用注意」の記載を集めた一覧
 MOBILE_MAX = 800   # この幅(px)以下を「スマホ表示」にする(CSSの @media と nav.js の両方に入る。1か所で変えられる)
 IF_PDF_BASE ="https://www.info.pmda.go.jp/go/interview/"                 # if_index.py の IF_BASE と同じ
 IF_DETAIL_BASE = "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/GeneralList/"
@@ -158,6 +160,7 @@ def top_nav(rel: str, tools: list[dict]) -> str:
       <a class="head" href="{rel}shikibetsu/index.html">🔎 {SHIKI_TITLE}</a>
       <a class="head" href="{rel}touseki/index.html">🩸 {TOUSEKI_TITLE}</a>
       <a class="head" href="{rel}shujutsu/index.html">🏥 {SHUJUTSU_TITLE}</a>
+      <a class="head" href="{rel}zouei/index.html">💉 {ZOUEI_TITLE}</a>
       <span class="head">🧮 ツール</span>
       {tool_links}
     </div></details>"""
@@ -431,12 +434,12 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 @media (prefers-color-scheme:dark){:root{--k0:#ff8a70;--k1:#e0a83a;--k2:#999;--hl:#4d4413}}
 .tiers{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin:.5rem 0}
 .tierbtn{font-size:.9rem;padding:.3rem .8rem;border:1px solid var(--line);border-radius:1rem;background:var(--bg);color:var(--mut);cursor:pointer}
-.tierbtn.on{color:#fff;border-color:transparent}.tierbtn.on.k0{background:#b8321a}.tierbtn.on.k1{background:#a06a00}.tierbtn.on.k2{background:#777}
+.tierbtn.on{color:#fff;border-color:transparent}.tierbtn.on.k0{background:#b8321a}.tierbtn.on.k1{background:#a06a00}.tierbtn.on.k2{background:#777}.tierbtn.on.k3{background:#2a62b8}
 .tiers select{font-size:.9rem;padding:.3rem .4rem;border:1px solid var(--line);border-radius:.4rem;background:var(--bg);color:var(--fg);margin-left:auto}
-.badge.k0{background:#b8321a}.badge.k1{background:#a06a00}.badge.k2{background:#777}
+.badge.k0{background:#b8321a}.badge.k1{background:#a06a00}.badge.k2{background:#777}.badge.k3{background:#2a62b8}
 .sjname{font-size:1.05rem}
 .sjh{margin:.35rem 0 .35rem .1rem;padding:.1rem 0 .1rem .6rem;border-left:4px solid var(--k2);font-size:.95rem}
-.sjh.k0{border-left-color:var(--k0)}.sjh.k1{border-left-color:var(--k1)}
+.sjh.k0{border-left-color:var(--k0)}.sjh.k1{border-left-color:var(--k1)}.sjh.k3{border-left-color:var(--acc)}
 .sjh mark{background:var(--hl);color:inherit;padding:0 .1rem;border-radius:.2rem}
 .sjb{color:var(--mut)}
 .sjbr a{display:inline-block;margin:.1rem .8rem .1rem 0;font-size:.9rem}
@@ -916,34 +919,66 @@ def render_touseki_page(idx: dict | None) -> str:
 """
 
 
-# ---------------------------------------------------------------- 術前休薬・禁忌チェック
-SHUJUTSU_TIERS = ["🚫 禁忌", "⏸ 手術時の対応あり", "📎 その他"]   # 区分の名前(番号は shujutsu_index の TIER_*)
+# ---------------------------------------------------------------- 「◯◯のとき注意する薬」チェック(術前休薬・禁忌チェック/造影剤チェック)
+# テーマごとのページ設定。拾う言葉・仕分けの条件は src/chuui_index.py の THEMES、ここは見せ方(名前・区分名・説明文)だけ。
+# テーマを足すとき: chuui_index.THEMES に1つ足す → ここに1つ足す → top_nav と render_toolbox と README の並びに足す
+#   tiers: 区分の名前(番号は chuui_index の TIER_*: 0=禁忌 1=対応あり 2=その他 3=使う側の添付文書の記載)
+#   on   : 最初から表示しておく区分(それ以外は畳んでおく)
+CHUUI_PAGES: dict[str, dict] = {
+    "shujutsu": {
+        "dir": "shujutsu", "emoji": "🏥", "title": SHUJUTSU_TITLE,
+        "tiers": ["🚫 禁忌", "⏸ 手術時の対応あり", "📎 その他"], "on": [0, 1],
+        "placeholder": "例: クロピドグレル / プラビックス / 抗血小板 / 14日",
+        "help": """添付文書の「禁忌」「重要な基本的注意」「特定の背景を有する患者」「相互作用」などの章から、<b>手術に触れている文</b>を集めて一般名ごとにまとめた一覧です。
+薬剤名(一般名・販売名)や薬効(例: <code>抗血小板</code>)、文中の言葉(例: <code>14日</code>)で絞り込めます。スペース区切りでAND。ひらがな/全角半角の違いは気にしなくてOK。
+区分ボタンで出し分け(<b>🚫 禁忌</b>=禁忌の章に手術の記載 / <b>⏸ 手術時の対応あり</b>=休薬・中止・◯日前・用量調節などの記載 / <b>📎 その他</b>=それ以外の手術関連の注意。最初は畳んであります)。
+黄色のマーカーが手術に触れている文。「出典 ↗」でその添付文書(PDF)が開きます。""",
+        "caveat": """<b>載っているのは「添付文書に手術の記載がある薬」だけです。</b>現場で術前に休薬する薬でも、添付文書に記載が無ければ載りません(院内の術前休薬一覧・各学会ガイドラインの代わりにはなりません)。
+決まった言葉(手術・術前・術後・周術期 など)で機械的に拾っているため、言い回しによっては漏れ・余計なものが混じることがあります。""",
+        "toolbox": "添付文書に「手術時は禁忌」「手術前は休薬・中止」などの記載がある薬を、一般名ごとの一覧で確認できます。",
+    },
+    "zouei": {
+        "dir": "zouei", "emoji": "💉", "title": ZOUEI_TITLE,
+        "tiers": ["🚫 禁忌", "⏸ 造影剤使用時の対応あり", "📎 その他", "🧪 造影剤側の添付文書の記載"], "on": [0, 1],
+        "placeholder": "例: メトホルミン / メトグルコ / ビグアナイド / 48時間",
+        "help": """添付文書の「禁忌」「重要な基本的注意」「特定の背景を有する患者」「相互作用」などの章から、<b>造影剤(ヨード造影剤・ガドリニウム造影剤など)に触れている文</b>を集めて一般名ごとにまとめた一覧です。
+薬剤名(一般名・販売名)や薬効(例: <code>ビグアナイド</code>)、文中の言葉(例: <code>48時間</code>)で絞り込めます。スペース区切りでAND。ひらがな/全角半角の違いは気にしなくてOK。
+区分ボタンで出し分け(<b>🚫 禁忌</b>=禁忌の章に造影剤の記載 / <b>⏸ 造影剤使用時の対応あり</b>=休薬・中止・再開の時期などの記載 / <b>📎 その他</b>=それ以外の注意 /
+<b>🧪 造影剤側の添付文書の記載</b>=造影剤そのものの添付文書の「相互作用」に書いてある相手の薬。📎と🧪は最初は畳んであります)。
+黄色のマーカーが造影剤に触れている文。「出典 ↗」でその添付文書(PDF)が開きます。""",
+        "caveat": """<b>載っているのは「添付文書に造影剤の記載がある薬」だけです。</b>薬の側の添付文書に記載が無くても、造影剤側の添付文書(🧪)にだけ相手の薬として書かれていることがあります。
+腎機能に応じた休薬などは各学会のガイドライン・院内の取り決めも確認してください(その代わりにはなりません)。
+決まった言葉(造影剤・造影検査)で機械的に拾っているため、言い回しによっては漏れ・余計なものが混じることがあります。""",
+        "toolbox": "添付文書に「造影剤を使うときは休薬・中止」などの記載がある薬と、造影剤側の添付文書に書いてある相手の薬を、一覧で確認できます。",
+    },
+}
 
 
-def shujutsu_summary(store: dict | None, items: list[dict]) -> str:
+def chuui_summary(store: dict | None, items: list[dict], theme: str) -> str:
     if not store:
-        return "一覧データ未作成(自宅PCで python src/shujutsu_index.py を実行して作成)"
+        return "一覧データ未作成(自宅PCで python src/chuui_index.py を実行して作成)"
     m = store.get("meta") or {}
-    n = [sum(1 for it in items if it["k"] == k) for k in range(3)]
-    s = (f"一覧データ: {str(m.get('updated_at') or '')[:10]} 時点・一般名 {len(items):,}種類"
-         f"(禁忌 {n[0]:,}/手術時の対応あり {n[1]:,}/その他 {n[2]:,})")
+    tiers = CHUUI_PAGES[theme]["tiers"]
+    counts = "/".join(f"{t.split(' ', 1)[-1]} {sum(1 for it in items if it['k'] == k):,}" for k, t in enumerate(tiers))
+    s = f"一覧データ: {str(m.get('updated_at') or '')[:10]} 時点・一般名 {len(items):,}種類({counts})"
     if m.get("pending"):
         s += f"。データ収集中: 添付文書 {m.get('fetched', 0):,}/{m.get('targets', 0):,}件を確認済み(残りは毎日の自動更新で順次)"
     return s
 
 
-SHUJUTSU_JS = r"""
+CHUUI_JS = r"""
 (async function(){
-  const PDFB=__PDFB__, TIERS=__TIERS__;
+  const PDFB=__PDFB__, TIERS=__TIERS__, ON=__ON__;
   const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt'), tiers=document.getElementById('tiers'), sortSel=document.getElementById('sort');
   let data;
   try{ data=await (await fetch('index.json')).json(); }catch(e){ cnt.textContent='一覧データを読み込めませんでした'; return; }
   const items=data.items||[];
   // ひらがな→カタカナ、全角→半角(NFKC)、小文字化、空白除去 でゆるく一致させる
   const norm=s=>(s||'').normalize('NFKC').toLowerCase().replace(/[ぁ-ゖ]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/\s+/g,'');
-  items.forEach(e=>{ e._g=norm(e.g); e._h=e._g+' '+norm(e.c)+' '+(e.b||[]).map(b=>norm(b.n)).join(' ')+' '+(e.h||[]).map(h=>norm(h.ch+h.t+(h.b||'')+(h.p||''))).join(' '); });
+  items.forEach(e=>{ e._g=norm(e.g); e._h=e._g+' '+norm(e.c)+' '+(e.b||[]).map(b=>norm(b.n)).join(' ')+' '+(e.h||[]).map(h=>norm(h.ch+(h.t||'')+(h.b||'')+(h.p||''))).join(' '); });
   const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-  const on=new Set([0,1]);   // 最初は 禁忌+手術時の対応あり だけ(その他は畳んでおく)
+  const on=new Set(ON);   // 最初に表示する区分(それ以外は畳んでおく)
+  const ks=TIERS.map((_,k)=>k);
   function drawTiers(){
     tiers.querySelectorAll('.tierbtn').forEach(b=>{ const k=+b.dataset.k; b.classList.toggle('on',on.has(k)); b.querySelector('b').textContent=items.filter(e=>e.k===k).length.toLocaleString(); });
   }
@@ -964,7 +999,7 @@ SHUJUTSU_JS = r"""
     if(kw.length){ const k0=kw[0]; hits.forEach(e=>{ e._sc=e._g.startsWith(k0)?0:e._g.includes(k0)?1:2; }); }
     const byName=(a,b)=>a.g.localeCompare(b.g,'ja');
     hits.sort((a,b)=>(kw.length?a._sc-b._sc:0)||(sortSel.value==='name'?byName(a,b):(a.y.localeCompare(b.y)||byName(a,b))));
-    const hidden=[0,1,2].filter(k=>!on.has(k)).map(k=>[k,all.filter(e=>e.k===k).length]).filter(x=>x[1]);
+    const hidden=ks.filter(k=>!on.has(k)).map(k=>[k,all.filter(e=>e.k===k).length]).filter(x=>x[1]);
     cnt.innerHTML=`${hits.length.toLocaleString()}件(一般名ごと)`+(hidden.length?' ｜ 表示していない区分: '+hidden.map(x=>`<a href="#" data-k="${x[0]}">${esc(TIERS[x[0]])} ${x[1]}件を表示</a>`).join(' '):'');
     cnt.querySelectorAll('a[data-k]').forEach(a=>a.addEventListener('click',ev=>{ ev.preventDefault(); on.add(+a.dataset.k); drawTiers(); run(); }));
     res.innerHTML=hits.map(e=>{
@@ -981,29 +1016,28 @@ SHUJUTSU_JS = r"""
 """
 
 
-def render_shujutsu_page(store: dict | None, items: list[dict]) -> str:
-    """添付文書に「手術時は禁忌/休薬・中止など」と書いてある薬の一覧。薬剤名で絞り込み、区分ボタンで出し分け。
+def render_chuui_page(theme: str, store: dict | None, items: list[dict]) -> str:
+    """添付文書に「(手術/造影剤の)ときは禁忌/休薬・中止など」と書いてある薬の一覧。薬剤名で絞り込み、区分ボタンで出し分け。
     文は添付文書からそのまま引き、どの添付文書の文か(出典リンク)を必ず添える"""
-    note = shujutsu_summary(store, items)
-    btns = "".join(f'<button type="button" class="tierbtn k{k}" data-k="{k}">{esc(t)} <b></b></button>' for k, t in enumerate(SHUJUTSU_TIERS))
-    js = SHUJUTSU_JS.replace("__PDFB__", json.dumps(TENPU_PDF_BASE)).replace("__TIERS__", json.dumps(SHUJUTSU_TIERS, ensure_ascii=False))
+    pg = CHUUI_PAGES[theme]
+    note = chuui_summary(store, items, theme)
+    btns = "".join(f'<button type="button" class="tierbtn k{k}" data-k="{k}">{esc(t)} <b></b></button>' for k, t in enumerate(pg["tiers"]))
+    js = (CHUUI_JS.replace("__PDFB__", json.dumps(TENPU_PDF_BASE)).replace("__TIERS__", json.dumps(pg["tiers"], ensure_ascii=False))
+          .replace("__ON__", json.dumps(pg["on"])))
     return f"""
-<h1>🏥 {SHUJUTSU_TITLE}</h1>
+<h1>{pg["emoji"]} {pg["title"]}</h1>
 <div class="ifbar">
-  <input id="q" type="search" placeholder="例: クロピドグレル / プラビックス / 抗血小板 / 14日" autocomplete="off">
+  <input id="q" type="search" placeholder="{esc(pg["placeholder"])}" autocomplete="off">
   <a class="btn" href="{PMDA_SEARCH_URL}" target="_blank" rel="noopener" title="PMDAの医療用医薬品 情報検索を別タブで開きます">PMDAで添付文書を検索 ↗</a>
 </div>
-<details class="help" open><summary>使い方</summary><p class="small">添付文書の「禁忌」「重要な基本的注意」「特定の背景を有する患者」「相互作用」などの章から、<b>手術に触れている文</b>を集めて一般名ごとにまとめた一覧です。
-薬剤名(一般名・販売名)や薬効(例: <code>抗血小板</code>)、文中の言葉(例: <code>14日</code>)で絞り込めます。スペース区切りでAND。ひらがな/全角半角の違いは気にしなくてOK。
-区分ボタンで出し分け(<b>🚫 禁忌</b>=禁忌の章に手術の記載 / <b>⏸ 手術時の対応あり</b>=休薬・中止・◯日前・用量調節などの記載 / <b>📎 その他</b>=それ以外の手術関連の注意。最初は畳んであります)。
-黄色のマーカーが手術に触れている文。「出典 ↗」でその添付文書(PDF)が開きます。</p></details>
+<details class="help" open><summary>使い方</summary><p class="small">{pg["help"]}</p></details>
 <div class="tiers" id="tiers">{btns}
   <select id="sort" title="並び順"><option value="yj">薬効分類順</option><option value="name">五十音順</option></select></div>
 <p class="small" id="cnt"></p>
 <div id="res"></div>
 <p class="small" id="ifmeta">{esc(note)}。元データは<a href="{TENPULIST_URL}" target="_blank" rel="noopener">PMDAの添付文書 ↗</a>(自宅PCの自動更新が、改版された添付文書を毎日確認して差し替えます)。
-<b>載っているのは「添付文書に手術の記載がある薬」だけです。</b>現場で術前に休薬する薬でも、添付文書に記載が無ければ載りません(院内の術前休薬一覧・各学会ガイドラインの代わりにはなりません)。
-決まった言葉(手術・術前・術後・周術期 など)で機械的に拾っているため、言い回しによっては漏れ・余計なものが混じることがあります。メーカーごとの細かい言い回しの違いは、いちばん多い表現にまとめています。
+{pg["caveat"]}
+メーカーごとの細かい言い回しの違いは、いちばん多い表現にまとめています。
 <b>必ず最新の添付文書で確認してください。</b></p>
 <script>{js}</script>
 """
@@ -1042,7 +1076,7 @@ def render_home(cfg: dict, days: list[dict], tools: list[dict]) -> str:
 def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = None,
                    tenpu_idx: dict | None = None, shiki: dict | None = None,
                    shiki_rows: int = 0, touseki_idx: dict | None = None,
-                   shujutsu: dict | None = None, shujutsu_items: list[dict] | None = None) -> str:
+                   chuui: dict | None = None, chuui_items: dict[str, list[dict]] | None = None) -> str:
     out = [f"<h1>💊 {SITE_TITLE}</h1>"]
     out.append(f'<h2>📄 {WATCH_TITLE}</h2>')
     if days:
@@ -1108,11 +1142,12 @@ def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = No
     out.append('<p>白鷺病院「透析患者に対する投薬ガイドライン」の薬剤別PDF(透析患者・保存期CKD患者への投与方法の目安)を、薬剤名(商品名・一般名)で探せます。'
                f'<span class="small">{esc(touseki_summary(touseki_idx))}</span></p>'
                f'<p><a href="touseki/index.html">検索ページへ →</a> ｜ <a href="{touseki_index.GATE_URL}" target="_blank" rel="noopener">元データ(白鷺病院 透析患者に対する投薬ガイドライン) ↗</a></p>')
-    # 使用頻度は高くないので下のほう(透析投薬ガイドライン検索の下・ツールの上。2026-09-20 指示)
-    out.append(f"<h2>🏥 {SHUJUTSU_TITLE}</h2>")
-    out.append('<p>添付文書に「手術時は禁忌」「手術前は休薬・中止」などの記載がある薬を、一般名ごとの一覧で確認できます。'
-               f'<span class="small">{esc(shujutsu_summary(shujutsu, shujutsu_items or []))}</span></p>'
-               '<p><a href="shujutsu/index.html">一覧ページへ →</a></p>')
+    # 使用頻度は高くないので下のほう(透析投薬ガイドライン検索の下・ツールの上。術前休薬 → 造影剤 の順。2026-09-20 指示)
+    for th, pg in CHUUI_PAGES.items():
+        out.append(f'<h2>{pg["emoji"]} {pg["title"]}</h2>')
+        out.append(f'<p>{pg["toolbox"]}'
+                   f'<span class="small">{esc(chuui_summary(chuui, (chuui_items or {}).get(th) or [], th))}</span></p>'
+                   f'<p><a href="{pg["dir"]}/index.html">一覧ページへ →</a></p>')
     out.append("<h2>🧮 ツール</h2>")
     if tools:
         out.append('<div class="cards">' + "".join(
@@ -1142,8 +1177,8 @@ def build(root: Path) -> None:
     shiki = load_if_index(root, "shikibetsu_index.json")
     shiki_rows = shikibetsu_items(tenpu_idx, shiki)
     touseki_idx = load_if_index(root, "touseki_index.json")
-    shujutsu = load_if_index(root, "shujutsu_index.json")
-    shujutsu_items = shujutsu_index.build_items(tenpu_idx, shujutsu)
+    chuui = load_if_index(root, "chuui_index.json")
+    chuui_items = {th: chuui_index.build_items(tenpu_idx, chuui, th) for th in CHUUI_PAGES}
     global HOME_TITLE
     HOME_TITLE = home.get("title") or HOME_TITLE   # ヘッダー左上のロゴ名も home.json の title に合わせる
 
@@ -1270,26 +1305,28 @@ def build(root: Path) -> None:
     (docs / "touseki" / "index.html").write_text(
         layout(TOUSEKI_TITLE, render_touseki_page(touseki_idx), "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
 
-    # 術前休薬・禁忌チェック(添付文書一覧×手術の記載の突き合わせ。データが無ければページだけ作る)
-    (docs / "shujutsu").mkdir(parents=True, exist_ok=True)
-    (docs / "shujutsu" / "index.json").write_text(
-        json.dumps({"meta": {k: (str(v)[:10] if k == "updated_at" else v) for k, v in ((shujutsu or {}).get("meta") or {}).items()
-                             if k in ("updated_at", "targets", "fetched", "pending")},
-                    "items": shujutsu_items}, ensure_ascii=False, separators=(",", ":")),
-        encoding="utf-8", newline="\n")
-    (docs / "shujutsu" / "index.html").write_text(
-        layout(SHUJUTSU_TITLE, render_shujutsu_page(shujutsu, shujutsu_items), "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
+    # 術前休薬・禁忌チェック/造影剤チェック(添付文書一覧×テーマごとの記載の突き合わせ。データが無ければページだけ作る)
+    for th, pg in CHUUI_PAGES.items():
+        (docs / pg["dir"]).mkdir(parents=True, exist_ok=True)
+        (docs / pg["dir"] / "index.json").write_text(
+            json.dumps({"meta": {k: (str(v)[:10] if k == "updated_at" else v) for k, v in ((chuui or {}).get("meta") or {}).items()
+                                 if k in ("updated_at", "targets", "fetched", "pending")},
+                        "items": chuui_items[th]}, ensure_ascii=False, separators=(",", ":")),
+            encoding="utf-8", newline="\n")
+        (docs / pg["dir"] / "index.html").write_text(
+            layout(pg["title"], render_chuui_page(th, chuui, chuui_items[th]), "../", dates, None, built_at, tools, side=False),
+            encoding="utf-8", newline="\n")
 
     (docs / "toolbox").mkdir(parents=True, exist_ok=True)
     (docs / "toolbox" / "index.html").write_text(
-        layout(SITE_TITLE, render_toolbox(days, tools, if_idx, tenpu_idx, shiki, len(shiki_rows), touseki_idx, shujutsu, shujutsu_items).replace('href="watch/', 'href="../watch/').replace('href="tools/', 'href="../tools/').replace('href="if/', 'href="../if/').replace('href="tenpu/', 'href="../tenpu/').replace('href="shikibetsu/', 'href="../shikibetsu/').replace('href="touseki/', 'href="../touseki/').replace('href="shujutsu/', 'href="../shujutsu/'),
+        layout(SITE_TITLE, render_toolbox(days, tools, if_idx, tenpu_idx, shiki, len(shiki_rows), touseki_idx, chuui, chuui_items).replace('href="watch/', 'href="../watch/').replace('href="tools/', 'href="../tools/').replace('href="if/', 'href="../if/').replace('href="tenpu/', 'href="../tenpu/').replace('href="shikibetsu/', 'href="../shikibetsu/').replace('href="touseki/', 'href="../touseki/').replace('href="shujutsu/', 'href="../shujutsu/').replace('href="zouei/', 'href="../zouei/'),
                "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
     (docs / "index.html").write_text(
         layout(home.get("title") or HOME_TITLE, render_home(home, days, tools), "", dates, None, built_at, tools, side=False),
         encoding="utf-8", newline="\n")
     print(f"site built: {len(days)} days, {len(search_rows)} entries, {len(tools)} tools, "
           f"IF {len((if_idx or {}).get('items') or [])}, 添付文書 {len((tenpu_idx or {}).get('items') or [])}, "
-          f"識別コード {len(shiki_rows)}, 透析GL {len((touseki_idx or {}).get('items') or [])}, 手術時チェック {len(shujutsu_items)} -> {docs}")
+          f"識別コード {len(shiki_rows)}, 透析GL {len((touseki_idx or {}).get('items') or [])}, 術前休薬 {len(chuui_items["shujutsu"])}, 造影剤 {len(chuui_items["zouei"])} -> {docs}")
 
 
 if __name__ == "__main__":

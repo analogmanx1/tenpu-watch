@@ -21,7 +21,7 @@ import pmda_watch  # noqa: E402
 import build_site  # noqa: E402
 import if_index  # noqa: E402
 import shikibetsu_index  # noqa: E402
-import shujutsu_index  # noqa: E402
+import chuui_index  # noqa: E402
 import touseki_index  # noqa: E402
 
 
@@ -33,7 +33,7 @@ def main() -> int:
     ap.add_argument("--if-index", action="store_true", help="インタビューフォーム一覧(data/if_index.json)をPMDAから取り直す")
     ap.add_argument("--tenpu-index", action="store_true", help="添付文書一覧(data/tenpu_index.json)をPMDAから取り直す")
     ap.add_argument("--shikibetsu", action="store_true",
-                    help="識別コード一覧(data/shikibetsu_index.json)と手術時チェック(data/shujutsu_index.json)を差分更新(各最大300件/回。自宅PC専用)")
+                    help="識別コード一覧(data/shikibetsu_index.json)と注意チェック(data/chuui_index.json=術前休薬・造影剤)を差分更新(各最大300件/回。自宅PC専用)")
     ap.add_argument("--touseki-index", action="store_true",
                     help="透析投薬ガイドライン一覧(data/touseki_index.json)を白鷺病院サイトから取り直す(約1分)")
     a = ap.parse_args()
@@ -47,12 +47,12 @@ def main() -> int:
             print(f"!! 透析投薬ガイドライン一覧の更新に失敗(古い一覧のまま続行): {e}")
     if a.shikibetsu:
         # 失敗しても添付文書ウォッチ本体(取得・コミット)は止めない
-        # 術前休薬・禁忌チェック(data/shujutsu_index.json)は、識別コードの取得で落としたXMLをそのまま受け取る(PMDAへのアクセスを増やさない)
+        # 術前休薬・禁忌チェック/造影剤チェック(data/chuui_index.json)は、識別コードの取得で落としたXMLをそのまま受け取る(PMDAへのアクセスを増やさない)
         shu = None
         try:
-            shu = shujutsu_index.Store(root)
+            shu = chuui_index.Store(root)
         except Exception as e:  # noqa: BLE001
-            print(f"!! 手術時チェックの記録を開けませんでした(今回はスキップ): {e}")
+            print(f"!! 注意チェックの記録を開けませんでした(今回はスキップ): {e}")
         try:
             meta = shikibetsu_index.refresh(root, max_docs=300, on_xml=shu.feed if shu else None)
             print(json.dumps({k: meta.get(k) for k in ("updated_at", "with_codes", "codes", "pending")}, ensure_ascii=False))
@@ -61,10 +61,10 @@ def main() -> int:
         if shu:
             # 受け取ったぶんを保存し、まだ取れていない文書(識別コード側が取りに行かなかった改版など)を最大300件/回で取得
             try:
-                meta = shujutsu_index.refresh(root, max_docs=300, store=shu)
+                meta = chuui_index.refresh(root, max_docs=300, store=shu)
                 print(json.dumps({k: meta.get(k) for k in ("updated_at", "fetched", "with_cands", "pending")}, ensure_ascii=False))
             except Exception as e:  # noqa: BLE001
-                print(f"!! 手術時チェックの更新に失敗(今回はスキップ。次回やり直し): {e}")
+                print(f"!! 注意チェックの更新に失敗(今回はスキップ。次回やり直し): {e}")
     if a.if_index:
         meta = if_index.refresh(root)
         print(json.dumps({k: meta[k] for k in ("fetched_at", "count", "requests", "warnings")}, ensure_ascii=False))

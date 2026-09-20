@@ -64,12 +64,12 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 @media (prefers-color-scheme:dark){:root{--k0:#ff8a70;--k1:#e0a83a;--k2:#999;--hl:#4d4413}}
 .tiers{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin:.5rem 0}
 .tierbtn{font-size:.9rem;padding:.3rem .8rem;border:1px solid var(--line);border-radius:1rem;background:var(--bg);color:var(--mut);cursor:pointer}
-.tierbtn.on{color:#fff;border-color:transparent}.tierbtn.on.k0{background:#b8321a}.tierbtn.on.k1{background:#a06a00}.tierbtn.on.k2{background:#777}
+.tierbtn.on{color:#fff;border-color:transparent}.tierbtn.on.k0{background:#b8321a}.tierbtn.on.k1{background:#a06a00}.tierbtn.on.k2{background:#777}.tierbtn.on.k3{background:#2a62b8}
 .tiers select{font-size:.9rem;padding:.3rem .4rem;border:1px solid var(--line);border-radius:.4rem;background:var(--bg);color:var(--fg);margin-left:auto}
-.badge.k0{background:#b8321a}.badge.k1{background:#a06a00}.badge.k2{background:#777}
+.badge.k0{background:#b8321a}.badge.k1{background:#a06a00}.badge.k2{background:#777}.badge.k3{background:#2a62b8}
 .sjname{font-size:1.05rem}
 .sjh{margin:.35rem 0 .35rem .1rem;padding:.1rem 0 .1rem .6rem;border-left:4px solid var(--k2);font-size:.95rem}
-.sjh.k0{border-left-color:var(--k0)}.sjh.k1{border-left-color:var(--k1)}
+.sjh.k0{border-left-color:var(--k0)}.sjh.k1{border-left-color:var(--k1)}.sjh.k3{border-left-color:var(--acc)}
 .sjh mark{background:var(--hl);color:inherit;padding:0 .1rem;border-radius:.2rem}
 .sjb{color:var(--mut)}
 .sjbr a{display:inline-block;margin:.1rem .8rem .1rem 0;font-size:.9rem}
