@@ -44,13 +44,13 @@
 <details class="help" open><summary>使い方</summary><p class="small">添付文書の「禁忌」「重要な基本的注意」「特定の背景を有する患者」「相互作用」などの章から、<b>造影剤(ヨード造影剤・ガドリニウム造影剤など)に触れている文</b>を集めて一般名ごとにまとめた一覧です。
 薬剤名(一般名・販売名)や薬効(例: <code>ビグアナイド</code>)、文中の言葉(例: <code>48時間</code>)で絞り込めます。スペース区切りでAND。ひらがな/全角半角の違いは気にしなくてOK。
 区分ボタンで出し分け(<b>🚫 禁忌</b>=禁忌の章に造影剤の記載 / <b>⏸ 造影剤使用時の対応あり</b>=休薬・中止・再開の時期などの記載 / <b>📎 その他</b>=それ以外の注意 /
-<b>🧪 造影剤側の添付文書の記載</b>=造影剤そのものの添付文書の「相互作用」に書いてある相手の薬。📎と🧪は最初は畳んであります)。
+<b>🧪 造影剤側の添付文書の記載</b>=造影剤そのものの添付文書の「相互作用」に書いてある相手の薬。📎は最初は畳んであります)。
 黄色のマーカーが造影剤に触れている文。「出典 ↗」でその添付文書(PDF)が開きます。</p></details>
 <div class="tiers" id="tiers"><button type="button" class="tierbtn k0" data-k="0">🚫 禁忌 <b></b></button><button type="button" class="tierbtn k1" data-k="1">⏸ 造影剤使用時の対応あり <b></b></button><button type="button" class="tierbtn k2" data-k="2">📎 その他 <b></b></button><button type="button" class="tierbtn k3" data-k="3">🧪 造影剤側の添付文書の記載 <b></b></button>
   <select id="sort" title="並び順"><option value="yj">薬効分類順</option><option value="name">五十音順</option></select></div>
 <p class="small" id="cnt"></p>
 <div id="res"></div>
-<p class="small" id="ifmeta">一覧データ: 2026-09-20 時点・一般名 20種類(禁忌 0/造影剤使用時の対応あり 5/その他 4/造影剤側の添付文書の記載 11)。元データは<a href="https://www.info.pmda.go.jp/psearch/tenpulist.jsp" target="_blank" rel="noopener">PMDAの添付文書 ↗</a>(自宅PCの自動更新が、改版された添付文書を毎日確認して差し替えます)。
+<p class="small" id="ifmeta">一覧データ: 2026-09-21 時点・一般名 20種類(禁忌 0/造影剤使用時の対応あり 5/その他 4/造影剤側の添付文書の記載 11)。元データは<a href="https://www.info.pmda.go.jp/psearch/tenpulist.jsp" target="_blank" rel="noopener">PMDAの添付文書 ↗</a>(自宅PCの自動更新が、改版された添付文書を毎日確認して差し替えます)。
 <b>載っているのは「添付文書に造影剤の記載がある薬」だけです。</b>薬の側の添付文書に記載が無くても、造影剤側の添付文書(🧪)にだけ相手の薬として書かれていることがあります。
 腎機能に応じた休薬などは各学会のガイドライン・院内の取り決めも確認してください(その代わりにはなりません)。
 決まった言葉(造影剤・造影検査)で機械的に拾っているため、言い回しによっては漏れ・余計なものが混じることがあります。
@@ -58,7 +58,7 @@
 <b>必ず最新の添付文書で確認してください。</b></p>
 <script>
 (async function(){
-  const PDFB="https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/", TIERS=["🚫 禁忌", "⏸ 造影剤使用時の対応あり", "📎 その他", "🧪 造影剤側の添付文書の記載"], ON=[0, 1];
+  const PDFB="https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/", TIERS=["🚫 禁忌", "⏸ 造影剤使用時の対応あり", "📎 その他", "🧪 造影剤側の添付文書の記載"], ON=[0, 1, 3];
   const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt'), tiers=document.getElementById('tiers'), sortSel=document.getElementById('sort');
   let data;
   try{ data=await (await fetch('index.json')).json(); }catch(e){ cnt.textContent='一覧データを読み込めませんでした'; return; }
