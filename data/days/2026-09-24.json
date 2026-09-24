@@ -1,0 +1,409 @@
+{
+ "date": "2026-09-24",
+ "updates": [
+  {
+   "brand": "プロサイリン錠20",
+   "company": "製造販売元／科研製薬株式会社",
+   "reason": "更新",
+   "packins_no": "3399005F1030_1_21",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3399005F1030_1_21/",
+   "fetched_at": "2026-09-24 19:04:25",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/200022_3399005F1030_1_21",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/200022_3399005F1030_1_21",
+   "meta": {
+    "packins_no": "3399005F1030_1_21",
+    "company_id": "200022",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2022-05",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "プロサイリン錠20"
+    ],
+    "generic_name": "ベラプロストナトリウム",
+    "therapeutic_class": "経口プロスタグランジンI2誘導体製剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "エクテリー錠300mg",
+   "company": "選任外国製造医薬品等製造販売業者／キエジ・ファーマ・ジャパン株式会社 / 外国製造医薬品等特例承認取得者／KalVista Pharmaceuticals Ltd.（英国） / 発売元／科研製薬株式会社",
+   "reason": "更新",
+   "packins_no": "4490038F1020_A_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490038F1020_A_01/",
+   "fetched_at": "2026-09-24 19:04:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/231120_4490038F1020_A_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/231120_4490038F1020_A_01",
+   "meta": {
+    "packins_no": "4490038F1020_A_01",
+    "company_id": "231120",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "エクテリー錠300mg"
+    ],
+    "generic_name": "セベトラルスタット",
+    "therapeutic_class": "遺伝性血管性浮腫（HAE）急性発作治療用血漿カリクレイン阻害薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "キエジ・ファーマ・ジャパン株式会社"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "東京都千代田区大手町一丁目1番1号"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ペランパネルOD錠2mg「タカタ」／ペランパ...",
+   "company": "製造販売元／高田製薬株式会社 / 販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "1139014F3025_2_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1139014F3025_2_03/",
+   "fetched_at": "2026-09-24 19:04:29",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400186_1139014F3025_2_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400186_1139014F3025_2_03",
+   "meta": {
+    "packins_no": "1139014F3025_2_03",
+    "company_id": "400186",
+    "revision": {
+     "current": {
+      "ym": "2026-07",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ペランパネルOD錠2mg「タカタ」",
+     "ペランパネルOD錠4mg「タカタ」",
+     "ペランパネル細粒1%「タカタ」"
+    ],
+    "generic_name": "ペランパネル",
+    "therapeutic_class": "抗てんかん剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "3年"
+    },
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "3年"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "パクリタキセル注射液30mg「NP」／パクリ...",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "更新",
+   "packins_no": "4240406A1082_3_13",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4240406A1082_3_13/",
+   "fetched_at": "2026-09-24 19:04:32",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530100_4240406A1082_3_13",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530100_4240406A1082_3_13",
+   "meta": {
+    "packins_no": "4240406A1082_3_13",
+    "company_id": "530100",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "パクリタキセル注射液30mg「NP」",
+     "パクリタキセル注射液100mg「NP」"
+    ],
+    "generic_name": "パクリタキセル注射液",
+    "therapeutic_class": "抗悪性腫瘍剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "〈卵巣癌〉",
+      "(1)"
+     ],
+     "text": "白金系抗悪性腫瘍剤抵抗性の再発卵巣癌に対してペムブロリズマブ（遺伝子組換え）と併用する際の用法・用量は、ペムブロリズマブ（遺伝子組換え）の電子添文を参照すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ヒムペブジ皮下注150mgペン",
+   "company": "製造販売元／ファイザー株式会社",
+   "reason": "更新",
+   "packins_no": "6343462G1026_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6343462G1026_1_04/",
+   "fetched_at": "2026-09-24 19:04:35",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_6343462G1026_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_6343462G1026_1_04",
+   "meta": {
+    "packins_no": "6343462G1026_1_04",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-12",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ヒムペブジ皮下注150mgペン"
+    ],
+    "generic_name": "マルスタシマブ（遺伝子組換え）",
+    "therapeutic_class": "抗TFPIモノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "４.効能又は効果"
+     ],
+     "text": "先天性血友病患者における出血傾向の抑制"
+    },
+    {
+     "path": [
+      "６.用法及び用量"
+     ],
+     "text": "通常、12歳以上かつ体重25kg以上の患者には、マルスタシマブ（遺伝子組換え）として初回に300mgを皮下投与し、以降は1週間隔で1回150mgを皮下投与する。なお、体重50kg以上で効果不十分な場合には、1週間隔で1回300mgに増量して皮下投与できる。"
+    },
+    {
+     "path": [
+      "１６.薬物動態",
+      "１６.１ 血中濃度",
+      "反復投与"
+     ],
+     "text": "反復投与"
+    },
+    {
+     "path": [
+      "１６.薬物動態",
+      "１６.２ 吸収"
+     ],
+     "text": "18歳以上65歳未満のインヒビター非保有及び保有血友病A又は血友病B患者20例に本剤150～450mgを週1回反復皮下投与注2）したときのTmaxの中央値は23～59時間であった（外国人データ）。母集団薬物動態解析注1）の結果から、皮下投与後のマルスタシマブのバイオアベイラビリティは約72%と推定され、投与部位（腕、大腿部、腹部）による差異は見られなかった。"
+    },
+    {
+     "path": [
+      "１６.薬物動態",
+      "１６.３ 分布"
+     ],
+     "text": "インヒビター非保有及び保有血友病患者における定常状態時のマルスタシマブの分布容積は、母集団薬物動態解析注1）の結果から6.2Lであり、血管外への分布は限定的であると考えられる。\n注1）健康成人、成人及び青年のインヒビター非保有及び保有血友病A又は血友病B患者287例から得られた血漿中マルスタシマブ濃度及び総TFPI濃度を用いて母集団薬物動態解析を実施した。\n注2）本剤の承認された用量は、初回に300mg、以降は1週間隔で1回150mgである。"
+    },
+    {
+     "path": [
+      "１７.臨床成績",
+      "１７.１ 有効性及び安全性に関する試験",
+      "国際共同第Ⅲ相臨床試験（B7841005試験、インヒビター非保有コホート）（jRCT2080225164）"
+     ],
+     "text": "国際共同第Ⅲ相臨床試験（B7841005試験、インヒビター非保有コホート）（jRCT2080225164）"
+    },
+    {
+     "path": [
+      "１７.臨床成績",
+      "１７.１ 有効性及び安全性に関する試験",
+      "国際共同第Ⅲ相臨床試験（B7841005試験、インヒビター保有コホート）（jRCT2080225164）"
+     ],
+     "text": "国際共同第Ⅲ相臨床試験（B7841005試験、インヒビター保有コホート）（jRCT2080225164）"
+    },
+    {
+     "path": [
+      "１７.臨床成績",
+      "１７.１ 有効性及び安全性に関する試験",
+      "国際共同第Ⅲ相臨床試験（B7841007試験）（jRCT2041220046）"
+     ],
+     "text": "国際共同第Ⅲ相臨床試験（B7841007試験）（jRCT2041220046）"
+    },
+    {
+     "path": [
+      "２１.承認条件",
+      "(1)",
+      "〈血液凝固第Ⅷ因子又は第Ⅸ因子に対するインヒビターを保有しない先天性血友病患者における出血傾向の抑制〉"
+     ],
+     "text": "〈血液凝固第Ⅷ因子又は第Ⅸ因子に対するインヒビターを保有しない先天性血友病患者における出血傾向の抑制〉"
+    },
+    {
+     "path": [
+      "２１.承認条件",
+      "(2)"
+     ],
+     "text": "製造販売後、一定数の症例に係るデータが集積されるまでの間は、全症例を対象に使用成績調査を実施すること。"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "効力を裏付ける薬理試験（2024年12月27日承認、CTD2.6.2.2.2.2）"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "B7841005試験（2026年8月24日承認、CTD2.7.3.2.2.1、CTD2.7.4.2.1.1.3.1）"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "6343462G1026_1_03",
+    "prev_fetched_at": "2026-08-24 19:17:35",
+    "prev_seen_date": "2026-08-24",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "エ.貯法、有効期間",
+      "before": "2年",
+      "after": "3年"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "オファコルカプセル50mg",
+   "company": "製造販売元／株式会社レクメド",
+   "reason": "更新",
+   "packins_no": "3999059M1020_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999059M1020_1_03/",
+   "fetched_at": "2026-09-24 19:04:37",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/870207_3999059M1020_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/870207_3999059M1020_1_03",
+   "meta": {
+    "packins_no": "3999059M1020_1_03",
+    "company_id": "870207",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-06",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "オファコルカプセル50mg"
+    ],
+    "generic_name": "コール酸カプセル",
+    "therapeutic_class": "先天性胆汁酸代謝異常症治療薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "3年"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "液体酸素（液化酸素）",
+   "company": "製造販売元／一般社団法人 日本産業・医療ガス協会本注意事項等情報を使用している製造販売業者一覧表を以下に掲載しております。医薬品ラベルにある製造販売業者名と照合し,ご確認ください。なお,XML形式には,製造販売業者一覧表はございません。製造販売業者一覧表をご確認されたい方は,PDF形式にてご確認ください。",
+   "reason": "更新",
+   "packins_no": "799070BX1050_1_21",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/799070BX1050_1_21/",
+   "fetched_at": "2026-09-24 19:04:39",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/999001_799070BX1050_1_21",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/999001_799070BX1050_1_21",
+   "meta": {
+    "packins_no": "799070BX1050_1_21",
+    "company_id": "999001",
+    "revision": {
+     "current": {
+      "ym": "2024-07",
+      "ver": "第2版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "液体酸素（液化酸素）"
+    ],
+    "generic_name": "液体酸素",
+    "therapeutic_class": "吸入ガス"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "液体窒素（液化窒素）",
+   "company": "製造販売元／一般社団法人 日本産業・医療ガス協会本注意事項等情報を使用している製造販売業者一覧表を以下に掲載しております。医薬品ラベルにある製造販売業者名と照合し,ご確認ください。なお,XML形式には,製造販売業者一覧表はございません。製造販売業者一覧表をご確認されたい方は,PDF形式にてご確認ください。",
+   "reason": "更新",
+   "packins_no": "799070CX1047_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/799070CX1047_1_10/",
+   "fetched_at": "2026-09-24 19:05:32",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/999001_799070CX1047_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/999001_799070CX1047_1_10",
+   "meta": {
+    "packins_no": "799070CX1047_1_10",
+    "company_id": "999001",
+    "revision": {
+     "current": {
+      "ym": "2024-07",
+      "ver": "第2版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "液体窒素（液化窒素）"
+    ],
+    "generic_name": "液体窒素",
+    "therapeutic_class": "吸入ガス"
+   },
+   "revised": [],
+   "diff": null
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-09-24 19:04:25",
+ "updated_at": "2026-09-24 19:05:58",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
