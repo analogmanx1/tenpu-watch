@@ -1,0 +1,110 @@
+{
+ "date": "2026-09-25",
+ "updates": [
+  {
+   "brand": "パクリタキセル注射液30mg「サワイ」／パ...",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "4240406A1058_1_24",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4240406A1058_1_24/",
+   "fetched_at": "2026-09-25 21:06:20",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_4240406A1058_1_24",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_4240406A1058_1_24",
+   "meta": {
+    "packins_no": "4240406A1058_1_24",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-01",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "パクリタキセル注射液30mg「サワイ」",
+     "パクリタキセル注射液100mg「サワイ」",
+     "パクリタキセル注射液150mg「サワイ」"
+    ],
+    "generic_name": "パクリタキセル",
+    "therapeutic_class": "抗悪性腫瘍剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "７.用法及び用量に関連する注意",
+      "(1)"
+     ],
+     "text": "白金系抗悪性腫瘍剤抵抗性の再発卵巣癌に対してペムブロリズマブ（遺伝子組換え）と併用する際の用法及び用量は、ペムブロリズマブ（遺伝子組換え）の電子添文を参照すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アラバ錠10mg／アラバ錠20mg／アラバ錠100mg",
+   "company": "製造販売元／サノフィ株式会社",
+   "reason": "更新",
+   "packins_no": "3999020F1029_1_22",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999020F1029_1_22/",
+   "fetched_at": "2026-09-25 21:06:23",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/780069_3999020F1029_1_22",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/780069_3999020F1029_1_22",
+   "meta": {
+    "packins_no": "3999020F1029_1_22",
+    "company_id": "780069",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-05",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "アラバ錠10mg",
+     "アラバ錠20mg",
+     "アラバ錠100mg"
+    ],
+    "generic_name": "レフルノミド製剤",
+    "therapeutic_class": "抗リウマチ剤（DMARD）"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "呼吸器系"
+    },
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報",
+      "(4)"
+     ],
+     "text": "血球貪食性リンパ組織球症及びマクロファージ活性化症候群が発現したとの報告がある。"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "エクテリー錠300mg",
+   "company": "選任外国製造医薬品等製造販売業者／KalVista Pharmaceuticals Japan株式会社 / 外国製造医薬品等特例承認取得者／KalVista Pharmaceuticals Ltd.（英国） / 発売元／科研製薬株式会社",
+   "reason": "承継による削除",
+   "yj_hint": "4490038F1020_1_01"
+  }
+ ],
+ "created_at": "2026-09-25 21:06:20",
+ "updated_at": "2026-09-25 21:06:25",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
