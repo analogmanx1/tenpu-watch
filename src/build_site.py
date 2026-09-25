@@ -427,6 +427,11 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .menu .dd .head{display:block;margin:.45rem 0 .1rem;font-weight:600}.menu .dd span.head{color:var(--mut)}.menu .dd .sub{display:block;margin:.15rem 0 .15rem 1.2rem}.menu summary:hover{text-decoration:underline}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.8rem;margin:.6rem 0 1.2rem}
 .card{display:block;border:1px solid var(--line);border-radius:.6rem;padding:.8rem 1rem;background:var(--card);text-decoration:none;color:var(--fg)}.card:hover{border-color:var(--acc)}.card b{color:var(--acc)}.card .small{display:block;margin-top:.2rem}.card.big{padding:1.2rem 1.2rem;font-size:1.05rem}.card.big b{font-size:1.2rem}
+/* ---- ツールボックスの項目枠(1項目=1枠。render_toolbox の _box)。枠線の色は --boxline の1か所で変える ---- */
+:root{--boxline:#d3d9e2}
+@media (prefers-color-scheme:dark){:root{--boxline:#3a4048}}
+.box{border:1px solid var(--boxline);border-radius:.7rem;padding:.1rem 1.1rem .9rem;margin:1rem 0;background:var(--card)}
+.box>h2{margin:.7rem 0 .4rem}.box>:last-child{margin-bottom:0}.box .card{background:var(--bg)}
 .calc{max-width:640px}.calc label{display:block;margin:.6rem 0 .2rem;font-weight:600}.calc input,.calc select{font-size:1rem;padding:.35rem .5rem;border:1px solid var(--line);border-radius:.4rem;background:var(--bg);color:var(--fg);width:100%;max-width:320px}
 .calc .result{margin-top:1rem;padding:.8rem 1rem;border-radius:.5rem;background:var(--card);border:1px solid var(--line);font-size:1.05rem}.calc .result b{font-size:1.3rem}
 /* ---- 術前休薬・禁忌チェック: 区分の色は --k0(禁忌) --k1(手術時の対応あり) --k2(その他)、該当文のマーカーは --hl ---- */
@@ -460,6 +465,7 @@ h1{font-size:1.35rem}h2{font-size:1.15rem;margin-top:1.5rem}
 ul.uplist li{padding:.2rem 0}.entry{padding:.65rem .75rem}
 table.arch td,table.arch th,table.del td,table.del th{padding:.35rem .4rem}
 .cards{grid-template-columns:1fr}
+.box{padding:.1rem .8rem .8rem;margin:.8rem 0}
 .tierbtn{min-height:calc(var(--tap) - 8px);padding:.35rem .9rem}.tiers select{margin-left:0;min-height:calc(var(--tap) - 8px)}
 .sjbr a{display:block;padding:.35rem 0;margin:0}
 }
@@ -922,6 +928,7 @@ def render_touseki_page(idx: dict | None) -> str:
 # ---------------------------------------------------------------- 「◯◯のとき注意する薬」チェック(術前休薬・禁忌チェック/造影剤チェック)
 # テーマごとのページ設定。拾う言葉・仕分けの条件は src/chuui_index.py の THEMES、ここは見せ方(名前・区分名・説明文)だけ。
 # テーマを足すとき: chuui_index.THEMES に1つ足す → ここに1つ足す → top_nav と render_toolbox と README の並びに足す
+# (render_toolbox の項目は CHUUI_PAGES をループして自動で1枠ずつ並ぶ。ほかの新機能は _box() で枠を作ってから中身を足す)
 #   tiers: 区分の名前(番号は chuui_index の TIER_*: 0=禁忌 1=対応あり 2=その他 3=使う側の添付文書の記載)
 #   on   : 最初から表示しておく区分(それ以外は畳んでおく)
 CHUUI_PAGES: dict[str, dict] = {
@@ -1078,8 +1085,16 @@ def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = No
                    tenpu_idx: dict | None = None, shiki: dict | None = None,
                    shiki_rows: int = 0, touseki_idx: dict | None = None,
                    chuui: dict | None = None, chuui_items: dict[str, list[dict]] | None = None) -> str:
+    # 1項目=1つの枠(<section class="box">)で囲む。見た目は CSS の .box(2026-09-26 指示: 項目が増えて探しづらいので)
     out = [f"<h1>💊 {SITE_TITLE}</h1>"]
-    out.append(f'<h2>📄 {WATCH_TITLE}</h2>')
+    boxes = [out]  # boxes[0]=ページ見出し、boxes[1:]=各項目の中身(最後にそれぞれ枠で包んでつなげる)
+
+    def _box(h2: str) -> list[str]:
+        b = [h2]
+        boxes.append(b)
+        return b
+
+    out = _box(f'<h2>📄 {WATCH_TITLE}</h2>')
     if days:
         d = days[0]
         ups = d.get("updates") or []
@@ -1126,36 +1141,36 @@ def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = No
             + ')</span></li>' for x in days[:7]) + "</ul>")
     else:
         out.append("<p>まだデータがありません(初回の自動実行をお待ちください)。</p>")
-    out.append(f"<h2>📕 {TENPU_TITLE}</h2>")
+    out = _box(f"<h2>📕 {TENPU_TITLE}</h2>")
     out.append('<p>薬剤名を入れると候補が出て、クリックで添付文書(PDF)が開きます。'
                f'<span class="small">{esc(if_summary(tenpu_idx, "--tenpu-index"))}</span></p>'
                '<p><a href="tenpu/index.html">検索ページへ →</a></p>')
-    out.append(f"<h2>📘 {IF_TITLE}</h2>")
+    out = _box(f"<h2>📘 {IF_TITLE}</h2>")
     out.append('<p>薬剤名を入れると候補が出て、クリックでインタビューフォーム(PDF)が開きます。'
                f'<span class="small">{esc(if_summary(if_idx))}</span></p>'
                '<p><a href="if/index.html">検索ページへ →</a></p>')
-    out.append(f"<h2>🔎 {SHIKI_TITLE}</h2>")
+    out = _box(f"<h2>🔎 {SHIKI_TITLE}</h2>")
     out.append('<p>錠剤・カプセルに印字されている記号(識別コード)から薬を探せます。'
                f'<span class="small">{esc(shiki_summary(shiki, shiki_rows))}</span></p>'
                '<p><a href="shikibetsu/index.html">検索ページへ →</a></p>')
     # 並び順は使用頻度の高い順(識別コード検索の下に透析投薬ガイドライン検索。2026-09-12 指示)
-    out.append(f"<h2>🩸 {TOUSEKI_TITLE}</h2>")
+    out = _box(f"<h2>🩸 {TOUSEKI_TITLE}</h2>")
     out.append('<p>白鷺病院「透析患者に対する投薬ガイドライン」の薬剤別PDF(透析患者・保存期CKD患者への投与方法の目安)を、薬剤名(商品名・一般名)で探せます。'
                f'<span class="small">{esc(touseki_summary(touseki_idx))}</span></p>'
                f'<p><a href="touseki/index.html">検索ページへ →</a> ｜ <a href="{touseki_index.GATE_URL}" target="_blank" rel="noopener">元データ(白鷺病院 透析患者に対する投薬ガイドライン) ↗</a></p>')
     # 使用頻度は高くないので下のほう(透析投薬ガイドライン検索の下・ツールの上。術前休薬 → 造影剤 の順。2026-09-20 指示)
     for th, pg in CHUUI_PAGES.items():
-        out.append(f'<h2>{pg["emoji"]} {pg["title"]}</h2>')
+        out = _box(f'<h2>{pg["emoji"]} {pg["title"]}</h2>')
         out.append(f'<p>{pg["toolbox"]}'
                    f'<span class="small">{esc(chuui_summary(chuui, (chuui_items or {}).get(th) or [], th))}</span></p>'
                    f'<p><a href="{pg["dir"]}/index.html">一覧ページへ →</a></p>')
-    out.append("<h2>🧮 ツール</h2>")
+    out = _box("<h2>🧮 ツール</h2>")
     if tools:
         out.append('<div class="cards">' + "".join(
             f'<a class="card" href="tools/{esc(t["file"])}"><b>{esc(t["title"])}</b><span class="small">{esc(t["desc"])}</span></a>' for t in tools) + "</div>")
     else:
         out.append('<p class="small">準備中(docs/tools/ にHTMLを置くとここに自動で並びます)。</p>')
-    return "\n".join(out)
+    return "\n".join(boxes[0] + ['<section class="box">\n' + "\n".join(b) + "\n</section>" for b in boxes[1:]])
 
 
 def build(root: Path) -> None:

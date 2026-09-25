@@ -57,6 +57,11 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .menu .dd .head{display:block;margin:.45rem 0 .1rem;font-weight:600}.menu .dd span.head{color:var(--mut)}.menu .dd .sub{display:block;margin:.15rem 0 .15rem 1.2rem}.menu summary:hover{text-decoration:underline}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.8rem;margin:.6rem 0 1.2rem}
 .card{display:block;border:1px solid var(--line);border-radius:.6rem;padding:.8rem 1rem;background:var(--card);text-decoration:none;color:var(--fg)}.card:hover{border-color:var(--acc)}.card b{color:var(--acc)}.card .small{display:block;margin-top:.2rem}.card.big{padding:1.2rem 1.2rem;font-size:1.05rem}.card.big b{font-size:1.2rem}
+/* ---- ツールボックスの項目枠(1項目=1枠。render_toolbox の _box)。枠線の色は --boxline の1か所で変える ---- */
+:root{--boxline:#d3d9e2}
+@media (prefers-color-scheme:dark){:root{--boxline:#3a4048}}
+.box{border:1px solid var(--boxline);border-radius:.7rem;padding:.1rem 1.1rem .9rem;margin:1rem 0;background:var(--card)}
+.box>h2{margin:.7rem 0 .4rem}.box>:last-child{margin-bottom:0}.box .card{background:var(--bg)}
 .calc{max-width:640px}.calc label{display:block;margin:.6rem 0 .2rem;font-weight:600}.calc input,.calc select{font-size:1rem;padding:.35rem .5rem;border:1px solid var(--line);border-radius:.4rem;background:var(--bg);color:var(--fg);width:100%;max-width:320px}
 .calc .result{margin-top:1rem;padding:.8rem 1rem;border-radius:.5rem;background:var(--card);border:1px solid var(--line);font-size:1.05rem}.calc .result b{font-size:1.3rem}
 /* ---- 術前休薬・禁忌チェック: 区分の色は --k0(禁忌) --k1(手術時の対応あり) --k2(その他)、該当文のマーカーは --hl ---- */
@@ -90,6 +95,7 @@ h1{font-size:1.35rem}h2{font-size:1.15rem;margin-top:1.5rem}
 ul.uplist li{padding:.2rem 0}.entry{padding:.65rem .75rem}
 table.arch td,table.arch th,table.del td,table.del th{padding:.35rem .4rem}
 .cards{grid-template-columns:1fr}
+.box{padding:.1rem .8rem .8rem;margin:.8rem 0}
 .tierbtn{min-height:calc(var(--tap) - 8px);padding:.35rem .9rem}.tiers select{margin-left:0;min-height:calc(var(--tap) - 8px)}
 .sjbr a{display:block;padding:.35rem 0;margin:0}
 }
