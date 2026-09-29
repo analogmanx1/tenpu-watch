@@ -2443,10 +2443,1619 @@
     }
    ],
    "diff": null
+  },
+  {
+   "brand": "イムラン錠50mg",
+   "company": "製造販売／サンドファーマ株式会社 / 販売／サンド株式会社",
+   "reason": "更新",
+   "packins_no": "3999005F1059_X_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999005F1059_X_10/",
+   "fetched_at": "2026-09-29 22:33:43",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/112268_3999005F1059_X_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/112268_3999005F1059_X_10",
+   "meta": {
+    "packins_no": "3999005F1059_X_10",
+    "company_id": "112268",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-07",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "イムラン錠50mg"
+    ],
+    "generic_name": "アザチオプリン",
+    "therapeutic_class": "免疫抑制剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "可逆性後白質脳症症候群（頻度不明）"
+     ],
+     "text": "可逆性後白質脳症症候群（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "可逆性後白質脳症症候群（頻度不明）"
+     ],
+     "text": "頭痛、意識障害、痙攣、高血圧、視力障害等の症状があらわれた場合は、MRI等による画像診断を行うとともに、投与を中止し、血圧のコントロール、抗痙攣薬の投与等の適切な処置を行うこと。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "肝類洞閉塞症候群（SOS）/肝中心静脈閉塞症（VOD）（頻度不明）"
+     ],
+     "text": "肝類洞閉塞症候群（SOS）/肝中心静脈閉塞症（VOD）（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "肝類洞閉塞症候群（SOS）/肝中心静脈閉塞症（VOD）（頻度不明）"
+     ],
+     "text": "非硬変性門脈圧亢進症を含むSOS/VODがあらわれることがある。ビリルビン増加、腹水、急激な体重増加、肝腫大等が認められた場合は、投与を中止し、適切な処置を行うこと。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "精神神経系"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "振戦"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "オテズラ錠10mg／オテズラ錠20mg／オテズラ...",
+   "company": "製造販売元／アムジェン株式会社",
+   "reason": "更新",
+   "packins_no": "3999042F1025_3_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999042F1025_3_05/",
+   "fetched_at": "2026-09-29 22:33:46",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/112292_3999042F1025_3_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/112292_3999042F1025_3_05",
+   "meta": {
+    "packins_no": "3999042F1025_3_05",
+    "company_id": "112292",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-03",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "オテズラ錠10mg",
+     "オテズラ錠20mg",
+     "オテズラ錠30mg"
+    ],
+    "generic_name": "アプレミラスト",
+    "therapeutic_class": "PDE4阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(2)"
+     ],
+     "text": "肝機能障害があらわれることがあるので、本剤投与開始前及び投与中は定期的に肝機能検査を行い、患者の状態を十分に観察すること。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "肝機能障害（頻度不明）"
+     ],
+     "text": "肝機能障害（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ジニイズ点滴静注500mg",
+   "company": "製造販売元／インサイト・バイオサイエンシズ・ジャパン合同会社",
+   "reason": "更新",
+   "packins_no": "4291483A1028_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291483A1028_1_04/",
+   "fetched_at": "2026-09-29 22:33:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/150892_4291483A1028_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/150892_4291483A1028_1_04",
+   "meta": {
+    "packins_no": "4291483A1028_1_04",
+    "company_id": "150892",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "ジニイズ点滴静注500mg"
+    ],
+    "generic_name": "レチファンリマブ（遺伝子組換え）製剤",
+    "therapeutic_class": "抗悪性腫瘍剤、ヒト化抗ヒトPD-1モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "重度の胃炎、食道炎"
+     ],
+     "text": "重度の胃炎、食道炎"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "4291483A1028_1_03",
+    "prev_fetched_at": "2026-08-25 17:36:32",
+    "prev_seen_date": "2026-08-25",
+    "changes": [
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "第5版"
+     },
+     {
+      "kind": "removed",
+      "path": "",
+      "before": "第3版",
+      "after": null
+     },
+     {
+      "kind": "added",
+      "path": "重度の胃炎、食道炎",
+      "before": null,
+      "after": "重度の胃炎、食道炎"
+     },
+     {
+      "kind": "added",
+      "path": "重度の胃炎、食道炎",
+      "before": null,
+      "after": "免疫反応に起因すると考えられる重度の胃炎（頻度不明）、食道炎（頻度不明）があらわれることがある。異常が認められた場合には、副腎皮質ホルモン剤の投与等の適切な処置を行うこと。"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "キイトルーダ点滴静注100mg",
+   "company": "製造販売元／MSD株式会社",
+   "reason": "更新",
+   "packins_no": "4291435A2025_1_29",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291435A2025_1_29/",
+   "fetched_at": "2026-09-29 22:33:51",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/170050_4291435A2025_1_29",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/170050_4291435A2025_1_29",
+   "meta": {
+    "packins_no": "4291435A2025_1_29",
+    "company_id": "170050",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第28版"
+     },
+     "previous": {
+      "ym": "2026-09",
+      "ver": "第27版"
+     }
+    },
+    "brands": [
+     "キイトルーダ点滴静注100mg"
+    ],
+    "generic_name": "ペムブロリズマブ（遺伝子組換え）製剤",
+    "therapeutic_class": "─抗悪性腫瘍剤─\nヒト化抗ヒトPD-1モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "重度の胃炎、食道炎"
+     ],
+     "text": "重度の胃炎、食道炎"
+    },
+    {
+     "path": [
+      "Infusion reaction（3.3%）"
+     ],
+     "text": "Infusion reaction（3.3%）"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "4291435A2025_1_28",
+    "prev_fetched_at": "2026-09-16 19:42:14",
+    "prev_seen_date": "2026-09-16",
+    "changes": [
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "第28版"
+     },
+     {
+      "kind": "removed",
+      "path": "",
+      "before": "効能変更、用法及び用量変更",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "",
+      "before": "第26版",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "重度の胃炎（0.1%）",
+      "before": "重度の胃炎（0.1%）",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "重度の胃炎（0.1%）",
+      "before": "免疫反応に起因すると考えられる重度の胃炎があらわれることがある。異常が認められた場合には、副腎皮質ホルモン剤の投与等の適切な処置を行うこと。",
+      "after": null
+     },
+     {
+      "kind": "added",
+      "path": "重度の胃炎、食道炎",
+      "before": null,
+      "after": "重度の胃炎、食道炎"
+     },
+     {
+      "kind": "added",
+      "path": "重度の胃炎、食道炎",
+      "before": null,
+      "after": "免疫反応に起因すると考えられる重度の胃炎（0.1%）、食道炎（0.1%未満）があらわれることがある。異常が認められた場合には、副腎皮質ホルモン剤の投与等の適切な処置を行うこと。"
+     },
+     {
+      "kind": "changed",
+      "path": "Infusion reaction（3.3%）",
+      "before": "アナフィラキシーを含むInfusion reactionが認められた場合には、本剤の投与中止等の適切な処置を行うとともに、症状が回復するまで患者の状態を十分に観察すること。",
+      "after": "アナフィラキシーを含むInfusion reactionが認められた場合には、本剤の投与中止等の適切な処置を行うとともに、症状が回復するまで患者の状態を十分に観察すること。また、サイトカイン放出症候群があらわれることがある。"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "オプジーボ点滴静注20mg／オプジーボ点滴...",
+   "company": "製造販売／小野薬品工業株式会社 / プロモーション提携／ブリストル・マイヤーズ スクイブ株式会社",
+   "reason": "更新",
+   "packins_no": "4291427A1024_1_76",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291427A1024_1_76/",
+   "fetched_at": "2026-09-29 22:33:54",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180188_4291427A1024_1_76",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180188_4291427A1024_1_76",
+   "meta": {
+    "packins_no": "4291427A1024_1_76",
+    "company_id": "180188",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第30版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "オプジーボ点滴静注20mg",
+     "オプジーボ点滴静注100mg",
+     "オプジーボ点滴静注120mg",
+     "オプジーボ点滴静注240mg"
+    ],
+    "generic_name": "ニボルマブ（遺伝子組換え）",
+    "therapeutic_class": "－抗悪性腫瘍剤－\nヒト型抗ヒトPD-1モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "Infusion reaction"
+     ],
+     "text": "Infusion reaction"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "4291427A1024_1_75",
+    "prev_fetched_at": "2026-08-25 12:32:23",
+    "prev_seen_date": "2026-08-25",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "ア.作成又は改訂年月",
+      "before": "第29版",
+      "after": "第30版"
+     },
+     {
+      "kind": "changed",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > Infusion reaction",
+      "before": "アナフィラキシー、発熱、悪寒、そう痒症、発疹、高血圧、低血圧、呼吸困難、過敏症等を含むInfusion reaction（3.5％、6.5％）があらわれることがある。重度のInfusion reactionがあらわれた場合には直ちに投与を中止して適切な処置を行うとともに、全ての徴候及び症状が完全に回復するまで患者の状態を十分に観察すること。",
+      "after": "アナフィラキシー、発熱、悪寒、そう痒症、発疹、高血圧、低血圧、呼吸困難、過敏症等を含むInfusion reaction（3.5％、6.5％）があらわれることがある。重度のInfusion reactionがあらわれた場合には直ちに投与を中止して適切な処置を行うとともに、全ての徴候及び症状が完全に回復するまで患者の状態を十分に観察すること。また、サイトカイン放出症候群（頻度不明、頻度不明）があらわれることがある。"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "バベンチオ点滴静注200mg",
+   "company": "製造販売元／メルクバイオファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "4291438A1022_1_18",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291438A1022_1_18/",
+   "fetched_at": "2026-09-29 22:33:57",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/380079_4291438A1022_1_18",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/380079_4291438A1022_1_18",
+   "meta": {
+    "packins_no": "4291438A1022_1_18",
+    "company_id": "380079",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第17版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": "第16版"
+     }
+    },
+    "brands": [
+     "バベンチオ点滴静注200mg"
+    ],
+    "generic_name": "アベルマブ（遺伝子組換え）",
+    "therapeutic_class": "抗悪性腫瘍剤　ヒト型抗ヒトPD-L1モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "infusion reaction（22.9%）"
+     ],
+     "text": "アナフィラキシー、発熱、悪寒、呼吸困難等があらわれることがある。infusion reactionが認められた場合には、本剤の投与を中止する等の適切な処置を行うとともに、症状が回復するまで患者の状態を十分に観察すること。また、サイトカイン放出症候群があらわれることがある。,"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重度の胃炎、食道炎"
+     ],
+     "text": "免疫反応に起因すると考えられる重度の胃炎（頻度不明）、食道炎（頻度不明）があらわれることがある。異常が認められた場合には、副腎皮質ホルモン剤の投与等の適切な処置を行うこと。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "免疫系障害"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "4291438A1022_1_17",
+    "prev_fetched_at": "2026-08-25 17:32:15",
+    "prev_seen_date": "2026-08-25",
+    "changes": [
+     {
+      "kind": "removed",
+      "path": "ア.作成又は改訂年月",
+      "before": "第15版",
+      "after": null
+     },
+     {
+      "kind": "added",
+      "path": "ア.作成又は改訂年月",
+      "before": null,
+      "after": "第17版"
+     },
+     {
+      "kind": "changed",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > infusion reaction（22.9%）",
+      "before": "アナフィラキシー、発熱、悪寒、呼吸困難等があらわれることがある。infusion reactionが認められた場合には、本剤の投与を中止する等の適切な処置を行うとともに、症状が回復するまで患者の状態を十分に観察すること。,",
+      "after": "アナフィラキシー、発熱、悪寒、呼吸困難等があらわれることがある。infusion reactionが認められた場合には、本剤の投与を中止する等の適切な処置を行うとともに、症状が回復するまで患者の状態を十分に観察すること。また、サイトカイン放出症候群があらわれることがある。,"
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の胃炎、食道炎",
+      "before": null,
+      "after": "重度の胃炎、食道炎"
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の胃炎、食道炎",
+      "before": null,
+      "after": "免疫反応に起因すると考えられる重度の胃炎（頻度不明）、食道炎（頻度不明）があらわれることがある。異常が認められた場合には、副腎皮質ホルモン剤の投与等の適切な処置を行うこと。"
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.２ その他の副作用",
+      "before": null,
+      "after": "免疫系障害"
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.２ その他の副作用",
+      "before": null,
+      "after": "サルコイドーシス"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "インフリキシマブBS点滴静注用100mg「CT」",
+   "company": "製造販売元／セルトリオン・ヘルスケア・ジャパン株式会社",
+   "reason": "新規",
+   "packins_no": "23994A1F1033_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/23994A1F1033_1_01/",
+   "fetched_at": "2026-09-29 22:33:59",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/381103_23994A1F1033_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/381103_23994A1F1033_1_01",
+   "meta": {
+    "packins_no": "23994A1F1033_1_01",
+    "company_id": "381103",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "インフリキシマブBS点滴静注用100mg「CT」"
+    ],
+    "generic_name": "インフリキシマブ（遺伝子組換え）［インフリキシマブ後続1］製剤",
+    "therapeutic_class": "抗ヒトTNFαモノクローナル抗体製剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "トラスツズマブBS点滴静注用150mg「CT」",
+   "company": "製造販売元／セルトリオン・ヘルスケア・ジャパン株式会社",
+   "reason": "新規",
+   "packins_no": "42914B9D2042_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/42914B9D2042_1_01/",
+   "fetched_at": "2026-09-29 22:34:03",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/381103_42914B9D2042_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/381103_42914B9D2042_1_01",
+   "meta": {
+    "packins_no": "42914B9D2042_1_01",
+    "company_id": "381103",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "トラスツズマブBS点滴静注用150mg「CT」"
+    ],
+    "generic_name": "トラスツズマブ（遺伝子組換え）［トラスツズマブ後続1］製剤",
+    "therapeutic_class": "抗HER2ヒト化モノクローナル抗体　抗悪性腫瘍剤 / HER2：Human Epidermal Growth Factor Receptor Type 2\n（ヒト上皮増殖因子受容体2型、別称：c-erbB-2） / HER2：Human Epidermal Growth Factor Receptor Type 2\n（ヒト上皮増殖因子受容体2型、別称：c-erbB-2）"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ファモチジン錠10mg「テバ」／ファモチジ...",
+   "company": "製造販売元／T'sファーマ株式会社 / 販売／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2325003F1296_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2325003F1296_1_06/",
+   "fetched_at": "2026-09-29 22:34:05",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400813_2325003F1296_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400813_2325003F1296_1_06",
+   "meta": {
+    "packins_no": "2325003F1296_1_06",
+    "company_id": "400813",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ファモチジン錠10mg「テバ」",
+     "ファモチジン錠20mg「テバ」"
+    ],
+    "generic_name": "ファモチジン錠",
+    "therapeutic_class": "H2受容体拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "乳糖水和物、結晶セルロース、リン酸水素カルシウム、ヒドロキシプロピルセルロース、カルメロースカルシウム、ステアリン酸マグネシウム、ヒプロメロース、酸化チタン、マクロゴール6000"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "乳糖水和物、結晶セルロース、リン酸水素カルシウム、ヒドロキシプロピルセルロース、カルメロースカルシウム、ステアリン酸マグネシウム、ヒプロメロース、酸化チタン、マクロゴール6000"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（各0.1%未満）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫〈顔面浮腫、咽頭浮腫等〉、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ファモチジンOD錠10mg「テバ」／ファモチ...",
+   "company": "製造販売元／T'sファーマ株式会社 / 販売／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2325003F3221_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2325003F3221_1_07/",
+   "fetched_at": "2026-09-29 22:34:07",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400813_2325003F3221_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400813_2325003F3221_1_07",
+   "meta": {
+    "packins_no": "2325003F3221_1_07",
+    "company_id": "400813",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "ファモチジンOD錠10mg「テバ」",
+     "ファモチジンOD錠20mg「テバ」"
+    ],
+    "generic_name": "ファモチジン口腔内崩壊錠",
+    "therapeutic_class": "H2受容体拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（各0.1%未満）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫〈顔面浮腫、咽頭浮腫等〉、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ファモチジン注射用10mg「テバ」／ファモ...",
+   "company": "製造販売元／T'sファーマ株式会社 / 販売／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2325401D1124_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2325401D1124_1_05/",
+   "fetched_at": "2026-09-29 22:34:15",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400813_2325401D1124_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400813_2325401D1124_1_05",
+   "meta": {
+    "packins_no": "2325401D1124_1_05",
+    "company_id": "400813",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ファモチジン注射用10mg「テバ」",
+     "ファモチジン注射用20mg「テバ」"
+    ],
+    "generic_name": "注射用ファモチジン",
+    "therapeutic_class": "H2受容体拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（各0.1%未満）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫〈顔面浮腫、咽頭浮腫等〉、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ロラメット錠1.0",
+   "company": "製造販売元／あすか製薬株式会社 / 販売元／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "1124010F1030_3_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1124010F1030_3_08/",
+   "fetched_at": "2026-09-29 22:34:17",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/470007_1124010F1030_3_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/470007_1124010F1030_3_08",
+   "meta": {
+    "packins_no": "1124010F1030_3_08",
+    "company_id": "470007",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2022-06",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ロラメット錠1.0"
+    ],
+    "generic_name": "ロルメタゼパム",
+    "therapeutic_class": "睡眠導入剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "シンバスタチン錠5mg「あすか」",
+   "company": "製造販売元／あすか製薬株式会社 / 販売元／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2189011F1289_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2189011F1289_1_09/",
+   "fetched_at": "2026-09-29 22:34:19",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/470007_2189011F1289_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/470007_2189011F1289_1_09",
+   "meta": {
+    "packins_no": "2189011F1289_1_09",
+    "company_id": "470007",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": null
+     }
+    },
+    "brands": [
+     "シンバスタチン錠5mg「あすか」"
+    ],
+    "generic_name": "シンバスタチン",
+    "therapeutic_class": "HMG-CoA還元酵素阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ロナファルニブ："
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "シンバスタチン錠10mg「あすか」／シンバ...",
+   "company": "製造販売元／あすか製薬株式会社 / 販売元／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2189011F2242_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2189011F2242_1_08/",
+   "fetched_at": "2026-09-29 22:35:37",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/470007_2189011F2242_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/470007_2189011F2242_1_08",
+   "meta": {
+    "packins_no": "2189011F2242_1_08",
+    "company_id": "470007",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": null
+     }
+    },
+    "brands": [
+     "シンバスタチン錠10mg「あすか」",
+     "シンバスタチン錠20mg「あすか」"
+    ],
+    "generic_name": "シンバスタチン",
+    "therapeutic_class": "HMG-CoA還元酵素阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ロナファルニブ："
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "レットヴィモ錠40mg／レットヴィモ錠80mg",
+   "company": "製造販売元／日本イーライリリー株式会社",
+   "reason": "更新",
+   "packins_no": "4291075F1028_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291075F1028_1_06/",
+   "fetched_at": "2026-09-29 22:35:39",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530471_4291075F1028_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530471_4291075F1028_1_06",
+   "meta": {
+    "packins_no": "4291075F1028_1_06",
+    "company_id": "530471",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "レットヴィモ錠40mg",
+     "レットヴィモ錠80mg"
+    ],
+    "generic_name": "セルペルカチニブ錠",
+    "therapeutic_class": "抗悪性腫瘍剤　RET注2）受容体型チロシンキナーゼ阻害剤 / 注2）RET : rearranged during transfection"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "皮膚粘膜眼症候群（Stevens-Johnson症候群）（頻度不明）"
+     ],
+     "text": "皮膚粘膜眼症候群（Stevens-Johnson症候群）（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "レットヴィモカプセル40mg／レットヴィモ...",
+   "company": "製造販売元／日本イーライリリー株式会社",
+   "reason": "更新",
+   "packins_no": "4291075M1027_1_12",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291075M1027_1_12/",
+   "fetched_at": "2026-09-29 22:35:42",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530471_4291075M1027_1_12",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530471_4291075M1027_1_12",
+   "meta": {
+    "packins_no": "4291075M1027_1_12",
+    "company_id": "530471",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第11版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第10版"
+     }
+    },
+    "brands": [
+     "レットヴィモカプセル40mg",
+     "レットヴィモカプセル80mg"
+    ],
+    "generic_name": "セルペルカチニブカプセル",
+    "therapeutic_class": "抗悪性腫瘍剤　RET注2）受容体型チロシンキナーゼ阻害剤 / 注2）RET : rearranged during transfection"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "皮膚粘膜眼症候群（Stevens-Johnson症候群）（頻度不明）"
+     ],
+     "text": "皮膚粘膜眼症候群（Stevens-Johnson症候群）（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ラベルフィーユ21錠／ラベルフィーユ28錠",
+   "company": "製造販売元／富士製薬工業株式会社",
+   "reason": "更新",
+   "packins_no": "254910BF1055_1_12",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/254910BF1055_1_12/",
+   "fetched_at": "2026-09-29 22:36:08",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670109_254910BF1055_1_12",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670109_254910BF1055_1_12",
+   "meta": {
+    "packins_no": "254910BF1055_1_12",
+    "company_id": "670109",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-07",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ラベルフィーユ21錠",
+     "ラベルフィーユ28錠"
+    ],
+    "generic_name": "レボノルゲストレル・エチニルエストラジオール",
+    "therapeutic_class": "経口避妊剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "５.効能又は効果に関連する注意"
+     ],
+     "text": "経口避妊剤使用開始1年間の飲み忘れを含めた一般的使用における失敗率は7%との報告がある。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "HIVプロテアーゼ阻害剤"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ラベルフィーユ28錠",
+   "company": "製造販売元／富士製薬工業株式会社 / 販売元／株式会社ネクイノ",
+   "reason": "更新",
+   "packins_no": "254910BF2051_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/254910BF2051_1_02/",
+   "fetched_at": "2026-09-29 22:36:34",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670109_254910BF2051_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670109_254910BF2051_1_02",
+   "meta": {
+    "packins_no": "254910BF2051_1_02",
+    "company_id": "670109",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-11",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ラベルフィーユ28錠"
+    ],
+    "generic_name": "レボノルゲストレル・エチニルエストラジオール",
+    "therapeutic_class": "経口避妊剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "５.効能又は効果に関連する注意"
+     ],
+     "text": "経口避妊剤使用開始1年間の飲み忘れを含めた一般的使用における失敗率は7%との報告がある。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "HIVプロテアーゼ阻害剤"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アザニン錠50mg",
+   "company": "製造販売元／富士製薬工業株式会社",
+   "reason": "更新",
+   "packins_no": "3999005F1040_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999005F1040_2_02/",
+   "fetched_at": "2026-09-29 22:37:25",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670109_3999005F1040_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670109_3999005F1040_2_02",
+   "meta": {
+    "packins_no": "3999005F1040_2_02",
+    "company_id": "670109",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-07",
+      "ver": null
+     }
+    },
+    "brands": [
+     "アザニン錠50mg"
+    ],
+    "generic_name": "アザチオプリン",
+    "therapeutic_class": "免疫抑制剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(1)"
+     ],
+     "text": "重篤な副作用が起こることがあるので、投与初期は1～2週間ごとを目安に、その後も頻回に臨床検査（血液検査、肝機能、腎機能検査等）を行うなど、患者の状態を十分に観察すること。また、使用が長期間にわたると副作用が強くあらわれることがあるので、投与は慎重に行うこと。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "可逆性後白質脳症症候群（頻度不明）"
+     ],
+     "text": "可逆性後白質脳症症候群（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "可逆性後白質脳症症候群（頻度不明）"
+     ],
+     "text": "頭痛、意識障害、痙攣、高血圧、視力障害等の症状があらわれた場合は、MRI等による画像診断を行うとともに、投与を中止し、血圧のコントロール、抗痙攣薬の投与等の適切な処置を行うこと。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "肝類洞閉塞症候群（SOS）/肝中心静脈閉塞症（VOD）（頻度不明）"
+     ],
+     "text": "肝類洞閉塞症候群（SOS）/肝中心静脈閉塞症（VOD）（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "肝類洞閉塞症候群（SOS）/肝中心静脈閉塞症（VOD）（頻度不明）"
+     ],
+     "text": "非硬変性門脈圧亢進症を含むSOS/VODがあらわれることがある。ビリルビン増加、腹水、急激な体重増加、肝腫大等が認められた場合は、投与を中止し、適切な処置を行うこと。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "精神神経系"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "振戦"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "タグリッソ錠40mg／タグリッソ錠80mg",
+   "company": "製造販売元／アストラゼネカ株式会社",
+   "reason": "更新",
+   "packins_no": "4291045F1027_1_16",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291045F1027_1_16/",
+   "fetched_at": "2026-09-29 22:37:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670227_4291045F1027_1_16",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670227_4291045F1027_1_16",
+   "meta": {
+    "packins_no": "4291045F1027_1_16",
+    "company_id": "670227",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第9版"
+     },
+     "previous": {
+      "ym": "2026-01",
+      "ver": "第8版"
+     }
+    },
+    "brands": [
+     "タグリッソ錠40mg",
+     "タグリッソ錠80mg"
+    ],
+    "generic_name": "オシメルチニブメシル酸塩錠",
+    "therapeutic_class": "抗悪性腫瘍剤／チロシンキナーゼ阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(3)"
+     ],
+     "text": "血小板減少、好中球減少、白血球減少、貧血、再生不良性貧血があらわれることがあるので、本剤投与開始前及び投与中は定期的に血液検査（血球数算定、白血球分画等）を行い、患者の状態を十分に観察すること。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "血小板減少（9.2%）、好中球減少（8.1%）、白血球減少（10.0%）、貧血（4.6%）、再生不良性貧血（頻度不明）"
+     ],
+     "text": "血小板減少（9.2%）、好中球減少（8.1%）、白血球減少（10.0%）、貧血（4.6%）、再生不良性貧血（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "背部痛、筋骨格硬直、頚部痛、筋炎"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "イミフィンジ点滴静注120mg／イミフィンジ...",
+   "company": "製造販売元／アストラゼネカ株式会社",
+   "reason": "更新",
+   "packins_no": "4291443A1023_1_17",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291443A1023_1_17/",
+   "fetched_at": "2026-09-29 22:37:54",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670227_4291443A1023_1_17",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670227_4291443A1023_1_17",
+   "meta": {
+    "packins_no": "4291443A1023_1_17",
+    "company_id": "670227",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第15版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": "第14版"
+     }
+    },
+    "brands": [
+     "イミフィンジ点滴静注120mg",
+     "イミフィンジ点滴静注500mg"
+    ],
+    "generic_name": "デュルバルマブ（遺伝子組換え）製剤",
+    "therapeutic_class": "－抗悪性腫瘍剤－\nヒト型抗ヒトPD-L1モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重度の胃炎、食道炎"
+     ],
+     "text": "重度の胃炎、食道炎"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重度の胃炎、食道炎"
+     ],
+     "text": "免疫反応に起因すると考えられる重度の胃炎（頻度不明）、食道炎（頻度不明）があらわれることがある。異常が認められた場合には、副腎皮質ホルモン剤の投与等の適切な処置を行うこと。発現頻度は、国際共同第III相試験（DUO-E試験）における、本剤及びオラパリブ併用投与時から集計した。\n発現頻度は、国際共同第III相試験（DUO-E試験）における、本剤及びオラパリブ併用投与時から集計した。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "4291443A1023_1_16",
+    "prev_fetched_at": "2026-08-25 17:37:15",
+    "prev_seen_date": "2026-08-25",
+    "changes": [
+     {
+      "kind": "added",
+      "path": "ア.作成又は改訂年月",
+      "before": null,
+      "after": "第15版"
+     },
+     {
+      "kind": "removed",
+      "path": "ア.作成又は改訂年月",
+      "before": "第13版",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "ア.作成又は改訂年月",
+      "before": "効能変更、用法変更",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 血球貪食性リンパ組織球症（頻度不明）",
+      "before": "発現頻度は、国際共同第III相試験（DUO-E試験）における、本剤及びオラパリブ併用投与時から集計した。",
+      "after": null
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の胃炎、食道炎",
+      "before": null,
+      "after": "重度の胃炎、食道炎"
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の胃炎、食道炎",
+      "before": null,
+      "after": "免疫反応に起因すると考えられる重度の胃炎（頻度不明）、食道炎（頻度不明）があらわれることがある。異常が認められた場合には、副腎皮質ホルモン剤の投与等の適切な処置を行うこと。発現頻度は、国際共同第III相試験（DUO-E試験）における、本剤及びオラパリブ併用投与時から集計した。"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "イジュド点滴静注25mg／イジュド点滴静注3...",
+   "company": "製造販売元／アストラゼネカ株式会社",
+   "reason": "更新",
+   "packins_no": "4291465A1020_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291465A1020_1_06/",
+   "fetched_at": "2026-09-29 22:37:56",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670227_4291465A1020_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670227_4291465A1020_1_06",
+   "meta": {
+    "packins_no": "4291465A1020_1_06",
+    "company_id": "670227",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "イジュド点滴静注25mg",
+     "イジュド点滴静注300mg"
+    ],
+    "generic_name": "トレメリムマブ（遺伝子組換え）製剤",
+    "therapeutic_class": "－抗悪性腫瘍剤－\nヒト型抗ヒトCTLA-4モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重度の胃炎、食道炎"
+     ],
+     "text": "重度の胃炎、食道炎"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重度の胃炎、食道炎"
+     ],
+     "text": "免疫反応に起因すると考えられる重度の胃炎（頻度不明）、食道炎（頻度不明）があらわれることがある。異常が認められた場合には、副腎皮質ホルモン剤の投与等の適切な処置を行うこと。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "4291465A1020_1_05",
+    "prev_fetched_at": "2026-08-25 17:37:17",
+    "prev_seen_date": "2026-08-25",
+    "changes": [
+     {
+      "kind": "added",
+      "path": "ア.作成又は改訂年月",
+      "before": null,
+      "after": "第6版"
+     },
+     {
+      "kind": "removed",
+      "path": "ア.作成又は改訂年月",
+      "before": "第4版",
+      "after": null
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の胃炎、食道炎",
+      "before": null,
+      "after": "重度の胃炎、食道炎"
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の胃炎、食道炎",
+      "before": null,
+      "after": "免疫反応に起因すると考えられる重度の胃炎（頻度不明）、食道炎（頻度不明）があらわれることがある。異常が認められた場合には、副腎皮質ホルモン剤の投与等の適切な処置を行うこと。"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "ヤーボイ点滴静注液20mg／ヤーボイ点滴静...",
+   "company": "製造販売元／ブリストル・マイヤーズ スクイブ株式会社 / プロモーション提携／小野薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "4291430A1026_1_32",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291430A1026_1_32/",
+   "fetched_at": "2026-09-29 22:38:23",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670605_4291430A1026_1_32",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670605_4291430A1026_1_32",
+   "meta": {
+    "packins_no": "4291430A1026_1_32",
+    "company_id": "670605",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第21版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": "第20版"
+     }
+    },
+    "brands": [
+     "ヤーボイ点滴静注液20mg",
+     "ヤーボイ点滴静注液50mg"
+    ],
+    "generic_name": "イピリムマブ（遺伝子組換え）",
+    "therapeutic_class": "抗悪性腫瘍剤 / ヒト型抗ヒトCTLA-4モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "Infusion reaction"
+     ],
+     "text": "Infusion reaction"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "4291430A1026_1_31",
+    "prev_fetched_at": "2026-08-25 12:40:25",
+    "prev_seen_date": "2026-08-25",
+    "changes": [
+     {
+      "kind": "removed",
+      "path": "ア.作成又は改訂年月",
+      "before": "第19版",
+      "after": null
+     },
+     {
+      "kind": "added",
+      "path": "ア.作成又は改訂年月",
+      "before": null,
+      "after": "第21版"
+     },
+     {
+      "kind": "removed",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > Infusion reaction（0.7%，3.2%）",
+      "before": "Infusion reaction（0.7%，3.2%）",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > Infusion reaction（0.7%，3.2%）",
+      "before": "異常が認められた場合には，本剤の投与を中止する等の適切な処置を行うとともに，症状が回復するまで患者の状態を十分に確認すること。",
+      "after": null
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > Infusion reaction",
+      "before": null,
+      "after": "Infusion reaction"
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > Infusion reaction",
+      "before": null,
+      "after": "Infusion reaction（0.7%，3.2%）があらわれることがある。異常が認められた場合には，本剤の投与を中止する等の適切な処置を行うとともに，症状が回復するまで患者の状態を十分に確認すること。また，サイトカイン放出症候群（頻度不明，頻度不明）があらわれることがある。"
+     },
+     {
+      "kind": "removed",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の食道炎（頻度不明，頻度不明）",
+      "before": "重度の食道炎（頻度不明，頻度不明）",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の食道炎（頻度不明，頻度不明）",
+      "before": "免疫反応に起因すると考えられる重度の食道炎があらわれることがある。異常が認められた場合には，副腎皮質ホルモン剤の投与等の適切な処置を行うこと。\n注）「重大な副作用」の発現頻度は，本剤単独投与時，併用投与時の順に記載した。\n*：海外第3相試験（MDX010-20試験）の本剤+gp100併用群での発現頻度",
+      "after": null
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の胃炎，食道炎",
+      "before": null,
+      "after": "重度の胃炎，食道炎"
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の胃炎，食道炎",
+      "before": null,
+      "after": "免疫反応に起因すると考えられる重度の胃炎（頻度不明，頻度不明），食道炎（頻度不明，頻度不明）があらわれることがある。異常が認められた場合には，副腎皮質ホルモン剤の投与等の適切な処置を行うこと。\n注）「重大な副作用」の発現頻度は，本剤単独投与時，併用投与時の順に記載した。\n*：海外第3相試験（MDX010-20試験）の本剤+gp100併用群での発現頻度"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "テビムブラ点滴静注100mg",
+   "company": "製造販売元／ビーワン・メディシンズ合同会社",
+   "reason": "更新",
+   "packins_no": "4291478A1027_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291478A1027_1_06/",
+   "fetched_at": "2026-09-29 22:38:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/701738_4291478A1027_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/701738_4291478A1027_1_06",
+   "meta": {
+    "packins_no": "4291478A1027_1_06",
+    "company_id": "701738",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第7版"
+     },
+     "previous": {
+      "ym": "2026-09",
+      "ver": "第6版"
+     }
+    },
+    "brands": [
+     "テビムブラ点滴静注100mg"
+    ],
+    "generic_name": "チスレリズマブ（遺伝子組換え）製剤",
+    "therapeutic_class": "抗悪性腫瘍剤 / ヒト化抗ヒトPD-1モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重度の胃炎、食道炎"
+     ],
+     "text": "重度の胃炎、食道炎"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "4291478A1027_1_05",
+    "prev_fetched_at": "2026-09-16 19:52:28",
+    "prev_seen_date": "2026-09-16",
+    "changes": [
+     {
+      "kind": "removed",
+      "path": "ア.作成又は改訂年月",
+      "before": "第5版",
+      "after": null
+     },
+     {
+      "kind": "added",
+      "path": "ア.作成又は改訂年月",
+      "before": null,
+      "after": "第7版"
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の胃炎、食道炎",
+      "before": null,
+      "after": "重度の胃炎、食道炎"
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の胃炎、食道炎",
+      "before": null,
+      "after": "免疫反応に起因すると考えられる重度の胃炎（頻度不明）、食道炎（頻度不明）があらわれることがある。異常が認められた場合には、副腎皮質ホルモン剤の投与等の適切な処置を行うこと。"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "トシリズマブBS点滴静注80mg「MA」／トシリ...",
+   "company": "製造販売元／持田製薬株式会社 / 販売／あゆみ製薬株式会社",
+   "reason": "更新",
+   "packins_no": "6399436A1026_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6399436A1026_1_02/",
+   "fetched_at": "2026-09-29 22:39:16",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/790005_6399436A1026_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/790005_6399436A1026_1_02",
+   "meta": {
+    "packins_no": "6399436A1026_1_02",
+    "company_id": "790005",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "トシリズマブBS点滴静注80mg「MA」",
+     "トシリズマブBS点滴静注200mg「MA」",
+     "トシリズマブBS点滴静注400mg「MA」"
+    ],
+    "generic_name": "トシリズマブ（遺伝子組換え）［トシリズマブ後続2］注",
+    "therapeutic_class": "ヒト化抗ヒトIL-6レセプターモノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "薬剤性過敏症症候群（頻度不明）"
+     ],
+     "text": "薬剤性過敏症症候群（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "薬剤性過敏症症候群（頻度不明）"
+     ],
+     "text": "初期症状として発疹、発熱がみられ、更に肝機能障害、リンパ節腫脹、白血球増加、好酸球増多、異型リンパ球出現等を伴う遅発性の重篤な過敏症状があらわれることがある。なお、ヒトヘルペスウイルス6（HHV-6）等のウイルスの再活性化を伴うことが多く、投与中止後も発疹、発熱、肝機能障害等の症状が再燃あるいは遷延化することがあるので注意すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トシリズマブBS皮下注162mgシリンジ「MA」...",
+   "company": "製造販売元／持田製薬株式会社 / 販売／あゆみ製薬株式会社",
+   "reason": "更新",
+   "packins_no": "63994B3G1021_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/63994B3G1021_1_03/",
+   "fetched_at": "2026-09-29 22:39:18",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/790005_63994B3G1021_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/790005_63994B3G1021_1_03",
+   "meta": {
+    "packins_no": "63994B3G1021_1_03",
+    "company_id": "790005",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "トシリズマブBS皮下注162mgシリンジ「MA」",
+     "トシリズマブBS皮下注162mgオートインジェクター「MA」"
+    ],
+    "generic_name": "トシリズマブ（遺伝子組換え）［トシリズマブ後続2］注",
+    "therapeutic_class": "ヒト化抗ヒトIL-6レセプターモノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "薬剤性過敏症症候群（頻度不明）"
+     ],
+     "text": "薬剤性過敏症症候群（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "薬剤性過敏症症候群（頻度不明）"
+     ],
+     "text": "初期症状として発疹、発熱がみられ、更に肝機能障害、リンパ節腫脹、白血球増加、好酸球増多、異型リンパ球出現等を伴う遅発性の重篤な過敏症状があらわれることがある。なお、ヒトヘルペスウイルス6（HHV-6）等のウイルスの再活性化を伴うことが多く、投与中止後も発疹、発熱、肝機能障害等の症状が再燃あるいは遷延化することがあるので注意すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "酸化マグネシウム細粒83％「ヨシダ」",
+   "company": "製造販売元／吉田製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2344009C1063_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2344009C1063_1_05/",
+   "fetched_at": "2026-09-29 22:39:20",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/830039_2344009C1063_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/830039_2344009C1063_1_05",
+   "meta": {
+    "packins_no": "2344009C1063_1_05",
+    "company_id": "830039",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-12",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "酸化マグネシウム細粒83％「ヨシダ」"
+    ],
+    "generic_name": "酸化マグネシウム製剤",
+    "therapeutic_class": "制酸・緩下剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "バラ：250g（ポリ容器）、500g（ポリ容器）\n分包：0.24g×210包、0.36g×210包、0.4g×210包、0.4g×1050包、0.48g×210包、0.6g×210包、0.6g×1050包、0.8g×210包、0.8g×1050包、1.2g×210包、1.2g×1050包"
+    }
+   ],
+   "diff": null
   }
  ],
  "deletes": [],
  "created_at": "2026-09-29 06:30:25",
- "updated_at": "2026-09-29 06:38:24",
+ "updated_at": "2026-09-29 22:39:22",
  "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
 }
