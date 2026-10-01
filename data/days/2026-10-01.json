@@ -8930,6 +8930,210 @@
    },
    "revised": [],
    "diff": null
+  },
+  {
+   "brand": "トリンテリックス錠10mg／トリンテリック...",
+   "company": "製造販売元／武田薬品工業株式会社 / 提携／ルンドベック・ジャパン株式会社",
+   "reason": "更新",
+   "packins_no": "1179060F1028_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179060F1028_1_07/",
+   "fetched_at": "2026-10-01 19:31:17",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400256_1179060F1028_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400256_1179060F1028_1_07",
+   "meta": {
+    "packins_no": "1179060F1028_1_07",
+    "company_id": "400256",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": null
+     }
+    },
+    "brands": [
+     "トリンテリックス錠10mg",
+     "トリンテリックス錠20mg"
+    ],
+    "generic_name": "ボルチオキセチン臭化水素酸塩錠",
+    "therapeutic_class": "セロトニン再取り込み阻害・セロトニン受容体調節剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(5)"
+     ],
+     "text": "投与中止（突然の中止）により、不安、焦燥、興奮、浮動性めまい、感覚障害（錯感覚、電気ショック様感覚を含む）、睡眠障害（不眠症を含む）、疲労、振戦、頭痛及び悪心等があらわれることが報告されている。投与を中止する際には患者の状態を観察しながら徐々に減量するなど慎重に行うこと。"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.６ 授乳婦"
+     ],
+     "text": "治療上の有益性及び母乳栄養の有益性を考慮し、授乳の継続又は中止を検討すること。本剤は母乳中へ移行することが報告されている。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "血管性浮腫、多汗症"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "離脱症候群"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "テルミサルタン錠20mg「トーワ」／テルミ...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "2149042F1203_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149042F1203_1_06/",
+   "fetched_at": "2026-10-01 19:31:19",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_2149042F1203_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_2149042F1203_1_06",
+   "meta": {
+    "packins_no": "2149042F1203_1_06",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "テルミサルタン錠20mg「トーワ」",
+     "テルミサルタン錠40mg「トーワ」",
+     "テルミサルタン錠80mg「トーワ」"
+    ],
+    "generic_name": "テルミサルタン錠",
+    "therapeutic_class": "胆汁排泄型持続性AT1受容体ブロッカー"
+   },
+   "revised": [
+    {
+     "path": [
+      "２２.包装",
+      "〈テルミサルタン錠20mg「トーワ」〉"
+     ],
+     "text": "〈テルミサルタン錠20mg「トーワ」〉"
+    },
+    {
+     "path": [
+      "２２.包装",
+      "〈テルミサルタン錠40mg「トーワ」〉"
+     ],
+     "text": "〈テルミサルタン錠40mg「トーワ」〉"
+    },
+    {
+     "path": [
+      "２２.包装",
+      "〈テルミサルタン錠80mg「トーワ」〉"
+     ],
+     "text": "〈テルミサルタン錠80mg「トーワ」〉"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ホスフラン注−10mg／ホスフラン注−20mg",
+   "company": "製造販売元／扶桑薬品工業株式会社 / 販売元／アルフレッサ ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "3131401A3083_3_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3131401A3083_3_07/",
+   "fetched_at": "2026-10-01 19:31:21",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670156_3131401A3083_3_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670156_3131401A3083_3_07",
+   "meta": {
+    "packins_no": "3131401A3083_3_07",
+    "company_id": "670156",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-04",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ホスフラン注−10mg",
+     "ホスフラン注−20mg"
+    ],
+    "generic_name": "リボフラビンリン酸エステルナトリウム注射液",
+    "therapeutic_class": "ビタミンB2製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "大阪市中央区道修町一丁目7番10号"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "クエチアピン錠25mg「VTRS」／クエチアピン...",
+   "company": "製造販売元／ヴィアトリス・ヘルスケア合同会社 / 販売元／ヴィアトリス製薬合同会社",
+   "reason": "更新",
+   "packins_no": "1179042F1216_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179042F1216_1_08/",
+   "fetched_at": "2026-10-01 19:31:23",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/730869_1179042F1216_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/730869_1179042F1216_1_08",
+   "meta": {
+    "packins_no": "1179042F1216_1_08",
+    "company_id": "730869",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-11",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "クエチアピン錠25mg「VTRS」",
+     "クエチアピン錠100mg「VTRS」",
+     "クエチアピン錠200mg「VTRS」"
+    ],
+    "generic_name": "クエチアピンフマル酸塩",
+    "therapeutic_class": "抗精神病剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "過敏症"
+    }
+   ],
+   "diff": null
   }
  ],
  "deletes": [
@@ -9067,6 +9271,6 @@
   }
  ],
  "created_at": "2026-10-01 17:36:29",
- "updated_at": "2026-10-01 18:19:46",
+ "updated_at": "2026-10-01 19:31:25",
  "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
 }
