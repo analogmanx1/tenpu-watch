@@ -1,0 +1,1076 @@
+{
+ "date": "2026-09-30",
+ "updates": [
+  {
+   "brand": "ラコサミド錠50mg「サワイ」／ラコサミド...",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1139015F1086_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1139015F1086_1_04/",
+   "fetched_at": "2026-10-01 17:30:47",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_1139015F1086_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_1139015F1086_1_04",
+   "meta": {
+    "packins_no": "1139015F1086_1_04",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-03",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ラコサミド錠50mg「サワイ」",
+     "ラコサミド錠100mg「サワイ」"
+    ],
+    "generic_name": "ラコサミド",
+    "therapeutic_class": "抗てんかん剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ラコサミドDS10%「サワイ」",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1139015R1074_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1139015R1074_1_04/",
+   "fetched_at": "2026-10-01 17:30:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_1139015R1074_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_1139015R1074_1_04",
+   "meta": {
+    "packins_no": "1139015R1074_1_04",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-03",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ラコサミドDS10%「サワイ」"
+    ],
+    "generic_name": "ラコサミド",
+    "therapeutic_class": "抗てんかん剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "プソフェキ配合錠「サワイ」",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "4490100F1030_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490100F1030_1_06/",
+   "fetched_at": "2026-10-01 17:30:52",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_4490100F1030_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_4490100F1030_1_06",
+   "meta": {
+    "packins_no": "4490100F1030_1_06",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2023-09",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "プソフェキ配合錠「サワイ」"
+    ],
+    "generic_name": "フェキソフェナジン塩酸塩 / 塩酸プソイドエフェドリン",
+    "therapeutic_class": "アレルギー性疾患治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ヘルニコア椎間板注用1.25単位",
+   "company": "製造販売元／生化学工業株式会社 / 発売元／科研製薬株式会社",
+   "reason": "更新",
+   "packins_no": "3999447D1020_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999447D1020_1_03/",
+   "fetched_at": "2026-10-01 17:30:54",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/380003_3999447D1020_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/380003_3999447D1020_1_03",
+   "meta": {
+    "packins_no": "3999447D1020_1_03",
+    "company_id": "380003",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-02",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ヘルニコア椎間板注用1.25単位"
+    ],
+    "generic_name": "注射用コンドリアーゼ",
+    "therapeutic_class": "腰椎椎間板ヘルニア治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "筋・骨格系"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ファモチジン錠10mg「TCK」／ファモチジン...",
+   "company": "製造販売元／辰巳化学株式会社",
+   "reason": "更新",
+   "packins_no": "2325003F1245_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2325003F1245_1_06/",
+   "fetched_at": "2026-10-01 17:30:56",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400278_2325003F1245_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400278_2325003F1245_1_06",
+   "meta": {
+    "packins_no": "2325003F1245_1_06",
+    "company_id": "400278",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-01",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ファモチジン錠10mg「TCK」",
+     "ファモチジン錠20mg「TCK」"
+    ],
+    "generic_name": "ファモチジン錠",
+    "therapeutic_class": "H2受容体拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（各0.1%未満）"
+     ],
+     "text": "ショック、アナフィラキシー（呼吸困難、全身潮紅、血管性浮腫〈顔面浮腫、咽頭浮腫等〉、蕁麻疹等）があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アレセンサカプセル150mg",
+   "company": "製造販売元／中外製薬株式会社",
+   "reason": "更新",
+   "packins_no": "4291032M3021_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291032M3021_1_09/",
+   "fetched_at": "2026-10-01 17:30:58",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/450045_4291032M3021_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/450045_4291032M3021_1_09",
+   "meta": {
+    "packins_no": "4291032M3021_1_09",
+    "company_id": "450045",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-05",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "アレセンサカプセル150mg"
+    ],
+    "generic_name": "アレクチニブ塩酸塩カプセル",
+    "therapeutic_class": "抗悪性腫瘍剤/ALK阻害剤ALK：Anaplastic Lymphoma Kinase（未分化リンパ腫キナーゼ） / ALK：Anaplastic Lymphoma Kinase（未分化リンパ腫キナーゼ）"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(5)"
+     ],
+     "text": "重度の高トリグリセリド血症があらわれ、急性膵炎に至った症例が報告されているので、本剤投与開始前及び投与中は定期的に血液検査（血清トリグリセリド値等）を行い、患者の状態を十分に観察すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "テセントリク点滴静注840mg／テセントリク...",
+   "company": "製造販売元／中外製薬株式会社",
+   "reason": "更新",
+   "packins_no": "4291441A1024_1_25",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291441A1024_1_25/",
+   "fetched_at": "2026-10-01 17:31:52",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/450045_4291441A1024_1_25",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/450045_4291441A1024_1_25",
+   "meta": {
+    "packins_no": "4291441A1024_1_25",
+    "company_id": "450045",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第15版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "テセントリク点滴静注840mg",
+     "テセントリク点滴静注1200mg"
+    ],
+    "generic_name": "アテゾリズマブ（遺伝子組換え）",
+    "therapeutic_class": "抗悪性腫瘍剤／抗PD-L1注1）ヒト化モノクローナル抗体 / 注1）PD-L1: Programmed Death-Ligand 1"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重度の胃炎、食道炎"
+     ],
+     "text": "重度の胃炎、食道炎"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "消化器"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "4291441A1024_1_24",
+    "prev_fetched_at": "2026-08-26 18:38:33",
+    "prev_seen_date": "2026-08-26",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "ア.作成又は改訂年月",
+      "before": "第14版",
+      "after": "第15版"
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の胃炎、食道炎",
+      "before": null,
+      "after": "重度の胃炎、食道炎"
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の胃炎、食道炎",
+      "before": null,
+      "after": "免疫反応に起因すると考えられる重度の胃炎（0.1%未満）、食道炎（0.1%未満）があらわれることがある。異常が認められた場合には、副腎皮質ホルモン剤の投与等の適切な処置を行うこと。"
+     },
+     {
+      "kind": "changed",
+      "path": "１１.副作用 > １１.２ その他の副作用",
+      "before": "腹部膨満、消化不良、嚥下障害、アミラーゼ増加、リパーゼ増加",
+      "after": "腹部膨満、消化不良、嚥下障害、アミラーゼ増加、リパーゼ増加、胃炎、食道炎"
+     },
+     {
+      "kind": "changed",
+      "path": "１１.副作用 > １１.２ その他の副作用",
+      "before": "腫脹、過敏症、胸痛、血中乳酸脱水素酵素増加、疼痛、サルコイドーシス",
+      "after": "腫脹、過敏症、胸痛、血中乳酸脱水素酵素増加、疼痛、サルコイドーシス、サイトメガロウイルス感染"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "アクテムラ点滴静注用80mg／アクテムラ点...",
+   "company": "製造販売元／中外製薬株式会社",
+   "reason": "更新",
+   "packins_no": "6399421A1020_1_25",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6399421A1020_1_25/",
+   "fetched_at": "2026-10-01 17:32:42",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/450045_6399421A1020_1_25",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/450045_6399421A1020_1_25",
+   "meta": {
+    "packins_no": "6399421A1020_1_25",
+    "company_id": "450045",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第8版"
+     },
+     "previous": {
+      "ym": "2026-05",
+      "ver": null
+     }
+    },
+    "brands": [
+     "アクテムラ点滴静注用80mg",
+     "アクテムラ点滴静注用200mg",
+     "アクテムラ点滴静注用400mg"
+    ],
+    "generic_name": "トシリズマブ（遺伝子組換え）",
+    "therapeutic_class": "ヒト化抗ヒトIL-6レセプターモノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "薬剤性過敏症症候群（頻度不明）"
+     ],
+     "text": "薬剤性過敏症症候群（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アクテムラ皮下注162mgシリンジ／アクテム...",
+   "company": "製造販売元／中外製薬株式会社",
+   "reason": "更新",
+   "packins_no": "6399421G1022_1_19",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6399421G1022_1_19/",
+   "fetched_at": "2026-10-01 17:32:45",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/450045_6399421G1022_1_19",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/450045_6399421G1022_1_19",
+   "meta": {
+    "packins_no": "6399421G1022_1_19",
+    "company_id": "450045",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": null
+     }
+    },
+    "brands": [
+     "アクテムラ皮下注162mgシリンジ",
+     "アクテムラ皮下注162mgオートインジェクター"
+    ],
+    "generic_name": "トシリズマブ（遺伝子組換え）",
+    "therapeutic_class": "ヒト化抗ヒトIL-6レセプターモノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "薬剤性過敏症症候群（頻度不明）"
+     ],
+     "text": "薬剤性過敏症症候群（頻度不明）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ドネペジル塩酸塩OD錠3mg「日医工」／ドネ...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1190012F3215_1_17",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190012F3215_1_17/",
+   "fetched_at": "2026-10-01 17:32:47",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_1190012F3215_1_17",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_1190012F3215_1_17",
+   "meta": {
+    "packins_no": "1190012F3215_1_17",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2024-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-05",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ドネペジル塩酸塩OD錠3mg「日医工」",
+     "ドネペジル塩酸塩OD錠5mg「日医工」",
+     "ドネペジル塩酸塩OD錠10mg「日医工」"
+    ],
+    "generic_name": "ドネペジル塩酸塩",
+    "therapeutic_class": "アルツハイマー型、レビー小体型認知症治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "コリン賦活剤"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "エナラプリルマレイン酸塩錠2.5mg「NikP」...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2144002F1334_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2144002F1334_2_02/",
+   "fetched_at": "2026-10-01 17:32:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_2144002F1334_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_2144002F1334_2_02",
+   "meta": {
+    "packins_no": "2144002F1334_2_02",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2025-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "エナラプリルマレイン酸塩錠2.5mg「NikP」",
+     "エナラプリルマレイン酸塩錠5mg「NikP」",
+     "エナラプリルマレイン酸塩錠10mg「NikP」"
+    ],
+    "generic_name": "エナラプリルマレイン酸塩",
+    "therapeutic_class": "持続性アンジオテンシン変換酵素阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "製造販売元"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ピタバスタチンカルシウム錠1mg「日医工...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2189016F1257_1_18",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2189016F1257_1_18/",
+   "fetched_at": "2026-10-01 17:32:51",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_2189016F1257_1_18",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_2189016F1257_1_18",
+   "meta": {
+    "packins_no": "2189016F1257_1_18",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2024-01",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ピタバスタチンカルシウム錠1mg「日医工」",
+     "ピタバスタチンカルシウム錠2mg「日医工」",
+     "ピタバスタチンカルシウム錠4mg「日医工」"
+    ],
+    "generic_name": "ピタバスタチンカルシウム水和物",
+    "therapeutic_class": "HMG-CoA還元酵素阻害剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "セファゾリンナトリウム注射用0.25g「日医...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "6132401D1061_2_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132401D1061_2_10/",
+   "fetched_at": "2026-10-01 17:32:54",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_6132401D1061_2_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_6132401D1061_2_10",
+   "meta": {
+    "packins_no": "6132401D1061_2_10",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-08",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "セファゾリンナトリウム注射用0.25g「日医工」",
+     "セファゾリンナトリウム注射用0.5g「日医工」",
+     "セファゾリンナトリウム注射用1g「日医工」",
+     "セファゾリンナトリウム注射用2g「日医工」"
+    ],
+    "generic_name": "セファゾリンナトリウム",
+    "therapeutic_class": "合成セファロスポリン系抗生物質"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "アナフィラキシー（0.1%未満）"
+     ],
+     "text": "呼吸困難、全身潮紅、血管性浮腫、蕁麻疹等があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "タフルプロスト点眼液0.0015％「日点」",
+   "company": "製造販売元／ロートニッテン株式会社",
+   "reason": "更新",
+   "packins_no": "1319756Q1065_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319756Q1065_1_03/",
+   "fetched_at": "2026-10-01 17:32:56",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530304_1319756Q1065_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530304_1319756Q1065_1_03",
+   "meta": {
+    "packins_no": "1319756Q1065_1_03",
+    "company_id": "530304",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-12",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "タフルプロスト点眼液0.0015％「日点」"
+    ],
+    "generic_name": "タフルプロスト点眼液",
+    "therapeutic_class": "プロスタグランジンF2α誘導体\n緑内障・高眼圧症治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "無色～淡黄色の粘稠性のある液である。エタノール（99.5）に極めて溶けやすく、水にほとんど溶けない。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "タフルプロスト点眼液0.0015％「日点」",
+   "company": "製造販売元／ロートニッテン株式会社 / 販売元／株式会社フェルゼンファーマ",
+   "reason": "更新",
+   "packins_no": "1319756Q1065_2_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319756Q1065_2_03/",
+   "fetched_at": "2026-10-01 17:32:58",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530304_1319756Q1065_2_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530304_1319756Q1065_2_03",
+   "meta": {
+    "packins_no": "1319756Q1065_2_03",
+    "company_id": "530304",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-12",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "タフルプロスト点眼液0.0015％「日点」"
+    ],
+    "generic_name": "タフルプロスト点眼液",
+    "therapeutic_class": "プロスタグランジンF2α誘導体\n緑内障・高眼圧症治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "無色～淡黄色の粘稠性のある液である。エタノール（99.5）に極めて溶けやすく、水にほとんど溶けない。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ファモチジンOD錠10mg「JG」",
+   "company": "製造販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "2325003F3140_1_12",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2325003F3140_1_12/",
+   "fetched_at": "2026-10-01 17:33:24",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580591_2325003F3140_1_12",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580591_2325003F3140_1_12",
+   "meta": {
+    "packins_no": "2325003F3140_1_12",
+    "company_id": "580591",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ファモチジンOD錠10mg「JG」"
+    ],
+    "generic_name": "ファモチジン口腔内崩壊錠",
+    "therapeutic_class": "H2受容体拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（各0.1%未満）"
+     ],
+     "text": "ショック、アナフィラキシー（各0.1%未満）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ファモチジンOD錠10mg「JG」／ファモチジン...",
+   "company": "製造販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "2325003F3140_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2325003F3140_2_02/",
+   "fetched_at": "2026-10-01 17:34:14",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580591_2325003F3140_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580591_2325003F3140_2_02",
+   "meta": {
+    "packins_no": "2325003F3140_2_02",
+    "company_id": "580591",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-09",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ファモチジンOD錠10mg「JG」",
+     "ファモチジンOD錠20mg「JG」（旧製品）"
+    ],
+    "generic_name": "ファモチジン口腔内崩壊錠",
+    "therapeutic_class": "H2受容体拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（各0.1%未満）"
+     ],
+     "text": "ショック、アナフィラキシー（各0.1%未満）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ファモチジンOD錠20mg「JG」",
+   "company": "製造販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "2325003F4163_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2325003F4163_1_03/",
+   "fetched_at": "2026-10-01 17:34:40",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580591_2325003F4163_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580591_2325003F4163_1_03",
+   "meta": {
+    "packins_no": "2325003F4163_1_03",
+    "company_id": "580591",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ファモチジンOD錠20mg「JG」"
+    ],
+    "generic_name": "ファモチジン口腔内崩壊錠",
+    "therapeutic_class": "H2受容体拮抗剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（各0.1%未満）"
+     ],
+     "text": "ショック、アナフィラキシー（各0.1%未満）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ジャスケイド錠9mg／ジャスケイド錠18mg",
+   "company": "製造販売元／日本ベーリンガーインゲルハイム株式会社",
+   "reason": "更新",
+   "packins_no": "3999071F1021_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999071F1021_1_02/",
+   "fetched_at": "2026-10-01 17:34:42",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/650168_3999071F1021_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/650168_3999071F1021_1_02",
+   "meta": {
+    "packins_no": "3999071F1021_1_02",
+    "company_id": "650168",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ジャスケイド錠9mg",
+     "ジャスケイド錠18mg"
+    ],
+    "generic_name": "ネランドミラスト",
+    "therapeutic_class": "PDE4B阻害剤 / 抗線維化・免疫調整剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "3年"
+    },
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "3年"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "テクネMDP注射液（370MBq）／テクネMDP注射...",
+   "company": "製造販売元／PDRファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "4300410A1020_2_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4300410A1020_2_03/",
+   "fetched_at": "2026-10-01 17:34:44",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/651410_4300410A1020_2_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/651410_4300410A1020_2_03",
+   "meta": {
+    "packins_no": "4300410A1020_2_03",
+    "company_id": "651410",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-02",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "テクネMDP注射液（370MBq）",
+     "テクネMDP注射液（555MBq）",
+     "テクネMDP注射液（740MBq）",
+     "テクネMDP注射液（925MBq）"
+    ],
+    "generic_name": "メチレンジホスホン酸テクネチウム（99mTc）注射液（放射性医薬品基準）",
+    "therapeutic_class": "放射性医薬品／骨疾患診断薬・脳腫瘍及び脳血管障害診断薬"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ジルビスク皮下注16.6mgシリンジ／ジルビ...",
+   "company": "製造販売元／ユーシービージャパン株式会社",
+   "reason": "更新",
+   "packins_no": "3999471G1020_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999471G1020_1_02/",
+   "fetched_at": "2026-10-01 17:35:10",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/820110_3999471G1020_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/820110_3999471G1020_1_02",
+   "meta": {
+    "packins_no": "3999471G1020_1_02",
+    "company_id": "820110",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-02",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ジルビスク皮下注16.6mgシリンジ",
+     "ジルビスク皮下注23.0mgシリンジ",
+     "ジルビスク皮下注32.4mgシリンジ"
+    ],
+    "generic_name": "ジルコプランナトリウム",
+    "therapeutic_class": "補体（C5）阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "48ヵ月"
+    },
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "48ヵ月"
+    },
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "48ヵ月"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ロキソプロフェンNaテープ50mg「YD」／ロキ...",
+   "company": "製造販売元／陽進堂ホールディングス株式会社",
+   "reason": "更新",
+   "packins_no": "2649735S2113_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2649735S2113_1_08/",
+   "fetched_at": "2026-10-01 17:35:12",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/830001_2649735S2113_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/830001_2649735S2113_1_08",
+   "meta": {
+    "packins_no": "2649735S2113_1_08",
+    "company_id": "830001",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ロキソプロフェンNaテープ50mg「YD」",
+     "ロキソプロフェンNaテープ100mg「YD」"
+    ],
+    "generic_name": "ロキソプロフェンナトリウム水和物貼付剤",
+    "therapeutic_class": "経皮吸収型鎮痛・抗炎症剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "3年"
+    },
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "3年"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "スチレン・イソプレン・スチレンブロックコポリマー、脂環族飽和炭化水素樹脂、ポリブテン、BHT、乳酸、イソステアリン酸、l-メントール、流動パラフィン、その他1成分"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "スチレン・イソプレン・スチレンブロックコポリマー、脂環族飽和炭化水素樹脂、ポリブテン、BHT、乳酸、イソステアリン酸、l-メントール、流動パラフィン、その他1成分"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リブタヨ点滴静注350mg",
+   "company": "製造販売元／リジェネロン・ジャパン株式会社",
+   "reason": "更新",
+   "packins_no": "4291466A1024_2_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291466A1024_2_10/",
+   "fetched_at": "2026-10-01 17:36:03",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/850555_4291466A1024_2_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/850555_4291466A1024_2_10",
+   "meta": {
+    "packins_no": "4291466A1024_2_10",
+    "company_id": "850555",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第13版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": "第12版"
+     }
+    },
+    "brands": [
+     "リブタヨ点滴静注350mg"
+    ],
+    "generic_name": "セミプリマブ（遺伝子組換え）",
+    "therapeutic_class": "抗悪性腫瘍剤\nヒト型抗ヒトPD-1モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "Infusion reaction（4.2%、1.9%）"
+     ],
+     "text": "Infusion reactionが認められた場合には、本剤の投与中止等の適切な処置を行うとともに、症状が回復するまで患者の状態を十分に観察すること。また、サイトカイン放出症候群（CRS）があらわれることがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "重度の胃炎、食道炎"
+     ],
+     "text": "免疫反応に起因すると考えられる重度の胃炎（頻度不明、頻度不明）、食道炎（頻度不明、頻度不明）があらわれることがある。異常が認められた場合には、副腎皮質ホルモン剤の投与等の適切な処置を行うこと。\n注）「重大な副作用」の発現頻度は、単独投与時、併用投与時の順に記載した。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "4291466A1024_2_09",
+    "prev_fetched_at": "2026-08-24 19:19:51",
+    "prev_seen_date": "2026-08-24",
+    "changes": [
+     {
+      "kind": "removed",
+      "path": "ア.作成又は改訂年月",
+      "before": "第11版",
+      "after": null
+     },
+     {
+      "kind": "added",
+      "path": "ア.作成又は改訂年月",
+      "before": null,
+      "after": "第13版"
+     },
+     {
+      "kind": "changed",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > Infusion reaction（4.2%、1.9%）",
+      "before": "Infusion reactionが認められた場合には、本剤の投与中止等の適切な処置を行うとともに、症状が回復するまで患者の状態を十分に観察すること。",
+      "after": "Infusion reactionが認められた場合には、本剤の投与中止等の適切な処置を行うとともに、症状が回復するまで患者の状態を十分に観察すること。また、サイトカイン放出症候群（CRS）があらわれることがある。"
+     },
+     {
+      "kind": "removed",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 血管炎（頻度不明、頻度不明）",
+      "before": "注）「重大な副作用」の発現頻度は、単独投与時、併用投与時の順に記載した。",
+      "after": null
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の胃炎、食道炎",
+      "before": null,
+      "after": "重度の胃炎、食道炎"
+     },
+     {
+      "kind": "added",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > 重度の胃炎、食道炎",
+      "before": null,
+      "after": "免疫反応に起因すると考えられる重度の胃炎（頻度不明、頻度不明）、食道炎（頻度不明、頻度不明）があらわれることがある。異常が認められた場合には、副腎皮質ホルモン剤の投与等の適切な処置を行うこと。\n注）「重大な副作用」の発現頻度は、単独投与時、併用投与時の順に記載した。"
+     },
+     {
+      "kind": "removed",
+      "path": "１１.副作用 > １１.２ その他の副作用",
+      "before": "胃炎",
+      "after": null
+     }
+    ]
+   }
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "ビスミラー散1%",
+   "company": "製造販売元／扶桑薬品工業株式会社",
+   "reason": "承認整理のため",
+   "yj_hint": "4419003B1283_1_05"
+  }
+ ],
+ "created_at": "2026-10-01 17:30:47",
+ "updated_at": "2026-10-01 17:36:29",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
