@@ -9,6 +9,7 @@ data/days/*.json から静的サイト(docs/)を生成する。
   docs/watch/search.html + search.json … 薬名・企業名・一般名で検索
   docs/if/index.html + index.json   … インタビューフォーム検索(元データは data/if_index.json。src/if_index.py が毎日0:15に更新)
   docs/tenpu/index.html + index.json … 添付文書検索(元データは data/tenpu_index.json。同上・毎日0:15に更新)
+                                       規格ごとの薬価は data/yakka_index.json(厚労省の薬価リスト)× data/yj_index.json(規格の対応表)を src/yakka_index.py で突き合わせて付ける
   docs/shikibetsu/index.html + index.json … 識別コード検索(元データは data/shikibetsu_index.json。src/shikibetsu_index.py が自宅PCで差分更新)
   docs/touseki/index.html + index.json … 透析投薬ガイドライン検索(元データは data/touseki_index.json。src/touseki_index.py が白鷺病院の索引から作る)
   docs/shujutsu/index.html + index.json … 術前休薬・禁忌チェック(元データは data/chuui_index.json。src/chuui_index.py が自宅PCで差分更新)
@@ -31,6 +32,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import if_index  # noqa: E402  (PMDA検索フォームの項目一覧を「PMDAで最新を検索」ボタンに流用)
 import touseki_index  # noqa: E402  (白鷺病院サイトのURL・索引ページの一覧を検索ページで使う)
 import chuui_index  # noqa: E402  (「◯◯のとき注意する薬」の文の仕分け・一般名ごとのまとめ)
+import yakka_index  # noqa: E402  (添付文書検索の「規格ごとの薬価」の突き合わせ)
 
 JST = timezone(timedelta(hours=9))
 WEEK_URL = "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
@@ -45,6 +47,7 @@ TOUSEKI_TITLE = "透析投薬ガイドライン検索"   # 白鷺病院「透析
 SHUJUTSU_TITLE = "術前休薬・禁忌チェック"   # 添付文書の禁忌・重要な基本的注意などから「手術時の禁忌・休薬」の記載を集めた一覧
 ZOUEI_TITLE = "造影剤チェック(休薬・併用注意)"   # 同じく「造影剤を使うときの休薬・併用注意」の記載を集めた一覧
 MOBILE_MAX = 800   # この幅(px)以下を「スマホ表示」にする(CSSの @media と nav.js の両方に入る。1か所で変えられる)
+YAKKA_OPEN_MAX = 3   # 添付文書検索の薬価: 規格がこの数までなら最初から表示、多いと「薬価(◯規格)を表示 ▾」で畳む
 IF_PDF_BASE ="https://www.info.pmda.go.jp/go/interview/"                 # if_index.py の IF_BASE と同じ
 IF_DETAIL_BASE = "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/GeneralList/"
 TENPU_PDF_BASE = "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/"   # 添付文書PDF(コード=企業コード_packins番号)
@@ -448,6 +451,11 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .sjh mark{background:var(--hl);color:inherit;padding:0 .1rem;border-radius:.2rem}
 .sjb{color:var(--mut)}
 .sjbr a{display:inline-block;margin:.1rem .8rem .1rem 0;font-size:.9rem}
+/* ---- 添付文書検索の薬価(規格が YAKKA_OPEN_MAX 個までは表、多いと畳む) ---- */
+.yk{margin-top:.25rem;font-size:.92rem}
+table.yk{border-collapse:collapse;margin:.1rem 0 0 .4rem}table.yk td{padding:.05rem 1rem .05rem 0;vertical-align:top}
+details.yk>summary{font-weight:600;color:var(--mut);list-style:none}details.yk>summary::-webkit-details-marker{display:none}
+details.yk>summary::after{content:" ▾"}details.yk[open]>summary::after{content:" ▴"}details.yk>table.yk{margin-top:.2rem}
 /* ---- スマホ表示(幅 __MOBILE__px 以下。build_site.py の MOBILE_MAX)。上の基本ルールを上書きするので必ず最後に置く ---- */
 @media (max-width:__MOBILE__px){
 .wrap{flex-direction:column;padding:.7rem .8rem;gap:.8rem}
@@ -468,6 +476,7 @@ table.arch td,table.arch th,table.del td,table.del th{padding:.35rem .4rem}
 .box{padding:.1rem .8rem .8rem;margin:.8rem 0}
 .tierbtn{min-height:calc(var(--tap) - 8px);padding:.35rem .9rem}.tiers select{margin-left:0;min-height:calc(var(--tap) - 8px)}
 .sjbr a{display:block;padding:.35rem 0;margin:0}
+table.yk{margin-left:0}table.yk td{padding:.15rem .6rem .15rem 0}details.yk>summary{padding:.3rem 0}
 }
 """
 
@@ -625,13 +634,21 @@ def render_if_page(idx: dict | None) -> str:
 """
 
 
-def render_tenpu_page(idx: dict | None) -> str:
+def render_tenpu_page(idx: dict | None, yakka: dict | None = None, ystats: dict | None = None) -> str:
     """添付文書検索(動きはIF検索と同じ)。薬剤名を打つ → 候補が即出る → クリックで添付文書PDF。
-    HTML版・PMDA詳細・「PMDAで最新を検索」フォーム(いずれも別タブ)も付ける"""
+    HTML版・PMDA詳細・「PMDAで最新を検索」フォーム(いずれも別タブ)も付ける。
+    候補の下に規格ごとの薬価(index.json の各項目の "p"。yakka_index.attach() が付ける)を出す"""
     hidden = "".join(
         f'<input type="hidden" name="{esc(k)}" value="{esc(v)}">'
         for k, v in if_index.search_fields(doc="tenpu") if k != "nameWord")
     note = if_summary(idx, "--tenpu-index")
+    ym = (yakka or {}).get("meta") or {}
+    if ym and (ystats or {}).get("products"):
+        ynote = (f'<p class="small" id="yknote">💴 薬価は厚生労働省<a href="{esc(ym.get("page") or "")}" target="_blank" rel="noopener">「薬価基準収載品目リスト」↗</a>'
+                 f'({esc(yakka_index.summary(yakka))})から、1錠・1gなど<b>規格単位あたりの価格</b>を載せています。毎日0:15に更新を確認。'
+                 "「掲載なし」は薬価基準に載っていない薬(保険適用外・販売中止・収載前など)です。</p>")
+    else:
+        ynote = '<p class="small" id="yknote">💴 薬価データ未作成(python src/run.py --build-only --yakka-index で作成)</p>'
     return f"""
 <h1>📕 {TENPU_TITLE}</h1>
 <div class="ifbar">
@@ -643,15 +660,16 @@ def render_tenpu_page(idx: dict | None) -> str:
   </form>
 </div>
 <details class="help" open><summary>使い方</summary><p class="small">薬剤名(一般名・販売名)や企業名を入れると候補が出ます。<b>候補をクリックすると添付文書(PDF)が新しいタブで開きます</b>。
-スペース区切りで絞り込み(例: <code>アリピプラゾール 大塚</code>)。ひらがな/全角半角の違いは気にしなくてOK。</p></details>
+スペース区切りで絞り込み(例: <code>アリピプラゾール 大塚</code>)。ひらがな/全角半角の違いは気にしなくてOK。候補の下に<b>規格ごとの薬価</b>も出ます。</p></details>
 <p class="small" id="cnt"></p>
 <div id="hist"></div>
 <div id="res"></div>
 <p class="small" id="ifmeta">{esc(note)}。一覧は毎日0:15にPMDAの検索結果から作り直しています。改版直後などでPDFが開かないときは「HTML版」「PMDA詳細」か上のボタンから最新を確認してください。</p>
+{ynote}
 <script src="../assets/hist.js"></script>
 <script>
 (async function(){{
-  const PDFB={json.dumps(TENPU_PDF_BASE)}, PACKB={json.dumps(PACK_HTML_BASE)}, DB={json.dumps(IF_DETAIL_BASE)};
+  const PDFB={json.dumps(TENPU_PDF_BASE)}, PACKB={json.dumps(PACK_HTML_BASE)}, DB={json.dumps(IF_DETAIL_BASE)}, YOPEN={YAKKA_OPEN_MAX};
   const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt');
   const form=document.getElementById('pmdaForm'), pn=document.getElementById('pmdaName');
   form.addEventListener('submit',e=>{{ if(!q.value.trim()){{e.preventDefault();q.focus();return;}} pn.value=q.value.trim(); }});
@@ -666,6 +684,15 @@ def render_tenpu_page(idx: dict | None) -> str:
   const esc=s=>(s||'').replace(/[&<>"]/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]));
   const pdf=u=>PDFB+u;
   const packHtml=u=>PACKB+u.substring(u.indexOf('_')+1)+'/';   // 先頭の企業コードを外すと添付文書HTML版のURLになる
+  // 規格ごとの薬価。e.p=[[販売名, 規格, 薬価, 経過措置の期限], …](薬価が無い製品は [販売名] だけ)。規格がYOPEN個を超えたら畳む
+  const yen=v=>Number(v).toLocaleString('ja-JP',{{minimumFractionDigits:2,maximumFractionDigits:2}})+'円';
+  const ykOne=r=>r.length>1?`<b>${{yen(r[2])}}</b> <span class="small">(${{esc(r[1])}})${{r[3]?' 経過措置 '+esc(r[3]):''}}</span>`:'<span class="small">薬価基準に掲載なし</span>';
+  function yakka(e){{
+    const p=e.p||[]; if(!p.length) return '';
+    if(p.length===1) return `<div class="yk">💴 薬価 ${{ykOne(p[0])}}</div>`;
+    const tb='<table class="yk">'+p.map(r=>`<tr><td>${{esc(r[0])}}</td><td>${{ykOne(r)}}</td></tr>`).join('')+'</table>';
+    return p.length<=YOPEN?`<div class="yk">💴 薬価</div>${{tb}}`:`<details class="yk"><summary>💴 薬価(${{p.length}}規格)を表示</summary>${{tb}}</details>`;
+  }}
   function run(){{
     const kw=q.value.normalize('NFKC').trim().split(/\\s+/).filter(Boolean).map(norm);
     if(!kw.length){{ cnt.textContent=`全${{items.length.toLocaleString()}}件。薬剤名を入力してください`; res.innerHTML=''; if(hist)hist.show(); return; }}
@@ -683,7 +710,7 @@ def render_tenpu_page(idx: dict | None) -> str:
       const multi=f.length>1?'<div class="small ifmulti">PDFが複数あります: '+f.map(x=>{{const lb=x.t?`PDF(${{x.t}})`:(x.u.endsWith('E')?'英語版PDF':'PDF');return `<a href="${{esc(pdf(x.u))}}" data-hl="${{esc(e.n+' '+lb)}}" target="_blank" rel="noopener">📕 ${{esc(lb)}}</a>`;}}).join(' ／ ')+'</div>':'';
       const cat=cats[e.e]?` ｜ ${{esc(cats[e.e])}}`:'';
       const detail=e.d?` <a class="small" href="${{esc(DB+e.d)}}" target="_blank" rel="noopener">PMDA詳細 ↗</a>`:'';
-      return `<div class="hit"><a class="ifa" href="${{esc(pdf(first.u||''))}}" data-hl="${{esc(e.n)}}" target="_blank" rel="noopener">📕 ${{esc(e.n)}}</a>${{date}}<br><span class="small">${{esc(e.g)}} ｜ ${{esc(e.c)}}${{cat}}</span>${{htmlLink}}${{detail}}${{multi}}</div>`;
+      return `<div class="hit"><a class="ifa" href="${{esc(pdf(first.u||''))}}" data-hl="${{esc(e.n)}}" target="_blank" rel="noopener">📕 ${{esc(e.n)}}</a>${{date}}<br><span class="small">${{esc(e.g)}} ｜ ${{esc(e.c)}}${{cat}}</span>${{htmlLink}}${{detail}}${{multi}}${{yakka(e)}}</div>`;
     }}).join('');
   }}
   q.addEventListener('input',run);
@@ -1142,7 +1169,7 @@ def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = No
     else:
         out.append("<p>まだデータがありません(初回の自動実行をお待ちください)。</p>")
     out = _box(f"<h2>📕 {TENPU_TITLE}</h2>")
-    out.append('<p>薬剤名を入れると候補が出て、クリックで添付文書(PDF)が開きます。'
+    out.append('<p>薬剤名を入れると候補が出て、クリックで添付文書(PDF)が開きます。規格ごとの薬価も表示します。'
                f'<span class="small">{esc(if_summary(tenpu_idx, "--tenpu-index"))}</span></p>'
                '<p><a href="tenpu/index.html">検索ページへ →</a></p>')
     out = _box(f"<h2>📘 {IF_TITLE}</h2>")
@@ -1292,13 +1319,17 @@ def build(root: Path) -> None:
         layout(IF_TITLE, render_if_page(if_idx), "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
 
     # 添付文書検索(データは data/tenpu_index.json の写し。無ければページだけ作る)
+    # 各項目に規格ごとの薬価("p")を付ける(厚労省の薬価リスト × 添付文書ごとの規格の対応表。どちらか無ければ薬価なしで作る)
+    yakka = load_if_index(root, "yakka_index.json")
+    tenpu_items, ystats = yakka_index.attach((tenpu_idx or {}).get("items") or [], load_if_index(root, "yj_index.json"), yakka)
     (docs / "tenpu").mkdir(parents=True, exist_ok=True)
     (docs / "tenpu" / "index.json").write_text(
         json.dumps({"meta": {k: v for k, v in ((tenpu_idx or {}).get("meta") or {}).items() if k in ("fetched_at", "count", "categories")},
-                    "items": (tenpu_idx or {}).get("items") or []}, ensure_ascii=False, separators=(",", ":")),
+                    "items": tenpu_items}, ensure_ascii=False, separators=(",", ":")),
         encoding="utf-8", newline="\n")
     (docs / "tenpu" / "index.html").write_text(
-        layout(TENPU_TITLE, render_tenpu_page(tenpu_idx), "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
+        layout(TENPU_TITLE, render_tenpu_page(tenpu_idx, yakka, ystats), "../", dates, None, built_at, tools, side=False),
+        encoding="utf-8", newline="\n")
 
     # 識別コード検索(添付文書一覧×識別コード一覧の突き合わせ。データが無ければページだけ作る)
     (docs / "shikibetsu").mkdir(parents=True, exist_ok=True)

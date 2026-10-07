@@ -8,6 +8,8 @@
               IFは数分・添付文書は10〜20分かかる。毎日0:15の自動実行と同じ)
          python src/run.py --build-only --touseki-index
              (透析投薬ガイドライン一覧を白鷺病院サイトから取り直してサイト生成。約1分)
+         python src/run.py --build-only --yakka-index
+             (厚労省の薬価リストの更新を確認してサイト生成。変わっていなければページを1回見るだけ・数秒)
 """
 from __future__ import annotations
 
@@ -23,6 +25,7 @@ import if_index  # noqa: E402
 import shikibetsu_index  # noqa: E402
 import chuui_index  # noqa: E402
 import touseki_index  # noqa: E402
+import yakka_index  # noqa: E402
 
 
 def main() -> int:
@@ -33,9 +36,12 @@ def main() -> int:
     ap.add_argument("--if-index", action="store_true", help="インタビューフォーム一覧(data/if_index.json)をPMDAから取り直す")
     ap.add_argument("--tenpu-index", action="store_true", help="添付文書一覧(data/tenpu_index.json)をPMDAから取り直す")
     ap.add_argument("--shikibetsu", action="store_true",
-                    help="識別コード一覧(data/shikibetsu_index.json)と注意チェック(data/chuui_index.json=術前休薬・造影剤)を差分更新(各最大300件/回。自宅PC専用)")
+                    help="識別コード一覧(data/shikibetsu_index.json)と注意チェック(data/chuui_index.json=術前休薬・造影剤)を差分更新(各最大300件/回。自宅PC専用)。"
+                         "あわせて薬価用の規格の対応表(data/yj_index.json)もPC内のXMLの写しから更新")
     ap.add_argument("--touseki-index", action="store_true",
                     help="透析投薬ガイドライン一覧(data/touseki_index.json)を白鷺病院サイトから取り直す(約1分)")
+    ap.add_argument("--yakka-index", action="store_true",
+                    help="厚労省の薬価リスト(data/yakka_index.json)の更新を確認し、変わっていれば取り直す(数秒)")
     a = ap.parse_args()
     root = Path(a.root)
     if a.touseki_index:
@@ -45,6 +51,13 @@ def main() -> int:
             print(json.dumps({k: meta.get(k) for k in ("fetched_at", "count", "with_generic", "requests", "warnings")}, ensure_ascii=False))
         except Exception as e:  # noqa: BLE001
             print(f"!! 透析投薬ガイドライン一覧の更新に失敗(古い一覧のまま続行): {e}")
+    if a.yakka_index:
+        # 厚労省サイトが落ちていても止めない。古い薬価リストのまま続行
+        try:
+            meta = yakka_index.refresh(root)
+            print(json.dumps({k: meta.get(k) for k in ("fetched_at", "applied", "count")}, ensure_ascii=False))
+        except Exception as e:  # noqa: BLE001
+            print(f"!! 薬価リストの更新に失敗(古いリストのまま続行): {e}")
     if a.shikibetsu:
         # 失敗しても添付文書ウォッチ本体(取得・コミット)は止めない
         # 術前休薬・禁忌チェック/造影剤チェック(data/chuui_index.json)は、識別コードの取得で落としたXMLをそのまま受け取る(PMDAへのアクセスを増やさない)
@@ -65,6 +78,11 @@ def main() -> int:
                 print(json.dumps({k: meta.get(k) for k in ("updated_at", "fetched", "with_cands", "pending")}, ensure_ascii=False))
             except Exception as e:  # noqa: BLE001
                 print(f"!! 注意チェックの更新に失敗(今回はスキップ。次回やり直し): {e}")
+        # 添付文書検索の薬価用: 文書ごとの「販売名→YJコード」の対応表(data/yj_index.json)。上の取得で揃ったPC内のXMLの写しから読むだけ
+        try:
+            yakka_index.refresh_yj(root)
+        except Exception as e:  # noqa: BLE001
+            print(f"!! 規格の対応表の更新に失敗(今回はスキップ。次回やり直し): {e}")
     if a.if_index:
         meta = if_index.refresh(root)
         print(json.dumps({k: meta[k] for k in ("fetched_at", "count", "requests", "warnings")}, ensure_ascii=False))

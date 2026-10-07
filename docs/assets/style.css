@@ -78,6 +78,11 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .sjh mark{background:var(--hl);color:inherit;padding:0 .1rem;border-radius:.2rem}
 .sjb{color:var(--mut)}
 .sjbr a{display:inline-block;margin:.1rem .8rem .1rem 0;font-size:.9rem}
+/* ---- 添付文書検索の薬価(規格が YAKKA_OPEN_MAX 個までは表、多いと畳む) ---- */
+.yk{margin-top:.25rem;font-size:.92rem}
+table.yk{border-collapse:collapse;margin:.1rem 0 0 .4rem}table.yk td{padding:.05rem 1rem .05rem 0;vertical-align:top}
+details.yk>summary{font-weight:600;color:var(--mut);list-style:none}details.yk>summary::-webkit-details-marker{display:none}
+details.yk>summary::after{content:" ▾"}details.yk[open]>summary::after{content:" ▴"}details.yk>table.yk{margin-top:.2rem}
 /* ---- スマホ表示(幅 800px 以下。build_site.py の MOBILE_MAX)。上の基本ルールを上書きするので必ず最後に置く ---- */
 @media (max-width:800px){
 .wrap{flex-direction:column;padding:.7rem .8rem;gap:.8rem}
@@ -98,4 +103,5 @@ table.arch td,table.arch th,table.del td,table.del th{padding:.35rem .4rem}
 .box{padding:.1rem .8rem .8rem;margin:.8rem 0}
 .tierbtn{min-height:calc(var(--tap) - 8px);padding:.35rem .9rem}.tiers select{margin-left:0;min-height:calc(var(--tap) - 8px)}
 .sjbr a{display:block;padding:.35rem 0;margin:0}
+table.yk{margin-left:0}table.yk td{padding:.15rem .6rem .15rem 0}details.yk>summary{padding:.3rem 0}
 }

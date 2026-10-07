@@ -46,15 +46,16 @@
   </form>
 </div>
 <details class="help" open><summary>使い方</summary><p class="small">薬剤名(一般名・販売名)や企業名を入れると候補が出ます。<b>候補をクリックすると添付文書(PDF)が新しいタブで開きます</b>。
-スペース区切りで絞り込み(例: <code>アリピプラゾール 大塚</code>)。ひらがな/全角半角の違いは気にしなくてOK。</p></details>
+スペース区切りで絞り込み(例: <code>アリピプラゾール 大塚</code>)。ひらがな/全角半角の違いは気にしなくてOK。候補の下に<b>規格ごとの薬価</b>も出ます。</p></details>
 <p class="small" id="cnt"></p>
 <div id="hist"></div>
 <div id="res"></div>
 <p class="small" id="ifmeta">一覧データ: 2026-10-07 時点・11,225件。一覧は毎日0:15にPMDAの検索結果から作り直しています。改版直後などでPDFが開かないときは「HTML版」「PMDA詳細」か上のボタンから最新を確認してください。</p>
+<p class="small" id="yknote">💴 薬価は厚生労働省<a href="https://www.mhlw.go.jp/topics/2026/04/tp20260401-01.html" target="_blank" rel="noopener">「薬価基準収載品目リスト」↗</a>(令和8年10月1日適用・12,428品目)から、1錠・1gなど<b>規格単位あたりの価格</b>を載せています。毎日0:15に更新を確認。「掲載なし」は薬価基準に載っていない薬(保険適用外・販売中止・収載前など)です。</p>
 <script src="../assets/hist.js"></script>
 <script>
 (async function(){
-  const PDFB="https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/", PACKB="https://www.info.pmda.go.jp/go/pack/", DB="https://www.pmda.go.jp/PmdaSearch/iyakuDetail/GeneralList/";
+  const PDFB="https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/", PACKB="https://www.info.pmda.go.jp/go/pack/", DB="https://www.pmda.go.jp/PmdaSearch/iyakuDetail/GeneralList/", YOPEN=3;
   const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt');
   const form=document.getElementById('pmdaForm'), pn=document.getElementById('pmdaName');
   form.addEventListener('submit',e=>{ if(!q.value.trim()){e.preventDefault();q.focus();return;} pn.value=q.value.trim(); });
@@ -69,6 +70,15 @@
   const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const pdf=u=>PDFB+u;
   const packHtml=u=>PACKB+u.substring(u.indexOf('_')+1)+'/';   // 先頭の企業コードを外すと添付文書HTML版のURLになる
+  // 規格ごとの薬価。e.p=[[販売名, 規格, 薬価, 経過措置の期限], …](薬価が無い製品は [販売名] だけ)。規格がYOPEN個を超えたら畳む
+  const yen=v=>Number(v).toLocaleString('ja-JP',{minimumFractionDigits:2,maximumFractionDigits:2})+'円';
+  const ykOne=r=>r.length>1?`<b>${yen(r[2])}</b> <span class="small">(${esc(r[1])})${r[3]?' 経過措置 '+esc(r[3]):''}</span>`:'<span class="small">薬価基準に掲載なし</span>';
+  function yakka(e){
+    const p=e.p||[]; if(!p.length) return '';
+    if(p.length===1) return `<div class="yk">💴 薬価 ${ykOne(p[0])}</div>`;
+    const tb='<table class="yk">'+p.map(r=>`<tr><td>${esc(r[0])}</td><td>${ykOne(r)}</td></tr>`).join('')+'</table>';
+    return p.length<=YOPEN?`<div class="yk">💴 薬価</div>${tb}`:`<details class="yk"><summary>💴 薬価(${p.length}規格)を表示</summary>${tb}</details>`;
+  }
   function run(){
     const kw=q.value.normalize('NFKC').trim().split(/\s+/).filter(Boolean).map(norm);
     if(!kw.length){ cnt.textContent=`全${items.length.toLocaleString()}件。薬剤名を入力してください`; res.innerHTML=''; if(hist)hist.show(); return; }
@@ -86,7 +96,7 @@
       const multi=f.length>1?'<div class="small ifmulti">PDFが複数あります: '+f.map(x=>{const lb=x.t?`PDF(${x.t})`:(x.u.endsWith('E')?'英語版PDF':'PDF');return `<a href="${esc(pdf(x.u))}" data-hl="${esc(e.n+' '+lb)}" target="_blank" rel="noopener">📕 ${esc(lb)}</a>`;}).join(' ／ ')+'</div>':'';
       const cat=cats[e.e]?` ｜ ${esc(cats[e.e])}`:'';
       const detail=e.d?` <a class="small" href="${esc(DB+e.d)}" target="_blank" rel="noopener">PMDA詳細 ↗</a>`:'';
-      return `<div class="hit"><a class="ifa" href="${esc(pdf(first.u||''))}" data-hl="${esc(e.n)}" target="_blank" rel="noopener">📕 ${esc(e.n)}</a>${date}<br><span class="small">${esc(e.g)} ｜ ${esc(e.c)}${cat}</span>${htmlLink}${detail}${multi}</div>`;
+      return `<div class="hit"><a class="ifa" href="${esc(pdf(first.u||''))}" data-hl="${esc(e.n)}" target="_blank" rel="noopener">📕 ${esc(e.n)}</a>${date}<br><span class="small">${esc(e.g)} ｜ ${esc(e.c)}${cat}</span>${htmlLink}${detail}${multi}${yakka(e)}</div>`;
     }).join('');
   }
   q.addEventListener('input',run);

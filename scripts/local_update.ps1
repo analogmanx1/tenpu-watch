@@ -41,15 +41,15 @@ $env:PYTHONIOENCODING = "utf-8"
 
 # --- マージ衝突の自動復旧 ---
 # pullが衝突すると未解消のまま残り、以後の実行が全部失敗し続ける(2026-08-26の障害)。
-# 生成物(docs)と他系統の担当ファイル(if_index.json)は向こう側を採用、
-# このPCが取り込む日付データ(data/days)とarchiveはこちら側を維持して、自動で解消する。
+# 生成物(docs)と他系統の担当ファイル(if_index.json・yakka_index.json)は向こう側を採用、
+# このPCが取り込む日付データ(data/days)とarchive・PC側だけが書くデータ(識別コード・注意チェック・規格の対応表)はこちら側を維持して、自動で解消する。
 # ※日付データは向こう側(Actions)がもうコミットしない設計なので、ours採用で取りこぼしは出ない
 function Resolve-StuckMerge {
   git rev-parse -q --verify MERGE_HEAD *> $null
   if ($LASTEXITCODE -ne 0) { return }
   Say "!! マージ衝突を検出 → 自動復旧します(docs/if_index=向こう側、data/days・archive=こちら側)"
-  foreach ($p in @("docs", "data/if_index.json")) { git checkout --theirs -- $p 2>&1 | Out-Null }
-  foreach ($p in @("data/days", "archive", "data/shikibetsu_index.json", "data/chuui_index.json")) { git checkout --ours -- $p 2>&1 | Out-Null }
+  foreach ($p in @("docs", "data/if_index.json", "data/yakka_index.json")) { git checkout --theirs -- $p 2>&1 | Out-Null }
+  foreach ($p in @("data/days", "archive", "data/shikibetsu_index.json", "data/chuui_index.json", "data/yj_index.json")) { git checkout --ours -- $p 2>&1 | Out-Null }
   git add -A data archive docs 2>&1 | Out-Null
   [void](Step "python src/run.py --build-only (衝突復旧のため再生成)" { python src/run.py --build-only })
   git add -A docs 2>&1 | Out-Null
