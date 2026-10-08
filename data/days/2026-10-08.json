@@ -1,0 +1,653 @@
+{
+ "date": "2026-10-08",
+ "updates": [
+  {
+   "brand": "ノクサフィル錠100mg",
+   "company": "製造販売元／MSD株式会社",
+   "reason": "更新",
+   "packins_no": "6179002H1029_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6179002H1029_1_14/",
+   "fetched_at": "2026-10-08 20:04:59",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/170050_6179002H1029_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/170050_6179002H1029_1_14",
+   "meta": {
+    "packins_no": "6179002H1029_1_14",
+    "company_id": "170050",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第13版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第12版"
+     }
+    },
+    "brands": [
+     "ノクサフィル錠100mg"
+    ],
+    "generic_name": "ポサコナゾール錠",
+    "therapeutic_class": "深在性真菌症治療剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "アナモレリン塩酸塩（エドルミズ）"
+    },
+    {
+     "path": [],
+     "text": "アナモレリン塩酸塩の作用を増強させるおそれがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ノクサフィル点滴静注300mg",
+   "company": "製造販売元／MSD株式会社",
+   "reason": "更新",
+   "packins_no": "6179403A1028_1_13",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6179403A1028_1_13/",
+   "fetched_at": "2026-10-08 20:05:01",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/170050_6179403A1028_1_13",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/170050_6179403A1028_1_13",
+   "meta": {
+    "packins_no": "6179403A1028_1_13",
+    "company_id": "170050",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第13版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第12版"
+     }
+    },
+    "brands": [
+     "ノクサフィル点滴静注300mg"
+    ],
+    "generic_name": "ポサコナゾール注射液",
+    "therapeutic_class": "深在性真菌症治療剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "アナモレリン塩酸塩（エドルミズ）"
+    },
+    {
+     "path": [],
+     "text": "アナモレリン塩酸塩の作用を増強させるおそれがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "エドルミズ錠50mg",
+   "company": "製造販売／小野薬品工業株式会社 / 提携／HELSINN",
+   "reason": "更新",
+   "packins_no": "3999054F1028_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999054F1028_1_07/",
+   "fetched_at": "2026-10-08 20:05:04",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180188_3999054F1028_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180188_3999054F1028_1_07",
+   "meta": {
+    "packins_no": "3999054F1028_1_07",
+    "company_id": "180188",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": null
+     }
+    },
+    "brands": [
+     "エドルミズ錠50mg"
+    ],
+    "generic_name": "アナモレリン塩酸塩",
+    "therapeutic_class": "グレリン様作用薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ポサコナゾール"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）",
+      "(1)"
+     ],
+     "text": "ノクサフィル"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ロナファルニブ"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）",
+      "(1)"
+     ],
+     "text": "ゾキンヴィ"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "ツカチニブ エタノール付加物"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）",
+      "(1)"
+     ],
+     "text": "ツカイザ"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ボンゾール錠100mg",
+   "company": "製造販売元／田辺ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2499007F1021_3_12",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499007F1021_3_12/",
+   "fetched_at": "2026-10-08 20:05:06",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400315_2499007F1021_3_12",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400315_2499007F1021_3_12",
+   "meta": {
+    "packins_no": "2499007F1021_3_12",
+    "company_id": "400315",
+    "revision": {
+     "current": {
+      "ym": "2025-12",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2021-04",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ボンゾール錠100mg"
+    ],
+    "generic_name": "ダナゾール錠",
+    "therapeutic_class": "子宮内膜症・乳腺症治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "田辺ファーマ株式会社　くすり相談センター"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "田辺ファーマ株式会社"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "エスゾピクロン錠1mg「杏林」／エスゾピ...",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1129010F1095_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1129010F1095_1_08/",
+   "fetched_at": "2026-10-08 20:05:08",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_1129010F1095_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_1129010F1095_1_08",
+   "meta": {
+    "packins_no": "1129010F1095_1_08",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-01",
+      "ver": null
+     }
+    },
+    "brands": [
+     "エスゾピクロン錠1mg「杏林」",
+     "エスゾピクロン錠2mg「杏林」",
+     "エスゾピクロン錠3mg「杏林」"
+    ],
+    "generic_name": "エスゾピクロン",
+    "therapeutic_class": "不眠症治療薬"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "アマンタジン塩酸塩錠50mg「杏林」／アマ...",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1161001F1140_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1161001F1140_1_11/",
+   "fetched_at": "2026-10-08 20:05:10",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_1161001F1140_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_1161001F1140_1_11",
+   "meta": {
+    "packins_no": "1161001F1140_1_11",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-05",
+      "ver": null
+     }
+    },
+    "brands": [
+     "アマンタジン塩酸塩錠50mg「杏林」",
+     "アマンタジン塩酸塩錠100mg「杏林」"
+    ],
+    "generic_name": "アマンタジン塩酸塩",
+    "therapeutic_class": "精神活動改善剤 / パーキンソン症候群治療剤 / 抗A型インフルエンザウイルス剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "アムロジピン錠2.5mg「杏林」／アムロジピ...",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2171022F1444_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171022F1444_1_14/",
+   "fetched_at": "2026-10-08 20:05:12",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_2171022F1444_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_2171022F1444_1_14",
+   "meta": {
+    "packins_no": "2171022F1444_1_14",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2025-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "アムロジピン錠2.5mg「杏林」",
+     "アムロジピン錠5mg「杏林」",
+     "アムロジピン錠10mg「杏林」（旧製品）"
+    ],
+    "generic_name": "アムロジピンベシル酸塩",
+    "therapeutic_class": "高血圧症・狭心症治療薬（持続性Ca拮抗薬）"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "多形紅斑、血管炎、血管性浮腫"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アムロジピン錠2.5mg「杏林」／アムロジピ...",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2171022F1444_4_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171022F1444_4_02/",
+   "fetched_at": "2026-10-08 20:05:14",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_2171022F1444_4_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_2171022F1444_4_02",
+   "meta": {
+    "packins_no": "2171022F1444_4_02",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": null
+     }
+    },
+    "brands": [
+     "アムロジピン錠2.5mg「杏林」",
+     "アムロジピン錠5mg「杏林」",
+     "アムロジピン錠10mg「杏林」"
+    ],
+    "generic_name": "アムロジピンベシル酸塩",
+    "therapeutic_class": "高血圧症・狭心症治療薬（持続性Ca拮抗薬）"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "多形紅斑、血管炎、血管性浮腫"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アムロジピンOD錠2.5mg「杏林」（旧製品）...",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2171022F3331_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171022F3331_1_10/",
+   "fetched_at": "2026-10-08 20:06:31",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_2171022F3331_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_2171022F3331_1_10",
+   "meta": {
+    "packins_no": "2171022F3331_1_10",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2025-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "アムロジピンOD錠2.5mg「杏林」（旧製品）",
+     "アムロジピンOD錠5mg「杏林」（旧製品）",
+     "アムロジピンOD錠10mg「杏林」（旧製品）"
+    ],
+    "generic_name": "アムロジピンベシル酸塩",
+    "therapeutic_class": "高血圧症・狭心症治療薬（持続性Ca拮抗薬）"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "多形紅斑、血管炎、血管性浮腫"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アムロジピンOD錠2.5mg「杏林」／アムロジ...",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2171022F3331_4_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171022F3331_4_02/",
+   "fetched_at": "2026-10-08 20:06:57",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_2171022F3331_4_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_2171022F3331_4_02",
+   "meta": {
+    "packins_no": "2171022F3331_4_02",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": null
+     }
+    },
+    "brands": [
+     "アムロジピンOD錠2.5mg「杏林」",
+     "アムロジピンOD錠5mg「杏林」",
+     "アムロジピンOD錠10mg「杏林」"
+    ],
+    "generic_name": "アムロジピンベシル酸塩",
+    "therapeutic_class": "高血圧症・狭心症治療薬（持続性Ca拮抗薬）"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "多形紅斑、血管炎、血管性浮腫"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "クロピドグレル錠25mg「杏林」／クロピド...",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "3399008F1181_1_18",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3399008F1181_1_18/",
+   "fetched_at": "2026-10-08 20:07:00",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_3399008F1181_1_18",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_3399008F1181_1_18",
+   "meta": {
+    "packins_no": "3399008F1181_1_18",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-03",
+      "ver": null
+     }
+    },
+    "brands": [
+     "クロピドグレル錠25mg「杏林」",
+     "クロピドグレル錠75mg「杏林」"
+    ],
+    "generic_name": "クロピドグレル硫酸塩",
+    "therapeutic_class": "抗血小板剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ロレアス配合錠「杏林」",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "3399101F1056_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3399101F1056_1_11/",
+   "fetched_at": "2026-10-08 20:07:02",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_3399101F1056_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_3399101F1056_1_11",
+   "meta": {
+    "packins_no": "3399101F1056_1_11",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-01",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ロレアス配合錠「杏林」"
+    ],
+    "generic_name": "クロピドグレル硫酸塩 / アスピリン",
+    "therapeutic_class": "抗血小板剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "パリンジック皮下注2.5mg／パリンジック皮...",
+   "company": "製造販売元／BioMarin Pharmaceutical Japan株式会社",
+   "reason": "更新",
+   "packins_no": "3999469G1022_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999469G1022_1_03/",
+   "fetched_at": "2026-10-08 20:07:04",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/641173_3999469G1022_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/641173_3999469G1022_1_03",
+   "meta": {
+    "packins_no": "3999469G1022_1_03",
+    "company_id": "641173",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-08",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "パリンジック皮下注2.5mg",
+     "パリンジック皮下注10mg",
+     "パリンジック皮下注20mg"
+    ],
+    "generic_name": "ペグバリアーゼ（遺伝子組換え）製剤",
+    "therapeutic_class": "フェニルケトン尿症治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１.警告",
+      "(2)"
+     ],
+     "text": "本剤投与開始前にアナフィラキシーの徴候・症状、それらの症状が発現した場合の対処方法等を患者に指導し、患者が理解したことを確認した上で本剤の投与を開始すること。また、本剤による治療中は自己投与可能なアドレナリン製剤を常時携帯するよう、患者に指導すること。,"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(1)",
+      "(3)"
+     ],
+     "text": "本剤による治療中は自己投与可能なアドレナリン製剤を常時携帯するよう、患者に指導すること。"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.６ 授乳婦"
+     ],
+     "text": "治療上の有益性及び母乳栄養の有益性を考慮し、授乳の継続又は中止を検討すること。\nラットで乳汁中への移行が報告されている。ヒトでの乳汁移行に関するデータ及びヒトの哺乳中の児への影響に関するデータは限られている。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "免疫系障害"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "免疫系障害"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "クエチアピン錠25mg「VTRS」／クエチアピン...",
+   "company": "製造販売元／ヴィアトリス・ヘルスケア合同会社 / 販売元／ヴィアトリス製薬合同会社",
+   "reason": "更新",
+   "packins_no": "1179042F1216_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179042F1216_1_09/",
+   "fetched_at": "2026-10-08 20:07:30",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/730869_1179042F1216_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/730869_1179042F1216_1_09",
+   "meta": {
+    "packins_no": "1179042F1216_1_09",
+    "company_id": "730869",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-11",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "クエチアピン錠25mg「VTRS」",
+     "クエチアピン錠100mg「VTRS」",
+     "クエチアピン錠200mg「VTRS」"
+    ],
+    "generic_name": "クエチアピンフマル酸塩",
+    "therapeutic_class": "抗精神病剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "過敏症"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "1179042F1216_1_08",
+    "prev_fetched_at": "2026-10-01 19:31:23",
+    "prev_seen_date": "2026-10-01",
+    "changes": []
+   }
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "オランザピン錠2.5mg「明治」／オランザピン錠5mg「明治」／オランザピン錠10mg「明治」／オランザピンOD錠2.5mg「明治」／オランザピンOD錠5mg「明治」／オランザピンOD錠10mg「明治」／オランザピン細粒1%「明治」",
+   "company": "製造販売元／Meiji Seikaファルマ株式会社",
+   "reason": "販売を中止したオランザピン細粒1%「明治」の最終ロットの使用期限が経過したため",
+   "yj_hint": "1179044C1111_1_15"
+  }
+ ],
+ "created_at": "2026-10-08 20:04:59",
+ "updated_at": "2026-10-08 20:07:57",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
