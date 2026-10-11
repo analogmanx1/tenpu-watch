@@ -1,0 +1,348 @@
+{
+ "date": "2026-10-09",
+ "updates": [
+  {
+   "brand": "セチリジン塩酸塩錠10mg「イワキ」",
+   "company": "製造販売元／岩城製薬株式会社",
+   "reason": "新規",
+   "packins_no": "4490020F2183_1_18",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490020F2183_1_18/",
+   "fetched_at": "2026-10-12 01:40:45",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/130202_4490020F2183_1_18",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/130202_4490020F2183_1_18",
+   "meta": {
+    "packins_no": "4490020F2183_1_18",
+    "company_id": "130202",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "セチリジン塩酸塩錠10mg「イワキ」"
+    ],
+    "generic_name": "セチリジン塩酸塩",
+    "therapeutic_class": "持続性選択H1受容体拮抗・アレルギー性疾患治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ミドドリン塩酸塩錠2mg「オーハラ」",
+   "company": "製造販売元／大原薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2160002F1095_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2160002F1095_1_04/",
+   "fetched_at": "2026-10-12 01:40:47",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180095_2160002F1095_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180095_2160002F1095_1_04",
+   "meta": {
+    "packins_no": "2160002F1095_1_04",
+    "company_id": "180095",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ミドドリン塩酸塩錠2mg「オーハラ」"
+    ],
+    "generic_name": "ミドドリン塩酸塩錠",
+    "therapeutic_class": "低血圧治療剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "ミドドリン塩酸塩錠"
+    },
+    {
+     "path": [],
+     "text": "1錠中　日局ミドドリン塩酸塩"
+    },
+    {
+     "path": [],
+     "text": "ミドドリン塩酸塩（Midodrine Hydrochloride）"
+    },
+    {
+     "path": [],
+     "text": "2-Amino-N-[(2RS)-2-(2,5-dimethoxyphenyl)-2-hydroxyethyl]acetamide monohydrochloride"
+    },
+    {
+     "path": [],
+     "text": "C12H18N2O4・HCl"
+    },
+    {
+     "path": [],
+     "text": "290.74"
+    },
+    {
+     "path": [],
+     "text": "本品は白色の結晶性の粉末である。\n本品は水にやや溶けやすく、エタノール（95）に溶けにくい。\n本品の水溶液（1→25）は旋光性を示さない。\n本品は結晶多形が認められる。"
+    },
+    {
+     "path": [],
+     "text": "約200℃（分解）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ファモチジンOD錠10mg「オーハラ」／ファ...",
+   "company": "製造販売元／大原薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2325003F3213_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2325003F3213_1_05/",
+   "fetched_at": "2026-10-12 01:40:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180095_2325003F3213_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180095_2325003F3213_1_05",
+   "meta": {
+    "packins_no": "2325003F3213_1_05",
+    "company_id": "180095",
+    "revision": {
+     "current": {
+      "ym": "2023-09",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ファモチジンOD錠10mg「オーハラ」",
+     "ファモチジンOD錠20mg「オーハラ」"
+    ],
+    "generic_name": "ファモチジン口腔内崩壊錠",
+    "therapeutic_class": "H2受容体拮抗剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ファモチジン注射用10mg「オーハラ」／フ...",
+   "company": "製造販売元／大原薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2325401D1116_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2325401D1116_1_06/",
+   "fetched_at": "2026-10-12 01:40:51",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180095_2325401D1116_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180095_2325401D1116_1_06",
+   "meta": {
+    "packins_no": "2325401D1116_1_06",
+    "company_id": "180095",
+    "revision": {
+     "current": {
+      "ym": "2023-09",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ファモチジン注射用10mg「オーハラ」",
+     "ファモチジン注射用20mg「オーハラ」"
+    ],
+    "generic_name": "ファモチジン注射液",
+    "therapeutic_class": "H2受容体拮抗剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "モサプリドクエン酸塩錠2.5mg「サワイ」",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "新規",
+   "packins_no": "2399010F1206_2_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399010F1206_2_01/",
+   "fetched_at": "2026-10-12 01:40:53",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_2399010F1206_2_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_2399010F1206_2_01",
+   "meta": {
+    "packins_no": "2399010F1206_2_01",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-07",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-12",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "モサプリドクエン酸塩錠2.5mg「サワイ」"
+    ],
+    "generic_name": "モサプリドクエン酸塩水和物",
+    "therapeutic_class": "消化管運動機能改善剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "モサプリドクエン酸塩錠5mg「サワイ」（...",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "新規",
+   "packins_no": "2399010F2202_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399010F2202_1_01/",
+   "fetched_at": "2026-10-12 01:40:55",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_2399010F2202_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_2399010F2202_1_01",
+   "meta": {
+    "packins_no": "2399010F2202_1_01",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-07",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-12",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "モサプリドクエン酸塩錠5mg「サワイ」（旧製品）"
+    ],
+    "generic_name": "モサプリドクエン酸塩水和物",
+    "therapeutic_class": "消化管運動機能改善剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "モサプリドクエン酸塩錠5mg「サワイ」",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "新規",
+   "packins_no": "2399010F2202_2_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399010F2202_2_01/",
+   "fetched_at": "2026-10-12 01:40:57",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_2399010F2202_2_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_2399010F2202_2_01",
+   "meta": {
+    "packins_no": "2399010F2202_2_01",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-07",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "モサプリドクエン酸塩錠5mg「サワイ」"
+    ],
+    "generic_name": "モサプリドクエン酸塩水和物",
+    "therapeutic_class": "消化管運動機能改善剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "グロベニン−I10%静注5g/50mL／グロベニン−...",
+   "company": "製造販売元／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "6343427H2026_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6343427H2026_1_04/",
+   "fetched_at": "2026-10-12 01:41:55",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400256_6343427H2026_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400256_6343427H2026_1_04",
+   "meta": {
+    "packins_no": "6343427H2026_1_04",
+    "company_id": "400256",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "グロベニン−I10%静注5g/50mL",
+     "グロベニン−I10%静注10g/100mL",
+     "グロベニン−I10%静注20g/200mL"
+    ],
+    "generic_name": "pH4処理酸性人免疫グロブリン",
+    "therapeutic_class": "血漿分画製剤（液状・静注用人免疫グロブリン製剤）"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "製造日から24ヵ月"
+    },
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "製造日から24ヵ月"
+    },
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "製造日から24ヵ月"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "パロノセトロン静注0.75mg/5mLシリンジ「HK...",
+   "company": "製造販売元／光製薬株式会社",
+   "reason": "新規",
+   "packins_no": "23914A3G4020_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/23914A3G4020_1_01/",
+   "fetched_at": "2026-10-12 01:42:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/650014_23914A3G4020_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/650014_23914A3G4020_1_01",
+   "meta": {
+    "packins_no": "23914A3G4020_1_01",
+    "company_id": "650014",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "パロノセトロン静注0.75mg/5mLシリンジ「HK」",
+     "パロノセトロン点滴静注バッグ0.75mg/50mL「HK」"
+    ],
+    "generic_name": "パロノセトロン塩酸塩",
+    "therapeutic_class": "5-HT3受容体拮抗型制吐剤"
+   },
+   "revised": [],
+   "diff": null
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-10-12 01:40:45",
+ "updated_at": "2026-10-12 01:43:16",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
