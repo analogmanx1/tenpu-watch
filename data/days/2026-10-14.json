@@ -1,0 +1,621 @@
+{
+ "date": "2026-10-14",
+ "updates": [
+  {
+   "brand": "ヘパリン類似物質外用スプレー0.3%「PP」",
+   "company": "製造販売元／コーアイセイ株式会社",
+   "reason": "更新",
+   "packins_no": "3339950R1045_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3339950R1045_1_08/",
+   "fetched_at": "2026-10-14 21:00:45",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/130107_3339950R1045_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/130107_3339950R1045_1_08",
+   "meta": {
+    "packins_no": "3339950R1045_1_08",
+    "company_id": "130107",
+    "revision": {
+     "current": {
+      "ym": "2025-07",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-03",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ヘパリン類似物質外用スプレー0.3%「PP」"
+    ],
+    "generic_name": "ヘパリン類似物質スプレー",
+    "therapeutic_class": "血行促進・皮膚保湿剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "ポンプスプレー剤"
+    },
+    {
+     "path": [],
+     "text": "無色～微黄色澄明なローション剤で、においはない。\n噴出するとき、液状である。"
+    },
+    {
+     "path": [],
+     "text": "水性"
+    },
+    {
+     "path": [
+      "生物学的同等性試験"
+     ],
+     "text": "生物学的同等性試験"
+    },
+    {
+     "path": [],
+     "text": "社内資料：生物学的同等性試験"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ヘパリン類似物質外用スプレー0.3%「PP」",
+   "company": "製造販売元／コーアイセイ株式会社 / 発売元／サンファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "3339950R1045_3_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3339950R1045_3_06/",
+   "fetched_at": "2026-10-14 21:01:12",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/130107_3339950R1045_3_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/130107_3339950R1045_3_06",
+   "meta": {
+    "packins_no": "3339950R1045_3_06",
+    "company_id": "130107",
+    "revision": {
+     "current": {
+      "ym": "2025-07",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-03",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ヘパリン類似物質外用スプレー0.3%「PP」"
+    ],
+    "generic_name": "ヘパリン類似物質スプレー",
+    "therapeutic_class": "血行促進・皮膚保湿剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "ポンプスプレー剤"
+    },
+    {
+     "path": [],
+     "text": "無色～微黄色澄明なローション剤で、においはない。\n噴出するとき、液状である。"
+    },
+    {
+     "path": [],
+     "text": "水性"
+    },
+    {
+     "path": [
+      "生物学的同等性試験"
+     ],
+     "text": "生物学的同等性試験"
+    },
+    {
+     "path": [],
+     "text": "社内資料：生物学的同等性試験"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ミンジュビ点滴静注用200mg",
+   "company": "製造販売元／インサイト・バイオサイエンシズ・ジャパン合同会社",
+   "reason": "更新",
+   "packins_no": "4291485D1023_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291485D1023_1_04/",
+   "fetched_at": "2026-10-14 21:01:14",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/150892_4291485D1023_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/150892_4291485D1023_1_04",
+   "meta": {
+    "packins_no": "4291485D1023_1_04",
+    "company_id": "150892",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "ミンジュビ点滴静注用200mg"
+    ],
+    "generic_name": "タファシタマブ（遺伝子組換え）注",
+    "therapeutic_class": "抗悪性腫瘍剤/抗CD19モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "72カ月"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ラプシド錠25mg",
+   "company": "製造販売（輸入）／ノバルティスファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "4490039F1025_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490039F1025_1_01/",
+   "fetched_at": "2026-10-14 21:01:20",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300242_4490039F1025_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300242_4490039F1025_1_01",
+   "meta": {
+    "packins_no": "4490039F1025_1_01",
+    "company_id": "300242",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ラプシド錠25mg"
+    ],
+    "generic_name": "レミブルチニブ錠",
+    "therapeutic_class": "慢性蕁麻疹治療剤\n（ブルトン型チロシンキナーゼ阻害剤）"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "本剤は新医薬品であるため、厚生労働省告示第97号（平成20年3月19日付）に基づき、2027年10月末日までは、投薬期間は1回14日分を限度とされています。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ヒブサーゴ皮下注150mgシリンジ",
+   "company": "製造販売元／グラクソ・スミスクライン株式会社",
+   "reason": "更新",
+   "packins_no": "6250412G1027_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6250412G1027_1_01/",
+   "fetched_at": "2026-10-14 21:01:22",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/340278_6250412G1027_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/340278_6250412G1027_1_01",
+   "meta": {
+    "packins_no": "6250412G1027_1_01",
+    "company_id": "340278",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ヒブサーゴ皮下注150mgシリンジ"
+    ],
+    "generic_name": "ベピロビルセンナトリウム",
+    "therapeutic_class": "B型肝炎治療用アンチセンス核酸医薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "(10)"
+     ],
+     "text": "本剤の自己投与にあたっては、以下の点に留意すること。"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.２ 腎機能障害患者",
+      "末期腎不全患者［eGFR 15未満（mL/min/1.73m2）］を含む中等度以上の腎機能障害［eGFR 60未満（mL/min/1.73m2）］のある患者"
+     ],
+     "text": "投与に際してはリスクとベネフィットを十分考慮すること。ベピロビルセンの曝露量が上昇するおそれがある。また、本剤投与により腎機能が低下するおそれがある。,,"
+    },
+    {
+     "path": [
+      "１６.薬物動態",
+      "１６.６ 特定の背景を有する患者",
+      "腎機能低下者"
+     ],
+     "text": "母集団薬物動態解析の結果、軽度の腎機能低下者［eGFR 60以上90未満（mL/min/1.73m2）］でのベピロビルセンの薬物動態は、腎機能正常者［eGFR 90以上（mL/min/1.73m2）］と比べて特段の差は認められなかった。\nHBV感染のない、末期腎不全患者［eGFR 15未満（mL/min）］を含む重度の腎機能低下者［eGFR 30未満（mL/min）で非透析］を対象に本剤300mgを単回皮下投与した時のCmax（8例）及びAUC0-inf（7例）は、腎機能正常者に比べて、約44%（90% CI：22、69）及び64%（90% CI：37、96）高値であった（外国人データ）。中等度の腎機能低下者［eGFR 30以上60未満（mL/min）］を対象とした薬物動態試験は実施していない。"
+    },
+    {
+     "path": [
+      "２０.取扱い上の注意",
+      "(3)"
+     ],
+     "text": "患者が保管する場合は2～30℃で保管することも可能である。薬剤交付から12週間以内又は使用期限のいずれか早い日までに使用し、使用しなかった場合は廃棄するよう患者に指導すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "セレコキシブ錠100mg「トーワ」／セレコキ...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "1149037F1143_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1149037F1143_1_08/",
+   "fetched_at": "2026-10-14 21:01:25",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_1149037F1143_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_1149037F1143_1_08",
+   "meta": {
+    "packins_no": "1149037F1143_1_08",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "セレコキシブ錠100mg「トーワ」",
+     "セレコキシブ錠200mg「トーワ」"
+    ],
+    "generic_name": "セレコキシブ錠",
+    "therapeutic_class": "非ステロイド性消炎・鎮痛剤（COX-2選択的阻害剤）"
+   },
+   "revised": [
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "セレコキシブ錠"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "セレコキシブ錠"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "グアンファシン徐放錠1mg「トーワ」／グ...",
+   "company": "製造販売元／東和薬品株式会社 / 販売元／共創未来ファーマ株式会社",
+   "reason": "新規",
+   "packins_no": "11790B2G1044_2_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/11790B2G1044_2_01/",
+   "fetched_at": "2026-10-14 21:01:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_11790B2G1044_2_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_11790B2G1044_2_01",
+   "meta": {
+    "packins_no": "11790B2G1044_2_01",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "グアンファシン徐放錠1mg「トーワ」",
+     "グアンファシン徐放錠2mg「トーワ」",
+     "グアンファシン徐放錠3mg「トーワ」"
+    ],
+    "generic_name": "グアンファシン塩酸塩徐放錠",
+    "therapeutic_class": "注意欠陥／多動性障害治療剤 / （選択的α2Aアドレナリン受容体作動薬）"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "リナグリプチン錠5mg「トーワ」／リナグ...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "新規",
+   "packins_no": "39690B3F1031_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/39690B3F1031_1_01/",
+   "fetched_at": "2026-10-14 21:01:30",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_39690B3F1031_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_39690B3F1031_1_01",
+   "meta": {
+    "packins_no": "39690B3F1031_1_01",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "リナグリプチン錠5mg「トーワ」",
+     "リナグリプチンOD錠5mg「トーワ」"
+    ],
+    "generic_name": "リナグリプチン製剤",
+    "therapeutic_class": "胆汁排泄型選択的DPP-4阻害剤 / －2型糖尿病治療剤－"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ヒアニュオ錠10mg",
+   "company": "製造販売元／バイエル薬品株式会社",
+   "reason": "更新",
+   "packins_no": "4291103F1021_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291103F1021_1_01/",
+   "fetched_at": "2026-10-14 21:02:48",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/630004_4291103F1021_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/630004_4291103F1021_1_01",
+   "meta": {
+    "packins_no": "4291103F1021_1_01",
+    "company_id": "630004",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ヒアニュオ錠10mg"
+    ],
+    "generic_name": "セバベルチニブ",
+    "therapeutic_class": "抗悪性腫瘍剤/HER2チロシンキナーゼ阻害剤 / HER2：Human Epidermal Growth Factor Receptor Type 2（ヒト上皮増殖因子受容体2型、別称：c-erbB-2） / HER2：Human Epidermal Growth Factor Receptor Type 2（ヒト上皮増殖因子受容体2型、別称：c-erbB-2）"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "24ヵ月"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ステラーラ皮下注45mgシリンジ／ステラー...",
+   "company": "製造販売元（輸入）／ヤンセンファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "3999431G1025_1_23",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999431G1025_1_23/",
+   "fetched_at": "2026-10-14 21:02:50",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/800155_3999431G1025_1_23",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/800155_3999431G1025_1_23",
+   "meta": {
+    "packins_no": "3999431G1025_1_23",
+    "company_id": "800155",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第8版"
+     },
+     "previous": {
+      "ym": "2026-01",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ステラーラ皮下注45mgシリンジ",
+     "ステラーラ皮下注45mgバイアル"
+    ],
+    "generic_name": "ウステキヌマブ（遺伝子組換え）",
+    "therapeutic_class": "ヒト型抗ヒトIL-12/23p40モノクローナル抗体製剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "ステラーラ皮下注45mgバイアル"
+    },
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "24カ月"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "（1バイアル0.5mL中）\nウステキヌマブ（遺伝子組換え）45mg含有"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "精製白糖38mg、L-ヒスチジン0.5mg、ポリソルベート80 0.02mg"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.２ 製剤の性状"
+     ],
+     "text": "5.7～6.3"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.２ 製剤の性状"
+     ],
+     "text": "約1（生理食塩液に対する比）"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.２ 製剤の性状"
+     ],
+     "text": "無色～淡黄色の澄明又はわずかに混濁した液"
+    },
+    {
+     "path": [
+      "６.用法及び用量",
+      "〈クローン病〉"
+     ],
+     "text": "〈クローン病〉"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.７ 小児等"
+     ],
+     "text": "2歳未満の小児を対象とした臨床試験は実施していない。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "アナフィラキシー（頻度不明）"
+     ],
+     "text": "アナフィラキシー（頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "感染症及び寄生虫症"
+    },
+    {
+     "path": [
+      "１４.適用上の注意",
+      "薬剤投与時の注意",
+      "(3)"
+     ],
+     "text": "本剤のバイアルは1回使い切りである。未使用残液については適切に廃棄すること。"
+    },
+    {
+     "path": [
+      "１６.薬物動態",
+      "１６.１ 血中濃度",
+      "〈クローン病〉",
+      "反復投与（国際共同臨床試験）"
+     ],
+     "text": "反復投与（国際共同臨床試験）"
+    },
+    {
+     "path": [
+      "１７.臨床成績",
+      "１７.１ 有効性及び安全性に関する試験",
+      "〈クローン病〉",
+      "国際共同臨床試験（第Ⅲ相試験：CRD3004試験、小児）（jRCT2031200345）"
+     ],
+     "text": "国際共同臨床試験（第Ⅲ相試験：CRD3004試験、小児）（jRCT2031200345）"
+    },
+    {
+     "path": [
+      "２２.包装",
+      "〈ステラーラ皮下注45mgシリンジ〉"
+     ],
+     "text": "〈ステラーラ皮下注45mgシリンジ〉"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料：国際共同第Ⅲ相臨床試験成績（CRD3004）（2026年8月24日承認、CTD2.7.2.2.1.2）"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料：国際共同第Ⅲ相臨床試験成績（CRD3004）（2026年8月24日承認、CTD2.7.6.3）"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "3999431G1025_1_22",
+    "prev_fetched_at": "2026-08-24 19:19:47",
+    "prev_seen_date": "2026-08-24",
+    "changes": []
+   }
+  },
+  {
+   "brand": "イムシブリー皮下注10mg",
+   "company": "製造販売元／リズムファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2499423A1026_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499423A1026_1_01/",
+   "fetched_at": "2026-10-14 21:02:52",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/850596_2499423A1026_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/850596_2499423A1026_1_01",
+   "meta": {
+    "packins_no": "2499423A1026_1_01",
+    "company_id": "850596",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "イムシブリー皮下注10mg"
+    ],
+    "generic_name": "セトメラノチド酢酸塩",
+    "therapeutic_class": "メラノコルチン4型受容体（MC4R）作動薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "２５.保険給付上の注意"
+     ],
+     "text": "本剤は新医薬品であるため、厚生労働省告示第107号（平成18年3月6日付）に基づき、2027年10月末日までは、投薬は1回14日分を限度とされている。"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "セチリジン塩酸塩錠5mg「イワキ」／セチリジン塩酸塩錠10mg「イワキ」",
+   "company": "製造販売元／岩城製薬株式会社",
+   "reason": "5mg削除のため",
+   "yj_hint": "4490020F1187_1_17"
+  },
+  {
+   "brand": "モサプリドクエン酸塩錠2.5mg「サワイ」／モサプリドクエン酸塩錠5mg「サワイ」",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "電子添文分割のため。最新情報につきましては、『モサプリドクエン酸塩錠2.5mg「サワイ」』及び『 / モサプリドクエン酸塩錠5mg「サワイ」（旧製品）』の電子添文をご参照ください。",
+   "yj_hint": "2399010F1206_1_05"
+  }
+ ],
+ "created_at": "2026-10-14 21:00:45",
+ "updated_at": "2026-10-14 21:02:55",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

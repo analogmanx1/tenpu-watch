@@ -1,0 +1,287 @@
+{
+ "date": "2026-10-13",
+ "updates": [
+  {
+   "brand": "クービビック錠25mg／クービビック錠50mg",
+   "company": "製造販売元／ネクセラファーマジャパン株式会社 / 販売元／塩野義製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1190033F1028_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190033F1028_1_04/",
+   "fetched_at": "2026-10-14 21:00:28",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/150923_1190033F1028_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/150923_1190033F1028_1_04",
+   "meta": {
+    "packins_no": "1190033F1028_1_04",
+    "company_id": "150923",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "クービビック錠25mg",
+     "クービビック錠50mg"
+    ],
+    "generic_name": "ダリドレキサント塩酸塩製剤",
+    "therapeutic_class": "オレキシン受容体拮抗薬\n－不眠症治療薬－"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "免疫系障害"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "エヴキーザ点滴静注液345mg",
+   "company": "製造販売元／Ultragenyx Japan株式会社",
+   "reason": "更新",
+   "packins_no": "2189404A1020_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2189404A1020_1_03/",
+   "fetched_at": "2026-10-14 21:00:31",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/166617_2189404A1020_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/166617_2189404A1020_1_03",
+   "meta": {
+    "packins_no": "2189404A1020_1_03",
+    "company_id": "166617",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-05",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "エヴキーザ点滴静注液345mg"
+    ],
+    "generic_name": "エビナクマブ（遺伝子組換え）",
+    "therapeutic_class": "ヒト化抗ANGPTL3モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "48ヵ月"
+    },
+    {
+     "path": [
+      "１４.適用上の注意",
+      "薬剤調製時の注意",
+      "(1)"
+     ],
+     "text": "無菌操作により本剤のバイアルから必要量を抜き取り、下表を参考に、生理食塩液又は5%ブドウ糖注射液のいずれかが入った点滴バッグ内に注入し、静かに転倒混和する。点滴バッグは振とうしないこと。"
+    },
+    {
+     "path": [
+      "１４.適用上の注意",
+      "薬剤投与時の注意",
+      "(4)"
+     ],
+     "text": "体重3～25 kgの患者の場合、調整した薬液の投与速度を最大5 mL/kg/時とすること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "レボフロキサシン点眼液0.5％「科研」",
+   "company": "製造販売元／ダイト株式会社 / 発売元／科研製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1319742Q1136_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319742Q1136_1_08/",
+   "fetched_at": "2026-10-14 21:00:33",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400073_1319742Q1136_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400073_1319742Q1136_1_08",
+   "meta": {
+    "packins_no": "1319742Q1136_1_08",
+    "company_id": "400073",
+    "revision": {
+     "current": {
+      "ym": "2024-03",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "レボフロキサシン点眼液0.5％「科研」"
+    ],
+    "generic_name": "レボフロキサシン水和物",
+    "therapeutic_class": "広範囲抗菌点眼剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "レボフロキサシン点眼液1.5％「科研」",
+   "company": "製造販売元／ダイト株式会社 / 発売元／科研製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1319742Q2094_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319742Q2094_1_08/",
+   "fetched_at": "2026-10-14 21:00:35",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400073_1319742Q2094_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400073_1319742Q2094_1_08",
+   "meta": {
+    "packins_no": "1319742Q2094_1_08",
+    "company_id": "400073",
+    "revision": {
+     "current": {
+      "ym": "2024-03",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "レボフロキサシン点眼液1.5％「科研」"
+    ],
+    "generic_name": "レボフロキサシン水和物",
+    "therapeutic_class": "広範囲抗菌点眼剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "フランドルテープ40mg",
+   "company": "製造販売元／トーアエイヨー株式会社",
+   "reason": "更新",
+   "packins_no": "2171700S1095_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171700S1095_1_11/",
+   "fetched_at": "2026-10-14 21:00:38",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480008_2171700S1095_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480008_2171700S1095_1_11",
+   "meta": {
+    "packins_no": "2171700S1095_1_11",
+    "company_id": "480008",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-10",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "フランドルテープ40mg"
+    ],
+    "generic_name": "硝酸イソソルビド・テープ剤",
+    "therapeutic_class": "経皮吸収型・虚血性心疾患治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２２.包装",
+      "(1)"
+     ],
+     "text": "50枚［（1枚×10）×5］\n70枚［（1枚×7）×10］\n100枚［（1枚×10）×10］"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "イソトレックスカプセル8mg／イソトレッ...",
+   "company": "製造販売元／サンファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "4291101M1021_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291101M1021_1_02/",
+   "fetched_at": "2026-10-14 21:00:40",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480866_4291101M1021_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480866_4291101M1021_1_02",
+   "meta": {
+    "packins_no": "4291101M1021_1_02",
+    "company_id": "480866",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "イソトレックスカプセル8mg",
+     "イソトレックスカプセル16mg"
+    ],
+    "generic_name": "イソトレチノインカプセル",
+    "therapeutic_class": "抗悪性腫瘍剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "本剤は新医薬品であるため、厚生労働省告示第107号（平成18年3月6日付）に基づき、2027年8月末日までは、投薬は1回14日分を限度とされている。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "パクリタキセル点滴静注液30mg/5mL「ホスピ...",
+   "company": "製造販売元（輸入元）／ファイザー株式会社",
+   "reason": "更新",
+   "packins_no": "4240406A1090_3_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4240406A1090_3_08/",
+   "fetched_at": "2026-10-14 21:00:42",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_4240406A1090_3_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_4240406A1090_3_08",
+   "meta": {
+    "packins_no": "4240406A1090_3_08",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-01",
+      "ver": null
+     }
+    },
+    "brands": [
+     "パクリタキセル点滴静注液30mg/5mL「ホスピーラ」",
+     "パクリタキセル点滴静注液100mg/16.7mL「ホスピーラ」"
+    ],
+    "generic_name": "パクリタキセル・注射液",
+    "therapeutic_class": "抗悪性腫瘍剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "７.用法及び用量に関連する注意",
+      "〈卵巣癌〉",
+      "(1)"
+     ],
+     "text": "白金系抗悪性腫瘍剤抵抗性の再発卵巣癌に対してペムブロリズマブ（遺伝子組換え）と併用する際の用法及び用量は、ペムブロリズマブ（遺伝子組換え）の電子添文を参照すること。"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-10-14 21:00:28",
+ "updated_at": "2026-10-14 21:00:45",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
