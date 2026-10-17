@@ -1,0 +1,436 @@
+{
+ "date": "2026-10-16",
+ "updates": [
+  {
+   "brand": "イノフィード配合経腸用液",
+   "company": "製造販売元／イーエヌ大塚製薬株式会社 / 販売提携／大塚製薬株式会社 / 販売提携／株式会社大塚製薬工場",
+   "reason": "新規",
+   "packins_no": "32591A2S1027_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/32591A2S1027_1_01/",
+   "fetched_at": "2026-10-17 17:43:04",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/130589_32591A2S1027_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/130589_32591A2S1027_1_01",
+   "meta": {
+    "packins_no": "32591A2S1027_1_01",
+    "company_id": "130589",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "イノフィード配合経腸用液"
+    ],
+    "generic_name": "-",
+    "therapeutic_class": "たん白アミノ酸製剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "チザニジン錠1mg「JG」",
+   "company": "製造販売元／長生堂製薬株式会社 / 販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "1249010F1271_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1249010F1271_1_06/",
+   "fetched_at": "2026-10-17 17:43:30",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/450064_1249010F1271_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/450064_1249010F1271_1_06",
+   "meta": {
+    "packins_no": "1249010F1271_1_06",
+    "company_id": "450064",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-09",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "チザニジン錠1mg「JG」"
+    ],
+    "generic_name": "チザニジン塩酸塩",
+    "therapeutic_class": "筋緊張緩和剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "100錠［10錠（PTP）×10］"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "レボフロキサシン点眼液0.5％「杏林」（...",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1319742Q1152_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319742Q1152_1_10/",
+   "fetched_at": "2026-10-17 17:43:32",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_1319742Q1152_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_1319742Q1152_1_10",
+   "meta": {
+    "packins_no": "1319742Q1152_1_10",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2024-06",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-05",
+      "ver": null
+     }
+    },
+    "brands": [
+     "レボフロキサシン点眼液0.5％「杏林」（旧製品）"
+    ],
+    "generic_name": "レボフロキサシン",
+    "therapeutic_class": "広範囲抗菌点眼剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "レボフロキサシン点眼液0.5％「杏林」",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "新規",
+   "packins_no": "1319742Q1152_3_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319742Q1152_3_01/",
+   "fetched_at": "2026-10-17 17:43:34",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_1319742Q1152_3_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_1319742Q1152_3_01",
+   "meta": {
+    "packins_no": "1319742Q1152_3_01",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "レボフロキサシン点眼液0.5％「杏林」"
+    ],
+    "generic_name": "レボフロキサシン",
+    "therapeutic_class": "広範囲抗菌点眼剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "レボフロキサシン点眼液1.5％「杏林」（...",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1319742Q2108_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319742Q2108_1_10/",
+   "fetched_at": "2026-10-17 17:43:36",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_1319742Q2108_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_1319742Q2108_1_10",
+   "meta": {
+    "packins_no": "1319742Q2108_1_10",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2024-05",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-11",
+      "ver": null
+     }
+    },
+    "brands": [
+     "レボフロキサシン点眼液1.5％「杏林」（旧製品）"
+    ],
+    "generic_name": "レボフロキサシン",
+    "therapeutic_class": "広範囲抗菌点眼剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "販売元"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "レボフロキサシン点眼液1.5％「杏林」（...",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 発売元／日東メディック株式会社",
+   "reason": "更新",
+   "packins_no": "1319742Q2108_2_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319742Q2108_2_09/",
+   "fetched_at": "2026-10-17 17:44:02",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_1319742Q2108_2_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_1319742Q2108_2_09",
+   "meta": {
+    "packins_no": "1319742Q2108_2_09",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2023-12",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "レボフロキサシン点眼液1.5％「杏林」（旧製品）"
+    ],
+    "generic_name": "レボフロキサシン",
+    "therapeutic_class": "広範囲抗菌点眼剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "レボフロキサシン点眼液1.5％「杏林」",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "新規",
+   "packins_no": "1319742Q2108_4_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319742Q2108_4_01/",
+   "fetched_at": "2026-10-17 17:44:04",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_1319742Q2108_4_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_1319742Q2108_4_01",
+   "meta": {
+    "packins_no": "1319742Q2108_4_01",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "レボフロキサシン点眼液1.5％「杏林」"
+    ],
+    "generic_name": "レボフロキサシン",
+    "therapeutic_class": "広範囲抗菌点眼剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ビカルタミド錠80mg「日医工」",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "4291009F1160_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291009F1160_2_02/",
+   "fetched_at": "2026-10-17 17:44:30",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_4291009F1160_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_4291009F1160_2_02",
+   "meta": {
+    "packins_no": "4291009F1160_2_02",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-06",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ビカルタミド錠80mg「日医工」"
+    ],
+    "generic_name": "ビカルタミド錠",
+    "therapeutic_class": "前立腺癌治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ブメリティカプセル231mg",
+   "company": "製造販売元／バイオジェン・ジャパン株式会社",
+   "reason": "更新",
+   "packins_no": "1190038M1020_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190038M1020_1_01/",
+   "fetched_at": "2026-10-17 17:45:23",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/630499_1190038M1020_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/630499_1190038M1020_1_01",
+   "meta": {
+    "packins_no": "1190038M1020_1_01",
+    "company_id": "630499",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ブメリティカプセル231mg"
+    ],
+    "generic_name": "ジロキシメルフマラート",
+    "therapeutic_class": "多発性硬化症治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２５.保険給付上の注意"
+     ],
+     "text": "本剤は新医薬品であるため、厚生労働省告示第107号（平成18年3月6日付）に基づき、2027年10月末日までは、投薬は1回14日分を限度とされている。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ラコサミド錠50mg「アメル」／ラコサミド...",
+   "company": "製造販売元／共和薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "1139015F1060_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1139015F1060_1_04/",
+   "fetched_at": "2026-10-17 17:45:25",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672173_1139015F1060_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672173_1139015F1060_1_04",
+   "meta": {
+    "packins_no": "1139015F1060_1_04",
+    "company_id": "672173",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ラコサミド錠50mg「アメル」",
+     "ラコサミド錠100mg「アメル」"
+    ],
+    "generic_name": "ラコサミド",
+    "therapeutic_class": "抗てんかん剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "血管性浮腫"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ラコサミドDS10%「アメル」",
+   "company": "製造販売元／共和薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "1139015R1058_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1139015R1058_1_04/",
+   "fetched_at": "2026-10-17 17:46:16",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672173_1139015R1058_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672173_1139015R1058_1_04",
+   "meta": {
+    "packins_no": "1139015R1058_1_04",
+    "company_id": "672173",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ラコサミドDS10%「アメル」"
+    ],
+    "generic_name": "ラコサミド",
+    "therapeutic_class": "抗てんかん剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "血管性浮腫"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ブロナンセリン錠2mg「アメル」／ブロナ...",
+   "company": "製造販売元／共和薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "1179048B1041_3_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179048B1041_3_09/",
+   "fetched_at": "2026-10-17 17:46:18",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672173_1179048B1041_3_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672173_1179048B1041_3_09",
+   "meta": {
+    "packins_no": "1179048B1041_3_09",
+    "company_id": "672173",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ブロナンセリン錠2mg「アメル」",
+     "ブロナンセリン錠4mg「アメル」",
+     "ブロナンセリン錠8mg「アメル」",
+     "ブロナンセリン散2%「アメル」"
+    ],
+    "generic_name": "ブロナンセリン",
+    "therapeutic_class": "抗精神病剤"
+   },
+   "revised": [],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "ビレーズトリ7.2エアロスフィア56吸入／ビレーズトリ7.2エアロスフィア120吸入／ビレーズトリ14.4エアロスフィア56吸入／ビレーズトリ14.4エアロスフィア120吸入",
+   "company": "製造販売元／アストラゼネカ株式会社",
+   "reason": "2026年10月15日のビレーズトリ14.4エアロスフィア販売開始に伴い改訂版添付文書を公開のため",
+   "yj_hint": "22908A2G3020_1_01"
+  }
+ ],
+ "created_at": "2026-10-17 17:43:04",
+ "updated_at": "2026-10-17 17:46:20",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
