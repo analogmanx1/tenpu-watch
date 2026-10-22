@@ -1,0 +1,479 @@
+{
+ "date": "2026-10-19",
+ "updates": [
+  {
+   "brand": "ブリヌスプリ錠25mg",
+   "company": "製造販売元／インスメッド合同会社",
+   "reason": "更新",
+   "packins_no": "2290002F1022_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2290002F1022_1_01/",
+   "fetched_at": "2026-10-22 14:55:59",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/150949_2290002F1022_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/150949_2290002F1022_1_01",
+   "meta": {
+    "packins_no": "2290002F1022_1_01",
+    "company_id": "150949",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ブリヌスプリ錠25mg"
+    ],
+    "generic_name": "ブレンソカチブ水和物",
+    "therapeutic_class": "選択的可逆的DPP1阻害薬 / 好中球性炎症抑制薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "ウ.販売開始年月"
+     ],
+     "text": ""
+    },
+    {
+     "path": [
+      "２５.保険給付上の注意",
+      "(1)"
+     ],
+     "text": "本製剤の効能又は効果に関連する注意において、「「17. 臨床成績」の項の内容を十分に理解した上で、患者の過去の呼吸器疾患の増悪歴、緑膿菌等の定着状況、喀痰等の呼吸器症状等を勘案し、抗菌薬投与を必要とする呼吸器疾患の増悪を繰り返すリスクのある患者に対して投与すること。」とされているので、使用に当たっては十分留意すること（保医発1013第1号：令和8年10月13日付）"
+    },
+    {
+     "path": [
+      "２５.保険給付上の注意",
+      "(2)"
+     ],
+     "text": "本剤は新医薬品であるため、厚生労働省告示第97号（平成20年3月19日付）に基づき、2027年10月末日までは、投薬は1回14日分を限度とされている。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "2290002F1022_1_01",
+    "prev_fetched_at": "2026-10-21 19:42:35",
+    "prev_seen_date": "2026-10-19",
+    "changes": []
+   }
+  },
+  {
+   "brand": "メコバラミン錠500μg「SW」",
+   "company": "製造販売元／沢井製薬株式会社 / 販売元／日本ケミファ株式会社",
+   "reason": "更新",
+   "packins_no": "3136004F2278_2_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3136004F2278_2_03/",
+   "fetched_at": "2026-10-22 14:56:02",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_3136004F2278_2_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_3136004F2278_2_03",
+   "meta": {
+    "packins_no": "3136004F2278_2_03",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "メコバラミン錠500μg「SW」"
+    ],
+    "generic_name": "メコバラミン",
+    "therapeutic_class": "末梢性神経障害治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２０.取扱い上の注意"
+     ],
+     "text": "外箱開封後、遮光して保存すること。"
+    },
+    {
+     "path": [
+      "２２.包装"
+     ],
+     "text": "PTP：100錠（10錠×10）、1,000錠（10錠×100）"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "3136004F2278_2_03",
+    "prev_fetched_at": "2026-10-21 19:42:37",
+    "prev_seen_date": "2026-10-19",
+    "changes": []
+   }
+  },
+  {
+   "brand": "ヤクバンテープ20mg（旧製品）／ヤクバン...",
+   "company": "製造販売／株式会社トクホン / 発売／大正製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2649732S2055_4_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2649732S2055_4_08/",
+   "fetched_at": "2026-10-22 14:56:04",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/370035_2649732S2055_4_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/370035_2649732S2055_4_08",
+   "meta": {
+    "packins_no": "2649732S2055_4_08",
+    "company_id": "370035",
+    "revision": {
+     "current": {
+      "ym": "2024-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2022-07",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ヤクバンテープ20mg（旧製品）",
+     "ヤクバンテープ40mg（旧製品）",
+     "ヤクバンテープ60mg"
+    ],
+    "generic_name": "フルルビプロフェン製剤",
+    "therapeutic_class": "経皮吸収型鎮痛消炎プラスター剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.５ 妊婦"
+     ],
+     "text": "妊婦又は妊娠している可能性のある女性には、治療上の有益性が危険性を上回ると判断される場合にのみ使用すること。シクロオキシゲナーゼ阻害剤を妊娠中期以降の妊婦に使用し、胎児動脈管収縮が起きたとの報告がある。また、シクロオキシゲナーゼ阻害剤（経口剤、坐剤）を妊婦に使用し、胎児の腎機能障害及び尿量減少、それに伴う羊水過少症が起きたとの報告がある。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "2649732S2055_4_08",
+    "prev_fetched_at": "2026-10-21 19:42:39",
+    "prev_seen_date": "2026-10-19",
+    "changes": []
+   }
+  },
+  {
+   "brand": "ヤクバンテープ20mg／ヤクバンテープ40mg",
+   "company": "製造販売／株式会社トクホン / 発売／大正製薬株式会社",
+   "reason": "新規",
+   "packins_no": "2649732S2055_5_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2649732S2055_5_01/",
+   "fetched_at": "2026-10-22 14:56:09",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/370035_2649732S2055_5_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/370035_2649732S2055_5_01",
+   "meta": {
+    "packins_no": "2649732S2055_5_01",
+    "company_id": "370035",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ヤクバンテープ20mg",
+     "ヤクバンテープ40mg"
+    ],
+    "generic_name": "フルルビプロフェン製剤",
+    "therapeutic_class": "経皮吸収型鎮痛消炎プラスター剤"
+   },
+   "revised": [],
+   "diff": {
+    "prev_packins_no": "2649732S2055_5_01",
+    "prev_fetched_at": "2026-10-21 19:42:41",
+    "prev_seen_date": "2026-10-19",
+    "changes": []
+   }
+  },
+  {
+   "brand": "ステボロニン点滴静注バッグ 9000mg/300mL",
+   "company": "製造販売元／ステラファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "4291453A1027_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291453A1027_1_08/",
+   "fetched_at": "2026-10-22 14:56:12",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/370738_4291453A1027_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/370738_4291453A1027_1_08",
+   "meta": {
+    "packins_no": "4291453A1027_1_08",
+    "company_id": "370738",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第7版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第6版"
+     }
+    },
+    "brands": [
+     "ステボロニン点滴静注バッグ 9000mg/300mL"
+    ],
+    "generic_name": "ボロファラン（10B） / Borofalan(10B)",
+    "therapeutic_class": "抗悪性腫瘍剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "嚥下障害（頻度不明）"
+     ],
+     "text": "粘膜の炎症等を伴う嚥下障害があらわれ、誤嚥性肺炎を来すことがある。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "4291453A1027_1_08",
+    "prev_fetched_at": "2026-10-21 19:42:44",
+    "prev_seen_date": "2026-10-19",
+    "changes": []
+   }
+  },
+  {
+   "brand": "ハイイータン錠50mg",
+   "company": "製造販売元／大鵬薬品工業株式会社 / 提携先／Haihe Biopharma",
+   "reason": "更新",
+   "packins_no": "4291085F1021_2_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291085F1021_2_01/",
+   "fetched_at": "2026-10-22 14:56:15",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400107_4291085F1021_2_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400107_4291085F1021_2_01",
+   "meta": {
+    "packins_no": "4291085F1021_2_01",
+    "company_id": "400107",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-09",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ハイイータン錠50mg"
+    ],
+    "generic_name": "グマロンチニブ水和物",
+    "therapeutic_class": "抗悪性腫瘍剤 / MET阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "大鵬薬品工業株式会社"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "東京都千代田区神田錦町1-27"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "Haihe Biopharma"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "中国"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "4291085F1021_2_01",
+    "prev_fetched_at": "2026-10-21 19:42:46",
+    "prev_seen_date": "2026-10-19",
+    "changes": []
+   }
+  },
+  {
+   "brand": "エパルレスタット錠50mg「JG」",
+   "company": "製造販売元／日本ジェネリック株式会社 / 販売元／高田製薬株式会社",
+   "reason": "新規",
+   "packins_no": "3999013F1266_2_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999013F1266_2_01/",
+   "fetched_at": "2026-10-22 14:56:17",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580591_3999013F1266_2_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580591_3999013F1266_2_01",
+   "meta": {
+    "packins_no": "3999013F1266_2_01",
+    "company_id": "580591",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "エパルレスタット錠50mg「JG」"
+    ],
+    "generic_name": "エパルレスタット錠",
+    "therapeutic_class": "アルドース還元酵素阻害剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "バイアスピリン錠100mg",
+   "company": "製造販売元／バイエル薬品株式会社",
+   "reason": "更新",
+   "packins_no": "3399007H1021_1_22",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3399007H1021_1_22/",
+   "fetched_at": "2026-10-22 14:56:19",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/630004_3399007H1021_1_22",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/630004_3399007H1021_1_22",
+   "meta": {
+    "packins_no": "3399007H1021_1_22",
+    "company_id": "630004",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-01",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "バイアスピリン錠100mg"
+    ],
+    "generic_name": "アスピリン",
+    "therapeutic_class": "抗血小板剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "アスピリン腸溶錠"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ケフレックスシロップ用細粒100",
+   "company": "製造販売元／共和薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "6132002R1141_3_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132002R1141_3_04/",
+   "fetched_at": "2026-10-22 14:56:50",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672173_6132002R1141_3_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672173_6132002R1141_3_04",
+   "meta": {
+    "packins_no": "6132002R1141_3_04",
+    "company_id": "672173",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-04",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ケフレックスシロップ用細粒100"
+    ],
+    "generic_name": "セファレキシン",
+    "therapeutic_class": "経口用セフェム系抗生物質製剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ケフレックスシロップ用細粒200（旧製品...",
+   "company": "製造販売元／共和薬品工業株式会社",
+   "reason": "新規",
+   "packins_no": "6132002R2032_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132002R2032_1_01/",
+   "fetched_at": "2026-10-22 14:56:52",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672173_6132002R2032_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672173_6132002R2032_1_01",
+   "meta": {
+    "packins_no": "6132002R2032_1_01",
+    "company_id": "672173",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-04",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ケフレックスシロップ用細粒200（旧製品）"
+    ],
+    "generic_name": "セファレキシン",
+    "therapeutic_class": "経口用セフェム系抗生物質製剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ケフレックスシロップ用細粒200",
+   "company": "製造販売元／共和薬品工業株式会社",
+   "reason": "新規",
+   "packins_no": "6132002R2032_2_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132002R2032_2_01/",
+   "fetched_at": "2026-10-22 14:56:54",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672173_6132002R2032_2_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672173_6132002R2032_2_01",
+   "meta": {
+    "packins_no": "6132002R2032_2_01",
+    "company_id": "672173",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ケフレックスシロップ用細粒200"
+    ],
+    "generic_name": "セファレキシン",
+    "therapeutic_class": "経口用セフェム系抗生物質製剤"
+   },
+   "revised": [],
+   "diff": null
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-10-22 14:55:59",
+ "updated_at": "2026-10-22 14:56:56",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

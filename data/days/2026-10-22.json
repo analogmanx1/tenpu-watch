@@ -1,0 +1,601 @@
+{
+ "date": "2026-10-22",
+ "updates": [
+  {
+   "brand": "オーツカMV注",
+   "company": "製造販売元／株式会社大塚製薬工場 / 販売提携／大塚製薬株式会社",
+   "reason": "更新",
+   "packins_no": "3179513A1026_2_12",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3179513A1026_2_12/",
+   "fetched_at": "2026-10-22 15:02:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180079_3179513A1026_2_12",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180079_3179513A1026_2_12",
+   "meta": {
+    "packins_no": "3179513A1026_2_12",
+    "company_id": "180079",
+    "revision": {
+     "current": {
+      "ym": "2026-05",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-11",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "オーツカMV注"
+    ],
+    "generic_name": "高カロリー輸液用総合ビタミン剤",
+    "therapeutic_class": "経中心静脈栄養輸液用総合ビタミン剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "本剤は1号に2号を使用時に加え、溶解して用いる組合せ注射剤である。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ビラスチン錠20mg「サワイ」",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "4490033F1044_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490033F1044_1_02/",
+   "fetched_at": "2026-10-22 15:02:30",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_4490033F1044_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_4490033F1044_1_02",
+   "meta": {
+    "packins_no": "4490033F1044_1_02",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ビラスチン錠20mg「サワイ」"
+    ],
+    "generic_name": "ビラスチン",
+    "therapeutic_class": "アレルギー性疾患治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ビラスチンOD錠20mg「サワイ」",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "4490033F2075_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490033F2075_1_02/",
+   "fetched_at": "2026-10-22 15:02:45",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_4490033F2075_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_4490033F2075_1_02",
+   "meta": {
+    "packins_no": "4490033F2075_1_02",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ビラスチンOD錠20mg「サワイ」"
+    ],
+    "generic_name": "ビラスチン",
+    "therapeutic_class": "アレルギー性疾患治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "メトリジンD錠2mg",
+   "company": "製造販売／大正製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2160002F2024_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2160002F2024_1_10/",
+   "fetched_at": "2026-10-22 15:02:54",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400059_2160002F2024_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400059_2160002F2024_1_10",
+   "meta": {
+    "packins_no": "2160002F2024_1_10",
+    "company_id": "400059",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-06",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "メトリジンD錠2mg"
+    ],
+    "generic_name": "ミドドリン塩酸塩製剤（口腔内崩壊錠）",
+    "therapeutic_class": "低血圧治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "ミドドリン塩酸塩口腔内崩壊錠"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中 日局 ミドドリン塩酸塩"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "2-Amino-N-[(2RS)-2-(2,5-dimethoxyphenyl)-2-hydroxyethyl]acetamide monohydrochloride"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "白色の結晶性の粉末で、水にやや溶けやすく、エタノール（95）に溶けにくい。"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": ""
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ビラスチンOD錠20mg「TCK」",
+   "company": "製造販売元／辰巳化学株式会社",
+   "reason": "更新",
+   "packins_no": "4490033F2040_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490033F2040_1_03/",
+   "fetched_at": "2026-10-22 15:03:40",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400278_4490033F2040_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400278_4490033F2040_1_03",
+   "meta": {
+    "packins_no": "4490033F2040_1_03",
+    "company_id": "400278",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ビラスチンOD錠20mg「TCK」"
+    ],
+    "generic_name": "ビラスチン口腔内崩壊錠",
+    "therapeutic_class": "アレルギー性疾患治療剤"
+   },
+   "revised": [],
+   "diff": {
+    "prev_packins_no": "4490033F2040_1_02",
+    "prev_fetched_at": "2026-08-28 18:32:32",
+    "prev_seen_date": "2026-08-28",
+    "changes": [
+     {
+      "kind": "added",
+      "path": "ア.作成又は改訂年月",
+      "before": null,
+      "after": "第2版"
+     },
+     {
+      "kind": "added",
+      "path": "ア.作成又は改訂年月",
+      "before": null,
+      "after": "処方箋医薬品指定解除"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "ビラスチンOD錠20mg「TCK」",
+   "company": "製造販売元／辰巳化学株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "4490033F2040_2_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490033F2040_2_03/",
+   "fetched_at": "2026-10-22 15:03:47",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400278_4490033F2040_2_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400278_4490033F2040_2_03",
+   "meta": {
+    "packins_no": "4490033F2040_2_03",
+    "company_id": "400278",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ビラスチンOD錠20mg「TCK」"
+    ],
+    "generic_name": "ビラスチン口腔内崩壊錠",
+    "therapeutic_class": "アレルギー性疾患治療剤"
+   },
+   "revised": [],
+   "diff": {
+    "prev_packins_no": "4490033F2040_2_02",
+    "prev_fetched_at": "2026-08-28 18:32:35",
+    "prev_seen_date": "2026-08-28",
+    "changes": [
+     {
+      "kind": "added",
+      "path": "ア.作成又は改訂年月",
+      "before": null,
+      "after": "第2版"
+     },
+     {
+      "kind": "added",
+      "path": "ア.作成又は改訂年月",
+      "before": null,
+      "after": "処方箋医薬品指定解除"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "ビラスチン錠20mg「EP」",
+   "company": "製造販売元／第一三共エスファ株式会社 / 販売提携／第一三共株式会社",
+   "reason": "更新",
+   "packins_no": "4490033F1036_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490033F1036_1_02/",
+   "fetched_at": "2026-10-22 15:04:02",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/430773_4490033F1036_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/430773_4490033F1036_1_02",
+   "meta": {
+    "packins_no": "4490033F1036_1_02",
+    "company_id": "430773",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ビラスチン錠20mg「EP」"
+    ],
+    "generic_name": "ビラスチン錠",
+    "therapeutic_class": "アレルギー性疾患治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ビラスチンOD錠20mg「EP」",
+   "company": "製造販売元／第一三共エスファ株式会社 / 販売提携／第一三共株式会社",
+   "reason": "更新",
+   "packins_no": "4490033F2032_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490033F2032_1_02/",
+   "fetched_at": "2026-10-22 15:04:22",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/430773_4490033F2032_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/430773_4490033F2032_1_02",
+   "meta": {
+    "packins_no": "4490033F2032_1_02",
+    "company_id": "430773",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ビラスチンOD錠20mg「EP」"
+    ],
+    "generic_name": "ビラスチン口腔内崩壊錠",
+    "therapeutic_class": "アレルギー性疾患治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ビラスチンOD錠20mg「杏林」",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "4490033F2067_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490033F2067_1_02/",
+   "fetched_at": "2026-10-22 15:04:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_4490033F2067_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_4490033F2067_1_02",
+   "meta": {
+    "packins_no": "4490033F2067_1_02",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ビラスチンOD錠20mg「杏林」"
+    ],
+    "generic_name": "ビラスチン",
+    "therapeutic_class": "アレルギー性疾患治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "プレガバリンカプセル25mg「トーワ」／プ...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "1190017F1185_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190017F1185_1_04/",
+   "fetched_at": "2026-10-22 15:05:04",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_1190017F1185_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_1190017F1185_1_04",
+   "meta": {
+    "packins_no": "1190017F1185_1_04",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "プレガバリンカプセル25mg「トーワ」",
+     "プレガバリンカプセル75mg「トーワ」",
+     "プレガバリンカプセル150mg「トーワ」",
+     "プレガバリンOD錠25mg「トーワ」",
+     "プレガバリンOD錠75mg「トーワ」",
+     "プレガバリンOD錠150mg「トーワ」"
+    ],
+    "generic_name": "プレガバリンカプセル/口腔内崩壊錠",
+    "therapeutic_class": "疼痛治療剤（神経障害性疼痛・線維筋痛症）"
+   },
+   "revised": [
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリンカプセル"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリンカプセル"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリンカプセル"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリン口腔内崩壊錠"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリン口腔内崩壊錠"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリン口腔内崩壊錠"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1カプセル中"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1カプセル中"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1カプセル中"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "白色の結晶性の粉末である。水にやや溶けにくく、エタノール（99.5）に溶けにくい。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ビラスチンOD錠20mg「トーワ」",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "4490033F2105_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490033F2105_1_02/",
+   "fetched_at": "2026-10-22 15:05:15",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_4490033F2105_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_4490033F2105_1_02",
+   "meta": {
+    "packins_no": "4490033F2105_1_02",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ビラスチンOD錠20mg「トーワ」"
+    ],
+    "generic_name": "ビラスチン口腔内崩壊錠",
+    "therapeutic_class": "アレルギー性疾患治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ミノドロン酸錠50mg「ニプロ」",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "更新",
+   "packins_no": "3999026F2111_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999026F2111_1_09/",
+   "fetched_at": "2026-10-22 15:06:22",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530100_3999026F2111_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530100_3999026F2111_1_09",
+   "meta": {
+    "packins_no": "3999026F2111_1_09",
+    "company_id": "530100",
+    "revision": {
+     "current": {
+      "ym": "2023-10",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ミノドロン酸錠50mg「ニプロ」"
+    ],
+    "generic_name": "ミノドロン酸水和物錠",
+    "therapeutic_class": "骨粗鬆症治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ビラスチンOD錠20mg「日新」",
+   "company": "製造販売元／日新製薬株式会社",
+   "reason": "更新",
+   "packins_no": "4490033F2113_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490033F2113_1_02/",
+   "fetched_at": "2026-10-22 15:06:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530113_4490033F2113_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530113_4490033F2113_1_02",
+   "meta": {
+    "packins_no": "4490033F2113_1_02",
+    "company_id": "530113",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ビラスチンOD錠20mg「日新」"
+    ],
+    "generic_name": "ビラスチン",
+    "therapeutic_class": "アレルギー性疾患治療剤"
+   },
+   "revised": [],
+   "diff": null
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-10-22 15:02:27",
+ "updated_at": "2026-10-22 15:06:29",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

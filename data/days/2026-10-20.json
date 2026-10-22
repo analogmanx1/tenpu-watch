@@ -1,0 +1,563 @@
+{
+ "date": "2026-10-20",
+ "updates": [
+  {
+   "brand": "ロドピン錠25mg／ロドピン錠50mg／ロドピン...",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "1179024C1033_4_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179024C1033_4_09/",
+   "fetched_at": "2026-10-22 14:56:56",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_1179024C1033_4_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_1179024C1033_4_09",
+   "meta": {
+    "packins_no": "1179024C1033_4_09",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2025-04",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ロドピン錠25mg",
+     "ロドピン錠50mg",
+     "ロドピン錠100mg",
+     "ロドピン細粒10%",
+     "ロドピン細粒50%"
+    ],
+    "generic_name": "ゾテピン",
+    "therapeutic_class": "統合失調症治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "エミレース錠3mg／エミレース錠10mg",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "1179036F1024_2_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179036F1024_2_07/",
+   "fetched_at": "2026-10-22 14:56:58",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_1179036F1024_2_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_1179036F1024_2_07",
+   "meta": {
+    "packins_no": "1179036F1024_2_07",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2024-10",
+      "ver": null
+     }
+    },
+    "brands": [
+     "エミレース錠3mg",
+     "エミレース錠10mg"
+    ],
+    "generic_name": "ネモナプリド",
+    "therapeutic_class": "抗精神病剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ローガン錠10mg",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2149018F1021_2_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149018F1021_2_05/",
+   "fetched_at": "2026-10-22 14:57:00",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_2149018F1021_2_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_2149018F1021_2_05",
+   "meta": {
+    "packins_no": "2149018F1021_2_05",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-05",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ローガン錠10mg"
+    ],
+    "generic_name": "アモスラロール塩酸塩錠Amosulalol Hydrochloride",
+    "therapeutic_class": "血行動態改善型降圧剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ペルジピン錠10mg／ペルジピン錠20mg／ペル...",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2149019B1059_2_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149019B1059_2_04/",
+   "fetched_at": "2026-10-22 14:57:03",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_2149019B1059_2_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_2149019B1059_2_04",
+   "meta": {
+    "packins_no": "2149019B1059_2_04",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-04",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ペルジピン錠10mg",
+     "ペルジピン錠20mg",
+     "ペルジピン散10%"
+    ],
+    "generic_name": "日局 ニカルジピン塩酸塩",
+    "therapeutic_class": "Ca拮抗性降圧剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ペルジピンLAカプセル20mg／ペルジピンLAカ...",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2149019N1160_2_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149019N1160_2_04/",
+   "fetched_at": "2026-10-22 14:57:05",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_2149019N1160_2_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_2149019N1160_2_04",
+   "meta": {
+    "packins_no": "2149019N1160_2_04",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2022-12",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ペルジピンLAカプセル20mg",
+     "ペルジピンLAカプセル40mg"
+    ],
+    "generic_name": "日局 ニカルジピン塩酸塩",
+    "therapeutic_class": "持続性Ca拮抗剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ニバジール錠2mg／ニバジール錠4mg",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2149022F1028_4_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149022F1028_4_05/",
+   "fetched_at": "2026-10-22 14:57:31",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_2149022F1028_4_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_2149022F1028_4_05",
+   "meta": {
+    "packins_no": "2149022F1028_4_05",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2021-03",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ニバジール錠2mg",
+     "ニバジール錠4mg"
+    ],
+    "generic_name": "ニルバジピン",
+    "therapeutic_class": "高血圧治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ペルジピン注射液2mg／ペルジピン注射液10...",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2149400A1027_2_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149400A1027_2_04/",
+   "fetched_at": "2026-10-22 14:58:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_2149400A1027_2_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_2149400A1027_2_04",
+   "meta": {
+    "packins_no": "2149400A1027_2_04",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ペルジピン注射液2mg",
+     "ペルジピン注射液10mg",
+     "ペルジピン注射液25mg"
+    ],
+    "generic_name": "日局 ニカルジピン塩酸塩",
+    "therapeutic_class": "注射用Ca拮抗剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ナゼアOD錠0.1mg",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2391004F1024_2_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2391004F1024_2_03/",
+   "fetched_at": "2026-10-22 14:58:52",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_2391004F1024_2_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_2391004F1024_2_03",
+   "meta": {
+    "packins_no": "2391004F1024_2_03",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2020-12",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ナゼアOD錠0.1mg"
+    ],
+    "generic_name": "ラモセトロン塩酸塩",
+    "therapeutic_class": "5-HT3受容体拮抗型制吐剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "オキサロール注2.5μg／オキサロール注5μg...",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "3112401A1026_3_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3112401A1026_3_04/",
+   "fetched_at": "2026-10-22 14:58:55",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_3112401A1026_3_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_3112401A1026_3_04",
+   "meta": {
+    "packins_no": "3112401A1026_3_04",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-01",
+      "ver": null
+     }
+    },
+    "brands": [
+     "オキサロール注2.5μg",
+     "オキサロール注5μg",
+     "オキサロール注10μg"
+    ],
+    "generic_name": "マキサカルシトール製剤",
+    "therapeutic_class": "二次性副甲状腺機能亢進症治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ノイロビタン配合錠",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "3179106F1039_2_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3179106F1039_2_05/",
+   "fetched_at": "2026-10-22 14:58:57",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_3179106F1039_2_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_3179106F1039_2_05",
+   "meta": {
+    "packins_no": "3179106F1039_2_05",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-07",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ノイロビタン配合錠"
+    ],
+    "generic_name": "オクトチアミン / リボフラビン / ピリドキシン塩酸塩 / シアノコバラミン",
+    "therapeutic_class": "混合ビタミン剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "セフゾン細粒小児用10%",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "6132013C1031_4_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132013C1031_4_09/",
+   "fetched_at": "2026-10-22 14:58:59",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_6132013C1031_4_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_6132013C1031_4_09",
+   "meta": {
+    "packins_no": "6132013C1031_4_09",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-01",
+      "ver": null
+     }
+    },
+    "brands": [
+     "セフゾン細粒小児用10%"
+    ],
+    "generic_name": "セフジニル細粒Cefdinir",
+    "therapeutic_class": "経口用セフェム系製剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "セフゾンカプセル50mg／セフゾンカプセル1...",
+   "company": "製造販売／LTLファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "6132013M1029_4_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132013M1029_4_08/",
+   "fetched_at": "2026-10-22 14:59:01",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171911_6132013M1029_4_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171911_6132013M1029_4_08",
+   "meta": {
+    "packins_no": "6132013M1029_4_08",
+    "company_id": "171911",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-01",
+      "ver": null
+     }
+    },
+    "brands": [
+     "セフゾンカプセル50mg",
+     "セフゾンカプセル100mg"
+    ],
+    "generic_name": "セフジニルカプセルCefdinir",
+    "therapeutic_class": "経口用セフェム系製剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "デュロキセチンカプセル20mg「杏林」／デ...",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1179052M1189_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179052M1189_1_06/",
+   "fetched_at": "2026-10-22 14:59:03",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_1179052M1189_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_1179052M1189_1_06",
+   "meta": {
+    "packins_no": "1179052M1189_1_06",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2024-05",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2022-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "デュロキセチンカプセル20mg「杏林」",
+     "デュロキセチンカプセル30mg「杏林」"
+    ],
+    "generic_name": "デュロキセチン塩酸塩",
+    "therapeutic_class": "セロトニン・ノルアドレナリン再取り込み阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "販売元"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リマプロスト アルファデクス錠5μg「日...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "3399003F1162_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3399003F1162_1_02/",
+   "fetched_at": "2026-10-22 14:59:06",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_3399003F1162_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_3399003F1162_1_02",
+   "meta": {
+    "packins_no": "3399003F1162_1_02",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "リマプロスト　アルファデクス錠5μg「日医工」"
+    ],
+    "generic_name": "リマプロスト　アルファデクス",
+    "therapeutic_class": "経口プロスタグランジンE1誘導体製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "リマプロスト　アルファデクス錠"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ザルトラップ点滴静注100mg／ザルトラップ...",
+   "company": "製造販売元／サノフィ株式会社",
+   "reason": "更新",
+   "packins_no": "4291436A1023_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291436A1023_1_10/",
+   "fetched_at": "2026-10-22 15:00:34",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/780069_4291436A1023_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/780069_4291436A1023_1_10",
+   "meta": {
+    "packins_no": "4291436A1023_1_10",
+    "company_id": "780069",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-09",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ザルトラップ点滴静注100mg",
+     "ザルトラップ点滴静注200mg"
+    ],
+    "generic_name": "アフリベルセプト　ベータ（遺伝子組換え）製剤",
+    "therapeutic_class": "抗悪性腫瘍剤/VEGF阻害剤\nVEGF：Vascular Endothelial Growth Factor（血管内皮増殖因子） / VEGF：Vascular Endothelial Growth Factor（血管内皮増殖因子）"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "血液"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "消化器"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "皮膚"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "ハイイータン錠50mg",
+   "company": "製造販売元／海和製薬株式会社 / 販売元／大鵬薬品工業株式会社",
+   "reason": "大鵬薬品工業株式会社へ承継されたため",
+   "yj_hint": "4291085F1021_1_03"
+  }
+ ],
+ "created_at": "2026-10-22 14:56:56",
+ "updated_at": "2026-10-22 15:00:36",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
