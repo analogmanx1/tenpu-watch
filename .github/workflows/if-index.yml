@@ -46,10 +46,13 @@ jobs:
           python-version: "3.12"
 
       - name: 一覧を取り直し → サイト生成
+        env:
+          # 入力値はスクリプト本文に直接埋め込まず、環境変数で渡す(GitHub推奨の書き方。値に記号が混ざってもコマンドとして実行されない)
+          TARGET: ${{ github.event.inputs.target }}
         run: |
-          if [ "${{ github.event.inputs.target }}" = "touseki" ]; then
+          if [ "$TARGET" = "touseki" ]; then
             python src/run.py --build-only --touseki-index
-          elif [ "${{ github.event.inputs.target }}" = "yakka" ]; then
+          elif [ "$TARGET" = "yakka" ]; then
             python src/run.py --build-only --yakka-index
           else
             python src/run.py --build-only --if-index --tenpu-index --touseki-index --yakka-index

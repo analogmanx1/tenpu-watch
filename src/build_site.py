@@ -538,7 +538,7 @@ SEARCH_JS = """
     if(kw.length){hits=data.filter(e=>{const h=norm(e.t+' '+e.g+' '+e.c+' '+e.p);return kw.every(k=>h.includes(k));});}
     hits=hits.slice(0,300);
     cnt.textContent=kw.length?`${hits.length}件(最大300件表示)`:`全${data.length}件`;
-    res.innerHTML=hits.map(e=>`<div class="hit"><a href="days/${e.d}.html#${e.k}">${e.d}</a> <span class="badge ${e.r==='更新'?'upd':e.r==='新規'?'new':'oth'}">${e.r}</span> <b>${esc(e.t)}</b>${e.i?' <span class="impmark">⚠</span>':''}<br><span class="small">${esc(e.g)} ｜ ${esc(e.c)}${e.p?' ｜ 改訂: '+esc(e.p):''}</span></div>`).join('');
+    res.innerHTML=hits.map(e=>`<div class="hit"><a href="days/${esc(e.d)}.html#${esc(e.k)}">${esc(e.d)}</a> <span class="badge ${e.r==='更新'?'upd':e.r==='新規'?'new':'oth'}">${esc(e.r)}</span> <b>${esc(e.t)}</b>${e.i?' <span class="impmark">⚠</span>':''}<br><span class="small">${esc(e.g)} ｜ ${esc(e.c)}${e.p?' ｜ 改訂: '+esc(e.p):''}</span></div>`).join('');
   }
   function esc(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
   q.addEventListener('input',run);
