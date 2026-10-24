@@ -26,6 +26,7 @@ import shikibetsu_index  # noqa: E402
 import chuui_index  # noqa: E402
 import touseki_index  # noqa: E402
 import yakka_index  # noqa: E402
+import fukusayo_index  # noqa: E402
 
 
 def main() -> int:
@@ -37,7 +38,7 @@ def main() -> int:
     ap.add_argument("--tenpu-index", action="store_true", help="添付文書一覧(data/tenpu_index.json)をPMDAから取り直す")
     ap.add_argument("--shikibetsu", action="store_true",
                     help="識別コード一覧(data/shikibetsu_index.json)と注意チェック(data/chuui_index.json=術前休薬・造影剤)を差分更新(各最大300件/回。自宅PC専用)。"
-                         "あわせて薬価用の規格の対応表(data/yj_index.json)もPC内のXMLの写しから更新")
+                         "あわせて薬価用の規格の対応表(data/yj_index.json)と副作用検索(data/fukusayo_index.json)もPC内のXMLの写しから更新")
     ap.add_argument("--touseki-index", action="store_true",
                     help="透析投薬ガイドライン一覧(data/touseki_index.json)を白鷺病院サイトから取り直す(約1分)")
     ap.add_argument("--yakka-index", action="store_true",
@@ -83,6 +84,11 @@ def main() -> int:
             yakka_index.refresh_yj(root)
         except Exception as e:  # noqa: BLE001
             print(f"!! 規格の対応表の更新に失敗(今回はスキップ。次回やり直し): {e}")
+        # 副作用検索(data/fukusayo_index.json)。同じくPC内のXMLの写しから読むだけ
+        try:
+            fukusayo_index.refresh(root)
+        except Exception as e:  # noqa: BLE001
+            print(f"!! 副作用検索の更新に失敗(今回はスキップ。次回やり直し): {e}")
     if a.if_index:
         meta = if_index.refresh(root)
         print(json.dumps({k: meta[k] for k in ("fetched_at", "count", "requests", "warnings")}, ensure_ascii=False))

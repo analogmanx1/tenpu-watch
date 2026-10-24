@@ -78,6 +78,20 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .sjh mark{background:var(--hl);color:inherit;padding:0 .1rem;border-radius:.2rem}
 .sjb{color:var(--mut)}
 .sjbr a{display:inline-block;margin:.1rem .8rem .1rem 0;font-size:.9rem}
+/* ---- 副作用検索: 帯の色は高い順に --f3(5%以上) --f2(1%以上) --f1(1%未満) --f0(頻度不明) ---- */
+:root{--f3:#b8321a;--f2:#c46a12;--f1:#2a62b8;--f0:#888}
+@media (prefers-color-scheme:dark){:root{--f3:#ff8a70;--f2:#f0a650;--f1:#7fb0ff;--f0:#999}}
+.fkopen{font-weight:600;font-size:1.02rem;text-decoration:none;cursor:pointer}.fkopen:hover{text-decoration:underline}
+.fkbody{margin:.4rem 0 .2rem}
+.fkband{margin:.45rem 0;padding:.1rem 0 .1rem .7rem;border-left:4px solid var(--f0)}
+.fkband>.fkf{font-weight:700;color:var(--f0);font-size:1rem}.fkband>summary.fkf{list-style:none}.fkband>summary.fkf::-webkit-details-marker{display:none}
+.fkband>summary.fkf::after{content:" ▾";font-weight:400}.fkband[open]>summary.fkf::after{content:" ▴"}
+.fkband.l3{border-left-color:var(--f3)}.fkband.l3>.fkf{color:var(--f3)}.fkband.l2{border-left-color:var(--f2)}.fkband.l2>.fkf{color:var(--f2)}
+.fkband.l1{border-left-color:var(--f1)}.fkband.l1>.fkf{color:var(--f1)}
+.fkband ul{list-style:none;padding:0;margin:.15rem 0}.fkband li{margin:.2rem 0;font-size:.95rem}
+.fkcat{display:inline-block;font-size:.78rem;color:var(--mut);border:1px solid var(--line);border-radius:.6rem;padding:0 .45rem;margin-right:.35rem;vertical-align:.08rem}
+.fkser{display:inline-block;font-size:.78rem;color:#fff;background:var(--imp);border-radius:.6rem;padding:0 .45rem;margin-right:.35rem;vertical-align:.08rem}
+.fklb{font-size:.8rem;color:var(--mut)}
 /* ---- 添付文書検索の薬価(規格が YAKKA_OPEN_MAX 個までは表、多いと畳む) ---- */
 .yk{margin-top:.25rem;font-size:.92rem}
 table.yk{border-collapse:collapse;margin:.1rem 0 0 .4rem}table.yk td{padding:.05rem 1rem .05rem 0;vertical-align:top}
@@ -103,5 +117,6 @@ table.arch td,table.arch th,table.del td,table.del th{padding:.35rem .4rem}
 .box{padding:.1rem .8rem .8rem;margin:.8rem 0}
 .tierbtn{min-height:calc(var(--tap) - 8px);padding:.35rem .9rem}.tiers select{margin-left:0;min-height:calc(var(--tap) - 8px)}
 .sjbr a{display:block;padding:.35rem 0;margin:0}
+.fkopen{display:inline-block;padding:.2rem 0;line-height:1.45}.fkband{padding-left:.55rem}.fkband>summary.fkf{padding:.3rem 0}
 table.yk{margin-left:0}table.yk td{padding:.15rem .6rem .15rem 0}details.yk>summary{padding:.3rem 0}
 }

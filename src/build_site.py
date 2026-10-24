@@ -11,6 +11,7 @@ data/days/*.json から静的サイト(docs/)を生成する。
   docs/tenpu/index.html + index.json … 添付文書検索(元データは data/tenpu_index.json。同上・毎日0:15に更新)
                                        規格ごとの薬価は data/yakka_index.json(厚労省の薬価リスト)× data/yj_index.json(規格の対応表)を src/yakka_index.py で突き合わせて付ける
   docs/shikibetsu/index.html + index.json … 識別コード検索(元データは data/shikibetsu_index.json。src/shikibetsu_index.py が自宅PCで差分更新)
+  docs/fukusayo/index.html + index.json + b/*.json … 副作用検索(元データは data/fukusayo_index.json。src/fukusayo_index.py が自宅PCでXMLの写しから差分更新)
   docs/touseki/index.html + index.json … 透析投薬ガイドライン検索(元データは data/touseki_index.json。src/touseki_index.py が白鷺病院の索引から作る)
   docs/shujutsu/index.html + index.json … 術前休薬・禁忌チェック(元データは data/chuui_index.json。src/chuui_index.py が自宅PCで差分更新)
   docs/zouei/index.html + index.json … 造影剤チェック(同上。chuui_index.py の THEMES にテーマを足すと同じ型のページを増やせる)
@@ -33,6 +34,7 @@ import if_index  # noqa: E402  (PMDA検索フォームの項目一覧を「PMDA�
 import touseki_index  # noqa: E402  (白鷺病院サイトのURL・索引ページの一覧を検索ページで使う)
 import chuui_index  # noqa: E402  (「◯◯のとき注意する薬」の文の仕分け・一般名ごとのまとめ)
 import yakka_index  # noqa: E402  (添付文書検索の「規格ごとの薬価」の突き合わせ)
+import fukusayo_index  # noqa: E402  (副作用検索の「頻度の帯ごと」のまとめ)
 
 JST = timezone(timedelta(hours=9))
 WEEK_URL = "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
@@ -43,6 +45,7 @@ WATCH_TITLE = "添付文書ウォッチ"
 IF_TITLE = "インタビューフォーム検索"
 TENPU_TITLE = "添付文書検索"
 SHIKI_TITLE = "識別コード検索"
+FUKU_TITLE = "副作用検索"   # 添付文書の「11. 副作用」を頻度(%)の高い順に並べて見せる
 TOUSEKI_TITLE = "透析投薬ガイドライン検索"   # 白鷺病院「透析患者に対する投薬ガイドライン」のPDFを薬剤名で探す(元データは白鷺病院サイト)
 SHUJUTSU_TITLE = "術前休薬・禁忌チェック"   # 添付文書の禁忌・重要な基本的注意などから「手術時の禁忌・休薬」の記載を集めた一覧
 ZOUEI_TITLE = "造影剤チェック(休薬・併用注意)"   # 同じく「造影剤を使うときの休薬・併用注意」の記載を集めた一覧
@@ -161,6 +164,7 @@ def top_nav(rel: str, tools: list[dict]) -> str:
       <a class="head" href="{rel}tenpu/index.html">📕 {TENPU_TITLE}</a>
       <a class="head" href="{rel}if/index.html">📘 {IF_TITLE}</a>
       <a class="head" href="{rel}shikibetsu/index.html">🔎 {SHIKI_TITLE}</a>
+      <a class="head" href="{rel}fukusayo/index.html">📊 {FUKU_TITLE}</a>
       <a class="head" href="{rel}touseki/index.html">🩸 {TOUSEKI_TITLE}</a>
       <a class="head" href="{rel}shujutsu/index.html">🏥 {SHUJUTSU_TITLE}</a>
       <a class="head" href="{rel}zouei/index.html">💉 {ZOUEI_TITLE}</a>
@@ -451,6 +455,20 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .sjh mark{background:var(--hl);color:inherit;padding:0 .1rem;border-radius:.2rem}
 .sjb{color:var(--mut)}
 .sjbr a{display:inline-block;margin:.1rem .8rem .1rem 0;font-size:.9rem}
+/* ---- 副作用検索: 帯の色は高い順に --f3(5%以上) --f2(1%以上) --f1(1%未満) --f0(頻度不明) ---- */
+:root{--f3:#b8321a;--f2:#c46a12;--f1:#2a62b8;--f0:#888}
+@media (prefers-color-scheme:dark){:root{--f3:#ff8a70;--f2:#f0a650;--f1:#7fb0ff;--f0:#999}}
+.fkopen{font-weight:600;font-size:1.02rem;text-decoration:none;cursor:pointer}.fkopen:hover{text-decoration:underline}
+.fkbody{margin:.4rem 0 .2rem}
+.fkband{margin:.45rem 0;padding:.1rem 0 .1rem .7rem;border-left:4px solid var(--f0)}
+.fkband>.fkf{font-weight:700;color:var(--f0);font-size:1rem}.fkband>summary.fkf{list-style:none}.fkband>summary.fkf::-webkit-details-marker{display:none}
+.fkband>summary.fkf::after{content:" ▾";font-weight:400}.fkband[open]>summary.fkf::after{content:" ▴"}
+.fkband.l3{border-left-color:var(--f3)}.fkband.l3>.fkf{color:var(--f3)}.fkband.l2{border-left-color:var(--f2)}.fkband.l2>.fkf{color:var(--f2)}
+.fkband.l1{border-left-color:var(--f1)}.fkband.l1>.fkf{color:var(--f1)}
+.fkband ul{list-style:none;padding:0;margin:.15rem 0}.fkband li{margin:.2rem 0;font-size:.95rem}
+.fkcat{display:inline-block;font-size:.78rem;color:var(--mut);border:1px solid var(--line);border-radius:.6rem;padding:0 .45rem;margin-right:.35rem;vertical-align:.08rem}
+.fkser{display:inline-block;font-size:.78rem;color:#fff;background:var(--imp);border-radius:.6rem;padding:0 .45rem;margin-right:.35rem;vertical-align:.08rem}
+.fklb{font-size:.8rem;color:var(--mut)}
 /* ---- 添付文書検索の薬価(規格が YAKKA_OPEN_MAX 個までは表、多いと畳む) ---- */
 .yk{margin-top:.25rem;font-size:.92rem}
 table.yk{border-collapse:collapse;margin:.1rem 0 0 .4rem}table.yk td{padding:.05rem 1rem .05rem 0;vertical-align:top}
@@ -476,6 +494,7 @@ table.arch td,table.arch th,table.del td,table.del th{padding:.35rem .4rem}
 .box{padding:.1rem .8rem .8rem;margin:.8rem 0}
 .tierbtn{min-height:calc(var(--tap) - 8px);padding:.35rem .9rem}.tiers select{margin-left:0;min-height:calc(var(--tap) - 8px)}
 .sjbr a{display:block;padding:.35rem 0;margin:0}
+.fkopen{display:inline-block;padding:.2rem 0;line-height:1.45}.fkband{padding-left:.55rem}.fkband>summary.fkf{padding:.3rem 0}
 table.yk{margin-left:0}table.yk td{padding:.15rem .6rem .15rem 0}details.yk>summary{padding:.3rem 0}
 }
 """
@@ -869,6 +888,131 @@ def render_shikibetsu_page(shiki: dict | None, n_rows: int, n_img_rows: int = 0)
 """
 
 
+# ---------------------------------------------------------------- 副作用検索
+FUKU_FOLD = ["頻度不明", fukusayo_index.NO_FREQ]   # 最初は畳んでおく帯(数が多くなりがちなので。クリックで開く)
+
+
+def fukusayo_summary(store: dict | None, n_items: int = 0) -> str:
+    if not store:
+        return "一覧データ未作成(自宅PCで python src/fukusayo_index.py を実行して作成)"
+    m = store.get("meta") or {}
+    s = (f"一覧データ: {str(m.get('updated_at') or '')[:10]} 時点・製品 {n_items:,}件"
+         f"(副作用の記載の違い {m.get('bodies', 0):,}通り)")
+    if m.get("pending"):
+        s += f"。データ収集中: 添付文書 {m.get('docs', 0) - m.get('pending', 0):,}/{m.get('targets', 0):,}件を確認済み(残りは毎日の自動更新で順次)"
+    return s
+
+
+FUKU_JS = r"""
+(async function(){
+  const PDFB=__PDFB__, PACKB=__PACKB__, NB=__NB__, FOLD=__FOLD__, SER=__SER__;
+  const q=document.getElementById('q'), res=document.getElementById('res'), cnt=document.getElementById('cnt');
+  const hist=window.searchHistory?window.searchHistory({key:'tenpu-watch:fukusayo',box:document.getElementById('hist'),rerun:w=>{q.value=w;run();}}):null;
+  let data;
+  try{ data=await (await fetch('index.json')).json(); }catch(e){ cnt.textContent='一覧データを読み込めませんでした'; return; }
+  const items=data.items||[];
+  // ひらがな→カタカナ、全角→半角(NFKC)、小文字化、空白除去 でゆるく一致させる
+  const norm=s=>(s||'').normalize('NFKC').toLowerCase().replace(/[ぁ-ゖ]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/\s+/g,'');
+  items.forEach(e=>{ e._g=norm(e.g); e._n=norm(e.n); e._h=e._g+' '+e._n+' '+norm(e.c); });
+  const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const packHtml=u=>PACKB+u.substring(u.indexOf('_')+1)+'/';   // 先頭の企業コードを外すと添付文書HTML版のURLになる
+  // 中身(帯ごとの副作用)は b/00.json〜 に分けてあり、開いたときにそのファイルだけ読む
+  const files={};
+  function body(h){
+    const k=String(parseInt(h.slice(0,2),16)%NB).padStart(2,'0');
+    if(!files[k]) files[k]=fetch('b/'+k+'.json').then(r=>r.json());
+    return files[k].then(d=>d[h]);
+  }
+  let groups=[];
+  function bandHtml(b,fold){
+    const rows=b.r.map(r=>{
+      const tag=r[0]===SER?'<span class="fkser">⚠ 重大</span>':(r[0]?`<span class="fkcat">${esc(r[0])}</span>`:'');
+      return `<li>${tag}${esc(r[1])}${r[2]?` <span class="fklb">${esc(r[2])}</span>`:''}</li>`;
+    }).join('');
+    return fold&&FOLD.includes(b.f)
+      ? `<details class="fkband l${b.l}"><summary class="fkf">${esc(b.f)}(クリックで表示)</summary><ul>${rows}</ul></details>`
+      : `<div class="fkband l${b.l}"><div class="fkf">${esc(b.f)}</div><ul>${rows}</ul></div>`;
+  }
+  async function open(div){
+    const g=groups[+div.dataset.i], box=div.querySelector('.fkbody');
+    if(box.dataset.done){ box.hidden=!box.hidden; return; }
+    box.dataset.done='1'; box.hidden=false;
+    const rep=g.list[0];
+    const src=`<p class="small">出典: <a href="${esc(PDFB+rep.u)}" data-hl="${esc(rep.n)}" target="_blank" rel="noopener">📕 ${esc(rep.n)} の添付文書(PDF) ↗</a> ｜ <a href="${esc(packHtml(rep.u))}" target="_blank" rel="noopener">HTML版 ↗</a></p>`;
+    if(!g.h){ box.innerHTML='<p>この添付文書には「副作用」の章がありません。</p>'+src; return; }
+    box.innerHTML='<p class="small">読み込み中…</p>';
+    let d;
+    try{ d=await body(g.h); }catch(e){ box.innerHTML='<p class="err">読み込めませんでした。時間をおいて開き直してください。</p>'; delete box.dataset.done; return; }
+    if(!d){ box.innerHTML='<p class="err">データが見つかりませんでした。</p>'+src; return; }
+    const fold=(d.b||[]).some(b=>!FOLD.includes(b.f));   // 全部「頻度不明」の薬は畳まない(何も見えなくなるので)
+    let h=(d.b||[]).map(b=>bandHtml(b,fold)).join('');
+    if(!h) h='<p>副作用の項目が表の形で書かれていません(下の本文か添付文書を見てください)。</p>';
+    if(d.x) h+=`<details class="more"><summary>表になっていない記載を表示</summary><p class="small">${esc(d.x).replace(/\n/g,'<br>')}</p></details>`;
+    box.innerHTML=h+src;
+  }
+  res.addEventListener('click',ev=>{
+    const a=ev.target.closest('a');
+    if(a&&a.classList.contains('fkopen')){ ev.preventDefault(); const w=q.value.normalize('NFKC').trim(); if(hist&&w)hist.addQuery(w); open(a.closest('.hit')); return; }
+    if(a&&hist&&a.dataset.hl) hist.addOpen(a.dataset.hl,a.href);
+  });
+  function run(){
+    const kw=q.value.normalize('NFKC').trim().split(/\s+/).filter(Boolean).map(norm);
+    if(!kw.length){ cnt.textContent=`全${items.length.toLocaleString()}製品。薬剤名を入力してください`; res.innerHTML=''; groups=[]; if(hist)hist.show(); return; }
+    if(hist)hist.hide();
+    const k0=kw[0];
+    const hits=items.filter(e=>kw.every(k=>e._h.includes(k)));
+    hits.forEach(e=>{ e._s=(e._n.startsWith(k0)||e._g.startsWith(k0))?0:(e._g.includes(k0)||e._n.includes(k0))?1:2; });
+    hits.sort((a,b)=>a._s-b._s||a.n.localeCompare(b.n,'ja'));
+    // 副作用の記載がまったく同じ製品(後発品どうしなど)は1つにまとめる
+    const m=new Map();
+    hits.forEach(e=>{ if(!m.has(e.h)) m.set(e.h,{h:e.h,list:[]}); m.get(e.h).list.push(e); });
+    groups=[...m.values()];
+    groups.forEach(g=>{ g._s=Math.min(...g.list.map(e=>e._s)); g.g=g.list[0].g; });
+    groups.sort((a,b)=>a._s-b._s||a.g.localeCompare(b.g,'ja')||b.list.length-a.list.length||a.list[0].n.localeCompare(b.list[0].n,'ja'));
+    const total=groups.length; groups=groups.slice(0,100);
+    cnt.textContent=`${hits.length.toLocaleString()}製品・記載の違い${total.toLocaleString()}通り`+(total>100?'(先頭100通りを表示。もう少し絞ってください)':'')+'。薬の名前をクリックすると副作用が出ます';
+    res.innerHTML=groups.map((g,i)=>{
+      const e=g.list[0], n=g.list.length;
+      const same=n>1?`<details class="more"><summary>ほかに同じ記載の製品 ${n-1}件</summary><div class="sjbr">${g.list.slice(1).map(x=>`<a href="${esc(PDFB+x.u)}" data-hl="${esc(x.n)}" target="_blank" rel="noopener">${esc(x.n)} <span class="small">${esc(x.c)}</span> ↗</a>`).join('')}</div></details>`:'';
+      return `<div class="hit" data-i="${i}"><a class="fkopen" href="#">📊 ${esc(e.n)}</a><br><span class="small">${esc(e.g)} ｜ ${esc(e.c)}</span>${same}<div class="fkbody" hidden></div></div>`;
+    }).join('');
+    if(groups.length===1) open(res.querySelector('.hit'));   // 候補が1つなら最初から開く
+  }
+  q.addEventListener('input',run);
+  if(location.hash){ q.value=decodeURIComponent(location.hash.slice(1)); }
+  run();
+})();
+"""
+
+
+def render_fukusayo_page(store: dict | None, n_items: int) -> str:
+    """副作用検索。薬剤名を打つ → 候補(記載が同じ製品はまとめる) → クリックで副作用を頻度の高い順に表示。
+    中身は docs/fukusayo/b/*.json に分けてあり、開いたときに読む(全部を最初に読むと重いため)"""
+    note = fukusayo_summary(store, n_items)
+    js = (FUKU_JS.replace("__PDFB__", json.dumps(TENPU_PDF_BASE)).replace("__PACKB__", json.dumps(PACK_HTML_BASE))
+          .replace("__NB__", str(fukusayo_index.BUCKETS)).replace("__FOLD__", json.dumps(FUKU_FOLD, ensure_ascii=False))
+          .replace("__SER__", json.dumps(fukusayo_index.SERIOUS, ensure_ascii=False)))
+    return f"""
+<h1>📊 {FUKU_TITLE}</h1>
+<div class="ifbar">
+  <input id="q" type="search" placeholder="例: アムロジピン / ノルバスク / メトホルミン" autofocus autocomplete="off">
+  <a class="btn" href="{PMDA_SEARCH_URL}" target="_blank" rel="noopener" title="PMDAの医療用医薬品 情報検索を別タブで開きます">PMDAで添付文書を検索 ↗</a>
+</div>
+<details class="help" open><summary>使い方</summary><p class="small">薬剤名(一般名・販売名)を入れて候補をクリックすると、添付文書の「副作用」に書いてある項目を<b>頻度(%)の高い順</b>に並べて出します。
+<span class="fkser">⚠ 重大</span>=重大な副作用、灰色の枠=臓器などの区分(肝臓・消化器など)。「頻度不明」は数が多いので畳んであります(クリックで表示)。
+副作用の書き方がまったく同じ製品(後発品どうしなど)は1つにまとめて「ほかに同じ記載の製品 ◯件」と出します。ひらがな/全角半角の違いは気にしなくてOK。</p></details>
+<p class="small" id="cnt"></p>
+<div id="hist"></div>
+<div id="res"></div>
+<p class="small" id="ifmeta">{esc(note)}。元データは<a href="{TENPULIST_URL}" target="_blank" rel="noopener">PMDAの添付文書 ↗</a>の「11. 副作用」の章(自宅PCの自動更新が、改版された添付文書を毎日確認して差し替えます)。
+<b>添付文書の副作用は、ほとんどが「5%以上」「1～5%未満」のような幅(帯)で書かれています。</b>項目ごとのピッタリの%は、書いてある添付文書のぶんだけ出ます。
+同じ帯の中の並びは添付文書の表の順です(帯の中での多い・少ないは分かりません)。表の形になっていない古い書き方の添付文書は、本文をそのまま載せています。
+<b>必ず最新の添付文書で確認してください。</b></p>
+<script src="../assets/hist.js"></script>
+<script>{js}</script>
+"""
+
+
 # ---------------------------------------------------------------- 透析投薬ガイドライン検索(白鷺病院)
 def touseki_summary(idx: dict | None) -> str:
     if not idx:
@@ -1111,7 +1255,8 @@ def render_home(cfg: dict, days: list[dict], tools: list[dict]) -> str:
 def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = None,
                    tenpu_idx: dict | None = None, shiki: dict | None = None,
                    shiki_rows: int = 0, touseki_idx: dict | None = None,
-                   chuui: dict | None = None, chuui_items: dict[str, list[dict]] | None = None) -> str:
+                   chuui: dict | None = None, chuui_items: dict[str, list[dict]] | None = None,
+                   fuku_note: str = "") -> str:
     # 1項目=1つの枠(<section class="box">)で囲む。見た目は CSS の .box(2026-09-26 指示: 項目が増えて探しづらいので)
     out = [f"<h1>💊 {SITE_TITLE}</h1>"]
     boxes = [out]  # boxes[0]=ページ見出し、boxes[1:]=各項目の中身(最後にそれぞれ枠で包んでつなげる)
@@ -1180,6 +1325,11 @@ def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = No
     out.append('<p>錠剤・カプセルに印字されている記号(識別コード)から薬を探せます。'
                f'<span class="small">{esc(shiki_summary(shiki, shiki_rows))}</span></p>'
                '<p><a href="shikibetsu/index.html">検索ページへ →</a></p>')
+    # 副作用検索は「ときどき使う」ので識別コード検索の下・透析投薬ガイドライン検索の上(2026-10-25 指示)
+    out = _box(f"<h2>📊 {FUKU_TITLE}</h2>")
+    out.append('<p>薬剤名を入れると、添付文書の「副作用」の項目を頻度(%)の高い順に並べて確認できます(重大な副作用は⚠マーク)。'
+               f'<span class="small">{esc(fuku_note)}</span></p>'
+               '<p><a href="fukusayo/index.html">検索ページへ →</a></p>')
     # 並び順は使用頻度の高い順(識別コード検索の下に透析投薬ガイドライン検索。2026-09-12 指示)
     out = _box(f"<h2>🩸 {TOUSEKI_TITLE}</h2>")
     out.append('<p>白鷺病院「透析患者に対する投薬ガイドライン」の薬剤別PDF(透析患者・保存期CKD患者への投与方法の目安)を、薬剤名(商品名・一般名)で探せます。'
@@ -1222,6 +1372,8 @@ def build(root: Path) -> None:
     touseki_idx = load_if_index(root, "touseki_index.json")
     chuui = load_if_index(root, "chuui_index.json")
     chuui_items = {th: chuui_index.build_items(tenpu_idx, chuui, th) for th in CHUUI_PAGES}
+    fuku = fukusayo_index.load(root)
+    fuku_items, fuku_files = fukusayo_index.site_data(tenpu_idx, fuku)
     global HOME_TITLE
     HOME_TITLE = home.get("title") or HOME_TITLE   # ヘッダー左上のロゴ名も home.json の title に合わせる
 
@@ -1342,6 +1494,22 @@ def build(root: Path) -> None:
     (docs / "shikibetsu" / "index.html").write_text(
         layout(SHIKI_TITLE, render_shikibetsu_page(shiki, len(shiki_rows), n_img_rows), "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
 
+    # 副作用検索(添付文書一覧×副作用の記録の突き合わせ。中身は b/00.json〜 に分けて、開いたときに読む。データが無ければページだけ作る)
+    fdir = docs / "fukusayo"
+    (fdir / "b").mkdir(parents=True, exist_ok=True)
+    (fdir / "index.json").write_text(
+        json.dumps({"meta": {"updated_at": str(((fuku or {}).get("meta") or {}).get("updated_at") or "")[:10]},
+                    "items": fuku_items}, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8", newline="\n")
+    for k, v in fuku_files.items():
+        (fdir / "b" / f"{k}.json").write_text(json.dumps(v, ensure_ascii=False, separators=(",", ":")), encoding="utf-8", newline="\n")
+    for f in (fdir / "b").glob("*.json"):
+        if f.stem not in fuku_files:   # BUCKETS を減らしたときの古いファイル
+            f.unlink()
+    (fdir / "index.html").write_text(
+        layout(FUKU_TITLE, render_fukusayo_page(fuku, len(fuku_items)), "../", dates, None, built_at, tools, side=False),
+        encoding="utf-8", newline="\n")
+
     # 透析投薬ガイドライン検索(データは data/touseki_index.json の写し。無ければページだけ作る)
     (docs / "touseki").mkdir(parents=True, exist_ok=True)
     (docs / "touseki" / "index.json").write_text(
@@ -1366,14 +1534,15 @@ def build(root: Path) -> None:
 
     (docs / "toolbox").mkdir(parents=True, exist_ok=True)
     (docs / "toolbox" / "index.html").write_text(
-        layout(SITE_TITLE, render_toolbox(days, tools, if_idx, tenpu_idx, shiki, len(shiki_rows), touseki_idx, chuui, chuui_items).replace('href="watch/', 'href="../watch/').replace('href="tools/', 'href="../tools/').replace('href="if/', 'href="../if/').replace('href="tenpu/', 'href="../tenpu/').replace('href="shikibetsu/', 'href="../shikibetsu/').replace('href="touseki/', 'href="../touseki/').replace('href="shujutsu/', 'href="../shujutsu/').replace('href="zouei/', 'href="../zouei/'),
+        layout(SITE_TITLE, render_toolbox(days, tools, if_idx, tenpu_idx, shiki, len(shiki_rows), touseki_idx, chuui, chuui_items,
+                                         fukusayo_summary(fuku, len(fuku_items))).replace('href="watch/', 'href="../watch/').replace('href="tools/', 'href="../tools/').replace('href="if/', 'href="../if/').replace('href="tenpu/', 'href="../tenpu/').replace('href="shikibetsu/', 'href="../shikibetsu/').replace('href="fukusayo/', 'href="../fukusayo/').replace('href="touseki/', 'href="../touseki/').replace('href="shujutsu/', 'href="../shujutsu/').replace('href="zouei/', 'href="../zouei/'),
                "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
     (docs / "index.html").write_text(
         layout(home.get("title") or HOME_TITLE, render_home(home, days, tools), "", dates, None, built_at, tools, side=False),
         encoding="utf-8", newline="\n")
     print(f"site built: {len(days)} days, {len(search_rows)} entries, {len(tools)} tools, "
           f"IF {len((if_idx or {}).get('items') or [])}, 添付文書 {len((tenpu_idx or {}).get('items') or [])}, "
-          f"識別コード {len(shiki_rows)}, 透析GL {len((touseki_idx or {}).get('items') or [])}, 術前休薬 {len(chuui_items["shujutsu"])}, 造影剤 {len(chuui_items["zouei"])} -> {docs}")
+          f"識別コード {len(shiki_rows)}, 副作用 {len(fuku_items)}, 透析GL {len((touseki_idx or {}).get('items') or [])}, 術前休薬 {len(chuui_items["shujutsu"])}, 造影剤 {len(chuui_items["zouei"])} -> {docs}")
 
 
 if __name__ == "__main__":
