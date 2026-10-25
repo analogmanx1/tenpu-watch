@@ -92,6 +92,17 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .fkcat{display:inline-block;font-size:.78rem;color:var(--mut);border:1px solid var(--line);border-radius:.6rem;padding:0 .45rem;margin-right:.35rem;vertical-align:.08rem}
 .fkser{display:inline-block;font-size:.78rem;color:#fff;background:var(--imp);border-radius:.6rem;padding:0 .45rem;margin-right:.35rem;vertical-align:.08rem}
 .fklb{font-size:.8rem;color:var(--mut)}
+/* ---- 薬理作用検索: 見出しの深さ .yr1(18.1 など)〜.yr3、作用機序の枠の色は --acc ---- */
+.yrsec{margin:.5rem 0;padding:.1rem 0 .1rem .7rem;border-left:4px solid var(--line)}.yrsec.moa{border-left-color:var(--acc)}
+.yrsec>.yr1{font-weight:700;font-size:1rem;margin:.1rem 0 .2rem}.yrsec.moa>.yr1{color:var(--acc)}
+.yrsec>summary.yr1{list-style:none}.yrsec>summary.yr1::-webkit-details-marker{display:none}
+.yrsec>summary.yr1::after{content:" ▾";font-weight:400;color:var(--mut)}.yrsec[open]>summary.yr1::after{content:" ▴"}
+.yr2{font-weight:600;font-size:.95rem;margin:.45rem 0 .1rem}.yr3{font-weight:600;font-size:.9rem;margin:.35rem 0 .1rem .6rem;color:var(--mut)}
+.yrsec p{margin:.2rem 0;font-size:.95rem}.yrsec ul{margin:.2rem 0;padding-left:1.2rem;font-size:.95rem}
+.yrsec .yrn,.yrsec .yrg{font-size:.85rem;color:var(--mut)}
+table.yrt{border-collapse:collapse;margin:.3rem 0;font-size:.88rem;display:block;overflow-x:auto;max-width:100%}
+table.yrt td{border:1px solid var(--line);padding:.2rem .45rem;vertical-align:top}table.yrt caption{text-align:left;font-weight:600;font-size:.88rem;padding:.1rem 0}
+.yrlinks{margin:.6rem 0 .1rem;font-size:.9rem}.yrlinks a{display:inline-block;margin-right:.9rem}
 /* ---- 添付文書検索の薬価(規格が YAKKA_OPEN_MAX 個までは表、多いと畳む) ---- */
 .yk{margin-top:.25rem;font-size:.92rem}
 table.yk{border-collapse:collapse;margin:.1rem 0 0 .4rem}table.yk td{padding:.05rem 1rem .05rem 0;vertical-align:top}
@@ -118,5 +129,6 @@ table.arch td,table.arch th,table.del td,table.del th{padding:.35rem .4rem}
 .tierbtn{min-height:calc(var(--tap) - 8px);padding:.35rem .9rem}.tiers select{margin-left:0;min-height:calc(var(--tap) - 8px)}
 .sjbr a{display:block;padding:.35rem 0;margin:0}
 .fkopen{display:inline-block;padding:.2rem 0;line-height:1.45}.fkband{padding-left:.55rem}.fkband>summary.fkf{padding:.3rem 0}
+.yrsec{padding-left:.55rem}.yrsec>summary.yr1{padding:.3rem 0}.yrlinks a{display:block;padding:.35rem 0;margin:0}
 table.yk{margin-left:0}table.yk td{padding:.15rem .6rem .15rem 0}details.yk>summary{padding:.3rem 0}
 }

@@ -187,14 +187,15 @@ def _hash(body: dict) -> str:
     return hashlib.sha1(json.dumps(body, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()[:12]
 
 
-def load(root: Path) -> dict | None:
-    f = Path(root) / "data" / OUT_NAME
+def load(root: Path, name: str = OUT_NAME) -> dict | None:
+    """data/◯◯.json を読む(薬理作用検索の yakuri_index.py も同じ形のファイルをこれで読む)"""
+    f = Path(root) / "data" / name
     if not f.exists():
         return None
     try:
         return json.loads(f.read_text(encoding="utf-8"))
     except Exception as e:  # noqa: BLE001
-        log(f"!! data/{OUT_NAME} を読めませんでした({e})")
+        log(f"!! data/{name} を読めませんでした({e})")
         return None
 
 
