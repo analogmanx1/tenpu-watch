@@ -1,12 +1,12 @@
 {
 "meta": {
-"fetched_at": "2026-11-06 06:29:53",
+"fetched_at": "2026-11-07 05:55:48",
 "source": "https://www.shirasagi-hp.or.jp/goda/fmly/gate.html",
 "edition": "13th Edition",
 "db_updated": "2026年9月4日",
 "count": 2074,
 "links": 2262,
-"with_generic": 1739,
+"with_generic": 1738,
 "requests": 46,
 "warnings": [],
 "rows": {
@@ -4030,9 +4030,6 @@
 ],
 "r": [
 "e"
-],
-"g": [
-"サナクターゼ配合剤"
 ]
 },
 {
