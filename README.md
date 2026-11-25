@@ -22,8 +22,8 @@ PMDA「過去1週間以内に更新された添付文書情報」を毎日自動
 
 ## サイトの階層
 ```
-トップ(ホーム)「ファーマビット」 docs/index.html ← 入口。サイト名・項目は site/home.json で管理(1項目=1カード)
- └ 💊 薬剤師ツールボックス  docs/toolbox/   ← 添付文書ウォッチのまとめ + ツール一覧
+トップ(ホーム)「ファーマビット」 docs/index.html ← 入口。サイト名・項目は site/home.json で管理(live: toolbox の項目は機能タイルをそのまま並べる。それ以外は1項目=1カード)
+ └ 💊 薬剤師ツールボックス  docs/toolbox/   ← 機能タイル(アイコン+名前。タップでその機能へ。build_site.py の feature_tiles。ウォッチのタイルだけ更新件数のバッジつき)
      ├ 📄 添付文書ウォッチ  docs/watch/     ← 日別ページ・バックナンバー・検索(自動生成)
      ├ 📕 添付文書検索      docs/tenpu/     ← 薬剤名→候補→クリックで添付文書(PDF)。候補に規格ごとの薬価つき。データは data/tenpu_index.json(毎日0:15自動更新)+薬価 data/yakka_index.json(同)× data/yj_index.json(PC側タスク)
      ├ 📘 インタビューフォーム検索 docs/if/ ← 薬剤名→候補→クリックでIF(PDF)。データは data/if_index.json(毎日0:15自動更新)
@@ -33,13 +33,14 @@ PMDA「過去1週間以内に更新された添付文書情報」を毎日自動
      ├ 🩸 透析投薬ガイドライン検索 docs/touseki/ ← 薬剤名→候補→クリックで白鷺病院「透析患者に対する投薬ガイドライン」のPDF。データは data/touseki_index.json(毎日0:15自動更新)
      ├ 🏥 術前休薬・禁忌チェック docs/shujutsu/ ← 添付文書に手術時の禁忌・休薬などの記載がある薬の一覧(一般名ごと・絞り込みつき)。データは data/chuui_index.json(PC側タスクが毎日差分更新)
      ├ 💉 造影剤チェック      docs/zouei/     ← 同じ型で「造影剤を使うときの休薬・併用注意」の一覧(+造影剤側の添付文書に書いてある相手の薬)。データは同じ data/chuui_index.json
-     └ 🧮 ツール            docs/tools/     ← 計算機など(HTMLを置くだけで自動掲載)
+     └ 🧮 ツール            docs/tools/     ← 計算機など(HTMLを置くだけで自動掲載。タイルのアイコンは <meta name="tile-emoji">)
+         📈 蓄積率計算 / 📅 日数計算(薬はいつまで?) / 🧪 血液透析による薬物除去率 / 💧 ガンマ計算
 ```
 トップに別の機能を足すときは `site/home.json` の `sections` に1つ追加:
 ```json
 {"emoji": "🎮", "title": "○○", "desc": "説明", "href": "xxx/index.html"}
 ```
-(`href` は docs/ からの相対パス。`live: "toolbox"` を付けると最新の更新状況が1行出る)
+(`href` は docs/ からの相対パス。`live: "toolbox"` の項目は、カードの代わりに薬剤師ツールボックスの機能タイルを並べる)
 
 ## フォルダ
 | 場所 | 中身 | 手で触る? |

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<!-- ▼ title と description が、トップページのタイルとメニューに自動で載ります(tile-emoji=タイルのアイコン) -->
+<title>日数計算（薬はいつまで？） | 薬剤師ツールボックス</title>
+<meta name="description" content="開始日と日数から「薬が何日まであるか」、2つの日付から「何日分あれば足りるか」を計算。開始日を1日目に数えるか・翌日からかを切り替えられる">
+<meta name="tile-emoji" content="📅">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+/* 日数計算(2026-11-25 依頼: 退院日+30日分 → 何日まで? / A日〜B日 → 何日分?)。
+   サイト共通CSSと干渉しないよう .dapp の中に閉じ込める。色はサイト共通の変数(--acc等)でダークモードにも追従 */
+.dapp{max-width:520px;margin:.8rem 0 1rem;color:var(--fg);font-size:15px;line-height:1.45;-webkit-tap-highlight-color:transparent}
+.dapp p{margin:0}
+.dapp button{margin:0;font-family:inherit}
+.dapp .panel{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 16px 16px;margin-bottom:14px}
+.dapp .panel h2{font-size:1.1rem;margin:0 0 10px;padding:0;border:0}
+
+/* 数え方の切り替え(①②共通) */
+.dapp .count-toggle{display:flex;border:2px solid var(--acc);border-radius:10px;overflow:hidden}
+.dapp .count-btn{flex:1;border:none;background:var(--bg);color:var(--acc);font-size:15px;font-weight:bold;padding:10px 4px;cursor:pointer;line-height:1.3}
+.dapp .count-btn small{display:block;font-size:11.5px;font-weight:normal;margin-top:2px}
+.dapp .count-btn.active{background:var(--acc);color:var(--bg)}
+
+/* 入力欄 */
+.dapp .field{margin-bottom:12px}
+.dapp .field label{display:block;font-weight:bold;font-size:14px;margin:0 0 6px}
+.dapp .input-row{display:flex;align-items:center;gap:8px}
+.dapp .input-row input{flex:1;min-width:0;max-width:none;width:auto;font-size:20px;padding:10px 12px;border:2px solid var(--line);border-radius:10px;font-family:inherit;background:var(--bg);color:var(--fg)}
+.dapp .input-row input:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 3px rgba(42,98,184,.18)}
+.dapp .unit{font-size:16px;font-weight:bold;color:var(--mut);min-width:3.2em}
+.dapp .today-btn{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:10px;font-size:13px;padding:0 10px;min-height:44px;cursor:pointer;white-space:nowrap}
+.dapp .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+.dapp .chip{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;font-size:13px;padding:5px 11px;cursor:pointer}
+.dapp .chip:active,.dapp .today-btn:active{transform:translateY(1px)}
+
+/* 結果 */
+.dapp .result-box{border-radius:12px;padding:12px 14px 14px;text-align:center;background:var(--card);border:3px solid var(--acc);margin-top:6px}
+.dapp .result-label{font-size:14px;font-weight:bold;color:var(--acc)}
+.dapp .result-main{font-size:30px;font-weight:bold;margin-top:2px;color:var(--fg)}
+.dapp .result-main .u{font-size:20px;color:var(--acc);margin-left:4px}
+.dapp .result-detail{font-size:13.5px;color:var(--fg);margin-top:8px;text-align:left;background:var(--bg);border-radius:8px;padding:8px 11px;line-height:1.6}
+.dapp .result-box.wait{border-style:dashed;border-color:var(--line)}
+.dapp .result-box.wait .result-main{font-size:16px;color:var(--mut);font-weight:normal}
+.dapp .result-box.err{border-color:#c62828}
+.dapp .result-box.err .result-main{font-size:16px;color:#c62828}
+</style>
+</head>
+<body>
+<!-- 共通ヘッダー(自動差し込み。触らなくてOK) -->
+<div id="site-nav" data-rel="../"></div>
+<div class="wrap">
+<main class="main calc">
+  <h1>📅 日数計算（薬はいつまで？）</h1>
+
+  <div class="dapp">
+    <!-- 数え方(①②共通)。既定=入力した日を1日目にする -->
+    <div class="panel">
+      <div class="count-toggle" role="group" aria-label="数え方">
+        <button type="button" class="count-btn active" data-mode="0">その日から飲む<small>入力した日＝1日目</small></button>
+        <button type="button" class="count-btn" data-mode="1">翌日から飲む<small>入力した日の次の日＝1日目</small></button>
+      </div>
+    </div>
+
+    <!-- ① 開始日＋日数 → 最後に飲む日 -->
+    <div class="panel">
+      <h2>① 〇日分は、いつまで？</h2>
+      <div class="field">
+        <label for="a1">開始日（退院日・処方日など）</label>
+        <div class="input-row"><input id="a1" type="date"><button type="button" class="today-btn" data-for="a1">今日</button></div>
+      </div>
+      <div class="field">
+        <label for="n1">日数</label>
+        <div class="input-row"><input id="n1" type="number" inputmode="numeric" min="1" step="1" placeholder="例: 30"><span class="unit">日分</span></div>
+        <div class="chips">
+          <button type="button" class="chip" data-n="7">7日</button><button type="button" class="chip" data-n="14">14日</button>
+          <button type="button" class="chip" data-n="28">28日</button><button type="button" class="chip" data-n="30">30日</button>
+          <button type="button" class="chip" data-n="56">56日</button><button type="button" class="chip" data-n="60">60日</button>
+          <button type="button" class="chip" data-n="90">90日</button>
+        </div>
+      </div>
+      <div class="result-box wait" id="r1"><p class="result-main">開始日と日数を入れてください</p></div>
+    </div>
+
+    <!-- ② 日付A〜日付B → 何日分 -->
+    <div class="panel">
+      <h2>② この期間に、何日分いる？</h2>
+      <div class="field">
+        <label for="a2">開始日（日付A）</label>
+        <div class="input-row"><input id="a2" type="date"><button type="button" class="today-btn" data-for="a2">今日</button></div>
+      </div>
+      <div class="field">
+        <label for="b2">最後に飲む日（日付B）</label>
+        <div class="input-row"><input id="b2" type="date"></div>
+      </div>
+      <div class="result-box wait" id="r2"><p class="result-main">2つの日付を入れてください</p></div>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    const $=id=>document.getElementById(id);
+    const WD='日月火水木金土';
+    let mode=0;   // 0=入力した日を1日目にする / 1=翌日を1日目にする
+    try{const m=localStorage.getItem('days-count-mode');if(m==='1')mode=1;}catch(e){}
+
+    // input[type=date] の値(YYYY-MM-DD)を、時差の影響を受けないよう「その国の日付」で作る
+    function parse(v){const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(v||'');return m?new Date(+m[1],+m[2]-1,+m[3]):null;}
+    function addDays(d,n){const x=new Date(d.getFullYear(),d.getMonth(),d.getDate());x.setDate(x.getDate()+n);return x;}
+    // 日数の差(夏時間などの影響を受けないよう、UTCの日付どうしで引き算)
+    function diff(a,b){return Math.round((Date.UTC(b.getFullYear(),b.getMonth(),b.getDate())-Date.UTC(a.getFullYear(),a.getMonth(),a.getDate()))/864e5);}
+    function iso(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+    function fmt(d){return d.getFullYear()+'年'+(d.getMonth()+1)+'月'+d.getDate()+'日('+WD[d.getDay()]+')';}
+    function short(d){return (d.getMonth()+1)+'/'+d.getDate()+'('+WD[d.getDay()]+')';}
+    function show(id,cls,html){const r=$(id);r.className='result-box'+(cls?' '+cls:'');r.innerHTML=html;}
+
+    function calc1(){
+      const s=parse($('a1').value), n=parseInt($('n1').value,10);
+      if(!s||!$('n1').value){show('r1','wait','<p class="result-main">開始日と日数を入れてください</p>');return;}
+      if(!(n>=1)||String(n)!==$('n1').value.trim()){show('r1','err','<p class="result-main">日数は1以上の整数で入れてください</p>');return;}
+      const first=addDays(s,mode), last=addDays(first,n-1), next=addDays(last,1);
+      show('r1','','<p class="result-label">最後に飲む日</p><p class="result-main">'+fmt(last)+'</p>'
+        +'<p class="result-detail">1日目＝'+short(first)+' 〜 '+n+'日目＝'+short(last)+'<br>次の薬が必要な日：<b>'+fmt(next)+'</b></p>');
+    }
+    function calc2(){
+      const a=parse($('a2').value), b=parse($('b2').value);
+      if(!a||!b){show('r2','wait','<p class="result-main">2つの日付を入れてください</p>');return;}
+      const first=addDays(a,mode), n=diff(first,b)+1;
+      if(n<1){show('r2','err','<p class="result-main">'+(mode&&diff(a,b)===0?'「翌日から飲む」では、日付Bは日付Aより後にしてください':'日付Bは日付Aより後の日にしてください')+'</p>');return;}
+      show('r2','','<p class="result-label">必要な日数</p><p class="result-main">'+n+'<span class="u">日分</span></p>'
+        +'<p class="result-detail">1日目＝'+short(first)+' 〜 '+n+'日目＝'+short(b)+'</p>');
+    }
+    function calcAll(){calc1();calc2();}
+
+    function setMode(m){
+      mode=m;
+      document.querySelectorAll('.count-btn').forEach(b=>b.classList.toggle('active',+b.dataset.mode===m));
+      try{localStorage.setItem('days-count-mode',String(m));}catch(e){}
+      calcAll();
+    }
+    document.querySelectorAll('.count-btn').forEach(b=>b.addEventListener('click',()=>setMode(+b.dataset.mode)));
+    document.querySelectorAll('.today-btn').forEach(b=>b.addEventListener('click',()=>{$(b.dataset.for).value=iso(new Date());calcAll();}));
+    document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{$('n1').value=b.dataset.n;calc1();}));
+    ['a1','n1'].forEach(id=>$(id).addEventListener('input',calc1));
+    ['a2','b2'].forEach(id=>$(id).addEventListener('input',calc2));
+
+    // 開いたときは開始日に今日を入れておく
+    $('a1').value=$('a2').value=iso(new Date());
+    setMode(mode);
+  })();
+  </script>
+
+  <footer class="foot"><p>個人用ツール。計算結果は参考値です。</p></footer>
+</main>
+</div>
+<script src="../assets/nav.js"></script>
+</body>
+</html>

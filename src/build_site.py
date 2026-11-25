@@ -150,7 +150,9 @@ def scan_tools(docs: Path) -> list[dict]:
         title = html.unescape(m.group(1)).split("|")[0].strip() if m else f.stem
         m2 = re.search(r'<meta\s+name="description"\s+content="(.*?)"', txt, flags=re.S | re.I)
         desc = html.unescape(m2.group(1)).strip() if m2 else ""
-        out.append({"file": f.name, "title": title, "desc": desc})
+        m3 = re.search(r'<meta\s+name="tile-emoji"\s+content="(.*?)"', txt, flags=re.S | re.I)   # 機能タイルのアイコン
+        out.append({"file": f.name, "title": title, "desc": desc,
+                    "emoji": html.unescape(m3.group(1)).strip() if m3 else ""})
     return out
 
 
@@ -444,6 +446,17 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 @media (prefers-color-scheme:dark){:root{--boxline:#3a4048}}
 .box{border:1px solid var(--boxline);border-radius:.7rem;padding:.1rem 1.1rem .9rem;margin:1rem 0;background:var(--card)}
 .box>h2{margin:.7rem 0 .4rem}.box>:last-child{margin-bottom:0}.box .card{background:var(--bg)}
+/* ---- 機能タイル(ホーム・ツールボックスのトップ。feature_tiles)。タイルの大きさは --tile(PC) / --tilem(スマホ) の1か所で変える ---- */
+:root{--tile:124px;--tilem:96px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--tile),1fr));gap:.75rem;margin:.8rem 0 1.4rem}
+.tile{display:flex;flex-direction:column;align-items:center;gap:.35rem;padding:1rem .35rem .8rem;border:1px solid var(--boxline);border-radius:1rem;background:var(--card);color:var(--fg);text-decoration:none;text-align:center;line-height:1.3}
+.tile:hover{border-color:var(--acc);text-decoration:none}.tile:active{transform:scale(.97)}
+.tile .ico{font-size:calc(var(--tile) * .36);line-height:1.1}
+.tile .nm{font-size:.86rem;font-weight:600;word-break:auto-phrase}
+.tile .tb{display:inline-block;font-size:.7rem;font-weight:600;line-height:1.5;padding:0 .5rem;border-radius:1rem;background:var(--acc);color:#fff}
+.tile .tb.imp{background:var(--imp)}
+@media (prefers-color-scheme:dark){.tile .tb{color:#111}}
+h2.tileh{margin:1rem 0 .2rem;font-size:1.1rem}
 .calc{max-width:640px}.calc label{display:block;margin:.6rem 0 .2rem;font-weight:600}.calc input,.calc select{font-size:1rem;padding:.35rem .5rem;border:1px solid var(--line);border-radius:.4rem;background:var(--bg);color:var(--fg);width:100%;max-width:320px}
 .calc .result{margin-top:1rem;padding:.8rem 1rem;border-radius:.5rem;background:var(--card);border:1px solid var(--line);font-size:1.05rem}.calc .result b{font-size:1.3rem}
 /* ---- 術前休薬・禁忌チェック: 区分の色は --k0(禁忌) --k1(手術時の対応あり) --k2(その他)、該当文のマーカーは --hl ---- */
@@ -508,6 +521,7 @@ ul.uplist li{padding:.2rem 0}.entry{padding:.65rem .75rem}
 table.arch td,table.arch th,table.del td,table.del th{padding:.35rem .4rem}
 .cards{grid-template-columns:1fr}
 .box{padding:.1rem .8rem .8rem;margin:.8rem 0}
+.tiles{grid-template-columns:repeat(auto-fill,minmax(var(--tilem),1fr));gap:.55rem}.tile{padding:.8rem .25rem .65rem}.tile .ico{font-size:calc(var(--tilem) * .38)}.tile .nm{font-size:.8rem}
 .tierbtn{min-height:calc(var(--tap) - 8px);padding:.35rem .9rem}.tiers select{margin-left:0;min-height:calc(var(--tap) - 8px)}
 .sjbr a{display:block;padding:.35rem 0;margin:0}
 .fkopen{display:inline-block;padding:.2rem 0;line-height:1.45}.fkband{padding-left:.55rem}.fkband>summary.fkf{padding:.3rem 0}
@@ -1258,8 +1272,8 @@ def render_touseki_page(idx: dict | None) -> str:
 
 # ---------------------------------------------------------------- 「◯◯のとき注意する薬」チェック(術前休薬・禁忌チェック/造影剤チェック)
 # テーマごとのページ設定。拾う言葉・仕分けの条件は src/chuui_index.py の THEMES、ここは見せ方(名前・区分名・説明文)だけ。
-# テーマを足すとき: chuui_index.THEMES に1つ足す → ここに1つ足す → top_nav と render_toolbox と README の並びに足す
-# (render_toolbox の項目は CHUUI_PAGES をループして自動で1枠ずつ並ぶ。ほかの新機能は _box() で枠を作ってから中身を足す)
+# テーマを足すとき: chuui_index.THEMES に1つ足す → ここに1つ足す → top_nav と README の並びに足す
+# (機能タイル feature_tiles は CHUUI_PAGES をループして自動で1枚ずつ並ぶ。ほかの新機能は feature_tiles の items に1行足す)
 #   tiers: 区分の名前(番号は chuui_index の TIER_*: 0=禁忌 1=対応あり 2=その他 3=使う側の添付文書の記載)
 #   on   : 最初から表示しておく区分(それ以外は畳んでおく)
 CHUUI_PAGES: dict[str, dict] = {
@@ -1276,7 +1290,7 @@ CHUUI_PAGES: dict[str, dict] = {
         "toolbox": "添付文書に「手術時は禁忌」「手術前は休薬・中止」などの記載がある薬を、一般名ごとの一覧で確認できます。",
     },
     "zouei": {
-        "dir": "zouei", "emoji": "💉", "title": ZOUEI_TITLE,
+        "dir": "zouei", "emoji": "💉", "title": ZOUEI_TITLE, "tile": "造影剤チェック",   # tile=機能タイルに出す短い名前
         "tiers": ["🚫 禁忌", "⏸ 造影剤使用時の対応あり", "📎 その他", "🧪 造影剤側の添付文書の記載"],
         "on": [0, 1, 3],   # 件数が少ないので🧪も最初から開いておく(2026-09-20 指示)。畳むのは📎だけ
         "placeholder": "例: メトホルミン / メトグルコ / ビグアナイド / 48時間",
@@ -1382,137 +1396,63 @@ def render_chuui_page(theme: str, store: dict | None, items: list[dict]) -> str:
 """
 
 
-def toolbox_live(days: list[dict]) -> str:
-    """トップのカードに出す一行(最新の更新状況)"""
-    if not days:
-        return "まだデータがありません"
-    d = days[0]
-    ups = d.get("updates") or []
-    n_imp = sum(1 for u in ups if render_entry(u)[1])
-    return (f"{WATCH_TITLE}: {fmt_date(d['date'])} 更新{sum(1 for u in ups if u.get('reason') == '更新')}件・"
-            f"新規{sum(1 for u in ups if u.get('reason') == '新規')}件" + (f"・⚠重要{n_imp}件" if n_imp else ""))
+def feature_tiles(rel: str, days: list[dict], tools: list[dict]) -> str:
+    """ホームとツールボックスのトップに並べる「機能タイル」(アイコン+名前。タップでその機能のページへ)。
+    2026-11-25 指示: 機能が増えて文字とスクロールが多くなったので、スマホのホーム画面のようなタイルにする。
+    並び順は使用頻度の高い順(top_nav のプルダウン・README の階層図と同じ順にそろえる)。
+    添付文書ウォッチのタイルにだけ、最新の記録日と更新件数の小さいバッジを付ける。
+    手作りツール(tools/*.html)のアイコンは、そのHTMLの <meta name="tile-emoji" content="…"> で決める(無ければ🧮)。
+    タイルの大きさは CSS の --tile(PC) / --tilem(スマホ) の1か所で変える"""
+    badge = ""
+    if days:
+        d = days[0]
+        ups = d.get("updates") or []
+        n_imp = sum(1 for u in ups if render_entry(u)[1])
+        _, m, dd = d["date"].split("-")
+        badge = (f'<span class="tb">{int(m)}/{int(dd)} 更新{len(ups)}件</span>'
+                 + (f'<span class="tb imp">⚠重要{n_imp}件</span>' if n_imp else ""))
+    items = [
+        ("📄", WATCH_TITLE, "watch/index.html", badge),
+        ("📕", TENPU_TITLE, "tenpu/index.html", ""),
+        ("📘", IF_TITLE, "if/index.html", ""),
+        ("🔎", SHIKI_TITLE, "shikibetsu/index.html", ""),
+        ("📊", FUKU_TITLE, "fukusayo/index.html", ""),
+        ("🧬", YAKURI_TITLE, "yakuri/index.html", ""),
+        ("🩸", TOUSEKI_TITLE, "touseki/index.html", ""),
+    ]
+    for pg in CHUUI_PAGES.values():
+        items.append((pg["emoji"], pg.get("tile") or pg["title"], f'{pg["dir"]}/index.html', ""))
+    items += [(t.get("emoji") or "🧮", t["title"], f'tools/{t["file"]}', "") for t in tools]
+    return '<div class="tiles">' + "".join(
+        f'<a class="tile" href="{rel}{esc(href)}"><span class="ico" aria-hidden="true">{ico}</span>'
+        f'<span class="nm">{esc(name)}</span>{b}</a>' for ico, name, href, b in items) + "</div>"
 
 
 def render_home(cfg: dict, days: list[dict], tools: list[dict]) -> str:
+    """トップ(入口)。site/home.json の項目のうち live=toolbox の項目は、カードではなく機能タイルをそのまま並べる
+    (2026-11-25 指示: 1タップ減らす)。それ以外の項目(将来のカテゴリ)は今までどおりカード"""
     out = [f"<h1>{esc(cfg.get('title') or HOME_TITLE)}</h1>"]
     if cfg.get("lead"):
         out.append(f'<p class="small">{esc(cfg["lead"])}</p>')
     cards = []
     for sec in cfg.get("sections") or []:
-        live = ""
         if sec.get("live") == "toolbox":
-            live = f'<span class="small">{esc(toolbox_live(days))}</span>'
-        elif sec.get("live"):
-            live = f'<span class="small">{esc(sec["live"])}</span>'
+            out.append(f'<h2 class="tileh">{esc(sec.get("emoji") or "")} {esc(sec.get("title") or "")}</h2>')
+            out.append(feature_tiles("", days, tools))
+            continue
+        live = f'<span class="small">{esc(sec["live"])}</span>' if sec.get("live") else ""
         cards.append(f'<a class="card big" href="{esc(sec.get("href") or "#")}">'
                      f'<b>{esc(sec.get("emoji") or "")} {esc(sec.get("title") or "")}</b>'
                      f'<span class="small">{esc(sec.get("desc") or "")}</span>{live}</a>')
-    out.append('<div class="cards">' + "".join(cards) + "</div>")
-    out.append('<p class="small">項目の追加・並べ替えは <code>site/home.json</code> を編集(README参照)。</p>')
+    if cards:
+        out.append('<div class="cards">' + "".join(cards) + "</div>")
     return "\n".join(out)
 
 
-def render_toolbox(days: list[dict], tools: list[dict], if_idx: dict | None = None,
-                   tenpu_idx: dict | None = None, shiki: dict | None = None,
-                   shiki_rows: int = 0, touseki_idx: dict | None = None,
-                   chuui: dict | None = None, chuui_items: dict[str, list[dict]] | None = None,
-                   fuku_note: str = "", yakuri_note: str = "") -> str:
-    # 1項目=1つの枠(<section class="box">)で囲む。見た目は CSS の .box(2026-09-26 指示: 項目が増えて探しづらいので)
-    out = [f"<h1>💊 {SITE_TITLE}</h1>"]
-    boxes = [out]  # boxes[0]=ページ見出し、boxes[1:]=各項目の中身(最後にそれぞれ枠で包んでつなげる)
-
-    def _box(h2: str) -> list[str]:
-        b = [h2]
-        boxes.append(b)
-        return b
-
-    out = _box(f'<h2>📄 {WATCH_TITLE}</h2>')
-    if days:
-        d = days[0]
-        ups = d.get("updates") or []
-        n_upd = sum(1 for u in ups if u.get("reason") == "更新")
-        n_new = sum(1 for u in ups if u.get("reason") == "新規")
-        dels = d.get("deletes") or []
-        # この日の全件(更新・新規・その他)。重要項目を先頭に並べる
-        items = []
-        for u in ups:
-            meta = u.get("meta") or {}
-            _, imp = render_entry(u)
-            items.append({"key": u.get("packins_no") or "",
-                          "title": " / ".join(meta.get("brands") or []) or u.get("brand", ""),
-                          "reason": u.get("reason") or "",
-                          "imp": imp})
-        items.sort(key=lambda x: not x["imp"])  # 重要項目が先(それ以外は元の順)
-        n_imp = sum(1 for x in items if x["imp"])
-        out.append(f'<p>最新の記録日: <a href="watch/days/{d["date"]}.html"><b>{fmt_date(d["date"])}</b></a> ｜ '
-                   f'<span class="badge upd">更新 {n_upd}</span> <span class="badge new">新規 {n_new}</span> '
-                   f'<span class="badge del">削除 {len(dels)}</span>'
-                   + (f' <span class="badge imp">⚠ 重要項目 {n_imp}</span>' if n_imp else "") + "</p>")
-
-        def _li(x: dict) -> str:
-            cls = {"更新": "upd", "新規": "new"}.get(x["reason"], "oth")
-            return (f'<li><span class="badge {cls}">{esc(x["reason"])}</span> '
-                    f'<a href="watch/days/{d["date"]}.html#{esc(x["key"])}">{esc(x["title"])}</a>'
-                    + (' <span class="impmark">⚠ 重要項目</span>' if x["imp"] else "") + "</li>")
-
-        if items:
-            out.append(f'<details class="more"><summary>変更リスト {len(items)} 件を表示 ▾</summary>'
-                       '<ul class="uplist">' + "".join(_li(x) for x in items) + "</ul></details>")
-        if dels:
-            out.append(f'<details class="more"><summary>削除 {len(dels)} 件を表示 ▾</summary>'
-                       '<ul class="uplist">' + "".join(
-                           f'<li><span class="badge del">削除</span> {esc(x.get("brand") or "")}'
-                           f' <span class="small">{esc(x.get("reason") or "")}</span></li>' for x in dels)
-                       + "</ul></details>")
-        out.append('<p><a href="watch/index.html">最新の詳細を見る →</a> ｜ <a href="watch/archive.html">バックナンバー</a> ｜ <a href="watch/search.html">検索</a> ｜ '
-                   f'<a href="{TENPULIST_URL}" target="_blank" rel="noopener">元データ(PMDA 添付文書一覧) ↗</a></p>')
-        out.append('<h3 class="small">最近の日付</h3><ul class="daylist">' + "".join(
-            f'<li><a href="watch/days/{x["date"]}.html">{fmt_date(x["date"])}</a> <span class="small">'
-            f'({len(x.get("updates") or [])}件'
-            + (f"+削除{len(x.get('deletes') or [])}" if (x.get("deletes") or []) else "")
-            + ')</span></li>' for x in days[:7]) + "</ul>")
-    else:
-        out.append("<p>まだデータがありません(初回の自動実行をお待ちください)。</p>")
-    out = _box(f"<h2>📕 {TENPU_TITLE}</h2>")
-    out.append('<p>薬剤名を入れると候補が出て、クリックで添付文書(PDF)が開きます。規格ごとの薬価も表示します。'
-               f'<span class="small">{esc(if_summary(tenpu_idx, "--tenpu-index"))}</span></p>'
-               '<p><a href="tenpu/index.html">検索ページへ →</a></p>')
-    out = _box(f"<h2>📘 {IF_TITLE}</h2>")
-    out.append('<p>薬剤名を入れると候補が出て、クリックでインタビューフォーム(PDF)が開きます。'
-               f'<span class="small">{esc(if_summary(if_idx))}</span></p>'
-               '<p><a href="if/index.html">検索ページへ →</a></p>')
-    out = _box(f"<h2>🔎 {SHIKI_TITLE}</h2>")
-    out.append('<p>錠剤・カプセルに印字されている記号(識別コード)から薬を探せます。'
-               f'<span class="small">{esc(shiki_summary(shiki, shiki_rows))}</span></p>'
-               '<p><a href="shikibetsu/index.html">検索ページへ →</a></p>')
-    # 副作用検索は「ときどき使う」ので識別コード検索の下・透析投薬ガイドライン検索の上(2026-10-25 指示)
-    out = _box(f"<h2>📊 {FUKU_TITLE}</h2>")
-    out.append('<p>薬剤名を入れると、添付文書の「副作用」の項目を頻度(%)の高い順に並べて確認できます(重大な副作用は⚠マーク)。'
-               f'<span class="small">{esc(fuku_note)}</span></p>'
-               '<p><a href="fukusayo/index.html">検索ページへ →</a></p>')
-    # 薬理作用検索は「使用頻度は低い」ので副作用検索の下(2026-10-25 指示)
-    out = _box(f"<h2>🧬 {YAKURI_TITLE}</h2>")
-    out.append('<p>薬剤名を入れると、添付文書の「薬効薬理」(作用機序=どうやって効くのか)を確認できます。もっと詳しくはインタビューフォーム(PDF)へのリンクから。'
-               f'<span class="small">{esc(yakuri_note)}</span></p>'
-               '<p><a href="yakuri/index.html">検索ページへ →</a></p>')
-    # 並び順は使用頻度の高い順(識別コード検索の下に透析投薬ガイドライン検索。2026-09-12 指示)
-    out = _box(f"<h2>🩸 {TOUSEKI_TITLE}</h2>")
-    out.append('<p>白鷺病院「透析患者に対する投薬ガイドライン」の薬剤別PDF(透析患者・保存期CKD患者への投与方法の目安)を、薬剤名(商品名・一般名)で探せます。'
-               f'<span class="small">{esc(touseki_summary(touseki_idx))}</span></p>'
-               f'<p><a href="touseki/index.html">検索ページへ →</a> ｜ <a href="{touseki_index.GATE_URL}" target="_blank" rel="noopener">元データ(白鷺病院 透析患者に対する投薬ガイドライン) ↗</a></p>')
-    # 使用頻度は高くないので下のほう(透析投薬ガイドライン検索の下・ツールの上。術前休薬 → 造影剤 の順。2026-09-20 指示)
-    for th, pg in CHUUI_PAGES.items():
-        out = _box(f'<h2>{pg["emoji"]} {pg["title"]}</h2>')
-        out.append(f'<p>{pg["toolbox"]}'
-                   f'<span class="small">{esc(chuui_summary(chuui, (chuui_items or {}).get(th) or [], th))}</span></p>'
-                   f'<p><a href="{pg["dir"]}/index.html">一覧ページへ →</a></p>')
-    out = _box("<h2>🧮 ツール</h2>")
-    if tools:
-        out.append('<div class="cards">' + "".join(
-            f'<a class="card" href="tools/{esc(t["file"])}"><b>{esc(t["title"])}</b><span class="small">{esc(t["desc"])}</span></a>' for t in tools) + "</div>")
-    else:
-        out.append('<p class="small">準備中(docs/tools/ にHTMLを置くとここに自動で並びます)。</p>')
-    return "\n".join(boxes[0] + ['<section class="box">\n' + "\n".join(b) + "\n</section>" for b in boxes[1:]])
+def render_toolbox(days: list[dict], tools: list[dict]) -> str:
+    """薬剤師ツールボックスのトップ。機能タイルだけを並べる(2026-11-25 指示: 文字とスクロールを減らす)。
+    各機能の説明・データ件数・変更リストは、それぞれの機能のページ側にある"""
+    return f"<h1>💊 {SITE_TITLE}</h1>\n" + feature_tiles("../", days, tools)
 
 
 def build(root: Path) -> None:
@@ -1541,7 +1481,6 @@ def build(root: Path) -> None:
     fuku_items, fuku_files = fukusayo_index.site_data(tenpu_idx, fuku)
     yakuri = fukusayo_index.load(root, yakuri_index.OUT_NAME)
     yakuri_items, yakuri_files = yakuri_index.site_data(tenpu_idx, yakuri, if_idx)
-    yakuri_note = yakuri_summary(yakuri, len(yakuri_items), sum(1 for x in yakuri_items if x.get("i")))
     global HOME_TITLE
     HOME_TITLE = home.get("title") or HOME_TITLE   # ヘッダー左上のロゴ名も home.json の title に合わせる
 
@@ -1719,8 +1658,7 @@ def build(root: Path) -> None:
 
     (docs / "toolbox").mkdir(parents=True, exist_ok=True)
     (docs / "toolbox" / "index.html").write_text(
-        layout(SITE_TITLE, render_toolbox(days, tools, if_idx, tenpu_idx, shiki, len(shiki_rows), touseki_idx, chuui, chuui_items,
-                                         fukusayo_summary(fuku, len(fuku_items)), yakuri_note).replace('href="watch/', 'href="../watch/').replace('href="tools/', 'href="../tools/').replace('href="if/', 'href="../if/').replace('href="tenpu/', 'href="../tenpu/').replace('href="shikibetsu/', 'href="../shikibetsu/').replace('href="fukusayo/', 'href="../fukusayo/').replace('href="yakuri/', 'href="../yakuri/').replace('href="touseki/', 'href="../touseki/').replace('href="shujutsu/', 'href="../shujutsu/').replace('href="zouei/', 'href="../zouei/'),
+        layout(SITE_TITLE, render_toolbox(days, tools),
                "../", dates, None, built_at, tools, side=False), encoding="utf-8", newline="\n")
     (docs / "index.html").write_text(
         layout(home.get("title") or HOME_TITLE, render_home(home, days, tools), "", dates, None, built_at, tools, side=False),
