@@ -1,0 +1,443 @@
+{
+ "date": "2026-11-09",
+ "updates": [
+  {
+   "brand": "タスフィゴ錠35mg",
+   "company": "製造販売元／エーザイ株式会社",
+   "reason": "更新",
+   "packins_no": "4291087F1020_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291087F1020_1_04/",
+   "fetched_at": "2026-11-13 19:30:37",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/170033_4291087F1020_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/170033_4291087F1020_1_04",
+   "meta": {
+    "packins_no": "4291087F1020_1_04",
+    "company_id": "170033",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "タスフィゴ錠35mg"
+    ],
+    "generic_name": "タスルグラチニブコハク酸塩",
+    "therapeutic_class": "抗悪性腫瘍剤／FGFR阻害剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "クエン酸第一鉄Na錠50mg「サワイ」",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "3222013F1157_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3222013F1157_1_06/",
+   "fetched_at": "2026-11-13 19:30:39",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_3222013F1157_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_3222013F1157_1_06",
+   "meta": {
+    "packins_no": "3222013F1157_1_06",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-12",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "クエン酸第一鉄Na錠50mg「サワイ」"
+    ],
+    "generic_name": "クエン酸第一鉄ナトリウム",
+    "therapeutic_class": "可溶性の非イオン型鉄剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２０.取扱い上の注意"
+     ],
+     "text": "アルミ袋開封後は湿気を避けて保存すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リマプロスト アルファデクス錠5μg「サ...",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "更新",
+   "packins_no": "3399003F1154_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3399003F1154_2_02/",
+   "fetched_at": "2026-11-13 19:30:42",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300119_3399003F1154_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300119_3399003F1154_2_02",
+   "meta": {
+    "packins_no": "3399003F1154_2_02",
+    "company_id": "300119",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-05",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "リマプロスト　アルファデクス錠5μg「サワイ」"
+    ],
+    "generic_name": "リマプロスト　アルファデクス",
+    "therapeutic_class": "経口プロスタグランジンE1誘導体製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "リマプロスト　アルファデクス錠"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "三和八味地黄丸料エキス細粒",
+   "company": "製造販売元／三和生薬株式会社",
+   "reason": "更新",
+   "packins_no": "5200121C1031_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/5200121C1031_1_14/",
+   "fetched_at": "2026-11-13 19:30:44",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300303_5200121C1031_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300303_5200121C1031_1_14",
+   "meta": {
+    "packins_no": "5200121C1031_1_14",
+    "company_id": "300303",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "三和八味地黄丸料エキス細粒"
+    ],
+    "generic_name": "八味地黄丸",
+    "therapeutic_class": "漢方製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２２.包装"
+     ],
+     "text": "500g［ボトル］\n3.0g×84包［分包］"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "5200121C1031_1_13",
+    "prev_fetched_at": "2026-10-01 17:40:40",
+    "prev_seen_date": "2026-10-01",
+    "changes": []
+   }
+  },
+  {
+   "brand": "コブゴーズ筋注",
+   "company": "製造販売元／塩野義製薬株式会社",
+   "reason": "新規",
+   "packins_no": "631341LA1020_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/631341LA1020_1_01/",
+   "fetched_at": "2026-11-13 19:30:46",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/340018_631341LA1020_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/340018_631341LA1020_1_01",
+   "meta": {
+    "packins_no": "631341LA1020_1_01",
+    "company_id": "340018",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "コブゴーズ筋注"
+    ],
+    "generic_name": "組換えコロナウイルス（SARS-CoV-2）ワクチン",
+    "therapeutic_class": "ウイルスワクチン類"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "リタロクス懸濁用配合顆粒",
+   "company": "製造販売元／鶴原製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2349101D1261_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2349101D1261_1_09/",
+   "fetched_at": "2026-11-13 19:30:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/460028_2349101D1261_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/460028_2349101D1261_1_09",
+   "meta": {
+    "packins_no": "2349101D1261_1_09",
+    "company_id": "460028",
+    "revision": {
+     "current": {
+      "ym": "2024-02",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "リタロクス懸濁用配合顆粒"
+    ],
+    "generic_name": "乾燥水酸化アルミニウムゲル・水酸化マグネシウム配合剤",
+    "therapeutic_class": "消化性潰瘍・胃炎治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "プレガバリンOD錠25mg「杏林」／プレガバ...",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1190017F1134_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190017F1134_1_09/",
+   "fetched_at": "2026-11-13 19:30:56",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_1190017F1134_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_1190017F1134_1_09",
+   "meta": {
+    "packins_no": "1190017F1134_1_09",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-10",
+      "ver": null
+     }
+    },
+    "brands": [
+     "プレガバリンOD錠25mg「杏林」",
+     "プレガバリンOD錠75mg「杏林」",
+     "プレガバリンOD錠150mg「杏林」"
+    ],
+    "generic_name": "プレガバリン",
+    "therapeutic_class": "疼痛治療剤（神経障害性疼痛・線維筋痛症）"
+   },
+   "revised": [
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリン口腔内崩壊錠"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリン口腔内崩壊錠"
+    },
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "プレガバリン口腔内崩壊錠"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "1190017F1134_1_08",
+    "prev_fetched_at": "2026-10-27 18:35:38",
+    "prev_seen_date": "2026-10-27",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "ア.作成又は改訂年月",
+      "before": "第4版",
+      "after": "第5版"
+     },
+     {
+      "kind": "added",
+      "path": "キ.基準名",
+      "before": null,
+      "after": "プレガバリン口腔内崩壊錠"
+     },
+     {
+      "kind": "added",
+      "path": "キ.基準名",
+      "before": null,
+      "after": "プレガバリン口腔内崩壊錠"
+     },
+     {
+      "kind": "added",
+      "path": "キ.基準名",
+      "before": null,
+      "after": "プレガバリン口腔内崩壊錠"
+     },
+     {
+      "kind": "changed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "プレガバリン25mg",
+      "after": "日局プレガバリン25mg"
+     },
+     {
+      "kind": "changed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "プレガバリン75mg",
+      "after": "日局プレガバリン75mg"
+     },
+     {
+      "kind": "changed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "プレガバリン150mg",
+      "after": "日局プレガバリン150mg"
+     },
+     {
+      "kind": "changed",
+      "path": "１９.有効成分に関する理化学的知見",
+      "before": "白色の粉末である。\n水にやや溶けにくく、エタノール（99.5）に極めて溶けにくい。",
+      "after": "白色の結晶性の粉末である。\n水にやや溶けにくく、エタノール（99.5）に溶けにくい。\n旋光度：+10〜+12°（脱水物に換算したもの0.2g、水、20mL、100mm）。"
+     },
+     {
+      "kind": "changed",
+      "path": "２３.主要文献",
+      "before": "Brodie MJ, et al.：Epilepsia 2005；46（9）：1407-1413",
+      "after": "Brodie MJ, et al.：Epilepsia.2005；46（9）：1407-1413"
+     },
+     {
+      "kind": "changed",
+      "path": "２３.主要文献",
+      "before": "Bauer CS,et al.：J.Neurosci.2009；29（13）：4076-4088",
+      "after": "Bauer CS, et al.：J Neurosci.2009；29（13）：4076-4088"
+     },
+     {
+      "kind": "changed",
+      "path": "２３.主要文献",
+      "before": "Fink K,et al.：Neuropharmacology 2002；42（2）：229-236",
+      "after": "Fink K, et al.：Neuropharmacology.2002；42（2）：229-236"
+     },
+     {
+      "kind": "changed",
+      "path": "２３.主要文献",
+      "before": "Maneuf YP,et al.：Pain 2001；93（2）：191-196",
+      "after": "Maneuf YP, et al.：Pain.2001；93（2）：191-196"
+     },
+     {
+      "kind": "changed",
+      "path": "２３.主要文献",
+      "before": "Tanabe M,et al.：J.Neurosci.Res.2008；86（15）：3258-3264",
+      "after": "Tanabe M, et al.：J Neurosci Res.2008；86（15）：3258-3264"
+     },
+     {
+      "kind": "changed",
+      "path": "２３.主要文献",
+      "before": "Bee LA,et al.：Pain 2008；140（1）：209-223",
+      "after": "Bee LA, et al.：Pain.2008；140（1）：209-223"
+     },
+     {
+      "kind": "changed",
+      "path": "２３.主要文献",
+      "before": "Field MJ,et al.：Pain 1999；83（2）：303-311",
+      "after": "Field MJ, et al.：Pain.1999；83（2）：303-311"
+     },
+     {
+      "kind": "changed",
+      "path": "２３.主要文献",
+      "before": "Field MJ,et al.：Pain 1999；80（1-2）：391-398",
+      "after": "Field MJ, et al.：Pain.1999；80（1-2）：391-398"
+     },
+     {
+      "kind": "changed",
+      "path": "２３.主要文献",
+      "before": "Tanabe M,et al.：Eur.J.Pharmacol.2009；609（1-3）：65-68",
+      "after": "Tanabe M, et al.：Eur J Pharmacol.2009；609（1-3）：65-68"
+     },
+     {
+      "kind": "changed",
+      "path": "２３.主要文献",
+      "before": "Field MJ,et al.：Br.J.Pharmacol.1997；121（8）：1513-1522",
+      "after": "Field MJ, et al.：Br J Pharmacol.1997；121（8）：1513-1522"
+     },
+     {
+      "kind": "changed",
+      "path": "２３.主要文献",
+      "before": "Field MJ,et al.：J.Pharmacol.Exp.Ther.1997；282（3）：1242- 1246",
+      "after": "Field MJ, et al.：J Pharmacol Exp Ther.1997；282（3）：1242- 1246"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "レグナイト錠300mg",
+   "company": "製造販売／アステラス製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1190020F1020_1_12",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190020F1020_1_12/",
+   "fetched_at": "2026-11-13 19:31:12",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/800126_1190020F1020_1_12",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/800126_1190020F1020_1_12",
+   "meta": {
+    "packins_no": "1190020F1020_1_12",
+    "company_id": "800126",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2020-11",
+      "ver": null
+     }
+    },
+    "brands": [
+     "レグナイト錠300mg"
+    ],
+    "generic_name": "ガバペンチン　エナカルビル錠 / Gabapentin　Enacarbil",
+    "therapeutic_class": "レストレスレッグス症候群治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.５ 妊婦",
+      "(2)"
+     ],
+     "text": "ガバペンチンを投与した妊婦から出生した新生児において、新生児薬物離脱症候群があらわれることが報告されている。"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-11-13 19:30:37",
+ "updated_at": "2026-11-13 19:32:14",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

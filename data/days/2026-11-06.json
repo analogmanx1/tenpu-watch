@@ -1,0 +1,359 @@
+{
+ "date": "2026-11-06",
+ "updates": [
+  {
+   "brand": "カモスタットメシル酸塩錠100mg「トーワ」",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "3999003F1360_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999003F1360_1_04/",
+   "fetched_at": "2026-11-06 06:30:41",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_3999003F1360_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_3999003F1360_1_04",
+   "meta": {
+    "packins_no": "3999003F1360_1_04",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-06",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "カモスタットメシル酸塩錠100mg「トーワ」"
+    ],
+    "generic_name": "カモスタットメシル酸塩錠",
+    "therapeutic_class": "経口蛋白分解酵素阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "カモスタットメシル酸塩錠"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "Dimethylcarbamoylmethyl 4-(4-carbamimidoylaminobenzoyloxy)phenylacetate monomethanesulfonate"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アトルバスタチン錠5mg「日医工」／アト...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2189015F1120_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2189015F1120_2_02/",
+   "fetched_at": "2026-11-06 06:30:43",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_2189015F1120_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_2189015F1120_2_02",
+   "meta": {
+    "packins_no": "2189015F1120_2_02",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-06",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "アトルバスタチン錠5mg「日医工」",
+     "アトルバスタチン錠10mg「日医工」"
+    ],
+    "generic_name": "アトルバスタチンカルシウム水和物",
+    "therapeutic_class": "HMG-CoA還元酵素阻害剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "パロノセトロン静注0.75mg/2mL「日医工」",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2391404A2026_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2391404A2026_1_04/",
+   "fetched_at": "2026-11-06 06:30:45",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_2391404A2026_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_2391404A2026_1_04",
+   "meta": {
+    "packins_no": "2391404A2026_1_04",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "パロノセトロン静注0.75mg/2mL「日医工」"
+    ],
+    "generic_name": "パロノセトロン塩酸塩",
+    "therapeutic_class": "5-HT3受容体拮抗型制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Hara J., et al.：Jpn. J. Clin. Oncol. 2021；51（8）：1204-1211"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "レボノルゲストレル錠1.5mg「フジナガ」",
+   "company": "製造販売元／藤永製薬株式会社 / 販売元／第一三共エスファ株式会社 / 販売提携／第一三共株式会社",
+   "reason": "更新",
+   "packins_no": "254900AF2040_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/254900AF2040_1_02/",
+   "fetched_at": "2026-11-06 06:30:47",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670126_254900AF2040_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670126_254900AF2040_1_02",
+   "meta": {
+    "packins_no": "254900AF2040_1_02",
+    "company_id": "670126",
+    "revision": {
+     "current": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "レボノルゲストレル錠1.5mg「フジナガ」"
+    ],
+    "generic_name": "レボノルゲストレル",
+    "therapeutic_class": "緊急避妊剤"
+   },
+   "revised": [],
+   "diff": {
+    "prev_packins_no": "254900AF2040_1_01",
+    "prev_fetched_at": "2026-09-11 18:14:39",
+    "prev_seen_date": "2026-09-11",
+    "changes": []
+   }
+  },
+  {
+   "brand": "ソリフェナシンコハク酸塩錠2.5mg「TCK」／...",
+   "company": "製造販売元／辰巳化学株式会社",
+   "reason": "更新",
+   "packins_no": "2590011F1036_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2590011F1036_1_02/",
+   "fetched_at": "2026-11-07 16:10:00",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400278_2590011F1036_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400278_2590011F1036_1_02",
+   "meta": {
+    "packins_no": "2590011F1036_1_02",
+    "company_id": "400278",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2021-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ソリフェナシンコハク酸塩錠2.5mg「TCK」",
+     "ソリフェナシンコハク酸塩錠5mg「TCK」"
+    ],
+    "generic_name": "コハク酸ソリフェナシン錠",
+    "therapeutic_class": "過活動膀胱治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "QT延長、心室頻拍（Torsade de Pointesを含む）、房室ブロック、洞不全症候群、高度徐脈（いずれも頻度不明）"
+     ],
+     "text": "QT延長、心室頻拍（Torsade de Pointesを含む）、房室ブロック、洞不全症候群、高度徐脈（いずれも頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "血管性浮腫、多形紅斑、剥脱性皮膚炎"
+    },
+    {
+     "path": [
+      "２２.包装"
+     ],
+     "text": "＜ソリフェナシンコハク酸塩錠2.5mg「TCK」＞\n100錠（10錠（PTP）×10）\n＜ソリフェナシンコハク酸塩錠5mg「TCK」＞\n100錠（10錠（PTP）×10）"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "グルタチオン錠100mg「ツルハラ」",
+   "company": "製造販売元／鶴原製薬株式会社",
+   "reason": "更新",
+   "packins_no": "3922001F2345_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3922001F2345_1_04/",
+   "fetched_at": "2026-11-07 16:10:03",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/460028_3922001F2345_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/460028_3922001F2345_1_04",
+   "meta": {
+    "packins_no": "3922001F2345_1_04",
+    "company_id": "460028",
+    "revision": {
+     "current": {
+      "ym": "2023-10",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "グルタチオン錠100mg「ツルハラ」"
+    ],
+    "generic_name": "グルタチオン",
+    "therapeutic_class": "グルタチオン製剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "10％デヒドロコール酸注「ニッシン」",
+   "company": "製造販売元／日新製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2362400A2026_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2362400A2026_1_10/",
+   "fetched_at": "2026-11-07 16:10:05",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530113_2362400A2026_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530113_2362400A2026_1_10",
+   "meta": {
+    "packins_no": "2362400A2026_1_10",
+    "company_id": "530113",
+    "revision": {
+     "current": {
+      "ym": "2023-04",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "10％デヒドロコール酸注「ニッシン」"
+    ],
+    "generic_name": "精製デヒドロコール酸",
+    "therapeutic_class": "利胆剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "トルカプ錠160mg／トルカプ錠200mg",
+   "company": "製造販売元／アストラゼネカ株式会社",
+   "reason": "更新",
+   "packins_no": "4291082F1028_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291082F1028_1_04/",
+   "fetched_at": "2026-11-07 16:10:07",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670227_4291082F1028_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670227_4291082F1028_1_04",
+   "meta": {
+    "packins_no": "4291082F1028_1_04",
+    "company_id": "670227",
+    "revision": {
+     "current": {
+      "ym": "2026-03",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-03",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "トルカプ錠160mg",
+     "トルカプ錠200mg"
+    ],
+    "generic_name": "カピバセルチブ錠",
+    "therapeutic_class": "抗悪性腫瘍剤（AKT阻害剤）"
+   },
+   "revised": [
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.２ 非臨床試験に基づく情報",
+      "(2)"
+     ],
+     "text": "ラットを用いた2年間がん原性試験において、総AUC比較で臨床曝露量未満に相当する用量で雄の水晶体の変性が認められた。"
+    },
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.２ 非臨床試験に基づく情報",
+      "(3)"
+     ],
+     "text": "ラットを用いた2年間がん原性試験において、総AUC比較で臨床曝露量未満に相当する用量で雌雄にランゲルハンス島肥大・過形成の発生率増加や重症化、雄に膵島細胞腫瘍、精巣の腫瘍（精巣鞘膜の中皮腫）、包皮腺腫瘍（包皮腺はヒトにおいて該当する器官は存在しない）の発生が認められた。"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "エダラボン点滴静注30mg「明治」",
+   "company": "製造販売元／Meiji Seika ファルマ株式会社",
+   "reason": "最終ロットの使用期限が経過したため",
+   "yj_hint": "1190401A1147_1_09"
+  },
+  {
+   "brand": "エクセラーゼ配合錠",
+   "company": "製造販売元／Meiji Seika ファルマ株式会社",
+   "reason": "最終ロットの使用期限が経過したため",
+   "yj_hint": "2339114F1034_1_04"
+  },
+  {
+   "brand": "注射用パニマイシン100mg",
+   "company": "製造販売元／Meiji Seika ファルマ株式会社",
+   "reason": "最終ロットの使用期限が経過したため",
+   "yj_hint": "6134400D2033_1_04"
+  },
+  {
+   "brand": "硫酸カナマイシン注射液1000mg「明治」",
+   "company": "製造販売元／Meiji Seika ファルマ株式会社",
+   "reason": "最終ロットの使用期限が経過したため",
+   "yj_hint": "6169400A1036_1_07"
+  },
+  {
+   "brand": "シプロフロキサシン点滴静注200mg/100mL「明治」／シプロフロキサシン点滴静注400mg/200mL「明治」",
+   "company": "製造販売元／Meiji Seika ファルマ株式会社",
+   "reason": "最終ロットの使用期限が経過したため",
+   "yj_hint": "6241400A4099_1_14"
+  }
+ ],
+ "created_at": "2026-11-06 06:30:41",
+ "updated_at": "2026-11-07 16:10:09",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

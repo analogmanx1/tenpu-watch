@@ -1,0 +1,356 @@
+{
+ "date": "2026-10-29",
+ "updates": [
+  {
+   "brand": "パロノセトロン静注0.75mg/5mL「タイホウ」...",
+   "company": "製造販売元／岡山大鵬薬品株式会社 / 提携先／HELSINN",
+   "reason": "更新",
+   "packins_no": "2391404A1038_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2391404A1038_1_06/",
+   "fetched_at": "2026-10-31 07:47:01",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/340264_2391404A1038_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/340264_2391404A1038_1_06",
+   "meta": {
+    "packins_no": "2391404A1038_1_06",
+    "company_id": "340264",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "パロノセトロン静注0.75mg/5mL「タイホウ」",
+     "パロノセトロン点滴静注バッグ0.75mg/50mL「タイホウ」"
+    ],
+    "generic_name": "パロノセトロン塩酸塩",
+    "therapeutic_class": "5-HT3受容体拮抗型制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Hara, J., et al. : Jpn. J. Clin. Oncol., 2021 ; 51（8）: 1204-1211"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ユニシア配合錠LD／ユニシア配合錠HD",
+   "company": "製造販売元／T's製薬株式会社 / 販売／武田薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "2149116F1020_2_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2149116F1020_2_08/",
+   "fetched_at": "2026-10-31 07:47:03",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400061_2149116F1020_2_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400061_2149116F1020_2_08",
+   "meta": {
+    "packins_no": "2149116F1020_2_08",
+    "company_id": "400061",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "ユニシア配合錠LD",
+     "ユニシア配合錠HD"
+    ],
+    "generic_name": "カンデサルタン シレキセチル・アムロジピンベシル酸塩錠",
+    "therapeutic_class": "持続性アンジオテンシンⅡ受容体拮抗薬/持続性Ca拮抗薬配合剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "アロキシ静注0.75mg／アロキシ点滴静注バ...",
+   "company": "製造販売元／大鵬薬品工業株式会社 / 提携先／HELSINN",
+   "reason": "更新",
+   "packins_no": "2391404A1020_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2391404A1020_1_08/",
+   "fetched_at": "2026-10-31 07:47:05",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400107_2391404A1020_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400107_2391404A1020_1_08",
+   "meta": {
+    "packins_no": "2391404A1020_1_08",
+    "company_id": "400107",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2021-05",
+      "ver": "第2版、用法及び用量変更"
+     }
+    },
+    "brands": [
+     "アロキシ静注0.75mg",
+     "アロキシ点滴静注バッグ0.75mg"
+    ],
+    "generic_name": "パロノセトロン塩酸塩",
+    "therapeutic_class": "5-HT3受容体拮抗型制吐剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１７.臨床成績",
+      "１７.１ 有効性及び安全性に関する試験",
+      "国内第Ⅲ相試験（生後28日以上18歳以下）"
+     ],
+     "text": "国内第Ⅲ相試験（生後28日以上18歳以下）"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Hara, J., et al. : Jpn. J. Clin. Oncol. 2021 ; 51（8） : 1204-1211"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ヨンデリス点滴静注用0.25mg／ヨンデリス...",
+   "company": "製造販売元／大鵬薬品工業株式会社 / 提携先／Pharma Mar, S.A.",
+   "reason": "更新",
+   "packins_no": "4291431D1027_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291431D1027_1_08/",
+   "fetched_at": "2026-10-31 07:47:07",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400107_4291431D1027_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400107_4291431D1027_1_08",
+   "meta": {
+    "packins_no": "4291431D1027_1_08",
+    "company_id": "400107",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-06",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ヨンデリス点滴静注用0.25mg",
+     "ヨンデリス点滴静注用1mg"
+    ],
+    "generic_name": "トラベクテジン",
+    "therapeutic_class": "抗悪性腫瘍剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "キーンス配合注 フレックスタッチ",
+   "company": "製造販売元／ノボ ノルディスク ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "39695A1G1027_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/39695A1G1027_1_02/",
+   "fetched_at": "2026-10-31 07:47:09",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/620023_39695A1G1027_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/620023_39695A1G1027_1_02",
+   "meta": {
+    "packins_no": "39695A1G1027_1_02",
+    "company_id": "620023",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-02",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "キーンス配合注 フレックスタッチ"
+    ],
+    "generic_name": "インスリン イコデク（遺伝子組換え）／セマグルチド（遺伝子組換え）",
+    "therapeutic_class": "週1回持効型溶解インスリンアナログ／持続性GLP-1アナログ　配合注射液"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "全身麻酔又は深い鎮静下の患者"
+     ],
+     "text": "GLP-1受容体作動薬又はGIP/GLP-1受容体作動薬を投与中の患者において、術前の絶食指示を遵守したにもかかわらず、全身麻酔又は深い鎮静下で誤嚥が生じた症例が報告されている。セマグルチドは胃内容排出遅延作用があり、胃内容物残留リスクが高まるおそれがある。"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "神経系障害"
+    },
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報",
+      "(3)"
+     ],
+     "text": "本剤との因果関係は明らかではないが、海外で実施された2型糖尿病患者を対象とした複数の観察研究において、セマグルチド投与後に非動脈炎性前部虚血性視神経症（NAION）の発現リスクの上昇が報告されている。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ヒアニュオ錠10mg",
+   "company": "製造販売元／バイエル薬品株式会社",
+   "reason": "更新",
+   "packins_no": "4291103F1021_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291103F1021_1_02/",
+   "fetched_at": "2026-10-31 07:47:11",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/630004_4291103F1021_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/630004_4291103F1021_1_02",
+   "meta": {
+    "packins_no": "4291103F1021_1_02",
+    "company_id": "630004",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-08",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ヒアニュオ錠10mg"
+    ],
+    "generic_name": "セバベルチニブ",
+    "therapeutic_class": "抗悪性腫瘍剤/HER2チロシンキナーゼ阻害剤 / HER2：Human Epidermal Growth Factor Receptor Type 2（ヒト上皮増殖因子受容体2型、別称：c-erbB-2） / HER2：Human Epidermal Growth Factor Receptor Type 2（ヒト上皮増殖因子受容体2型、別称：c-erbB-2）"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "24ヵ月"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "4291103F1021_1_01",
+    "prev_fetched_at": "2026-10-14 21:02:48",
+    "prev_seen_date": "2026-10-14",
+    "changes": []
+   }
+  },
+  {
+   "brand": "セピエンス顆粒分包250mg／セピエンス顆粒...",
+   "company": "製造販売元／PTCセラピューティクス株式会社",
+   "reason": "更新",
+   "packins_no": "3999067D1024_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999067D1024_1_02/",
+   "fetched_at": "2026-10-31 07:47:15",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/651427_3999067D1024_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/651427_3999067D1024_1_02",
+   "meta": {
+    "packins_no": "3999067D1024_1_02",
+    "company_id": "651427",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "セピエンス顆粒分包250mg",
+     "セピエンス顆粒分包1000mg"
+    ],
+    "generic_name": "セピアプテリン製剤",
+    "therapeutic_class": "フェニルケトン尿症治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "薬剤交付時の注意",
+      "(2)"
+     ],
+     "text": "患者に以下の服用方法を説明すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アイザベイ硝子体内注射液20mg/mL",
+   "company": "製造販売／アステラス製薬株式会社 / 提携／千寿製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1319409A1025_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319409A1025_1_02/",
+   "fetched_at": "2026-10-31 07:47:20",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/800126_1319409A1025_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/800126_1319409A1025_1_02",
+   "meta": {
+    "packins_no": "1319409A1025_1_02",
+    "company_id": "800126",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-11",
+      "ver": null
+     }
+    },
+    "brands": [
+     "アイザベイ硝子体内注射液20mg/mL"
+    ],
+    "generic_name": "アバシンカプタド　ペゴルナトリウム 硝子体内注射液 / Avacincaptad Pegol Sodium",
+    "therapeutic_class": "眼科用補体第5成分阻害薬／ポリエチレングリコール共役RNAアプタマー"
+   },
+   "revised": [
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "提携"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "グアンファシン徐放錠1mg「ニプロ」／グアンファシン徐放錠3mg「ニプロ」",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "12月の薬価基準収載および発売を見送ることにしたため削除。",
+   "yj_hint": "11790B2G1060_1_01"
+  }
+ ],
+ "created_at": "2026-10-31 07:47:01",
+ "updated_at": "2026-10-31 07:48:40",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

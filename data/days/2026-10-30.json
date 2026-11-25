@@ -1,0 +1,1030 @@
+{
+ "date": "2026-10-30",
+ "updates": [
+  {
+   "brand": "アリピプラゾール細粒1％「タカタ」",
+   "company": "製造販売元／高田製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1179045C1027_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1179045C1027_1_10/",
+   "fetched_at": "2026-10-31 09:21:39",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400186_1179045C1027_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400186_1179045C1027_1_10",
+   "meta": {
+    "packins_no": "1179045C1027_1_10",
+    "company_id": "400186",
+    "revision": {
+     "current": {
+      "ym": "2024-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "アリピプラゾール細粒1％「タカタ」"
+    ],
+    "generic_name": "アリピプラゾール",
+    "therapeutic_class": "抗精神病薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報",
+      "(2)"
+     ],
+     "text": "外国で実施された高齢認知症患者を対象とした17の臨床試験において、本剤を含む非定型抗精神病薬投与群はプラセボ投与群と比較して、死亡率が1.6～1.7倍高かったとの報告がある。死因は様々であったが、心血管系（心不全、突然死等）又は感染症（肺炎等）による死亡が多かった。なお、本剤の3試験（計938例、平均年齢82.4歳；56～99歳）では、死亡及び脳血管障害（脳卒中、一過性脳虚血発作等）の発現率がプラセボと比較して高かった。また、外国での疫学調査において、定型抗精神病薬も非定型抗精神病薬と同様に死亡率の上昇に関与するとの報告がある。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "1179045C1027_1_10",
+    "prev_fetched_at": "2026-10-31 07:48:40",
+    "prev_seen_date": "2026-10-30",
+    "changes": []
+   }
+  },
+  {
+   "brand": "エバスチンOD錠5mg「タカタ」／エバスチン...",
+   "company": "製造販売元／高田製薬株式会社",
+   "reason": "新規",
+   "packins_no": "4490019F3128_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490019F3128_1_01/",
+   "fetched_at": "2026-10-31 09:21:41",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400186_4490019F3128_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400186_4490019F3128_1_01",
+   "meta": {
+    "packins_no": "4490019F3128_1_01",
+    "company_id": "400186",
+    "revision": {
+     "current": {
+      "ym": "2023-09",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "エバスチンOD錠5mg「タカタ」",
+     "エバスチンOD錠10mg「タカタ」"
+    ],
+    "generic_name": "エバスチン",
+    "therapeutic_class": "持続性選択H1受容体拮抗剤"
+   },
+   "revised": [],
+   "diff": {
+    "prev_packins_no": "4490019F3128_1_01",
+    "prev_fetched_at": "2026-10-31 07:48:42",
+    "prev_seen_date": "2026-10-30",
+    "changes": []
+   }
+  },
+  {
+   "brand": "テネリア錠20mg／テネリア錠40mg",
+   "company": "製造販売元／田辺ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "3969015F1029_2_30",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3969015F1029_2_30/",
+   "fetched_at": "2026-10-31 09:21:43",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400315_3969015F1029_2_30",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400315_3969015F1029_2_30",
+   "meta": {
+    "packins_no": "3969015F1029_2_30",
+    "company_id": "400315",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "テネリア錠20mg",
+     "テネリア錠40mg"
+    ],
+    "generic_name": "テネリグリプチン臭化水素酸塩水和物錠",
+    "therapeutic_class": "選択的DPP-4阻害剤-2型糖尿病治療剤-"
+   },
+   "revised": [
+    {
+     "path": [
+      "QT延長を起こしやすい患者（先天性QT延長症候群等QT延長の既往歴又はTorsade de pointesの既往歴のある患者、重度の徐脈等の不整脈又はその既往歴のある患者、うっ血性心不全等の心疾患のある患者、低カリウム血症の患者等）"
+     ],
+     "text": "QT延長を起こしやすい患者（先天性QT延長症候群等QT延長の既往歴又はTorsade de pointesの既往歴のある患者、重度の徐脈等の不整脈又はその既往歴のある患者、うっ血性心不全等の心疾患のある患者、低カリウム血症の患者等）"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "3969015F1029_2_30",
+    "prev_fetched_at": "2026-10-31 07:48:44",
+    "prev_seen_date": "2026-10-30",
+    "changes": []
+   }
+  },
+  {
+   "brand": "テネリアOD錠20mg／テネリアOD錠40mg",
+   "company": "製造販売元／田辺ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "3969015F3021_1_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3969015F3021_1_07/",
+   "fetched_at": "2026-10-31 09:21:45",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400315_3969015F3021_1_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400315_3969015F3021_1_07",
+   "meta": {
+    "packins_no": "3969015F3021_1_07",
+    "company_id": "400315",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第7版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第6版"
+     }
+    },
+    "brands": [
+     "テネリアOD錠20mg",
+     "テネリアOD錠40mg"
+    ],
+    "generic_name": "テネリグリプチン臭化水素酸塩水和物口腔内崩壊錠",
+    "therapeutic_class": "選択的DPP-4阻害剤-2型糖尿病治療剤-"
+   },
+   "revised": [
+    {
+     "path": [
+      "QT延長を起こしやすい患者（先天性QT延長症候群等QT延長の既往歴又はTorsade de pointesの既往歴のある患者、重度の徐脈等の不整脈又はその既往歴のある患者、うっ血性心不全等の心疾患のある患者、低カリウム血症の患者等）"
+     ],
+     "text": "QT延長を起こしやすい患者（先天性QT延長症候群等QT延長の既往歴又はTorsade de pointesの既往歴のある患者、重度の徐脈等の不整脈又はその既往歴のある患者、うっ血性心不全等の心疾患のある患者、低カリウム血症の患者等）"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "3969015F3021_1_07",
+    "prev_fetched_at": "2026-10-31 07:48:47",
+    "prev_seen_date": "2026-10-30",
+    "changes": []
+   }
+  },
+  {
+   "brand": "アシクロビル眼軟膏3%「ニットー」",
+   "company": "製造販売元／東亜薬品株式会社 / 発売元／日東メディック株式会社",
+   "reason": "更新",
+   "packins_no": "1319719M1062_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319719M1062_1_03/",
+   "fetched_at": "2026-10-31 09:21:47",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480018_1319719M1062_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480018_1319719M1062_1_03",
+   "meta": {
+    "packins_no": "1319719M1062_1_03",
+    "company_id": "480018",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-11",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "アシクロビル眼軟膏3%「ニットー」"
+    ],
+    "generic_name": "アシクロビル眼軟膏",
+    "therapeutic_class": "ヘルペス性角膜炎化学療法剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "血管性浮腫、蕁麻疹"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "1319719M1062_1_03",
+    "prev_fetched_at": "2026-10-31 07:48:49",
+    "prev_seen_date": "2026-10-30",
+    "changes": []
+   }
+  },
+  {
+   "brand": "モメタゾン点鼻液50μg「MYL」56噴霧用／モ...",
+   "company": "製造販売元／東興薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "1329710Q3020_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1329710Q3020_1_06/",
+   "fetched_at": "2026-10-31 09:21:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480115_1329710Q3020_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480115_1329710Q3020_1_06",
+   "meta": {
+    "packins_no": "1329710Q3020_1_06",
+    "company_id": "480115",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-07",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "モメタゾン点鼻液50μg「MYL」56噴霧用",
+     "モメタゾン点鼻液50μg「MYL」112噴霧用"
+    ],
+    "generic_name": "モメタゾンフランカルボン酸エステル水和物点鼻液",
+    "therapeutic_class": "定量噴霧式アレルギー性鼻炎治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "アナフィラキシー（頻度不明）"
+     ],
+     "text": "アナフィラキシー（頻度不明）"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "1329710Q3020_1_06",
+    "prev_fetched_at": "2026-10-31 07:49:15",
+    "prev_seen_date": "2026-10-30",
+    "changes": []
+   }
+  },
+  {
+   "brand": "セフォチアム塩酸塩静注用0.25g「NP」／セ...",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "更新",
+   "packins_no": "6132400F1130_3_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132400F1130_3_09/",
+   "fetched_at": "2026-10-31 09:21:51",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530100_6132400F1130_3_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530100_6132400F1130_3_09",
+   "meta": {
+    "packins_no": "6132400F1130_3_09",
+    "company_id": "530100",
+    "revision": {
+     "current": {
+      "ym": "2023-12",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "セフォチアム塩酸塩静注用0.25g「NP」",
+     "セフォチアム塩酸塩静注用0.5g「NP」",
+     "セフォチアム塩酸塩静注用1g「NP」",
+     "セフォチアム塩酸塩点滴静注用1gバッグ「NP」"
+    ],
+    "generic_name": "注射用セフォチアム塩酸塩",
+    "therapeutic_class": "セフェム系抗生物質製剤"
+   },
+   "revised": [],
+   "diff": {
+    "prev_packins_no": "6132400F1130_3_09",
+    "prev_fetched_at": "2026-10-31 07:49:41",
+    "prev_seen_date": "2026-10-30",
+    "changes": []
+   }
+  },
+  {
+   "brand": "セファゾリンNa点滴静注用1gバッグ「NP」",
+   "company": "製造販売元／ニプロ株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "6132401G3087_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132401G3087_1_09/",
+   "fetched_at": "2026-10-31 09:23:17",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530100_6132401G3087_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530100_6132401G3087_1_09",
+   "meta": {
+    "packins_no": "6132401G3087_1_09",
+    "company_id": "530100",
+    "revision": {
+     "current": {
+      "ym": "2024-02",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "セファゾリンNa点滴静注用1gバッグ「NP」"
+    ],
+    "generic_name": "注射用セファゾリンナトリウム",
+    "therapeutic_class": "合成セファロスポリン系抗生物質製剤"
+   },
+   "revised": [],
+   "diff": {
+    "prev_packins_no": "6132401G3087_1_09",
+    "prev_fetched_at": "2026-10-31 07:50:57",
+    "prev_seen_date": "2026-10-30",
+    "changes": []
+   }
+  },
+  {
+   "brand": "イソゾール注射用0.5g",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1115403D3043_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1115403D3043_1_04/",
+   "fetched_at": "2026-10-31 09:23:43",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_1115403D3043_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_1115403D3043_1_04",
+   "meta": {
+    "packins_no": "1115403D3043_1_04",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2022-03",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "イソゾール注射用0.5g"
+    ],
+    "generic_name": "チアミラールナトリウム",
+    "therapeutic_class": "全身麻酔剤"
+   },
+   "revised": [],
+   "diff": {
+    "prev_packins_no": "1115403D3043_1_04",
+    "prev_fetched_at": "2026-10-31 07:50:59",
+    "prev_seen_date": "2026-10-30",
+    "changes": []
+   }
+  },
+  {
+   "brand": "シクロスポリンカプセル10mg「日医工」／...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "3999004M3102_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999004M3102_1_14/",
+   "fetched_at": "2026-10-31 09:23:45",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_3999004M3102_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_3999004M3102_1_14",
+   "meta": {
+    "packins_no": "3999004M3102_1_14",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-06",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-06",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "シクロスポリンカプセル10mg「日医工」",
+     "シクロスポリンカプセル25mg「日医工」",
+     "シクロスポリンカプセル50mg「日医工」"
+    ],
+    "generic_name": "シクロスポリン",
+    "therapeutic_class": "免疫抑制剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.７ 小児等",
+      "(3)"
+     ],
+     "text": "小児のネフローゼ症候群に投与する際には、副作用の発現に十分注意すること。一般に小児と成人の副作用の発現率は同程度（35%前後）であるが、ネフローゼ症候群に対する臨床試験の結果（サンディミュン内用液及びカプセル*での成績）では成人（18～32%）に比べ小児（26～41%）で発現率が高い傾向がみられ、特に小児での多毛（10～18%）、ALP上昇（7%前後）の発現が成人（多毛：2～3%、ALP上昇：1%前後）に比べ高かった。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "(1)"
+     ],
+     "text": "多くの薬剤との相互作用が報告されているが、可能性のあるすべての組み合わせについて検討されているわけではないので、他剤と併用したり、本剤又は併用薬を休薬する場合には注意すること。本剤は代謝酵素チトクロームP450 3A4（CYP3A4）で代謝される。また、本剤はP糖蛋白の基質であるため、P糖蛋白阻害剤又は誘導剤により、本剤の血中濃度が変化する可能性がある。したがって、これらの酵素、輸送蛋白質に影響する医薬品・食品と併用する場合には、可能な限り薬物血中濃度を測定するなど用量に留意して慎重に投与すること。本剤はCYP3A4、P糖蛋白及び有機アニオントランスポーター（OATP）の阻害作用を有するため、これらの基質となる併用薬の血中濃度が上昇するおそれがある。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "本剤のOATP及びCYP3A阻害により、ペマフィブラートの血中濃度が上昇すると考えられる。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "非ステロイド性消炎鎮痛剤"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "非ステロイド性消炎鎮痛剤"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "レテルモビルのCYP3A阻害により本剤の血中濃度が上昇する可能性がある。また、本剤のOATP阻害によりレテルモビルの血中濃度が上昇する可能性がある。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "本剤のP糖蛋白、CYP3A4、OATP阻害によりリファキシミンの血中濃度が上昇することがある。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "本剤のOATP、P糖蛋白及び乳癌耐性蛋白阻害により、これらの薬剤の血中濃度が上昇すると考えられる。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "3999004M3102_1_14",
+    "prev_fetched_at": "2026-10-31 07:51:01",
+    "prev_seen_date": "2026-10-30",
+    "changes": []
+   }
+  },
+  {
+   "brand": "ミノサイクリン塩酸塩点滴静注用100mg「日...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "6152401F1090_2_15",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6152401F1090_2_15/",
+   "fetched_at": "2026-10-31 09:23:47",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_6152401F1090_2_15",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_6152401F1090_2_15",
+   "meta": {
+    "packins_no": "6152401F1090_2_15",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-06",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ミノサイクリン塩酸塩点滴静注用100mg「日医工」"
+    ],
+    "generic_name": "ミノサイクリン塩酸塩",
+    "therapeutic_class": "テトラサイクリン系抗生物質"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "光感受性を高める薬剤"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）",
+      "(1)"
+     ],
+     "text": "タラポルフィンナトリウム"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）",
+      "(2)"
+     ],
+     "text": "アミノレブリン酸"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）",
+      "(3)"
+     ],
+     "text": "ベルテポルフィン"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）",
+      "(4)"
+     ],
+     "text": "メトキサレン"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック（0.1%未満）、アナフィラキシー（頻度不明）"
+     ],
+     "text": "不快感、口内異常感、喘鳴、眩暈、便意、耳鳴、発汗、全身潮紅、呼吸困難、血管性浮腫（顔面浮腫、喉頭浮腫等）、意識障害等の異常が認められた場合には投与を中止し、適切な処置を行うこと。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "6152401F1090_2_15",
+    "prev_fetched_at": "2026-10-31 07:51:27",
+    "prev_seen_date": "2026-10-30",
+    "changes": []
+   }
+  },
+  {
+   "brand": "コレアジン錠12.5mg",
+   "company": "製造販売元／アルフレッサ ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "1190021F1025_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190021F1025_1_10/",
+   "fetched_at": "2026-10-31 09:23:50",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530258_1190021F1025_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530258_1190021F1025_1_10",
+   "meta": {
+    "packins_no": "1190021F1025_1_10",
+    "company_id": "530258",
+    "revision": {
+     "current": {
+      "ym": "2024-06",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2021-06",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "コレアジン錠12.5mg"
+    ],
+    "generic_name": "テトラベナジン錠",
+    "therapeutic_class": "非律動性不随意運動治療薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "(1)"
+     ],
+     "text": "本剤の活性代謝物であるα-HTBZ及びβ-HTBZは、主に薬物代謝酵素CYP2D6で代謝される。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "レセルピン"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "バルベナジン"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "相互に作用を増強することがあるため併用は推奨されない。併用する場合は観察を十分に行い、副作用の発現に注意すること。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "本剤と類似した作用機序を有することから、併用により作用が増強されるおそれがある。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "1190021F1025_1_10",
+    "prev_fetched_at": "2026-10-31 07:51:30",
+    "prev_seen_date": "2026-10-30",
+    "changes": []
+   }
+  },
+  {
+   "brand": "イムルリオ錠200mg",
+   "company": "製造販売元／日本イーライリリー株式会社",
+   "reason": "更新",
+   "packins_no": "4291102F1027_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291102F1027_1_03/",
+   "fetched_at": "2026-10-31 09:23:52",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530471_4291102F1027_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530471_4291102F1027_1_03",
+   "meta": {
+    "packins_no": "4291102F1027_1_03",
+    "company_id": "530471",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "イムルリオ錠200mg"
+    ],
+    "generic_name": "イムルネストラントトシル酸塩錠",
+    "therapeutic_class": "抗エストロゲン剤/抗悪性腫瘍剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料: イムルネストラントの毒性試験(2025年12月22日承認、CTD2.6.6)"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料: 日本人の乳癌患者でのイムルネストラントの薬物動態(2025年12月22日承認、CTD2.7.2.3.8.4.1)"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料: イムルネストラントの薬物動態プロファイル(2025年12月22日承認、CTD2.7.2.1.2.1)"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料: イムルネストラントの絶対的バイオアベイラビリティ及びマスバランス試験(JZLE試験)(2025年12月22日承認、CTD2.7.6.3)"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料: イムルネストラントの薬物動態に及ぼす食事の影響及び各種併用薬との相互作用(JZLD試験)(2025年12月22日承認、CTD2.7.6.2)"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料: イムルネストラントの血漿蛋白結合試験(2025年12月22日承認、CTD2.7.2.2.1.1)"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料: イムルネストラントのin vitro代謝試験(LY3484356PrelimMetab試験)(2025年12月22日承認、CTD2.7.2.2.1.2.1)"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料: 様々な重症度の肝機能障害を有する被験者におけるイムルネストラントの薬物動態(JZLG試験)(2025年12月22日承認、CTD2.7.6.4)"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料: イムルネストラントの薬物動態に及ぼすUGT1A1遺伝子多型の影響(2025年12月22日承認、CTD2.7.2.2.2.3.2)"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料: イムルネストラント及び各種基質薬剤との相互作用(JZLI試験)(2025年12月22日承認、CTD2.7.6.5)"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料: イムルネストラントがミダゾラムの薬物動態に及ぼす相互作用(JZLK試験)(2025年12月22日承認、CTD2.7.6.6)"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料: イムルネストラントの第III相試験(JZLC試験)(2025年12月22日承認、CTD2.7.6.8)"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "Jhaveri KL, Neven P, Casalnuovo ML, et al.: Ann Oncol. 2026; 37(4): 532-543"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "社内資料: イムルネストラントの薬理試験(2025年12月22日承認、CTD2.6.2)"
+    },
+    {
+     "path": [
+      "２５.保険給付上の注意"
+     ],
+     "text": "本剤は新医薬品であるため、厚生労働省告示第107号（平成18年3月6日付）に基づき、2027年10月末日までは、投薬は1回14日分を限度とされている。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "クロミッド錠50mg",
+   "company": "製造販売元／富士製薬工業株式会社",
+   "reason": "更新",
+   "packins_no": "2499009F1080_2_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2499009F1080_2_08/",
+   "fetched_at": "2026-10-31 09:25:16",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670109_2499009F1080_2_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670109_2499009F1080_2_08",
+   "meta": {
+    "packins_no": "2499009F1080_2_08",
+    "company_id": "670109",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2022-09",
+      "ver": null
+     }
+    },
+    "brands": [
+     "クロミッド錠50mg"
+    ],
+    "generic_name": "クロミフェンクエン酸塩",
+    "therapeutic_class": "排卵誘発剤 / 抗エストロゲン剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "イソコナゾール硝酸塩腟錠100mg「F」／イ...",
+   "company": "製造販売元／富士製薬工業株式会社",
+   "reason": "更新",
+   "packins_no": "2529708J1051_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2529708J1051_1_03/",
+   "fetched_at": "2026-10-31 09:25:18",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670109_2529708J1051_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670109_2529708J1051_1_03",
+   "meta": {
+    "packins_no": "2529708J1051_1_03",
+    "company_id": "670109",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "イソコナゾール硝酸塩腟錠100mg「F」",
+     "イソコナゾール硝酸塩腟錠300mg「F」"
+    ],
+    "generic_name": "イソコナゾール硝酸塩",
+    "therapeutic_class": "抗真菌剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "オキシコナゾール硝酸塩腟錠100mg「F」／...",
+   "company": "製造販売元／富士製薬工業株式会社",
+   "reason": "更新",
+   "packins_no": "2529709H1062_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2529709H1062_1_03/",
+   "fetched_at": "2026-10-31 09:25:20",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670109_2529709H1062_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670109_2529709H1062_1_03",
+   "meta": {
+    "packins_no": "2529709H1062_1_03",
+    "company_id": "670109",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "オキシコナゾール硝酸塩腟錠100mg「F」",
+     "オキシコナゾール硝酸塩腟錠600mg「F」"
+    ],
+    "generic_name": "オキシコナゾール硝酸塩",
+    "therapeutic_class": "抗真菌剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ビダラビン軟膏3％「F」",
+   "company": "製造販売元／富士製薬工業株式会社",
+   "reason": "更新",
+   "packins_no": "6250700M1219_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6250700M1219_1_03/",
+   "fetched_at": "2026-10-31 09:25:22",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670109_6250700M1219_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670109_6250700M1219_1_03",
+   "meta": {
+    "packins_no": "6250700M1219_1_03",
+    "company_id": "670109",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ビダラビン軟膏3％「F」"
+    ],
+    "generic_name": "ビダラビン",
+    "therapeutic_class": "抗ウイルス剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "アマリール0.5mg錠／アマリール1mg錠／アマ...",
+   "company": "製造販売元／サノフィ株式会社",
+   "reason": "更新",
+   "packins_no": "3961008F1020_1_31",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3961008F1020_1_31/",
+   "fetched_at": "2026-10-31 09:25:24",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/780069_3961008F1020_1_31",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/780069_3961008F1020_1_31",
+   "meta": {
+    "packins_no": "3961008F1020_1_31",
+    "company_id": "780069",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-03",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "アマリール0.5mg錠",
+     "アマリール1mg錠",
+     "アマリール3mg錠"
+    ],
+    "generic_name": "グリメピリド",
+    "therapeutic_class": "スルホニルウレア系経口血糖降下剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２２.包装",
+      "〈〉"
+     ],
+     "text": "〈〉"
+    },
+    {
+     "path": [
+      "２２.包装",
+      "〈〉"
+     ],
+     "text": "〈〉"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "セファゾリンNa注射用0.25g「NP」／セファ...",
+   "company": "製造販売元／ニプロ株式会社",
+   "reason": "更新",
+   "packins_no": "6132401D1096_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132401D1096_1_11/",
+   "fetched_at": "2026-10-31 17:30:18",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530100_6132401D1096_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530100_6132401D1096_1_11",
+   "meta": {
+    "packins_no": "6132401D1096_1_11",
+    "company_id": "530100",
+    "revision": {
+     "current": {
+      "ym": "2023-11",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "セファゾリンNa注射用0.25g「NP」",
+     "セファゾリンNa注射用0.5g「NP」",
+     "セファゾリンNa注射用1g「NP」",
+     "セファゾリンNa注射用2g「NP」",
+     "セファゾリンNa点滴静注用1gバッグ「NP」"
+    ],
+    "generic_name": "注射用セファゾリンナトリウム",
+    "therapeutic_class": "合成セファロスポリン系抗生物質製剤"
+   },
+   "revised": [],
+   "diff": {
+    "prev_packins_no": "6132401D1096_1_11",
+    "prev_fetched_at": "2026-10-31 07:50:07",
+    "prev_seen_date": "2026-10-30",
+    "changes": []
+   }
+  },
+  {
+   "brand": "フロジン外用液5％",
+   "company": "製造販売元／ニプロファーマ株式会社 / 販売元／ニプロ株式会社",
+   "reason": "更新",
+   "packins_no": "2679701Q1055_3_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2679701Q1055_3_03/",
+   "fetched_at": "2026-10-31 17:30:21",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/650037_2679701Q1055_3_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/650037_2679701Q1055_3_03",
+   "meta": {
+    "packins_no": "2679701Q1055_3_03",
+    "company_id": "650037",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-04",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "フロジン外用液5％"
+    ],
+    "generic_name": "カルプロニウム塩化物水和物",
+    "therapeutic_class": "脱毛症・白斑用剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "プロピレングリコール、dl-リンゴ酸、水酸化ナトリウム、エタノール、黄色4号（タートラジン）、青色1号、香料、ポリオキシエチレン硬化ヒマシ油"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-10-31 09:21:39",
+ "updated_at": "2026-10-31 17:30:23",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

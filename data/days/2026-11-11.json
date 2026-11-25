@@ -1,0 +1,1956 @@
+{
+ "date": "2026-11-11",
+ "updates": [
+  {
+   "brand": "クロモグリク酸Na点眼液2％「杏林」",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1319717Q1367_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319717Q1367_1_04/",
+   "fetched_at": "2026-11-13 19:34:00",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_1319717Q1367_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_1319717Q1367_1_04",
+   "meta": {
+    "packins_no": "1319717Q1367_1_04",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2024-05",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-09",
+      "ver": null
+     }
+    },
+    "brands": [
+     "クロモグリク酸Na点眼液2％「杏林」"
+    ],
+    "generic_name": "クロモグリク酸ナトリウム",
+    "therapeutic_class": "アレルギー性結膜炎治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "販売元"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "クロモグリク酸Na点眼液2％「杏林」",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／共創未来ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "1319717Q1367_3_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319717Q1367_3_03/",
+   "fetched_at": "2026-11-13 19:34:03",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_1319717Q1367_3_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_1319717Q1367_3_03",
+   "meta": {
+    "packins_no": "1319717Q1367_3_03",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-09",
+      "ver": null
+     }
+    },
+    "brands": [
+     "クロモグリク酸Na点眼液2％「杏林」"
+    ],
+    "generic_name": "クロモグリク酸ナトリウム",
+    "therapeutic_class": "アレルギー性結膜炎治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒104-0028　東京都中央区八重洲2-2-1\n東京ミッドタウン八重洲　八重洲セントラルタワー 8F"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ケトチフェン点眼液0.05％「杏林」",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／共創未来ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "1319730Q1362_3_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319730Q1362_3_04/",
+   "fetched_at": "2026-11-13 19:34:40",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_1319730Q1362_3_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_1319730Q1362_3_04",
+   "meta": {
+    "packins_no": "1319730Q1362_3_04",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ケトチフェン点眼液0.05％「杏林」"
+    ],
+    "generic_name": "ケトチフェンフマル酸塩",
+    "therapeutic_class": "抗アレルギー点眼剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "エナラプリルマレイン酸塩錠2.5mg「杏林」...",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／共創未来ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2144002F1377_2_07",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2144002F1377_2_07/",
+   "fetched_at": "2026-11-13 19:35:06",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_2144002F1377_2_07",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_2144002F1377_2_07",
+   "meta": {
+    "packins_no": "2144002F1377_2_07",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": null
+     }
+    },
+    "brands": [
+     "エナラプリルマレイン酸塩錠2.5mg「杏林」",
+     "エナラプリルマレイン酸塩錠5mg「杏林」"
+    ],
+    "generic_name": "エナラプリルマレイン酸塩",
+    "therapeutic_class": "持続性アンジオテンシン変換酵素阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒104-0028　東京都中央区八重洲2-2-1\n東京ミッドタウン八重洲　八重洲セントラルタワー 8F"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ミニトロテープ27mg",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／共創未来ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2171701S7071_5_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171701S7071_5_04/",
+   "fetched_at": "2026-11-13 19:35:32",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_2171701S7071_5_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_2171701S7071_5_04",
+   "meta": {
+    "packins_no": "2171701S7071_5_04",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-06",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ミニトロテープ27mg"
+    ],
+    "generic_name": "ニトログリセリン",
+    "therapeutic_class": "経皮吸収型・心疾患治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "アロプリノール錠100mg「杏林」",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／共創未来ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "3943001F1551_3_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3943001F1551_3_06/",
+   "fetched_at": "2026-11-13 19:36:25",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480209_3943001F1551_3_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480209_3943001F1551_3_06",
+   "meta": {
+    "packins_no": "3943001F1551_3_06",
+    "company_id": "480209",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-11",
+      "ver": null
+     }
+    },
+    "brands": [
+     "アロプリノール錠100mg「杏林」"
+    ],
+    "generic_name": "アロプリノール",
+    "therapeutic_class": "高尿酸血症治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒104-0028　東京都中央区八重洲2-2-1\n東京ミッドタウン八重洲　八重洲セントラルタワー 8F"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "セフジトレン ピボキシル細粒小児用10%...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "新規",
+   "packins_no": "61320A1C1059_2_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/61320A1C1059_2_01/",
+   "fetched_at": "2026-11-13 19:36:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_61320A1C1059_2_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_61320A1C1059_2_01",
+   "meta": {
+    "packins_no": "61320A1C1059_2_01",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-07",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "セフジトレン　ピボキシル細粒小児用10%「トーワ」"
+    ],
+    "generic_name": "セフジトレン　ピボキシル",
+    "therapeutic_class": "経口用セフェム系抗生物質製剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "セフジトレン ピボキシル錠100mg「トーワ...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "新規",
+   "packins_no": "61320A1F1055_2_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/61320A1F1055_2_01/",
+   "fetched_at": "2026-11-13 19:36:29",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_61320A1F1055_2_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_61320A1F1055_2_01",
+   "meta": {
+    "packins_no": "61320A1F1055_2_01",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-07",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "セフジトレン　ピボキシル錠100mg「トーワ」"
+    ],
+    "generic_name": "セフジトレン　ピボキシル",
+    "therapeutic_class": "経口用セフェム系抗生物質製剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "デュアック配合ゲル",
+   "company": "製造販売元（輸入）／サンファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2699803Q1020_3_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2699803Q1020_3_04/",
+   "fetched_at": "2026-11-13 19:36:32",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480866_2699803Q1020_3_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480866_2699803Q1020_3_04",
+   "meta": {
+    "packins_no": "2699803Q1020_3_04",
+    "company_id": "480866",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-07",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "デュアック配合ゲル"
+    ],
+    "generic_name": "クリンダマイシンリン酸エステル水和物・過酸化ベンゾイル",
+    "therapeutic_class": "尋常性ざ瘡治療配合剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "セフォチアム静注用1gバッグ「日医工」（...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "6132400G3040_4_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132400G3040_4_02/",
+   "fetched_at": "2026-11-13 19:36:34",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_6132400G3040_4_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_6132400G3040_4_02",
+   "meta": {
+    "packins_no": "6132400G3040_4_02",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "セフォチアム静注用1gバッグ「日医工」（旧製品）"
+    ],
+    "generic_name": "セフォチアム塩酸塩",
+    "therapeutic_class": "セフェム系抗生物質製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "不快感、口内異常感、眩暈、便意、耳鳴、発汗、喘鳴、呼吸困難、血管性浮腫、全身の潮紅・蕁麻疹等の異常が認められた場合には投与を中止し、適切な処置を行うこと。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "6132400G3040_4_01",
+    "prev_fetched_at": "2026-10-31 09:26:51",
+    "prev_seen_date": "2026-10-31",
+    "changes": [
+     {
+      "kind": "added",
+      "path": "ア.作成又は改訂年月",
+      "before": null,
+      "after": "第4版"
+     },
+     {
+      "kind": "removed",
+      "path": "ア.作成又は改訂年月",
+      "before": "第2版",
+      "after": null
+     },
+     {
+      "kind": "changed",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > ショック、アナフィラキシー（いずれも頻度不明）",
+      "before": "不快感、口内異常感、眩暈、便意、耳鳴、発汗、喘鳴、呼吸困難、血管浮腫、全身の潮紅・蕁麻疹等の異常が認められた場合には投与を中止し、適切な処置を行うこと。",
+      "after": "不快感、口内異常感、眩暈、便意、耳鳴、発汗、喘鳴、呼吸困難、血管性浮腫、全身の潮紅・蕁麻疹等の異常が認められた場合には投与を中止し、適切な処置を行うこと。"
+     },
+     {
+      "kind": "changed",
+      "path": "１６.薬物動態 > １６.１ 血中濃度",
+      "before": "腎機能正常の成人及び小児に静注あるいは点滴静注して得られた血中濃度は以下のとおりであり、用量依存性を示す,,,,,,,,。",
+      "after": "腎機能正常の成人及び小児に点滴静注して得られた血中濃度は以下のとおりであり、用量依存性を示す,,,,,,,。"
+     },
+     {
+      "kind": "removed",
+      "path": "１６.薬物動態 > １６.１ 血中濃度",
+      "before": "静注時の血中濃度（成人：腎機能正常）",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "１６.薬物動態 > １６.１ 血中濃度",
+      "before": "静注時の血中濃度（小児：腎機能正常）",
+      "after": null
+     }
+    ]
+   }
+  },
+  {
+   "brand": "セフォチアム静注用1gバッグ「日医工」",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "6132400G3040_5_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132400G3040_5_02/",
+   "fetched_at": "2026-11-13 19:37:00",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_6132400G3040_5_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_6132400G3040_5_02",
+   "meta": {
+    "packins_no": "6132400G3040_5_02",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "セフォチアム静注用1gバッグ「日医工」"
+    ],
+    "generic_name": "セフォチアム塩酸塩",
+    "therapeutic_class": "セフェム系抗生物質製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "ショック、アナフィラキシー（いずれも頻度不明）"
+     ],
+     "text": "不快感、口内異常感、眩暈、便意、耳鳴、発汗、喘鳴、呼吸困難、血管性浮腫、全身の潮紅・蕁麻疹等の異常が認められた場合には投与を中止し、適切な処置を行うこと。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "6132400G3040_5_01",
+    "prev_fetched_at": "2026-10-31 09:26:53",
+    "prev_seen_date": "2026-10-31",
+    "changes": [
+     {
+      "kind": "added",
+      "path": "ア.作成又は改訂年月",
+      "before": null,
+      "after": "第3版"
+     },
+     {
+      "kind": "removed",
+      "path": "ア.作成又は改訂年月",
+      "before": "第1版",
+      "after": null
+     },
+     {
+      "kind": "changed",
+      "path": "１１.副作用 > １１.１ 重大な副作用 > ショック、アナフィラキシー（いずれも頻度不明）",
+      "before": "不快感、口内異常感、眩暈、便意、耳鳴、発汗、喘鳴、呼吸困難、血管浮腫、全身の潮紅・蕁麻疹等の異常が認められた場合には投与を中止し、適切な処置を行うこと。",
+      "after": "不快感、口内異常感、眩暈、便意、耳鳴、発汗、喘鳴、呼吸困難、血管性浮腫、全身の潮紅・蕁麻疹等の異常が認められた場合には投与を中止し、適切な処置を行うこと。"
+     },
+     {
+      "kind": "changed",
+      "path": "１６.薬物動態 > １６.１ 血中濃度",
+      "before": "腎機能正常の成人及び小児に静注あるいは点滴静注して得られた血中濃度は以下のとおりであり、用量依存性を示す,,,,,,,,。",
+      "after": "腎機能正常の成人及び小児に点滴静注して得られた血中濃度は以下のとおりであり、用量依存性を示す,,,,,,,。"
+     },
+     {
+      "kind": "removed",
+      "path": "１６.薬物動態 > １６.１ 血中濃度",
+      "before": "静注時の血中濃度（成人：腎機能正常）",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "１６.薬物動態 > １６.１ 血中濃度",
+      "before": "静注時の血中濃度（小児：腎機能正常）",
+      "after": null
+     }
+    ]
+   }
+  },
+  {
+   "brand": "ソリフェナシンコハク酸塩OD錠2.5mg「JG」...",
+   "company": "製造販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "2590011F3039_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2590011F3039_1_04/",
+   "fetched_at": "2026-11-13 19:37:02",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/580591_2590011F3039_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/580591_2590011F3039_1_04",
+   "meta": {
+    "packins_no": "2590011F3039_1_04",
+    "company_id": "580591",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-09",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ソリフェナシンコハク酸塩OD錠2.5mg「JG」",
+     "ソリフェナシンコハク酸塩OD錠5mg「JG」"
+    ],
+    "generic_name": "コハク酸ソリフェナシン口腔内崩壊錠",
+    "therapeutic_class": "過活動膀胱治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "QT延長、心室頻拍（Torsade de Pointesを含む）、房室ブロック、洞不全症候群、高度徐脈（いずれも頻度不明）"
+     ],
+     "text": "QT延長、心室頻拍（Torsade de Pointesを含む）、房室ブロック、洞不全症候群、高度徐脈（いずれも頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "皮膚及び皮下組織障害"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ブドウ糖注5%バッグ「フソー」／ブドウ糖...",
+   "company": "製造販売元／扶桑薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "3231401J6096_1_13",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3231401J6096_1_13/",
+   "fetched_at": "2026-11-13 19:37:52",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670156_3231401J6096_1_13",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670156_3231401J6096_1_13",
+   "meta": {
+    "packins_no": "3231401J6096_1_13",
+    "company_id": "670156",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-11",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ブドウ糖注5%バッグ「フソー」",
+     "ブドウ糖注5%バッグ「フソー」",
+     "ブドウ糖注5%バッグ「フソー」"
+    ],
+    "generic_name": "精製ブドウ糖",
+    "therapeutic_class": "ブドウ糖製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "扶桑薬品工業株式会社 くすり相談室"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒541-0045 大阪市中央区道修町一丁目7番10号"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "TEL 0800-800-6363（フリーアクセス）\nFAX 06-6969-2361\n（9：00～17：30/土日祝日を除く）"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "大阪市中央区道修町一丁目7番10号"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "3231401J6096_1_12",
+    "prev_fetched_at": "2026-10-01 17:56:43",
+    "prev_seen_date": "2026-10-01",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "ブドウ糖注5%バッグ「フソー」（200mL）",
+      "after": "ブドウ糖注5%バッグ「フソー」"
+     },
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "ブドウ糖注5%バッグ「フソー」（250mL）",
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "ブドウ糖注5%バッグ「フソー」"
+     },
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "ブドウ糖注5%バッグ「フソー」（500mL）",
+      "after": "250mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "ブドウ糖注5%バッグ「フソー」"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "500mLソフトバッグ"
+     },
+     {
+      "kind": "changed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "1袋中",
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "1袋中(200mL)"
+     },
+     {
+      "kind": "changed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "1袋中",
+      "after": "250mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "1袋中(250mL)"
+     },
+     {
+      "kind": "changed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "1袋中",
+      "after": "500mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "1袋中(500mL)"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "250mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "500mLソフトバッグ"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "アクチット輸液／アクチット輸液",
+   "company": "製造販売元／扶桑薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "3319550A5092_2_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3319550A5092_2_05/",
+   "fetched_at": "2026-11-13 19:38:18",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670156_3319550A5092_2_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670156_3319550A5092_2_05",
+   "meta": {
+    "packins_no": "3319550A5092_2_05",
+    "company_id": "670156",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2022-11",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "アクチット輸液",
+     "アクチット輸液"
+    ],
+    "generic_name": "-",
+    "therapeutic_class": "マルトース加酢酸維持液"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "扶桑薬品工業株式会社 くすり相談室"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒541-0045 大阪市中央区道修町一丁目7番10号"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "TEL 0800-800-6363（フリーアクセス）\nFAX 06-6969-2361\n（9：00～17：30/土日祝日を除く）"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "大阪市中央区道修町一丁目7番10号"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "3319550A5092_2_04",
+    "prev_fetched_at": "2026-10-01 18:04:07",
+    "prev_seen_date": "2026-10-01",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "アクチット輸液（200mLバッグ）",
+      "after": "アクチット輸液"
+     },
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "アクチット輸液（500mLバッグ）",
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "アクチット輸液"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "500mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "500mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "500mLソフトバッグ"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "ヴィーンD輸液／ヴィーンD輸液",
+   "company": "製造販売元／扶桑薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "3319551A4090_2_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3319551A4090_2_05/",
+   "fetched_at": "2026-11-13 19:38:20",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670156_3319551A4090_2_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670156_3319551A4090_2_05",
+   "meta": {
+    "packins_no": "3319551A4090_2_05",
+    "company_id": "670156",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2022-10",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ヴィーンD輸液",
+     "ヴィーンD輸液"
+    ],
+    "generic_name": "-",
+    "therapeutic_class": "ブドウ糖加酢酸リンゲル液"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "扶桑薬品工業株式会社 くすり相談室"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒541-0045 大阪市中央区道修町一丁目7番10号"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "TEL 0800-800-6363（フリーアクセス）\nFAX 06-6969-2361\n（9：00～17：30/土日祝日を除く）"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "大阪市中央区道修町一丁目7番10号"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "3319551A4090_2_04",
+    "prev_fetched_at": "2026-10-01 18:04:35",
+    "prev_seen_date": "2026-10-01",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "ヴィーンD輸液（200mL）",
+      "after": "ヴィーンD輸液"
+     },
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "ヴィーンD輸液（500mL）",
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "ヴィーンD輸液"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "500mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "500mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "500mLソフトバッグ"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "アルトフェッド注射液／アルトフェッド...",
+   "company": "製造販売元／扶桑薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "3319555A2029_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3319555A2029_1_04/",
+   "fetched_at": "2026-11-13 19:38:22",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670156_3319555A2029_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670156_3319555A2029_1_04",
+   "meta": {
+    "packins_no": "3319555A2029_1_04",
+    "company_id": "670156",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-07",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "アルトフェッド注射液",
+     "アルトフェッド注射液",
+     "アルトフェッド注射液"
+    ],
+    "generic_name": "－",
+    "therapeutic_class": "マルトース加酢酸維持液"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "扶桑薬品工業株式会社 くすり相談室"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒541-0045 大阪市中央区道修町一丁目7番10号"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "TEL 0800-800-6363（フリーアクセス）\nFAX 06-6969-2361\n（9：00～17：30/土日祝日を除く）"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "大阪市中央区道修町一丁目7番10号"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "3319555A2029_1_03",
+    "prev_fetched_at": "2026-10-01 18:05:31",
+    "prev_seen_date": "2026-10-01",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "アルトフェッド注射液　200mL　（ソフトバッグ）",
+      "after": "アルトフェッド注射液"
+     },
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "アルトフェッド注射液　500mL　（プラスチックボトル）",
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "アルトフェッド注射液"
+     },
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "アルトフェッド注射液　500mL　（ソフトバッグ）",
+      "after": "500mLプラスチックボトル"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "アルトフェッド注射液"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "500mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "500mLプラスチックボトル"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "1本中（500mL）"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "日局 塩化ナトリウム"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "730.6mg"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "日局 塩化カリウム"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "261.0mg"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "塩化マグネシウム"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "254.2mg"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "リン酸二水素カリウム"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "680.5mg"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "無水酢酸ナトリウム"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "820.3mg"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "日局 マルトース水和物"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "25.0g"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "pH調節剤"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "適量"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "熱量"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "100kcal"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "電解質濃度\n(mEq/L：理論値)"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "Na＋"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "45"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "K＋"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "17"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "Mg2＋"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "5"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "Cl－"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "37"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "H2PO4－"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "10"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "CH3COO－"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "20"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "500mLソフトバッグ"
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "1袋中（500mL）",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "日局 塩化ナトリウム",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "730.6mg",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "日局 塩化カリウム",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "261.0mg",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "塩化マグネシウム",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "254.2mg",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "リン酸二水素カリウム",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "680.5mg",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "無水酢酸ナトリウム",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "820.3mg",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "日局 マルトース水和物",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "25.0g",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "pH調節剤",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "適量",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "熱量",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "100kcal",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "電解質濃度\n(mEq/L：理論値)",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "Na＋",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "45",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "K＋",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "17",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "Mg2＋",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "5",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "Cl－",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "37",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "H2PO4－",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "10",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "CH3COO－",
+      "after": null
+     },
+     {
+      "kind": "removed",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": "20",
+      "after": null
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "500mLプラスチックボトル"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "500mLソフトバッグ"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "ヴィーン3G輸液／ヴィーン3G輸液",
+   "company": "製造販売元／扶桑薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "3319562A1065_2_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3319562A1065_2_06/",
+   "fetched_at": "2026-11-13 19:38:25",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670156_3319562A1065_2_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670156_3319562A1065_2_06",
+   "meta": {
+    "packins_no": "3319562A1065_2_06",
+    "company_id": "670156",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2022-11",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ヴィーン3G輸液",
+     "ヴィーン3G輸液"
+    ],
+    "generic_name": "-",
+    "therapeutic_class": "ブドウ糖加酢酸維持液"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "扶桑薬品工業株式会社 くすり相談室"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒541-0045 大阪市中央区道修町一丁目7番10号"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "TEL 0800-800-6363（フリーアクセス）\nFAX 06-6969-2361\n（9：00～17：30/土日祝日を除く）"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "大阪市中央区道修町一丁目7番10号"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "3319562A1065_2_05",
+    "prev_fetched_at": "2026-10-01 18:07:46",
+    "prev_seen_date": "2026-10-01",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "ヴィーン3G輸液（200mLバッグ）",
+      "after": "ヴィーン3G輸液"
+     },
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "ヴィーン3G輸液（500mLバッグ）",
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "ヴィーン3G輸液"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "500mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "500mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "200mLソフトバッグ"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "500mLソフトバッグ"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "キンダリー透析剤AF2号／キンダリー透析...",
+   "company": "製造販売元／扶桑薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "3410520A1037_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3410520A1037_1_09/",
+   "fetched_at": "2026-11-13 19:38:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670156_3410520A1037_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670156_3410520A1037_1_09",
+   "meta": {
+    "packins_no": "3410520A1037_1_09",
+    "company_id": "670156",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "キンダリー透析剤AF2号",
+     "キンダリー透析剤AF2号"
+    ],
+    "generic_name": "－",
+    "therapeutic_class": "人工腎臓透析用剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "扶桑薬品工業株式会社 くすり相談室"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒541-0045 大阪市中央区道修町一丁目7番10号"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "TEL 0800-800-6363（フリーアクセス）\nFAX 06-6969-2361\n（9：00～17：30/土日祝日を除く）"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "大阪市中央区道修町一丁目7番10号"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "3410520A1037_1_08",
+    "prev_fetched_at": "2026-10-01 18:10:10",
+    "prev_seen_date": "2026-10-01",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "キンダリー透析剤AF2号（6L）",
+      "after": "キンダリー透析剤AF2号"
+     },
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "キンダリー透析剤AF2号（9L）",
+      "after": "A液 6L B液 7.56L"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "キンダリー透析剤AF2号"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "A液 9L B液 11.34L"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "A液 6L B液 7.56L"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "A液 9L B液 11.34L"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "キンダリー透析剤AF3号／キンダリー透析...",
+   "company": "製造販売元／扶桑薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "3410523A1030_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3410523A1030_1_10/",
+   "fetched_at": "2026-11-13 19:38:29",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670156_3410523A1030_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670156_3410523A1030_1_10",
+   "meta": {
+    "packins_no": "3410523A1030_1_10",
+    "company_id": "670156",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "キンダリー透析剤AF3号",
+     "キンダリー透析剤AF3号"
+    ],
+    "generic_name": "－",
+    "therapeutic_class": "人工腎臓透析用剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "扶桑薬品工業株式会社 くすり相談室"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒541-0045 大阪市中央区道修町一丁目7番10号"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "TEL 0800-800-6363（フリーアクセス）\nFAX 06-6969-2361\n（9：00～17：30/土日祝日を除く）"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "大阪市中央区道修町一丁目7番10号"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "3410523A1030_1_09",
+    "prev_fetched_at": "2026-10-01 18:11:28",
+    "prev_seen_date": "2026-10-01",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "キンダリー透析剤AF3号（6L）",
+      "after": "キンダリー透析剤AF3号"
+     },
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "キンダリー透析剤AF3号（9L）",
+      "after": "A液 6L B液 7.56L"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "キンダリー透析剤AF3号"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "A液 9L B液 11.34L"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "A液 6L B液 7.56L"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "A液 9L B液 11.34L"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "サブラッド血液ろ過用補充液BSG／サブラ...",
+   "company": "製造販売元／扶桑薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "3410538G1021_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3410538G1021_1_11/",
+   "fetched_at": "2026-11-13 19:38:31",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670156_3410538G1021_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670156_3410538G1021_1_11",
+   "meta": {
+    "packins_no": "3410538G1021_1_11",
+    "company_id": "670156",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-08",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "サブラッド血液ろ過用補充液BSG",
+     "サブラッド血液ろ過用補充液BSG"
+    ],
+    "generic_name": "ー",
+    "therapeutic_class": "ろ過型人工腎臓用補液"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "扶桑薬品工業株式会社 くすり相談室"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒541-0045 大阪市中央区道修町一丁目7番10号"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "TEL 0800-800-6363（フリーアクセス）\nFAX 06-6969-2361\n（9：00～17：30/土日祝日を除く）"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "大阪市中央区道修町一丁目7番10号"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "3410538G1021_1_10",
+    "prev_fetched_at": "2026-10-01 18:12:22",
+    "prev_seen_date": "2026-10-01",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "サブラッド血液ろ過用補充液BSG（1,010mL）",
+      "after": "サブラッド血液ろ過用補充液BSG"
+     },
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "サブラッド血液ろ過用補充液BSG（2,020mL）",
+      "after": "1010mL"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "サブラッド血液ろ過用補充液BSG"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "2020mL"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "1010mL"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.１ 組成",
+      "before": null,
+      "after": "2020mL"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "1010mL"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "2020mL"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "キンダリー透析剤AF4号／キンダリー透析...",
+   "company": "製造販売元／扶桑薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "3410540A1026_1_13",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3410540A1026_1_13/",
+   "fetched_at": "2026-11-13 19:38:33",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670156_3410540A1026_1_13",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670156_3410540A1026_1_13",
+   "meta": {
+    "packins_no": "3410540A1026_1_13",
+    "company_id": "670156",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "キンダリー透析剤AF4号",
+     "キンダリー透析剤AF4号"
+    ],
+    "generic_name": "－",
+    "therapeutic_class": "人工腎臓透析用剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "扶桑薬品工業株式会社 くすり相談室"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "〒541-0045 大阪市中央区道修町一丁目7番10号"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "TEL 0800-800-6363（フリーアクセス）\nFAX 06-6969-2361\n（9：00～17：30/土日祝日を除く）"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "大阪市中央区道修町一丁目7番10号"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "3410540A1026_1_12",
+    "prev_fetched_at": "2026-10-01 18:12:28",
+    "prev_seen_date": "2026-10-01",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "キンダリー透析剤AF4号（6L）",
+      "after": "キンダリー透析剤AF4号"
+     },
+     {
+      "kind": "changed",
+      "path": "",
+      "before": "キンダリー透析剤AF4号（9L）",
+      "after": "A液 6L B液 7.56L"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "キンダリー透析剤AF4号"
+     },
+     {
+      "kind": "added",
+      "path": "",
+      "before": null,
+      "after": "A液 9L B液 11.34L"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "A液 6L B液 7.56L"
+     },
+     {
+      "kind": "added",
+      "path": "３.組成・性状 > ３.２ 製剤の性状",
+      "before": null,
+      "after": "A液 9L B液 11.34L"
+     }
+    ]
+   }
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-11-13 19:34:00",
+ "updated_at": "2026-11-13 19:39:23",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

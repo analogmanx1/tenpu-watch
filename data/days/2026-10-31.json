@@ -1,0 +1,303 @@
+{
+ "date": "2026-10-31",
+ "updates": [
+  {
+   "brand": "シスプラチン点滴静注10mg「マルコ」／シ...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "新規",
+   "packins_no": "4291401A1119_4_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291401A1119_4_01/",
+   "fetched_at": "2026-10-31 09:26:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_4291401A1119_4_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_4291401A1119_4_01",
+   "meta": {
+    "packins_no": "4291401A1119_4_01",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "シスプラチン点滴静注10mg「マルコ」",
+     "シスプラチン点滴静注25mg「マルコ」",
+     "シスプラチン点滴静注50mg「マルコ」"
+    ],
+    "generic_name": "シスプラチン",
+    "therapeutic_class": "抗悪性腫瘍剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "製造販売元"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "セフォチアム静注用1gバッグ「日医工」（...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "新規",
+   "packins_no": "6132400G3040_4_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132400G3040_4_01/",
+   "fetched_at": "2026-10-31 09:26:51",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_6132400G3040_4_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_6132400G3040_4_01",
+   "meta": {
+    "packins_no": "6132400G3040_4_01",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "セフォチアム静注用1gバッグ「日医工」（旧製品）"
+    ],
+    "generic_name": "セフォチアム塩酸塩",
+    "therapeutic_class": "セフェム系抗生物質製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "製造販売元"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "セフォチアム静注用1gバッグ「日医工」",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "新規",
+   "packins_no": "6132400G3040_5_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6132400G3040_5_01/",
+   "fetched_at": "2026-10-31 09:26:53",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_6132400G3040_5_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_6132400G3040_5_01",
+   "meta": {
+    "packins_no": "6132400G3040_5_01",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "セフォチアム静注用1gバッグ「日医工」"
+    ],
+    "generic_name": "セフォチアム塩酸塩",
+    "therapeutic_class": "セフェム系抗生物質製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "製造販売元"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "メマンチン塩酸塩OD錠5mg「NIG」／メマンチ...",
+   "company": "製造販売元／日医工岐阜工場株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1190018F4251_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190018F4251_1_05/",
+   "fetched_at": "2026-10-31 09:26:55",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/581120_1190018F4251_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/581120_1190018F4251_1_05",
+   "meta": {
+    "packins_no": "1190018F4251_1_05",
+    "company_id": "581120",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-12",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "メマンチン塩酸塩OD錠5mg「NIG」",
+     "メマンチン塩酸塩OD錠10mg「NIG」",
+     "メマンチン塩酸塩OD錠20mg「NIG」"
+    ],
+    "generic_name": "メマンチン塩酸塩口腔内崩壊錠",
+    "therapeutic_class": "NMDA受容体拮抗 アルツハイマー型認知症治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "メサラジン徐放錠250mg「日医工P」／メサ...",
+   "company": "製造販売元／日医工岐阜工場株式会社 / 販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2399009F1181_3_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399009F1181_3_01/",
+   "fetched_at": "2026-10-31 09:26:58",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/581120_2399009F1181_3_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/581120_2399009F1181_3_01",
+   "meta": {
+    "packins_no": "2399009F1181_3_01",
+    "company_id": "581120",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2025-09",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "メサラジン徐放錠250mg「日医工P」",
+     "メサラジン徐放錠500mg「日医工P」"
+    ],
+    "generic_name": "メサラジン",
+    "therapeutic_class": "潰瘍性大腸炎・クローン病治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "エチルセルロース、カルナウバロウ、クロスポビドン、酸化チタン、ステアリン酸マグネシウム、タルク、ヒドロキシプロピルセルロース、ヒプロメロース、マクロゴール6000、リン酸水素カルシウム"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "エチルセルロース、カルナウバロウ、クロスポビドン、酸化チタン、ステアリン酸マグネシウム、タルク、ヒドロキシプロピルセルロース、ヒプロメロース、マクロゴール6000、リン酸水素カルシウム"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "製造販売元"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "日医工岐阜工場株式会社"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "富山市総曲輪1丁目6番21"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "バルプロ酸ナトリウム細粒20%「EMEC」／バ...",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "1139004C1049_3_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1139004C1049_3_08/",
+   "fetched_at": "2026-10-31 17:30:23",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_1139004C1049_3_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_1139004C1049_3_08",
+   "meta": {
+    "packins_no": "1139004C1049_3_08",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-03",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-10",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "バルプロ酸ナトリウム細粒20%「EMEC」",
+     "バルプロ酸ナトリウム細粒40%「EMEC」"
+    ],
+    "generic_name": "バルプロ酸ナトリウム",
+    "therapeutic_class": "抗てんかん剤、躁病・躁状態治療剤、片頭痛治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "〈各種てんかんおよびてんかんに伴う性格行動障害の治療〉",
+      "(1)"
+     ],
+     "text": "眠気、注意力・集中力・反射運動能力等の低下が起こることがある。自動車の運転等危険を伴う機械操作の適否は、関連学会の留意事項を十分理解の上、医師が慎重に判断し、危険を伴う機械操作を行う場合には十分な注意が必要であることを適切に患者に指導すること。また、眠気等があらわれた場合には、自動車の運転等危険を伴う機械の操作に従事しないよう、患者に指導すること。"
+    },
+    {
+     "path": [
+      "８.重要な基本的注意",
+      "〈躁病および躁うつ病の躁状態の治療、片頭痛発作の発症抑制〉",
+      "(1)"
+     ],
+     "text": "眠気、注意力・集中力・反射運動能力等の低下が起こることがあるので、本剤投与中の患者には自動車の運転等危険を伴う機械の操作に従事させないよう注意すること。"
+    },
+    {
+     "path": [
+      "２３.主要文献"
+     ],
+     "text": "日本てんかん学会：抗てんかん発作薬を服用しているてんかんのある人において、自動車運転や危険を伴う機械操作を行う際の留意事項（2026年3月17日）"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "ステリガス",
+   "company": "製造販売元／スリーエム ジャパン イノベーション株式会社",
+   "reason": "製造販売業廃止のため",
+   "yj_hint": "732970AX1020_1_05"
+  },
+  {
+   "brand": "エバスチン錠5mg「タカタ」／エバスチン錠10mg「タカタ」／エバスチンOD錠5mg「タカタ」／エバスチンOD錠10mg「タカタ」",
+   "company": "製造販売元／高田製薬株式会社",
+   "reason": "販売を中止したエバスチン錠5mg・10mg「タカタ」の最終ロットの使用期限が満了したため",
+   "yj_hint": "4490019F1125_1_09"
+  }
+ ],
+ "created_at": "2026-10-31 09:25:26",
+ "updated_at": "2026-10-31 17:30:25",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

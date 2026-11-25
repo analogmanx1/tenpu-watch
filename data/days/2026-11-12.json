@@ -1,0 +1,348 @@
+{
+ "date": "2026-11-12",
+ "updates": [
+  {
+   "brand": "オセルタミビル錠75mg「トーワ」",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "6250021F1028_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6250021F1028_1_04/",
+   "fetched_at": "2026-11-13 19:39:23",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_6250021F1028_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_6250021F1028_1_04",
+   "meta": {
+    "packins_no": "6250021F1028_1_04",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-11",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "オセルタミビル錠75mg「トーワ」"
+    ],
+    "generic_name": "オセルタミビルリン酸塩錠",
+    "therapeutic_class": "抗インフルエンザウイルス剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "アウィクリ注 フレックスタッチ 総量300単...",
+   "company": "製造販売元／ノボ ノルディスク ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2492424G1022_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2492424G1022_1_06/",
+   "fetched_at": "2026-11-13 19:40:13",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/620023_2492424G1022_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/620023_2492424G1022_1_06",
+   "meta": {
+    "packins_no": "2492424G1022_1_06",
+    "company_id": "620023",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "アウィクリ注 フレックスタッチ 総量300単位",
+     "アウィクリ注 フレックスタッチ 総量700単位"
+    ],
+    "generic_name": "インスリン　イコデク（遺伝子組換え）",
+    "therapeutic_class": "週1回持効型溶解インスリンアナログ注射液"
+   },
+   "revised": [
+    {
+     "path": [
+      "７.用法及び用量に関連する注意",
+      "(7)"
+     ],
+     "text": "他の週1回投与のBasal インスリン製剤から本剤への切り替え及び本剤から他の週1回投与のBasalインスリン製剤への切り替えにあたっては、患者の状態を注意深く観察し、切り替え時及びその後一定期間は特に血糖モニタリングを慎重に行うこと。他の週1回投与のBasalインスリン製剤との切り替えに関するデータは得られていない。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ミグシス錠5mg",
+   "company": "製造販売元／ファイザー株式会社",
+   "reason": "更新",
+   "packins_no": "2190023F1037_5_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2190023F1037_5_04/",
+   "fetched_at": "2026-11-13 19:40:15",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_2190023F1037_5_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_2190023F1037_5_04",
+   "meta": {
+    "packins_no": "2190023F1037_5_04",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2023-06",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "ミグシス錠5mg"
+    ],
+    "generic_name": "ロメリジン塩酸塩",
+    "therapeutic_class": "片頭痛治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "スルペラゾン静注用0.5g／スルペラゾン静...",
+   "company": "製造販売元／ファイザー株式会社",
+   "reason": "更新",
+   "packins_no": "6139500F1024_3_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6139500F1024_3_04/",
+   "fetched_at": "2026-11-13 19:40:17",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_6139500F1024_3_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_6139500F1024_3_04",
+   "meta": {
+    "packins_no": "6139500F1024_3_04",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2023-12",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2021-10",
+      "ver": null
+     }
+    },
+    "brands": [
+     "スルペラゾン静注用0.5g",
+     "スルペラゾン静注用1g"
+    ],
+    "generic_name": "セフォペラゾンナトリウム / スルバクタムナトリウム",
+    "therapeutic_class": "β-ラクタマーゼ阻害剤配合抗生物質製剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ゾルミトリプタンOD錠2.5mg「VTRS」",
+   "company": "製造販売元／ヴィアトリス・ヘルスケア合同会社 / 販売元／ヴィアトリス製薬合同会社",
+   "reason": "更新",
+   "packins_no": "2160004F2104_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2160004F2104_1_05/",
+   "fetched_at": "2026-11-13 19:40:44",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/730869_2160004F2104_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/730869_2160004F2104_1_05",
+   "meta": {
+    "packins_no": "2160004F2104_1_05",
+    "company_id": "730869",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-07",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ゾルミトリプタンOD錠2.5mg「VTRS」"
+    ],
+    "generic_name": "ゾルミトリプタン",
+    "therapeutic_class": "片頭痛治療薬 / 5-HT1B/1D受容体作動薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "過敏症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ロスバスタチン錠2.5mg「YD」／ロスバスタ...",
+   "company": "製造販売元／陽進堂ホールディングス株式会社",
+   "reason": "更新",
+   "packins_no": "2189017F1081_1_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2189017F1081_1_10/",
+   "fetched_at": "2026-11-13 19:41:10",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/830001_2189017F1081_1_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/830001_2189017F1081_1_10",
+   "meta": {
+    "packins_no": "2189017F1081_1_10",
+    "company_id": "830001",
+    "revision": {
+     "current": {
+      "ym": "2026-04",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-03",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ロスバスタチン錠2.5mg「YD」",
+     "ロスバスタチン錠5mg「YD」",
+     "ロスバスタチンOD錠2.5mg「YD」",
+     "ロスバスタチンOD錠5mg「YD」"
+    ],
+    "generic_name": "ロスバスタチンカルシウム錠、ロスバスタチンカルシウム口腔内崩壊錠",
+    "therapeutic_class": "HMG-CoA還元酵素阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "陽進堂ホールディングス株式会社　お客様相談室"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "富山県富山市婦中町萩島3697番地の8"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "製造販売元"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ノギロン軟膏0.1%",
+   "company": "製造販売元／陽進堂ホールディングス株式会社",
+   "reason": "更新",
+   "packins_no": "2646705M1115_4_10",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2646705M1115_4_10/",
+   "fetched_at": "2026-11-13 19:41:12",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/830001_2646705M1115_4_10",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/830001_2646705M1115_4_10",
+   "meta": {
+    "packins_no": "2646705M1115_4_10",
+    "company_id": "830001",
+    "revision": {
+     "current": {
+      "ym": "2026-04",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-07",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ノギロン軟膏0.1%"
+    ],
+    "generic_name": "トリアムシノロンアセトニド軟膏",
+    "therapeutic_class": "外用副腎皮質ホルモン製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "陽進堂ホールディングス株式会社　お客様相談室"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "富山県富山市婦中町萩島3697番地の8"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "製造販売元"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "フルオシノロンアセトニド軟膏0.025%「YD」",
+   "company": "製造販売元／陽進堂ホールディングス株式会社",
+   "reason": "更新",
+   "packins_no": "2646709M1156_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2646709M1156_1_06/",
+   "fetched_at": "2026-11-13 19:42:05",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/830001_2646709M1156_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/830001_2646709M1156_1_06",
+   "meta": {
+    "packins_no": "2646709M1156_1_06",
+    "company_id": "830001",
+    "revision": {
+     "current": {
+      "ym": "2026-04",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-11",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "フルオシノロンアセトニド軟膏0.025%「YD」"
+    ],
+    "generic_name": "フルオシノロンアセトニド軟膏",
+    "therapeutic_class": "外用合成副腎皮質ホルモン剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "陽進堂ホールディングス株式会社　お客様相談室"
+    },
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "富山県富山市婦中町萩島3697番地の8"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "製造販売元"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-11-13 19:39:23",
+ "updated_at": "2026-11-13 19:42:07",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

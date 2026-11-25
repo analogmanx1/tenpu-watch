@@ -1,0 +1,176 @@
+{
+ "date": "2026-11-17",
+ "updates": [
+  {
+   "brand": "メトホルミン塩酸塩錠250mgMT「トーワ」／...",
+   "company": "製造販売元／東和薬品株式会社",
+   "reason": "更新",
+   "packins_no": "3962002F2086_1_11",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3962002F2086_1_11/",
+   "fetched_at": "2026-11-21 18:33:55",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480235_3962002F2086_1_11",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480235_3962002F2086_1_11",
+   "meta": {
+    "packins_no": "3962002F2086_1_11",
+    "company_id": "480235",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2023-11",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "メトホルミン塩酸塩錠250mgMT「トーワ」",
+     "メトホルミン塩酸塩錠500mgMT「トーワ」"
+    ],
+    "generic_name": "メトホルミン塩酸塩錠",
+    "therapeutic_class": "ビグアナイド系経口血糖降下剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ポートラーザ点滴静注液800mg",
+   "company": "製造販売元／日本化薬株式会社",
+   "reason": "更新",
+   "packins_no": "4291448A1026_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291448A1026_1_05/",
+   "fetched_at": "2026-11-21 18:33:58",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530191_4291448A1026_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530191_4291448A1026_1_05",
+   "meta": {
+    "packins_no": "4291448A1026_1_05",
+    "company_id": "530191",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-06",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ポートラーザ点滴静注液800mg"
+    ],
+    "generic_name": "ネシツムマブ（遺伝子組換え）注射液",
+    "therapeutic_class": "抗悪性腫瘍剤\nヒト型抗EGFR モノクローナル抗体\nEGFR：Epidermal Growth Factor Receptor（上皮細胞増殖因子受容体） / EGFR：Epidermal Growth Factor Receptor（上皮細胞増殖因子受容体）"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.４ 生殖能を有する者"
+     ],
+     "text": "妊娠する可能性のある女性には、本剤投与中及び最終投与後3ヵ月間において避妊する必要性及び適切な避妊法について説明すること。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "リプラスG3号輸液／リプラスG3号輸液",
+   "company": "製造販売元／扶桑薬品工業株式会社",
+   "reason": "新規",
+   "packins_no": "33195A0A1050_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/33195A0A1050_1_01/",
+   "fetched_at": "2026-11-21 18:34:00",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670156_33195A0A1050_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670156_33195A0A1050_1_01",
+   "meta": {
+    "packins_no": "33195A0A1050_1_01",
+    "company_id": "670156",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第5版"
+     },
+     "previous": {
+      "ym": "2026-10",
+      "ver": "第4版"
+     }
+    },
+    "brands": [
+     "リプラスG3号輸液",
+     "リプラスG3号輸液"
+    ],
+    "generic_name": "-",
+    "therapeutic_class": "ブドウ糖加乳酸維持液"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "リプラスG3号輸液"
+    },
+    {
+     "path": [],
+     "text": ""
+    },
+    {
+     "path": [],
+     "text": ""
+    },
+    {
+     "path": [],
+     "text": "リプラスG3号輸液"
+    },
+    {
+     "path": [],
+     "text": ""
+    },
+    {
+     "path": [],
+     "text": ""
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "レズロック錠200mg",
+   "company": "製造販売元／Meiji Seika ファルマ株式会社",
+   "reason": "更新",
+   "packins_no": "3999063F1027_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999063F1027_1_04/",
+   "fetched_at": "2026-11-21 18:34:53",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/780009_3999063F1027_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/780009_3999063F1027_1_04",
+   "meta": {
+    "packins_no": "3999063F1027_1_04",
+    "company_id": "780009",
+    "revision": {
+     "current": {
+      "ym": "2025-06",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-03",
+      "ver": null
+     }
+    },
+    "brands": [
+     "レズロック錠200mg"
+    ],
+    "generic_name": "ベルモスジルメシル酸塩",
+    "therapeutic_class": "選択的ROCK2阻害剤"
+   },
+   "revised": [],
+   "diff": null
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-11-21 18:33:55",
+ "updated_at": "2026-11-21 18:35:43",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

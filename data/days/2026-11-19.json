@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-19",
+ "updates": [],
+ "deletes": [
+  {
+   "brand": "シスプラチン点滴静注10mg「マルコ」／シスプラチン点滴静注25mg「マルコ」／シスプラチン点滴静注50mg「マルコ」",
+   "company": "製造販売元／日医工ファーマ株式会社 / 販売元／日医工株式会社",
+   "reason": "承継のため",
+   "yj_hint": "4291401A1119_3_03"
+  }
+ ],
+ "created_at": "2026-11-21 18:38:08",
+ "updated_at": "2026-11-21 18:38:08",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

@@ -1,0 +1,21 @@
+{
+ "date": "2026-11-21",
+ "updates": [],
+ "deletes": [
+  {
+   "brand": "プロスタンディン軟膏0.003%",
+   "company": "製造販売／小野薬品工業株式会社",
+   "reason": "ダイト株式会社への承継",
+   "yj_hint": "2699705M1038_1_08"
+  },
+  {
+   "brand": "オパルモン錠5μg",
+   "company": "製造販売／小野薬品工業株式会社",
+   "reason": "ダイト株式会社への承継",
+   "yj_hint": "3399003F1073_1_13"
+  }
+ ],
+ "created_at": "2026-11-21 18:39:09",
+ "updated_at": "2026-11-21 18:39:09",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

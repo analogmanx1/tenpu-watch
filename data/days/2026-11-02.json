@@ -1,0 +1,896 @@
+{
+ "date": "2026-11-02",
+ "updates": [
+  {
+   "brand": "アクチバシン注600万／アクチバシン注1200...",
+   "company": "製造販売元／協和キリン株式会社",
+   "reason": "更新",
+   "packins_no": "3959402D1027_1_26",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3959402D1027_1_26/",
+   "fetched_at": "2026-11-03 15:28:58",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/230124_3959402D1027_1_26",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/230124_3959402D1027_1_26",
+   "meta": {
+    "packins_no": "3959402D1027_1_26",
+    "company_id": "230124",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-05",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "アクチバシン注600万",
+     "アクチバシン注1200万",
+     "アクチバシン注2400万"
+    ],
+    "generic_name": "アルテプラーゼ（遺伝子組換え）",
+    "therapeutic_class": "血栓溶解剤（rt-PA製剤）"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "血管性浮腫（0.1%未満：脳）"
+     ],
+     "text": "血管性浮腫（0.1%未満：脳）"
+    },
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報"
+     ],
+     "text": "アンジオテンシン変換酵素阻害剤を投与している患者では、本剤投与中又は投与後に血管性浮腫があらわれる例が多いとの報告がある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ロキソプロフェンNaテープ50mg「三友」／...",
+   "company": "製造販売元／三友薬品株式会社 / 発売元／ラクール薬品販売株式会社",
+   "reason": "更新",
+   "packins_no": "2649735S2261_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2649735S2261_1_14/",
+   "fetched_at": "2026-11-03 15:29:01",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300264_2649735S2261_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300264_2649735S2261_1_14",
+   "meta": {
+    "packins_no": "2649735S2261_1_14",
+    "company_id": "300264",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ロキソプロフェンNaテープ50mg「三友」",
+     "ロキソプロフェンNaテープ100mg「三友」"
+    ],
+    "generic_name": "ロキソプロフェンナトリウム水和物貼付剤",
+    "therapeutic_class": "経皮吸収型鎮痛・抗炎症剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "メトリジン錠2mg",
+   "company": "製造販売／大正製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2160002F1028_1_19",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2160002F1028_1_19/",
+   "fetched_at": "2026-11-03 15:29:03",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400059_2160002F1028_1_19",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400059_2160002F1028_1_19",
+   "meta": {
+    "packins_no": "2160002F1028_1_19",
+    "company_id": "400059",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2023-06",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "メトリジン錠2mg"
+    ],
+    "generic_name": "ミドドリン塩酸塩製剤",
+    "therapeutic_class": "低血圧治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "キ.基準名"
+     ],
+     "text": "ミドドリン塩酸塩錠"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中 日局 ミドドリン塩酸塩"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "2-Amino-N-[(2RS)-2-(2,5-dimethoxyphenyl)-2-hydroxyethyl]acetamide monohydrochloride"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": "白色の結晶性の粉末で、水にやや溶けやすく、エタノール（95）に溶けにくい。"
+    },
+    {
+     "path": [
+      "１９.有効成分に関する理化学的知見"
+     ],
+     "text": ""
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "キュバール50エアゾール／キュバール100エ...",
+   "company": "製造販売元／住友ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2259703G9020_1_18",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2259703G9020_1_18/",
+   "fetched_at": "2026-11-03 15:29:59",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400093_2259703G9020_1_18",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400093_2259703G9020_1_18",
+   "meta": {
+    "packins_no": "2259703G9020_1_18",
+    "company_id": "400093",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2022-04",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "キュバール50エアゾール",
+     "キュバール100エアゾール"
+    ],
+    "generic_name": "ベクロメタゾンプロピオン酸エステル",
+    "therapeutic_class": "吸入ステロイド喘息治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "グルトパ注600万／グルトパ注1200万／グル...",
+   "company": "製造販売元／田辺ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "3959402D1035_3_17",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3959402D1035_3_17/",
+   "fetched_at": "2026-11-03 15:30:25",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400315_3959402D1035_3_17",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400315_3959402D1035_3_17",
+   "meta": {
+    "packins_no": "3959402D1035_3_17",
+    "company_id": "400315",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-12",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "グルトパ注600万",
+     "グルトパ注1200万",
+     "グルトパ注2400万"
+    ],
+    "generic_name": "アルテプラーゼ（遺伝子組換え）静注剤",
+    "therapeutic_class": "血栓溶解剤（静注用rt-PA製剤）"
+   },
+   "revised": [
+    {
+     "path": [
+      "血管性浮腫（0.1%未満：脳）"
+     ],
+     "text": "血管性浮腫（0.1%未満：脳）"
+    },
+    {
+     "path": [],
+     "text": "アンジオテンシン変換酵素阻害剤を投与している患者では、本剤投与中又は投与後に血管性浮腫があらわれる例が多いとの報告がある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ヨビパス皮下注168μgペン／ヨビパス皮下...",
+   "company": "製造販売元／帝人ファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "2439404G1028_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2439404G1028_1_02/",
+   "fetched_at": "2026-11-03 15:31:18",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/470310_2439404G1028_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/470310_2439404G1028_1_02",
+   "meta": {
+    "packins_no": "2439404G1028_1_02",
+    "company_id": "470310",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-11",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ヨビパス皮下注168μgペン",
+     "ヨビパス皮下注294μgペン",
+     "ヨビパス皮下注420μgペン"
+    ],
+    "generic_name": "パロペグテリパラチド",
+    "therapeutic_class": "副甲状腺機能低下症治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "イブトロジーカプセル200mg",
+   "company": "製造販売元／日本化薬株式会社",
+   "reason": "更新",
+   "packins_no": "4291095M1024_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291095M1024_1_02/",
+   "fetched_at": "2026-11-03 15:31:44",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530191_4291095M1024_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530191_4291095M1024_1_02",
+   "meta": {
+    "packins_no": "4291095M1024_1_02",
+    "company_id": "530191",
+    "revision": {
+     "current": {
+      "ym": "2026-07",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-11",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "イブトロジーカプセル200mg"
+    ],
+    "generic_name": "タレトレクチニブアジピン酸塩",
+    "therapeutic_class": "抗悪性腫瘍剤/チロシンキナーゼ阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "ボトル包装36ヵ月\nPTP包装30ヵ月"
+    },
+    {
+     "path": [
+      "１４.適用上の注意",
+      "薬剤交付時の注意",
+      "(1)"
+     ],
+     "text": "ボトル包装の場合は、湿気を避けるため、乾燥剤を同封したボトル包装品のまま患者に交付すること。"
+    },
+    {
+     "path": [
+      "１４.適用上の注意",
+      "薬剤交付時の注意",
+      "(2)"
+     ],
+     "text": "ボトル包装の場合は、湿気を避けるため、乾燥剤を同封した元の容器にて保存し、使用の都度、密栓するよう患者に指導すること。"
+    },
+    {
+     "path": [
+      "１４.適用上の注意",
+      "薬剤交付時の注意",
+      "(3)"
+     ],
+     "text": "PTP包装の場合は、PTPシートから取り出して服用するよう指導すること。PTPシートの誤飲により、硬い鋭角部が食道粘膜へ刺入し、更には穿孔をおこして縦隔洞炎等の重篤な合併症を併発することがある。"
+    },
+    {
+     "path": [
+      "２２.包装"
+     ],
+     "text": "33カプセル［プラスチックボトル、バラ、乾燥剤セットキャップ］\n42カプセル［6カプセル（PTP）×7］"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ラパリムス錠1mg／ラパリムス顆粒0.2%",
+   "company": "製造販売元／ノーベルファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "4291035F1023_1_16",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291035F1023_1_16/",
+   "fetched_at": "2026-11-03 15:31:47",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/620095_4291035F1023_1_16",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/620095_4291035F1023_1_16",
+   "meta": {
+    "packins_no": "4291035F1023_1_16",
+    "company_id": "620095",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第8版"
+     },
+     "previous": {
+      "ym": "2026-04",
+      "ver": "第7版"
+     }
+    },
+    "brands": [
+     "ラパリムス錠1mg",
+     "ラパリムス顆粒0.2%"
+    ],
+    "generic_name": "シロリムス",
+    "therapeutic_class": "mTOR阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "4年"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "タダラフィル錠10mgCI「FCI」／タダラフィ...",
+   "company": "製造販売元／富士化学工業株式会社",
+   "reason": "更新",
+   "packins_no": "259000CF2119_1_06",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/259000CF2119_1_06/",
+   "fetched_at": "2026-11-03 15:31:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670082_259000CF2119_1_06",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670082_259000CF2119_1_06",
+   "meta": {
+    "packins_no": "259000CF2119_1_06",
+    "company_id": "670082",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-05",
+      "ver": null
+     }
+    },
+    "brands": [
+     "タダラフィル錠10mgCI「FCI」",
+     "タダラフィル錠20mgCI「FCI」"
+    ],
+    "generic_name": "タダラフィル錠",
+    "therapeutic_class": "勃起不全治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１０.相互作用",
+      "(1)"
+     ],
+     "text": "本剤は主にCYP3A4により代謝される。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "セピアプテリン"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "併用により降圧作用が増強するおそれがある。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）"
+     ],
+     "text": "NOを介した血管弛緩作用を増強するおそれがある。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "259000CF2119_1_05",
+    "prev_fetched_at": "2026-10-27 18:45:37",
+    "prev_seen_date": "2026-10-27",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "１７.臨床成績 > １７.１ 有効性及び安全性に関する試験 > 外国第Ⅲ相試験",
+      "before": "<0.00",
+      "after": "<0.001"
+     }
+    ]
+   }
+  },
+  {
+   "brand": "アレンドロン酸錠5mg「VTRS」（旧製品）",
+   "company": "製造販売元／ヴィアトリス・ヘルスケア合同会社 / 販売元／ヴィアトリス製薬合同会社",
+   "reason": "更新",
+   "packins_no": "3999018F1200_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999018F1200_1_05/",
+   "fetched_at": "2026-11-03 15:31:51",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/730869_3999018F1200_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/730869_3999018F1200_1_05",
+   "meta": {
+    "packins_no": "3999018F1200_1_05",
+    "company_id": "730869",
+    "revision": {
+     "current": {
+      "ym": "2024-07",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-11",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "アレンドロン酸錠5mg「VTRS」（旧製品）"
+    ],
+    "generic_name": "アレンドロン酸ナトリウム水和物",
+    "therapeutic_class": "骨粗鬆症治療薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "２４.文献請求先及び問い合わせ先"
+     ],
+     "text": "ヴィアトリス製薬合同会社　メディカルインフォメーション部"
+    },
+    {
+     "path": [
+      "２６.製造販売業者等"
+     ],
+     "text": "販売元"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "アレンドロン酸錠5mg「VTRS」",
+   "company": "製造販売元／ヴィアトリス・ヘルスケア合同会社 / 販売元／ヴィアトリス製薬合同会社",
+   "reason": "更新",
+   "packins_no": "3999018F1200_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999018F1200_2_02/",
+   "fetched_at": "2026-11-03 15:32:17",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/730869_3999018F1200_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/730869_3999018F1200_2_02",
+   "meta": {
+    "packins_no": "3999018F1200_2_02",
+    "company_id": "730869",
+    "revision": {
+     "current": {
+      "ym": "2026-07",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-07",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "アレンドロン酸錠5mg「VTRS」"
+    ],
+    "generic_name": "アレンドロン酸ナトリウム水和物",
+    "therapeutic_class": "骨粗鬆症治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "1錠中：アレンドロン酸ナトリウム水和物"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "結晶セルロース、ステアリン酸マグネシウム、部分アルファー化デンプン、D-マンニトール"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.２ 製剤の性状"
+     ],
+     "text": "白色の素錠"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.２ 製剤の性状"
+     ],
+     "text": ""
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.２ 製剤の性状"
+     ],
+     "text": ""
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.２ 製剤の性状"
+     ],
+     "text": ""
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.２ 製剤の性状"
+     ],
+     "text": "直径：8.0mm"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.２ 製剤の性状"
+     ],
+     "text": "厚さ：3.0mm"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.２ 製剤の性状"
+     ],
+     "text": "質量：190mg"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.２ 製剤の性状"
+     ],
+     "text": "M117"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ベシケア錠2.5mg／ベシケア錠5mg",
+   "company": "製造販売／アステラス製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2590011F1028_1_13",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2590011F1028_1_13/",
+   "fetched_at": "2026-11-03 15:33:42",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/800126_2590011F1028_1_13",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/800126_2590011F1028_1_13",
+   "meta": {
+    "packins_no": "2590011F1028_1_13",
+    "company_id": "800126",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2020-11",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ベシケア錠2.5mg",
+     "ベシケア錠5mg"
+    ],
+    "generic_name": "コハク酸ソリフェナシン錠 / Solifenacin　Succinate",
+    "therapeutic_class": "過活動膀胱治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "QT延長、心室頻拍（Torsade de Pointesを含む）、房室ブロック、洞不全症候群、高度徐脈（いずれも頻度不明）"
+     ],
+     "text": "QT延長、心室頻拍（Torsade de Pointesを含む）、房室ブロック、洞不全症候群、高度徐脈（いずれも頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "血管性浮腫、多形紅斑、剥脱性皮膚炎"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ベシケアOD錠2.5mg／ベシケアOD錠5mg",
+   "company": "製造販売／アステラス製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2590011F3020_1_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2590011F3020_1_09/",
+   "fetched_at": "2026-11-03 15:34:08",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/800126_2590011F3020_1_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/800126_2590011F3020_1_09",
+   "meta": {
+    "packins_no": "2590011F3020_1_09",
+    "company_id": "800126",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2019-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ベシケアOD錠2.5mg",
+     "ベシケアOD錠5mg"
+    ],
+    "generic_name": "コハク酸ソリフェナシン口腔内崩壊錠 / Solifenacin　Succinate",
+    "therapeutic_class": "過活動膀胱治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "QT延長、心室頻拍（Torsade de Pointesを含む）、房室ブロック、洞不全症候群、高度徐脈（いずれも頻度不明）"
+     ],
+     "text": "QT延長、心室頻拍（Torsade de Pointesを含む）、房室ブロック、洞不全症候群、高度徐脈（いずれも頻度不明）"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "血管性浮腫、多形紅斑、剥脱性皮膚炎"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ベタニス錠25mg／ベタニス錠50mg",
+   "company": "製造販売／アステラス製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2590014F1021_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2590014F1021_1_14/",
+   "fetched_at": "2026-11-03 15:34:10",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/800126_2590014F1021_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/800126_2590014F1021_1_14",
+   "meta": {
+    "packins_no": "2590014F1021_1_14",
+    "company_id": "800126",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2021-08",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ベタニス錠25mg",
+     "ベタニス錠50mg"
+    ],
+    "generic_name": "ミラベグロン錠 / Mirabegron",
+    "therapeutic_class": "選択的β3アドレナリン受容体作動性過活動膀胱治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "重度の徐脈等の不整脈、急性心筋虚血等の不整脈を起こしやすい患者"
+     ],
+     "text": "心室頻拍（Torsade de Pointesを含む）、QT延長を起こすことがある。"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "低カリウム血症のある患者"
+     ],
+     "text": "心室頻拍（Torsade de Pointesを含む）、QT延長を起こすことがある。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.１ 併用禁忌（併用しないこと）"
+     ],
+     "text": "QT延長、心室性不整脈（Torsade de Pointesを含む）等を起こすおそれがある。"
+    },
+    {
+     "path": [
+      "１０.相互作用",
+      "１０.２ 併用注意（併用に注意すること）",
+      "(1)"
+     ],
+     "text": "イトラコナゾール"
+    },
+    {
+     "path": [
+      "１５.その他の注意",
+      "１５.１ 臨床使用に基づく情報"
+     ],
+     "text": "本剤との因果関係は明らかではないが、国内外の市販後において本剤投与後に抗好中球細胞質抗体（ANCA）関連血管炎が報告されている。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ボイデヤ錠50mg",
+   "company": "製造販売元／アレクシオンファーマ合同会社",
+   "reason": "更新",
+   "packins_no": "3999062F1022_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/3999062F1022_1_03/",
+   "fetched_at": "2026-11-03 15:34:13",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/870056_3999062F1022_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/870056_3999062F1022_1_03",
+   "meta": {
+    "packins_no": "3999062F1022_1_03",
+    "company_id": "870056",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2025-05",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "ボイデヤ錠50mg"
+    ],
+    "generic_name": "ダニコパン",
+    "therapeutic_class": "補体D因子阻害剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "36箇月"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ハルナールD錠0.1mg／ハルナールD錠0.2mg",
+   "company": "製造販売／アステラス製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2590008F1026_1_14",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2590008F1026_1_14/",
+   "fetched_at": "2026-11-03 17:26:14",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/800126_2590008F1026_1_14",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/800126_2590008F1026_1_14",
+   "meta": {
+    "packins_no": "2590008F1026_1_14",
+    "company_id": "800126",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2024-04",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ハルナールD錠0.1mg",
+     "ハルナールD錠0.2mg"
+    ],
+    "generic_name": "タムスロシン塩酸塩口腔内崩壊錠 / Tamsulosin Hydrochloride",
+    "therapeutic_class": "前立腺肥大症の排尿障害改善剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "4年"
+    },
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "4年"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "そう痒感、蕁麻疹、多形紅斑、血管性浮腫"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "パンオピン",
+   "company": "製造販売元／武田薬品工業株式会社",
+   "reason": "経過措置期間満了及び最終ロット有効期間終了",
+   "yj_hint": "8114001X1023_1_12"
+  },
+  {
+   "brand": "パンオピン皮下注20mg",
+   "company": "製造販売元／武田薬品工業株式会社",
+   "reason": "経過措置期間満了及び最終ロット有効期間終了",
+   "yj_hint": "8114400A1070_1_07"
+  },
+  {
+   "brand": "テルビナフィン錠125mg「TCK」",
+   "company": "製造販売元／辰巳化学株式会社 / 発売元／科研製薬株式会社",
+   "reason": "導出先企業において販売中止し、最終出荷ロットの使用期限が満了したため。",
+   "yj_hint": "6290005F1334_2_04"
+  }
+ ],
+ "created_at": "2026-11-03 15:28:58",
+ "updated_at": "2026-11-03 17:26:16",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}

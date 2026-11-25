@@ -1,0 +1,241 @@
+{
+ "date": "2026-11-01",
+ "updates": [
+  {
+   "brand": "セタネオ点眼液0.002%",
+   "company": "製造販売元／参天製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1319766Q1026_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319766Q1026_1_02/",
+   "fetched_at": "2026-11-03 15:28:44",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300237_1319766Q1026_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300237_1319766Q1026_1_02",
+   "meta": {
+    "packins_no": "1319766Q1026_1_02",
+    "company_id": "300237",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "セタネオ点眼液0.002%"
+    ],
+    "generic_name": "セペタプロスト点眼液",
+    "therapeutic_class": "二環式プロスタグランジン誘導体 / 緑内障・高眼圧症治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "三和小柴胡湯エキス細粒",
+   "company": "製造販売元／三和生薬株式会社",
+   "reason": "更新",
+   "packins_no": "5200073C1049_1_16",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/5200073C1049_1_16/",
+   "fetched_at": "2026-11-03 15:28:47",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/300303_5200073C1049_1_16",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/300303_5200073C1049_1_16",
+   "meta": {
+    "packins_no": "5200073C1049_1_16",
+    "company_id": "300303",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-10",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "三和小柴胡湯エキス細粒"
+    ],
+    "generic_name": "小柴胡湯",
+    "therapeutic_class": "漢方製剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２２.包装"
+     ],
+     "text": "500g［ボトル］\n2.5g×84包［分包］"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ボルズィ錠2.5mg／ボルズィ錠5mg／ボルズィ...",
+   "company": "製造販売／大正製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1190034F1022_1_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190034F1022_1_02/",
+   "fetched_at": "2026-11-03 15:28:49",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400059_1190034F1022_1_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400059_1190034F1022_1_02",
+   "meta": {
+    "packins_no": "1190034F1022_1_02",
+    "company_id": "400059",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-11",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ボルズィ錠2.5mg",
+     "ボルズィ錠5mg",
+     "ボルズィ錠10mg"
+    ],
+    "generic_name": "ボルノレキサント水和物製剤",
+    "therapeutic_class": "オレキシン受容体拮抗薬\n不眠症治療薬"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ボルズィ錠2.5mg／ボルズィ錠5mg／ボルズィ...",
+   "company": "製造販売／大正製薬株式会社 / 販売／Meiji Seika ファルマ株式会社",
+   "reason": "更新",
+   "packins_no": "1190034F1022_2_02",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1190034F1022_2_02/",
+   "fetched_at": "2026-11-03 15:28:54",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400059_1190034F1022_2_02",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400059_1190034F1022_2_02",
+   "meta": {
+    "packins_no": "1190034F1022_2_02",
+    "company_id": "400059",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2025-11",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "ボルズィ錠2.5mg",
+     "ボルズィ錠5mg",
+     "ボルズィ錠10mg"
+    ],
+    "generic_name": "ボルノレキサント水和物製剤",
+    "therapeutic_class": "オレキシン受容体拮抗薬\n不眠症治療薬"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "エバスチンOD錠5mg「科研」／エバスチンOD...",
+   "company": "製造販売元／ダイト株式会社 / 発売元／科研製薬株式会社",
+   "reason": "新規",
+   "packins_no": "4490019F3080_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4490019F3080_1_01/",
+   "fetched_at": "2026-11-03 15:28:56",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/400073_4490019F3080_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/400073_4490019F3080_1_01",
+   "meta": {
+    "packins_no": "4490019F3080_1_01",
+    "company_id": "400073",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-09",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "エバスチンOD錠5mg「科研」",
+     "エバスチンOD錠10mg「科研」"
+    ],
+    "generic_name": "エバスチン",
+    "therapeutic_class": "持続性選択H1受容体拮抗剤"
+   },
+   "revised": [],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "フェルビナクパップ70mg「サワイ」",
+   "company": "製造販売元／沢井製薬株式会社",
+   "reason": "最終出荷製品の使用期限満了のため。",
+   "yj_hint": "2649731S1283_1_05"
+  },
+  {
+   "brand": "ロサルヒド配合錠LD「科研」／ロサルヒド配合錠HD「科研」",
+   "company": "製造販売元／ダイト株式会社 / 発売元／科研製薬株式会社",
+   "reason": "最終製造品の使用期限切れに伴い、掲載を削除する。",
+   "yj_hint": "2149110F1180_1_17"
+  },
+  {
+   "brand": "エバスチン錠5mg「科研」／エバスチン錠10mg「科研」／エバスチンOD錠5mg「科研」／エバスチンOD錠10mg「科研」",
+   "company": "製造販売元／ダイト株式会社 / 発売元／科研製薬株式会社",
+   "reason": "エバスチン錠5mgおよび10mg「科研」の最終製造品の使用期限切れに伴い、掲載を削除いたします。尚、エバスチンOD錠5mgおよびOD錠10mg「科研」は引き続き販売いたします。",
+   "yj_hint": "4490019F1095_1_13"
+  },
+  {
+   "brand": "アテノロール錠25mg「JG」／アテノロール錠50mg「JG」",
+   "company": "製造販売元／長生堂製薬株式会社 / 販売元／日本ジェネリック株式会社",
+   "reason": "最終ロット使用期限終了の為。",
+   "yj_hint": "2123011F1341_1_08"
+  },
+  {
+   "brand": "アムロジピン錠2.5mg「杏林」／アムロジピン錠5mg「杏林」／アムロジピンOD錠2.5mg「杏林」（旧製品）／アムロジピンOD錠5mg「杏林」（旧製品）",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／共創未来ファーマ株式会社",
+   "reason": "共創未来ファーマ株式会社（販売元）において販売中止となり、最終出荷ロットの使用期限が満了したため。",
+   "yj_hint": "2171022F1444_3_05"
+  },
+  {
+   "brand": "サルポグレラート塩酸塩錠50mg「杏林」／サルポグレラート塩酸塩錠100mg「杏林」",
+   "company": "製造販売元／キョーリンリメディオ株式会社 / 販売元／杏林製薬株式会社",
+   "reason": "経過措置期間を満了し、最終出荷ロットの使用期限が経過したため",
+   "yj_hint": "3399006F1280_1_07"
+  },
+  {
+   "brand": "テラムロ配合錠AP「JG」／テラムロ配合錠BP「JG」",
+   "company": "製造販売元／日本ジェネリック株式会社",
+   "reason": "最終出荷製品の使用期限終了のため",
+   "yj_hint": "2149117F1106_1_06"
+  },
+  {
+   "brand": "スマトリプタン錠50mg「JG」",
+   "company": "製造販売元／日本ジェネリック株式会社",
+   "reason": "最終出荷製品の使用期限終了のため",
+   "yj_hint": "2160003F1065_1_08"
+  },
+  {
+   "brand": "リドカインテープ18mg「ニプロ」",
+   "company": "製造販売元／ニプロファーマ株式会社 / 販売元／ニプロ株式会社",
+   "reason": "経過措置期間を満了し、最終製造ロットの使用期限を満了するため",
+   "yj_hint": "1214701S1078_2_04"
+  }
+ ],
+ "created_at": "2026-11-03 15:28:44",
+ "updated_at": "2026-11-03 15:28:58",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
