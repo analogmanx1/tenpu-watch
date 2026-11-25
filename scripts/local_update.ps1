@@ -58,15 +58,42 @@ function Resolve-StuckMerge {
   if ($LASTEXITCODE -eq 0) { Say "!! 自動解消しきれない衝突が残っています(data/docs以外?)。手で解消してください" }
 }
 
+# --- 古い空のロックファイルの片づけ(2026-11-25 対策。つまずき帳#13) ---
+# 同期フォルダの上では .git\index.lock などが消えずに残ることがあり、残ると以後のgit操作が全部失敗する
+# (2026-10-28〜11-25の約1か月、これで公開が止まっていた)。
+# 「0バイト」かつ「$StaleLockMinutes 分以上前」のロックだけを、ゴミ箱へ移す(元に戻せる形)。
+# 本当に動いているgitのロックを消さないよう、作られたばかりのロックには触らない
+$StaleLockMinutes = 60
+function Clear-StaleLock {
+  $locks = @(Get-ChildItem -Force -File -Path (Join-Path $repo ".git") -Filter "*.lock" -ErrorAction SilentlyContinue)
+  $locks += @(Get-ChildItem -Force -File -Recurse -Path (Join-Path $repo ".git\refs") -Filter "*.lock" -ErrorAction SilentlyContinue)
+  foreach ($l in $locks) {
+    if ($l.Length -eq 0 -and $l.LastWriteTime -lt (Get-Date).AddMinutes(-$StaleLockMinutes)) {
+      try {
+        Add-Type -AssemblyName Microsoft.VisualBasic
+        [Microsoft.VisualBasic.FileIO.FileSystem]::DeleteFile($l.FullName, 'OnlyErrorDialogs', 'SendToRecycleBin')
+        Say ("!! 古い空のロックをゴミ箱へ移しました: {0}(作成 {1:yyyy-MM-dd HH:mm})" -f $l.Name, $l.LastWriteTime)
+      } catch {
+        Say ("!! 古いロックを片づけられませんでした: {0} ({1})" -f $l.FullName, $_.Exception.Message)
+      }
+    }
+  }
+}
+
 # --- 取り込み本体 ---
+Clear-StaleLock      # 古い空のロックが残っていたら、まず片づける
 Resolve-StuckMerge   # 前回の実行が衝突で止まっていたら、まず片付ける
-[void](Step "git pull" { git pull --no-rebase origin main })
+$pullRc = Step "git pull" { git pull --no-rebase origin main }
 Resolve-StuckMerge   # いまのpullが衝突したら、その場で片付ける
+if ($pullRc -ne 0) { Say "!! git pull に失敗(exit $pullRc)。このあと取得は続け、push のときにもう一度取り込みを試します" }
 $rc = Step "python src/run.py (取得+識別コード差分+サイト生成)" { python src/run.py --shikibetsu }
 if ($rc -ne 0) { Say "!! run.py が異常終了 (exit $rc)。今回はコミットせず終了(次回やり直し)"; exit $rc }
 
 # --- 変更があればコミットしてpush(pushが先を越されたらpullして1回だけやり直し) ---
-git add -A data archive docs 2>&1 | Out-Null
+# git add の失敗(ロックなど)を握りつぶすと「差分なし=新しい更新なし」に見えてしまうので、結果を見る(つまずき帳#13)
+$addOut = git add -A data archive docs 2>&1 | Out-String
+$addRc = $LASTEXITCODE
+if ($addRc -ne 0) { Say "!! git add に失敗(exit $addRc)"; if ($addOut.Trim()) { Add-Content -Encoding UTF8 $log $addOut.TrimEnd() } }
 git diff --cached --quiet
 if ($LASTEXITCODE -ne 0) {
   $stamp = Get-Date -Format "yyyy-MM-dd HH:mm"
@@ -79,6 +106,11 @@ if ($LASTEXITCODE -ne 0) {
     if ($rc -ne 0) { Say "!! push に失敗。次回の実行で回収されます"; exit 1 }
   }
   Say "---- done: 更新をpushしました ----"
+} elseif ($pullRc -ne 0 -or $addRc -ne 0) {
+  # pull / add に失敗したまま「新しい更新なし」で終わると、止まっていても気づけない(つまずき帳#13)。
+  # 失敗だと分かる言葉で終わらせ、タスクスケジューラの「前回の結果」も 0 以外にする
+  Say "---- !! 失敗で終了: git の取り込み・登録ができませんでした(上のログを確認。ロック・衝突・ネットワーク) ----"
+  exit 2
 } else {
   Say "---- done: 新しい更新なし ----"
 }
