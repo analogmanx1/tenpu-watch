@@ -63,7 +63,7 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .box{border:1px solid var(--boxline);border-radius:.7rem;padding:.1rem 1.1rem .9rem;margin:1rem 0;background:var(--card)}
 .box>h2{margin:.7rem 0 .4rem}.box>:last-child{margin-bottom:0}.box .card{background:var(--bg)}
 /* ---- 機能タイル(ホーム・ツールボックスのトップ。feature_tiles)。タイルの大きさは --tile(PC) / --tilem(スマホ) の1か所で変える ---- */
-:root{--tile:124px;--tilem:96px}
+:root{--tile:124px;--tilem:96px;--tile-s:85%;--tile-l:90%;--tile-ls:72%;--tile-sd:32%;--tile-ld:24%;--tile-lsd:38%}   /* 色: s=鮮やかさ l=明るさ ls=枠線の明るさ(dが付くほうは暗い画面用) */
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--tile),1fr));gap:.75rem;margin:.8rem 0 1.4rem}
 .tile{display:flex;flex-direction:column;align-items:center;gap:.35rem;padding:1rem .35rem .8rem;border:1px solid var(--boxline);border-radius:1rem;background:var(--card);color:var(--fg);text-decoration:none;text-align:center;line-height:1.3}
 .tile:hover{border-color:var(--acc);text-decoration:none}.tile:active{transform:scale(.97)}
@@ -72,6 +72,9 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .tile .tb{display:inline-block;font-size:.7rem;font-weight:600;line-height:1.5;padding:0 .5rem;border-radius:1rem;background:var(--acc);color:#fff}
 .tile .tb.imp{background:var(--imp)}
 @media (prefers-color-scheme:dark){.tile .tb{color:#111}}
+.tile[style*="--h"]{background:hsl(var(--h) var(--tile-s) var(--tile-l));border-color:hsl(var(--h) var(--tile-s) var(--tile-ls));color:#222}
+.tile[style*="--h"]:hover{border-color:var(--acc)}
+@media (prefers-color-scheme:dark){.tile[style*="--h"]{background:hsl(var(--h) var(--tile-sd) var(--tile-ld));border-color:hsl(var(--h) var(--tile-sd) var(--tile-lsd));color:var(--fg)}}
 h2.tileh{margin:1rem 0 .2rem;font-size:1.1rem}
 .calc{max-width:640px}.calc label{display:block;margin:.6rem 0 .2rem;font-weight:600}.calc input,.calc select{font-size:1rem;padding:.35rem .5rem;border:1px solid var(--line);border-radius:.4rem;background:var(--bg);color:var(--fg);width:100%;max-width:320px}
 .calc .result{margin-top:1rem;padding:.8rem 1rem;border-radius:.5rem;background:var(--card);border:1px solid var(--line);font-size:1.05rem}.calc .result b{font-size:1.3rem}

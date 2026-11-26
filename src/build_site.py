@@ -186,6 +186,7 @@ def top_nav(rel: str, tools: list[dict]) -> str:
 </header>"""
 
 
+TILE_HUE_START = 205   # 機能タイルの1枚目(添付文書ウォッチ)の色相(0=赤 60=黄 120=緑 205=水色 270=紫)。2枚目以降は均等にずれる
 THEME_COLOR = "#2a62b8"   # スマホのアドレスバー等の色(style.css の --acc と同じ)。アイコンの青も scripts/make_icons.py で同じ色
 
 
@@ -447,7 +448,7 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .box{border:1px solid var(--boxline);border-radius:.7rem;padding:.1rem 1.1rem .9rem;margin:1rem 0;background:var(--card)}
 .box>h2{margin:.7rem 0 .4rem}.box>:last-child{margin-bottom:0}.box .card{background:var(--bg)}
 /* ---- 機能タイル(ホーム・ツールボックスのトップ。feature_tiles)。タイルの大きさは --tile(PC) / --tilem(スマホ) の1か所で変える ---- */
-:root{--tile:124px;--tilem:96px}
+:root{--tile:124px;--tilem:96px;--tile-s:85%;--tile-l:90%;--tile-ls:72%;--tile-sd:32%;--tile-ld:24%;--tile-lsd:38%}   /* 色: s=鮮やかさ l=明るさ ls=枠線の明るさ(dが付くほうは暗い画面用) */
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--tile),1fr));gap:.75rem;margin:.8rem 0 1.4rem}
 .tile{display:flex;flex-direction:column;align-items:center;gap:.35rem;padding:1rem .35rem .8rem;border:1px solid var(--boxline);border-radius:1rem;background:var(--card);color:var(--fg);text-decoration:none;text-align:center;line-height:1.3}
 .tile:hover{border-color:var(--acc);text-decoration:none}.tile:active{transform:scale(.97)}
@@ -456,6 +457,9 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .tile .tb{display:inline-block;font-size:.7rem;font-weight:600;line-height:1.5;padding:0 .5rem;border-radius:1rem;background:var(--acc);color:#fff}
 .tile .tb.imp{background:var(--imp)}
 @media (prefers-color-scheme:dark){.tile .tb{color:#111}}
+.tile[style*="--h"]{background:hsl(var(--h) var(--tile-s) var(--tile-l));border-color:hsl(var(--h) var(--tile-s) var(--tile-ls));color:#222}
+.tile[style*="--h"]:hover{border-color:var(--acc)}
+@media (prefers-color-scheme:dark){.tile[style*="--h"]{background:hsl(var(--h) var(--tile-sd) var(--tile-ld));border-color:hsl(var(--h) var(--tile-sd) var(--tile-lsd));color:var(--fg)}}
 h2.tileh{margin:1rem 0 .2rem;font-size:1.1rem}
 .calc{max-width:640px}.calc label{display:block;margin:.6rem 0 .2rem;font-weight:600}.calc input,.calc select{font-size:1rem;padding:.35rem .5rem;border:1px solid var(--line);border-radius:.4rem;background:var(--bg);color:var(--fg);width:100%;max-width:320px}
 .calc .result{margin-top:1rem;padding:.8rem 1rem;border-radius:.5rem;background:var(--card);border:1px solid var(--line);font-size:1.05rem}.calc .result b{font-size:1.3rem}
@@ -1423,9 +1427,14 @@ def feature_tiles(rel: str, days: list[dict], tools: list[dict]) -> str:
     for pg in CHUUI_PAGES.values():
         items.append((pg["emoji"], pg.get("tile") or pg["title"], f'{pg["dir"]}/index.html', ""))
     items += [(t.get("emoji") or "🧮", t["title"], f'tools/{t["file"]}', "") for t in tools]
+    # タイルの色(2026-11-25 指示: パステルカラー・全部ちがう色)。色相を枚数で均等に割って1枚ずつずらす
+    # (並び順に虹のように変わる。枚数が増えても同じ色にならない)。始まりの色は TILE_HUE_START、
+    # 淡さ・濃さは CSS の --tile-s / --tile-l(明るい画面)と --tile-sd / --tile-ld(暗い画面)の1か所で変える
+    n = max(len(items), 1)
     return '<div class="tiles">' + "".join(
-        f'<a class="tile" href="{rel}{esc(href)}"><span class="ico" aria-hidden="true">{ico}</span>'
-        f'<span class="nm">{esc(name)}</span>{b}</a>' for ico, name, href, b in items) + "</div>"
+        f'<a class="tile" style="--h:{round(TILE_HUE_START + i * 360 / n) % 360}" href="{rel}{esc(href)}">'
+        f'<span class="ico" aria-hidden="true">{ico}</span>'
+        f'<span class="nm">{esc(name)}</span>{b}</a>' for i, (ico, name, href, b) in enumerate(items)) + "</div>"
 
 
 def render_home(cfg: dict, days: list[dict], tools: list[dict]) -> str:
