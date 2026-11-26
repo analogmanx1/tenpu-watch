@@ -96,6 +96,25 @@ ICONS: dict[str, list[str]] = {
         "..kwwwwwwwwwwk..",
         "..kkkkkkkkkkkk..",
     ],
+    # ビソノテープ⇔錠 換算表: 白い錠剤(割線つき)と、オレンジの薬の面がある貼り薬
+    "bisono": [
+        "..kkkk..........",
+        ".kwwwwk.........",
+        "kwwwwwwk........",
+        "kwsssswk........",
+        "kwwwwwwk........",
+        "kwwwwwwkkkkkkkk.",
+        ".kwwwwkwwwwwwwwk",
+        "..kkkkwwwwwwwwwk",
+        ".....kwwooooowwk",
+        ".....kwwooooowwk",
+        ".....kwwooooowwk",
+        ".....kwwooooowwk",
+        ".....kwwooooowwk",
+        ".....kwwwwwwwwwk",
+        ".....kwwwwwwwwwk",
+        "......kkkkkkkkk.",
+    ],
     # 添付文書検索: 赤い本(表紙に白いラベル)
     "tenpu": [
         "................",
