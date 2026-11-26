@@ -8,6 +8,8 @@
 <title>ビソノテープ⇔ビソプロロール錠 換算表 | 薬剤師ツールボックス</title>
 <meta name="description" content="ビソノテープ(貼り薬)とビソプロロールフマル酸塩錠の用量の対応表。添付文書の臨床試験で比べた組み合わせ(テープ4mg⇔錠2.5mg、テープ8mg⇔錠5mg)">
 <meta name="tile-emoji" content="🩹">
+<!-- 並び順: 使用頻度が低いので一番下(2026-11-26 指示)。数字が大きいほど下 -->
+<meta name="tool-order" content="900">
 <link rel="stylesheet" href="../assets/style.css">
 <style>
 /* ビソノテープ⇔錠の換算表(2026-11-26 依頼)。
@@ -37,6 +39,10 @@
 .bapp .eff th{background:var(--card);font-weight:bold}
 .bapp .eff td:first-child{text-align:left}
 .bapp details summary{cursor:pointer;font-weight:bold;font-size:14px}
+.bapp .links{display:flex;flex-wrap:wrap;gap:8px}
+.bapp .lbtn{flex:1 1 220px;display:block;border:2px solid var(--acc);border-radius:10px;padding:9px 12px;font-size:12.5px;line-height:1.5;color:var(--fg);text-decoration:none;background:var(--card)}
+.bapp .lbtn b{font-size:14.5px;color:var(--acc)}
+.bapp .lbtn:active{transform:translateY(1px)}
 .bapp .src{font-size:12.5px;color:var(--mut);line-height:1.7}
 </style>
 </head>
@@ -84,6 +90,15 @@
           <tr><td>頻脈性心房細動</td><td>〇</td><td>〇</td><td>〇</td></tr>
         </table>
       </details>
+    </div>
+
+    <!-- 参照サイト(2026-11-26 指示: メーカーサイトのリンクも載せる) -->
+    <div class="panel">
+      <h2>🔗 参照サイト</h2>
+      <div class="links">
+        <a class="lbtn" href="https://med.toaeiyo.co.jp/products/faq/bisonotape/" target="_blank" rel="noopener">🏭 トーアエイヨー(メーカー)<br><b>ビソノテープ よくあるご質問 ↗</b></a>
+        <a class="lbtn" href="https://www.pmda.go.jp/PmdaSearch/iyakuDetail/GeneralList/2149700S1027" target="_blank" rel="noopener">📕 PMDA<br><b>ビソノテープの添付文書 ↗</b></a>
+      </div>
     </div>
 
     <p class="src">

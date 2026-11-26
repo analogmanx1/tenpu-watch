@@ -151,8 +151,13 @@ def scan_tools(docs: Path) -> list[dict]:
         m2 = re.search(r'<meta\s+name="description"\s+content="(.*?)"', txt, flags=re.S | re.I)
         desc = html.unescape(m2.group(1)).strip() if m2 else ""
         m3 = re.search(r'<meta\s+name="tile-emoji"\s+content="(.*?)"', txt, flags=re.S | re.I)   # 機能タイルのアイコン
+        # 並び順(2026-11-26 ビソノ換算表で追加): <meta name="tool-order" content="900"> のように書くと、
+        # 数字の小さい順に並ぶ(書かなければ100=ファイル名順)。使用頻度の低いツールは大きい数字で下へ
+        m4 = re.search(r'<meta\s+name="tool-order"\s+content="(\d+)"', txt, flags=re.S | re.I)
         out.append({"file": f.name, "title": title, "desc": desc,
-                    "emoji": html.unescape(m3.group(1)).strip() if m3 else ""})
+                    "emoji": html.unescape(m3.group(1)).strip() if m3 else "",
+                    "order": int(m4.group(1)) if m4 else 100})
+    out.sort(key=lambda t: (t["order"], t["file"]))
     return out
 
 
