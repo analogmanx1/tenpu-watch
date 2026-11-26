@@ -1,0 +1,206 @@
+{
+ "date": "2026-11-26",
+ "updates": [
+  {
+   "brand": "コメリアンコーワ錠50／コメリアンコーワ...",
+   "company": "製造販売元／興和株式会社",
+   "reason": "更新",
+   "packins_no": "2171005F1068_1_08",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2171005F1068_1_08/",
+   "fetched_at": "2026-11-26 13:14:10",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/270072_2171005F1068_1_08",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/270072_2171005F1068_1_08",
+   "meta": {
+    "packins_no": "2171005F1068_1_08",
+    "company_id": "270072",
+    "revision": {
+     "current": {
+      "ym": "2022-11",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "コメリアンコーワ錠50",
+     "コメリアンコーワ錠100"
+    ],
+    "generic_name": "ジラゼプ塩酸塩水和物",
+    "therapeutic_class": "心・腎疾患治療剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "クロルフェネシンカルバミン酸エステル...",
+   "company": "製造販売元／鶴原製薬株式会社",
+   "reason": "更新",
+   "packins_no": "1225001F1165_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1225001F1165_1_04/",
+   "fetched_at": "2026-11-26 13:14:12",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/460028_1225001F1165_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/460028_1225001F1165_1_04",
+   "meta": {
+    "packins_no": "1225001F1165_1_04",
+    "company_id": "460028",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2022-08",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "クロルフェネシンカルバミン酸エステル錠125mg「ツルハラ」",
+     "クロルフェネシンカルバミン酸エステル錠250mg「ツルハラ」"
+    ],
+    "generic_name": "クロルフェネシンカルバミン酸エステル",
+    "therapeutic_class": "筋緊張性疼痛疾患治療剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "健康成人に250mgを単回経口投与した場合、尿中代謝物の大部分（総排泄量の約84%）が未変化体のグルクロン酸抱合体であった 。"
+    },
+    {
+     "path": [],
+     "text": "健康成人に250mgを単回経口投与した場合、24時間で尿中には投与量の約92%が排泄された 。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トリアムシノロンアセトニド口腔用貼付...",
+   "company": "製造販売元／帝國製薬株式会社 / 販売元／大正製薬株式会社",
+   "reason": "更新",
+   "packins_no": "2399707D2061_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2399707D2061_1_03/",
+   "fetched_at": "2026-11-26 13:14:14",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/470006_2399707D2061_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/470006_2399707D2061_1_03",
+   "meta": {
+    "packins_no": "2399707D2061_1_03",
+    "company_id": "470006",
+    "revision": {
+     "current": {
+      "ym": "2022-09",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2020-12",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "トリアムシノロンアセトニド口腔用貼付剤25μg「大正」"
+    ],
+    "generic_name": "トリアムシノロンアセトニド貼付剤",
+    "therapeutic_class": "アフタ性口内炎治療剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": ""
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "トロビシン筋注用2g",
+   "company": "製造販売元／ファイザー株式会社",
+   "reason": "更新",
+   "packins_no": "6124400D1030_3_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/6124400D1030_3_03/",
+   "fetched_at": "2026-11-26 13:14:16",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/672212_6124400D1030_3_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/672212_6124400D1030_3_03",
+   "meta": {
+    "packins_no": "6124400D1030_3_03",
+    "company_id": "672212",
+    "revision": {
+     "current": {
+      "ym": "2022-07",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "トロビシン筋注用2g"
+    ],
+    "generic_name": "スペクチノマイシン塩酸塩水和物",
+    "therapeutic_class": "抗生物質製剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "ジャクスタピッドカプセル5mg／ジャクス...",
+   "company": "製造販売元／レコルダティ・レア・ディジーズ・ジャパン株式会社",
+   "reason": "更新",
+   "packins_no": "2189020M1023_2_12",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2189020M1023_2_12/",
+   "fetched_at": "2026-11-26 13:14:18",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/870276_2189020M1023_2_12",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/870276_2189020M1023_2_12",
+   "meta": {
+    "packins_no": "2189020M1023_2_12",
+    "company_id": "870276",
+    "revision": {
+     "current": {
+      "ym": "2026-09",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2026-06",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "ジャクスタピッドカプセル5mg",
+     "ジャクスタピッドカプセル10mg",
+     "ジャクスタピッドカプセル20mg",
+     "ジャクスタピッドカプセル小児用2mg"
+    ],
+    "generic_name": "ロミタピドメシル酸塩",
+    "therapeutic_class": "高脂血症治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "２５.保険給付上の注意"
+     ],
+     "text": "小児用カプセル2mgは新医薬品であるため、厚生労働省告示第107号（平成18年3月6日付）に基づき、2027年8月末までは、投薬は1回14日間分を限度とされています。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "2189020M1023_2_11",
+    "prev_fetched_at": "2026-09-14 17:26:45",
+    "prev_seen_date": "2026-09-14",
+    "changes": [
+     {
+      "kind": "changed",
+      "path": "２２.包装 > 〈カプセル2mg〉",
+      "before": "28カプセル入り瓶（薬価未収載）",
+      "after": "28カプセル入り瓶"
+     }
+    ]
+   }
+  }
+ ],
+ "deletes": [],
+ "created_at": "2026-11-26 13:14:10",
+ "updated_at": "2026-11-26 13:14:54",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
