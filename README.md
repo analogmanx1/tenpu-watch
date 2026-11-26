@@ -23,7 +23,7 @@ PMDA「過去1週間以内に更新された添付文書情報」を毎日自動
 ## サイトの階層
 ```
 トップ(ホーム)「ファーマビット」 docs/index.html ← 入口。サイト名・項目は site/home.json で管理(live: toolbox の項目は機能タイルをそのまま並べる。それ以外は1項目=1カード)
- └ 💊 薬剤師ツールボックス  docs/toolbox/   ← 機能タイル(アイコン+名前。タップでその機能へ。build_site.py の feature_tiles。ウォッチのタイルだけ更新件数のバッジつき)
+ └ 💊 薬剤師ツールボックス  docs/toolbox/   ← 機能タイル(アイコン+名前。タップでその機能へ。build_site.py の feature_tiles。ウォッチのタイルだけ更新件数のバッジつき。背景は1枚ずつちがうパステルカラー、絵は16×16のドット絵=scripts/make_tile_icons.py で作って docs/assets/tiles/ に置く)
      ├ 📄 添付文書ウォッチ  docs/watch/     ← 日別ページ・バックナンバー・検索(自動生成)
      ├ 📕 添付文書検索      docs/tenpu/     ← 薬剤名→候補→クリックで添付文書(PDF)。候補に規格ごとの薬価つき。データは data/tenpu_index.json(毎日0:15自動更新)+薬価 data/yakka_index.json(同)× data/yj_index.json(PC側タスク)
      ├ 📘 インタビューフォーム検索 docs/if/ ← 薬剤名→候補→クリックでIF(PDF)。データは data/if_index.json(毎日0:15自動更新)

@@ -4,7 +4,8 @@
    - ファイル名は半角英数字がおすすめ(URLになるため)
    - 先頭が `_` のファイルは一覧に載りません(ひな形用)
 2. `<title>` と `<meta name="description">` を書き換える → トップページのタイルとメニューに自動で載る
-   - タイルのアイコンは `<meta name="tile-emoji" content="📅">` で決める(無ければ🧮)
+   - タイルの絵はドット絵: `scripts/make_tile_icons.py` の `ICONS` に、ファイル名(例: days.html → `days`)の設計図を足して実行する
+   - ドット絵が無いときは `<meta name="tile-emoji" content="📅">` の絵文字が出る(無ければ🧮)
 3. 中身を作る(HTML + JS だけで完結。外部ライブラリ不要)
 4. GitHubに push すれば公開される(毎日の自動実行(7時・17時)でも index.html が再生成されて一覧に反映)
 

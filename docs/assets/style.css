@@ -68,6 +68,8 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .tile{display:flex;flex-direction:column;align-items:center;gap:.35rem;padding:1rem .35rem .8rem;border:1px solid var(--boxline);border-radius:1rem;background:var(--card);color:var(--fg);text-decoration:none;text-align:center;line-height:1.3}
 .tile:hover{border-color:var(--acc);text-decoration:none}.tile:active{transform:scale(.97)}
 .tile .ico{font-size:calc(var(--tile) * .36);line-height:1.1}
+.tile .pix{display:block;width:calc(16px * var(--pix));height:calc(16px * var(--pix));image-rendering:pixelated;image-rendering:crisp-edges}   /* ドット絵(16×16)を --pix 倍に。整数にするとマス目がにじまない */
+:root{--pix:3}
 .tile .nm{font-size:.86rem;font-weight:600;word-break:auto-phrase}
 .tile .tb{display:inline-block;font-size:.7rem;font-weight:600;line-height:1.5;padding:0 .5rem;border-radius:1rem;background:var(--acc);color:#fff}
 .tile .tb.imp{background:var(--imp)}
@@ -140,7 +142,7 @@ ul.uplist li{padding:.2rem 0}.entry{padding:.65rem .75rem}
 table.arch td,table.arch th,table.del td,table.del th{padding:.35rem .4rem}
 .cards{grid-template-columns:1fr}
 .box{padding:.1rem .8rem .8rem;margin:.8rem 0}
-.tiles{grid-template-columns:repeat(auto-fill,minmax(var(--tilem),1fr));gap:.55rem}.tile{padding:.8rem .25rem .65rem}.tile .ico{font-size:calc(var(--tilem) * .38)}.tile .nm{font-size:.8rem}
+.tiles{grid-template-columns:repeat(auto-fill,minmax(var(--tilem),1fr));gap:.55rem}.tile{padding:.8rem .25rem .65rem}.tile .ico{font-size:calc(var(--tilem) * .38)}.tile .nm{font-size:.76rem}
 .tierbtn{min-height:calc(var(--tap) - 8px);padding:.35rem .9rem}.tiers select{margin-left:0;min-height:calc(var(--tap) - 8px)}
 .sjbr a{display:block;padding:.35rem 0;margin:0}
 .fkopen{display:inline-block;padding:.2rem 0;line-height:1.45}.fkband{padding-left:.55rem}.fkband>summary.fkf{padding:.3rem 0}

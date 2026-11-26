@@ -186,6 +186,7 @@ def top_nav(rel: str, tools: list[dict]) -> str:
 </header>"""
 
 
+TILE_ICON_DIR = Path(__file__).resolve().parent.parent / "docs" / "assets" / "tiles"   # 機能タイルのドット絵(scripts/make_tile_icons.py が作る)
 TILE_HUE_START = 205   # 機能タイルの1枚目(添付文書更新情報)の色相(0=赤 60=黄 120=緑 205=水色 270=紫)。2枚目以降は均等にずれる
 THEME_COLOR = "#2a62b8"   # スマホのアドレスバー等の色(style.css の --acc と同じ)。アイコンの青も scripts/make_icons.py で同じ色
 
@@ -453,6 +454,8 @@ table.del,table.arch{border-collapse:collapse;width:100%;font-size:.92rem}table.
 .tile{display:flex;flex-direction:column;align-items:center;gap:.35rem;padding:1rem .35rem .8rem;border:1px solid var(--boxline);border-radius:1rem;background:var(--card);color:var(--fg);text-decoration:none;text-align:center;line-height:1.3}
 .tile:hover{border-color:var(--acc);text-decoration:none}.tile:active{transform:scale(.97)}
 .tile .ico{font-size:calc(var(--tile) * .36);line-height:1.1}
+.tile .pix{display:block;width:calc(16px * var(--pix));height:calc(16px * var(--pix));image-rendering:pixelated;image-rendering:crisp-edges}   /* ドット絵(16×16)を --pix 倍に。整数にするとマス目がにじまない */
+:root{--pix:3}
 .tile .nm{font-size:.86rem;font-weight:600;word-break:auto-phrase}
 .tile .tb{display:inline-block;font-size:.7rem;font-weight:600;line-height:1.5;padding:0 .5rem;border-radius:1rem;background:var(--acc);color:#fff}
 .tile .tb.imp{background:var(--imp)}
@@ -525,7 +528,7 @@ ul.uplist li{padding:.2rem 0}.entry{padding:.65rem .75rem}
 table.arch td,table.arch th,table.del td,table.del th{padding:.35rem .4rem}
 .cards{grid-template-columns:1fr}
 .box{padding:.1rem .8rem .8rem;margin:.8rem 0}
-.tiles{grid-template-columns:repeat(auto-fill,minmax(var(--tilem),1fr));gap:.55rem}.tile{padding:.8rem .25rem .65rem}.tile .ico{font-size:calc(var(--tilem) * .38)}.tile .nm{font-size:.8rem}
+.tiles{grid-template-columns:repeat(auto-fill,minmax(var(--tilem),1fr));gap:.55rem}.tile{padding:.8rem .25rem .65rem}.tile .ico{font-size:calc(var(--tilem) * .38)}.tile .nm{font-size:.76rem}
 .tierbtn{min-height:calc(var(--tap) - 8px);padding:.35rem .9rem}.tiers select{margin-left:0;min-height:calc(var(--tap) - 8px)}
 .sjbr a{display:block;padding:.35rem 0;margin:0}
 .fkopen{display:inline-block;padding:.2rem 0;line-height:1.45}.fkband{padding-left:.55rem}.fkband>summary.fkf{padding:.3rem 0}
@@ -1431,9 +1434,18 @@ def feature_tiles(rel: str, days: list[dict], tools: list[dict]) -> str:
     # (並び順に虹のように変わる。枚数が増えても同じ色にならない)。始まりの色は TILE_HUE_START、
     # 淡さ・濃さは CSS の --tile-s / --tile-l(明るい画面)と --tile-sd / --tile-ld(暗い画面)の1か所で変える
     n = max(len(items), 1)
+
+    def _ico(href: str, emoji: str) -> str:
+        # ドット絵(2026-11-26 指示)。docs/assets/tiles/<キー>.png があればそれ、無ければ絵文字。
+        # キー=機能ページのフォルダ名(watch …)/手作りツールのファイル名(days.html → days)。絵は scripts/make_tile_icons.py で作る
+        key = Path(href).stem if href.startswith("tools/") else href.split("/")[0]
+        if (TILE_ICON_DIR / f"{key}.png").exists():
+            return f'<img class="pix" src="{rel}assets/tiles/{key}.png" alt="" width="16" height="16">'
+        return emoji
+
     return '<div class="tiles">' + "".join(
         f'<a class="tile" style="--h:{round(TILE_HUE_START + i * 360 / n) % 360}" href="{rel}{esc(href)}">'
-        f'<span class="ico" aria-hidden="true">{ico}</span>'
+        f'<span class="ico" aria-hidden="true">{_ico(href, ico)}</span>'
         f'<span class="nm">{esc(name)}</span>{b}</a>' for i, (ico, name, href, b) in enumerate(items)) + "</div>"
 
 
