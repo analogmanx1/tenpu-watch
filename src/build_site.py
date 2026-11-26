@@ -43,7 +43,7 @@ WEEK_URL = "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
 TENPULIST_URL = "https://www.info.pmda.go.jp/psearch/tenpulist.jsp"  # 添付文書更新の元データサイト(PMDA)
 HOME_TITLE = "ホーム"                 # トップ(入口)ページの名前。site/home.json の title で上書き可
 SITE_TITLE = "薬剤師ツールボックス"  # 薬剤師ツールボックス(添付文書ウォッチ+ツール)の名前
-WATCH_TITLE = "添付文書ウォッチ"
+WATCH_TITLE = "添付文書更新情報"   # 2026-11-26 「添付文書ウォッチ」から改名(フォルダ名・タスク名などの中の名前は旧名のまま)
 IF_TITLE = "インタビューフォーム検索"
 TENPU_TITLE = "添付文書検索"
 SHIKI_TITLE = "識別コード検索"
@@ -66,7 +66,7 @@ DEFAULT_HOME = {
     "title": HOME_TITLE,
     "lead": "ここから各機能へ。",
     "sections": [
-        {"emoji": "💊", "title": SITE_TITLE, "desc": "添付文書ウォッチ・各種計算ツール",
+        {"emoji": "💊", "title": SITE_TITLE, "desc": "添付文書更新情報・各種計算ツール",
          "href": "toolbox/index.html", "live": "toolbox"},
     ],
 }
@@ -186,7 +186,7 @@ def top_nav(rel: str, tools: list[dict]) -> str:
 </header>"""
 
 
-TILE_HUE_START = 205   # 機能タイルの1枚目(添付文書ウォッチ)の色相(0=赤 60=黄 120=緑 205=水色 270=紫)。2枚目以降は均等にずれる
+TILE_HUE_START = 205   # 機能タイルの1枚目(添付文書更新情報)の色相(0=赤 60=黄 120=緑 205=水色 270=紫)。2枚目以降は均等にずれる
 THEME_COLOR = "#2a62b8"   # スマホのアドレスバー等の色(style.css の --acc と同じ)。アイコンの青も scripts/make_icons.py で同じ色
 
 
@@ -229,7 +229,7 @@ def layout(title: str, body: str, rel: str, nav_days: list[str], current: str | 
 <main class="main">
 {body}
 <footer class="foot">
-  <p>個人運営の非公式サイトです。添付文書ウォッチの出典: PMDA「過去1週間以内に更新された添付文書情報」および各添付文書XML。データ最終更新: {esc(built_at)}</p>
+  <p>個人運営の非公式サイトです。添付文書更新情報の出典: PMDA「過去1週間以内に更新された添付文書情報」および各添付文書XML。データ最終更新: {esc(built_at)}</p>
 </footer>
 </main>
 </div>
@@ -1404,7 +1404,7 @@ def feature_tiles(rel: str, days: list[dict], tools: list[dict]) -> str:
     """ホームとツールボックスのトップに並べる「機能タイル」(アイコン+名前。タップでその機能のページへ)。
     2026-11-25 指示: 機能が増えて文字とスクロールが多くなったので、スマホのホーム画面のようなタイルにする。
     並び順は使用頻度の高い順(top_nav のプルダウン・README の階層図と同じ順にそろえる)。
-    添付文書ウォッチのタイルにだけ、最新の記録日と更新件数の小さいバッジを付ける。
+    添付文書更新情報のタイルにだけ、最新の記録日と更新件数の小さいバッジを付ける。
     手作りツール(tools/*.html)のアイコンは、そのHTMLの <meta name="tile-emoji" content="…"> で決める(無ければ🧮)。
     タイルの大きさは CSS の --tile(PC) / --tilem(スマホ) の1か所で変える"""
     badge = ""
