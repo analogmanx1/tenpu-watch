@@ -1,0 +1,447 @@
+{
+ "date": "2026-11-27",
+ "updates": [
+  {
+   "brand": "アラグリオ原末分包1.5g",
+   "company": "製造販売元／SBIファーマ株式会社 / 販売元／日本化薬株式会社",
+   "reason": "更新",
+   "packins_no": "7290007A1020_1_03",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/7290007A1020_1_03/",
+   "fetched_at": "2026-11-27 17:46:52",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/171155_7290007A1020_1_03",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/171155_7290007A1020_1_03",
+   "meta": {
+    "packins_no": "7290007A1020_1_03",
+    "company_id": "171155",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第3版"
+     },
+     "previous": {
+      "ym": "2026-07",
+      "ver": "第2版"
+     }
+    },
+    "brands": [
+     "アラグリオ原末分包1.5g"
+    ],
+    "generic_name": "アミノレブリン酸塩酸塩散剤",
+    "therapeutic_class": "光線力学診断用剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "36箇月"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "イマチニブ錠100mg「オーハラ」",
+   "company": "製造販売元／大原薬品工業株式会社",
+   "reason": "更新",
+   "packins_no": "4291011F1117_1_17",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291011F1117_1_17/",
+   "fetched_at": "2026-11-27 17:46:57",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/180095_4291011F1117_1_17",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/180095_4291011F1117_1_17",
+   "meta": {
+    "packins_no": "4291011F1117_1_17",
+    "company_id": "180095",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第6版"
+     },
+     "previous": {
+      "ym": "2023-01",
+      "ver": "第5版"
+     }
+    },
+    "brands": [
+     "イマチニブ錠100mg「オーハラ」"
+    ],
+    "generic_name": "イマチニブメシル酸塩",
+    "therapeutic_class": "抗悪性腫瘍剤\n（チロシンキナーゼインヒビター）"
+   },
+   "revised": [
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.４ 生殖能を有する者"
+     ],
+     "text": "妊娠する可能性のある女性には、本剤投与中及び最終投与後15日間において避妊する必要性及び適切な避妊法について説明すること。"
+    }
+   ],
+   "diff": {
+    "prev_packins_no": "4291011F1117_1_16",
+    "prev_fetched_at": "2026-11-04 19:42:10",
+    "prev_seen_date": "2026-11-04",
+    "changes": []
+   }
+  },
+  {
+   "brand": "タムスロシン塩酸塩OD錠0.1mg「CH」／タム...",
+   "company": "製造販売元／長生堂製薬株式会社 / 販売元／日本ジェネリック株式会社",
+   "reason": "更新",
+   "packins_no": "2590008F1131_2_09",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2590008F1131_2_09/",
+   "fetched_at": "2026-11-27 17:47:15",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/450064_2590008F1131_2_09",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/450064_2590008F1131_2_09",
+   "meta": {
+    "packins_no": "2590008F1131_2_09",
+    "company_id": "450064",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第4版"
+     },
+     "previous": {
+      "ym": "2024-09",
+      "ver": "第3版"
+     }
+    },
+    "brands": [
+     "タムスロシン塩酸塩OD錠0.1mg「CH」",
+     "タムスロシン塩酸塩OD錠0.2mg「CH」"
+    ],
+    "generic_name": "タムスロシン塩酸塩",
+    "therapeutic_class": "前立腺肥大症の排尿障害改善剤"
+   },
+   "revised": [
+    {
+     "path": [],
+     "text": "過敏症"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "クロモグリク酸Na点眼液2％「ニットー」",
+   "company": "製造販売元／東亜薬品株式会社 / 発売元／日東メディック株式会社",
+   "reason": "更新",
+   "packins_no": "1319717Q1405_1_04",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/1319717Q1405_1_04/",
+   "fetched_at": "2026-11-27 17:47:27",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/480018_1319717Q1405_1_04",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/480018_1319717Q1405_1_04",
+   "meta": {
+    "packins_no": "1319717Q1405_1_04",
+    "company_id": "480018",
+    "revision": {
+     "current": {
+      "ym": "2026-10",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2023-10",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "クロモグリク酸Na点眼液2％「ニットー」"
+    ],
+    "generic_name": "クロモグリク酸ナトリウム点眼液",
+    "therapeutic_class": "アレルギー性結膜炎治療剤"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.１ 重大な副作用",
+      "アナフィラキシー（0.1％未満注））"
+     ],
+     "text": "呼吸困難、血管性浮腫、蕁麻疹等があらわれることがある。"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ゾルミトリプタンOD錠2.5mg「日医工」",
+   "company": "製造販売元／日医工株式会社",
+   "reason": "更新",
+   "packins_no": "2160004F2074_1_05",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/2160004F2074_1_05/",
+   "fetched_at": "2026-11-27 17:47:30",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/530169_2160004F2074_1_05",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/530169_2160004F2074_1_05",
+   "meta": {
+    "packins_no": "2160004F2074_1_05",
+    "company_id": "530169",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第2版"
+     },
+     "previous": {
+      "ym": "2024-01",
+      "ver": "第1版"
+     }
+    },
+    "brands": [
+     "ゾルミトリプタンOD錠2.5mg「日医工」"
+    ],
+    "generic_name": "ゾルミトリプタン",
+    "therapeutic_class": "片頭痛治療薬/5-HT1B/1D受容体作動薬"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "過敏症"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "じん麻疹、血管性浮腫等の過敏症状"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "エトカマ錠75mg",
+   "company": "製造販売元／アストラゼネカ株式会社",
+   "reason": "更新",
+   "packins_no": "4291104F1026_1_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291104F1026_1_01/",
+   "fetched_at": "2026-11-27 17:47:37",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/670227_4291104F1026_1_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/670227_4291104F1026_1_01",
+   "meta": {
+    "packins_no": "4291104F1026_1_01",
+    "company_id": "670227",
+    "revision": {
+     "current": {
+      "ym": "2026-06",
+      "ver": "第1版"
+     },
+     "previous": null
+    },
+    "brands": [
+     "エトカマ錠75mg"
+    ],
+    "generic_name": "カミゼストラント錠",
+    "therapeutic_class": "抗エストロゲン剤/抗悪性腫瘍剤"
+   },
+   "revised": [],
+   "diff": null
+  },
+  {
+   "brand": "【旧製品：D-ソルビトール含有なし】ダラ...",
+   "company": "製造販売元（輸入）／ヤンセンファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "4291437A1028_1_13",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291437A1028_1_13/",
+   "fetched_at": "2026-11-27 17:47:47",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/800155_4291437A1028_1_13",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/800155_4291437A1028_1_13",
+   "meta": {
+    "packins_no": "4291437A1028_1_13",
+    "company_id": "800155",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第7版"
+     },
+     "previous": {
+      "ym": "2025-06",
+      "ver": null
+     }
+    },
+    "brands": [
+     "【旧製品：D-ソルビトール含有なし】ダラザレックス点滴静注100mg",
+     "【旧製品：D-ソルビトール含有なし】ダラザレックス点滴静注400mg"
+    ],
+    "generic_name": "ダラツムマブ（遺伝子組換え）",
+    "therapeutic_class": "ヒト型抗CD38モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "血管障害"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "臨床検査"
+    }
+   ],
+   "diff": null
+  },
+  {
+   "brand": "ダラザレックス点滴静注100mg／ダラザレッ...",
+   "company": "製造販売元（輸入）／ヤンセンファーマ株式会社",
+   "reason": "更新",
+   "packins_no": "4291437A1028_2_01",
+   "pack_url": "https://www.info.pmda.go.jp/go/pack/4291437A1028_2_01/",
+   "fetched_at": "2026-11-27 17:47:54",
+   "error": null,
+   "xml_url": "https://www.info.pmda.go.jp/go/xml/800155_4291437A1028_2_01",
+   "note": null,
+   "pdf_url": "https://www.info.pmda.go.jp/go/pdf/800155_4291437A1028_2_01",
+   "meta": {
+    "packins_no": "4291437A1028_2_01",
+    "company_id": "800155",
+    "revision": {
+     "current": {
+      "ym": "2026-11",
+      "ver": "第8版"
+     },
+     "previous": {
+      "ym": "2025-06",
+      "ver": null
+     }
+    },
+    "brands": [
+     "ダラザレックス点滴静注100mg",
+     "ダラザレックス点滴静注400mg"
+    ],
+    "generic_name": "ダラツムマブ（遺伝子組換え）",
+    "therapeutic_class": "ヒト型抗CD38モノクローナル抗体"
+   },
+   "revised": [
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "36ヵ月"
+    },
+    {
+     "path": [
+      "エ.貯法、有効期間"
+     ],
+     "text": "36ヵ月"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "L-ヒスチジン"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "L-ヒスチジン塩酸塩水和物"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "D-ソルビトール"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "L-メチオニン"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "L-ヒスチジン"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "L-ヒスチジン塩酸塩水和物"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "D-ソルビトール"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.１ 組成"
+     ],
+     "text": "L-メチオニン"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.２ 製剤の性状"
+     ],
+     "text": "5.2～5.8"
+    },
+    {
+     "path": [
+      "３.組成・性状",
+      "３.２ 製剤の性状"
+     ],
+     "text": "5.2～5.8"
+    },
+    {
+     "path": [
+      "９.特定の背景を有する患者に関する注意",
+      "９.１ 合併症・既往歴等のある患者",
+      "遺伝性果糖不耐症の患者"
+     ],
+     "text": "遺伝性果糖不耐症の患者"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "血管障害"
+    },
+    {
+     "path": [
+      "１１.副作用",
+      "１１.２ その他の副作用"
+     ],
+     "text": "臨床検査"
+    }
+   ],
+   "diff": null
+  }
+ ],
+ "deletes": [
+  {
+   "brand": "ジフルカン静注液50mg／ジフルカン静注液100mg／ジフルカン静注液200mg",
+   "company": "製造販売元／ファイザー株式会社",
+   "reason": "-",
+   "yj_hint": "6290401A1099_3_06"
+  }
+ ],
+ "created_at": "2026-11-27 17:46:52",
+ "updated_at": "2026-11-27 17:47:58",
+ "source": "https://www.info.pmda.go.jp/downfiles/ph/1week.html"
+}
